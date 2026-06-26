@@ -2,40 +2,28 @@
 
 import { useState } from 'react';
 
-interface RecipeImageProps {
-  photo: string;
+interface Props {
+  src: string;
   alt: string;
   className?: string;
   fallback?: React.ReactNode;
-  onLoadSuccess?: () => void;
-  onLoadError?: () => void;
+  priority?: boolean;
 }
 
-export default function RecipeImage({
-  photo,
-  alt,
-  className,
-  fallback,
-  onLoadSuccess,
-  onLoadError,
-}: RecipeImageProps) {
+export default function RecipeImage({ src, alt, className = '', fallback, priority = false }: Props) {
+  const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
-  if (!photo || error) {
-    return <>{fallback ?? null}</>;
-  }
+  if (!src || error) return <>{fallback ?? null}</>;
 
   return (
     <img
-      src={`/images/${photo}`}
+      src={src}
       alt={alt}
-      className={className}
-      loading="lazy"
-      onLoad={onLoadSuccess}
-      onError={() => {
-        setError(true);
-        onLoadError?.();
-      }}
+      className={`lazy-img ${loaded ? 'lazy-loaded' : ''} ${className}`}
+      loading={priority ? 'eager' : 'lazy'}
+      onLoad={() => setLoaded(true)}
+      onError={() => setError(true)}
     />
   );
 }

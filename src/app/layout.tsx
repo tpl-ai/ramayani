@@ -21,10 +21,10 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: 'Ramayani — Buku Resep',
   description:
-    'Resep-resep asli dari Restoran Ramayani, Los Angeles. Original recipes from the Ramayani Restaurant.',
+    'Resep-resep asli dari Restoran Ramayani, Los Angeles. Original recipes from the Ramayani Restaurant, est. 1983.',
   openGraph: {
     title: 'Ramayani',
-    description: 'Resep-resep asli dari Restoran Ramayani',
+    description: 'Original recipes from the Ramayani Restaurant, Los Angeles',
     type: 'website',
   },
 };
@@ -38,6 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="id" className={`${playfair.variable} ${lato.variable}`}>
       <body>
+        {/* Batik gold texture at 6% — sits behind all content */}
+        <div className="batik-bg" aria-hidden="true" />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import Header from '@/components/Header';
 import { useLang } from '@/components/LanguageContext';
@@ -16,32 +17,48 @@ function t(r: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'): 
   return (r[`${field}_id` as keyof Recipe] as string) || '';
 }
 
-function HeroWithPhoto({
-  photo,
-  name,
-  headnote,
+function RecipeBreadcrumb({
   catName,
-  onImgError,
+  catKey,
+  recipeName,
+  lang,
 }: {
-  photo: string;
-  name: string;
-  headnote: string;
   catName: string;
-  onImgError: () => void;
+  catKey: string;
+  recipeName: string;
+  lang: 'id' | 'en';
 }) {
   return (
-    <div className="recipe-photo-wrap">
+    <p className="recipe-crumb">
+      <Link href="/">{lang === 'id' ? 'Beranda' : 'Home'}</Link>
+      <span className="recipe-crumb-sep">›</span>
+      <Link href={`/${catKey}`}>{catName}</Link>
+      <span className="recipe-crumb-sep">›</span>
+      {recipeName}
+    </p>
+  );
+}
+
+function HeroWithPhoto({
+  photo,
+  alt,
+  onError,
+}: {
+  photo: string;
+  alt: string;
+  onError: () => void;
+}) {
+  return (
+    <div className="recipe-hero-photo">
       <img
         src={`/images/${photo}`}
-        alt={name}
-        className="recipe-photo"
-        onError={onImgError}
+        alt={alt}
+        className="lazy-img"
+        loading="eager"
+        onLoad={e => (e.currentTarget.className = 'lazy-img lazy-loaded')}
+        onError={onError}
+        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
       />
-      <div className="recipe-header-overlay">
-        <p className="recipe-crumb">{catName}</p>
-        <h1 className="recipe-photo-title">{name}</h1>
-        {headnote && <p className="recipe-photo-headnote">{headnote}</p>}
-      </div>
     </div>
   );
 }
@@ -50,42 +67,47 @@ function HeroTextOnly({
   name,
   headnote,
   catName,
+  catKey,
+  lang,
 }: {
   name: string;
   headnote: string;
   catName: string;
+  catKey: string;
+  lang: 'id' | 'en';
 }) {
   return (
-    <div className="recipe-text-hero">
-      <p className="recipe-text-crumb">{catName}</p>
-      <h1 className="recipe-text-title">{name}</h1>
-      {headnote && <blockquote className="recipe-text-quote">&ldquo;{headnote}&rdquo;</blockquote>}
+    <div className="recipe-hero-text">
+      <p className="recipe-hero-crumb">
+        <Link href={`/${catKey}`} style={{ color: 'rgba(255,240,208,0.65)' }}>
+          {catName}
+        </Link>
+      </p>
+      <h1 className="recipe-hero-title-large">{name}</h1>
+      {headnote && (
+        <>
+          <div className="recipe-hero-rule" />
+          <blockquote className="recipe-hero-quote">&ldquo;{headnote}&rdquo;</blockquote>
+        </>
+      )}
     </div>
   );
 }
 
-function IngredientsSection({
-  id: ings_id,
-  en: ings_en,
-  lang,
-}: {
-  id: string[];
-  en: string[];
-  lang: 'id' | 'en';
-}) {
+function IngredientsSection({ id: ings_id, en: ings_en, lang }: { id: string[]; en: string[]; lang: 'id' | 'en' }) {
   const hasId = ings_id.length > 0;
   const hasEn = ings_en.length > 0;
   if (!hasId && !hasEn) return null;
-
   const maxLen = Math.max(ings_id.length, ings_en.length);
 
   return (
-    <div className="body-section">
+    <>
+      <p className="body-heading">{lang === 'id' ? 'Bahan-bahan' : 'Ingredients'}</p>
       <table className="ing-table">
         <thead>
           <tr>
             <th>Bahasa Indonesia</th>
-            <th className="right">English</th>
+            <th>English</th>
           </tr>
         </thead>
         <tbody>
@@ -97,42 +119,43 @@ function IngredientsSection({
           ))}
         </tbody>
       </table>
-    </div>
+    </>
   );
 }
 
-function MethodSection({
-  id: steps_id,
-  en: steps_en,
-}: {
-  id: string[];
-  en: string[];
-}) {
+function MethodSection({ id: steps_id, en: steps_en, lang }: { id: string[]; en: string[]; lang: 'id' | 'en' }) {
   const hasId = steps_id.length > 0;
   const hasEn = steps_en.length > 0;
   if (!hasId && !hasEn) return null;
-
   const maxLen = Math.max(steps_id.length, steps_en.length);
 
   return (
-    <div className="body-section">
-      <div className="method-grid">
-        <div className="method-col-head">Bahasa Indonesia</div>
-        <div className="method-col-head right">English</div>
+    <>
+      <p className="body-heading">{lang === 'id' ? 'Cara Memasak' : 'Method'}</p>
+      <div className="method-steps">
         {Array.from({ length: maxLen }, (_, i) => (
-          <>
-            <div key={`id-${i}`} className="method-step">
-              <span className="step-num">{i + 1}.</span>
-              <span className="step-text">{steps_id[i] ?? ''}</span>
+          <div key={i} className="method-step">
+            <span className="step-num">{i + 1}</span>
+            <div className="step-content">
+              {steps_id[i] && <p className="step-id">{steps_id[i]}</p>}
+              {steps_en[i] && <p className="step-en">{steps_en[i]}</p>}
             </div>
-            <div key={`en-${i}`} className="method-step right">
-              <span className="step-num">{i + 1}.</span>
-              <span className="step-text">{steps_en[i] ?? ''}</span>
-            </div>
-          </>
+          </div>
         ))}
       </div>
-    </div>
+    </>
+  );
+}
+
+function PageFooter() {
+  return (
+    <footer className="site-footer">
+      <div className="footer-overlay" />
+      <div className="footer-content" style={{ padding: '40px 20px 48px' }}>
+        <p className="footer-logo" style={{ fontSize: 28 }}>Ramayani</p>
+        <p className="footer-est">est. 1983 &middot; Los Angeles, California</p>
+      </div>
+    </footer>
   );
 }
 
@@ -164,70 +187,70 @@ export default function RecipePage() {
   const catInfo  = categories[recipe.category];
   const catName  = catInfo ? (lang === 'id' ? catInfo.id : catInfo.en) : recipe.category;
   const showPhoto = !!recipe.photo && !photoFailed;
+  const backHref  = `/${recipe.category}`;
 
-  const backHref = `/${recipe.category}`;
+  const hasIngredients = recipe.ingredients_id.length > 0 || recipe.ingredients_en.length > 0;
+  const hasMethod      = recipe.method_id.length > 0 || recipe.method_en.length > 0;
 
-  // coming_soon: photo + headnote + banner only
+  /* ── Coming soon ── */
   if (recipe.status === 'coming_soon') {
     return (
       <>
         <Header showBack backHref={backHref} />
         {showPhoto ? (
-          <HeroWithPhoto
-            photo={recipe.photo}
-            name={name}
-            headnote={headnote}
-            catName={catName}
-            onImgError={() => setPhotoFailed(true)}
-          />
+          <HeroWithPhoto photo={recipe.photo} alt={name} onError={() => setPhotoFailed(true)} />
         ) : (
-          <HeroTextOnly name={name} headnote={headnote} catName={catName} />
+          <HeroTextOnly name={name} headnote={headnote} catName={catName} catKey={recipe.category} lang={lang} />
         )}
-        <div className="coming-soon-banner">
+        {showPhoto && headnote && (
+          <div className="recipe-info">
+            <RecipeBreadcrumb catName={catName} catKey={recipe.category} recipeName={name} lang={lang} />
+            <h1 className="recipe-title">{name}</h1>
+            <p className="recipe-headnote">{headnote}</p>
+            <hr className="recipe-rule" />
+          </div>
+        )}
+        <div className="coming-soon-ribbon">
           <p>
             {lang === 'id'
-              ? '🍽️ Resep ini akan segera hadir — pantau terus!'
-              : '🍽️ This recipe is coming soon — check back soon!'}
+              ? 'Resep ini segera hadir — kami masih menyempurnakannya.'
+              : 'Recipe coming soon — we are still perfecting this one.'}
           </p>
         </div>
+        <PageFooter />
       </>
     );
   }
 
-  // needs_method: photo, headnote, ingredients, no-method notice
+  /* ── Needs method ── */
   if (recipe.status === 'needs_method') {
     return (
       <>
         <Header showBack backHref={backHref} />
         {showPhoto ? (
-          <HeroWithPhoto
-            photo={recipe.photo}
-            name={name}
-            headnote={headnote}
-            catName={catName}
-            onImgError={() => setPhotoFailed(true)}
-          />
+          <HeroWithPhoto photo={recipe.photo} alt={name} onError={() => setPhotoFailed(true)} />
         ) : (
-          <HeroTextOnly name={name} headnote={headnote} catName={catName} />
+          <HeroTextOnly name={name} headnote={headnote} catName={catName} catKey={recipe.category} lang={lang} />
         )}
+        <div className="recipe-info">
+          <RecipeBreadcrumb catName={catName} catKey={recipe.category} recipeName={name} lang={lang} />
+          <h1 className="recipe-title">{name}</h1>
+          {headnote && <p className="recipe-headnote">{headnote}</p>}
+          <hr className="recipe-rule" />
+        </div>
         <div className="recipe-body">
-          {(recipe.ingredients_id.length > 0 || recipe.ingredients_en.length > 0) && (
-            <>
-              <div className="body-heading">
-                {lang === 'id' ? 'Bahan-bahan' : 'Ingredients'}
-              </div>
-              <IngredientsSection
-                id={recipe.ingredients_id}
-                en={recipe.ingredients_en}
-                lang={lang}
-              />
-            </>
+          {hasIngredients && (
+            <IngredientsSection
+              id={recipe.ingredients_id}
+              en={recipe.ingredients_en}
+              lang={lang}
+            />
           )}
           <div className="needs-method-notice">
             <p>
               {lang === 'id'
-                ? '✍️ Cara memasak akan segera ditambahkan. Pantau terus!'
-                : '✍️ The cooking method will be added soon. Check back later!'}
+                ? 'Cara memasak untuk resep ini akan segera ditambahkan.'
+                : 'The cooking method for this recipe is coming soon.'}
             </p>
           </div>
           {notes && (
@@ -237,45 +260,49 @@ export default function RecipePage() {
             </div>
           )}
         </div>
+        <PageFooter />
       </>
     );
   }
 
-  // complete / flagged: full recipe
+  /* ── Complete / flagged ── */
   return (
     <>
       <Header showBack backHref={backHref} />
       {showPhoto ? (
-        <HeroWithPhoto
-          photo={recipe.photo}
-          name={name}
-          headnote={headnote}
-          catName={catName}
-          onImgError={() => setPhotoFailed(true)}
-        />
+        <HeroWithPhoto photo={recipe.photo} alt={name} onError={() => setPhotoFailed(true)} />
       ) : (
-        <HeroTextOnly name={name} headnote={headnote} catName={catName} />
+        <HeroTextOnly name={name} headnote={headnote} catName={catName} catKey={recipe.category} lang={lang} />
       )}
+      <div className="recipe-info">
+        <RecipeBreadcrumb catName={catName} catKey={recipe.category} recipeName={name} lang={lang} />
+        <h1 className="recipe-title">{name}</h1>
+        {headnote && <p className="recipe-headnote">{headnote}</p>}
+        <hr className="recipe-rule" />
+      </div>
       <div className="recipe-body">
-        {(recipe.ingredients_id.length > 0 || recipe.ingredients_en.length > 0) && (
-          <>
-            <div className="body-heading">
-              {lang === 'id' ? 'Bahan-bahan' : 'Ingredients'}
-            </div>
-            <IngredientsSection
-              id={recipe.ingredients_id}
-              en={recipe.ingredients_en}
-              lang={lang}
-            />
-          </>
+        {hasIngredients && (
+          <IngredientsSection
+            id={recipe.ingredients_id}
+            en={recipe.ingredients_en}
+            lang={lang}
+          />
         )}
-        {(recipe.method_id.length > 0 || recipe.method_en.length > 0) && (
-          <>
-            <div className="body-section body-heading">
-              {lang === 'id' ? 'Cara Memasak' : 'Method'}
-            </div>
-            <MethodSection id={recipe.method_id} en={recipe.method_en} />
-          </>
+        {hasMethod && (
+          <MethodSection
+            id={recipe.method_id}
+            en={recipe.method_en}
+            lang={lang}
+          />
+        )}
+        {!hasIngredients && !hasMethod && (
+          <div className="empty-notice">
+            <p>
+              {lang === 'id'
+                ? 'Resep lengkap akan segera ditambahkan. Pantau terus!'
+                : 'The full recipe will be added soon. Check back later!'}
+            </p>
+          </div>
         )}
         {notes && (
           <div className="notes-box">
@@ -283,19 +310,8 @@ export default function RecipePage() {
             <p className="notes-text">{notes}</p>
           </div>
         )}
-        {recipe.ingredients_id.length === 0 &&
-          recipe.ingredients_en.length === 0 &&
-          recipe.method_id.length === 0 &&
-          recipe.method_en.length === 0 && (
-            <div className="needs-method-notice" style={{ marginTop: 28 }}>
-              <p>
-                {lang === 'id'
-                  ? '✍️ Resep lengkap akan segera ditambahkan. Pantau terus!'
-                  : '✍️ The full recipe will be added soon. Check back later!'}
-              </p>
-            </div>
-          )}
       </div>
+      <PageFooter />
     </>
   );
 }
