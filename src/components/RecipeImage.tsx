@@ -7,10 +7,10 @@ interface Props {
   alt: string;
   className?: string;
   fallback?: React.ReactNode;
-  priority?: boolean;
+  eager?: boolean;
 }
 
-export default function RecipeImage({ src, alt, className = '', fallback, priority = false }: Props) {
+export default function RecipeImage({ src, alt, className = '', fallback, eager = false }: Props) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
@@ -20,8 +20,8 @@ export default function RecipeImage({ src, alt, className = '', fallback, priori
     <img
       src={src}
       alt={alt}
-      className={`lazy-img ${loaded ? 'lazy-loaded' : ''} ${className}`}
-      loading={priority ? 'eager' : 'lazy'}
+      className={`img-fade${loaded ? ' loaded' : ''} ${className}`}
+      loading={eager ? 'eager' : 'lazy'}
       onLoad={() => setLoaded(true)}
       onError={() => setError(true)}
     />
