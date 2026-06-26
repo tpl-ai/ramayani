@@ -16,6 +16,7 @@ export interface Recipe {
   method_en: string[];
   notes_id: string;
   notes_en: string;
+  serves?: string | number;
 }
 
 export interface CategoryInfo {

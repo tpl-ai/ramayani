@@ -7,7 +7,7 @@ import { useLang } from '@/components/LanguageContext';
 import { getRecipeById, categories, meta } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
 
-// ── data helpers ────────────────────────────────────────────────────────────
+// ── helpers ──────────────────────────────────────────────────────────────────
 
 function tx(r: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'): string {
   if (lang === 'en') {
@@ -27,124 +27,37 @@ function methodList(r: Recipe, lang: 'id' | 'en'): string[] {
   return r.method_id.length ? r.method_id : r.method_en;
 }
 
-// Scale ingredient quantities then optionally convert metric → imperial.
-// Scale step uses negative lookahead/lookbehind to avoid matching partial numbers.
-function processIngredient(text: string, factor: number, toImperial: boolean): string {
+// Scale then optionally convert metric → imperial.
+// Scale uses lookbehind to avoid matching digits in the middle of larger numbers.
+function processIng(text: string, factor: number, imperial: boolean): string {
   let out = text;
 
   if (factor !== 1) {
-    out = out.replace(/(?<!\d)(\d+(?:\.\d+)?)(?!\d)/g, (match) => {
-      const n = parseFloat(match);
-      if (isNaN(n) || n === 0) return match;
+    out = out.replace(/(?<!\d)(\d+(?:\.\d+)?)(?!\d)/g, (m) => {
+      const n = parseFloat(m);
+      if (!n) return m;
       const s = n * factor;
       return s === Math.round(s) ? String(Math.round(s)) : String(Math.round(s * 10) / 10);
     });
   }
 
-  if (toImperial) {
+  if (imperial) {
     out = out
-      // kg before g to avoid double-match
-      .replace(/(\d+(?:\.\d+)?)\s*kg\b/gi, (_, n) => {
-        const lbs = Math.round(parseFloat(n) * 2.20462 * 10) / 10;
-        return `${lbs} lbs`;
-      })
-      .replace(/(\d+(?:\.\d+)?)\s*g\b/gi, (_, n) => {
-        const oz = Math.round(parseFloat(n) / 28.35 * 10) / 10;
-        return `${oz} oz`;
-      })
+      .replace(/(\d+(?:\.\d+)?)\s*kg\b/gi, (_, n) => `${Math.round(parseFloat(n) * 2.20462 * 10) / 10} lbs`)
+      .replace(/(\d+(?:\.\d+)?)\s*g\b/gi,  (_, n) => `${Math.round(parseFloat(n) / 28.35 * 10) / 10} oz`)
       .replace(/(\d+(?:\.\d+)?)\s*ml\b/gi, (_, n) => {
         const ml = parseFloat(n);
         if (ml >= 59) return `${Math.round(ml / 236.6 * 4) / 4} cups`;
         if (ml >= 15) return `${Math.round(ml / 14.79 * 2) / 2} tbsp`;
         return `${Math.round(ml / 4.93)} tsp`;
       })
-      .replace(/(\d+(?:\.\d+)?)\s*liter/gi, (_, n) => {
-        return `${Math.round(parseFloat(n) * 4.227 * 4) / 4} cups`;
-      });
+      .replace(/(\d+(?:\.\d+)?)\s*liter/gi, (_, n) => `${Math.round(parseFloat(n) * 4.227 * 4) / 4} cups`);
   }
 
   return out;
 }
 
-// ── Leave a Note form ────────────────────────────────────────────────────────
-
-function LeaveANote({ recipeName, lang }: { recipeName: string; lang: 'id' | 'en' }) {
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitting, setSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!name.trim() || !message.trim()) return;
-    setSubmitting(true);
-    try {
-      await fetch('https://formspree.io/f/mnjkdvqn', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          name,
-          message,
-          recipe: recipeName,
-          _subject: `Note for Hertha — ${recipeName}`,
-        }),
-      });
-    } catch {
-      // fall through — show thanks regardless
-    } finally {
-      setSubmitting(false);
-      setSubmitted(true);
-    }
-  };
-
-  return (
-    <div className="note-section">
-      <h2 className="note-heading">Leave a Note for Hertha</h2>
-      <p className="note-subtext">
-        Did you make this dish? Share your experience — Hertha would love to hear from you.
-      </p>
-      {submitted ? (
-        <p className="note-thanks">Terima kasih &middot; Thank you for your note.</p>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <div className="note-field">
-            <label className="note-label" htmlFor="note-name">
-              {lang === 'id' ? 'Nama Anda' : 'Your name'}
-            </label>
-            <input
-              id="note-name"
-              className="note-input"
-              type="text"
-              value={name}
-              onChange={e => setName(e.target.value)}
-              required
-            />
-          </div>
-          <div className="note-field">
-            <label className="note-label" htmlFor="note-message">
-              {lang === 'id' ? 'Pesan Anda' : 'Your message'}
-            </label>
-            <textarea
-              id="note-message"
-              className="note-textarea"
-              rows={4}
-              value={message}
-              onChange={e => setMessage(e.target.value)}
-              required
-            />
-          </div>
-          <button type="submit" className="note-submit" disabled={submitting}>
-            {submitting
-              ? (lang === 'id' ? 'Mengirim…' : 'Sending…')
-              : (lang === 'id' ? 'Kirim' : 'Send')}
-          </button>
-        </form>
-      )}
-    </div>
-  );
-}
-
-// ── Recipe page ──────────────────────────────────────────────────────────────
+// ── page ─────────────────────────────────────────────────────────────────────
 
 export default function RecipePage() {
   const params = useParams();
@@ -157,8 +70,7 @@ export default function RecipePage() {
   const baseServes = useRef(4);
 
   useEffect(() => {
-    const stored = localStorage.getItem('ramayani_units');
-    if (stored === 'imperial') setUnitSystem('imperial');
+    if (localStorage.getItem('ramayani_units') === 'imperial') setUnitSystem('imperial');
   }, []);
 
   const setUnit = (u: 'metric' | 'imperial') => {
@@ -184,6 +96,10 @@ export default function RecipePage() {
     );
   }
 
+  // Initialise baseServes from recipe data on first render
+  const recipeBase = typeof recipe.serves === 'number' ? recipe.serves : 4;
+  if (baseServes.current === 4 && recipeBase !== 4) baseServes.current = recipeBase;
+
   const name      = tx(recipe, 'name', lang);
   const headnote  = tx(recipe, 'headnote', lang);
   const notes     = tx(recipe, 'notes', lang);
@@ -191,11 +107,15 @@ export default function RecipePage() {
   const ings      = ingList(recipe, lang);
   const steps     = methodList(recipe, lang);
   const factor    = serves / baseServes.current;
-  const toImperial = unitSystem === 'imperial';
+  const imperial  = unitSystem === 'imperial';
   const isComingSoon = recipe.status === 'coming_soon';
-  const hasIngs   = ings.length > 0;
 
-  const processedIngs = ings.map(i => processIngredient(i, factor, toImperial));
+  const processedIngs = ings.map(i => processIng(i, factor, imperial));
+
+  // Serves display: use recipe.serves string if not numeric, else use state
+  const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim()
+    ? recipe.serves
+    : null;
 
   return (
     <>
@@ -204,130 +124,140 @@ export default function RecipePage() {
           ← {lang === 'id' ? 'Kembali' : 'Back'}
         </Link>
         <div className="recipe-lang" role="group" aria-label="Language">
-          <button className={`recipe-lang-btn${lang === 'id' ? ' active' : ''}`} onClick={setId}>
-            ID
-          </button>
+          <button className={`recipe-lang-btn${lang === 'id' ? ' active' : ''}`} onClick={setId}>ID</button>
           <span className="recipe-lang-sep" aria-hidden="true">|</span>
-          <button className={`recipe-lang-btn${lang === 'en' ? ' active' : ''}`} onClick={setEn}>
-            EN
-          </button>
+          <button className={`recipe-lang-btn${lang === 'en' ? ' active' : ''}`} onClick={setEn}>EN</button>
         </div>
       </nav>
 
       <div className="recipe-container">
-        {/* Zone 1: photo + title + headnote */}
-        <div className="recipe-zone1">
-          {showPhoto && (
-            <img
-              src={`/images/${recipe.photo}`}
-              alt={name}
-              className="recipe-photo img-fade"
-              loading="eager"
-              onLoad={e => e.currentTarget.classList.add('loaded')}
-              onError={() => setPhotoFailed(true)}
-            />
-          )}
-          <h1 className="recipe-title">{name}</h1>
-          {headnote && <p className="recipe-headnote">{headnote}</p>}
-        </div>
-        <div className="recipe-zone1-rule" />
-
-        {/* Controls: unit + serves (hide for coming soon) */}
-        {!isComingSoon && (
-          <div className="recipe-controls">
-            <div className="unit-toggle" role="group" aria-label="Unit system">
-              <button className={`unit-btn${unitSystem === 'metric' ? ' active' : ''}`} onClick={() => setUnit('metric')}>
-                Metric
-              </button>
-              <span className="unit-sep" aria-hidden="true">|</span>
-              <button className={`unit-btn${unitSystem === 'imperial' ? ' active' : ''}`} onClick={() => setUnit('imperial')}>
-                Imperial
-              </button>
-            </div>
-            <div className="serves-control">
-              <span>{lang === 'id' ? 'Porsi:' : 'Serves:'}</span>
-              <button
-                className="serves-btn"
-                onClick={() => setServes(s => Math.max(1, s - 1))}
-                disabled={serves <= 1}
-                aria-label="Fewer servings"
-              >
-                −
-              </button>
-              <span className="serves-num">{serves}</span>
-              <button
-                className="serves-btn"
-                onClick={() => setServes(s => s + 1)}
-                aria-label="More servings"
-              >
-                +
-              </button>
-            </div>
-          </div>
-        )}
-
-        {/* Zone 2: ingredients + method */}
-        <div className="recipe-zone2">
-          {/* Left: ingredients */}
-          <div>
-            <p className="col-head">
-              {lang === 'id' ? 'Bahan-Bahan' : 'Ingredients'}
-            </p>
-            {isComingSoon ? (
-              <p className="ing-empty">
-                {lang === 'id' ? 'Resep lengkap segera hadir.' : 'The full recipe is coming soon.'}
-              </p>
-            ) : hasIngs ? (
-              <ul className="ing-list">
-                {processedIngs.map((item, i) => (
-                  <li key={i} className="ing-item">{item}</li>
-                ))}
-              </ul>
-            ) : (
-              <p className="ing-empty">
-                {lang === 'id' ? 'Bahan segera ditambahkan.' : 'Ingredients coming soon.'}
-              </p>
+        {isComingSoon ? (
+          /* ── Coming soon: single column, no ingredients/method ── */
+          <div style={{ maxWidth: 560 }}>
+            {showPhoto && (
+              <img
+                src={`/images/${recipe.photo}`}
+                alt={name}
+                className="recipe-photo-fixed img-fade"
+                loading="eager"
+                onLoad={e => e.currentTarget.classList.add('loaded')}
+                onError={() => setPhotoFailed(true)}
+              />
             )}
-          </div>
-
-          {/* Right: method */}
-          <div>
-            <p className="col-head">
-              {lang === 'id' ? 'Cara Membuat' : 'Method'}
+            <h1 className={`recipe-title${showPhoto ? '' : ' recipe-title-nophoto'}`}>{name}</h1>
+            {headnote && <p className="recipe-headnote">{headnote}</p>}
+            <p className="coming-soon-note">
+              {lang === 'id' ? 'Resep segera hadir.' : 'Recipe coming soon.'}
             </p>
-            {isComingSoon ? (
-              <p className="method-empty">
-                {lang === 'id' ? 'Cara memasak segera hadir.' : 'Method coming soon.'}
-              </p>
-            ) : steps.length > 0 ? (
-              steps.map((step, i) => (
-                <div key={i} className="method-step">
-                  <div className="step-num">{i + 1}</div>
-                  <div className="step-text">{step}</div>
+          </div>
+        ) : (
+          /* ── Full recipe: two-column on desktop ── */
+          <>
+            <div className="recipe-layout">
+              {/* Left column: photo + name + headnote + ingredients */}
+              <div>
+                {showPhoto && (
+                  <img
+                    src={`/images/${recipe.photo}`}
+                    alt={name}
+                    className="recipe-photo-fixed img-fade"
+                    loading="eager"
+                    onLoad={e => e.currentTarget.classList.add('loaded')}
+                    onError={() => setPhotoFailed(true)}
+                  />
+                )}
+                <h1 className={`recipe-title${showPhoto ? '' : ' recipe-title-nophoto'}`}>{name}</h1>
+
+                {/* Serves / notes from recipe data */}
+                {servesDisplay && (
+                  <p className="recipe-meta">{lang === 'id' ? 'Porsi: ' : 'Serves: '}{servesDisplay}</p>
+                )}
+
+                {headnote && <p className="recipe-headnote">{headnote}</p>}
+                <div className="recipe-rule" />
+
+                {/* Ingredient heading + unit toggle */}
+                <div className="col-heading-row">
+                  <span className="col-head">
+                    {lang === 'id' ? 'Bahan-Bahan' : 'Ingredients'}
+                  </span>
+                  <div className="unit-toggle" role="group" aria-label="Unit system">
+                    <button className={`unit-btn${unitSystem === 'metric' ? ' active' : ''}`} onClick={() => setUnit('metric')}>
+                      Metric
+                    </button>
+                    <span className="unit-sep" aria-hidden="true">|</span>
+                    <button className={`unit-btn${unitSystem === 'imperial' ? ' active' : ''}`} onClick={() => setUnit('imperial')}>
+                      Imperial
+                    </button>
+                  </div>
                 </div>
-              ))
-            ) : (
-              <p className="method-empty">
-                {lang === 'id' ? 'Cara memasak segera ditambahkan.' : 'Method coming soon.'}
-              </p>
+
+                {/* Serving scaler (only when base is numeric) */}
+                {typeof recipe.serves === 'number' && (
+                  <div className="serves-row">
+                    <span>{lang === 'id' ? 'Porsi:' : 'Serves:'}</span>
+                    <button
+                      className="serves-btn"
+                      onClick={() => setServes(s => Math.max(1, s - 1))}
+                      disabled={serves <= 1}
+                      aria-label="Fewer servings"
+                    >−</button>
+                    <span className="serves-num">{serves}</span>
+                    <button
+                      className="serves-btn"
+                      onClick={() => setServes(s => s + 1)}
+                      aria-label="More servings"
+                    >+</button>
+                  </div>
+                )}
+
+                {ings.length > 0 ? (
+                  <ul className="ing-list">
+                    {processedIngs.map((item, i) => (
+                      <li key={i} className="ing-item">{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="ing-empty">
+                    {lang === 'id' ? 'Bahan segera ditambahkan.' : 'Ingredients coming soon.'}
+                  </p>
+                )}
+              </div>
+
+              {/* Right column: method */}
+              <div>
+                <p className={`col-head col-head-right`} style={{ marginBottom: 16 }}>
+                  {lang === 'id' ? 'Cara Membuat' : 'Method'}
+                </p>
+                {steps.length > 0 ? (
+                  steps.map((step, i) => (
+                    <div key={i} className="method-step">
+                      <div className="step-num">{i + 1}</div>
+                      <div className="step-text">{step}</div>
+                    </div>
+                  ))
+                ) : (
+                  <p className="method-empty">
+                    {lang === 'id'
+                      ? 'Cara memasak untuk resep ini akan segera ditambahkan. Kami sedang mengumpulkannya dari Hertha.'
+                      : 'The cooking method for this recipe is coming soon. We are working on collecting this from Hertha.'}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Notes — full width below both columns */}
+            {notes && (
+              <div className="recipe-notes-full">
+                <p className="recipe-notes-text">{notes}</p>
+              </div>
             )}
-          </div>
-        </div>
-
-        {/* Notes */}
-        {notes && (
-          <div className="recipe-notes" style={{ maxWidth: 560, margin: '40px auto 0' }}>
-            <p className="recipe-notes-text">{notes}</p>
-          </div>
+          </>
         )}
-
-        {/* Leave a Note for Hertha */}
-        <LeaveANote recipeName={name} lang={lang} />
       </div>
 
       <footer className="site-footer">
-        <p className="footer-name">Ramayani</p>
-        <p className="footer-est">est. 1983 &middot; {meta.location}</p>
+        <p className="footer-copy">&copy; Hertha Tan &middot; Ramayani &middot; Los Angeles</p>
       </footer>
     </>
   );
