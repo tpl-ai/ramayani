@@ -134,21 +134,28 @@ export default function HomePage() {
             </div>
           </>
         ) : (
-          <div className="index-body">
-            {recipesByCategory.map(({ cat, recipes }) =>
-              recipes.length === 0 ? null : (
-                <div key={cat.key} id={cat.key} className="index-category">
-                  <div className="index-cat-head">
-                    <h2 className="index-cat-title">
-                      {lang === 'id' ? cat.name_id : cat.name_en}
-                    </h2>
-                    <div className="index-cat-rule" aria-hidden="true" />
+          <>
+            <div className="story-link-row">
+              <Link href="/story" className="story-link-text">
+                {lang === 'id' ? 'Baca Kisah Ramayani →' : 'Read the Ramayani Story →'}
+              </Link>
+            </div>
+            <div className="index-body">
+              {recipesByCategory.map(({ cat, recipes }) =>
+                recipes.length === 0 ? null : (
+                  <div key={cat.key} id={cat.key} className="index-category">
+                    <div className="index-cat-head">
+                      <h2 className="index-cat-title">
+                        {lang === 'id' ? cat.name_id : cat.name_en}
+                      </h2>
+                      <div className="index-cat-rule" aria-hidden="true" />
+                    </div>
+                    {recipes.map(r => <IndexRow key={r.id} recipe={r} lang={lang} />)}
                   </div>
-                  {recipes.map(r => <IndexRow key={r.id} recipe={r} lang={lang} />)}
-                </div>
-              )
-            )}
-          </div>
+                )
+              )}
+            </div>
+          </>
         )}
       </main>
 
