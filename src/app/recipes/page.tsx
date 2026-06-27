@@ -101,7 +101,7 @@ function RecipesContent() {
         padding: '20px 32px', borderBottom: '1px solid #f2f2f2',
       }}>
         <a href="/" style={{ fontSize: 13, color: '#999', textDecoration: 'none', fontWeight: 400 }}>← Back</a>
-        <span style={{ fontSize: 16, fontWeight: 700, letterSpacing: '0.04em' }}>RAMAYANI</span>
+        <span style={{ fontFamily: "'Book Antiqua', 'Palatino Linotype', Palatino, Georgia, serif", fontSize: 16, fontWeight: 400, letterSpacing: '0.1em' }}>RAMAYANI</span>
         <div style={{ width: 40 }} />
       </nav>
 

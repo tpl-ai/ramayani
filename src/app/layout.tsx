@@ -1,11 +1,19 @@
 import type { Metadata, Viewport } from 'next';
-import { Plus_Jakarta_Sans } from 'next/font/google';
+import { Barlow_Condensed, Barlow } from 'next/font/google';
 import { LanguageProvider } from '@/components/LanguageContext';
 import './globals.css';
 
-const jakarta = Plus_Jakarta_Sans({
+const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  variable: '--font-barlow-condensed',
+  display: 'swap',
+});
+
+const barlow = Barlow({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-barlow',
   display: 'swap',
 });
 
@@ -27,7 +35,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      <body className={jakarta.className}>
+      <body className={`${barlowCondensed.variable} ${barlow.variable}`}>
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

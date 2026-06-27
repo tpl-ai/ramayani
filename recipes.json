@@ -138,7 +138,8 @@
       "notes_id": "Resep skala restoran. Untuk memasak di rumah, kurangi semua bahan menjadi 1/20.",
       "notes_en": "This is a restaurant-scale recipe. For home cooking reduce all quantities to 1/20.",
       "serves": "6",
-      "date": "3 Oktober 2006"
+      "date": "3 Oktober 2006",
+      "featured_order": 1
     },
     {
       "id": "resep-3",
@@ -294,7 +295,8 @@
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Perlu dikonfirmasi dengan Ibu.",
       "notes_en": "Method not written in the original notes. To be confirmed with Hertha.",
       "serves": "Restaurant scale",
-      "date": ""
+      "date": "",
+      "featured_order": 9
     },
     {
       "id": "resep-11",
@@ -311,8 +313,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "",
-      "featured_order": 6
+      "notes_en": ""
     },
     {
       "id": "resep-12",
@@ -468,7 +469,7 @@
       "notes_en": "Several ingredients without specific quantities — adjust to taste. Confirm proportions with Hertha.",
       "serves": "",
       "date": "",
-      "featured_order": 10
+      "featured_order": 2
     },
     {
       "id": "resep-19",
@@ -685,7 +686,8 @@
       "notes_id": "Langkah-langkah perlu dikonfirmasi dengan Ibu — beberapa bagian tidak jelas dalam catatan asli.",
       "notes_en": "Steps to be confirmed with Hertha — some parts of the original notes were unclear.",
       "serves": "",
-      "date": "Juni 2000"
+      "date": "Juni 2000",
+      "featured_order": 3
     },
     {
       "id": "resep-30",
@@ -753,8 +755,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "",
-      "featured_order": 5
+      "notes_en": ""
     },
     {
       "id": "resep-34",
@@ -800,7 +801,7 @@
       "notes_en": "For a vegetarian version, replace fish sauce with soy sauce and use a vegetarian sambal.",
       "serves": "",
       "date": "",
-      "featured_order": 8
+      "featured_order": 4
     },
     {
       "id": "resep-35",
@@ -854,7 +855,7 @@
       "notes_en": "Restaurant-scale recipe. For home cooking reduce to 1/10. Serve the sauce over tofu, hard-boiled egg, and steamed vegetables.",
       "serves": "Makes 3 orders",
       "date": "",
-      "featured_order": 3
+      "featured_order": 5
     },
     {
       "id": "resep-36",
@@ -931,7 +932,7 @@
       "status": "needs_method",
       "photo": "gule-kambing.jpg",
       "name_id": "Bumbu Gule (Gule Kambing)",
-      "name_en": "Lamb Curry Spice Blend",
+      "name_en": "Lamb Curry",
       "headnote_id": "Campuran bumbu kering untuk Gule Kambing — kambing yang dimasak dalam kari 15 rempah aromatik Indonesia. Ini adalah bumbu dasarnya. Cara membuat gule lengkap perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "The dry spice blend for Gule Kambing — lamb stewed in a curry of aromatic Indonesian spices. This is the spice base. The complete cooking method for the stew is to be confirmed with Hertha.",
       "ingredients_id": [
@@ -961,7 +962,8 @@
       "notes_id": "Ini adalah campuran bumbu kering. Cara menggiling, menyimpan, dan menggunakannya untuk gule perlu dikonfirmasi dengan Ibu. Resep muncul dua kali dalam catatan asli dengan takaran yang identik.",
       "notes_en": "This is a dry spice blend. How to grind, store, and use it for the full gule stew to be confirmed with Hertha. Recipe appears twice in the original notes with identical measurements.",
       "serves": "",
-      "date": ""
+      "date": "",
+      "featured_order": 7
     },
     {
       "id": "resep-41",
@@ -1011,7 +1013,7 @@
       "notes_en": "This is the bumbu sauce base. For the complete dish, add coconut milk and vegetables of your choice.",
       "serves": "",
       "date": "",
-      "featured_order": 7
+      "featured_order": 6
     },
     {
       "id": "resep-42",
@@ -1156,7 +1158,7 @@
       "status": "needs_method",
       "photo": "cumi-cumi-goreng.jpg",
       "name_id": "Bumbu Udang Mentega (Cumi Cumi Goreng Mentega)",
-      "name_en": "Butter Squid Sauce — Cumi Cumi Goreng Mentega",
+      "name_en": "Butter Squid",
       "headnote_id": "Saus mentega khas Ramayani untuk cumi-cumi dan udang — perpaduan mentega, Maggi, Worcestershire, dan gula yang menciptakan glazur manis gurih. Cara membuat perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature butter sauce for squid and prawns — a combination of butter, Maggi, Worcestershire, and sugar that creates a sweet-savoury glaze. Cooking method to be confirmed with Hertha.",
       "ingredients_id": [
@@ -1182,7 +1184,8 @@
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Tidak ada udang atau cumi dalam daftar bahan — perlu dikonfirmasi dengan Ibu berapa banyak seafood yang digunakan dan langkah-langkah memasaknya.",
       "notes_en": "Method not written in the original notes. No squid or prawns listed in ingredients — confirm with Hertha the quantity of seafood used and the cooking steps.",
       "serves": "",
-      "date": ""
+      "date": "",
+      "featured_order": 8
     },
     {
       "id": "resep-51",
@@ -1891,7 +1894,7 @@
       "method_en": [],
       "notes_id": "",
       "notes_en": "",
-      "featured_order": 1
+      "featured_order": 10
     },
     {
       "id": "cs-tahu-telor",
@@ -1925,8 +1928,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "",
-      "featured_order": 4
+      "notes_en": ""
     },
     {
       "id": "cs-sambal-goreng-tahu-buncis",
@@ -2232,8 +2234,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "",
-      "featured_order": 9
+      "notes_en": ""
     },
     {
       "id": "cs-ayam-satay",
@@ -2250,8 +2251,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "",
-      "featured_order": 2
+      "notes_en": ""
     }
   ]
 }

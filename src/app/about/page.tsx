@@ -51,8 +51,9 @@ function PressRow({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
       )}
       <div>
         <p style={{
-          fontSize: 11, fontWeight: 600, color: '#e85d26',
+          fontSize: 11, fontWeight: 600, color: '#1a6a5a',
           textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6,
+          fontFamily: 'var(--font-barlow-condensed)',
         }}>
           {item.publication} &middot; {item.year}
         </p>
@@ -71,7 +72,7 @@ export default function AboutPage() {
   const closingSections = storySections.filter(s => s.type === 'closing');
 
   return (
-    <div style={{ background: '#f7f5f2', minHeight: '100vh' }}>
+    <div style={{ background: '#ffffff', minHeight: '100vh' }}>
 
       {/* Back */}
       <div style={{ padding: '24px 32px 0' }}>
@@ -96,7 +97,7 @@ export default function AboutPage() {
           return (
             <div key={section.id} style={{ marginBottom: 56 }}>
               {title && (
-                <h2 style={{ fontSize: 22, fontWeight: 600, color: '#1a1a1a', marginBottom: 16 }}>
+                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-barlow-condensed)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
                   {title}
                 </h2>
               )}
@@ -113,7 +114,7 @@ export default function AboutPage() {
                 </div>
               ) : (
                 body.split('\n\n').filter(p => p.trim() && !p.trim().startsWith('[')).map((para, i) => (
-                  <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontWeight: 300 }}>
+                  <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-barlow)', fontWeight: 400 }}>
                     {para}
                   </p>
                 ))
@@ -127,14 +128,14 @@ export default function AboutPage() {
           const title = lang === 'id' ? (section.title_id ?? '') : (section.title_en ?? '');
           const body = lang === 'id' ? (section.body_id ?? '') : (section.body_en ?? '');
           return (
-            <div key={section.id} style={{ borderTop: '1px solid #e8e4df', paddingTop: 48, marginTop: 8 }}>
+            <div key={section.id} style={{ borderTop: '1px solid #f0f0f0', paddingTop: 48, marginTop: 8 }}>
               {title && (
-                <h2 style={{ fontSize: 22, fontWeight: 600, color: '#1a1a1a', marginBottom: 16 }}>
+                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-barlow-condensed)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
                   {title}
                 </h2>
               )}
               {body.split('\n\n').filter(p => p.trim()).map((para, i) => (
-                <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontWeight: 300 }}>
+                <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-barlow)', fontWeight: 400 }}>
                   {para}
                 </p>
               ))}
