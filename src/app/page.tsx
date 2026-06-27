@@ -148,7 +148,7 @@ export default function HomePage() {
           alt="Ramayani restaurant"
           style={{
             width: '100%', height: '100%', objectFit: 'cover',
-            objectPosition: 'center center', display: 'block',
+            objectPosition: '80% center', display: 'block',
           }}
         />
         <div style={{
