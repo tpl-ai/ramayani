@@ -17,6 +17,7 @@ export interface Recipe {
   notes_id: string;
   notes_en: string;
   serves?: string | number;
+  featured_order?: number | null;
 }
 
 export interface CategoryInfo {

@@ -303,7 +303,7 @@
       "status": "needs_method",
       "photo": "ayam-bakar.jpg",
       "name_id": "Ayam Solo",
-      "name_en": "",
+      "name_en": "Grilled Coconut Chicken",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [],
@@ -311,7 +311,8 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "featured_order": 6
     },
     {
       "id": "resep-12",
@@ -422,7 +423,7 @@
       "status": "complete",
       "photo": "ikan-bakar.jpg",
       "name_id": "Ikan Bakar",
-      "name_en": "Grilled Fish with Spice Paste",
+      "name_en": "Grilled Fish, Sweet Soy",
       "headnote_id": "Ikan nila air tawar yang dilumuri pasta rempah lalu dipanggang — salah satu hidangan paling populer di Ramayani. Bumbu cabe merah, terasi, dan kacang tanah memberikan cita rasa yang dalam dan berasap.",
       "headnote_en": "Freshwater Nila fish rubbed with a fragrant spice paste and fire-grilled — one of Ramayani's most beloved dishes. The paste of red chilli, shrimp paste, and peanuts creates a deep, smoky flavour.",
       "ingredients_id": [
@@ -466,7 +467,8 @@
       "notes_id": "Beberapa bahan tidak ada takarannya — sesuaikan dengan selera. Harap konfirmasi takaran dengan Ibu.",
       "notes_en": "Several ingredients without specific quantities — adjust to taste. Confirm proportions with Hertha.",
       "serves": "",
-      "date": ""
+      "date": "",
+      "featured_order": 10
     },
     {
       "id": "resep-19",
@@ -742,8 +744,8 @@
       "category": "nasi_mie",
       "status": "needs_method",
       "photo": "nasi-uduk.jpg",
-      "name_id": "Nasi Kuning Ramayani & Nasi Uduk",
-      "name_en": "",
+      "name_id": "Nasi Uduk",
+      "name_en": "Nasi Uduk",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [],
@@ -751,16 +753,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "featured_order": 5
     },
     {
       "id": "resep-34",
       "resep_num": 34,
       "category": "sayuran_salad",
       "status": "complete",
-      "photo": "",
+      "photo": "tumis-kangkung.jpg",
       "name_id": "Kangkung Belacan",
-      "name_en": "Water Spinach with Shrimp Paste",
+      "name_en": "Belacan Water Spinach",
       "headnote_id": "Tumis kangkung dengan belacan — salah satu hidangan sayuran paling populer di Ramayani. Sederhana, cepat, dan penuh rasa.",
       "headnote_en": "Stir-fried water spinach with shrimp paste — one of Ramayani's most popular vegetable dishes. Simple, quick, and full of flavour. Called Tumis Kangkung on the menu.",
       "ingredients_id": [
@@ -796,7 +799,8 @@
       "notes_id": "Untuk versi vegetarian, ganti kecap ikan dengan kecap asin dan hapus terasi dari sambal bajak.",
       "notes_en": "For a vegetarian version, replace fish sauce with soy sauce and use a vegetarian sambal.",
       "serves": "",
-      "date": ""
+      "date": "",
+      "featured_order": 8
     },
     {
       "id": "resep-35",
@@ -805,7 +809,7 @@
       "status": "complete",
       "photo": "gado-gado.jpg",
       "name_id": "Bumbu Gado-Gado Ramayani",
-      "name_en": "Ramayani Gado-Gado with Peanut Sauce",
+      "name_en": "Gado-Gado",
       "headnote_id": "Saus kacang khas Ramayani untuk Gado-Gado dan Sate — resep restoran yang menghasilkan 3 porsi sekaligus. Saus ini yang membuat Gado-Gado Ramayani berbeda.",
       "headnote_en": "Ramayani's peanut sauce for Gado-Gado and Satay — a restaurant recipe making 3 orders at once. This sauce is what set Ramayani's Gado-Gado apart. Served over tofu, egg, and steamed vegetables.",
       "ingredients_id": [
@@ -849,7 +853,8 @@
       "notes_id": "Resep skala restoran. Untuk memasak di rumah, kurangi semua bahan menjadi 1/10. Sajikan saus di atas tahu, telur, dan sayuran kukus.",
       "notes_en": "Restaurant-scale recipe. For home cooking reduce to 1/10. Serve the sauce over tofu, hard-boiled egg, and steamed vegetables.",
       "serves": "Makes 3 orders",
-      "date": ""
+      "date": "",
+      "featured_order": 3
     },
     {
       "id": "resep-36",
@@ -965,7 +970,7 @@
       "status": "complete",
       "photo": "sayur-lodeh.jpg",
       "name_id": "Bumbu Loteh (Sayur Lodeh)",
-      "name_en": "Sayur Lodeh — Vegetables in Coconut Peanut Broth",
+      "name_en": "Coconut Vegetable Soup",
       "headnote_id": "Sayur lodeh khas Ramayani — kuah kacang dan terasi yang diblender halus, disajikan dengan sayuran segar. Salah satu hidangan paling lembut dan menenangkan di menu.",
       "headnote_en": "Ramayani's Sayur Lodeh — a blended peanut and shrimp paste sauce served with vegetables in a luscious coconut milk broth. One of the most soothing dishes on the menu.",
       "ingredients_id": [
@@ -1005,7 +1010,8 @@
       "notes_id": "Ini adalah saus bumbu loteh. Untuk sajian lengkap, tambahkan santan dan sayuran sesuai selera.",
       "notes_en": "This is the bumbu sauce base. For the complete dish, add coconut milk and vegetables of your choice.",
       "serves": "",
-      "date": ""
+      "date": "",
+      "featured_order": 7
     },
     {
       "id": "resep-42",
@@ -1876,7 +1882,7 @@
       "status": "coming_soon",
       "photo": "rendang.jpg",
       "name_id": "Rendang",
-      "name_en": "Rendang",
+      "name_en": "Beef Rendang",
       "headnote_id": "Daging sapi mini yang dimasak perlahan dalam kari cabai merah, bawang putih, dan santan",
       "headnote_en": "Savory mini beef steaks slow cooked in a red-chili, garlic, and coconut curry",
       "ingredients_id": [],
@@ -1884,7 +1890,8 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "featured_order": 1
     },
     {
       "id": "cs-tahu-telor",
@@ -1910,7 +1917,7 @@
       "status": "coming_soon",
       "photo": "soto-ayam.jpg",
       "name_id": "Soto Ayam",
-      "name_en": "Chicken Coconut Broth",
+      "name_en": "Soto Ayam",
       "headnote_id": "Ayam, tauge, dan bihun dalam kuah santan aromatik dengan serai dan daun jeruk",
       "headnote_en": "Chicken, bean sprouts, and rice noodles in an aromatic coconut-milk broth with lemongrass and kaffir lime leaves",
       "ingredients_id": [],
@@ -1918,7 +1925,8 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "featured_order": 4
     },
     {
       "id": "cs-sambal-goreng-tahu-buncis",
@@ -2216,7 +2224,7 @@
       "status": "coming_soon",
       "photo": "",
       "name_id": "Sambal Terasi",
-      "name_en": "Sambal Terasi — Shrimp Paste Chili Sauce",
+      "name_en": "Sambal Terasi",
       "headnote_id": "Sambal terasi buatan sendiri khas Ramayani — aroma yang kuat dan rasa yang tak terlupakan.",
       "headnote_en": "Ramayani's homemade shrimp-paste chili sauce — bold, pungent, and utterly addictive.",
       "ingredients_id": [],
@@ -2224,7 +2232,26 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "featured_order": 9
+    },
+    {
+      "id": "cs-ayam-satay",
+      "resep_num": null,
+      "category": "ayam",
+      "status": "needs_method",
+      "photo": "satay-combination.jpg",
+      "name_id": "Sate Ayam",
+      "name_en": "Chicken Satay",
+      "headnote_id": "Sate ayam khas Ramayani — ditusuk dan dipanggang di atas arang, disajikan dengan bumbu kacang Ramayani.",
+      "headnote_en": "Ramayani's chicken satay — skewered, charcoal-grilled, and served with the restaurant's own peanut sauce.",
+      "ingredients_id": [],
+      "ingredients_en": [],
+      "method_id": [],
+      "method_en": [],
+      "notes_id": "",
+      "notes_en": "",
+      "featured_order": 2
     }
   ]
 }
