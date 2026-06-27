@@ -6,14 +6,14 @@ import './globals.css';
 const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-barlow-condensed',
+  variable: '--font-bc',
   display: 'swap',
 });
 
 const barlow = Barlow({
   subsets: ['latin'],
   weight: ['400', '500'],
-  variable: '--font-barlow',
+  variable: '--font-b',
   display: 'swap',
 });
 

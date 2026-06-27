@@ -53,7 +53,7 @@ function PressRow({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
         <p style={{
           fontSize: 11, fontWeight: 600, color: '#1a6a5a',
           textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6,
-          fontFamily: 'var(--font-barlow-condensed)',
+          fontFamily: 'var(--font-bc)',
         }}>
           {item.publication} &middot; {item.year}
         </p>
@@ -97,7 +97,7 @@ export default function AboutPage() {
           return (
             <div key={section.id} style={{ marginBottom: 56 }}>
               {title && (
-                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-barlow-condensed)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
+                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-bc)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
                   {title}
                 </h2>
               )}
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 </div>
               ) : (
                 body.split('\n\n').filter(p => p.trim() && !p.trim().startsWith('[')).map((para, i) => (
-                  <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-barlow)', fontWeight: 400 }}>
+                  <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-b)', fontWeight: 400 }}>
                     {para}
                   </p>
                 ))
@@ -130,12 +130,12 @@ export default function AboutPage() {
           return (
             <div key={section.id} style={{ borderTop: '1px solid #f0f0f0', paddingTop: 48, marginTop: 8 }}>
               {title && (
-                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-barlow-condensed)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
+                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-bc)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
                   {title}
                 </h2>
               )}
               {body.split('\n\n').filter(p => p.trim()).map((para, i) => (
-                <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-barlow)', fontWeight: 400 }}>
+                <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-b)', fontWeight: 400 }}>
                   {para}
                 </p>
               ))}
