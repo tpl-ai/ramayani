@@ -157,22 +157,17 @@ export default function HomePage() {
         }} />
         <div style={{
           position: 'absolute', bottom: 0, left: 0, right: 0,
-          padding: '0 32px 32px', textAlign: 'center',
+          padding: '0 32px 40px', textAlign: 'center',
         }}>
-          <h1 style={{
-            fontFamily: ARIAL_BLACK, fontWeight: 900, fontSize: 52,
-            color: '#fff', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 10,
-          }}>
-            Recipes
-          </h1>
           <p style={{
-            fontFamily: 'var(--font-b)', fontSize: 14,
-            color: 'rgba(255,255,255,0.92)', lineHeight: 1.55,
-            maxWidth: 400, margin: '0 auto',
+            fontFamily: 'var(--font-bc)', fontWeight: 700, fontSize: 28,
+            color: '#ffffff', lineHeight: 1.3,
+            maxWidth: 480, margin: '0 auto',
+            textShadow: '0 1px 4px rgba(0,0,0,0.4)',
           }}>
             {lang === 'id'
-              ? 'Masakan rumahan Indonesia dari dapur Ramayani, Los Angeles.'
-              : 'Classic Indonesian home cooking from Ramayani, a beloved Los Angeles kitchen.'}
+              ? 'Resep masakan Indonesia klasik dari Ramayani, restoran keluarga tercinta di Los Angeles.'
+              : 'Classic Indonesian recipes from Ramayani, a beloved Los Angeles family restaurant.'}
           </p>
         </div>
       </div>
