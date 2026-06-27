@@ -6,9 +6,9 @@ import { useLang } from '@/components/LanguageContext';
 import { allRecipes, getCategoriesWithStats } from '@/lib/recipes';
 import { storyMeta, storySections } from '@/lib/story';
 import type { Recipe } from '@/types/recipe';
-import type { StorySection, StoryClipping } from '@/types/story';
+import type { StorySection, PressItem } from '@/types/story';
 
-// ── recipe helpers ──────────────────────────────────────────────────────────
+// ── recipe helpers ─────────────────────────────────────────────────
 
 function rName(r: Recipe, lang: 'id' | 'en') {
   return lang === 'en' ? (r.name_en || r.name_id) : r.name_id;
@@ -34,17 +34,13 @@ function sortRecipes(recipes: Recipe[]): Recipe[] {
   });
 }
 
-// ── story helpers ────────────────────────────────────────────────────────────
-
-function isPlaceholder(text: string) {
-  return text.trim().startsWith('[');
-}
+// ── story helpers ──────────────────────────────────────────────────
 
 function bodyParas(text: string): string[] {
-  return text.split(/\n\n+/).map(p => p.trim()).filter(Boolean);
+  return text.split(/\n\n+/).map(p => p.trim()).filter(p => p && !p.startsWith('['));
 }
 
-// ── story sub-components ─────────────────────────────────────────────────────
+// ── sub-components ─────────────────────────────────────────────────
 
 function SectionImage({ src, caption }: { src: string; caption: string }) {
   const [err, setErr] = useState(false);
@@ -64,84 +60,132 @@ function SectionImage({ src, caption }: { src: string; caption: string }) {
   );
 }
 
-function ClippingCard({ c }: { c: StoryClipping }) {
-  const [err, setErr] = useState(false);
+function PressItemCard({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
+  const [err1, setErr1] = useState(false);
+  const [err2, setErr2] = useState(false);
+  const note = lang === 'en' ? (item.note_en ?? null) : (item.note_id ?? null);
   return (
     <div className="press-card">
-      {c.image && !err && (
+      {item.image && !err1 && (
         <img
-          src={`/images/${c.image}`}
-          alt={`${c.publication} ${c.year}`}
+          src={`/images/${item.image}`}
+          alt={`${item.publication} ${item.year}`}
           className="press-clipping-img img-fade"
           loading="lazy"
           onLoad={e => e.currentTarget.classList.add('loaded')}
-          onError={() => setErr(true)}
+          onError={() => setErr1(true)}
         />
       )}
-      <div>
-        <p className="press-pub">{c.publication}</p>
-        <p className="press-meta">
-          {c.year}{c.author ? ` · ${c.author}` : ''}{c.column ? ` · ${c.column}` : ''}
-        </p>
-        {c.quote_en && <p className="press-quote">&ldquo;{c.quote_en}&rdquo;</p>}
-      </div>
+      {item.image2 && !err2 && (
+        <img
+          src={`/images/${item.image2}`}
+          alt={`${item.publication} ${item.year} (2)`}
+          className="press-clipping-img img-fade"
+          loading="lazy"
+          onLoad={e => e.currentTarget.classList.add('loaded')}
+          onError={() => setErr2(true)}
+          style={{ marginTop: 8 }}
+        />
+      )}
+      <p className="press-pub">
+        {item.publication} <span className="press-meta">&middot; {item.year}</span>
+      </p>
+      {note && <p className="press-note">{note}</p>}
     </div>
   );
 }
 
-function StorySectionItem({ section, lang, first }: { section: StorySection; lang: 'id' | 'en'; first: boolean }) {
-  const heading = lang === 'en' ? section.heading_en : section.heading_id;
-  const body    = lang === 'en' ? section.body_en    : section.body_id;
-  const caption = lang === 'en' ? (section.image_caption_en || '') : (section.image_caption_id || '');
+function StorySectionBlock({
+  section,
+  lang,
+  isFirst,
+}: {
+  section: StorySection;
+  lang: 'id' | 'en';
+  isFirst: boolean;
+}) {
+  const title = lang === 'en' ? (section.title_en || '') : (section.title_id || '');
+  const caption = lang === 'en'
+    ? (section.image_caption_en || '')
+    : (section.image_caption_id || '');
 
-  const hasImage  = !!(section.image && section.image.trim());
-  const paras     = bodyParas(body);
-  const realParas = paras.filter(p => !isPlaceholder(p));
-  const allPlaceholder = realParas.length === 0;
+  if (section.type === 'press') {
+    return (
+      <div className="story-section-item">
+        {!isFirst && <div className="story-between-rule" />}
+        {title && (
+          <div className="story-heading-row">
+            <h2 className="story-heading">{title}</h2>
+            <div className="story-rule-line" aria-hidden="true" />
+          </div>
+        )}
+        <div className="press-grid">
+          {(section.items || []).map((item, i) => (
+            <PressItemCard key={i} item={item} lang={lang} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const body = lang === 'en' ? (section.body_en || '') : (section.body_id || '');
+  const paras = bodyParas(body);
+  const hasImage = typeof section.image === 'string' && section.image.length > 0;
 
   const bodyContent = (
     <div className="story-body">
-      {allPlaceholder
+      {paras.length === 0
         ? <p className="story-placeholder">Story coming soon — Hertha is telling us this one.</p>
-        : realParas.map((p, i) => <p key={i}>{p}</p>)
+        : paras.map((p, i) => <p key={i}>{p}</p>)
       }
     </div>
   );
 
   return (
     <div className="story-section-item">
-      {!first && <div className="story-between-rule" />}
-      <div className="story-heading-row">
-        <h2 className="story-heading">{heading}</h2>
-        <div className="story-rule-line" aria-hidden="true" />
-      </div>
+      {!isFirst && <div className="story-between-rule" />}
+      {title && (
+        <div className="story-heading-row">
+          <h2 className="story-heading">{title}</h2>
+          <div className="story-rule-line" aria-hidden="true" />
+        </div>
+      )}
       {hasImage ? (
         <div className="story-with-image">
           <SectionImage src={section.image!} caption={caption} />
           <div>{bodyContent}</div>
         </div>
-      ) : (
-        bodyContent
-      )}
-      {section.press_clippings && section.press_clippings.length > 0 && (
-        <div className="press-grid">
-          {section.press_clippings.map((c, i) => <ClippingCard key={i} c={c} />)}
-        </div>
-      )}
+      ) : bodyContent}
     </div>
   );
 }
 
-// ── recipe index sub-components ───────────────────────────────────────────────
+function StatusDot({ status }: { status: RowStatus }) {
+  const base: React.CSSProperties = {
+    display: 'inline-block',
+    width: 7,
+    height: 7,
+    flexShrink: 0,
+    marginRight: 10,
+  };
+  if (status === 'complete') {
+    return <span style={{ ...base, borderRadius: '50%', background: '#7a1515' }} />;
+  }
+  if (status === 'needs_method') {
+    return <span style={{ ...base, borderRadius: '50%', border: '1.5px solid #e8a020', background: 'transparent' }} />;
+  }
+  return <span style={{ ...base, width: 17 }} />;
+}
 
 function IndexRow({ recipe, lang }: { recipe: Recipe; lang: 'id' | 'en' }) {
   const [err, setErr] = useState(false);
-  const name   = rName(recipe, lang);
+  const name = rName(recipe, lang);
   const status = rowStatus(recipe);
   const showThumb = !!recipe.photo && !err;
+  const isActive = status !== 'coming_soon';
 
-  return (
-    <Link href={`/recipe/${recipe.id}`} className="index-row">
+  const inner = (
+    <>
       {showThumb && (
         <img
           src={`/images/${recipe.photo}`}
@@ -153,33 +197,38 @@ function IndexRow({ recipe, lang }: { recipe: Recipe; lang: 'id' | 'en' }) {
           onError={() => setErr(true)}
         />
       )}
-      <div className="index-row-body">
-        <span className="index-row-name">{name}</span>
-        {status === 'needs_method' && (
-          <span className="index-status index-status-needs">
-            · {lang === 'id' ? 'Cara memasak segera hadir' : 'Method coming soon'}
-          </span>
-        )}
-        {status === 'coming_soon' && (
-          <span className="index-status index-status-soon">
-            · {lang === 'id' ? 'Segera hadir' : 'Coming soon'}
-          </span>
-        )}
-      </div>
-      <span className="index-chevron" aria-hidden="true">&#8250;</span>
+      <StatusDot status={status} />
+      <span className="index-row-name" style={status === 'coming_soon' ? { color: '#aaaaaa' } : {}}>
+        {name}
+      </span>
+      {isActive && <span className="index-chevron" aria-hidden="true">&#8250;</span>}
+    </>
+  );
+
+  if (!isActive) {
+    return <div className="index-row index-row-inactive">{inner}</div>;
+  }
+
+  return (
+    <Link href={`/recipe/${recipe.id}`} className="index-row">
+      {inner}
     </Link>
   );
 }
 
-// ── main ─────────────────────────────────────────────────────────────────────
+// ── category ordering ──────────────────────────────────────────────
+
+const CATEGORY_ORDER = [
+  'ayam', 'daging', 'seafood', 'nasi_mie', 'sayuran_salad', 'sambal_saus',
+  'appetizer', 'desserts', 'bumbu_dasar', 'other', 'desserts_drinks', 'drinks',
+];
+
+// ── main ───────────────────────────────────────────────────────────
 
 export default function HomePage() {
   const { lang, toggle } = useLang();
   const [query, setQuery] = useState('');
   const cats = useMemo(() => getCategoriesWithStats(), []);
-
-  const setId = () => { if (lang !== 'id') toggle(); };
-  const setEn = () => { if (lang !== 'en') toggle(); };
 
   const searchResults = useMemo((): Recipe[] | null => {
     const q = query.trim().toLowerCase();
@@ -189,64 +238,90 @@ export default function HomePage() {
     );
   }, [query]);
 
-  const categoriesWithRecipes = useMemo(
-    () => cats.map(cat => ({
-      cat,
-      recipes: sortRecipes(allRecipes.filter(r => r.category === cat.key)),
-    })).filter(({ recipes }) => recipes.length > 0),
-    [cats]
-  );
+  const { pageBlocks, beforeSections, afterSections } = useMemo(() => {
+    const catMap = new Map(cats.map(c => [c.key, c]));
+    const ordered: typeof cats = [];
+    for (const key of CATEGORY_ORDER) {
+      if (catMap.has(key)) ordered.push(catMap.get(key)!);
+    }
+    for (const c of cats) {
+      if (!ordered.find(o => o.key === c.key)) ordered.push(c);
+    }
 
-  const quoteText = lang === 'en' ? storyMeta.page_subtitle_en : storyMeta.page_subtitle_id;
+    const catsWithRecipes = ordered
+      .map(cat => ({
+        cat,
+        recipes: sortRecipes(allRecipes.filter(r => r.category === cat.key)),
+      }))
+      .filter(({ recipes }) => recipes.length > 0);
+
+    const beforeSections = storySections.filter(s => s.position === 'before_recipes');
+    const afterSections  = storySections.filter(s => s.position === 'after_recipes');
+    const betweenMap = new Map(
+      storySections
+        .filter(s => s.position === 'between_categories' && s.after_category)
+        .map(s => [s.after_category!, s])
+    );
+
+    type Block =
+      | { kind: 'category'; cat: (typeof cats)[0]; recipes: Recipe[] }
+      | { kind: 'story'; section: StorySection };
+
+    const pageBlocks: Block[] = [];
+    for (const { cat, recipes } of catsWithRecipes) {
+      pageBlocks.push({ kind: 'category', cat, recipes });
+      const between = betweenMap.get(cat.key);
+      if (between) pageBlocks.push({ kind: 'story', section: between });
+    }
+
+    return { pageBlocks, beforeSections, afterSections };
+  }, [cats]);
 
   return (
     <>
-      {/* A. Cover — full viewport, background image, no text */}
-      <div className="cover" aria-hidden="true">
-        <div className="cover-bg" />
-        <div className="cover-overlay" />
-      </div>
-      <div className="cover-rule" />
-
-      {/* B. Restaurant name + language toggle */}
-      <div className="name-section">
-        <h1 className="name-title">Ramayani</h1>
-        <p className="name-subtitle">
-          {lang === 'id'
-            ? 'Koleksi Resep Restoran Ramayani'
-            : 'The Ramayani Restaurant Recipe Collection'}
+      {/* ── COOKBOOK OPENING ─────────────────────────────────────── */}
+      <div style={{ maxWidth: 680, margin: '0 auto', padding: '80px 24px 48px', textAlign: 'center' }}>
+        <p style={{ fontFamily: 'var(--sans)', fontSize: 13, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#888888', marginBottom: 24 }}>
+          {lang === 'id' ? 'Resep-Resep Ibu' : "My Mother's Recipes"}
         </p>
-        <p className="name-location">Los Angeles &middot; est. 1983</p>
-        <div className="home-lang" role="group" aria-label="Language">
-          <button className={`home-lang-btn${lang === 'id' ? ' active' : ''}`} onClick={setId}>
-            ID
-          </button>
-          <span className="home-lang-sep" aria-hidden="true">|</span>
-          <button className={`home-lang-btn${lang === 'en' ? ' active' : ''}`} onClick={setEn}>
-            EN
-          </button>
+        <h1 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(42px, 8vw, 72px)', fontWeight: 400, color: '#7a1515', letterSpacing: '0.12em', textTransform: 'uppercase', lineHeight: 1, marginBottom: 20 }}>
+          RAMAYANI
+        </h1>
+        <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 20, color: '#1c1c1c', marginBottom: 8 }}>
+          {lang === 'id' ? storyMeta.subtitle_id : storyMeta.subtitle_en}
+        </p>
+        <p style={{ fontFamily: 'var(--sans)', fontSize: 13, color: '#888888', letterSpacing: '0.04em', marginBottom: 40 }}>
+          {lang === 'id' ? storyMeta.tagline_id : storyMeta.tagline_en}
+        </p>
+        <div style={{ width: 40, height: 2, background: '#7a1515', margin: '0 auto 40px' }} />
+        <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 22, lineHeight: 1.65, color: '#1c1c1c', maxWidth: 540, margin: '0 auto 16px' }}>
+          &ldquo;{lang === 'id' ? storyMeta.founder_quote_id : storyMeta.founder_quote_en}&rdquo;
+        </p>
+        <p style={{ fontFamily: 'var(--sans)', fontSize: 12, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#888888', marginBottom: 40 }}>
+          &mdash;&nbsp;{storyMeta.founder_id}&nbsp;&middot;&nbsp;Los Angeles&nbsp;&middot;&nbsp;1983–2019
+        </p>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, justifyContent: 'center' }}>
+          <button
+            onClick={() => { if (lang !== 'id') toggle(); }}
+            style={{ fontFamily: 'var(--sans)', fontSize: 15, color: lang === 'id' ? '#7a1515' : '#aaaaaa', fontWeight: lang === 'id' ? 500 : 400, minHeight: 44, padding: '0 2px' }}
+          >ID</button>
+          <span style={{ color: '#aaaaaa', userSelect: 'none' }}>|</span>
+          <button
+            onClick={() => { if (lang !== 'en') toggle(); }}
+            style={{ fontFamily: 'var(--sans)', fontSize: 15, color: lang === 'en' ? '#7a1515' : '#aaaaaa', fontWeight: lang === 'en' ? 500 : 400, minHeight: 44, padding: '0 2px' }}
+          >EN</button>
         </div>
       </div>
+      <div style={{ height: 3, background: '#7a1515' }} />
 
-      {/* C. Founder quote — from story.json meta */}
-      <div className="founder">
-        <div className="founder-inner">
-          <span className="founder-mark" aria-hidden="true">&ldquo;</span>
-          <p className="founder-text">{quoteText}</p>
-          <p className="founder-attr">
-            &mdash;&nbsp;Hertha Tan, Founder &middot; Ramayani, Los Angeles &middot; est.&nbsp;1983
-          </p>
-        </div>
-      </div>
-
-      {/* D. Story sections — inline from story.json */}
+      {/* ── BEFORE-RECIPES STORY ──────────────────────────────────── */}
       <div className="story-wrap">
-        {storySections.map((section, i) => (
-          <StorySectionItem key={section.id} section={section} lang={lang} first={i === 0} />
+        {beforeSections.map((section, i) => (
+          <StorySectionBlock key={section.id} section={section} lang={lang} isFirst={i === 0} />
         ))}
       </div>
 
-      {/* E. Search */}
+      {/* ── SEARCH ────────────────────────────────────────────────── */}
       <div className="home-search">
         <div className="home-search-inner">
           <input
@@ -254,7 +329,7 @@ export default function HomePage() {
             type="search"
             value={query}
             onChange={e => setQuery(e.target.value)}
-            placeholder={lang === 'id' ? 'Cari resep... / Search recipes...' : 'Cari resep... / Search recipes...'}
+            placeholder={lang === 'id' ? 'Cari resep...' : 'Search recipes...'}
             aria-label={lang === 'id' ? 'Cari resep' : 'Search recipes'}
           />
           <span className="home-search-icon" aria-hidden="true">
@@ -273,7 +348,7 @@ export default function HomePage() {
         )}
       </div>
 
-      {/* F. Recipe index */}
+      {/* ── RECIPE INDEX ──────────────────────────────────────────── */}
       <main>
         {searchResults !== null ? (
           <div className="recipe-index">
@@ -286,19 +361,45 @@ export default function HomePage() {
             )}
           </div>
         ) : (
-          <div className="recipe-index">
-            {categoriesWithRecipes.map(({ cat, recipes }) => (
-              <div key={cat.key} id={cat.key} className="index-category">
-                <div className="index-cat-head">
-                  <h2 className="index-cat-title">
-                    {lang === 'id' ? cat.name_id : cat.name_en}
-                  </h2>
-                  <div className="index-cat-rule" aria-hidden="true" />
-                </div>
-                {recipes.map(r => <IndexRow key={r.id} recipe={r} lang={lang} />)}
+          <>
+            {/* Legend */}
+            <div className="index-legend-wrap">
+              <div className="index-legend">
+                <span className="legend-item">
+                  <span style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', background: '#7a1515', marginRight: 7, flexShrink: 0, verticalAlign: 'middle' }} />
+                  {lang === 'id' ? 'Resep lengkap' : 'Full recipe'}
+                </span>
+                <span className="legend-item">
+                  <span style={{ display: 'inline-block', width: 7, height: 7, borderRadius: '50%', border: '1.5px solid #e8a020', background: 'transparent', marginRight: 7, flexShrink: 0, verticalAlign: 'middle' }} />
+                  {lang === 'id' ? 'Bahan saja' : 'Ingredients only'}
+                </span>
+                <span className="legend-item" style={{ opacity: 0.45 }}>
+                  <span style={{ display: 'inline-block', width: 7, height: 7, marginRight: 7, flexShrink: 0 }} />
+                  {lang === 'id' ? 'Segera hadir' : 'Coming soon'}
+                </span>
               </div>
-            ))}
-            {/* G-link. Write to Hertha */}
+            </div>
+
+            {/* Category blocks, woven with between-categories story sections */}
+            {pageBlocks.map((block) =>
+              block.kind === 'category' ? (
+                <div key={block.cat.key} id={block.cat.key} style={{ maxWidth: 'var(--max-w)', margin: '0 auto', padding: '32px var(--pad) 0' }}>
+                  <div className="index-cat-head">
+                    <h2 className="index-cat-title">
+                      {lang === 'id' ? block.cat.name_id : block.cat.name_en}
+                    </h2>
+                    <div className="index-cat-rule" aria-hidden="true" />
+                  </div>
+                  {block.recipes.map(r => <IndexRow key={r.id} recipe={r} lang={lang} />)}
+                </div>
+              ) : (
+                <div key={block.section.id} className="story-wrap">
+                  <StorySectionBlock section={block.section} lang={lang} isFirst={true} />
+                </div>
+              )
+            )}
+
+            {/* Write to Hertha */}
             <div className="write-link-row">
               <Link href="/write-to-hertha" className="write-link-text">
                 {lang === 'id'
@@ -306,15 +407,23 @@ export default function HomePage() {
                   : 'Did you cook one of these dishes? Write to Hertha →'}
               </Link>
             </div>
-          </div>
+            <div style={{ height: 48 }} />
+          </>
         )}
       </main>
 
-      {/* G. Footer */}
+      {/* ── AFTER-RECIPES SECTIONS ────────────────────────────────── */}
+      {afterSections.length > 0 && (
+        <div className="story-wrap">
+          {afterSections.map((section, i) => (
+            <StorySectionBlock key={section.id} section={section} lang={lang} isFirst={i === 0} />
+          ))}
+        </div>
+      )}
+
+      {/* ── FOOTER ────────────────────────────────────────────────── */}
       <footer className="site-footer">
-        <p className="footer-copy">
-          &copy; Hertha Tan &middot; Ramayani &middot; Los Angeles
-        </p>
+        <p className="footer-copy">&copy; Hertha Tan &middot; Ramayani &middot; Los Angeles</p>
       </footer>
     </>
   );

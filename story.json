@@ -1,124 +1,148 @@
 {
   "meta": {
-    "page_title_en": "The Ramayani Story",
-    "page_title_id": "Kisah Ramayani",
-    "page_subtitle_en": "From Cianjur to California — a family, a restaurant, and four decades of Indonesian cooking in Los Angeles",
-    "page_subtitle_id": "Dari Cianjur ke California — sebuah keluarga, sebuah restoran, dan empat dekade masakan Indonesia di Los Angeles"
+    "title_id": "Resep-Resep Ramayani",
+    "title_en": "Ramayani",
+    "subtitle_id": "Masakan Hertha Tan",
+    "subtitle_en": "Hertha Tan's Recipes",
+    "tagline_id": "Jawa Barat ke Los Angeles, 1983–2019",
+    "tagline_en": "West Java to Los Angeles, 1983–2019",
+    "founder_id": "Hertha Tan",
+    "founder_quote_id": "Saya memasak untuk keluarga, untuk teman-teman, dan untuk siapa saja yang lapar.",
+    "founder_quote_en": "I cook for family, for friends, and for anyone who is hungry.",
+    "cover_image": "nasi-uduk.jpg",
+    "cover_caption_id": "Nasi Uduk — sajian pembuka di Ramayani selama 36 tahun",
+    "cover_caption_en": "Nasi Uduk — the dish that opened every table at Ramayani for 36 years"
   },
   "sections": [
     {
-      "id": "cianjur",
-      "heading_en": "Cianjur to California",
-      "heading_id": "Dari Cianjur ke California",
-      "body_en": "[PLACEHOLDER — To be filled through conversations with Hertha. Suggested content: Her childhood in Cianjur, West Java — a small city in the highlands known for its rice fields and gentle climate. Growing up the eldest of five children with four younger brothers. Her father's cooking and how she learned. The flavors of her childhood — what she remembers most. The decision to come to the United States in 1970, seeking a better life for her young family. What Los Angeles looked like when she arrived.]",
-      "body_id": "[PLACEHOLDER — Diisi melalui percakapan dengan Hertha. Masa kecil di Cianjur, Jawa Barat. Tumbuh sebagai anak tertua dari lima bersaudara dengan empat adik laki-laki. Masakan ayahnya dan bagaimana ia belajar memasak. Keputusan untuk datang ke Amerika Serikat pada tahun 1970.]",
-      "image": "",
-      "image_caption_en": "",
-      "image_caption_id": ""
+      "id": "hertha",
+      "position": "before_recipes",
+      "type": "story",
+      "title_id": "Hertha",
+      "title_en": "Hertha",
+      "image": null,
+      "body_id": "Nama ibu saya adalah Hertha Tan. Dia lahir di Cianjur, Jawa Barat, anak sulung dari lima bersaudara — empat di antaranya laki-laki. Ayah dan ibunya memasak; dapur di rumah keluarga itu selalu hidup, dan resep-resep yang ada dalam buku ini sebagian besar berasal dari warisan itu — diturunkan dari orang tua, dari saudara, dari teman-teman yang memasak hal serupa di rumah masing-masing.\n\nMasakan ibu berakar pada tradisi Jawa Barat — bumbu yang segar, banyak sayuran, sambal yang dibuat dari tangan. Tapi memasak bukan satu-satunya kecintaannya. Sejak remaja, kakek memperkenalkan dia pada dansa ballroom, dan kecintaan itu tidak pernah padam. Di usianya yang ke-86, dia masih berdansa.\n\nPada tahun 1970, keluarga kami pindah ke Amerika Serikat. Ibu, ayah, saya yang baru berusia lima tahun, dan adik perempuan saya. Kami tidak tahu persis apa yang menanti di sana. Hidup di Indonesia cukup stabil — banyak teman ibu yang memilih untuk tetap tinggal. Tapi kami pergi, untuk membangun sesuatu yang lain.\n\nDelapan tahun berlalu sebelum kami cukup mapan untuk bisa kembali mengunjungi Indonesia. Ketika saya akhirnya kembali untuk pertama kalinya, saya sudah berusia tiga belas tahun. Banyak yang berubah — termasuk ibu. Di Amerika, dia pernah menjalankan usaha garmen. Baru kemudian, ketika babak itu berakhir, dia mulai memasak dengan sungguh-sungguh. Pertama untuk keluarga. Lalu untuk teman-teman. Akhirnya, untuk semua orang.",
+      "body_en": "My mother's name is Hertha Tan. She was born in Cianjur, West Java, the eldest of five children — four of them boys. Her parents cooked; the kitchen in that family house was always alive, and the recipes in this book trace largely to that inheritance — passed down from parents, from relatives, from friends who cooked the same things in their own homes.\n\nMy mother's cooking is rooted in the West Java tradition — fresh spice pastes, many vegetables, sambals made by hand. But cooking was not her only passion. Her father had introduced her to ballroom dancing as a teenager, and that love never left her. At 86, she still dances.\n\nIn 1970, our family moved to the United States. My mother, my father, me at five years old, and my younger sister. We didn't know exactly what lay ahead. Life in Indonesia was fairly stable — many of my mother's friends chose to stay. But we left, to build something different.\n\nEight years passed before we were settled enough to return and visit Indonesia. When I finally went back for the first time, I was thirteen. Much had changed — including my mother. In America, she had run a garment manufacturing business. It was only when that chapter closed that she began to cook in earnest. First for family. Then for friends. Eventually, for everyone."
     },
     {
       "id": "reseda",
-      "heading_en": "The First Kitchen — Reseda, 1983",
-      "heading_id": "Dapur Pertama — Reseda, 1983",
-      "body_en": "[PLACEHOLDER — To be filled through conversations with Hertha. Suggested content: How the idea of a restaurant first came to her. Finding the space on Amigo Avenue in Reseda. What it looked like — the small dining room, the kitchen she built. The first customers. The dishes she chose to open with and why. What those early years were like — the struggles, the small victories, the regulars who kept coming back.]",
-      "body_id": "[PLACEHOLDER — Bagaimana ide membuka restoran pertama kali muncul. Menemukan tempat di Amigo Avenue, Reseda. Pelanggan pertama. Hidangan yang dipilih untuk dibuka dan alasannya.]",
+      "position": "before_recipes",
+      "type": "story",
+      "title_id": "Ramayana, Reseda",
+      "title_en": "Ramayana, Reseda",
       "image": "reseda-floorplan.jpg",
-      "image_caption_en": "Original floor plan of the Reseda restaurant on Amigo Avenue, drawn by Hwie Siauw Graphic Design, Northridge — the founding document of Ramayani",
-      "image_caption_id": "Denah asli restoran Reseda di Amigo Avenue, digambar oleh Hwie Siauw Graphic Design — dokumen pendirian Ramayani"
+      "image_caption_id": "Denah lantai restoran Reseda — sebuah diner kecil yang menjadi rumah pertama Ramayana",
+      "image_caption_en": "The Reseda floor plan — a small former diner that became the first home of Ramayana",
+      "body_id": "Pada tahun 1983, ibu dan ayah membuka sebuah restoran. Namanya waktu itu adalah Ramayana — diambil dari epos Sansekerta yang terkenal, kisah Rama dan Sinta yang sudah berusia ribuan tahun. Lokasinya di Amigo Avenue, Reseda, di lembah San Fernando. Tempatnya adalah sebuah diner kecil yang sudah ada sebelumnya; tata letaknya dipertahankan.\n\nSaya waktu itu sudah pergi ke perguruan tinggi. Memikirkannya sekarang — ibu dan ayah memulai bisnis baru di usia paruh baya, setelah pindah ke negara baru tanpa tahu persis apa yang menanti. Mendirikan Ramayana adalah hal yang berani, tapi mungkin bukan yang paling berani yang pernah mereka lakukan.\n\nRumah keluarga kami lebih dekat ke Reseda, tapi itu tidak membuat hari-hari mereka menjadi singkat. Setiap pagi ibu dan ayah berangkat berkeliling Los Angeles untuk mencari bahan-bahan terbaik. Ke pasar Vietnam BangLuck di dekat sini. Ke pasar-pasar Tionghoa di San Gabriel Valley. Ke gudang grosir besar — Lexi, kalau tidak salah, di downtown LA. Ke Chinatown untuk ayam segar dan otak-otak ikan dari toko-toko tertentu yang sudah ibu percaya. Sore harinya mereka kembali ke restoran untuk mulai memasak dan mempersiapkan makan malam.\n\nItu yang ibu selalu yakini: bahan-bahan yang baik adalah setengah dari masakan. Untuk hidangan yang memakai cabai merah, dia menggunakan cabai dari Meksiko — lebih segar, lebih tajam. Untuk rendang, daging sapi Amerika jauh lebih baik dari yang bisa ditemukan di Jawa Barat. Dia pernah berkata bahwa pelanggan Indonesia menyukai masakan Ramayani justru karena bahannya berbeda dan lebih baik dari yang biasa mereka makan di rumah.",
+      "body_en": "In 1983, my mother and father opened a restaurant. Its name then was Ramayana — taken from the ancient Sanskrit epic, the story of Rama and Sita that is thousands of years old. The location was on Amigo Avenue in Reseda, in the San Fernando Valley. The space had been a small diner before them; they kept the layout as it was.\n\nI was already away at college by then. Thinking about it now — my mother and father starting a new business in middle age, after moving to a new country without knowing exactly what lay ahead. Opening Ramayana was a brave thing to do, though perhaps not the bravest thing they had ever done.\n\nOur family home was closer to Reseda, but that didn't make their days short. Every morning my mother and father would set out across Los Angeles to find the best ingredients. To the Vietnamese market BangLuck nearby. To the Chinese markets in the San Gabriel Valley. To the large warehouse grocer — Lexi, I think — in downtown LA. To Chinatown for fresh poultry and fish cakes from specific shops my mother had come to trust. By afternoon they would be back at the restaurant, cooking and preparing for the dinner service.\n\nThis was what my mother always believed: good ingredients are half the cooking. For dishes that called for red chilli, she used chillies sourced from Mexico — fresher, sharper. For rendang, American beef was far superior to what you could find in West Java. She used to say that Indonesian customers loved Ramayani's food precisely because the ingredients were both different and better than what they knew from home."
     },
     {
       "id": "westwood",
-      "heading_en": "Westwood — Where Los Angeles Found Ramayani",
-      "heading_id": "Westwood — Tempat Los Angeles Menemukan Ramayani",
-      "body_en": "[PLACEHOLDER — To be filled through conversations with Hertha. Suggested content: The move to 1777 Westwood Boulevard — her son's suggestion that Westwood was the right location. What Westwood was like in those years — a vibrant destination, busy with students, cinemas, and restaurants. The Indonesian and Malaysian students from UCLA and USC who discovered Ramayani and made it their home away from home. How the community sustained the restaurant in its early Westwood years. The moment when Los Angeles at large began to take notice.]",
-      "body_id": "[PLACEHOLDER — Pindah ke 1777 Westwood Boulevard. Westwood pada masa itu — tujuan yang ramai dengan mahasiswa dan bioskop. Komunitas mahasiswa Indonesia dan Malaysia dari UCLA dan USC yang menjadikan Ramayani sebagai rumah kedua mereka.]",
+      "position": "before_recipes",
+      "type": "story",
+      "title_id": "Ramayani, Westwood",
+      "title_en": "Ramayani, Westwood",
       "image": "la-weekly-1.jpg",
-      "image_caption_en": "The Ramayani storefront on Westwood Boulevard — photographed by Anne Fishbein for LA Weekly, 1988",
-      "image_caption_id": "Toko Ramayani di Westwood Boulevard — difoto oleh Anne Fishbein untuk LA Weekly, 1988"
+      "image_caption_id": "Ramayani di 1777 Westwood Boulevard — foto dari LA Weekly",
+      "image_caption_en": "Ramayani at 1777 Westwood Boulevard — photographed for the LA Weekly",
+      "body_id": "Ketika restoran pindah ke Westwood — di 1777 Westwood Boulevard, dekat UCLA — namanya berubah juga. Ramayana menjadi Ramayani. Satu huruf yang berbeda, tapi artinya berubah sepenuhnya: dari nama yang diambil dari mitologi, menjadi nama yang menjadi milik sendiri.\n\nWestwood adalah kawasan universitas. Mahasiswa dari seluruh dunia belajar di sini, dan banyak dari mereka — mahasiswa Indonesia, Malaysia, Singapura — menemukan Ramayani sebagai tempat makan yang terasa seperti rumah. Tapi Ramayani juga menjadi tempat yang dikenal luas di kalangan komunitas Indonesia di Los Angeles — orang-orang yang tahu apa yang mereka makan dan tahu betul artinya. Dari mulut ke mulut, nama Ramayani beredar di kalangan itu.\n\nLalu datanglah yang lainnya: profesor universitas, pelancong yang pernah tinggal di Asia Tenggara, orang-orang Amerika yang penasaran. Mereka datang karena membaca resensi di koran, karena dibawa oleh teman, karena mencium aroma dari dapur saat berjalan di trotoar Westwood Boulevard.\n\nSatu kesulitan yang tidak pernah berubah: parkir. Sekitar sepuluh petak parkir untuk lima bisnis di blok itu. Pelanggan yang sudah hafal tahu bahwa mencari parkir dan mengisi meteran adalah bagian dari ritualnya — harga yang pantas untuk makan di sana.",
+      "body_en": "When the restaurant moved to Westwood — at 1777 Westwood Boulevard, near UCLA — the name changed too. Ramayana became Ramayani. One letter different, but the meaning shifted entirely: from a name borrowed from mythology to a name that was entirely their own.\n\nWestwood is a university neighbourhood. Students from all over the world study here, and many of them — Indonesian, Malaysian, Singaporean students — found Ramayani to be a place that felt like home. But Ramayani also became well known in the broader Indonesian community in Los Angeles — people who knew exactly what they were eating and what it meant. Word moved through those circles.\n\nThen came the others: university professors, travellers who had lived in Southeast Asia, curious Americans. They came because they had read a review in the newspaper, because a friend brought them, because they smelled the kitchen while walking along Westwood Boulevard.\n\nOne difficulty that never changed: parking. About ten spaces shared among five businesses on the block. Regulars knew that finding a spot and feeding the meter was part of the ritual — a fair price for eating there."
     },
     {
-      "id": "rijsttafel",
-      "heading_en": "The Rijsttafel — A Feast With a History",
-      "heading_id": "Rijsttafel — Perjamuan Dengan Sejarah",
-      "body_en": "The rijsttafel — Dutch for 'rice table' — is one of the great ceremonial meals of the world, and one of the most unusual legacies of the colonial era. Originally a Dutch invention in colonial Indonesia, it was never a native Indonesian way of eating. Dutch colonists, enchanted by the variety of Indonesian flavours, created a formal meal in which a large bowl of steamed rice sits at the center, surrounded by as many as fifteen or twenty small dishes — meats, fish, vegetables, sambals, pickles, and sweets — each representing a different island, region, or tradition of the archipelago.\n\nHertha brought the rijsttafel to Los Angeles and made it the centerpiece of Ramayani's identity. For $13.95 per person, guests received six appetizers and eight entrees, all served around a bowl of steamed rice — a feast that the LA Herald Examiner called 'a heck of a feast.' It was the dish that critics returned to describe again and again. It was the experience that made Ramayani not just a restaurant, but a destination.\n\n[PLACEHOLDER — To be filled through conversations with Hertha: Her memories of the rijsttafel at Ramayani. Which dishes she always included. What the table looked like when it arrived. The reactions of guests who had never experienced it before.]",
-      "body_id": "Rijsttafel — bahasa Belanda untuk 'meja nasi' — adalah salah satu jamuan seremonial terbesar di dunia. Awalnya merupakan ciptaan Belanda di Indonesia kolonial, bukan cara makan asli Indonesia. Penjajah Belanda, terpesona oleh ragam cita rasa Indonesia, menciptakan jamuan formal di mana semangkuk besar nasi putih diletakkan di tengah, dikelilingi oleh hingga lima belas atau dua puluh hidangan kecil.\n\nHertha membawa rijsttafel ke Los Angeles dan menjadikannya pusat identitas Ramayani.\n\n[PLACEHOLDER — Kenangan Hertha tentang rijsttafel di Ramayani. Hidangan yang selalu ia sertakan. Seperti apa tampilannya saat disajikan.]",
-      "image": "rijsttafel.jpg",
-      "image_caption_en": "The Ramayani Rijsttafel — a full spread of Indonesian dishes served together, the signature experience of the restaurant",
-      "image_caption_id": "Rijsttafel Ramayani — sajian lengkap hidangan Indonesia, pengalaman khas restoran"
+      "id": "the-family",
+      "position": "before_recipes",
+      "type": "story",
+      "title_id": "Keluarga",
+      "title_en": "The Family",
+      "image": null,
+      "body_id": "Ramayani bukan hanya milik ibu. Ia dijalankan oleh keluarga — dan di sini, keluarga artinya lebih luas dari yang tertulis di akta kelahiran.\n\nAyah saya, Jim, ada di kantor kecil di belakang setiap hari — mengerjakan pembukuan, mengurus administrasi, dan setiap pagi mengantar ibu berkeliling Los Angeles untuk belanja bahan. Bibi Rose dan Paman John, setelah pensiun, datang ke restoran setiap hari. Bibi Rose ada di luar, menyambut tamu yang datang. Paman John duduk di depan — dengan kopi, selalu dengan kopi — dan di akhir malam dia yang menghitung berapa meja yang sudah dilayani. Bibi Rose hidup sampai hampir usia seratus tahun. Paman John sampai akhir delapan puluhan. Keduanya menghabiskan hari-hari terakhir aktif mereka di Ramayani.\n\nAda juga Ko Aming — anggota keluarga besar yang bekerja di restoran dan menjadi bagian dari ritme hariannya. Salah satu tugasnya yang paling diingat adalah membuat Sambal Terasi. Terasi harus dibakar dulu sebelum diulek — tapi asapnya kuat dan tajam, tidak menyenangkan bagi bisnis-bisnis tetangga. Maka setiap kali sambal ini harus dibuat, Ko Aming datang di tengah malam, ketika jalan sudah sepi, untuk membakar terasinya.\n\nSambal Terasi dan Sambal Bajak Ramayani pada akhirnya dijual di supermarket-supermarket Asia di seluruh Los Angeles, didistribusikan oleh teman baik keluarga, Hasnam dari Empire International, yang mendorong kami untuk memproduksinya. Volumenya tetap kecil — tidak pernah benar-benar besar. Tapi itulah sambal yang orang-orang bawa pulang ke rumah.\n\nRitme setiap hari terasa lambat dan bermakna. Pagi berangkat belanja. Siang kembali ke restoran untuk masak. Bibi Rose dan Paman John membuka untuk makan siang. Tutup jam sembilan malam. Banyak pelanggan yang tinggal di lingkungan sekitar, datang lagi dan lagi, sampai ibu hafal nama mereka.",
+      "body_en": "Ramayani did not belong to my mother alone. It was run by family — and here, family meant something wider than what appears on a birth certificate.\n\nMy father Jim was in the small back office every day — handling the accounts, managing the administration, and every morning driving my mother across Los Angeles to do the shopping. Aunt Rose and Uncle John, after they retired, came to the restaurant every day. Aunt Rose was outside, greeting guests as they arrived. Uncle John sat at the front — with his coffee, always with his coffee — and at the end of each night he was the one who tallied how many covers had been served. Aunt Rose lived to nearly a hundred. Uncle John into his late eighties. Both of them spent their last active years at Ramayani.\n\nThere was also Ko Aming — an extended family member who worked at the restaurant and was part of its daily rhythm. One of his most remembered tasks was making the Sambal Terasi. The shrimp paste has to be roasted before it is ground — but the smoke it produces is strong and sharp, unpleasant for the neighbouring businesses. So whenever this sambal needed to be made, Ko Aming would come in the middle of the night, when the street was quiet, to do the roasting.\n\nRamayani's Sambal Terasi and Sambal Bajak were eventually sold in Asian supermarkets across Los Angeles, distributed by a good family friend, Hasnam from Empire International, who encouraged us to produce them. The volume stayed small — it never really grew large. But it was the sambal people took home.\n\nThe rhythm of each day was slow and full. Morning for shopping. Afternoon back at the restaurant to cook. Aunt Rose and Uncle John opened for lunch. Closed at nine in the evening. Many customers lived in the neighbourhood and came again and again, until my mother knew their names."
     },
     {
       "id": "press",
-      "heading_en": "What the Critics Said",
-      "heading_id": "Kata Para Kritikus",
-      "body_en": "Over nearly four decades, Ramayani earned consistent praise from Los Angeles's most respected food writers. From neighborhood columns to the front page of the Los Angeles Times Food section, the critics kept returning — and kept finding something worth writing about.",
-      "body_id": "Selama hampir empat dekade, Ramayani mendapat pujian konsisten dari para penulis kuliner terkemuka Los Angeles. Dari kolom lokal hingga halaman depan seksi Food Los Angeles Times, para kritikus terus kembali — dan terus menemukan sesuatu yang layak ditulis.",
-      "image": "",
-      "image_caption_en": "",
-      "image_caption_id": "",
-      "press_clippings": [
+      "position": "between_categories",
+      "after_category": "ayam",
+      "type": "press",
+      "title_id": "Apa Kata Mereka",
+      "title_en": "What They Said",
+      "items": [
         {
-          "publication": "Los Angeles Herald Examiner",
+          "publication": "LA Herald Examiner",
           "year": "1988",
-          "author": "Merrill Shindler",
-          "column": "LA Eats",
-          "quote_en": "Indonesian food was very probably the original grazing cuisine, for there are few other styles of cooking that squeeze so many different flavors, tastes and textures into a single meal. Even after I was quite full, I was tempted to order more, just to keep the tastes coming.",
-          "image": "la-herald-examiner-1988.jpg"
+          "image": "la-herald-examiner-1988.jpg",
+          "quote_id": null,
+          "quote_en": null
         },
         {
           "publication": "LA Weekly",
           "year": "1988",
-          "author": "Karen Kaplan",
-          "column": "Java Jive",
-          "quote_en": "From an archipelago of more than 3,000 islands comes this mysterious gastronomy — one of the most intriguing sweet and spicy cuisines on Earth. Chefs alchemize humble ingredients with coconuts, peanuts, hot chiles, exotic root spices, fragrant leaves and aromatic flowers and buds into dishes of depth and distinction.",
-          "image": "la-weekly-2.jpg"
+          "image": "la-weekly-2.jpg",
+          "quote_id": null,
+          "quote_en": null
         },
         {
-          "publication": "Travelscope Newsletter",
+          "publication": "Travelscope",
           "year": "1989",
-          "author": "Joseph Rosendo",
-          "column": "Food and Wine Hotline",
-          "quote_en": "If you like the food of Thailand or China, you'll love Indonesian food. Ramayani in Westwood captures the subtle tastes of the cuisine.",
-          "image": "travelscope-1989.jpg"
+          "image": "travelscope-1989.jpg",
+          "quote_id": null,
+          "quote_en": null
         },
         {
-          "publication": "Los Angeles Times",
+          "publication": "LA Times",
           "year": "2002",
-          "author": "Barbara Hansen",
-          "column": "Food — Front Page",
-          "quote_en": "Ramayani's soto ayam is especially pretty: a bowlful of pale yellow chicken broth colored with turmeric and lightened with coconut milk. Hard-boiled egg slices circle the rim of the bowl. In the center are pieces of chicken and crunchy bits of fried onion. The key seasonings are lemongrass and kaffir lime leaves.",
-          "image": "la-times-soup-page-1.jpg"
+          "image": "la-times-soup-page-1.jpg",
+          "image2": "la-times-soup-page2b.jpg",
+          "quote_id": null,
+          "quote_en": null,
+          "note_id": "Halaman depan seksi makanan — Soto Ayam ibu masuk LA Times.",
+          "note_en": "Front page of the food section — my mother's Soto Ayam made the LA Times."
         }
       ]
     },
     {
-      "id": "recipes-origins",
-      "heading_en": "The Recipes and Their Stories",
-      "heading_id": "Resep dan Kisah di Baliknya",
-      "body_en": "Every recipe in this collection has a story. Some are family recipes inherited from Hertha's father, carried from Cianjur across the Pacific. Some were created at Ramayani and became originals — dishes that existed nowhere else. Some were inspired by visits to Singapore and Java, where Hertha returned periodically to taste, learn, and bring something new back to Westwood.\n\n[PLACEHOLDER — This section will grow as Hertha shares the stories behind individual dishes. Stories to collect: Which recipes came from her father. Which dishes she invented herself and what inspired them. Which came from Singapore visits. Which were customer favorites and why. Any dishes with particularly strong memories attached to them.]\n\nThese stories are being gathered now, in conversations with Hertha, and will be added here as they are told.",
-      "body_id": "Setiap resep dalam koleksi ini memiliki ceritanya. Beberapa adalah resep keluarga warisan ayah Hertha, dibawa dari Cianjur melintasi Pasifik. Beberapa diciptakan di Ramayani dan menjadi resep orisinal. Beberapa terinspirasi dari kunjungan ke Singapura dan Jawa.\n\n[PLACEHOLDER — Bagian ini akan berkembang seiring Hertha berbagi kisah di balik hidangan-hidangan individual.]",
-      "image": "",
-      "image_caption_en": "",
-      "image_caption_id": ""
+      "id": "rijsttafel",
+      "position": "between_categories",
+      "after_category": "nasi_mie",
+      "type": "story",
+      "title_id": "Rijsttafel",
+      "title_en": "The Rice Table",
+      "image": "rijsttafel.jpg",
+      "image_caption_id": "Rijsttafel Ramayani — pintu masuk bagi tamu yang belum pernah makan masakan Indonesia",
+      "image_caption_en": "Ramayani's rijsttafel — the entry point for guests who had never eaten Indonesian food",
+      "body_id": "Ada satu cara makan di Ramayani yang membuat tamu yang belum pernah mencicipi masakan Indonesia langsung jatuh cinta: rijsttafel — harfiahnya 'meja nasi' dalam bahasa Belanda. Banyak hidangan kecil disajikan sekaligus, mengelilingi nasi, sehingga tamu bisa merasakan semuanya dalam sekali kunjungan.\n\nBagi yang tidak tahu harus memesan apa, ini adalah cara yang sempurna untuk mulai. Dari satu meja, mereka bisa mencicipi rendang, soto ayam, gado-gado, ayam bakar, sayur lodeh. Banyak yang kemudian kembali lagi — kali ini langsung memesan satu hidangan, karena sudah tahu mana yang paling mereka suka.",
+      "body_en": "There was one way of eating at Ramayani that turned first-time visitors to Indonesian food into regulars: the rijsttafel — literally 'rice table' in Dutch. Many small dishes served all at once, surrounding the rice, so that guests could taste everything in a single visit.\n\nFor those who didn't know what to order, it was the perfect way to begin. From one table they could taste rendang, soto ayam, gado-gado, ayam bakar, sayur lodeh. Many came back — this time ordering a single dish, because now they knew which one was theirs."
     },
     {
       "id": "spice-history",
-      "heading_en": "Why Indonesian Food Tastes the Way It Does",
-      "heading_id": "Mengapa Masakan Indonesia Memiliki Cita Rasa yang Khas",
-      "body_en": "Indonesia is an archipelago of more than 3,000 islands stretching across 3,000 miles of ocean. For centuries it was the source of the world's most precious spices — cloves from Maluku, nutmeg from the Banda Islands, pepper from Sumatra. European powers fought wars over these islands. The Dutch East India Company, founded in 1602, built its entire commercial empire on controlling their trade.\n\nFour hundred years of that history left its mark on Indonesian cooking. Generations of intimate knowledge of spices — growing them, trading them, combining them — created one of the world's most complex and layered cuisines. Arabian traders brought new techniques. Chinese settlers brought their methods. Portuguese and Dutch colonists added their own influences. Indonesian cooks absorbed all of it and made it entirely their own.\n\nHertha Tan grew up in the middle of this culinary history. The recipes in this collection are her expression of it — dishes that carry centuries of the Spice Islands in every bite.",
-      "body_id": "Indonesia adalah kepulauan yang terdiri dari lebih dari 3.000 pulau. Selama berabad-abad ia menjadi sumber rempah-rempah paling berharga di dunia — cengkeh dari Maluku, pala dari Kepulauan Banda, lada dari Sumatra. Empat ratus tahun sejarah itu meninggalkan bekasnya pada masakan Indonesia.\n\nHertha Tan tumbuh di tengah sejarah kuliner ini. Resep-resep dalam koleksi ini adalah ekspresinya — hidangan yang membawa berabad-abad Kepulauan Rempah dalam setiap suapan.",
-      "image": "",
-      "image_caption_en": "",
-      "image_caption_id": ""
+      "position": "between_categories",
+      "after_category": "sambal_saus",
+      "type": "story",
+      "title_id": "Rempah-Rempah",
+      "title_en": "The Spices",
+      "image": null,
+      "body_id": "Masakan Jawa Barat punya karakter tersendiri — lebih ringan dari masakan Padang, lebih segar, dengan banyak sayuran dan sambal yang dibuat mentah atau diulek di tempat. Tapi yang membuat masakan ibu berbeda bukan hanya asal-usulnya. Yang membedakan adalah bahan-bahannya.\n\nIbu selalu percaya bahwa rempah terbaik harus dicari, bukan sekadar dibeli. Cabai merah dari Meksiko. Serai segar, bukan kering. Terasi yang dibakar sendiri, tengah malam, oleh Ko Aming yang rela datang khusus untuk itu. Santan yang diperas dari kelapa segar kalau bisa. Ikan yang dibeli pagi itu juga dari Chinatown.\n\nDalam masakan Indonesia, rempah bukan sekadar perasa — ia adalah fondasi. Kunyit memberi warna dan kedalaman. Lengkuas memberi aroma yang tidak bisa digantikan. Serai memberi kesegaran. Daun jeruk purut memberi harum yang khas. Belajar memasak masakan ini berarti belajar mengenal rempah-rempah ini — bukan dari buku, tapi dari bau, dari rasa, dari cara bumbu berubah ketika menyentuh minyak panas di wajan.",
+      "body_en": "West Java cooking has its own character — lighter than Padang food, fresher, with more vegetables and sambals made raw or ground to order. But what made my mother's cooking distinctive wasn't only its origins. What set it apart was the ingredients.\n\nMy mother always believed that the best spices had to be sought out, not simply bought. Red chillies from Mexico. Fresh lemongrass, never dried. Shrimp paste roasted by hand — by Ko Aming, who would come in the middle of the night specifically for this. Coconut milk pressed from fresh coconut when possible. Fish bought that same morning from Chinatown.\n\nIn Indonesian cooking, spices are not merely flavourings — they are the foundation. Turmeric gives colour and depth. Galangal gives an aroma nothing else can replace. Lemongrass brings freshness. Kaffir lime leaves carry a fragrance with no equivalent in a western kitchen. To learn to cook this food is to learn these spices — not from a book, but through smell, through taste, through the way a paste changes the moment it touches hot oil in the pan."
+    },
+    {
+      "id": "recipes-origins",
+      "position": "between_categories",
+      "after_category": "seafood",
+      "type": "story",
+      "title_id": "Dari Mana Resep-Resep Ini",
+      "title_en": "Where These Recipes Come From",
+      "image": null,
+      "body_id": "Resep-resep dalam buku ini berasal dari sebuah bundel catatan tulisan tangan — halaman-halaman yang ibu tulis antara tahun 1986 dan 2005, selama bertahun-tahun Ramayani berjalan. Beberapa ditulis dengan tinta biru rapi. Beberapa dengan pensil. Beberapa dengan singkatan yang mungkin hanya ibu sendiri yang bisa membaca.\n\nSebagian resep berasal dari warisan keluarga — cara memasak yang dipelajari dari orang tua dan saudara-saudara. Sebagian adalah hasil eksperimen panjang di dapur Ramayani, dikembangkan selama bertahun-tahun sampai pas. Ada yang terinspirasi dari perjalanan ke Singapura atau kembali ke Indonesia. Ada yang dicatat karena pelanggan setia meminta: boleh saya masak ini di rumah?\n\nTidak semua resep punya takaran yang lengkap. Banyak yang hanya daftar bahan, tanpa langkah-langkah — karena ibu sudah hafal caranya, tidak perlu ditulis. Di situlah kami sedang bekerja sekarang: merekam suara ibu, mengisi yang kosong, menerjemahkan ingatan menjadi sesuatu yang bisa dimasak oleh orang lain.",
+      "body_en": "The recipes in this book come from a bundle of handwritten notes — pages my mother wrote between 1986 and 2005, across the years that Ramayani was open. Some written in neat blue ink. Some in pencil. Some in shorthand that perhaps only she could read.\n\nSome recipes trace to family tradition — ways of cooking learned from her parents and relatives. Some were the result of long experiments in the Ramayani kitchen, developed over years until they were right. Some were inspired by trips to Singapore or back to Indonesia. Some were written down because a loyal customer asked: can I make this at home?\n\nNot every recipe has complete quantities. Many are just lists of ingredients, with no method — because she already knew the steps by heart and didn't need to write them down. That is the work we are doing now: recording her voice, filling in what is missing, translating memory into something others can cook."
     },
     {
       "id": "still-dancing",
-      "heading_en": "Still Dancing",
-      "heading_id": "Masih Menari",
-      "body_en": "Hertha Tan is 86 years old. She closed Ramayani in 2019 after nearly four decades of feeding Los Angeles. She no longer cooks professionally. She dances.\n\n[PLACEHOLDER — To be filled through conversations with Hertha: What closing the restaurant felt like after 36 years. What she misses. What she does not miss. What dancing means to her now. What she hopes people take from her recipes. Any final words she wants in this cookbook.]\n\nThis collection is her legacy — the recipes she carried from Cianjur to Reseda to Westwood, preserved here so they are never lost. Every dish in these pages fed someone who was far from home, or curious about a world they had not tasted, or simply hungry for something that tasted like it was made with love.\n\nIt was.",
-      "body_id": "Hertha Tan kini berusia 86 tahun. Ia menutup Ramayani pada tahun 2019 setelah hampir empat dekade melayani Los Angeles. Ia tidak lagi memasak secara profesional. Ia menari.\n\n[PLACEHOLDER — Bagaimana rasanya menutup restoran setelah 36 tahun. Apa yang ia rindukan. Apa yang diharapkannya dari buku resep ini.]\n\nKoleksi ini adalah warisannya — resep-resep yang ia bawa dari Cianjur ke Reseda ke Westwood, dilestarikan di sini agar tidak pernah hilang.",
-      "image": "",
-      "image_caption_en": "",
-      "image_caption_id": ""
+      "position": "after_recipes",
+      "type": "closing",
+      "title_id": "Masih Berdansa",
+      "title_en": "Still Dancing",
+      "image": null,
+      "body_id": "Ibu sekarang tinggal bersama adik perempuan saya di Santa Clarita. Dia masih memasak — untuk adik saya, untuk keluarga yang datang berkunjung, untuk dirinya sendiri. Tidak ada lagi belanja pagi ke enam penjuru Los Angeles. Tidak ada lagi dapur restoran yang harus disiapkan sebelum jam makan siang. Tapi cara dia memasak tidak berubah: dengan bahan yang baik, tanpa tergesa, untuk orang yang dia cintai.\n\nDan dia masih berdansa. Kakeknya yang memperkenalkan ballroom padanya ketika dia masih remaja di Cianjur. Kecintaan itu sudah menemaninya lebih dari tujuh dekade — melewati kepindahan ke Amerika, dua nama restoran, 36 tahun memasak untuk orang lain, Bibi Rose dan Paman John yang sudah pergi, Ko Aming yang datang di tengah malam, ayah yang selalu ada di belakang.\n\nBuku ini adalah cara kami menjaga semua itu tetap hidup.",
+      "body_en": "My mother now lives with my sister in Santa Clarita. She still cooks — for my sister, for family who visit, for herself. No more early-morning drives to six corners of Los Angeles. No more restaurant kitchen to prepare before the lunch service. But the way she cooks hasn't changed: with good ingredients, unhurried, for the people she loves.\n\nAnd she still dances. Her father introduced her to ballroom dancing when she was a teenager in Cianjur. That love has stayed with her for more than seven decades — through the move to America, two restaurant names, 36 years of cooking for strangers, Aunt Rose and Uncle John who are gone now, Ko Aming who came in the middle of the night, my father who was always in the back.\n\nThis book is how we keep all of that alive."
     }
   ]
 }
