@@ -140,35 +140,51 @@ export default function HomePage() {
 
       {/* ── SPLASH ── */}
       <div style={{
-        margin: '8px 24px 0', borderRadius: 16, overflow: 'hidden',
-        position: 'relative', height: 320,
+        margin: '8px 24px 0', borderRadius: 16,
+        overflow: 'hidden', position: 'relative', height: 340,
       }}>
         <img
           src="/images/ramayani_inside.jpg"
           alt="Ramayani restaurant"
           style={{
             width: '100%', height: '100%', objectFit: 'cover',
-            objectPosition: '75% center', display: 'block',
+            objectPosition: 'center center', display: 'block',
           }}
         />
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 60%, transparent 100%)',
+          background: 'linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.05) 100%)',
         }} />
         <div style={{
-          position: 'absolute', bottom: 0, left: 0, right: 0,
-          padding: '0 32px 40px', textAlign: 'center',
+          position: 'absolute', top: 0, left: 0, bottom: 0,
+          display: 'flex', flexDirection: 'column', justifyContent: 'center',
+          padding: '0 0 0 40px', maxWidth: '65%',
         }}>
-          <p style={{
-            fontFamily: 'var(--font-bc)', fontWeight: 700, fontSize: 28,
-            color: '#ffffff', lineHeight: 1.3,
-            maxWidth: 480, margin: '0 auto',
-            textShadow: '0 1px 4px rgba(0,0,0,0.4)',
+          <h1 style={{
+            fontFamily: "'Book Antiqua','Palatino Linotype',Palatino,Georgia,serif",
+            fontWeight: 400, fontSize: 'clamp(36px, 5.5vw, 66px)',
+            color: '#ffffff', lineHeight: 1.1, marginBottom: 12, letterSpacing: '-0.01em',
           }}>
-            {lang === 'id'
-              ? 'Resep masakan Indonesia klasik dari Ramayani, restoran keluarga tercinta di Los Angeles.'
-              : 'Classic Indonesian recipes from Ramayani, a beloved Los Angeles family restaurant.'}
+            Hertha&rsquo;s Indonesian Cookbook
+          </h1>
+          <p style={{
+            fontFamily: "'Book Antiqua','Palatino Linotype',Palatino,Georgia,serif",
+            fontStyle: 'italic', fontWeight: 400, fontSize: 'clamp(16px, 2.2vw, 28px)',
+            color: 'rgba(255,255,255,0.92)', lineHeight: 1.3, marginBottom: 28,
+          }}>
+            {lang === 'id' ? 'Resep dari Ramayani Westwood' : 'Beloved recipes from Ramayani Westwood'}
           </p>
+          <div>
+            <a href="/about" style={{
+              display: 'inline-block',
+              fontFamily: "'Book Antiqua','Palatino Linotype',Palatino,Georgia,serif",
+              fontSize: 14, fontWeight: 400, color: '#1a1a1a',
+              background: '#ffffff', padding: '8px 20px',
+              borderRadius: 50, textDecoration: 'none', letterSpacing: '0.02em',
+            }}>
+              {lang === 'id' ? 'Tentang Hertha' : 'About Hertha'}
+            </a>
+          </div>
         </div>
       </div>
 
