@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Barlow_Condensed, Barlow } from 'next/font/google';
+import { Barlow_Condensed, Barlow, Libre_Baskerville } from 'next/font/google';
 import { LanguageProvider } from '@/components/LanguageContext';
 import './globals.css';
 
@@ -14,6 +14,13 @@ const barlow = Barlow({
   subsets: ['latin'],
   weight: ['400', '500'],
   variable: '--font-b',
+  display: 'swap',
+});
+
+const baskerville = Libre_Baskerville({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-logo',
   display: 'swap',
 });
 
@@ -35,7 +42,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id">
-      <body className={`${barlowCondensed.variable} ${barlow.variable}`}>
+      <body className={`${barlowCondensed.variable} ${barlow.variable} ${baskerville.variable}`}>
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

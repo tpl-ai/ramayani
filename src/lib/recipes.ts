@@ -1,14 +1,16 @@
-import type { Recipe, CategoryInfo, RecipeMeta, CategoryWithStats } from '@/types/recipe';
+import type { Recipe, CategoryInfo, DifficultyInfo, RecipeMeta, CategoryWithStats } from '@/types/recipe';
 import recipesJson from '../../recipes.json';
 
 const data = recipesJson as {
   meta: RecipeMeta;
   categories: Record<string, CategoryInfo>;
+  difficulty_levels: Record<string, DifficultyInfo>;
   recipes: Recipe[];
 };
 
 export const meta: RecipeMeta = data.meta;
 export const categories: Record<string, CategoryInfo> = data.categories;
+export const difficultyLevels: Record<string, DifficultyInfo> = data.difficulty_levels;
 export const allRecipes: Recipe[] = data.recipes;
 
 export function getRecipeById(id: string): Recipe | undefined {

@@ -71,6 +71,20 @@
       "en": "Drinks"
     }
   },
+  "difficulty_levels": {
+    "easy": {
+      "id": "Mudah",
+      "en": "Easy"
+    },
+    "medium": {
+      "id": "Sedang",
+      "en": "Medium"
+    },
+    "hard": {
+      "id": "Sulit",
+      "en": "Hard"
+    }
+  },
   "recipes": [
     {
       "id": "resep-1",
@@ -265,9 +279,9 @@
       "resep_num": 10,
       "category": "ayam",
       "status": "needs_method",
-      "photo": "",
+      "photo": "ayam-sauce-ramayani.jpg",
       "name_id": "Saus Ayam Ramayani",
-      "name_en": "Ramayani Chicken Sauce",
+      "name_en": "Chicken in Ramayani Sauce",
       "headnote_id": "Saus khas Ramayani yang digunakan untuk Ayam Sauce Ramayani — ayam goreng yang dilumuri saus barbecue manis dan segar. Cara membuat masih perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature sauce — the sweet and tangy barbecue-style glaze that made Ayam Sauce Ramayani one of the restaurant's most ordered dishes. Cooking method to be confirmed with Hertha.",
       "ingredients_id": [
@@ -932,7 +946,7 @@
       "status": "needs_method",
       "photo": "gule-kambing.jpg",
       "name_id": "Bumbu Gule (Gule Kambing)",
-      "name_en": "Lamb Curry",
+      "name_en": "Lamb Curry Spice Blend",
       "headnote_id": "Campuran bumbu kering untuk Gule Kambing — kambing yang dimasak dalam kari 15 rempah aromatik Indonesia. Ini adalah bumbu dasarnya. Cara membuat gule lengkap perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "The dry spice blend for Gule Kambing — lamb stewed in a curry of aromatic Indonesian spices. This is the spice base. The complete cooking method for the stew is to be confirmed with Hertha.",
       "ingredients_id": [
@@ -1158,7 +1172,7 @@
       "status": "needs_method",
       "photo": "cumi-cumi-goreng.jpg",
       "name_id": "Bumbu Udang Mentega (Cumi Cumi Goreng Mentega)",
-      "name_en": "Butter Squid",
+      "name_en": "Butter Squid Sauce — Cumi Cumi Goreng Mentega",
       "headnote_id": "Saus mentega khas Ramayani untuk cumi-cumi dan udang — perpaduan mentega, Maggi, Worcestershire, dan gula yang menciptakan glazur manis gurih. Cara membuat perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature butter sauce for squid and prawns — a combination of butter, Maggi, Worcestershire, and sugar that creates a sweet-savoury glaze. Cooking method to be confirmed with Hertha.",
       "ingredients_id": [

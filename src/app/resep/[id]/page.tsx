@@ -1,11 +1,65 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import { getRecipeById, meta } from '@/lib/recipes';
+import { getRecipeById, meta, difficultyLevels } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
+import Header from '@/components/Header';
+
+const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
+const FACT_ICON = { width: 17, height: 17, viewBox: '0 0 24 24', fill: 'none', stroke: '#cc0000', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
+
+function ServesIcon() {
+  return (
+    <svg {...FACT_ICON}>
+      <path d="M7 2v7a2 2 0 0 0 4 0V2M9 9v13M15 2c-1.5 1.5-2 3.5-2 6s.5 4.5 2 6M15 2v20" />
+    </svg>
+  );
+}
+function PrepTimeIcon() {
+  return (
+    <svg {...FACT_ICON}>
+      <circle cx="12" cy="13" r="8" />
+      <path d="M12 9v4l3 2M10 2h4M12 2v2" />
+    </svg>
+  );
+}
+function DifficultyIcon() {
+  return (
+    <svg {...FACT_ICON}>
+      <path d="M12 2c2 3-1 4-1 7a3 3 0 0 0 6 0c1.5 2 1 5-1 7a6 6 0 1 1-8-11c1-1 1.5-2 1-4 1 0 2.5.5 3 1Z" />
+    </svg>
+  );
+}
+function PrintIcon() {
+  return (
+    <svg {...FACT_ICON}>
+      <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2M6 14h12v7H6z" />
+    </svg>
+  );
+}
+
+function FactItem({ icon, label, onClick }: { icon: ReactNode; label: string; onClick?: () => void }) {
+  const Tag = onClick ? 'button' : 'span';
+  return (
+    <Tag
+      onClick={onClick}
+      className={onClick ? 'print-hide' : undefined}
+      style={{
+        display: 'inline-flex', alignItems: 'center', gap: 7,
+        fontFamily: HELVETICA, fontSize: 15, fontWeight: 400, color: '#1a1a1a',
+        background: 'none', border: 'none', padding: 0, margin: 0,
+        cursor: onClick ? 'pointer' : 'default',
+      }}
+    >
+      {icon}
+      <span>{label}</span>
+    </Tag>
+  );
+}
 
 // ── helpers ───────────────────────────────────────────────────────
 
@@ -57,7 +111,8 @@ function processIng(text: string, factor: number, imperial: boolean): string {
 export default function ResepPage() {
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
-  const { lang, toggle } = useLang();
+  const { lang: ctxLang } = useLang();
+  const [lang, setLang] = useState<'EN' | 'ID'>('EN');
 
   const [photoFailed, setPhotoFailed] = useState(false);
   const [unitSystem, setUnitSystem] = useState<'metric' | 'imperial'>('metric');
@@ -72,21 +127,25 @@ export default function ResepPage() {
     setUnitSystem(u);
     localStorage.setItem('ramayani_units', u);
   };
-  const setId = () => { if (lang !== 'id') toggle(); };
-  const setEn = () => { if (lang !== 'en') toggle(); };
 
   const recipe = getRecipeById(id);
 
   if (!recipe) {
     return (
-      <div className="empty-state">
-        <p className="empty-title">Recipe not found</p>
-        <p className="empty-text">
-          {lang === 'id' ? 'Resep tidak ditemukan.' : 'This recipe could not be found.'}
-        </p>
-        <Link href="/" style={{ color: '#e85d26', fontSize: 15, marginTop: 16, display: 'inline-block' }}>
-          ← {lang === 'id' ? 'Kembali' : 'Back home'}
-        </Link>
+      <div style={{ background: '#fff', minHeight: '100vh', fontFamily: HELVETICA }}>
+        <Header lang={lang} setLang={setLang} />
+        <div style={{ padding: '16px 48px 0' }}>
+          <a href="/recipes" style={{ fontSize: 13, color: '#999', textDecoration: 'none', fontFamily: HELVETICA }}>← All recipes</a>
+        </div>
+        <div className="empty-state">
+          <p className="empty-title">Recipe not found</p>
+          <p className="empty-text">
+            {ctxLang === 'id' ? 'Resep tidak ditemukan.' : 'This recipe could not be found.'}
+          </p>
+          <Link href="/" style={{ color: '#cc0000', fontSize: 15, marginTop: 16, display: 'inline-block' }}>
+            ← {ctxLang === 'id' ? 'Kembali' : 'Back home'}
+          </Link>
+        </div>
       </div>
     );
   }
@@ -94,36 +153,47 @@ export default function ResepPage() {
   const recipeBase = typeof recipe.serves === 'number' ? recipe.serves : 4;
   if (baseServes.current === 4 && recipeBase !== 4) baseServes.current = recipeBase;
 
-  const name      = tx(recipe, 'name', lang);
-  const headnote  = tx(recipe, 'headnote', lang);
-  const notes     = tx(recipe, 'notes', lang);
+  const name      = tx(recipe, 'name', ctxLang);
+  const headnote  = tx(recipe, 'headnote', ctxLang);
+  const notes     = tx(recipe, 'notes', ctxLang);
   const showPhoto = !!recipe.photo && !photoFailed;
-  const ings      = ingList(recipe, lang);
-  const steps     = methodList(recipe, lang);
+  const ings      = ingList(recipe, ctxLang);
+  const steps     = methodList(recipe, ctxLang);
   const factor    = serves / baseServes.current;
   const imperial  = unitSystem === 'imperial';
   const isComingSoon = recipe.status === 'coming_soon';
   const processedIngs = ings.map(i => processIng(i, factor, imperial));
   const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim() ? recipe.serves : null;
 
+  const servesFact = typeof recipe.serves === 'number'
+    ? `${ctxLang === 'id' ? 'Porsi' : 'Serves'} ${recipe.serves}`
+    : servesDisplay
+      ? `${ctxLang === 'id' ? 'Porsi' : 'Serves'} ${servesDisplay}`
+      : null;
+  const prepFact = recipe.prep_time_minutes
+    ? `${ctxLang === 'id' ? 'Persiapan' : 'Prep'} ${recipe.prep_time_minutes} ${ctxLang === 'id' ? 'menit' : 'min'}`
+    : null;
+  const difficultyInfo = recipe.difficulty ? difficultyLevels[recipe.difficulty] : undefined;
+  const difficultyFact = difficultyInfo ? (ctxLang === 'id' ? difficultyInfo.id : difficultyInfo.en) : null;
+
   return (
-    <>
-      <nav className="recipe-topbar">
-        <Link href="/" className="recipe-back">
-          ← {lang === 'id' ? 'Kembali' : 'Back'}
-        </Link>
-        <div className="recipe-lang" role="group" aria-label="Language">
-          <button className={`recipe-lang-btn${lang === 'id' ? ' active' : ''}`} onClick={setId}>ID</button>
-          <span className="recipe-lang-sep" aria-hidden="true">|</span>
-          <button className={`recipe-lang-btn${lang === 'en' ? ' active' : ''}`} onClick={setEn}>EN</button>
-        </div>
-      </nav>
+    <div style={{ background: '#fff', minHeight: '100vh', fontFamily: HELVETICA }}>
+      <style jsx global>{`
+        @media print {
+          .print-hide { display: none !important; }
+        }
+      `}</style>
+
+      <div className="print-hide">
+        <Header lang={lang} setLang={setLang} />
+      </div>
 
       <div className="recipe-container">
         {isComingSoon ? (
           <div style={{ maxWidth: 560 }}>
             {showPhoto && (
               <img
+                ref={img => { if (img && img.complete) img.classList.add('loaded'); }}
                 src={`/images/${recipe.photo}`}
                 alt={name}
                 className="recipe-photo-fixed img-fade"
@@ -132,105 +202,159 @@ export default function ResepPage() {
                 onError={() => setPhotoFailed(true)}
               />
             )}
-            <h1 className={`recipe-title${showPhoto ? '' : ' recipe-title-nophoto'}`}>{name}</h1>
-            {headnote && <p className="recipe-headnote">{headnote}</p>}
-            <p className="coming-soon-note">
-              {lang === 'id' ? 'Resep segera hadir.' : 'Recipe coming soon.'}
+            <h1
+              className={`recipe-title${showPhoto ? '' : ' recipe-title-nophoto'}`}
+              style={{ fontFamily: HELVETICA, fontSize: 28, fontWeight: 600, color: '#1a1a1a' }}
+            >
+              {name}
+            </h1>
+            {headnote && <p className="recipe-headnote" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{headnote}</p>}
+            <p className="coming-soon-note" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
+              {ctxLang === 'id' ? 'Resep segera hadir.' : 'Recipe coming soon.'}
             </p>
           </div>
         ) : (
           <>
-            <div className="recipe-layout">
-              {/* Left: photo + name + headnote + ingredients */}
-              <div>
-                {showPhoto && (
+            <div className="recipe-hero-row" style={!showPhoto ? { gridTemplateColumns: '1fr' } : undefined}>
+              {showPhoto && (
+                <div>
                   <img
+                    ref={img => { if (img && img.complete) img.classList.add('loaded'); }}
                     src={`/images/${recipe.photo}`}
                     alt={name}
-                    className="recipe-photo-fixed img-fade"
+                    className="recipe-hero-photo img-fade"
                     loading="eager"
                     onLoad={e => e.currentTarget.classList.add('loaded')}
                     onError={() => setPhotoFailed(true)}
                   />
-                )}
-                <h1 className={`recipe-title${showPhoto ? '' : ' recipe-title-nophoto'}`}>{name}</h1>
-                {servesDisplay && (
-                  <p className="recipe-meta">{lang === 'id' ? 'Porsi: ' : 'Serves: '}{servesDisplay}</p>
-                )}
-                {headnote && <p className="recipe-headnote">{headnote}</p>}
-                <div className="recipe-rule" />
+                </div>
+              )}
+              <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+                <h1 style={{ fontFamily: HELVETICA, fontSize: 60, fontWeight: 350, color: '#1a1a1a', lineHeight: 1.15, margin: 0 }}>
+                  {name}
+                </h1>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', rowGap: 10, columnGap: 24, margin: '48px 0 20px' }}>
+                  {servesFact && <FactItem icon={<ServesIcon />} label={servesFact} />}
+                  {prepFact && <FactItem icon={<PrepTimeIcon />} label={prepFact} />}
+                  {difficultyFact && <FactItem icon={<DifficultyIcon />} label={difficultyFact} />}
+                  <FactItem
+                    icon={<PrintIcon />}
+                    label={ctxLang === 'id' ? 'Cetak resep' : 'Print recipe'}
+                    onClick={() => window.print()}
+                  />
+                </div>
+                <div className="recipe-rule" style={{ background: '#e8e8e8 ' }} />
+              </div>
+            </div>
 
+            {(headnote || notes) && (
+              <div className="recipe-description">
+                {headnote && (
+                  <p style={{ fontFamily: HELVETICA, fontSize: 24, lineHeight: 1.6, color: '#1a1a1a', marginBottom: notes ? 16 : 0 }}>
+                    {headnote}
+                  </p>
+                )}
+                {notes && (
+                  <p style={{ fontFamily: HELVETICA, fontSize: 24, lineHeight: 1.6, color: '#1a1a1a' }}>{notes}</p>
+                )}
+              </div>
+            )}
+
+            <div className="recipe-layout">
+              {/* Left: ingredients */}
+              <div className="recipe-ingredients-col">
                 <div className="col-heading-row">
-                  <span className="col-head">
-                    {lang === 'id' ? 'Bahan-Bahan' : 'Ingredients'}
+                  <span className="col-head" style={{ fontFamily: HELVETICA, fontSize: 18, color: '#1a1a1a',textTransform: 'none' }}>
+                    {ctxLang === 'id' ? 'Bahan-Bahan' : 'Ingredients'}
                   </span>
-                  <div className="unit-toggle" role="group" aria-label="Unit system">
-                    <button className={`unit-btn${unitSystem === 'metric' ? ' active' : ''}`} onClick={() => setUnit('metric')}>
+                  <div className="unit-toggle print-hide" role="group" aria-label="Unit system">
+                    <button
+                      className={`unit-btn${unitSystem === 'metric' ? ' active' : ''}`}
+                      onClick={() => setUnit('metric')}
+                      style={{ fontFamily: HELVETICA, color: unitSystem === 'metric' ? '#cc0000' : undefined }}
+                    >
                       Metric
                     </button>
                     <span className="unit-sep" aria-hidden="true">|</span>
-                    <button className={`unit-btn${unitSystem === 'imperial' ? ' active' : ''}`} onClick={() => setUnit('imperial')}>
+                    <button
+                      className={`unit-btn${unitSystem === 'imperial' ? ' active' : ''}`}
+                      onClick={() => setUnit('imperial')}
+                      style={{ fontFamily: HELVETICA, color: unitSystem === 'imperial' ? '#cc0000' : undefined }}
+                    >
                       Imperial
                     </button>
                   </div>
                 </div>
 
                 {typeof recipe.serves === 'number' && (
-                  <div className="serves-row">
-                    <span>{lang === 'id' ? 'Porsi:' : 'Serves:'}</span>
-                    <button className="serves-btn" onClick={() => setServes(s => Math.max(1, s - 1))} disabled={serves <= 1} aria-label="Fewer servings">−</button>
+                  <div className="serves-row" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
+                    <span>{ctxLang === 'id' ? 'Porsi:' : 'Serves:'}</span>
+                    <button
+                      className="serves-btn"
+                      onClick={() => setServes(s => Math.max(1, s - 1))}
+                      disabled={serves <= 1}
+                      aria-label="Fewer servings"
+                      style={{ fontFamily: HELVETICA }}
+                      onMouseEnter={e => { if (!e.currentTarget.disabled) { e.currentTarget.style.borderColor = '#cc0000'; e.currentTarget.style.color = '#cc0000'; } }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = ''; e.currentTarget.style.color = ''; }}
+                    >
+                      −
+                    </button>
                     <span className="serves-num">{serves}</span>
-                    <button className="serves-btn" onClick={() => setServes(s => s + 1)} aria-label="More servings">+</button>
+                    <button
+                      className="serves-btn"
+                      onClick={() => setServes(s => s + 1)}
+                      aria-label="More servings"
+                      style={{ fontFamily: HELVETICA }}
+                      onMouseEnter={e => { e.currentTarget.style.borderColor = '#cc0000'; e.currentTarget.style.color = '#cc0000'; }}
+                      onMouseLeave={e => { e.currentTarget.style.borderColor = ''; e.currentTarget.style.color = ''; }}
+                    >
+                      +
+                    </button>
                   </div>
                 )}
 
                 {ings.length > 0 ? (
                   <ul className="ing-list">
                     {processedIngs.map((item, i) => (
-                      <li key={i} className="ing-item">{item}</li>
+                      <li key={i} className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{item}</li>
                     ))}
                   </ul>
                 ) : (
-                  <p className="ing-empty">
-                    {lang === 'id' ? 'Bahan segera ditambahkan.' : 'Ingredients coming soon.'}
+                  <p className="ing-empty" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
+                    {ctxLang === 'id' ? 'Bahan segera ditambahkan.' : 'Ingredients coming soon.'}
                   </p>
                 )}
               </div>
 
               {/* Right: method */}
-              <div>
-                <p className="col-head col-head-right" style={{ marginBottom: 16 }}>
-                  {lang === 'id' ? 'Cara Membuat' : 'Method'}
+              <div className="recipe-method-col">
+                <p className="col-head col-head-right" style={{ marginBottom: 16, fontFamily: HELVETICA, fontSize: 18, color: '#1a1a1a', textTransform: 'none' }}>
+                  {ctxLang === 'id' ? 'Cara Membuat' : 'Method'}
                 </p>
                 {steps.length > 0 ? (
                   steps.map((step, i) => (
                     <div key={i} className="method-step">
-                      <div className="step-num">{i + 1}</div>
-                      <div className="step-text">{step}</div>
+                      <div className="step-num" style={{ fontFamily: HELVETICA, color: '#cc0000' }}>{i + 1}</div>
+                      <div className="step-text" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{step}</div>
                     </div>
                   ))
                 ) : (
-                  <p className="method-empty">
-                    {lang === 'id'
+                  <p className="method-empty" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
+                    {ctxLang === 'id'
                       ? 'Cara memasak untuk resep ini akan segera ditambahkan. Kami sedang mengumpulkannya dari Hertha.'
                       : 'The cooking method for this recipe is coming soon. We are working on collecting this from Hertha.'}
                   </p>
                 )}
               </div>
             </div>
-
-            {notes && (
-              <div className="recipe-notes-full">
-                <p className="recipe-notes-text">{notes}</p>
-              </div>
-            )}
           </>
         )}
       </div>
 
-      <footer className="site-footer">
+      <footer className="site-footer print-hide">
         <p className="footer-copy">&copy; Hertha Tan &middot; Ramayani &middot; Los Angeles</p>
       </footer>
-    </>
+    </div>
   );
 }

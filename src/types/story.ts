@@ -1,8 +1,7 @@
 export interface PressItem {
   publication: string;
   year: string;
-  image?: string;
-  image2?: string;
+  images?: string[];
   quote_id?: string | null;
   quote_en?: string | null;
   note_id?: string | null;

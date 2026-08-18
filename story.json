@@ -69,33 +69,46 @@
         {
           "publication": "LA Herald Examiner",
           "year": "1988",
-          "image": "la-herald-examiner-1988.jpg",
+          "images": ["la-herald-examiner-1988.jpg"],
           "quote_id": null,
           "quote_en": null
         },
         {
           "publication": "LA Weekly",
           "year": "1988",
-          "image": "la-weekly-2.jpg",
+          "images": ["la-weekly-1.jpg", "la-weekly-2.jpg"],
           "quote_id": null,
           "quote_en": null
         },
         {
           "publication": "Travelscope",
           "year": "1989",
-          "image": "travelscope-1989.jpg",
+          "images": ["travelscope-1989.jpg"],
+          "quote_id": null,
+          "quote_en": null
+        },
+        {
+          "publication": "LA Weekly",
+          "year": "1994",
+          "images": ["LA WEEKLY 1994.jpg"],
           "quote_id": null,
           "quote_en": null
         },
         {
           "publication": "LA Times",
           "year": "2002",
-          "image": "la-times-soup-page-1.jpg",
-          "image2": "la-times-soup-page2b.jpg",
+          "images": ["la-times-soup-page-1.jpg", "la-times-soup-page2b.jpg"],
           "quote_id": null,
           "quote_en": null,
           "note_id": "Halaman depan seksi makanan — Soto Ayam ibu masuk LA Times.",
           "note_en": "Front page of the food section — my mother's Soto Ayam made the LA Times."
+        },
+        {
+          "publication": "Food & Wine",
+          "year": "2014",
+          "images": ["Food&Wine2014p1.jpeg", "Food&Wine2014p2.jpeg", "Food&Wine2014p3.jpeg"],
+          "quote_id": null,
+          "quote_en": null
         }
       ]
     },

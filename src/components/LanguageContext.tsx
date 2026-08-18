@@ -10,10 +10,10 @@ interface LangCtx {
   setLang: (l: Lang) => void;
 }
 
-const LanguageContext = createContext<LangCtx>({ lang: 'id', toggle: () => {}, setLang: () => {} });
+const LanguageContext = createContext<LangCtx>({ lang: 'en', toggle: () => {}, setLang: () => {} });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>('id');
+  const [lang, setLangState] = useState<Lang>('en');
 
   useEffect(() => {
     const saved = localStorage.getItem('ramayani_lang') as Lang | null;

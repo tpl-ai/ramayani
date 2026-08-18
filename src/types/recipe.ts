@@ -18,9 +18,16 @@ export interface Recipe {
   notes_en: string;
   serves?: string | number;
   featured_order?: number | null;
+  prep_time_minutes?: number;
+  difficulty?: string;
 }
 
 export interface CategoryInfo {
+  id: string;
+  en: string;
+}
+
+export interface DifficultyInfo {
   id: string;
   en: string;
 }

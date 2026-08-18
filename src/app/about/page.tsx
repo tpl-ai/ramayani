@@ -4,11 +4,14 @@ import { useState } from 'react';
 import { useLang } from '@/components/LanguageContext';
 import { storySections } from '@/lib/story';
 import type { PressItem } from '@/types/story';
+import Header from '@/components/Header';
+
+const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
 
 function PortraitImg() {
   const [err, setErr] = useState(false);
   if (err) {
-    return <div style={{ width: '100%', height: 380, background: '#c4a882', borderRadius: 16 }} />;
+    return <div style={{ width: '100%', height: 380, background: '#c4a882' }} />;
   }
   return (
     <img
@@ -17,7 +20,7 @@ function PortraitImg() {
       onError={() => setErr(true)}
       style={{
         width: '100%', maxHeight: 480, objectFit: 'cover',
-        objectPosition: 'center top', borderRadius: 16, display: 'block',
+        objectPosition: 'center top', display: 'block',
       }}
     />
   );
@@ -31,42 +34,61 @@ function SectionImage({ src, alt }: { src: string; alt: string }) {
       src={`/images/${src}`}
       alt={alt}
       onError={() => setErr(true)}
-      style={{ width: '100%', borderRadius: 12, marginBottom: 16, display: 'block' }}
+      style={{ width: '100%', marginBottom: 16, display: 'block' }}
     />
   );
 }
 
-function PressRow({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
+function PressThumb({ src, alt, flex }: { src: string; alt: string; flex: number }) {
   const [err, setErr] = useState(false);
-  const note = lang === 'id' ? (item.note_id ?? item.note_en) : (item.note_en ?? item.note_id);
+  if (err) return null;
   return (
-    <div style={{ display: 'flex', gap: 16, marginBottom: 24 }}>
-      {item.image && !err && (
-        <img
-          src={`/images/${item.image}`}
-          alt={item.publication}
-          onError={() => setErr(true)}
-          style={{ width: 100, flexShrink: 0, borderRadius: 8, objectFit: 'cover', alignSelf: 'flex-start' }}
-        />
+    <a href={src} target="_blank" rel="noopener noreferrer" style={{ flex, minWidth: 0, display: 'block' }}>
+      <img
+        ref={img => { if (img && img.complete && img.naturalWidth === 0) setErr(true); }}
+        src={src}
+        alt={alt}
+        onError={() => setErr(true)}
+        style={{ width: '100%', height: 150, display: 'block', objectFit: 'cover', objectPosition: 'top', cursor: 'pointer' }}
+      />
+    </a>
+  );
+}
+
+function PressCard({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
+  const note = lang === 'id' ? (item.note_id ?? item.note_en) : (item.note_en ?? item.note_id);
+  const images = item.images ?? [];
+  return (
+    <div>
+      {images.length > 0 && (
+        <div style={{ display: 'flex', gap: 4, marginBottom: 10 }}>
+          {images.map((img, i) => (
+            <PressThumb
+              key={i}
+              src={`/images/${encodeURIComponent(img)}`}
+              alt={`${item.publication} ${item.year} — page ${i + 1}`}
+              flex={1}
+            />
+          ))}
+        </div>
       )}
-      <div>
-        <p style={{
-          fontSize: 11, fontWeight: 600, color: '#1a6a5a',
-          textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 6,
-          fontFamily: 'var(--font-bc)',
-        }}>
-          {item.publication} &middot; {item.year}
-        </p>
-        {note && (
-          <p style={{ fontSize: 14, color: '#555555', lineHeight: 1.6 }}>{note}</p>
-        )}
-      </div>
+      <p style={{
+        fontSize: 11, fontWeight: 600, color: '#cc0000',
+        textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 4,
+        fontFamily: HELVETICA,
+      }}>
+        {item.publication} &middot; {item.year}
+      </p>
+      {note && (
+        <p style={{ fontSize: 13, color: '#555555', lineHeight: 1.5, fontFamily: HELVETICA }}>{note}</p>
+      )}
     </div>
   );
 }
 
 export default function AboutPage() {
-  const { lang } = useLang();
+  const { lang: ctxLang } = useLang();
+  const [lang, setLang] = useState<'EN' | 'ID'>('EN');
 
   const mainSections = storySections.filter(s => s.type !== 'closing');
   const closingSections = storySections.filter(s => s.type === 'closing');
@@ -74,12 +96,7 @@ export default function AboutPage() {
   return (
     <div style={{ background: '#ffffff', minHeight: '100vh' }}>
 
-      {/* Back */}
-      <div style={{ padding: '24px 32px 0' }}>
-        <a href="/" style={{ fontSize: 13, color: '#888888', fontWeight: 400 }}>
-          ← {lang === 'id' ? 'Kembali' : 'Back'}
-        </a>
-      </div>
+      <Header lang={lang} setLang={setLang} />
 
       {/* Portrait */}
       <div style={{ padding: '24px 32px 0' }}>
@@ -87,17 +104,17 @@ export default function AboutPage() {
       </div>
 
       {/* Story sections */}
-      <div style={{ maxWidth: 620, margin: '0 auto', padding: '48px 32px 80px' }}>
+      <div style={{ padding: '48px 48px 80px' }}>
 
         {mainSections.map(section => {
-          const title = lang === 'id' ? (section.title_id ?? '') : (section.title_en ?? '');
-          const body = lang === 'id' ? (section.body_id ?? '') : (section.body_en ?? '');
+          const title = ctxLang === 'id' ? (section.title_id ?? '') : (section.title_en ?? '');
+          const body = ctxLang === 'id' ? (section.body_id ?? '') : (section.body_en ?? '');
           const imgAlt = title;
 
           return (
             <div key={section.id} style={{ marginBottom: 56 }}>
               {title && (
-                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-bc)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
+                <h2 style={{ fontSize: 38, fontWeight: 300, color: '#cc0000', marginBottom: 16, fontFamily: HELVETICA }}>
                   {title}
                 </h2>
               )}
@@ -107,14 +124,17 @@ export default function AboutPage() {
               )}
 
               {section.type === 'press' ? (
-                <div>
+                <div style={{
+                  display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+                  gap: 32, alignItems: 'start',
+                }}>
                   {(section.items ?? []).map((item, i) => (
-                    <PressRow key={i} item={item} lang={lang} />
+                    <PressCard key={i} item={item} lang={ctxLang} />
                   ))}
                 </div>
               ) : (
                 body.split('\n\n').filter(p => p.trim() && !p.trim().startsWith('[')).map((para, i) => (
-                  <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-b)', fontWeight: 400 }}>
+                  <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#1a1a1a', marginBottom: 16, maxWidth: 760, fontFamily: HELVETICA, fontWeight: 400 }}>
                     {para}
                   </p>
                 ))
@@ -125,17 +145,17 @@ export default function AboutPage() {
 
         {/* Closing — Still Dancing */}
         {closingSections.map(section => {
-          const title = lang === 'id' ? (section.title_id ?? '') : (section.title_en ?? '');
-          const body = lang === 'id' ? (section.body_id ?? '') : (section.body_en ?? '');
+          const title = ctxLang === 'id' ? (section.title_id ?? '') : (section.title_en ?? '');
+          const body = ctxLang === 'id' ? (section.body_id ?? '') : (section.body_en ?? '');
           return (
             <div key={section.id} style={{ borderTop: '1px solid #f0f0f0', paddingTop: 48, marginTop: 8 }}>
               {title && (
-                <h2 style={{ fontSize: 22, fontWeight: 700, color: '#1a6a5a', marginBottom: 16, fontFamily: 'var(--font-bc)', textTransform: 'uppercase' as const, letterSpacing: '0.03em' }}>
+                <h2 style={{ fontSize: 38, fontWeight: 300, color: '#cc0000', marginBottom: 16, fontFamily: HELVETICA }}>
                   {title}
                 </h2>
               )}
               {body.split('\n\n').filter(p => p.trim()).map((para, i) => (
-                <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#333333', marginBottom: 16, fontFamily: 'var(--font-b)', fontWeight: 400 }}>
+                <p key={i} style={{ fontSize: 15, lineHeight: 1.75, color: '#1a1a1a', marginBottom: 16, maxWidth: 760, fontFamily: HELVETICA, fontWeight: 400 }}>
                   {para}
                 </p>
               ))}
