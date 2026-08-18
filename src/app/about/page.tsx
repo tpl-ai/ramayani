@@ -99,12 +99,12 @@ export default function AboutPage() {
       <Header lang={lang} setLang={setLang} />
 
       {/* Portrait */}
-      <div style={{ padding: '24px 32px 0' }}>
+      <div className="about-hero-wrap" style={{ padding: '24px 32px 0' }}>
         <PortraitImg />
       </div>
 
       {/* Story sections */}
-      <div style={{ padding: '48px 48px 80px' }}>
+      <div className="about-content-wrap" style={{ padding: '48px 48px 80px' }}>
 
         {mainSections.map(section => {
           const title = ctxLang === 'id' ? (section.title_id ?? '') : (section.title_en ?? '');

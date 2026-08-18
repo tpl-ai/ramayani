@@ -26,27 +26,27 @@ const CATEGORIES = [
 ]
 
 function ChickenIcon() {
-  return <img src="/images/icon-chicken.svg" alt="" width={125} height={125} style={{ width: 125, height: 125 }} />
+  return <img src="/images/icon-chicken.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
 function BeefIcon() {
-  return <img src="/images/icon-beef.svg" alt="" width={125} height={125} style={{ width: 125, height: 125 }} />
+  return <img src="/images/icon-beef.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
 function SeafoodIcon() {
-  return <img src="/images/icon-fish.svg" alt="" width={125} height={125} style={{ width: 125, height: 125 }} />
+  return <img src="/images/icon-fish.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
 function RiceIcon() {
-  return <img src="/images/icon-noodles.svg" alt="" width={125} height={125} style={{ width: 125, height: 125 }} />
+  return <img src="/images/icon-noodles.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
 function VegetableIcon() {
-  return <img src="/images/icon-vegetables.svg" alt="" width={125} height={125} style={{ width: 125, height: 125 }} />
+  return <img src="/images/icon-vegetables.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
 function SambalIcon() {
-  return <img src="/images/icon-sambal.svg" alt="" width={125} height={125} style={{ width: 125, height: 125 }} />
+  return <img src="/images/icon-sambal.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
 const ICONS: Record<string, () => React.ReactElement> = {
@@ -70,8 +70,8 @@ export default function Home() {
       {/* NAV */}
       <Header lang={lang} setLang={setLang} />
 
-      {/* SPLASH — hardcoded 480px, no clamp, no tricks */}
-      <div style={{ position: 'relative', width: '100%', height: '850px', overflow: 'hidden' }}>
+      {/* SPLASH */}
+      <div className="splash-hero" style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
         <img
           src="/images/rijsttafel.jpg"
           alt="Ramayani rijsttafel"
@@ -82,11 +82,11 @@ export default function Home() {
           background: 'linear-gradient(to right, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.40) 50%, rgba(0,0,0,0.05) 100%)',
         }} />
         {/* Title — top-left */}
-        <div style={{ position: 'absolute', top: 0, left: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start',paddingTop: '88px',padding: '48px 0 0 56px', maxWidth: '55%' }}>
-          <h1 style={{ fontSize: 74, fontWeight: 400, color: '#fff', lineHeight: 1, marginBottom: 14 }}>
+        <div className="splash-text-block" style={{ position: 'absolute', top: 0, left: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', padding: '48px 0 0 56px' }}>
+          <h1 className="splash-title" style={{ fontWeight: 400, color: '#fff', lineHeight: 1, marginBottom: 14 }}>
             Hertha's<br />Indonesian Cookbook
           </h1>
-          <p style={{ fontSize:24, fontWeight: 500, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5 }}>
+          <p className="splash-subtitle" style={{ fontWeight: 500, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5 }}>
             Beloved recipes from Ramayani Westwood
           </p>
         </div>
@@ -98,13 +98,16 @@ export default function Home() {
           background: '#cc0000', padding: '20px 15px',
           textDecoration: 'none', letterSpacing: '0.04em',
         }}>
-          Buy the book ↗
+          Buy the book
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 17L17 7M17 7H9M17 7V15" />
+          </svg>
         </a>
       </div>
 
       {/* FAVORITE RECIPES */}
       <section id="recipes" style={{ paddingTop: 48, position: 'relative' }}>
-        <h2 style={{ fontSize: 38, fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
+        <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
           {lang === 'EN' ? 'Favorite recipes' : 'Resep favorit'}
         </h2>
         <div ref={recipesScrollRef} style={{
@@ -131,6 +134,7 @@ export default function Home() {
           ))}
         </div>
         <div
+          className="scroll-arrow"
           onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
           onMouseLeave={e => { e.currentTarget.style.opacity = '0' }}
           onClick={() => recipesScrollRef.current?.scrollBy({ left: 400, behavior: 'smooth' })}
@@ -145,11 +149,27 @@ export default function Home() {
             <path d="M9 6l6 6-6 6" />
           </svg>
         </div>
+        <div
+          className="scroll-arrow"
+          onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
+          onMouseLeave={e => { e.currentTarget.style.opacity = '0' }}
+          onClick={() => recipesScrollRef.current?.scrollBy({ left: -400, behavior: 'smooth' })}
+          style={{
+            position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)',
+            width: 56, height: 56, borderRadius: '50%', background: 'rgba(0,0,0,0.55)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'pointer', opacity: 0, transition: 'opacity 0.2s ease', zIndex: 10,
+          }}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 6l-6 6 6 6" />
+          </svg>
+        </div>
       </section>
 
       {/* RECIPES BY CATEGORY */}
       <section style={{ padding: '48px 0 72px', position: 'relative' }}>
-        <h2 style={{ fontSize: 38, fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
+        <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
           {lang === 'EN' ? 'Recipes by category' : 'Resep menurut jenis'}
         </h2>
         <div ref={categoriesScrollRef} style={{
@@ -160,13 +180,13 @@ export default function Home() {
           {CATEGORIES.map(cat => {
             const Icon = ICONS[cat.id]
             return (
-              <div key={cat.id} onClick={() => router.push(`/recipes?category=${cat.id}`)}
+              <div key={cat.id} className="category-tile" onClick={() => router.push(`/recipes?category=${cat.id}`)}
                 style={{
-                  flexShrink: 0, width: 280, height: 280, background: '#cc0000',
+                  flexShrink: 0, background: '#cc0000',
                   cursor: 'pointer', display: 'flex', flexDirection: 'column',
                   justifyContent: 'space-between', padding: '14px 14px 18px',
                 }}>
-                <span style={{ fontSize: 34, fontWeight: 400, color: '#fff', lineHeight: 1.2 }}>{cat.label}</span>
+                <span className="category-label" style={{ fontWeight: 400, color: '#fff', lineHeight: 1.2 }}>{cat.label}</span>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', paddingBottom: '40px'  }}>
                   {Icon && <Icon />}
                 </div>
@@ -175,6 +195,7 @@ export default function Home() {
           })}
         </div>
         <div
+          className="scroll-arrow"
           onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
           onMouseLeave={e => { e.currentTarget.style.opacity = '0' }}
           onClick={() => categoriesScrollRef.current?.scrollBy({ left: 400, behavior: 'smooth' })}
@@ -189,15 +210,23 @@ export default function Home() {
             <path d="M9 6l6 6-6 6" />
           </svg>
         </div>
+        <div
+          className="scroll-arrow"
+          onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
+          onMouseLeave={e => { e.currentTarget.style.opacity = '0' }}
+          onClick={() => categoriesScrollRef.current?.scrollBy({ left: -400, behavior: 'smooth' })}
+          style={{
+            position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)',
+            width: 56, height: 56, borderRadius: '50%', background: 'rgba(0,0,0,0.55)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            cursor: 'pointer', opacity: 0, transition: 'opacity 0.2s ease', zIndex: 10,
+          }}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 6l-6 6 6 6" />
+          </svg>
+        </div>
       </section>
-
-      {/* FOOTER */}
-      <footer style={{ padding: '20px 48px', borderTop: '1px solid #e8e8e8', textAlign: 'center' }}>
-        <span style={{
-          fontFamily: 'Libre Baskerville, Baskerville, Georgia, serif',
-          fontSize: 28, fontWeight: 400, letterSpacing: '0.2em', color: '#cc0000', textTransform: 'uppercase',
-        }}>Ramayani</span>
-      </footer>
 
     </div>
   )

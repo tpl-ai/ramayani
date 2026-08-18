@@ -54,6 +54,71 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ════════════════════════════════════════════════
+   HEADER — mobile hamburger
+   ════════════════════════════════════════════════ */
+.header-logo { font-size: 22px; letter-spacing: 0.18em; }
+.header-nav-desktop { display: none; }
+.header-mobile-controls { display: flex; }
+@media (min-width: 768px) {
+  .header-logo { font-size: 36px; letter-spacing: 0.40em; }
+  .header-nav-desktop { display: flex; }
+  .header-mobile-controls { display: none; }
+}
+
+/* ════════════════════════════════════════════════
+   HOMEPAGE — splash + section headings, mobile
+   ════════════════════════════════════════════════ */
+.splash-hero { height: 850px; }
+.splash-text-block { max-width: 55%; }
+.splash-title { font-size: 74px; }
+.splash-subtitle { font-size: 24px; }
+.section-heading { font-size: 38px; }
+.category-tile { width: 280px; height: 280px; }
+.category-label { font-size: 34px; }
+@media (max-width: 640px) {
+  .splash-hero { height: 500px; }
+  .splash-text-block { max-width: 90%; }
+  .splash-title { font-size: 36px; }
+  .splash-subtitle { font-size: 16px; }
+  .section-heading { font-size: 26px; }
+  .category-icon { width: 84px; height: 84px; }
+  .category-tile { width: 188px; height: 188px; }
+  .category-label { font-size: 22px; }
+  .scroll-arrow { display: none !important; }
+}
+
+/* ════════════════════════════════════════════════
+   RECIPES GRID — filter row, mobile
+   ════════════════════════════════════════════════ */
+.recipes-filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .recipes-filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+.categories-inline-row { display: none; }
+.categories-mobile-filter { display: block; }
+@media (min-width: 768px) {
+  .categories-inline-row { display: flex; }
+  .categories-mobile-filter { display: none; }
+}
+
+.recipes-grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1024px) {
+  .recipes-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .recipes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ════════════════════════════════════════════════
    RECIPE PAGE — top bar
    ════════════════════════════════════════════════ */
 .recipe-topbar {
@@ -143,6 +208,7 @@ img { max-width: 100%; height: auto; display: block; }
 .recipe-description {
   margin: 0 0 56px;
 }
+.recipe-hero-title { font-size: 60px; }
 .recipe-title {
   font-size: 26px;
   font-weight: 600;
@@ -356,16 +422,16 @@ img { max-width: 100%; height: auto; display: block; }
 .empty-text { font-size: 16px; color: var(--muted); }
 
 /* ════════════════════════════════════════════════
-   FOOTER
+   ABOUT PAGE — hero/story width cap, desktop only
    ════════════════════════════════════════════════ */
-.site-footer {
-  padding: 48px var(--pad);
-  text-align: center;
-  border-top: 1px solid var(--line);
-}
-.footer-copy {
-  font-size: 12px;
-  color: #cccccc;
+@media (min-width: 1024px) {
+  .about-hero-wrap,
+  .about-content-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 /* ════════════════════════════════════════════════
@@ -375,4 +441,5 @@ img { max-width: 100%; height: auto; display: block; }
   :root { --pad: 16px; }
   .recipe-title { font-size: 22px; }
   .step-num { font-size: 26px; }
+  .recipe-hero-title { font-size: 28px; }
 }

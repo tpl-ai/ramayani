@@ -230,7 +230,7 @@ export default function ResepPage() {
                 </div>
               )}
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
-                <h1 style={{ fontFamily: HELVETICA, fontSize: 60, fontWeight: 350, color: '#1a1a1a', lineHeight: 1.15, margin: 0 }}>
+                <h1 className="recipe-hero-title" style={{ fontFamily: HELVETICA, fontWeight: 350, color: '#1a1a1a', lineHeight: 1.15, margin: 0 }}>
                   {name}
                 </h1>
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', rowGap: 10, columnGap: 24, margin: '48px 0 20px' }}>
@@ -351,10 +351,6 @@ export default function ResepPage() {
           </>
         )}
       </div>
-
-      <footer className="site-footer print-hide">
-        <p className="footer-copy">&copy; Hertha Tan &middot; Ramayani &middot; Los Angeles</p>
-      </footer>
     </div>
   );
 }

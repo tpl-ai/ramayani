@@ -104,10 +104,6 @@ export default function WriteToHerthaPage() {
           </form>
         )}
       </div>
-
-      <footer className="site-footer">
-        <p className="footer-copy">&copy; Hertha Tan &middot; Ramayani &middot; Los Angeles</p>
-      </footer>
     </>
   );
 }

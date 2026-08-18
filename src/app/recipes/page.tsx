@@ -6,7 +6,6 @@ import { useLang } from '@/components/LanguageContext';
 import { allRecipes } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
 import Header from '@/components/Header';
-import Masonry from 'react-masonry-css'
 
 const FILTER_CATS = [
   { id: 'all',           label_en: 'All',            label_id: 'Semua' },
@@ -35,7 +34,7 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'EN' | 'I
     >
       <div style={{
         width: '100%',
-        paddingBottom: hasPhoto?  '120%' : '120%',
+        paddingBottom: '130%',
         position: 'relative',
         overflow: 'hidden',
         background: '#e8e2da',
@@ -46,23 +45,17 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'EN' | 'I
             alt={name}
             onError={() => setErr(true)}
             style={{
-              position: 'absolute',
-              inset: 0,
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              display: 'block',
+              position: 'absolute', inset: 0,
+              width: '100%', height: '100%',
+              objectFit: 'cover', display: 'block',
             }}
           />
         )}
       </div>
       <div style={{
         fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
-        fontSize: 18,
-        fontWeight: 400,
-        color: '#1a1a1a',
-        marginTop: 8,
-        paddingBottom: 16,
+        fontSize: 20, fontWeight: 400, color: '#1a1a1a', lineHeight: 1.2,
+        marginTop: 8, paddingBottom: 16,
       }}>
         {name}
       </div>
@@ -79,6 +72,10 @@ function RecipesContent() {
   const [activeCategory, setActiveCategory] = useState(initialCat);
   const [search, setSearch] = useState('');
   const [visible, setVisible] = useState(24);
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  const activeCat = FILTER_CATS.find(c => c.id === activeCategory);
+  const activeCatLabel = activeCat ? (ctxLang === 'id' ? activeCat.label_id : activeCat.label_en) : (ctxLang === 'id' ? 'Semua' : 'All');
 
   const sorted = useMemo(() => {
     const order: Record<string, number> = { complete: 0, flagged: 0, needs_method: 1, coming_soon: 2 };
@@ -102,22 +99,6 @@ function RecipesContent() {
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
-      <style jsx global>{`
-        .my-masonry-grid {
-          display: flex;
-          margin-left: -24px;
-          width: auto;
-          padding: 0 48px;
-        }
-        .my-masonry-grid_column {
-          padding-left: 24px;
-          background-clip: padding-box;
-        }
-        .my-masonry-grid_column > div {
-          margin-bottom: 24px;
-        }
-      `}</style>
-
       <Header lang={lang} setLang={setLang} />
 
       {/* Search */}
@@ -143,8 +124,9 @@ function RecipesContent() {
       </div>
 
       {/* Category filter */}
-      <div style={{ padding: '16px 32px 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
-        <div style={{ display: 'flex', flexWrap: 'nowrap', overflowX: 'auto' }}>
+      <div className="recipes-filter-row" style={{ padding: '16px 32px 16px' }}>
+        {/* Desktop/tablet — inline scrollable row, 768px+ */}
+        <div className="categories-inline-row" style={{ flexWrap: 'nowrap', overflowX: 'auto' }}>
           {FILTER_CATS.map(cat => (
             <span
               key={cat.id}
@@ -153,6 +135,7 @@ function RecipesContent() {
                 fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
                 fontSize: 15, fontWeight: 400,
                 cursor: 'pointer',
+                flexShrink: 0, whiteSpace: 'nowrap',
                 marginRight: 32, paddingBottom: 4,
                 color: activeCategory === cat.id ? '#cc0000' : '#1a1a1a',
                 borderBottom: activeCategory === cat.id ? '1px solid #cc0000' : 'none',
@@ -162,6 +145,53 @@ function RecipesContent() {
             </span>
           ))}
         </div>
+
+        {/* Mobile — compact filter pill + dropdown picker, below 768px */}
+        <div className="categories-mobile-filter" style={{ position: 'relative' }}>
+          <button
+            onClick={() => setFilterOpen(o => !o)}
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8,
+              fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+              fontSize: 14, fontWeight: 500, color: '#1a1a1a',
+              background: '#fff', border: '1px solid #e0e0e0', borderRadius: 50,
+              padding: '9px 16px 9px 14px', cursor: 'pointer',
+            }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#cc0000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 6h16M7 12h10M10 18h4" />
+            </svg>
+            {ctxLang === 'id' ? 'Saring' : 'Filter'}: {activeCatLabel}
+          </button>
+
+          {filterOpen && (
+            <>
+              <div onClick={() => setFilterOpen(false)} style={{ position: 'fixed', inset: 0, zIndex: 90 }} />
+              <div style={{
+                position: 'absolute', top: 'calc(100% + 8px)', left: 0, minWidth: 220,
+                background: '#fff', border: '1px solid #e8e8e8', boxShadow: '0 8px 24px rgba(0,0,0,0.14)',
+                zIndex: 91, padding: 6,
+              }}>
+                {FILTER_CATS.map(cat => (
+                  <div
+                    key={cat.id}
+                    onClick={() => { setActiveCategory(cat.id); setVisible(24); setFilterOpen(false); }}
+                    style={{
+                      padding: '10px 14px', cursor: 'pointer',
+                      fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+                      fontSize: 15, fontWeight: 400,
+                      color: activeCategory === cat.id ? '#cc0000' : '#1a1a1a',
+                      background: activeCategory === cat.id ? '#faf5f5' : 'transparent',
+                    }}
+                  >
+                    {ctxLang === 'id' ? cat.label_id : cat.label_en}
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+
         <span style={{
           fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
           fontSize: 15, color: '#aaa', flexShrink: 0, whiteSpace: 'nowrap',
@@ -176,11 +206,11 @@ function RecipesContent() {
           {ctxLang === 'id' ? 'Tidak ada resep yang cocok.' : 'No recipes match.'}
         </p>
       ) : (
-        <Masonry
-          breakpointCols={{ default: 4, 1024: 3, 640: 2 }}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
+        <div className="recipes-grid" style={{
+          display: 'grid',
+          gap: 24,
+          padding: '0 48px',
+        }}>
           {displayed.map((r) => (
             <RecipeCard
               key={r.id}
@@ -189,7 +219,7 @@ function RecipesContent() {
               onClick={() => router.push(`/resep/${r.id}`)}
             />
           ))}
-        </Masonry>
+        </div>
       )}
 
       {/* Load more */}
