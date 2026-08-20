@@ -5,7 +5,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import { getRecipeById, meta, difficultyLevels } from '@/lib/recipes';
+import { getRecipeById, meta, difficultyLevels, recipePhotoSrc } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
 import Header from '@/components/Header';
 
@@ -194,7 +194,7 @@ export default function ResepPage() {
             {showPhoto && (
               <img
                 ref={img => { if (img && img.complete) img.classList.add('loaded'); }}
-                src={`/images/${recipe.photo}`}
+                src={recipePhotoSrc(recipe.photo)}
                 alt={name}
                 className="recipe-photo-fixed img-fade"
                 loading="eager"
@@ -220,7 +220,7 @@ export default function ResepPage() {
                 <div>
                   <img
                     ref={img => { if (img && img.complete) img.classList.add('loaded'); }}
-                    src={`/images/${recipe.photo}`}
+                    src={recipePhotoSrc(recipe.photo)}
                     alt={name}
                     className="recipe-hero-photo img-fade"
                     loading="eager"
