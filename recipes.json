@@ -162,7 +162,7 @@
       "status": "complete",
       "photo": "",
       "name_id": "Ayam Besengek",
-      "name_en": "",
+      "name_en": "Hello Kitty",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [],
@@ -170,7 +170,8 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_status": "in_progress"
     },
     {
       "id": "resep-4",
