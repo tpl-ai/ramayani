@@ -90,18 +90,50 @@
       "id": "resep-1",
       "resep_num": 1,
       "category": "ayam",
-      "status": "flagged",
+      "status": "complete",
       "photo": "",
       "name_id": "Pasta Kari Ayam Ramayani",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "45 lbs (± 20 kg) Bawang putih, digiling",
+        "60 oz (± 1,7 kg) Kemiri, digiling",
+        "44 oz (± 1,25 kg) Bawang putih, digiling",
+        "18 oz (± 510 g) Jahe, digiling",
+        "18 oz (± 510 g) Serai segar, digiling",
+        "16 cup (± 3,8 L) Minyak sayur",
+        "2½ cup (± 600 ml) Kunyit",
+        "2½ cup (± 600 ml) MSG",
+        "7½ cup (± 1,8 L) Garam",
+        "7½ cup (± 1,8 L) Gula",
+        "5 cup (± 1,2 L) Kencur"
+      ],
+      "ingredients_en": [
+        "45 lbs (20 kg) white onions (bawang putih), ground",
+        "60 oz (1.7 kg) candlenuts (kemiri), ground",
+        "44 oz (1.25 kg) garlic (bawang putih), ground",
+        "18 oz (510 g) ginger (jahe), ground",
+        "18 oz (510 g) fresh lemongrass (serai), ground",
+        "16 cups (3.8 L) vegetable oil (minyak sayur)",
+        "2½ cups (600 ml) turmeric (kunyit)",
+        "2½ cups (600 ml) MSG",
+        "7½ cups (1.8 L) salt (garam)",
+        "7½ cups (1.8 L) sugar (gula)",
+        "5 cups (1.2 L) lesser galangal powder (kencur)"
+      ],
+      "method_id": [
+        "Campur bahan (a) sampai (f): bawang putih, kemiri, bawang putih, jahe, serai, dan minyak sayur.",
+        "Stir fry campuran selama ½ jam.",
+        "Tambahkan bahan (g) sampai (k), dan bagi menjadi 10 kantong."
+      ],
+      "method_en": [
+        "Mix items (a) through (f): onions, candlenuts, garlic, ginger, lemongrass, and vegetable oil.",
+        "Stir fry the mix for ½ hour.",
+        "Add items (g) through (k), and package into 10 bags."
+      ],
+      "notes_id": "Resep produksi pabrik. Untuk rumah tangga kurangi menjadi 1/20. FLAG: Resep skala produksi besar; harap konfirmasi dengan Ibu apakah ada versi rumah tangga.",
+      "notes_en": "Factory production recipe. For home cooking reduce all quantities to 1/20. FLAG: Large-scale production recipe — please confirm with mother if a smaller home version exists."
     },
     {
       "id": "resep-2",
@@ -165,12 +197,46 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "8 ekor (8) Ayam dipotong (1 jadi 8 potong)",
+        "8 canting Minyak",
+        "1 kaleng Cabe merah",
+        "2 dos Brown sugar",
+        "4 dos Tahu di-potong ½",
+        "1/8 cup Garam",
+        "4 cup Gula pasir",
+        "8 kaleng Santen kecil",
+        "3 potong Terasi",
+        "Secukupnya Cabe pedas (sambal)",
+        "4 s/makan Cuka"
+      ],
+      "ingredients_en": [
+        "8 whole chickens (ayam), each cut into 8 pieces",
+        "8 canting oil (minyak)",
+        "1 can red chilli (cabe merah)",
+        "2 boxes brown sugar",
+        "4 boxes tofu (tahu), cut in half",
+        "⅛ cup (30 ml) salt (garam)",
+        "4 cups (960 ml) white sugar (gula pasir)",
+        "8 small cans coconut milk (santen kecil)",
+        "3 pieces shrimp paste (terasi)",
+        "To taste hot chilli sambal (cabe pedas)",
+        "4 tbsp (60 ml) vinegar (cuka)"
+      ],
+      "method_id": [
+        "Cabe diblender + terasi, lalu digoreng.",
+        "Cabe kaleng diblender juga.",
+        "Masak sampai matang.",
+        "Masukkan bumbu yang lain-lainnya."
+      ],
+      "method_en": [
+        "Blend the chilli + shrimp paste, then fry.",
+        "Blend the canned chilli as well.",
+        "Cook until done.",
+        "Add all the other ingredients."
+      ],
+      "notes_id": "Catatan Ibu: 'Resep paling baru, Sept. 23–1986. Lihat di belakang.'",
+      "notes_en": "Mother's note: 'Newest recipe, Sept. 23–1986. See at the back.'"
     },
     {
       "id": "resep-4",
@@ -421,12 +487,56 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "2 ekor ayam",
+        "2 bt. serai (lemon grass)",
+        "4 cm. galangga",
+        "600 cc coconut milk (± 2 smaller can)",
+        "Tamarin juice atau lime juice",
+        "6 pieces dam djeink purut (kafir lime leaves)",
+        "Potatoes (optional)",
+        "BUMBU fg. digogorengim (ground spices): Vegetable oil",
+        "± 125 gr. (8) red peppers (cabaimerah)",
+        "2 Tbs. trassi (blacam)",
+        "4 tbs. coriander",
+        "80gr. (20) candle nuts (kemiri)",
+        "30gr. (6) garlic",
+        "200gr. (10) shalot (bawang mersh)",
+        "40gr. hencur (fragrant ginger)",
+        "Fish soy sauce, sugar, salts.",
+        "FOR Vegetarian do not put trasi & Fish Sauce, use Vegetable + Potato + dll plain"
+      ],
+      "ingredients_en": [
+        "2 whole chickens (ayam)",
+        "2 stalks lemongrass (serai)",
+        "4 cm galangal (galangga)",
+        "600 ml (2 small cans) coconut milk (santan)",
+        "tamarind juice or lime juice",
+        "6 pieces kaffir lime leaves (daun jeruk purut)",
+        "potatoes (kentang) — optional",
+        "GROUND SPICE PASTE: vegetable oil (minyak sayur)",
+        "125 g (8 pieces) red pepper / chilli (cabe merah)",
+        "2 tbsp shrimp paste (trassi / blacam)",
+        "4 tbsp coriander (ketumbar)",
+        "80 g (20 nuts) candlenuts (kemiri)",
+        "30 g (6 cloves) garlic (bawang putih)",
+        "200 g (10) shallots (bawang merah)",
+        "40 g lesser galangal (hencur / kencur)",
+        "fish sauce, sugar, salt",
+        "VEGETARIAN: do not use shrimp paste or fish sauce — use vegetables + potatoes + etc."
+      ],
+      "method_id": [
+        "Gogorengim (tumis) terasi dan semua bumbu halus, tambahkan santan, daun jeruk purut, galangga, serai dan air asam.",
+        "Potong ayam dan goreng, lalu masukkan ke dalam bumbu.",
+        "Untuk Vegetarian jangan pakai trasi dan Kecap Ikan, gunakan sayuran dan kentang saja."
+      ],
+      "method_en": [
+        "Stir fry the shrimp paste and all the ground spices, add the coconut milk, kaffir lime leaves, galangal, lemon grass and tamarind juice.",
+        "Cut up the chicken and fry, then put into the bumbu.",
+        "For Vegetarian: do not use shrimp paste and fish sauce — use vegetables and potatoes."
+      ],
+      "notes_id": "Catatan Ibu: 'bisa dipake djuga buat pesmol.' November 2000. Untuk Vegetarian: jangan pakai trasi & kecap ikan.",
+      "notes_en": "Mother's note: 'Can also be used for Pesmol.' November 2000. Vegetarian note written by mother in the original."
     },
     {
       "id": "resep-13",
@@ -438,12 +548,38 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "Ikan (gurame, nila, atau sejenis)",
+        "2 sendok Bumbu Ayam Pulang (lihat Resep 12)",
+        "Kaldu ayam secukupnya",
+        "1 sdt kunyit",
+        "1 sdt kecap ikan",
+        "1 sdt gula",
+        "Cabe secukupnya"
+      ],
+      "ingredients_en": [
+        "fish (gurame / snapper / tilapia or similar)",
+        "2 ladles Bumbu Ayam Pulang — see Recipe 12",
+        "chicken broth, as needed",
+        "1 tsp turmeric powder (kunyit)",
+        "1 tsp fish sauce (kecap ikan)",
+        "1 tsp sugar (gula)",
+        "chilli to taste"
+      ],
+      "method_id": [
+        "Ikan dibacam dg. vinegar & salt lalu digoreng selama 10 menit.",
+        "Ikan dibelah supaya tidak terlalu tebal.",
+        "2 sendok bumbu ayam pulang, dipanaskan dg. kaldu ayam dan tambahkan 1 sendok teh kunyit bubuk, kecap ikan, 1 sendok teh gula dan cabe.",
+        "Masukkan ikan yang sudah digoreng ke dalam saus dan masak perlahan."
+      ],
+      "method_en": [
+        "Marinate the fish with vinegar and salt and fry for 10 minutes.",
+        "Cut open the fish so it won't be too thick.",
+        "Heat 2 ladles of Bumbu Ayam Pulang with chicken broth and add 1 teaspoon turmeric powder, fish sauce, 1 teaspoon sugar and chilli.",
+        "Add the fried fish to the sauce and cook slowly."
+      ],
+      "notes_id": "Menggunakan bumbu yang sama dengan Resep 12 (Bumbu Ayam Pulang).",
+      "notes_en": "Uses the same paste as Recipe 12 (Bumbu Ayam Pulang). Mother noted this connection on the original page."
     },
     {
       "id": "resep-14",
@@ -489,12 +625,50 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "3 Crab Fry",
+        "2 Tablespoon Butter",
+        "2 Shallot thinly sliced",
+        "2 Cloves Garlic finely chopped",
+        "2 Tablespoon Dried Prawn, roasted & ground",
+        "4 Tablespoon Black Pepper, ground coarsly",
+        "½ cup Curry leaves / powder",
+        "10 Red Chillies",
+        "2 Tablespoon Kecap manis",
+        "2 Tablespoon Oyster sauce",
+        "4 Tablespoon Sugar",
+        "Salt",
+        "2ml Black bean ground",
+        "1 Tablespoon Siqar (kecap asin)",
+        "1½ tablespoon Vinegar"
+      ],
+      "ingredients_en": [
+        "3 crabs (kepiting) fried",
+        "2 tbsp butter (mentega)",
+        "2 shallots (bawang merah) thinly sliced",
+        "2 cloves garlic (bawang putih) finely chopped",
+        "2 tbsp dried prawn (udang kering) roasted and ground",
+        "4 tbsp black pepper (lada hitam) coarsely ground",
+        "½ cup curry leaves (daun kari) or powder",
+        "10 red chillies (cabe merah)",
+        "2 tbsp sweet soy sauce (kecap manis)",
+        "2 tbsp oyster sauce (saus tiram)",
+        "4 tbsp sugar (gula)",
+        "salt to taste (garam)",
+        "2 ml black bean (kedelai hitam) ground",
+        "1 tbsp soy sauce (kecap asin)",
+        "1½ tbsp vinegar (cuka)"
+      ],
+      "method_id": [
+        "Goreng kepiting, lelehkan mentega dan masukkan bawang merah, bawang putih, bubuk udang kering, black bean (ground), lada hitam (kasar), daun kari, cabe.",
+        "Setelah selesai tambahkan bahan-bahan sisanya: kecap manis, oyster sauce, gula, garam."
+      ],
+      "method_en": [
+        "Fried crab, melt butter and put in shallot, garlic, dried powder shrimp, black bean (ground), black pepper (coarsely), curry leaves, chillies.",
+        "When finished add the remaining ingredients: kecap manis, oyster sauce, sugar, salt."
+      ],
+      "notes_id": "Kalau bakai sambal oelek jangan pakai vinegar.",
+      "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'"
     },
     {
       "id": "resep-17",
@@ -506,12 +680,52 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "1 crab or lobster fried and coated with Tapioca Starch",
+        "2 oz Chopped Garlic (10 cloves)",
+        "1 Cup Fresher chopped red chilli",
+        "½ cup Sambal Oelek (12 chillis)",
+        "¼ cup oil",
+        "4 Stalks Green Onion",
+        "2 coriander plant",
+        "SAUCE: 2 Table Spoon Fish Sauce",
+        "2 cups Water",
+        "¼ Cup Tomato Kichup",
+        "1 Table Spoon mashed Taucho",
+        "½ Table Spoon Darle Soy Sauce",
+        "6 Table Spoon Sugar",
+        "1 Teaspoon Salt",
+        "1 Teaspoon Vinegar"
+      ],
+      "ingredients_en": [
+        "1 crab or lobster fried and coated with tapioca starch",
+        "2 oz (55 g) chopped garlic (bawang putih) — 10 cloves",
+        "1 cup fresh red chilli (cabe merah), chopped",
+        "½ cup sambal oelek — 12 chillies",
+        "¼ cup oil (minyak)",
+        "4 stalks spring onion / green onion",
+        "2 coriander plants (ketumbar)",
+        "SAUCE: 2 tbsp fish sauce (kecap ikan)",
+        "2 cups water (air)",
+        "¼ cup tomato ketchup (saus tomat)",
+        "1 tbsp mashed taucho (fermented soybean paste)",
+        "½ tbsp dark soy sauce",
+        "6 tbsp sugar (gula)",
+        "1 tsp salt (garam)",
+        "1 tsp vinegar (cuka)"
+      ],
+      "method_id": [
+        "Panaskan minyak, goreng bawang putih 1 menit.",
+        "Tambahkan cabe — goreng 1 menit.",
+        "Tambahkan campuran saus. Didihkan lalu kecilkan api dan tambahkan 2 telur kocok."
+      ],
+      "method_en": [
+        "Heat oil, fry garlic 1 minute.",
+        "Add chilli — fry for 1 minute.",
+        "Add mixture of sauce. Bring to a boil and lower the heat and add 2 scrambled eggs."
+      ],
+      "notes_id": "Kalau bakai Sambal Oelek langan pakai Vinegar.",
+      "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'"
     },
     {
       "id": "resep-18",
@@ -577,29 +791,71 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "600 cc Kikoman",
+        "900 cc Water",
+        "225 cc Kecap Ikan",
+        "225 cc Kecap Manis",
+        "300 cc Arak",
+        "6 s/m penuh Gula"
+      ],
+      "ingredients_en": [
+        "600 ml (20 fl oz) Kikkoman soy sauce",
+        "900 ml (30 fl oz) water (air)",
+        "225 ml (7.6 fl oz) fish sauce (kecap ikan)",
+        "225 ml (7.6 fl oz) sweet soy sauce (kecap manis)",
+        "300 ml (10 fl oz) rice wine (arak)",
+        "6 full tbsp (90 ml) sugar (gula)"
+      ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "notes_id": "PENTING: Berbeda dari yang tercantum di indeks buku ini, halaman aslinya hanya berisi daftar bahan saus — tidak ada cara membuat dan tidak ada berat daging babi yang tercantum. FLAG: Berkas 1, Hal. 20. Harap konfirmasi cara membuat dan berat daging dengan Ibu.",
+      "notes_en": "IMPORTANT: Contrary to the collection's own index, the actual page contains only the sauce ingredient list — no method is written, and no pork weight is specified. FLAG: File 1, Page 20. Please confirm the method and meat quantity with mother."
     },
     {
       "id": "resep-20",
       "resep_num": 20,
       "category": "daging",
-      "status": "flagged",
+      "status": "complete",
       "photo": "",
       "name_id": "Bali Tim",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "MIX SAUCE: 200 cc Kikoman",
+        "500 cc Water",
+        "50 cc Fish Sauce",
+        "75 cc Swees Boy Sauce (kecap manis)",
+        "100 cc Rice wine",
+        "± 7 lbs Side Pork (2 pieces)",
+        "2 pk. Dry Sayur Asin atau Smo Sayur Asin"
+      ],
+      "ingredients_en": [
+        "MIX SAUCE: 200 ml (7 fl oz) Kikkoman soy sauce",
+        "500 ml (17 fl oz) water (air)",
+        "50 ml (1.7 fl oz) fish sauce (kecap ikan)",
+        "75 ml (2.5 fl oz) sweet soy sauce (kecap manis)",
+        "100 ml (3.4 fl oz) rice wine (arak beras)",
+        "± 7 lbs (3.2 kg) side pork — 2 pieces",
+        "2 packets dry sour vegetable (sayur asin kering) or fresh sour vegetable"
+      ],
+      "method_id": [
+        "Side Pork: ± 7lbs (2 pieces). Rebus daging babi selama ½ jam dan angin-anginkan selama 24 jam lalu goreng sampai kulitnya renyah. Lalu masukkan ke air es untuk melunakkan kulitnya.",
+        "Goreng selama ± 15 menit.",
+        "Iris daging dingin ± ⅓\" dan susun dalam mangkuk rebus dengan sayur asin kering, tambahkan saus campuran dan kukus selama 1½–2 jam.",
+        "Untuk kuah ekstra buat sausnya 1½x atau 2x.",
+        "Sayur asin kering harus direndam dalam air selama 24 jam dan dipotong ½\"."
+      ],
+      "method_en": [
+        "Side Pork: ± 7 lbs (2 pieces). Boil the side pork for ½ hour and air dry for 24 hours and fry until the skin crispy. And put into ice water to soften the shell.",
+        "Fry for about 15 minutes.",
+        "Slice the cold pork ± ⅓\" thick and arrange in the bowl with the dry sour vegetables and add the mix sauce and steam for 1½–2 hours.",
+        "For extra soup make the sauce 1½x or 2x.",
+        "The dry sour vegetables must be soaked in water for 24 hours and cut to ½\" pieces."
+      ],
+      "notes_id": "Sayur asin kering harus direndam 24 jam. FLAG: Berkas 1, Hal. 21–22. Resep dua halaman; Hal. 22 berisi versi saus yang sedikit berbeda (Sauce Babi Tim). Harap konfirmasi versi mana yang digunakan.",
+      "notes_en": "Mother's note: dry sour vegetables must soak 24 hours. FLAG: File 1, Pages 21–22. Two-page recipe. Page 22 contains a slightly different sauce version (Sauce Babi Tim). Please confirm which version mother uses."
     },
     {
       "id": "resep-21",
@@ -611,29 +867,83 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "TLEN SE TLEW: Pork butt dislice lalu dibacam dg. Vetsin, White Pepper, Kecap ikan, Kikoman",
+        "1 Telur; lalu masukkan: Terigu, Self rising dan sagu yang banyak",
+        "SAM TJAU: Pork leg or Sam Tjam",
+        "B.B.Q. ROAST RED PORK: 1 envelope B.B.Q. Roast Red Pork seasoning mix (isi 2 bungkus), dan tambahkan:",
+        "4 x 16 oz Water",
+        "2 tablespoon Kikoman",
+        "5 sendok Sugar",
+        "Use Pork Chops (12 pieces)"
+      ],
+      "ingredients_en": [
+        "TLEN SE TLEW: Pork butt, sliced, then marinated with: MSG, white pepper, fish sauce, Kikkoman",
+        "1 egg; then add: flour, self-rising flour, and plenty of sago starch",
+        "SAM TJAU: Pork leg or Sam Tjam cut",
+        "B.B.Q. ROAST RED PORK: 1 envelope B.B.Q. Roast Red Pork seasoning mix (2 packages inside), and add:",
+        "4 x 16 oz water",
+        "2 tbsp Kikkoman soy sauce",
+        "5 tbsp sugar",
+        "Use 12 pork chops"
+      ],
+      "method_id": [
+        "TLEN SE TLEW: Pork butt diiris lalu dibacam dg. Vetsin, White Pepper, Kecap ikan, Kikoman, 1 Telur; lalu masukkan: Terigu, Self rising dan sagu yang banyak.",
+        "SAM TJAU: Kalau mau jadinya kuning, digodok dg. air garam. Sebelum dipanggang dibalurin lagi garam baru dipanggang dg. api kecil ± 250° selama 45 menit. Sesudah kulitnya kering, digoreng ± 25 menit sampai seperti kerupuk. Boleh juga dibacam dg. kecap asin + cuka; rasanya lebih enak, hanya kalau digoreng jadi hitam.",
+        "B.B.Q. ROAST RED PORK: Marinasi dan masak sampai semua air terserap dan sisakan saus kental serta BBQ."
+      ],
+      "method_en": [
+        "TLEN SE TLEW: Pork butt sliced then marinated with MSG, white pepper, fish sauce, Kikkoman, 1 egg; then add flour, self-rising flour and plenty of sago starch.",
+        "SAM TJAU: If you want it golden, boil with salted water first. Before roasting rub again with salt then roast at low heat ± 250° for 45 minutes. Once the skin is dry, fry ± 25 minutes until crispy like crackling. Can also be marinated with kecap asin + vinegar — tastier, but it turns dark when fried.",
+        "B.B.Q. ROAST RED PORK: Marinate and cook until all the water is absorbed and leave the thick sauce and BBQ."
+      ],
+      "notes_id": "Tiga resep dalam satu halaman.",
+      "notes_en": "Three recipes on one page. Method transcribed exactly as written by mother."
     },
     {
       "id": "resep-22",
       "resep_num": 22,
       "category": "daging",
-      "status": "flagged",
+      "status": "complete",
       "photo": "",
       "name_id": "Bali",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "2 Bola Daging di-potong ½",
+        "1 Kaleng Red Dice Pepper diblender",
+        "1 Batok tahu Bawang putih diblender",
+        "100 Gram Jahe",
+        "Minyak sayur",
+        "1 Pak Brown sugar",
+        "± 1½ cup Gula pasir",
+        "½ Cup Garam",
+        "Cabe kering kira-kira",
+        "1 Cup Kecap manis",
+        "Asem (kalan cabenya sudah asem, tak usah pakei)"
+      ],
+      "ingredients_en": [
+        "2 balls beef, cut into pieces",
+        "1 can red diced pepper (cabe merah), blended",
+        "1 container garlic (bawang putih), blended",
+        "100 g (3.5 oz) ginger (jahe)",
+        "vegetable oil (minyak sayur)",
+        "1 box brown sugar",
+        "± 1½ cups (360 ml) white sugar (gula pasir)",
+        "½ cup (120 ml) salt (garam)",
+        "some dried chilli (cabe kering)",
+        "1 cup (240 ml) sweet soy sauce (kecap manis)",
+        "tamarind / asam (if chilli is already sour, don't use)"
+      ],
+      "method_id": [
+        "Jahe + bawang putih digoreng sampai kuning, lalu masukkan cabenya terus goreng sampai matang, lalu masukkan yang lain-2nya; terakhir dagingnya."
+      ],
+      "method_en": [
+        "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
+      ],
+      "notes_id": "Catatan Ibu: 'Asem — kalan cabenya sudah asem, tak usah pakei.' Resep muncul di tiga halaman (Berkas 1 Hal. 24 / Berkas 2 Hal. 1 & 8) — versi Berkas 2 Hal. 8 paling lengkap dan disimpan di sini.",
+      "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.' Recipe appears on three pages (File 1 p.24 / File 2 pp.1 & 8) — File 2 Page 8 is the most complete version, kept here."
     },
     {
       "id": "resep-23",
@@ -728,35 +1038,99 @@
       "id": "resep-26",
       "resep_num": 26,
       "category": "nasi_mie",
-      "status": "flagged",
+      "status": "complete",
       "photo": "",
       "name_id": "Bacang Beras",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "ISINYA: Bawang besar",
+        "Bawang putih",
+        "Ground chicken or beef or pork — 5 lbs",
+        "Daun bawang",
+        "Kecap asin (Kikoman)",
+        "Kecap ikan",
+        "Kecap manis",
+        "Gula",
+        "Garam",
+        "Pedes",
+        "BERASNYA: 16 Cup Long grain AA",
+        "Airnya 1½x = 16 x 1½ = 24 cups (boleh dikurangin 1 cup = 23 cups)",
+        "Garam 3 s/teh",
+        "4 cup (air) | 1 s/teh (garam) | 4 sendok (minyak ayam) | 7 cantiing (Kikoman)",
+        "Lalu dibungkusin",
+        "1 lbs. jadi ± 5 | 5 lbs. jadi ± 25–27"
+      ],
+      "ingredients_en": [
+        "FILLING (isi): large onion (bawang besar)",
+        "garlic (bawang putih)",
+        "5 lbs (2.3 kg) ground chicken or beef or pork",
+        "spring onion / green onion (daun bawang)",
+        "soy sauce / Kikkoman (kecap asin)",
+        "fish sauce (kecap ikan)",
+        "sweet soy sauce (kecap manis)",
+        "sugar (gula)",
+        "salt (garam)",
+        "hot chilli (pedes)",
+        "RICE (beras): 16 cups long grain AA rice",
+        "Water 1½x = 16 × 1½ = 24 cups (can reduce by 1 cup = 23 cups)",
+        "Salt: 3 tsp",
+        "4 cups water | 1 tsp salt | 4 tbsp chicken oil (minyak ayam) | 7 canting Kikkoman",
+        "Then wrapped",
+        "1 lb makes ± 5 | 5 lbs makes ± 25–27"
+      ],
+      "method_id": [
+        "5 lbs. Ketan direndam diair utk. satu jam.",
+        "Lalu kukus 20 menit, kemudian adonin dengan: 4 cup air, 1 s/teh garam, 4 sendok minyak ayam, 7 cantiing Kikoman.",
+        "Baru dibungkusin."
+      ],
+      "method_en": [
+        "5 lbs glutinous rice (ketan) soaked in water for 1 hour.",
+        "Then steam 20 minutes, then season with: 4 cups water, 1 tsp salt, 4 tablespoons chicken oil, 7 canting Kikkoman.",
+        "Then wrap (in banana leaves or bamboo leaves)."
+      ],
+      "notes_id": "Semua bumbu isian digogorengim dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis. FLAG: Berkas 1, Hal. 10 / Berkas 2, Hal. 5 & 24. Bahan isian tidak ada takaran terperinci. Harap konfirmasi dengan Ibu.",
+      "notes_en": "All filling spices fried in generous vegetable oil. Stored overnight; before use stir again and add more sweet soy sauce. FLAG: File 1 p.10 / File 2 pp.5 & 24. Recipe appears three times with minor variations. Filling ingredients have no detailed quantities. Please confirm with mother."
     },
     {
       "id": "resep-27",
       "resep_num": 27,
       "category": "nasi_mie",
-      "status": "flagged",
+      "status": "complete",
       "photo": "",
       "name_id": "Bacang Ketan",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "5 lbs. Ketan direndam diair utk. satu jam",
+        "4 Cup Air",
+        "1 s/teh Garam",
+        "4 sendok Minyak ayam",
+        "7 Cantiing Kikoman"
+      ],
+      "ingredients_en": [
+        "5 lbs (2.3 kg) glutinous rice (ketan), soaked in water for 1 hour",
+        "4 cups (960 ml) water (air)",
+        "1 tsp salt (garam)",
+        "4 tbsp chicken oil (minyak ayam)",
+        "7 canting Kikkoman soy sauce"
+      ],
+      "method_id": [
+        "Ketan direndam diair utk. satu jam.",
+        "Lalu kukus 20 menit, kemudian adonin dengan: 4 cup air, 1 s/teh garam, 4 sendok minyak ayam, 7 canting Kikoman.",
+        "Baru dibungkusin.",
+        "1 lbs. jadi ± 5 | 5 lbs. jadi ± 25–27."
+      ],
+      "method_en": [
+        "Soak the glutinous rice in water for 1 hour.",
+        "Steam 20 minutes, then season with: 4 cups water, 1 tsp salt, 4 tbsp chicken oil, 7 canting Kikkoman.",
+        "Then wrap.",
+        "1 lb makes ± 5 | 5 lbs makes ± 25–27."
+      ],
+      "notes_id": "FLAG: Berkas 2, Hal. 6. Resep ini untuk ketan tanpa isian — lihat Resep 26 (Bacang Beras) untuk isian lengkapnya.",
+      "notes_en": "FLAG: File 2, Page 6. This recipe covers the sticky rice wrapper only — see Recipe 26 (Bacang Beras) for the full filling."
     },
     {
       "id": "resep-28",
