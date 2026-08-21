@@ -537,7 +537,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Perlu dikonfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. To be confirmed with Hertha.",
+      "notes_en": "Method not written in the original notes. To be confirmed with Hertha.\n\nFLAG: Berkas 1, Hal. 9 & 11. Confirmed by rereading both occurrences of this recipe in the cookbook — no method is written on either page. Page 11 is the cleaner copy. Ingredients on the page match what's already in recipes.json (no discrepancy found), so ingredients left blank per instructions. Please confirm method with mother.",
       "serves": "Restaurant scale",
       "date": "",
       "featured_order": 9
@@ -552,12 +552,30 @@
       "name_en": "Grilled Coconut Chicken",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "1.500 cc — 2.250 cc Air",
+        "6 kaleng kecil — 13–11 kaleng kecil Santan",
+        "3 cup — 4½ cup Kecap manis",
+        "3 cup — 4½ cup Gula pasir",
+        "¼ cup + 4 s/m — ½ cup Garam",
+        "5 s/m — 8 s/makan Pepper",
+        "2 Box — 3 Box Brown sugar",
+        "20 lembar — 30 lembar Daun Jeruk Purut"
+      ],
+      "ingredients_en": [
+        "1,500 ml — 2,250 ml water (air)",
+        "6 — 11–13 small cans coconut milk (santan)",
+        "3 — 4½ cups sweet soy sauce (kecap manis)",
+        "3 — 4½ cups white sugar (gula pasir)",
+        "¼ cup + 4 tbsp — ½ cup salt (garam)",
+        "5 — 8 tbsp pepper",
+        "2 — 3 boxes brown sugar",
+        "20 — 30 leaves kaffir lime leaves (daun jeruk purut)"
+      ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "notes_id": "Catatan: Gula Thai — kurangi jumlahnya. Tidak ada cara membuat yang tertulis di halaman aslinya.",
+      "notes_en": "FLAG: Berkas 1, Hal. 9 & 15. No method written in the original notes — please confirm cooking steps (e.g. combining, marinating/basting, grilling) with mother. Mother's note: 'Thai sugar — reduce the amount.' Page 15 has two quantity columns (1x and 1½x), both transcribed here."
     },
     {
       "id": "resep-12",
@@ -1862,7 +1880,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Ini adalah campuran bumbu kering. Cara menggiling, menyimpan, dan menggunakannya untuk gule perlu dikonfirmasi dengan Ibu. Resep muncul dua kali dalam catatan asli dengan takaran yang identik.",
-      "notes_en": "This is a dry spice blend. How to grind, store, and use it for the full gule stew to be confirmed with Hertha. Recipe appears twice in the original notes with identical measurements.",
+      "notes_en": "This is a dry spice blend. How to grind, store, and use it for the full gule stew to be confirmed with Hertha. Recipe appears twice in the original notes with identical measurements.\n\nFLAG: Berkas 3, Hal. 4 & 6. Confirmed by rereading — this is a dry spice blend recipe (anise, cinnamon, nutmeg, cardamom, coriander, turmeric, cloves, cumin, white pepper) with no method written (no grinding/storage instructions). Appears twice, identical. Ingredients match recipes.json, no discrepancy found.",
       "serves": "",
       "date": "",
       "featured_order": 7
@@ -2207,12 +2225,26 @@
       "name_en": "",
       "headnote_id": "Bubur ketan hitam hangat yang manis dengan topping santan — salah satu dessert paling dicintai di Ramayani.",
       "headnote_en": "A warm, sweet, black wild rice pudding topped with coconut milk — one of Ramayani's most beloved desserts.",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "1 Pak (5 lbs) Ketan hitam",
+        "2½ X banyaknya ketan — air",
+        "2 Gula Jawa",
+        "4 cup Gula pasir",
+        "3 s/teh Garam",
+        "Tidak anzingam Daun Pandan"
+      ],
+      "ingredients_en": [
+        "1 pack (5 lbs / 2.3 kg) black glutinous rice (ketan hitam)",
+        "2½ × the amount of rice, water",
+        "2 pieces palm sugar (gula jawa)",
+        "4 cups (960 ml) white sugar (gula pasir)",
+        "3 tsp salt (garam)",
+        "several leaves pandan leaves (daun pandan)"
+      ],
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 2, Hal. 13. Ingredients only — no method written in the original notes. Please confirm cooking steps (soaking/boiling time, order of adding sugar and pandan) with mother."
     },
     {
       "id": "resep-49",
@@ -2298,7 +2330,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Tidak ada udang atau cumi dalam daftar bahan — perlu dikonfirmasi dengan Ibu berapa banyak seafood yang digunakan dan langkah-langkah memasaknya.",
-      "notes_en": "Method not written in the original notes. No squid or prawns listed in ingredients — confirm with Hertha the quantity of seafood used and the cooking steps.",
+      "notes_en": "Method not written in the original notes. No squid or prawns listed in ingredients — confirm with Hertha the quantity of seafood used and the cooking steps.\n\nFLAG: Berkas 3, Hal. 17. Confirmed by rereading — ingredients only, no method written, and no prawns/udang actually listed among the ingredients despite the recipe name 'Bumbu Udang Mentega'. Ingredients match recipes.json, no discrepancy found. Please confirm method and prawn quantity with mother.",
       "serves": "",
       "date": "",
       "featured_order": 8
@@ -2362,10 +2394,40 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
+      "ingredients_id": [
+        "2½ s/makan Gist, direndam dengan 200 cc air anget ± 5 minute",
+        "4 Telur",
+        "850 gram Self rising",
+        "150 gram Gula",
+        "1 kaleng Santen (16 0z)",
+        "1 Canting Minyak sayur (± 4 0z)",
+        "Sisanya air anget — total liquid 900 cc",
+        "2 bhs Vanilla",
+        "1 s/teh Baking Soda",
+        "Sepuhan kuning",
+        "TOPPINGNYA: Butter, Condensed milk, Coklat sprinkle, Kacang, Keju"
+      ],
+      "ingredients_en": [
+        "2½ tbsp yeast (gist), soaked in 200 ml warm water for ± 5 minutes",
+        "4 eggs (telur)",
+        "850 g self-rising flour",
+        "150 g sugar (gula)",
+        "1 can coconut milk / santan (16 oz)",
+        "1 canting vegetable oil (minyak sayur) ± 4 oz",
+        "remaining warm water to total 900 ml liquid",
+        "2 tbsp vanilla",
+        "1 tsp baking soda",
+        "yellow food colouring (sepuhan kuning)",
+        "TOPPINGS: butter, condensed milk, chocolate sprinkles, peanuts, cheese"
+      ],
+      "method_id": [
+        "1. Semua diblender jadi satu. Ditunggu ½ jam sampai naik.",
+        "2. Toppingnya: Butter, condensed milk, coklat sprinkle, kacang, keju."
+      ],
+      "method_en": [
+        "1. Blend everything together. Leave to rest for ½ hour until risen.",
+        "2. Toppings: butter, condensed milk, chocolate sprinkles, peanuts, cheese."
+      ],
       "notes_id": "",
       "notes_en": ""
     },
@@ -2481,12 +2543,22 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "2 kg Potatoes",
+        "¼ kg Carrot",
+        "1 cup Fresh milk",
+        "100 gram Margarine / Butter"
+      ],
+      "ingredients_en": [
+        "2 kg (4.4 lbs) potatoes (kentang)",
+        "¼ kg (250 g) carrot (wortel)",
+        "1 cup (240 ml) fresh milk (susu segar)",
+        "100 g (3.5 oz) margarine or butter (mentega)"
+      ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "notes_id": "Catatan Ibu: diberi label 'M'.",
+      "notes_en": "FLAG: Berkas 6, Hal. 6. No method written. Marked 'M' by mother. Paired with Mushroom Sauce (Recipe 54) for Steak Nostalgia. Please confirm method with mother."
     },
     {
       "id": "resep-56",
@@ -2555,12 +2627,26 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
+      "ingredients_id": [
+        "SAUCE: Butter, Flour, Salt, Pepper, Milk, Cheese (Smoker Gouda or Cheddar)",
+        "Elbow Macaroni cooked for 6 minutes",
+        "Bacon fried"
+      ],
+      "ingredients_en": [
+        "SAUCE: butter (mentega), flour (tepung), salt (garam), pepper (merica), milk (susu), cheese — smoky Gouda or Cheddar (keju)",
+        "elbow macaroni cooked for 6 minutes",
+        "bacon, fried"
+      ],
+      "method_id": [
+        "1. Elbow Macaroni cooked for 6 minutes. Bacon → fried and toss together with the sauce and bake at 350° for ..... minutes.",
+        "2. Topper with more cheese."
+      ],
+      "method_en": [
+        "1. Elbow macaroni cooked for 6 minutes. Bacon → fried and toss together with the sauce and bake at 350°F for ..... minutes.",
+        "2. Top with more cheese."
+      ],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 6, Hal. 8. Baking time left blank in the original ('for ..... minutes') — mother did not write a duration. No quantities given for sauce ingredients (butter/flour/milk/cheese amounts unspecified). Method is otherwise present but incomplete on these two points."
     },
     {
       "id": "resep-58",
@@ -2701,7 +2787,7 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Lihat juga Resep 61 — Laksa versi Malaysia dari Ibu. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Ingredients only — no quantities, no method. See also Recipe 61 — My Mum's Malaysian Laksa. Please confirm full recipe with Hertha.",
+      "notes_en": "Ingredients only — no quantities, no method. See also Recipe 61 — My Mum's Malaysian Laksa. Please confirm full recipe with Hertha.\n\nFLAG: Berkas 5, Hal. 22. Confirmed by rereading — ingredients only, no quantities and no method written. Mother's note lists accompaniments only: bihun, toge, ayam, telur, tauge, kerupuk. Ingredients match recipes.json, no discrepancy found. See also Recipe 61 (My Mum's Laksa, Malaysian) which does have a full method and may be a useful reference.",
       "serves": "",
       "date": ""
     },
@@ -2833,12 +2919,30 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "VERSI 1: 11 cup Air",
+        "VERSI 1: 4 potong Gula Merak (brown sugar)",
+        "VERSI 1: 6 potong Gula Merak",
+        "VERSI 1: 10 Bungkus Air Kelapa muda sekupnya",
+        "VERSI 2: 15 lbs. Gula Merak",
+        "VERSI 2: 9 Bungkus Gula (putih)",
+        "VERSI 2: Air Kelapa muda sekupnya",
+        "VERSI 2: Daun Pandan secukupnya"
+      ],
+      "ingredients_en": [
+        "VERSION 1: 11 cups water (air)",
+        "VERSION 1: 4 pieces palm sugar (gula merah)",
+        "VERSION 1: 6 pieces palm sugar (gula merah)",
+        "VERSION 1: 10 packets young coconut water (air kelapa muda)",
+        "VERSION 2: 15 lbs (6.8 kg) palm sugar (gula merah)",
+        "VERSION 2: 9 packets white sugar (gula putih)",
+        "VERSION 2: young coconut water as needed",
+        "VERSION 2: pandan leaves to taste (daun pandan)"
+      ],
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 4, Hal. 16. Page written sideways. Two versions with different quantities, both transcribed here. No method written for either version. Please confirm cooking steps with mother."
     },
     {
       "id": "resep-64",
@@ -2903,12 +3007,36 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "3 Vanilla",
+        "190 gram Terigu",
+        "180 gram Gula",
+        "80 gram Minyak ± 10 s/makan",
+        "1 gelas Putih Telur",
+        "5 Merah Telur",
+        "1 gelas Air Suji (1 cup)",
+        "1 s/teh Baking powder",
+        "1 s/teh Garam",
+        "1 s/teh Soda",
+        "1 s/teh Cream of Tartar"
+      ],
+      "ingredients_en": [
+        "3 tbsp vanilla",
+        "190 g (6.7 oz) flour (terigu)",
+        "180 g (6.3 oz) sugar (gula)",
+        "80 g / ± 10 tbsp oil (minyak)",
+        "1 glass egg whites (putih telur)",
+        "5 egg yolks (merah telur)",
+        "1 glass (1 cup) suji leaf water (air suji) — pandan-like green colouring",
+        "1 tsp baking powder",
+        "1 tsp salt (garam)",
+        "1 tsp baking soda",
+        "1 tsp cream of tartar"
+      ],
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 4, Hal. 3. Ingredients only — no method written in the original notes (no beating/folding order, pan/oven instructions). Please confirm with mother."
     },
     {
       "id": "resep-66",
@@ -3030,12 +3158,30 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "2 LBS GROUND PORK",
+        "5 STICKS CARROT",
+        "BEAN THREAD",
+        "GREEN ONION",
+        "FISH SAUCE",
+        "GARLIC POWDER",
+        "SALT",
+        "PEPPER"
+      ],
+      "ingredients_en": [
+        "2 lbs (900 g) ground pork",
+        "5 sticks carrot (wortel)",
+        "bean thread noodles (soun)",
+        "green onion / spring onion (daun bawang)",
+        "fish sauce (kecap ikan)",
+        "garlic powder (bawang putih bubuk)",
+        "salt (garam)",
+        "pepper (merica)"
+      ],
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 4, Hal. 7. No method written, and no quantities given for the seasoning ingredients (fish sauce, garlic powder, salt, pepper). Please confirm with mother."
     },
     {
       "id": "resep-69",
@@ -3084,12 +3230,44 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
+      "ingredients_id": [
+        "2 Bola / ± 1 ons Serma, aipotoong ± 1 ons.",
+        "1 Kaleng Cabe merah, diirubos diiblender kecil-kecil",
+        "1 Batok tahu Bawang putih, airubos, dipotong kecil",
+        "Minyak sayur ± ½ Kencur",
+        "1 Tempat tahu Bawang putih, diiriskan + kecil diiblender bakes",
+        "6 potong Pete",
+        "10 Bungkles Nangka muda",
+        "Gula, Kecap ikan, Garam",
+        "Sambal merah",
+        "Minyak sayur ± ½ Kencur",
+        "Laos, Ketumbar, Jintan",
+        "5 lbs. Daging ayam (slices chicken)"
+      ],
+      "ingredients_en": [
+        "2 balls / ± 1 oz (unclear item — see flag)",
+        "1 can red chilli (cabe merah), boiled then blended small",
+        "1 container garlic (bawang putih), boiled, cut small",
+        "vegetable oil, ± ½ portion kencur (lesser galangal)",
+        "1 container garlic (bawang putih), sliced + blended small, must bake",
+        "6 pieces stink bean / petai (pete)",
+        "10 packets young jackfruit (nangka muda)",
+        "sugar, fish sauce, salt",
+        "red sambal",
+        "vegetable oil, lesser galangal (kencur)",
+        "galangal (laos), coriander (ketumbar), cumin (jintan)",
+        "5 lbs (2.3 kg) sliced chicken (daging ayam)"
+      ],
+      "method_id": [
+        "1. Bawang putih diigorengim, lalu masukkan Cabe merah dg. minyak sedikit-sedikit digorengim lagi. Sesudah itu masukkan bumbu-bumbu. Aduk digogorengim. Sesudah itu masukkan bumbu-bumbu lagi. Kala sudah entuk dipanaskan kembali.",
+        "2. Goreng udang kering lalu dipisahkan. Sesudah garing masukkan parte. Aduk dan kasih bumbu-bumbu lagi."
+      ],
+      "method_en": [
+        "1. Fry the garlic, then add the red chilli with a little oil and fry again. After that add the spices. Stir and fry. After that add the spices again. When done, reheat when needed.",
+        "2. Fry dried shrimp then set aside. Once crispy add the portion. Stir and season again."
+      ],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 4, Hal. 9–10. BOTH PAGES WRITTEN SIDEWAYS. Very irregular handwriting, several words unclear (e.g. 'Serma' in first ingredient line could not be confidently identified). Recipe appears to be a Gudeg variation and step 2 references dried shrimp not listed among these ingredients — the method may be tangled with another recipe's notes. Please confirm full ingredients and correct method sequence with mother."
     },
     {
       "id": "resep-71",
@@ -3118,12 +3296,40 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "Buncis",
+        "Carrot",
+        "Kentang",
+        "Ayam rebus",
+        "So-un",
+        "Mentega",
+        "Gula",
+        "Garam",
+        "Merica",
+        "Pala",
+        "Kaldu ayam",
+        "Bawang besar iris",
+        "Digiling no. 3"
+      ],
+      "ingredients_en": [
+        "green beans (buncis)",
+        "carrot (wortel)",
+        "potato (kentang)",
+        "boiled chicken (ayam rebus)",
+        "glass noodles (so-un)",
+        "butter (mentega)",
+        "sugar (gula)",
+        "salt (garam)",
+        "pepper (merica)",
+        "nutmeg (pala)",
+        "chicken broth (kaldu ayam)",
+        "large onion, sliced (bawang besar iris)",
+        "note: roll pastry at setting no. 3 (for wrapping the filling)"
+      ],
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 5, Hal. 12. No quantities written for any ingredient, and no method beyond the note 'digiling no.3' (roll pastry at setting 3, which relates to Recipe 71's pastry skin rather than this filling itself). Please confirm ingredient amounts and cooking method with mother."
     },
     {
       "id": "resep-73",
@@ -3373,12 +3579,22 @@
       "name_en": "",
       "headnote_id": "Durian manis, gula jawa, dan santan — untuk pecinta durian sejati.",
       "headnote_en": "Sweet durian, brown sugar, and coconut milk — for the true durian lover.",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "3 lbs Durian No seed",
+        "4 Kaleng Santen",
+        "3 Kaleng Gula Jawa masak",
+        "2 s/teh Garam"
+      ],
+      "ingredients_en": [
+        "3 lbs (1.4 kg) durian flesh, no seeds (durian tanpa biji)",
+        "4 cans coconut milk (santan)",
+        "3 cans palm sugar syrup, cooked (gula jawa masak)",
+        "2 tsp salt (garam)"
+      ],
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "FLAG: Berkas 5, Hal. 3. Ingredients only — no method written in the original notes. Please confirm mixing/blending and freezing steps with mother."
     },
     {
       "id": "resep-88",
