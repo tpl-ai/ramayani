@@ -90,7 +90,6 @@
       "id": "resep-1",
       "resep_num": 1,
       "category": "ayam",
-      "status": "complete",
       "photo": "",
       "name_id": "Pasta Kari Ayam Ramayani",
       "name_en": "",
@@ -221,13 +220,22 @@
         "Add items (g) through (k), and package into 10 bags."
       ],
       "notes_id": "Resep produksi pabrik. Untuk rumah tangga kurangi menjadi 1/20. FLAG: Resep skala produksi besar; harap konfirmasi dengan Ibu apakah ada versi rumah tangga.",
-      "notes_en": "Factory production recipe. For home cooking reduce all quantities to 1/20. FLAG: Large-scale production recipe — please confirm with mother if a smaller home version exists."
+      "notes_en": "Factory production recipe. For home cooking reduce all quantities to 1/20. FLAG: Large-scale production recipe — please confirm with mother if a smaller home version exists.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
+      "reviewed": false
     },
     {
       "id": "resep-2",
       "resep_num": 2,
       "category": "ayam",
-      "status": "complete",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ayam-kare-9inyyEIckHZDVH0VO3weehoXRhpHgm.jpg",
       "name_id": "Ayam Kare",
       "name_en": "Chicken Curry",
@@ -346,13 +354,17 @@
       "serves": "6",
       "date": "3 Oktober 2006",
       "featured_order": 1,
-      "content_status": "complete"
+      "content_state": "full",
+      "flags": [
+        "scale"
+      ],
+      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
+      "reviewed": false
     },
     {
       "id": "resep-3",
       "resep_num": 3,
       "category": "ayam",
-      "status": "complete",
       "photo": "",
       "name_id": "Ayam Besengek",
       "name_en": "Hello Kitty",
@@ -486,13 +498,18 @@
       ],
       "notes_id": "Catatan Ibu: 'Resep paling baru, Sept. 23–1986. Lihat di belakang.'",
       "notes_en": "Mother's note: 'Newest recipe, Sept. 23–1986. See at the back.'",
-      "content_status": "in_progress"
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-4",
       "resep_num": 4,
       "category": "ayam",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Ayam Besengek",
       "name_en": "",
@@ -595,13 +612,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 1, Hal. 4. Hanya daftar bahan yang tertulis — tidak ada cara membuat. Juga terdapat judul 'Ayam Kare' di bawah halaman (kemungkinan awal resep baru). Harap konfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. FLAG: File 1, Page 4. Ingredients list only — no method written. Also shows title 'Ayam Kare' at the bottom of the page (possibly the start of a new recipe). Please confirm with mother."
+      "notes_en": "Method not written in the original notes. FLAG: File 1, Page 4. Ingredients list only — no method written. Also shows title 'Ayam Kare' at the bottom of the page (possibly the start of a new recipe). Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-5",
       "resep_num": 5,
       "category": "ayam",
-      "status": "complete",
       "photo": "",
       "name_id": "Ayam Bumbu Rujak Ramayani",
       "name_en": "",
@@ -740,13 +764,20 @@
         "Everything stirred together until thick."
       ],
       "notes_id": "Catatan Ibu: bumbu ini untuk ayam bumbu rujak. Semuanya diaduk hingga kental. Berkas 1, Hal. 5 — cara membuat ditulis dalam gaya daftar bahan (setiap bahan dengan instruksinya); disalin persis seperti aslinya.",
-      "notes_en": "Mother's note: this sauce is for Ayam Bumbu Rujak. Everything stirred together until thick. File 1, Page 5 — method written in ingredient-list style (each item with its instruction); transcribed exactly as written."
+      "notes_en": "Mother's note: this sauce is for Ayam Bumbu Rujak. Everything stirred together until thick. File 1, Page 5 — method written in ingredient-list style (each item with its instruction); transcribed exactly as written.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-6",
       "resep_num": 6,
       "category": "ayam",
-      "status": "flagged",
       "photo": "",
       "name_id": "Ayam Goreng Jakarta",
       "name_en": "",
@@ -863,13 +894,20 @@
         "Chicken marinated for at least 3 hours."
       ],
       "notes_id": "FLAG: Berkas 1, Hal. 6 & 11. Ibu hanya menulis waktu marinasi — tidak ada langkah lebih lanjut (mis. cara menggoreng) yang tertulis di halaman asli. Harap konfirmasi cara menggoreng dengan Ibu.",
-      "notes_en": "FLAG: File 1, Pages 6 & 11. Mother only wrote the marinade time — no further steps (e.g. frying method) are written on the original page. Please confirm frying method with mother."
+      "notes_en": "FLAG: File 1, Pages 6 & 11. Mother only wrote the marinade time — no further steps (e.g. frying method) are written on the original page. Please confirm frying method with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-7",
       "resep_num": 7,
       "category": "ayam",
-      "status": "complete",
       "photo": "",
       "name_id": "Ayam Goreng Kering",
       "name_en": "",
@@ -928,13 +966,20 @@
         "Serve with sambal terasi."
       ],
       "notes_id": "Sajikan dengan sambal terasi.",
-      "notes_en": "Serve with sambal terasi."
+      "notes_en": "Serve with sambal terasi.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-8",
       "resep_num": 8,
       "category": "ayam",
-      "status": "complete",
       "photo": "",
       "name_id": "Ayam Goreng Kuning",
       "name_en": "",
@@ -1103,13 +1148,22 @@
         "All of these combined and stirred together."
       ],
       "notes_id": "FLAG: Berkas 1, Hal. 7. Halaman asli memiliki DUA KOLOM UKURAN untuk dua skala batch berbeda. Catatan pensil di bagian bawah berisi bahan produksi tambahan yang agak tidak jelas. Harap konfirmasi dengan Ibu.",
-      "notes_en": "FLAG: File 1, Page 7. Original page has TWO COLUMNS of quantities for two different batch sizes. Pencil notes at the bottom contain additional production quantities that are partially unclear. Please confirm with mother."
+      "notes_en": "FLAG: File 1, Page 7. Original page has TWO COLUMNS of quantities for two different batch sizes. Pencil notes at the bottom contain additional production quantities that are partially unclear. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-9",
       "resep_num": 9,
       "category": "ayam",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Ayam Panggang Padang",
       "name_en": "",
@@ -1232,13 +1286,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Catatan Ibu: 'Sesudah empuk ayamnya, dibakar.' FLAG: Berkas 1, Hal. 8. Hanya daftar bahan — tidak ada takaran, tidak ada cara membuat. Bahan juga tidak ada ukurannya. Harap konfirmasi semua takaran dan langkah-langkah dengan Ibu.",
-      "notes_en": "Mother's only note: 'Once the chicken is tender, grill it.' FLAG: File 1, Page 8. Ingredient names only — no quantities, no method. Please confirm all amounts and steps with mother."
+      "notes_en": "Mother's only note: 'Once the chicken is tender, grill it.' FLAG: File 1, Page 8. Ingredient names only — no quantities, no method. Please confirm all amounts and steps with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-10",
       "resep_num": 10,
       "category": "ayam",
-      "status": "needs_method",
       "photo": "ayam-sauce-ramayani.jpg",
       "name_id": "Saus Ayam Ramayani",
       "name_en": "Chicken in Ramayani Sauce",
@@ -1334,13 +1395,15 @@
       "notes_en": "Method not written in the original notes. To be confirmed with Hertha.\n\nFLAG: Berkas 1, Hal. 9 & 11. Confirmed by rereading both occurrences of this recipe in the cookbook — no method is written on either page. Page 11 is the cleaner copy. Ingredients on the page match what's already in recipes.json (no discrepancy found), so ingredients left blank per instructions. Please confirm method with mother.",
       "serves": "Restaurant scale",
       "date": "",
-      "featured_order": 9
+      "featured_order": 9,
+      "content_state": "partial",
+      "flags": [],
+      "reviewed": false
     },
     {
       "id": "resep-11",
       "resep_num": 11,
       "category": "ayam",
-      "status": "needs_method",
       "photo": "ayam-bakar.jpg",
       "name_id": "Ayam Solo",
       "name_en": "Grilled Coconut Chicken",
@@ -1433,13 +1496,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Catatan: Gula Thai — kurangi jumlahnya. Tidak ada cara membuat yang tertulis di halaman aslinya.",
-      "notes_en": "FLAG: Berkas 1, Hal. 9 & 15. No method written in the original notes — please confirm cooking steps (e.g. combining, marinating/basting, grilling) with mother. Mother's note: 'Thai sugar — reduce the amount.' Page 15 has two quantity columns (1x and 1½x), both transcribed here."
+      "notes_en": "FLAG: Berkas 1, Hal. 9 & 15. No method written in the original notes — please confirm cooking steps (e.g. combining, marinating/basting, grilling) with mother. Mother's note: 'Thai sugar — reduce the amount.' Page 15 has two quantity columns (1x and 1½x), both transcribed here.",
+      "content_state": "partial",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-12",
       "resep_num": 12,
       "category": "ayam",
-      "status": "complete",
       "photo": "",
       "name_id": "Bumbu Ayam Pulang",
       "name_en": "",
@@ -1630,13 +1700,20 @@
         "For Vegetarian: do not use shrimp paste and fish sauce — use vegetables and potatoes."
       ],
       "notes_id": "Catatan Ibu: 'bisa dipake djuga buat pesmol.' November 2000. Untuk Vegetarian: jangan pakai trasi & kecap ikan.",
-      "notes_en": "Mother's note: 'Can also be used for Pesmol.' November 2000. Vegetarian note written by mother in the original."
+      "notes_en": "Mother's note: 'Can also be used for Pesmol.' November 2000. Vegetarian note written by mother in the original.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-13",
       "resep_num": 13,
       "category": "seafood",
-      "status": "complete",
       "photo": "",
       "name_id": "Pesmol",
       "name_en": "",
@@ -1729,13 +1806,20 @@
         "Add the fried fish to the sauce and cook slowly."
       ],
       "notes_id": "Menggunakan bumbu yang sama dengan Resep 12 (Bumbu Ayam Pulang).",
-      "notes_en": "Uses the same paste as Recipe 12 (Bumbu Ayam Pulang). Mother noted this connection on the original page."
+      "notes_en": "Uses the same paste as Recipe 12 (Bumbu Ayam Pulang). Mother noted this connection on the original page.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-14",
       "resep_num": 14,
       "category": "seafood",
-      "status": "complete",
       "photo": "",
       "name_id": "Acar Ikan Pombret / Nila & Pepes Ikan Emas / Trout",
       "name_en": "",
@@ -1894,13 +1978,20 @@
         "PEPES (Steamed): Roughly chop the spices (do not grind). Rub the fish first with yeast, salt and vinegar."
       ],
       "notes_id": "Dua resep dalam satu halaman. Acar: bumbu halus. Pepes: bumbu cincang kasar. FLAG: Berkas 1, Hal. 18 / Berkas 4, Hal. 22. Metode Pepes sangat singkat — hanya persiapan yang ditulis, bukan waktu mengukus. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Two recipes on one page. Pickle uses ground paste; steamed fish uses rough chop. FLAG: File 1 Page 18 / File 4 Page 22. Method for Pepes is very brief — only preparation noted, not steaming time. Please confirm steaming time and full method with mother."
+      "notes_en": "Two recipes on one page. Pickle uses ground paste; steamed fish uses rough chop. FLAG: File 1 Page 18 / File 4 Page 22. Method for Pepes is very brief — only preparation noted, not steaming time. Please confirm steaming time and full method with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-15",
       "resep_num": 15,
       "category": "seafood",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Thai Salad Sauce",
       "name_en": "",
@@ -1993,13 +2084,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Ukuran ditulis sebagai 's/M' dengan volume cc di samping. FLAG: Berkas 1, Hal. 19. Hanya daftar bahan — tidak ada cara membuat. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Measurements written as 's/M' (sendok makan = tablespoon) with cc volume alongside. FLAG: File 1, Page 19. Ingredients list only — no method written. Please confirm with mother."
+      "notes_en": "Measurements written as 's/M' (sendok makan = tablespoon) with cc volume alongside. FLAG: File 1, Page 19. Ingredients list only — no method written. Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-16",
       "resep_num": 16,
       "category": "seafood",
-      "status": "complete",
       "photo": "",
       "name_id": "Kepiting Cabe Hitam",
       "name_en": "",
@@ -2168,13 +2266,22 @@
         "When finished add the remaining ingredients: kecap manis, oyster sauce, sugar, salt."
       ],
       "notes_id": "Kalau bakai sambal oelek jangan pakai vinegar.",
-      "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'"
+      "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-17",
       "resep_num": 17,
       "category": "seafood",
-      "status": "complete",
       "photo": "",
       "name_id": "Chilli Crab",
       "name_en": "",
@@ -2345,13 +2452,20 @@
         "Add mixture of sauce. Bring to a boil and lower the heat and add 2 scrambled eggs."
       ],
       "notes_id": "Kalau bakai Sambal Oelek langan pakai Vinegar.",
-      "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'"
+      "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-18",
       "resep_num": 18,
       "category": "seafood",
-      "status": "complete",
       "photo": "ikan-bakar.jpg",
       "name_id": "Ikan Bakar",
       "name_en": "Grilled Fish, Sweet Soy",
@@ -2479,13 +2593,17 @@
       "notes_en": "Several ingredients without specific quantities — adjust to taste. Confirm proportions with Hertha.",
       "serves": "",
       "date": "",
-      "featured_order": 2
+      "featured_order": 2,
+      "content_state": "full",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-19",
       "resep_num": 19,
       "category": "daging",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Babi Hong",
       "name_en": "",
@@ -2558,13 +2676,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "PENTING: Berbeda dari yang tercantum di indeks buku ini, halaman aslinya hanya berisi daftar bahan saus — tidak ada cara membuat dan tidak ada berat daging babi yang tercantum. FLAG: Berkas 1, Hal. 20. Harap konfirmasi cara membuat dan berat daging dengan Ibu.",
-      "notes_en": "IMPORTANT: Contrary to the collection's own index, the actual page contains only the sauce ingredient list — no method is written, and no pork weight is specified. FLAG: File 1, Page 20. Please confirm the method and meat quantity with mother."
+      "notes_en": "IMPORTANT: Contrary to the collection's own index, the actual page contains only the sauce ingredient list — no method is written, and no pork weight is specified. FLAG: File 1, Page 20. Please confirm the method and meat quantity with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-20",
       "resep_num": 20,
       "category": "daging",
-      "status": "complete",
       "photo": "",
       "name_id": "Bali Tim",
       "name_en": "",
@@ -2659,13 +2784,20 @@
         "The dry sour vegetables must be soaked in water for 24 hours and cut to ½\" pieces."
       ],
       "notes_id": "Sayur asin kering harus direndam 24 jam. FLAG: Berkas 1, Hal. 21–22. Resep dua halaman; Hal. 22 berisi versi saus yang sedikit berbeda (Sauce Babi Tim). Harap konfirmasi versi mana yang digunakan.",
-      "notes_en": "Mother's note: dry sour vegetables must soak 24 hours. FLAG: File 1, Pages 21–22. Two-page recipe. Page 22 contains a slightly different sauce version (Sauce Babi Tim). Please confirm which version mother uses."
+      "notes_en": "Mother's note: dry sour vegetables must soak 24 hours. FLAG: File 1, Pages 21–22. Two-page recipe. Page 22 contains a slightly different sauce version (Sauce Babi Tim). Please confirm which version mother uses.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-21",
       "resep_num": 21,
       "category": "daging",
-      "status": "complete",
       "photo": "",
       "name_id": "Tlen Se Tlew",
       "name_en": "",
@@ -2766,13 +2898,20 @@
         "B.B.Q. ROAST RED PORK: Marinate and cook until all the water is absorbed and leave the thick sauce and BBQ."
       ],
       "notes_id": "Tiga resep dalam satu halaman.",
-      "notes_en": "Three recipes on one page. Method transcribed exactly as written by mother."
+      "notes_en": "Three recipes on one page. Method transcribed exactly as written by mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-22",
       "resep_num": 22,
       "category": "daging",
-      "status": "complete",
       "photo": "",
       "name_id": "Bali",
       "name_en": "",
@@ -2899,13 +3038,20 @@
         "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
       ],
       "notes_id": "Catatan Ibu: 'Asem — kalan cabenya sudah asem, tak usah pakei.' Resep muncul di tiga halaman (Berkas 1 Hal. 24 / Berkas 2 Hal. 1 & 8) — versi Berkas 2 Hal. 8 paling lengkap dan disimpan di sini.",
-      "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.' Recipe appears on three pages (File 1 p.24 / File 2 pp.1 & 8) — File 2 Page 8 is the most complete version, kept here."
+      "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.' Recipe appears on three pages (File 1 p.24 / File 2 pp.1 & 8) — File 2 Page 8 is the most complete version, kept here.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-23",
       "resep_num": 23,
       "category": "sambal_saus",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Acar Ramayani",
       "name_en": "",
@@ -2968,13 +3114,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli. FLAG: Berkas 1, Hal. 16. Hanya daftar bahan — tidak ada cara membuat, tidak ada sayuran yang disebutkan. Harap konfirmasi sayuran apa yang digunakan dan cara membuatnya dengan Ibu.",
-      "notes_en": "METHOD: Not written in the original notes. FLAG: File 1, Page 16. Ingredients only — no method, no vegetables specified. Please confirm which vegetables are used and the full method with mother."
+      "notes_en": "METHOD: Not written in the original notes. FLAG: File 1, Page 16. Ingredients only — no method, no vegetables specified. Please confirm which vegetables are used and the full method with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-24",
       "resep_num": 24,
       "category": "sambal_saus",
-      "status": "needs_method",
       "photo": "otak-otak.jpg",
       "name_id": "Bumbu Rujak & Bumbu Siomai / Bumbu Otak-Otak",
       "name_en": "",
@@ -3157,13 +3310,19 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "CATATAN PENTING oleh Ibu: 'Bumbu Rujak → Cuha lebih banyak dari Bumbu Siomai/ot. Gula lebih sedikit.' FLAG: Berkas 2, Hal. 21 / Berkas 3, Hal. 11. Dua resep dalam satu halaman. Hanya bahan — tidak ada cara membuat. Harap konfirmasi cara memblender/mengolah dengan Ibu.",
-      "notes_en": "Mother's important note (written at the bottom of the original): 'Rujak dressing has more vinegar than the Siomai sauce. Less sugar.' FLAG: File 2 Page 21 / File 3 Page 11. Two recipes on one page. Ingredients only — no method. Please confirm blending/preparation method with mother."
+      "notes_en": "Mother's important note (written at the bottom of the original): 'Rujak dressing has more vinegar than the Siomai sauce. Less sugar.' FLAG: File 2 Page 21 / File 3 Page 11. Two recipes on one page. Ingredients only — no method. Please confirm blending/preparation method with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-25",
       "resep_num": 25,
       "category": "sambal_saus",
-      "status": "complete",
       "photo": "belado-tahu.jpg",
       "name_id": "Bumbu Belado Ramayani",
       "name_en": "",
@@ -3332,13 +3491,19 @@
         "Add the remaining ingredients and cook for another 15 minutes."
       ],
       "notes_id": "Untuk ikan bumbu belado, telur belado — gunakan juga untuk Nasi Rames. FLAG: Berkas 2, Hal. 20 & 22. Resep muncul dua kali dengan ukuran berbeda; cara membuat hanya ada di Hal. 22.",
-      "notes_en": "For ikan belado (belado fish), telur belado (belado eggs) — also used for Nasi Rames. Method transcribed exactly from Page 22. FLAG: File 2, Pages 20 & 22. Recipe appears twice with different quantities; method only appears on Page 22."
+      "notes_en": "For ikan belado (belado fish), telur belado (belado eggs) — also used for Nasi Rames. Method transcribed exactly from Page 22. FLAG: File 2, Pages 20 & 22. Recipe appears twice with different quantities; method only appears on Page 22.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-26",
       "resep_num": 26,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "",
       "name_id": "Bacang Beras",
       "name_en": "",
@@ -3519,13 +3684,22 @@
         "Then wrap (in banana leaves or bamboo leaves)."
       ],
       "notes_id": "Semua bumbu isian digogorengim dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis. FLAG: Berkas 1, Hal. 10 / Berkas 2, Hal. 5 & 24. Bahan isian tidak ada takaran terperinci. Harap konfirmasi dengan Ibu.",
-      "notes_en": "All filling spices fried in generous vegetable oil. Stored overnight; before use stir again and add more sweet soy sauce. FLAG: File 1 p.10 / File 2 pp.5 & 24. Recipe appears three times with minor variations. Filling ingredients have no detailed quantities. Please confirm with mother."
+      "notes_en": "All filling spices fried in generous vegetable oil. Stored overnight; before use stir again and add more sweet soy sauce. FLAG: File 1 p.10 / File 2 pp.5 & 24. Recipe appears three times with minor variations. Filling ingredients have no detailed quantities. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-27",
       "resep_num": 27,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "",
       "name_id": "Bacang Ketan",
       "name_en": "",
@@ -3598,13 +3772,20 @@
         "1 lb makes ± 5 | 5 lbs makes ± 25–27."
       ],
       "notes_id": "FLAG: Berkas 2, Hal. 6. Resep ini untuk ketan tanpa isian — lihat Resep 26 (Bacang Beras) untuk isian lengkapnya.",
-      "notes_en": "FLAG: File 2, Page 6. This recipe covers the sticky rice wrapper only — see Recipe 26 (Bacang Beras) for the full filling."
+      "notes_en": "FLAG: File 2, Page 6. This recipe covers the sticky rice wrapper only — see Recipe 26 (Bacang Beras) for the full filling.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-28",
       "resep_num": 28,
       "category": "appetizer",
-      "status": "complete",
       "photo": "",
       "name_id": "Batagor",
       "name_en": "",
@@ -3643,13 +3824,20 @@
         "Serve with sate peanut sauce."
       ],
       "notes_id": "FLAG: Berkas 2, Hal. 6. Catatan sangat singkat — kemungkinan mengacu pada Siomai yang dibuat terpisah. Bumbu sate lihat Resep 24 (Bumbu Rujak). Harap konfirmasi dengan Ibu.",
-      "notes_en": "FLAG: File 2, Page 6. Very brief note — likely refers to separately made siomai. Peanut sauce see Recipe 24 (Bumbu Rujak). Please confirm with mother."
+      "notes_en": "FLAG: File 2, Page 6. Very brief note — likely refers to separately made siomai. Peanut sauce see Recipe 24 (Bumbu Rujak). Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-29",
       "resep_num": 29,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "bakmi-ayam-jakarta.jpg",
       "name_id": "Bami Ayam Special Ramayani",
       "name_en": "Ramayani Special Chicken Noodles",
@@ -3755,13 +3943,17 @@
       "notes_en": "Steps to be confirmed with Hertha — some parts of the original notes were unclear.",
       "serves": "",
       "date": "Juni 2000",
-      "featured_order": 3
+      "featured_order": 3,
+      "content_state": "full",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-30",
       "resep_num": 30,
       "category": "appetizer",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Bakso Goreng Akian Soh",
       "name_en": "",
@@ -3844,13 +4036,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 2, Hal. 7 & 23. Resep muncul dua kali — versi identik. Tidak ada cara membuat. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. FLAG: File 2, Pages 7 & 23. Recipe appears twice — identical versions. No method written. Please confirm with mother."
+      "notes_en": "Method not written in the original notes. FLAG: File 2, Pages 7 & 23. Recipe appears twice — identical versions. No method written. Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-31",
       "resep_num": 31,
       "category": "appetizer",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Bakut Teh",
       "name_en": "",
@@ -3983,13 +4182,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 2, Hal. 7. Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. FLAG: File 2, Page 7. Ingredient names only — no quantities, no method. Please confirm with mother."
+      "notes_en": "Method not written in the original notes. FLAG: File 2, Page 7. Ingredient names only — no quantities, no method. Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-32",
       "resep_num": 32,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "cui-mie.jpg",
       "name_id": "Kwee Tiauw Goreng",
       "name_en": "",
@@ -4092,13 +4298,19 @@
         "Fry until dry then season with: salt, MSG, dark soy sauce, fish sauce — stir, then add bean sprouts and spring onion."
       ],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-33",
       "resep_num": 33,
       "category": "nasi_mie",
-      "status": "needs_method",
       "photo": "nasi-uduk.jpg",
       "name_id": "Nasi Uduk",
       "name_en": "Nasi Uduk",
@@ -4131,13 +4343,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli untuk Nasi Kuning maupun Nasi Uduk. Catatan Ibu: 'Nasi Uduk: sama dengan Nasi Kuning, hanya tidak diberi kunyit.' FLAG: Berkas 6, Hal. 10 & 11. Tidak ada cara membuat. Laos dan sereh tidak ada takaran. Verifikasi: halaman ini memang hanya berisi daftar bahan tanpa cara membuat — dikonfirmasi sesuai flag indeks.",
-      "notes_en": "METHOD: Not written in the original notes for either Nasi Kuning or Nasi Uduk. Mother's note: 'Nasi Uduk: same as Nasi Kuning but without turmeric.' FLAG: File 6, Pages 10 & 11. No method written. Quantities for galangal and lemongrass not specified. Verified: this page genuinely contains ingredients only, no method — confirms the index flag."
+      "notes_en": "METHOD: Not written in the original notes for either Nasi Kuning or Nasi Uduk. Mother's note: 'Nasi Uduk: same as Nasi Kuning but without turmeric.' FLAG: File 6, Pages 10 & 11. No method written. Quantities for galangal and lemongrass not specified. Verified: this page genuinely contains ingredients only, no method — confirms the index flag.",
+      "content_state": "partial",
+      "flags": [
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-34",
       "resep_num": 34,
       "category": "sayuran_salad",
-      "status": "complete",
       "photo": "tumis-kangkung.jpg",
       "name_id": "Kangkung Belacan",
       "name_en": "Belacan Water Spinach",
@@ -4249,13 +4466,17 @@
       "notes_en": "For a vegetarian version, replace fish sauce with soy sauce and use a vegetarian sambal.",
       "serves": "",
       "date": "",
-      "featured_order": 4
+      "featured_order": 4,
+      "content_state": "full",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-35",
       "resep_num": 35,
       "category": "sayuran_salad",
-      "status": "complete",
       "photo": "gado-gado.jpg",
       "name_id": "Bumbu Gado-Gado Ramayani",
       "name_en": "Gado-Gado",
@@ -4383,13 +4604,18 @@
       "notes_en": "Restaurant-scale recipe. For home cooking reduce to 1/10. Serve the sauce over tofu, hard-boiled egg, and steamed vegetables.",
       "serves": "Makes 3 orders",
       "date": "",
-      "featured_order": 5
+      "featured_order": 5,
+      "content_state": "full",
+      "flags": [
+        "scale"
+      ],
+      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
+      "reviewed": false
     },
     {
       "id": "resep-36",
       "resep_num": 36,
       "category": "sayuran_salad",
-      "status": "complete",
       "photo": "",
       "name_id": "Bumbu Ketoprak / Tahu Campur",
       "name_en": "",
@@ -4516,13 +4742,20 @@
         "Once peanut butter and everything else has dissolved, turn the heat back on (stirring). When boiling, add garlic and red diced pepper."
       ],
       "notes_id": "Catatan Ibu: 'tidak palue sayuran lebih enak.' (Tertulis di bagian bawah halaman asli.) FLAG: Berkas 3, Hal. 2 & 8 / Berkas 5, Hal. 6 & 9. Resep muncul empat kali. Versi terlengkap di Berkas 3, Hal. 8 disimpan di sini.",
-      "notes_en": "Mother's note: 'Not using vegetables tastes better.' (Written at the bottom of the original page.) FLAG: File 3 pp.2 & 8 / File 5 pp.6 & 9. Recipe appears four times. Most complete version at File 3 Page 8 kept here."
+      "notes_en": "Mother's note: 'Not using vegetables tastes better.' (Written at the bottom of the original page.) FLAG: File 3 pp.2 & 8 / File 5 pp.6 & 9. Recipe appears four times. Most complete version at File 3 Page 8 kept here.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-37",
       "resep_num": 37,
       "category": "desserts",
-      "status": "complete",
       "photo": "",
       "name_id": "Bubur Kacang Hijau",
       "name_en": "",
@@ -4623,13 +4856,20 @@
         "To serve: 1 bowl of green beans with coconut milk."
       ],
       "notes_id": "Metode ditulis dalam bahasa Inggris pada aslinya. Resep muncul dua kali — Hal. 15 & 16 identik; Hal. 16 diberi tanda 'M'. FLAG: Berkas 2, Hal. 15 & 16. Resep identik muncul dua kali.",
-      "notes_en": "Method written in English in the original. Recipe appears twice — Pages 15 & 16 are identical. Page 16 is marked with 'M'. FLAG: File 2, Pages 15 & 16. Identical recipe appears twice."
+      "notes_en": "Method written in English in the original. Recipe appears twice — Pages 15 & 16 are identical. Page 16 is marked with 'M'. FLAG: File 2, Pages 15 & 16. Identical recipe appears twice.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-38",
       "resep_num": 38,
       "category": "sayuran_salad",
-      "status": "complete",
       "photo": "",
       "name_id": "Bubur Ayam Kampung",
       "name_en": "",
@@ -4804,13 +5044,20 @@
         "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ tsp M.S.G., ¼ tsp white pepper, ¼ tbsp soy sauce."
       ],
       "notes_id": "Topping: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Metode ditulis dalam bahasa Inggris pada aslinya.",
-      "notes_en": "Topped with: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Method written in English in the original."
+      "notes_en": "Topped with: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Method written in English in the original.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-39",
       "resep_num": 39,
       "category": "daging",
-      "status": "complete",
       "photo": "",
       "name_id": "Bumbu Dendeng Belado",
       "name_en": "",
@@ -4869,13 +5116,20 @@
         "Then add the meat on top with the spices."
       ],
       "notes_id": "FLAG: Berkas 3, Hal. 1. Garam dan vetsin disebutkan dalam cara membuat tapi tidak ada di daftar bahan. Takaran tidak tercantum. Harap konfirmasi dengan Ibu.",
-      "notes_en": "FLAG: File 3, Page 1. Salt and MSG mentioned in method but not in ingredients list. Quantities not specified. Please confirm with mother."
+      "notes_en": "FLAG: File 3, Page 1. Salt and MSG mentioned in method but not in ingredients list. Quantities not specified. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-40",
       "resep_num": 40,
       "category": "bumbu_dasar",
-      "status": "needs_method",
       "photo": "gule-kambing.jpg",
       "name_id": "Bumbu Gule (Gule Kambing)",
       "name_en": "Lamb Curry Spice Blend",
@@ -4981,13 +5235,17 @@
       "notes_en": "This is a dry spice blend. How to grind, store, and use it for the full gule stew to be confirmed with Hertha. Recipe appears twice in the original notes with identical measurements.\n\nFLAG: Berkas 3, Hal. 4 & 6. Confirmed by rereading — this is a dry spice blend recipe (anise, cinnamon, nutmeg, cardamom, coriander, turmeric, cloves, cumin, white pepper) with no method written (no grinding/storage instructions). Appears twice, identical. Ingredients match recipes.json, no discrepancy found.",
       "serves": "",
       "date": "",
-      "featured_order": 7
+      "featured_order": 7,
+      "content_state": "partial",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-41",
       "resep_num": 41,
       "category": "sayuran_salad",
-      "status": "complete",
       "photo": "sayur-lodeh.jpg",
       "name_id": "Bumbu Loteh (Sayur Lodeh)",
       "name_en": "Coconut Vegetable Soup",
@@ -5111,13 +5369,17 @@
       "notes_en": "This is the bumbu sauce base. For the complete dish, add coconut milk and vegetables of your choice.",
       "serves": "",
       "date": "",
-      "featured_order": 6
+      "featured_order": 6,
+      "content_state": "full",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-42",
       "resep_num": 42,
       "category": "bumbu_dasar",
-      "status": "complete",
       "photo": "",
       "name_id": "Bumbu Rujak Buah",
       "name_en": "",
@@ -5226,13 +5488,20 @@
         "MEDIUM: Only 3 large spoons of sambal terasi + add extra roasted shrimp paste approximately the size of one little fingertip."
       ],
       "notes_id": "Dua versi dalam satu halaman. Takaran 'seukuran ujung jari kelingking' untuk versi medium adalah instruksi asli Ibu. FLAG: Berkas 3, Hal. 12 & 13. Lihat juga Resep 24 (Bumbu Rujak) dan Resep 43 (Bumbu Rujak Buah untuk 36 botol). Ada setidaknya tiga versi Bumbu Rujak dalam koleksi ini.",
-      "notes_en": "Two versions on one page. The 'finger-tip' measurement for the medium version is mother's exact instruction. FLAG: File 3, Pages 12 & 13. See also Recipe 24 (Bumbu Rujak) and Recipe 43 (large-batch version). At least three versions of this sauce exist in the collection."
+      "notes_en": "Two versions on one page. The 'finger-tip' measurement for the medium version is mother's exact instruction. FLAG: File 3, Pages 12 & 13. See also Recipe 24 (Bumbu Rujak) and Recipe 43 (large-batch version). At least three versions of this sauce exist in the collection.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-43",
       "resep_num": 43,
       "category": "bumbu_dasar",
-      "status": "complete",
       "photo": "",
       "name_id": "Bumbu Rujak Buah",
       "name_en": "",
@@ -5319,13 +5588,22 @@
         "All cooked together, the shrimp paste (trasi) goes in last."
       ],
       "notes_id": "Resep skala produksi untuk membuat 36 botol. Citric acid kemungkinan sebagai pengawet. Catatan editor: Resep 42 dan 43 adalah dua entri Bumbu Rujak Buah yang berbeda (42 = versi Hot/Medium rumahan; 43 = versi skala produksi 36 botol) — bukan duplikat identik, keduanya disalin apa adanya sesuai catatan Ibu. FLAG: Berkas 3, Hal. 15. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Production-scale recipe for bottling. The citric acid likely acts as a preservative. Editor's note: Recipes 42 and 43 are two distinct Bumbu Rujak Buah entries (42 = home Hot/Medium versions; 43 = 36-bottle production scale) — not identical duplicates; both transcribed as written by mother. FLAG: File 3, Page 15. Production-scale recipe for 36 bottles. Please confirm with mother."
+      "notes_en": "Production-scale recipe for bottling. The citric acid likely acts as a preservative. Editor's note: Recipes 42 and 43 are two distinct Bumbu Rujak Buah entries (42 = home Hot/Medium versions; 43 = 36-bottle production scale) — not identical duplicates; both transcribed as written by mother. FLAG: File 3, Page 15. Production-scale recipe for 36 bottles. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
+      "reviewed": false
     },
     {
       "id": "resep-44",
       "resep_num": 44,
       "category": "sambal_saus",
-      "status": "complete",
       "photo": "",
       "name_id": "Bumbu Serundeng",
       "name_en": "",
@@ -5414,13 +5692,20 @@
         "For sticky rice and lontong: once the serundeng is dry, blend again until fine. For nasi rames, do not need to blend."
       ],
       "notes_id": "Untuk ketan dan lontong: serundeng kering lalu diblender halus. Untuk nasi rames: tidak usah diblender. FLAG: Berkas 3, Hal. 16 & 18. Resep muncul dua kali — Hal. 18 (tanpa judul 'with kencur') adalah versi lebih lengkap. Langkah menghaluskan/memblender bumbu-bumbu awal (sebelum dicampur kelapa) tidak tercantum secara eksplisit — hanya cara panggang. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Mother's note: 'For ketan and lontong blend until fine after drying. For nasi rames do not blend.' FLAG: File 3, Pages 16 & 18. Recipe appears twice — Page 18 is the more complete version. The initial spice-blending step (before mixing with coconut) is not explicitly written — only the baking method. Please confirm with mother."
+      "notes_en": "Mother's note: 'For ketan and lontong blend until fine after drying. For nasi rames do not blend.' FLAG: File 3, Pages 16 & 18. Recipe appears twice — Page 18 is the more complete version. The initial spice-blending step (before mixing with coconut) is not explicitly written — only the baking method. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-45",
       "resep_num": 45,
       "category": "desserts",
-      "status": "flagged",
       "photo": "",
       "name_id": "Kue Pepe",
       "name_en": "",
@@ -5661,13 +5946,20 @@
         "TALAM OLCI layer: [continued on reverse/upside-down page — see flag]"
       ],
       "notes_id": "FLAG: Berkas 1, Hal. 16–17. HALAMAN 17 TERBALIK (upside-down) — ini adalah sambungan dari Hal. 16. Teks terbaca dari bawah ke atas. Resep ini memiliki beberapa lapisan (layers) yang kompleks. Harap periksa bersama Ibu secara langsung.\n\nLihat juga Resep 85 (Lapis Pepe) — kelanjutan dari halaman ini (lapisan warna TALAM OLCI).",
-      "notes_en": "FLAG: File 1, Pages 16–17. PAGE 17 IS UPSIDE-DOWN — it is the continuation of Page 16. Text reads from bottom to top. This is a complex multi-layered recipe. Please review directly with mother.\n\nSee also Recipe 85 (Lapis Pepe) — the continuation of this page (TALAM OLCI colour layers)."
+      "notes_en": "FLAG: File 1, Pages 16–17. PAGE 17 IS UPSIDE-DOWN — it is the continuation of Page 16. Text reads from bottom to top. This is a complex multi-layered recipe. Please review directly with mother.\n\nSee also Recipe 85 (Lapis Pepe) — the continuation of this page (TALAM OLCI colour layers).",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-46",
       "resep_num": 46,
       "category": "desserts",
-      "status": "complete",
       "photo": "",
       "name_id": "Lapis Legit",
       "name_en": "",
@@ -5818,13 +6110,22 @@
         "NOTE: EACH TIME YOU MAKE = 6 TRAYS (2 × 3 trays per batter)."
       ],
       "notes_id": "Catatan Ibu: TIAP KALI BIKIN = 6 LOYANG (2 × 3 LOYANG/ADONAN). Dua kolom ukuran untuk 3 loyang dan 4 loyang. FLAG: Berkas 5, Hal. 18–19. Dua kolom ukuran. Halaman 19 adalah kelanjutan dengan instruksi lapisan (merah-putih). Suhu oven dalam Fahrenheit.",
-      "notes_en": "Mother's note: 'Each time you make = 6 trays (2 × 3 trays per batter batch).' Two quantity columns for 3-tray and 4-tray batches. FLAG: File 5, Pages 18–19. Two quantity columns. Page 19 continues with layering colour instructions (merah-putih = red-white). Oven temperature in Fahrenheit."
+      "notes_en": "Mother's note: 'Each time you make = 6 trays (2 × 3 trays per batter batch).' Two quantity columns for 3-tray and 4-tray batches. FLAG: File 5, Pages 18–19. Two quantity columns. Page 19 continues with layering colour instructions (merah-putih = red-white). Oven temperature in Fahrenheit.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-47",
       "resep_num": 47,
       "category": "desserts",
-      "status": "complete",
       "photo": "",
       "name_id": "Bolu Kukus",
       "name_en": "",
@@ -5895,13 +6196,20 @@
         "Pour into moulds and steam ± ½ minute."
       ],
       "notes_id": "Catatan Ibu: terlalu banyak coklat, bolu tidak bisa naik. FLAG: Berkas 2, Hal. 12 & 13. Waktu steam '± ½ menit' kelihatannya terlalu singkat — kemungkinan ½ jam. Resep muncul dua kali (Hal. 12 & 13); Hal. 13 lebih rapi dan disimpan di sini. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Mother's note: 'Too much chocolate and the cake won't rise.' FLAG: File 2, Pages 12 & 13. Steam time of '± ½ minute' seems too short — likely ½ hour. Recipe appears twice — Pages 12 & 13 are identical; Page 13 has cleaner handwriting and is kept here. Please confirm with mother."
+      "notes_en": "Mother's note: 'Too much chocolate and the cake won't rise.' FLAG: File 2, Pages 12 & 13. Steam time of '± ½ minute' seems too short — likely ½ hour. Recipe appears twice — Pages 12 & 13 are identical; Page 13 has cleaner handwriting and is kept here. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-48",
       "resep_num": 48,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "bubur-ketan-hitam.jpg",
       "name_id": "Bubur Ketan Hitam",
       "name_en": "",
@@ -5974,13 +6282,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 2, Hal. 13. Ingredients only — no method written in the original notes. Please confirm cooking steps (soaking/boiling time, order of adding sugar and pandan) with mother."
+      "notes_en": "FLAG: Berkas 2, Hal. 13. Ingredients only — no method written in the original notes. Please confirm cooking steps (soaking/boiling time, order of adding sugar and pandan) with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-49",
       "resep_num": 49,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Bapaw & Kue Ku",
       "name_en": "",
@@ -6163,13 +6476,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Dua resep dalam satu halaman. Keduanya berbagi bahan adonan yang sangat mirip. FLAG: Berkas 2, Hal. 11. Tidak ada cara membuat untuk keduanya. Takaran isian tidak lengkap. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Two recipes on one page. Both bapaw and kue ku share very similar dough ingredients. FLAG: File 2, Page 11. Two recipes on one page. No method for either. Filling quantities incomplete. Please confirm with mother."
+      "notes_en": "Two recipes on one page. Both bapaw and kue ku share very similar dough ingredients. FLAG: File 2, Page 11. Two recipes on one page. No method for either. Filling quantities incomplete. Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-50",
       "resep_num": 50,
       "category": "seafood",
-      "status": "needs_method",
       "photo": "cumi-cumi-goreng.jpg",
       "name_id": "Bumbu Udang Mentega (Cumi Cumi Goreng Mentega)",
       "name_en": "Butter Squid Sauce — Cumi Cumi Goreng Mentega",
@@ -6255,13 +6575,17 @@
       "notes_en": "Method not written in the original notes. No squid or prawns listed in ingredients — confirm with Hertha the quantity of seafood used and the cooking steps.\n\nFLAG: Berkas 3, Hal. 17. Confirmed by rereading — ingredients only, no method written, and no prawns/udang actually listed among the ingredients despite the recipe name 'Bumbu Udang Mentega'. Ingredients match recipes.json, no discrepancy found. Please confirm method and prawn quantity with mother.",
       "serves": "",
       "date": "",
-      "featured_order": 8
+      "featured_order": 8,
+      "content_state": "partial",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-51",
       "resep_num": 51,
       "category": "appetizer",
-      "status": "complete",
       "photo": "martabak.jpg",
       "name_id": "Martabak Telur",
       "name_en": "",
@@ -6392,13 +6716,19 @@
         "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla like a parcel and lower the heat, and cook each side for ± 3 minutes."
       ],
       "notes_id": "Catatan Ibu: diberi label 'M' (mungkin singkatan untuk resep yang sudah diuji). Resep aslinya ditulis dalam bahasa Inggris.",
-      "notes_en": "Mother's original notes written in English. Marked with 'M' (possibly indicating a tested/approved recipe)."
+      "notes_en": "Mother's original notes written in English. Marked with 'M' (possibly indicating a tested/approved recipe).",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-52",
       "resep_num": 52,
       "category": "appetizer",
-      "status": "complete",
       "photo": "",
       "name_id": "Martabak Manis",
       "name_en": "",
@@ -6527,13 +6857,20 @@
         "2. Toppings: butter, condensed milk, chocolate sprinkles, peanuts, cheese."
       ],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-53",
       "resep_num": 53,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "bakmi-goreng-udang.jpg",
       "name_id": "Mi Tek-Tik",
       "name_en": "",
@@ -6706,13 +7043,19 @@
         "To serve: Top the noodle with: shredded fried chicken, celery (chopped), fried shallot."
       ],
       "notes_id": "Catatan Ibu: Bumbu paste (kemiri, shallot, garlic) diblender sampai halus sebelum digoreng. Resep aslinya ditulis dalam bahasa Inggris, diberi label 'M'.",
-      "notes_en": "Mother's original notes in English. Marked with 'M'. Paste of candlenuts, shallot and garlic blended smooth before frying."
+      "notes_en": "Mother's original notes in English. Marked with 'M'. Paste of candlenuts, shallot and garlic blended smooth before frying.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-54",
       "resep_num": 54,
       "category": "desserts",
-      "status": "complete",
       "photo": "",
       "name_id": "Mushroom Sauce",
       "name_en": "",
@@ -6821,13 +7164,20 @@
         "Cook and stir constantly until the sauce becomes thick and smooth."
       ],
       "notes_id": "Catatan Ibu diberi label 'M'. Resep dalam bahasa Inggris. Dipasangkan dengan Mashed Potatoes (Resep 55) untuk Steak Nostalgia.",
-      "notes_en": "Mother's original notes in English. Marked 'M'. Paired with Mashed Potatoes (Recipe 55) for Steak Nostalgia."
+      "notes_en": "Mother's original notes in English. Marked 'M'. Paired with Mashed Potatoes (Recipe 55) for Steak Nostalgia.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-55",
       "resep_num": 55,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Mashed Potatoes",
       "name_en": "",
@@ -6880,13 +7230,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Catatan Ibu: diberi label 'M'.",
-      "notes_en": "FLAG: Berkas 6, Hal. 6. No method written. Marked 'M' by mother. Paired with Mushroom Sauce (Recipe 54) for Steak Nostalgia. Please confirm method with mother."
+      "notes_en": "FLAG: Berkas 6, Hal. 6. No method written. Marked 'M' by mother. Paired with Mushroom Sauce (Recipe 54) for Steak Nostalgia. Please confirm method with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-56",
       "resep_num": 56,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "",
       "name_id": "Mi Rebus Special",
       "name_en": "",
@@ -7049,13 +7406,20 @@
         "Garnish with fried shallot."
       ],
       "notes_id": "Catatan Ibu diberi label 'M'. Resep dalam bahasa Inggris. Resep gaya restoran diberi label 'Hyatt'.",
-      "notes_en": "Mother's original notes in English. Marked 'M'. A restaurant-style recipe labelled 'Hyatt'."
+      "notes_en": "Mother's original notes in English. Marked 'M'. A restaurant-style recipe labelled 'Hyatt'.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-57",
       "resep_num": 57,
       "category": "nasi_mie",
-      "status": "flagged",
       "photo": "",
       "name_id": "Macaroni Cheese",
       "name_en": "",
@@ -7104,13 +7468,20 @@
         "2. Top with more cheese."
       ],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 6, Hal. 8. Baking time left blank in the original ('for ..... minutes') — mother did not write a duration. No quantities given for sauce ingredients (butter/flour/milk/cheese amounts unspecified). Method is otherwise present but incomplete on these two points."
+      "notes_en": "FLAG: Berkas 6, Hal. 8. Baking time left blank in the original ('for ..... minutes') — mother did not write a duration. No quantities given for sauce ingredients (butter/flour/milk/cheese amounts unspecified). Method is otherwise present but incomplete on these two points.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-58",
       "resep_num": 58,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "",
       "name_id": "Macaroni Ham & Cheese",
       "name_en": "",
@@ -7249,13 +7620,20 @@
         "Bake 25 minutes at 370°F."
       ],
       "notes_id": "Catatan: +1 pak Tofu (optional). Suhu oven dalam Fahrenheit.",
-      "notes_en": "Mother's note: '+1 pack Tofu (optional).' Oven temperature in Fahrenheit."
+      "notes_en": "Mother's note: '+1 pack Tofu (optional).' Oven temperature in Fahrenheit.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-59",
       "resep_num": 59,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "",
       "name_id": "Bruine Bonen Soep",
       "name_en": "",
@@ -7370,13 +7748,20 @@
         "Note: 'Without the vegetables it tastes better.' (mother's note)"
       ],
       "notes_id": "Catatan Ibu: 'tidak palue sayuran lebih enak.' (Written at the bottom of the original page.)",
-      "notes_en": "Mother's note: 'Without the vegetables it tastes better.' Written at the bottom of the original page."
+      "notes_en": "Mother's note: 'Without the vegetables it tastes better.' Written at the bottom of the original page.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-60",
       "resep_num": 60,
       "category": "nasi_mie",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Laksa Indonesia",
       "name_en": "Indonesian Laksa — Spiced Coconut Noodle Soup",
@@ -7511,13 +7896,18 @@
       "notes_id": "Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Lihat juga Resep 61 — Laksa versi Malaysia dari Ibu. Harap konfirmasi dengan Ibu.",
       "notes_en": "Ingredients only — no quantities, no method. See also Recipe 61 — My Mum's Malaysian Laksa. Please confirm full recipe with Hertha.\n\nFLAG: Berkas 5, Hal. 22. Confirmed by rereading — ingredients only, no quantities and no method written. Mother's note lists accompaniments only: bihun, toge, ayam, telur, tauge, kerupuk. Ingredients match recipes.json, no discrepancy found. See also Recipe 61 (My Mum's Laksa, Malaysian) which does have a full method and may be a useful reference.",
       "serves": "",
-      "date": ""
+      "date": "",
+      "content_state": "partial",
+      "flags": [
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-61",
       "resep_num": 61,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "laksa.jpg",
       "name_id": "My Mum's Laksa",
       "name_en": "",
@@ -7668,13 +8058,19 @@
         "To serve: rice vermicelli, bean sprouts, sliced fried tofu, shrimp, otak-otak, cucumber, mint leaves, sambal oelek."
       ],
       "notes_id": "Judul asli 'My Mum's Laksa' — resep ini diwariskan kepada Ibu dari ibunya sendiri. Ditulis dalam bahasa Inggris pada aslinya.",
-      "notes_en": "Mother's original notes written in English. Title 'My Mum's Laksa' — this recipe was passed down to her from her own mother."
+      "notes_en": "Mother's original notes written in English. Title 'My Mum's Laksa' — this recipe was passed down to her from her own mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-62",
       "resep_num": 62,
       "category": "other",
-      "status": "complete",
       "photo": "",
       "name_id": "Gudeg",
       "name_en": "",
@@ -7869,13 +8265,22 @@
         "Cook until the coconut milk is truly thick. If already done, reheat when needed."
       ],
       "notes_id": "FLAG: Berkas 4, Hal. 11–14. Resep empat halaman, beberapa ditulis menyamping/sideways. Langkah 3 tampaknya tercampur dengan resep Bami Ayam (mungkin catatan Ibu beralih topik di tengah halaman). Harap konfirmasi urutan yang benar dengan Ibu.",
-      "notes_en": "FLAG: File 4, Pages 11–14. Four-page recipe, some pages sideways. Step 3 appears mixed with Bami Ayam notes — mother may have switched topics mid-page. Please confirm correct sequence with mother."
+      "notes_en": "FLAG: File 4, Pages 11–14. Four-page recipe, some pages sideways. Step 3 appears mixed with Bami Ayam notes — mother may have switched topics mid-page. Please confirm correct sequence with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-63",
       "resep_num": 63,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Gula Candeel",
       "name_en": "",
@@ -7968,13 +8373,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 4, Hal. 16. Page written sideways. Two versions with different quantities, both transcribed here. No method written for either version. Please confirm cooking steps with mother."
+      "notes_en": "FLAG: Berkas 4, Hal. 16. Page written sideways. Two versions with different quantities, both transcribed here. No method written for either version. Please confirm cooking steps with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-64",
       "resep_num": 64,
       "category": "desserts",
-      "status": "complete",
       "photo": "",
       "name_id": "Chilli Con Carne",
       "name_en": "",
@@ -8109,13 +8521,20 @@
         "Makes about 4 servings."
       ],
       "notes_id": "Catatan Ibu: resep dalam bahasa Inggris.",
-      "notes_en": "Mother's original notes written in English."
+      "notes_en": "Mother's original notes written in English.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-65",
       "resep_num": 65,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Green Chiffon Cake",
       "name_en": "",
@@ -8238,13 +8657,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 4, Hal. 3. Ingredients only — no method written in the original notes (no beating/folding order, pan/oven instructions). Please confirm with mother."
+      "notes_en": "FLAG: Berkas 4, Hal. 3. Ingredients only — no method written in the original notes (no beating/folding order, pan/oven instructions). Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-66",
       "resep_num": 66,
       "category": "daging",
-      "status": "complete",
       "photo": "",
       "name_id": "Dendeng Belado",
       "name_en": "",
@@ -8387,13 +8813,20 @@
         "Finally fold the dried meat into the spice paste."
       ],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-67",
       "resep_num": 67,
       "category": "appetizer",
-      "status": "complete",
       "photo": "",
       "name_id": "Empek-Empek Ramayani & Cuka Empek-Empek",
       "name_en": "",
@@ -8572,13 +9005,22 @@
         "VINEGAR SAUCE: Cook everything until boiling, then add: 225 g garlic blended with water from the 60 cups."
       ],
       "notes_id": "FLAG: Berkas 4, Hal. 5–6. Versi kedua cuka (Hal. 6, 'Cuka Empek-empek') identik dengan yang di atas. Resep cuka adalah skala produksi restoran.",
-      "notes_en": "FLAG: File 4, Pages 5–6. A second version of the vinegar sauce (Page 6, 'Cuka Empek-empek') is identical to the above. Sauce recipe is production/restaurant scale."
+      "notes_en": "FLAG: File 4, Pages 5–6. A second version of the vinegar sauce (Page 6, 'Cuka Empek-empek') is identical to the above. Sauce recipe is production/restaurant scale.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
+      "reviewed": false
     },
     {
       "id": "resep-68",
       "resep_num": 68,
       "category": "nasi_mie",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Egg Roll",
       "name_en": "",
@@ -8671,13 +9113,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 4, Hal. 7. No method written, and no quantities given for the seasoning ingredients (fish sauce, garlic powder, salt, pepper). Please confirm with mother."
+      "notes_en": "FLAG: Berkas 4, Hal. 7. No method written, and no quantities given for the seasoning ingredients (fish sauce, garlic powder, salt, pepper). Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-69",
       "resep_num": 69,
       "category": "appetizer",
-      "status": "needs_method",
       "photo": "frekadel-jagung.jpg",
       "name_id": "Trakadel Jagung",
       "name_en": "",
@@ -8780,13 +9229,21 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli. FLAG: Berkas 4, Hal. 8. Halaman ditulis menyamping (sideways) — perlu diputar untuk dibaca. Beberapa bahan tidak jelas ('3 shaker' tidak ada keterangannya). Tidak ada cara membuat. Verifikasi: dikonfirmasi bahwa halaman ini benar-benar hanya berisi daftar bahan, tanpa cara membuat — sesuai flag indeks. Harap konfirmasi dengan Ibu.",
-      "notes_en": "METHOD: Not written in the original notes. FLAG: File 4, Page 8. Page written sideways — required rotation to read. Some ingredients unclear ('3 shaker' unexplained — quantity/unit ambiguous). No method written. Verified: this page genuinely contains ingredients only, no method — confirms the index flag. Please confirm with mother."
+      "notes_en": "METHOD: Not written in the original notes. FLAG: File 4, Page 8. Page written sideways — required rotation to read. Some ingredients unclear ('3 shaker' unexplained — quantity/unit ambiguous). No method written. Verified: this page genuinely contains ingredients only, no method — confirms the index flag. Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-70",
       "resep_num": 70,
       "category": "sayuran_salad",
-      "status": "flagged",
       "photo": "",
       "name_id": "Crocod Pete / Goodok Pete",
       "name_en": "",
@@ -8925,13 +9382,20 @@
         "2. Fry dried shrimp then set aside. Once crispy add the portion. Stir and season again."
       ],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 4, Hal. 9–10. BOTH PAGES WRITTEN SIDEWAYS. Very irregular handwriting, several words unclear (e.g. 'Serma' in first ingredient line could not be confidently identified). Recipe appears to be a Gudeg variation and step 2 references dried shrimp not listed among these ingredients — the method may be tangled with another recipe's notes. Please confirm full ingredients and correct method sequence with mother."
+      "notes_en": "FLAG: Berkas 4, Hal. 9–10. BOTH PAGES WRITTEN SIDEWAYS. Very irregular handwriting, several words unclear (e.g. 'Serma' in first ingredient line could not be confidently identified). Recipe appears to be a Gudeg variation and step 2 references dried shrimp not listed among these ingredients — the method may be tangled with another recipe's notes. Please confirm full ingredients and correct method sequence with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-71",
       "resep_num": 71,
       "category": "appetizer",
-      "status": "flagged",
       "photo": "",
       "name_id": "Kulit Pastel",
       "name_en": "",
@@ -9050,13 +9514,20 @@
         "VERSION 2 & 3: Same as Version 1."
       ],
       "notes_id": "Tiga versi kulit pastel muncul di tiga halaman berbeda (Berkas 5, Hal. 12, 14, 16), semua menggunakan santen sebagai pengganti air. Takaran santen sedikit berbeda antar versi.",
-      "notes_en": "FLAG: Berkas 5, Hal. 12, 14, 16. Three versions of this pastry skin appear across three separate pages with slightly different coconut milk quantities. All use coconut milk instead of water. Please confirm which version is preferred with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 12, 14, 16. Three versions of this pastry skin appear across three separate pages with slightly different coconut milk quantities. All use coconut milk instead of water. Please confirm which version is preferred with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-72",
       "resep_num": 72,
       "category": "appetizer",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Isi Pastel",
       "name_en": "",
@@ -9199,13 +9670,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 5, Hal. 12. No quantities written for any ingredient, and no method beyond the note 'digiling no.3' (roll pastry at setting 3, which relates to Recipe 71's pastry skin rather than this filling itself). Please confirm ingredient amounts and cooking method with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 12. No quantities written for any ingredient, and no method beyond the note 'digiling no.3' (roll pastry at setting 3, which relates to Recipe 71's pastry skin rather than this filling itself). Please confirm ingredient amounts and cooking method with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-73",
       "resep_num": 73,
       "category": "nasi_mie",
-      "status": "complete",
       "photo": "",
       "name_id": "Kulit Risoles & Kulit Lumpia Basah",
       "name_en": "",
@@ -9334,13 +9812,20 @@
         "FRESH SPRING ROLL SKIN: Mix everything together (blend briefly) and make thin crepe-like pancakes."
       ],
       "notes_id": "Resep Lumpia Basah dikreditkan pada buku masak Sisca Soewitomo, Hal. 59.",
-      "notes_en": "The Lumpia Basah recipe is credited to Sisca Soewitomo's cookbook, page 59 — mother noted her source."
+      "notes_en": "The Lumpia Basah recipe is credited to Sisca Soewitomo's cookbook, page 59 — mother noted her source.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-74",
       "resep_num": 74,
       "category": "nasi_mie",
-      "status": "needs_method",
       "photo": "lumpia.jpg",
       "name_id": "Lumpia & Lumbiah",
       "name_en": "",
@@ -9513,13 +9998,19 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Tidak ditulis dalam catatan asli. Dua resep serupa di halaman berbeda (pp.22 & 24) — perbedaan utama: Lumpia memakai 'daging egg roll', Lumbiah memakai ground chicken. Kulit lumpia lihat Resep 73.",
-      "notes_en": "FLAG: Berkas 5, Hal. 22 & 24. METHOD: Not written in the original notes. Two very similar recipes; main difference is Lumpia uses unspecified 'egg roll meat' while Lumbiah uses ground chicken. For skin see Recipe 73. Please confirm method with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 22 & 24. METHOD: Not written in the original notes. Two very similar recipes; main difference is Lumpia uses unspecified 'egg roll meat' while Lumbiah uses ground chicken. For skin see Recipe 73. Please confirm method with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-75",
       "resep_num": 75,
       "category": "appetizer",
-      "status": "flagged",
       "photo": "",
       "name_id": "Kroket Ragout",
       "name_en": "",
@@ -9682,13 +10173,22 @@
         "Taste and adjust, then add all ingredients."
       ],
       "notes_id": "1 lbs udang bisa dipakai sebagai pengganti ayam. Tulisan agak tidak teratur di beberapa bagian — beberapa istilah menggunakan singkatan pribadi Ibu ('suir', 'saunifte', 'rebos').",
-      "notes_en": "FLAG: Berkas 5, Hal. 11. Mother's note: '1 lb shrimp instead of chicken.' Writing uses mother's personal abbreviations ('suir', 'saunifte', 'rebos') — please confirm these terms with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 11. Mother's note: '1 lb shrimp instead of chicken.' Writing uses mother's personal abbreviations ('suir', 'saunifte', 'rebos') — please confirm these terms with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-76",
       "resep_num": 76,
       "category": "sambal_saus",
-      "status": "flagged",
       "photo": "",
       "name_id": "Kecap Manis",
       "name_en": "",
@@ -9777,13 +10277,20 @@
         "5 packs = 15 lbs sugar. Keep cooking until the sugar is completely dissolved."
       ],
       "notes_id": "Dua versi hampir identik (Hal. 6 dan Hal. 8) — Versi 2 menggunakan botol plastik. Cara membuat sangat singkat, kemungkinan singkatan Ibu untuk resep yang sudah dikuasai.",
-      "notes_en": "FLAG: Berkas 5, Hal. 6 & 8. Two nearly identical versions; Version 2 specifies plastic bottles. Method is very brief — please confirm full steps with mother, including cooking time and straining."
+      "notes_en": "FLAG: Berkas 5, Hal. 6 & 8. Two nearly identical versions; Version 2 specifies plastic bottles. Method is very brief — please confirm full steps with mother, including cooking time and straining.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-77",
       "resep_num": 77,
       "category": "sambal_saus",
-      "status": "flagged",
       "photo": "",
       "name_id": "Cuka Asmon",
       "name_en": "",
@@ -9942,13 +10449,20 @@
         "Cane vinegar, brown sugar, white sugar, salt, red chilli, bird's eye chilli — all cooked together."
       ],
       "notes_id": "Halaman asli memiliki tiga kolom ukuran (1 adonan, ½ adonan, ¼ adonan) — hanya dua kolom pertama tertranskripsi di sini. Cuka lahang juga termasuk bahan tapi takarannya tidak jelas dalam konteks resep ini. Catatan: langkah cara membuat pada halaman ini tampak mengulang teks dari Resep 67 (Cuka Empek-Empek) — kemungkinan kesalahan transkripsi atau bumbu yang tumpang tindih.",
-      "notes_en": "FLAG: Berkas 3, Hal. 22. Three quantity columns exist in the original (full, half, quarter batch) — only two are captured here. Cane vinegar (cuka lahang) is part of the recipe but its quantity is unclear in this context. The method text closely mirrors Recipe 67's vinegar sauce method, suggesting possible cross-contamination between the two pages — please confirm the correct method with mother."
+      "notes_en": "FLAG: Berkas 3, Hal. 22. Three quantity columns exist in the original (full, half, quarter batch) — only two are captured here. Cane vinegar (cuka lahang) is part of the recipe but its quantity is unclear in this context. The method text closely mirrors Recipe 67's vinegar sauce method, suggesting possible cross-contamination between the two pages — please confirm the correct method with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-78",
       "resep_num": 78,
       "category": "sambal_saus",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Bumbu Tumis Ramayani",
       "name_en": "",
@@ -10161,13 +10675,22 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Catatan Ibu: 'Bumbu Thai = Kang panang curry.' Tidak ditulis dalam catatan asli cara membuatnya.",
-      "notes_en": "FLAG: Berkas 3, Hal. 19–20. METHOD: Not written in the original notes. Mother's note: 'Bumbu Thai = Kang Panang curry.' Page 19 (1 order) and Page 20 (restaurant scale) are two quantity versions. Please confirm method with mother."
+      "notes_en": "FLAG: Berkas 3, Hal. 19–20. METHOD: Not written in the original notes. Mother's note: 'Bumbu Thai = Kang Panang curry.' Page 19 (1 order) and Page 20 (restaurant scale) are two quantity versions. Please confirm method with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-79",
       "resep_num": 79,
       "category": "sambal_saus",
-      "status": "flagged",
       "photo": "",
       "name_id": "Chilli Garlic Sauce",
       "name_en": "",
@@ -10274,13 +10797,20 @@
         "Cooked all the meat first and discard all the water and add to the sauce."
       ],
       "notes_id": "Catatan Ibu: 'Singapore 2000.' Cara membuat sangat singkat.",
-      "notes_en": "FLAG: Berkas 8, Hal. 1. Method is very brief — please confirm whether garlic and chilli are sautéed first before combining with the sauce, since that step is not explicitly written."
+      "notes_en": "FLAG: Berkas 8, Hal. 1. Method is very brief — please confirm whether garlic and chilli are sautéed first before combining with the sauce, since that step is not explicitly written.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-80",
       "resep_num": 80,
       "category": "nasi_mie",
-      "status": "flagged",
       "photo": "",
       "name_id": "Nasi Hainan & Nasi Tim",
       "name_en": "",
@@ -10451,13 +10981,20 @@
         "Rice Porridge: 1 part rice to 10 parts water."
       ],
       "notes_id": "'5 Can djuhe' tidak jelas — kemungkinan jahe (ginger) iris. Tiga olahan nasi pada dua halaman.",
-      "notes_en": "FLAG: Berkas 6, Hal. 11–12. '5 Can djuhe' is unclear — possibly sliced ginger (jahe). Please confirm with mother."
+      "notes_en": "FLAG: Berkas 6, Hal. 11–12. '5 Can djuhe' is unclear — possibly sliced ginger (jahe). Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-81",
       "resep_num": 81,
       "category": "appetizer",
-      "status": "complete",
       "photo": "",
       "name_id": "Ngoh Hiang",
       "name_en": "",
@@ -10624,13 +11161,20 @@
         "Mix all the ingredients, wrapped with bean curd sheet; steamed and fried."
       ],
       "notes_id": "Resep dalam bahasa Inggris pada catatan asli.",
-      "notes_en": "Mother's original notes written in English. Classic Peranakan-Chinese recipe — steamed first, then fried."
+      "notes_en": "Mother's original notes written in English. Classic Peranakan-Chinese recipe — steamed first, then fried.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-82",
       "resep_num": 82,
       "category": "daging",
-      "status": "flagged",
       "photo": "",
       "name_id": "Hausmade / Hausmarkt",
       "name_en": "",
@@ -10843,13 +11387,20 @@
         "If for some reason the mixture becomes too thick, just add more water."
       ],
       "notes_id": "Diberi label 'M'. Halaman asli ditulis menyamping (sideways). Resep khas pengaruh Belanda, sesuai dengan masakan Indonesia-Belanda kolonial.",
-      "notes_en": "FLAG: Berkas 4, Hal. 17–18. Pages written SIDEWAYS. Marked 'M'. Some words unclear; '5 Cups Relish' not further specified. A Dutch-influenced (Indo) recipe. Please confirm with mother."
+      "notes_en": "FLAG: Berkas 4, Hal. 17–18. Pages written SIDEWAYS. Marked 'M'. Some words unclear; '5 Cups Relish' not further specified. A Dutch-influenced (Indo) recipe. Please confirm with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-83",
       "resep_num": 83,
       "category": "appetizer",
-      "status": "complete",
       "photo": "",
       "name_id": "Pengganti Putik Telur & Kroket Kentang",
       "name_en": "",
@@ -10944,13 +11495,20 @@
         "Can also be used for frying fish (Fish & Chips)."
       ],
       "notes_id": "Resep BNA, tertanggal 8 Januari 1990.",
-      "notes_en": "Recipe dated 8 January 1990, credited 'BNA'."
+      "notes_en": "Recipe dated 8 January 1990, credited 'BNA'.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-84",
       "resep_num": 84,
       "category": "daging",
-      "status": "flagged",
       "photo": "",
       "name_id": "Kambing Guling",
       "name_en": "",
@@ -11079,13 +11637,20 @@
         "Serve with sweet soy sauce (kecap)."
       ],
       "notes_id": "Tidak ada takaran untuk semua bahan bumbu.",
-      "notes_en": "FLAG: Berkas 5, Hal. 5. No quantities specified for any spice ingredient. Please confirm amounts with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 5. No quantities specified for any spice ingredient. Please confirm amounts with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-85",
       "resep_num": 85,
       "category": "desserts",
-      "status": "flagged",
       "photo": "",
       "name_id": "Lapis Pepe",
       "name_en": "",
@@ -11222,13 +11787,20 @@
         "Layering order from bottom to top: RED — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED."
       ],
       "notes_id": "Ini adalah kelanjutan dari Resep 45 (Kue Pepe); tidak berisi bahan mandiri — lihat Resep 45 untuk bahan lengkap.",
-      "notes_en": "FLAG: Berkas 5, Hal. 19. This is the continuation of Recipe 45 (Kue Pepe) — no standalone ingredients; see Recipe 45. Please review both pages together with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 19. This is the continuation of Recipe 45 (Kue Pepe) — no standalone ingredients; see Recipe 45. Please review both pages together with mother.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-86",
       "resep_num": 86,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "",
       "name_id": "Quick Lorraine",
       "name_en": "",
@@ -11311,13 +11883,20 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "Hanya bahan — tidak ada cara membuat, tidak ada kulit pie, tidak ada takaran untuk sayuran.",
-      "notes_en": "FLAG: Berkas 5, Hal. 24. Ingredients only — no method, no pie crust, no quantities for vegetables. Please confirm with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 24. Ingredients only — no method, no pie crust, no quantities for vegetables. Please confirm with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-87",
       "resep_num": 87,
       "category": "desserts",
-      "status": "needs_method",
       "photo": "ice-durian.jpg",
       "name_id": "Ice Durian",
       "name_en": "",
@@ -11370,13 +11949,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": "FLAG: Berkas 5, Hal. 3. Ingredients only — no method written in the original notes. Please confirm mixing/blending and freezing steps with mother."
+      "notes_en": "FLAG: Berkas 5, Hal. 3. Ingredients only — no method written in the original notes. Please confirm mixing/blending and freezing steps with mother.",
+      "content_state": "partial",
+      "flags": [
+        "no_name_en",
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "resep-88",
       "resep_num": 88,
       "category": "seafood",
-      "status": "complete",
       "photo": "",
       "name_id": "Steam Fish with Black Bean Sauce",
       "name_en": "",
@@ -11459,13 +12043,22 @@
         "Can also be microwaved 3 minutes."
       ],
       "notes_id": "Halaman pertama Berkas 5, Hal. 1.",
-      "notes_en": "First page of File 5 (Berkas 5, Hal. 1). Mother's writing in mixed Indonesian and English."
+      "notes_en": "First page of File 5 (Berkas 5, Hal. 1). Mother's writing in mixed Indonesian and English.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "units"
+      ],
+      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
+      "reviewed": false
     },
     {
       "id": "resep-89",
       "resep_num": 89,
       "category": "seafood",
-      "status": "complete",
       "photo": "",
       "name_id": "Fish Head with Bean Sauce",
       "name_en": "",
@@ -11568,13 +12161,20 @@
         "Turn the fish once, cover and cook slowly."
       ],
       "notes_id": "Tertanggal 7 Juni 2005 — resep dalam bahasa Inggris, salah satu resep dengan tanggal paling muda dalam koleksi.",
-      "notes_en": "Mother's original in English, dated June 7 2005. One of the later-dated recipes in the collection."
+      "notes_en": "Mother's original in English, dated June 7 2005. One of the later-dated recipes in the collection.",
+      "content_state": "full",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-rendang",
       "resep_num": null,
       "category": "daging",
-      "status": "coming_soon",
       "photo": "rendang.jpg",
       "name_id": "Rendang",
       "name_en": "Beef Rendang",
@@ -11586,13 +12186,17 @@
       "method_en": [],
       "notes_id": "",
       "notes_en": "",
-      "featured_order": 10
+      "featured_order": 10,
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-tahu-telor",
       "resep_num": null,
       "category": "appetizer",
-      "status": "coming_soon",
       "photo": "tahu-telor.jpg",
       "name_id": "Tahu Telor",
       "name_en": "Tofu and Egg Loaf",
@@ -11603,13 +12207,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-soto-ayam",
       "resep_num": null,
       "category": "sayuran_salad",
-      "status": "coming_soon",
       "photo": "soto-ayam.jpg",
       "name_id": "Soto Ayam",
       "name_en": "Soto Ayam",
@@ -11620,13 +12228,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-sambal-goreng-tahu-buncis",
       "resep_num": null,
       "category": "sayuran_salad",
-      "status": "coming_soon",
       "photo": "sambal-goreng-tahu-buncis.jpg",
       "name_id": "Sambal Goreng Tahu Buncis",
       "name_en": "String Beans and Tofu in Coconut Curry",
@@ -11637,13 +12249,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-nasi-goreng",
       "resep_num": null,
       "category": "nasi_mie",
-      "status": "coming_soon",
       "photo": "nasi-goreng.jpg",
       "name_id": "Nasi Goreng",
       "name_en": "Indonesian Fried Rice",
@@ -11654,13 +12270,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-lettuce-wrap",
       "resep_num": null,
       "category": "appetizer",
-      "status": "coming_soon",
       "photo": "lettuce-wrap.jpg",
       "name_id": "Indonesian Lettuce Wrap",
       "name_en": "Indonesian Lettuce Wrap",
@@ -11671,13 +12291,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-rempeyek-kacang",
       "resep_num": null,
       "category": "appetizer",
-      "status": "coming_soon",
       "photo": "rempeyek-kacang.jpg",
       "name_id": "Rempeyek Kacang",
       "name_en": "Crispy Peanut Fritters",
@@ -11688,13 +12312,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-sambal-goreng-tempe",
       "resep_num": null,
       "category": "sayuran_salad",
-      "status": "coming_soon",
       "photo": "sambal-goreng-tempe.jpg",
       "name_id": "Sambal Goreng Tempe",
       "name_en": "Crispy Tempe in Ramayani Chili",
@@ -11705,13 +12333,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ice-cendol",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "ice-cendol.jpg",
       "name_id": "Ice Cendol",
       "name_en": "Ice Cendol",
@@ -11722,13 +12354,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ice-kelapa",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "ice-kelapa.jpg",
       "name_id": "Ice Kelapa",
       "name_en": "Young Coconut Ice",
@@ -11739,13 +12375,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ice-cincao",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "ice-cincao.jpg",
       "name_id": "Ice Cincao",
       "name_en": "Grass Jelly Ice",
@@ -11756,13 +12396,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ice-shanghai",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "ice-shanghai.jpg",
       "name_id": "Ice Shanghai",
       "name_en": "Ice Shanghai",
@@ -11773,13 +12417,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ice-teller",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "ice-teller.jpg",
       "name_id": "Ice Teller",
       "name_en": "Ice Teller",
@@ -11790,13 +12438,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-iced-bandrek",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "iced-bandrek.jpg",
       "name_id": "Iced Bandrek",
       "name_en": "Iced Ginger Tea",
@@ -11807,13 +12459,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ice-doger",
       "resep_num": null,
       "category": "desserts",
-      "status": "coming_soon",
       "photo": "ice-doger.jpg",
       "name_id": "Ice Doger / Tapé",
       "name_en": "Ice Doger / Fermented Yucca Ice",
@@ -11824,13 +12480,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-fresh-lime-soda",
       "resep_num": null,
       "category": "drinks",
-      "status": "coming_soon",
       "photo": "fresh-lime-soda.jpg",
       "name_id": "Fresh Lime Soda",
       "name_en": "Fresh Lime Soda",
@@ -11841,13 +12501,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-boba-tea",
       "resep_num": null,
       "category": "drinks",
-      "status": "coming_soon",
       "photo": "boba-tea.jpg",
       "name_id": "Boba Tea / Coffee",
       "name_en": "Boba Tea or Coffee",
@@ -11858,13 +12522,17 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-bandrek-hot",
       "resep_num": null,
       "category": "drinks",
-      "status": "coming_soon",
       "photo": "",
       "name_id": "Bandrek",
       "name_en": "Bandrek — Indonesian Spiced Ginger Drink",
@@ -11875,13 +12543,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-coffee-tubruk",
       "resep_num": null,
       "category": "drinks",
-      "status": "coming_soon",
       "photo": "",
       "name_id": "Kopi Tubruk",
       "name_en": "Coffee Tubruk",
@@ -11892,13 +12565,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-sambal-bajak",
       "resep_num": null,
       "category": "sambal_saus",
-      "status": "coming_soon",
       "photo": "",
       "name_id": "Sambal Bajak",
       "name_en": "Sambal Bajak — Red Hot Pepper Chili Sauce",
@@ -11909,13 +12587,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-sambal-terasi",
       "resep_num": null,
       "category": "sambal_saus",
-      "status": "coming_soon",
       "photo": "",
       "name_id": "Sambal Terasi",
       "name_en": "Sambal Terasi",
@@ -11926,13 +12609,18 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false
     },
     {
       "id": "cs-ayam-satay",
       "resep_num": null,
       "category": "ayam",
-      "status": "needs_method",
       "photo": "satay-combination.jpg",
       "name_id": "Sate Ayam",
       "name_en": "Chicken Satay",
@@ -11943,7 +12631,12 @@
       "method_id": [],
       "method_en": [],
       "notes_id": "",
-      "notes_en": ""
+      "notes_en": "",
+      "content_state": "no_content",
+      "flags": [
+        "no_serves"
+      ],
+      "reviewed": false
     }
   ]
 }

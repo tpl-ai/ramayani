@@ -26,10 +26,10 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'EN' | 'I
 
   return (
     <div
-      onClick={recipe.status !== 'coming_soon' ? onClick : undefined}
+      onClick={recipe.content_state !== 'no_content' ? onClick : undefined}
       style={{
-        cursor: recipe.status !== 'coming_soon' ? 'pointer' : 'default',
-        opacity: recipe.status === 'coming_soon' ? 0.45 : 1,
+        cursor: recipe.content_state !== 'no_content' ? 'pointer' : 'default',
+        opacity: recipe.content_state === 'no_content' ? 0.45 : 1,
       }}
     >
       <div style={{
@@ -78,7 +78,7 @@ function RecipesContent() {
   const activeCatLabel = activeCat ? (ctxLang === 'id' ? activeCat.label_id : activeCat.label_en) : (ctxLang === 'id' ? 'Semua' : 'All');
 
   const sorted = useMemo(() => {
-    const order: Record<string, number> = { complete: 0, flagged: 0, needs_method: 1, coming_soon: 2 };
+    const order: Record<string, number> = { full: 0, partial: 1, no_content: 2 };
     const filtered = allRecipes
       .filter(r => activeCategory === 'all' || r.category === activeCategory)
       .filter(r => {
@@ -86,7 +86,7 @@ function RecipesContent() {
         const n = ctxLang === 'id' ? r.name_id : (r.name_en || r.name_id);
         return n.toLowerCase().includes(search.toLowerCase());
       })
-      .sort((a, b) => (order[a.status] ?? 2) - (order[b.status] ?? 2));
+      .sort((a, b) => (order[a.content_state] ?? 2) - (order[b.content_state] ?? 2));
 
     return [...filtered].sort((a, b) => {
       const aHasPhoto = a.photo && a.photo.trim() !== '' ? 0 : 1;

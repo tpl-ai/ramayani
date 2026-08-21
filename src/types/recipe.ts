@@ -1,4 +1,10 @@
-export type RecipeStatus = 'complete' | 'needs_method' | 'coming_soon' | 'flagged';
+/**
+ * Written by the raspberry admin tool. "full" means real transcribed
+ * content exists (name, ingredients, method) — not that every field is
+ * finished; translation/enrichment gaps are tracked separately and don't
+ * affect this.
+ */
+export type ContentState = 'no_content' | 'partial' | 'full';
 
 export interface IngredientLine {
   amount: string;
@@ -10,7 +16,7 @@ export interface Recipe {
   id: string;
   resep_num: number | null;
   category: string;
-  status: RecipeStatus;
+  content_state: ContentState;
   photo: string;
   name_id: string;
   name_en: string;

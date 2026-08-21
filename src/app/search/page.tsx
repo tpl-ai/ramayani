@@ -13,18 +13,18 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'id' | 'e
 
   return (
     <div
-      onClick={recipe.status !== 'coming_soon' ? onClick : undefined}
+      onClick={recipe.content_state !== 'no_content' ? onClick : undefined}
       style={{
         background: '#fff',
         borderRadius: 12,
         overflow: 'hidden',
         border: '1px solid #f2f2f2',
-        cursor: recipe.status !== 'coming_soon' ? 'pointer' : 'default',
-        opacity: recipe.status === 'coming_soon' ? 0.45 : 1,
+        cursor: recipe.content_state !== 'no_content' ? 'pointer' : 'default',
+        opacity: recipe.content_state === 'no_content' ? 0.45 : 1,
         transition: 'box-shadow 0.15s ease',
       }}
       onMouseEnter={e => {
-        if (recipe.status !== 'coming_soon')
+        if (recipe.content_state !== 'no_content')
           (e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 16px rgba(0,0,0,0.08)';
       }}
       onMouseLeave={e => {
@@ -44,7 +44,7 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'id' | 'e
         )}
       </div>
       <div style={{ padding: '10px 12px 12px' }}>
-        <div style={{ fontSize: 13, fontWeight: 600, color: recipe.status === 'coming_soon' ? '#bbb' : '#1a1a1a', lineHeight: 1.3 }}>
+        <div style={{ fontSize: 13, fontWeight: 600, color: recipe.content_state === 'no_content' ? '#bbb' : '#1a1a1a', lineHeight: 1.3 }}>
           {name}
         </div>
       </div>

@@ -141,7 +141,7 @@ export default function ResepPage() {
   const ings      = ingList(recipe, ctxLang);
   const steps     = methodList(recipe, ctxLang);
   const factor    = serves / baseServes.current;
-  const isComingSoon = recipe.status === 'coming_soon';
+  const isComingSoon = recipe.content_state === 'no_content';
   const processedIngs = ings.map(i => formatIngredient(i, factor, unitSystem));
   const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim() ? recipe.serves : null;
 
