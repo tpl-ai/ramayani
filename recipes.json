@@ -2122,8 +2122,8 @@
         "The coconut milk and kepala form the top layer.",
         "TALAM OLCI layer: [continued on reverse/upside-down page — see flag]"
       ],
-      "notes_id": "FLAG: Berkas 1, Hal. 16–17. HALAMAN 17 TERBALIK (upside-down) — ini adalah sambungan dari Hal. 16. Teks terbaca dari bawah ke atas. Resep ini memiliki beberapa lapisan (layers) yang kompleks. Harap periksa bersama Ibu secara langsung.",
-      "notes_en": "FLAG: File 1, Pages 16–17. PAGE 17 IS UPSIDE-DOWN — it is the continuation of Page 16. Text reads from bottom to top. This is a complex multi-layered recipe. Please review directly with mother."
+      "notes_id": "FLAG: Berkas 1, Hal. 16–17. HALAMAN 17 TERBALIK (upside-down) — ini adalah sambungan dari Hal. 16. Teks terbaca dari bawah ke atas. Resep ini memiliki beberapa lapisan (layers) yang kompleks. Harap periksa bersama Ibu secara langsung.\n\nLihat juga Resep 85 (Lapis Pepe) — kelanjutan dari halaman ini (lapisan warna TALAM OLCI).",
+      "notes_en": "FLAG: File 1, Pages 16–17. PAGE 17 IS UPSIDE-DOWN — it is the continuation of Page 16. Text reads from bottom to top. This is a complex multi-layered recipe. Please review directly with mother.\n\nSee also Recipe 85 (Lapis Pepe) — the continuation of this page (TALAM OLCI colour layers)."
     },
     {
       "id": "resep-46",
@@ -3279,12 +3279,40 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "1¼ cup Santen (1 cup Santen Kaleng + ¼ cup Air)",
+        "1 lbs. Terigu",
+        "½ s/teh Garam",
+        "2 s/makan Margarine",
+        "2 lbs. Terigu (Wheat Flour)",
+        "1 s/teh Garam (Salt)",
+        "4 s/m Margarine",
+        "2 cup Santen haleng (Coconut milk)",
+        "½ cup Air",
+        "Sama dengan Versi 2 — Digiling di no.3"
+      ],
+      "ingredients_en": [
+        "1¼ cup (300 ml) coconut milk (santen) — 1 cup canned + ¼ cup water",
+        "1 lb (450 g) flour (terigu)",
+        "½ tsp salt (garam)",
+        "2 tbsp margarine",
+        "2 lbs (900 g) flour / wheat flour (terigu)",
+        "1 tsp salt (garam)",
+        "4 tbsp margarine",
+        "2 cups (480 ml) coconut milk (santen)",
+        "½ cup (120 ml) water",
+        "Same as Version 2 — Roll at setting no. 3"
+      ],
+      "method_id": [
+        "VERSI 1: Santen dipanaskan, lalu masukkan: Margarine + Garam. Kemudian jadikan satu dengan Terigu. Digiling di no.3.",
+        "VERSI 2 & 3: Sama dengan Versi 1."
+      ],
+      "method_en": [
+        "VERSION 1: Heat the coconut milk, then add margarine and salt. Then combine with flour. Roll at setting no.3.",
+        "VERSION 2 & 3: Same as Version 1."
+      ],
+      "notes_id": "Tiga versi kulit pastel muncul di tiga halaman berbeda (Berkas 5, Hal. 12, 14, 16), semua menggunakan santen sebagai pengganti air. Takaran santen sedikit berbeda antar versi.",
+      "notes_en": "FLAG: Berkas 5, Hal. 12, 14, 16. Three versions of this pastry skin appear across three separate pages with slightly different coconut milk quantities. All use coconut milk instead of water. Please confirm which version is preferred with mother."
     },
     {
       "id": "resep-72",
@@ -3341,12 +3369,42 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "3 cup Air",
+        "350 gram Terigu",
+        "½ s/teh Garam",
+        "4 butir Telur",
+        "Buku masak Sisca Soewitomo I Hal.59",
+        "100 gr. Terigu",
+        "50 gr. Tepung beres",
+        "2 Telur",
+        "400 cc Air",
+        "½ s/teh garam",
+        "4 s/m minyah goreng"
+      ],
+      "ingredients_en": [
+        "3 cups (720 ml) water (air)",
+        "350 g (12.3 oz) flour (terigu)",
+        "½ tsp salt (garam)",
+        "4 eggs (telur)",
+        "From: Sisca Soewitomo cookbook, Page 59",
+        "100 g (3.5 oz) flour (terigu)",
+        "50 g (1.8 oz) rice flour (tepung beras)",
+        "2 eggs (telur)",
+        "400 ml water (air)",
+        "½ tsp salt (garam)",
+        "4 tbsp frying oil (minyak goreng)"
+      ],
+      "method_id": [
+        "KULIT RISOLES: Blender air dahulu, kemudian masukkan terigu, garam. Bila sudah terasa rata, baru masukkan telurnya.",
+        "KULIT LUMPIA BASAH: Semua dicampur (blender sebentar) dan dadar tipis."
+      ],
+      "method_en": [
+        "RISOLES SKIN: Blend water first, then add flour and salt. Once smooth, add the eggs.",
+        "FRESH SPRING ROLL SKIN: Mix everything together (blend briefly) and make thin crepe-like pancakes."
+      ],
+      "notes_id": "Resep Lumpia Basah dikreditkan pada buku masak Sisca Soewitomo, Hal. 59.",
+      "notes_en": "The Lumpia Basah recipe is credited to Sisca Soewitomo's cookbook, page 59 — mother noted her source."
     },
     {
       "id": "resep-74",
@@ -3358,12 +3416,46 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "2 lbs. Daging egg roll",
+        "1½ Kol diiris agak halus",
+        "12 Telur",
+        "Garlic",
+        "2 s/teh meres Garam",
+        "3 s/teh meres Vetsin",
+        "7 s/teh penuh Gula",
+        "Peder",
+        "2 lbs. Ground chicken",
+        "1½ Kool diiris agak halus",
+        "12 Telur",
+        "Garlic",
+        "2 s/teh meres Garam",
+        "3 s/teh meres Vetsin",
+        "7 s/teh penuh Gula",
+        "Pedes"
+      ],
+      "ingredients_en": [
+        "2 lbs (900 g) meat for egg roll (daging)",
+        "1½ cabbage (kol), thinly sliced",
+        "12 eggs (telur)",
+        "Garlic (bawang putih)",
+        "2 tsp (level) salt (garam)",
+        "3 tsp (level) MSG (vetsin)",
+        "7 tsp (full) sugar (gula)",
+        "Pepper (merica)",
+        "2 lbs (900 g) ground chicken",
+        "1½ cabbage (kol), thinly sliced",
+        "12 eggs (telur)",
+        "Garlic (bawang putih)",
+        "2 tsp (level) salt (garam)",
+        "3 tsp (level) MSG (vetsin)",
+        "7 tsp (full) sugar (gula)",
+        "Hot chilli (pedes)"
+      ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "notes_id": "Tidak ditulis dalam catatan asli. Dua resep serupa di halaman berbeda (pp.22 & 24) — perbedaan utama: Lumpia memakai 'daging egg roll', Lumbiah memakai ground chicken. Kulit lumpia lihat Resep 73.",
+      "notes_en": "FLAG: Berkas 5, Hal. 22 & 24. METHOD: Not written in the original notes. Two very similar recipes; main difference is Lumpia uses unspecified 'egg roll meat' while Lumbiah uses ground chicken. For skin see Recipe 73. Please confirm method with mother."
     },
     {
       "id": "resep-75",
@@ -3375,12 +3467,52 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "Imperial: 2½ stook / 8 oz",
+        "280–240 gram Mentega",
+        "250–240 gram Terigu",
+        "600+100 cc Chicken broth",
+        "800 cc Milk (Half & Half)",
+        "¾/¾ oz – 7 s/makan Gula pasir muncung",
+        "2 s/teh Garam MERES",
+        "2 s/teh Vetsin",
+        "1 lbs Shrimp (instead of chicken) — Bawang merah/besar slice",
+        "White pepper",
+        "Nutmeg (pala)",
+        "Rebos ayam",
+        "Wortel",
+        "Chopped celery"
+      ],
+      "ingredients_en": [
+        "Imperial: 2½ sticks / 8 oz",
+        "280–240 g butter (mentega)",
+        "250–240 g flour (terigu)",
+        "600+100 ml chicken broth (kaldu ayam)",
+        "800 ml milk — half and half",
+        "¾ oz / 7 full tbsp white sugar (gula pasir)",
+        "2 tsp (level) salt (garam)",
+        "2 tsp MSG (vetsin)",
+        "1 lb (450 g) shrimp — as substitute for chicken — shallots/large onion, sliced",
+        "White pepper (lada putih)",
+        "Nutmeg (pala)",
+        "Boiled chicken (rebos ayam)",
+        "Carrot (wortel)",
+        "Chopped celery"
+      ],
+      "method_id": [
+        "Bawang slice digogorengim dg. mentega. Sesudah matang masukkan terigunnya sedikit-sedikit. Dipanci lain satukan chicken broth, susu, gula, garam, vetsin, pepper, nutmeg, lalu dipanaskan.",
+        "Campuran susu + chicken broth tadi. Ke terigu saunifte di aduk. Sesudah itu masukkan semua bahannya ke dalam terigu, kasih bumbu lagi yg. enak.",
+        "Wortel di macronave / udang di-suir ½ dulu dg. margarine. Ayam di-suir ½ jadi ½ dg. margarine. Sesudah terigu matang, kala yg besar dihalusi kecil + jumpit + terigu saunifte. Ke terigu saunifte dan masukkan semua bahan bahan.",
+        "Cobain lalu masukkan semua bahan."
+      ],
+      "method_en": [
+        "Fry sliced onion with butter. Once cooked, add flour gradually. In another pan combine chicken broth, milk, sugar, salt, MSG, pepper, nutmeg, then heat.",
+        "Combine the milk + chicken broth mixture into the flour roux and stir. After that add all the ingredients into the flour, season again to taste.",
+        "Microwave the carrot / sauté the shrimp briefly with margarine. Sauté the chicken briefly with margarine. Once the flour is cooked, break any large pieces small + form + flour roux. Add into the roux all the ingredients.",
+        "Taste and adjust, then add all ingredients."
+      ],
+      "notes_id": "1 lbs udang bisa dipakai sebagai pengganti ayam. Tulisan agak tidak teratur di beberapa bagian — beberapa istilah menggunakan singkatan pribadi Ibu ('suir', 'saunifte', 'rebos').",
+      "notes_en": "FLAG: Berkas 5, Hal. 11. Mother's note: '1 lb shrimp instead of chicken.' Writing uses mother's personal abbreviations ('suir', 'saunifte', 'rebos') — please confirm these terms with mother."
     },
     {
       "id": "resep-76",
@@ -3392,12 +3524,34 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "3 Botol besar (1,86 liter) Soy Superior Sauce",
+        "3 Botol besar (1,86 liter) Water",
+        "1 Potong Laos",
+        "Pekak",
+        "3 Batang Sereh",
+        "3 Wungkul Bawang putih",
+        "5 pak = 15 lbs Gula pasir"
+      ],
+      "ingredients_en": [
+        "3 large bottles (1.86 L each) Superior soy sauce",
+        "3 large bottles (1.86 L each) water (air)",
+        "1 piece galangal (laos)",
+        "Star anise (pekak)",
+        "3 stalks lemongrass (sereh)",
+        "3 bulbs garlic (bawang putih)",
+        "5 packs = 15 lbs (6.8 kg) white sugar (gula pasir)"
+      ],
+      "method_id": [
+        "Digodok sampai wangi, lalu masukkan.",
+        "5 pak = 15 lbs. Gula pasir. Godok terus sampai jumlahnya hancur."
+      ],
+      "method_en": [
+        "Cook until fragrant, then add.",
+        "5 packs = 15 lbs sugar. Keep cooking until the sugar is completely dissolved."
+      ],
+      "notes_id": "Dua versi hampir identik (Hal. 6 dan Hal. 8) — Versi 2 menggunakan botol plastik. Cara membuat sangat singkat, kemungkinan singkatan Ibu untuk resep yang sudah dikuasai.",
+      "notes_en": "FLAG: Berkas 5, Hal. 6 & 8. Two nearly identical versions; Version 2 specifies plastic bottles. Method is very brief — please confirm full steps with mother, including cooking time and straining."
     },
     {
       "id": "resep-77",
@@ -3409,12 +3563,48 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "1 ADONAN: 14 cup Air",
+        "8 cup Gula",
+        "½ cup Garam",
+        "4 cup Gula pasir",
+        "1 doos Brown sugar",
+        "3 s/besar Cabe merah",
+        "Rawit",
+        "½ ADONAN: 7 cup Air",
+        "4 cup Gula",
+        "¼ cup Garam",
+        "2 cup Gula pasir",
+        "½ doos Brown sugar",
+        "1½ s/besar Cabe merah",
+        "Rawit"
+      ],
+      "ingredients_en": [
+        "FULL BATCH: 14 cups (3.3 L) water (air)",
+        "8 cups sugar (gula)",
+        "½ cup (120 ml) salt (garam)",
+        "4 cups white sugar (gula pasir)",
+        "1 box brown sugar",
+        "3 tbsp red chilli (cabe merah)",
+        "Bird's eye chilli (rawit) to taste",
+        "HALF BATCH: 7 cups water",
+        "4 cups sugar",
+        "¼ cup salt",
+        "2 cups white sugar",
+        "½ box brown sugar",
+        "1½ tbsp red chilli",
+        "Bird's eye chilli to taste"
+      ],
+      "method_id": [
+        "Masak semuanya sampai mendidih, lalu masukkan: 225 gram Garlic, diblender dg. air dari yang 60 cup.",
+        "Cuka Final Iris, brown sugar, gula pasir, garam, cabe merah, rawit — semuanya dimasak."
+      ],
+      "method_en": [
+        "Cook everything until boiling, then add: 225 g garlic, blended with water set aside from the batch.",
+        "Cane vinegar, brown sugar, white sugar, salt, red chilli, bird's eye chilli — all cooked together."
+      ],
+      "notes_id": "Halaman asli memiliki tiga kolom ukuran (1 adonan, ½ adonan, ¼ adonan) — hanya dua kolom pertama tertranskripsi di sini. Cuka lahang juga termasuk bahan tapi takarannya tidak jelas dalam konteks resep ini. Catatan: langkah cara membuat pada halaman ini tampak mengulang teks dari Resep 67 (Cuka Empek-Empek) — kemungkinan kesalahan transkripsi atau bumbu yang tumpang tindih.",
+      "notes_en": "FLAG: Berkas 3, Hal. 22. Three quantity columns exist in the original (full, half, quarter batch) — only two are captured here. Cane vinegar (cuka lahang) is part of the recipe but its quantity is unclear in this context. The method text closely mirrors Recipe 67's vinegar sauce method, suggesting possible cross-contamination between the two pages — please confirm the correct method with mother."
     },
     {
       "id": "resep-78",
@@ -3426,12 +3616,54 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "1 ORDER: 4 cup Oil",
+        "0.6 oz Trasi",
+        "14 oz Bawang slice",
+        "16 oz (1pak) Bumbu Thai",
+        "1 Can (6 lbs 4 oz) Crushed Tomato",
+        "3 cup Fish sauce",
+        "3 oz Garam",
+        "3 oz M.S.G.",
+        "3¾ oz Gula",
+        "½ ORDER: 2 cup, 0.3 oz, 7 oz, 7 oz, ½ Can",
+        "1½ cup, 1½ oz, 1½ oz, 2¼ oz",
+        "SKALA RESTORAN: Oil 4 cup",
+        "Trasi 6 oz",
+        "Bawang Slice 14 oz",
+        "Bumbu Thai 1 pak (16 oz)",
+        "1 Can Crushed Tomato (6 lbs 4 oz)",
+        "Salt 3 oz",
+        "Fish Sauce 3 cups",
+        "M.S.C. 3 oz",
+        "Gula 3¼ lbs"
+      ],
+      "ingredients_en": [
+        "1 ORDER: 4 cups oil (minyak)",
+        "0.6 oz shrimp paste (trasi)",
+        "14 oz (400 g) sliced onion (bawang slice)",
+        "16 oz / 1 pack Thai spice paste (bumbu Thai)",
+        "1 can (6 lbs 4 oz) crushed tomato (tomat hancur)",
+        "3 cups fish sauce (kecap ikan)",
+        "3 oz (85 g) salt (garam)",
+        "3 oz (85 g) MSG",
+        "3¾ oz (106 g) sugar (gula)",
+        "½ ORDER (halved): 2 cups, 0.3 oz, 7 oz, 7 oz, ½ can",
+        "1½ cups, 1½ oz, 1½ oz, 2¼ oz",
+        "RESTAURANT SCALE: 4 cups oil",
+        "6 oz shrimp paste",
+        "14 oz sliced onion",
+        "1 pack (16 oz) Thai spice paste",
+        "1 can crushed tomato (6 lbs 4 oz)",
+        "3 oz salt",
+        "3 cups fish sauce",
+        "3 oz MSG",
+        "3¼ lbs sugar"
+      ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "notes_id": "Catatan Ibu: 'Bumbu Thai = Kang panang curry.' Tidak ditulis dalam catatan asli cara membuatnya.",
+      "notes_en": "FLAG: Berkas 3, Hal. 19–20. METHOD: Not written in the original notes. Mother's note: 'Bumbu Thai = Kang Panang curry.' Page 19 (1 order) and Page 20 (restaurant scale) are two quantity versions. Please confirm method with mother."
     },
     {
       "id": "resep-79",
@@ -3443,12 +3675,36 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "2 s/makan Veg. oil",
+        "3 s/makan Maggie sauce (Thai)",
+        "1 s/makan Oyster sauce",
+        "2 s/makan Sugar",
+        "3 s/makan Chicken broth",
+        "5 gloves Garlic",
+        "Chilli crushed",
+        "Basil",
+        "Dengan: Shrimp, chicken, beef or Combination Seafood"
+      ],
+      "ingredients_en": [
+        "2 tbsp (30 ml) vegetable oil (minyak sayur)",
+        "3 tbsp Maggie sauce (Thai variety)",
+        "1 tbsp oyster sauce (saus tiram)",
+        "2 tbsp sugar (gula)",
+        "3 tbsp chicken broth (kaldu ayam)",
+        "5 cloves garlic (bawang putih)",
+        "Crushed chilli (cabe hancur)",
+        "Basil (kemangi)",
+        "Serve with: shrimp, chicken, beef or combination seafood"
+      ],
+      "method_id": [
+        "Semua daging dimasak dulu dan buang semua airnya, lalu tambahkan ke sausnya."
+      ],
+      "method_en": [
+        "Cooked all the meat first and discard all the water and add to the sauce."
+      ],
+      "notes_id": "Catatan Ibu: 'Singapore 2000.' Cara membuat sangat singkat.",
+      "notes_en": "FLAG: Berkas 8, Hal. 1. Method is very brief — please confirm whether garlic and chilli are sautéed first before combining with the sauce, since that step is not explicitly written."
     },
     {
       "id": "resep-80",
@@ -3460,12 +3716,52 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "── NASI HAINAN ──",
+        "450 gr Beras",
+        "5 gr Bawang putih",
+        "6 Siung Bawang putih",
+        "5 Can Djuhe",
+        "3 Sdm Minyah gorengnuth memumis",
+        "2 Sdm Minyah",
+        "600 ml Kaldu ayam",
+        "1 Sdt Garam",
+        "── NASI TIM ──",
+        "1 bagian Haas beras",
+        "2½ bagian Air",
+        "── BUBUR ──",
+        "1 bagian Beras",
+        "10 bagian Air"
+      ],
+      "ingredients_en": [
+        "── HAINANESE CHICKEN RICE ──",
+        "450 g (1 lb) rice (beras)",
+        "5 g garlic (bawang putih)",
+        "6 cloves garlic (bawang putih)",
+        "5 cans (unclear — possibly sliced ginger, see flag)",
+        "3 tbsp frying oil for sautéing (minyak goreng)",
+        "2 tbsp oil (minyak)",
+        "600 ml (2½ cups) chicken broth (kaldu ayam)",
+        "1 tsp salt (garam)",
+        "── STEAMED RICE (Nasi Tim) ──",
+        "1 part rice (beras)",
+        "2½ parts water (air)",
+        "── RICE PORRIDGE (Bubur) ──",
+        "1 part rice (beras)",
+        "10 parts water (air)"
+      ],
+      "method_id": [
+        "Nasi Hainan: Bawang putih digogorengim, lalu masukkan beras. Gogorengim sampai kuning. Sesudah itu masukkan kaldu ayam dan tutup. Masak sampai matang.",
+        "Nasi Tim: 1 bagian beras dengan 2½ bagian air.",
+        "Bubur: 1 bagian beras dengan 10 bagian air."
+      ],
+      "method_en": [
+        "Hainanese Rice: Fry garlic, then add rice. Fry until golden. Then add chicken broth and cover. Cook until done.",
+        "Nasi Tim: 1 part rice to 2½ parts water.",
+        "Rice Porridge: 1 part rice to 10 parts water."
+      ],
+      "notes_id": "'5 Can djuhe' tidak jelas — kemungkinan jahe (ginger) iris. Tiga olahan nasi pada dua halaman.",
+      "notes_en": "FLAG: Berkas 6, Hal. 11–12. '5 Can djuhe' is unclear — possibly sliced ginger (jahe). Please confirm with mother."
     },
     {
       "id": "resep-81",
@@ -3477,12 +3773,48 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "1 lbs. Minced Pork",
+        "½ lbs. Shrimp",
+        "1 Onion, chopped finely",
+        "6 oz. Steamed Crab meat",
+        "2 Egg",
+        "Beat eggs lightly and add:",
+        "1 teaspoon Salt",
+        "2 —— Sugar",
+        "1 —— MSG",
+        "2 —— Soy sauce light",
+        "1 —— Dark Soy Sauce",
+        "1 —— Pepper",
+        "1 tablespoon Oil",
+        "1 —— Flour",
+        "1 teaspoon Fine Spice Powder"
+      ],
+      "ingredients_en": [
+        "1 lb (450 g) minced pork",
+        "½ lb (225 g) shrimp (udang)",
+        "1 onion, finely chopped (bawang cincang halus)",
+        "6 oz (170 g) steamed crab meat",
+        "2 eggs (telur)",
+        "Beat eggs lightly then add:",
+        "1 tsp salt (garam)",
+        "2 tsp sugar (gula)",
+        "1 tsp MSG (vetsin)",
+        "2 tsp light soy sauce",
+        "1 tsp dark soy sauce",
+        "1 tsp pepper (merica)",
+        "1 tbsp oil (minyak)",
+        "1 tbsp flour (tepung)",
+        "1 tsp five-spice powder (bumbu lima rempah)"
+      ],
+      "method_id": [
+        "Campur semua bahan, bungkus dengan lembaran kulit tahu; kukus lalu goreng."
+      ],
+      "method_en": [
+        "Mix all the ingredients, wrapped with bean curd sheet; steamed and fried."
+      ],
+      "notes_id": "Resep dalam bahasa Inggris pada catatan asli.",
+      "notes_en": "Mother's original notes written in English. Classic Peranakan-Chinese recipe — steamed first, then fried."
     },
     {
       "id": "resep-82",
@@ -3494,12 +3826,62 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "¾ kg. Beef Steak (see Recipe)",
+        "1 kg. Siring Bread (sliced/stripped bread)",
+        "1 kg. Red Beet",
+        "1.5 kg. Potatoes",
+        "¼ kg. Red Apple",
+        "½ kg. Carrot",
+        "3/8 kg. Egg white",
+        "── HAUSMARKT SAUCE ──",
+        "600 ml Salad oil",
+        "350 gr. Flour",
+        "300 ml Milk",
+        "100 gr. Salt",
+        "5 Cups Sugar",
+        "1 Tablespoon Vinegar",
+        "5 Cups Relish",
+        "5 Tablespoon Mustard",
+        "± 5 eggs yolk",
+        "30 ml Rum",
+        "2 Tablespoons Raisin, soaked in Rum"
+      ],
+      "ingredients_en": [
+        "¾ kg (1.7 lbs) beef steak (daging sapi)",
+        "1 kg (2.2 lbs) siring bread / sliced bread",
+        "1 kg red beet (bit merah)",
+        "1.5 kg (3.3 lbs) potatoes (kentang)",
+        "¼ kg (250 g) red apple (apel merah)",
+        "½ kg (500 g) carrot (wortel)",
+        "3/8 kg (375 g) egg whites (putih telur)",
+        "── HAUSMARKT SAUCE ──",
+        "600 ml salad oil (minyak sayur)",
+        "350 g (12.3 oz) flour (terigu)",
+        "300 ml milk (susu)",
+        "100 g (3.5 oz) salt (garam)",
+        "5 cups sugar (gula)",
+        "1 tbsp vinegar (cuka)",
+        "5 cups pickle relish",
+        "5 tbsp mustard (mustard)",
+        "± 5 egg yolks (merah telur)",
+        "30 ml (2 tbsp) rum",
+        "2 tbsp raisins (kismis), soaked in rum"
+      ],
+      "method_id": [
+        "Panaskan minyak (350 ml) dan tambahkan terigu sambil terus diaduk sampai adonan menjadi halus.",
+        "Tambahkan garam, gula, 1 kuning telur, cuka, mustard — campur dalam mixer selama 1 jam, terus diaduk.",
+        "Tambahkan sisa ½ (300 ml) air dan susu dan relish sampai adonan mengental, terakhir tambahkan mayonnaise.",
+        "Jika karena suatu sebab adonan menjadi terlalu kental, tambahkan lebih banyak air."
+      ],
+      "method_en": [
+        "Heat the oil (350 ml) and add the flour, constantly stirring until the mixture becomes smooth.",
+        "Add the salt, sugar, 1 egg yolk, vinegar, mustard — blend this together in a mixer for 1 hour, keep stirring.",
+        "Add the remaining ½ (300 ml) water and milk and relish until the mixture becomes thick, last add mayonnaise.",
+        "If for some reason the mixture becomes too thick, just add more water."
+      ],
+      "notes_id": "Diberi label 'M'. Halaman asli ditulis menyamping (sideways). Resep khas pengaruh Belanda, sesuai dengan masakan Indonesia-Belanda kolonial.",
+      "notes_en": "FLAG: Berkas 4, Hal. 17–18. Pages written SIDEWAYS. Marked 'M'. Some words unclear; '5 Cups Relish' not further specified. A Dutch-influenced (Indo) recipe. Please confirm with mother."
     },
     {
       "id": "resep-83",
@@ -3511,12 +3893,40 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "PENGGANTI PUTIK TELUR: Mashed potato with onion disebluk sama air panas, sampai kira-kira kentalnya.",
+        "KROKET KENTANG: Sesudah di-isi daging — dipulung —",
+        "Lalu dibedaskin sama terigu sampai terbungkus putik.",
+        "Sebagai pengganti putik telur, campur terigu sama susu broth.",
+        "Adonan kroket diatas, dicelup dicampuran terigu/susu dan lalu dibedaskin dengan bread crumbs.",
+        "Kemudian harus dideep fry.",
+        "Bisa juga diapakei untuk goreng ikan (Fish & chips)."
+      ],
+      "ingredients_en": [
+        "EGG WHITE SUBSTITUTE: Mashed potato with onion, mixed with hot water until approximately the right consistency.",
+        "POTATO CROQUETTES: Once filled with meat — shaped —",
+        "Then coated with flour until covered like egg white.",
+        "As egg white substitute, mix flour with milk broth.",
+        "Dip the croquette in the flour/milk mixture then coat with bread crumbs.",
+        "Then must be deep fried.",
+        "Can also be used for frying fish (Fish & Chips)."
+      ],
+      "method_id": [
+        "Mashed potato with onion disebluk sama air panas, sampai kira-kira kentalnya.",
+        "Sesudah di-isi daging — dipulung — lalu dibedaskin sama terigu sampai terbungkus putik.",
+        "Sebagai pengganti putik telur, campur terigu sama susu broth. Adonan kroket diatas dicelup dicampuran terigu/susu dan lalu dibedaskin dengan bread crumbs.",
+        "Kemudian harus dideep fry.",
+        "Bisa juga diapakei untuk goreng ikan (Fish & chips)."
+      ],
+      "method_en": [
+        "Mashed potato with onion, mixed with hot water until approximately the right consistency.",
+        "Once filled with meat — shaped — then coated with flour until covered (acting like egg white).",
+        "As egg white substitute, mix flour with milk broth. Dip the croquette in this flour/milk mixture then coat with bread crumbs.",
+        "Then must be deep fry.",
+        "Can also be used for frying fish (Fish & Chips)."
+      ],
+      "notes_id": "Resep BNA, tertanggal 8 Januari 1990.",
+      "notes_en": "Recipe dated 8 January 1990, credited 'BNA'."
     },
     {
       "id": "resep-84",
@@ -3528,12 +3938,42 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "Kambing",
+        "Bawang merah",
+        "Bawang putih",
+        "Jahe",
+        "Kemiri",
+        "Garam",
+        "Pepper",
+        "Ketumbar",
+        "Cengkeh",
+        "Kambing dilumuri dg. bumbu, lalu dibakar ± 3 jam dan diolesi mentega berulang kali.",
+        "Makannya dengan kecap."
+      ],
+      "ingredients_en": [
+        "Whole young goat (kambing)",
+        "Shallots (bawang merah)",
+        "Garlic (bawang putih)",
+        "Ginger (jahe)",
+        "Candlenuts (kemiri)",
+        "Salt (garam)",
+        "Pepper (merica)",
+        "Coriander (ketumbar)",
+        "Cloves (cengkeh)",
+        "Goat is rubbed with the spices, then roasted for ± 3 hours, basting with butter repeatedly.",
+        "Served with sweet soy sauce (kecap)."
+      ],
+      "method_id": [
+        "Kambing dilumuri dg. bumbu, lalu dibakar ± 3 jam dan diolesi mentega berulang kali.",
+        "Makannya dengan kecap."
+      ],
+      "method_en": [
+        "Rub the goat with the spices, then roast for ± 3 hours, basting with butter repeatedly.",
+        "Serve with sweet soy sauce (kecap)."
+      ],
+      "notes_id": "Tidak ada takaran untuk semua bahan bumbu.",
+      "notes_en": "FLAG: Berkas 5, Hal. 5. No quantities specified for any spice ingredient. Please confirm amounts with mother."
     },
     {
       "id": "resep-85",
@@ -3545,12 +3985,42 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "Lapisan warna (dari bawah ke atas):",
+        "MERAH",
+        "PUTIH",
+        "PUTIH",
+        "IJO",
+        "PUTIH",
+        "PUTIH",
+        "IJO",
+        "PUTIH",
+        "PUTIH",
+        "MERAH",
+        "Catatan: IJO = warna hijau pandan"
+      ],
+      "ingredients_en": [
+        "Colour sequence (bottom to top):",
+        "RED (merah)",
+        "WHITE (putih)",
+        "WHITE (putih)",
+        "GREEN (ijo — pandan green)",
+        "WHITE (putih)",
+        "WHITE (putih)",
+        "GREEN (ijo)",
+        "WHITE (putih)",
+        "WHITE (putih)",
+        "RED (merah)",
+        "Note: IJO = pandan green colour"
+      ],
+      "method_id": [
+        "Lapisan dari bawah ke atas: MERAH — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH."
+      ],
+      "method_en": [
+        "Layering order from bottom to top: RED — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED."
+      ],
+      "notes_id": "Ini adalah kelanjutan dari Resep 45 (Kue Pepe); tidak berisi bahan mandiri — lihat Resep 45 untuk bahan lengkap.",
+      "notes_en": "FLAG: Berkas 5, Hal. 19. This is the continuation of Recipe 45 (Kue Pepe) — no standalone ingredients; see Recipe 45. Please review both pages together with mother."
     },
     {
       "id": "resep-86",
@@ -3562,12 +4032,28 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
+      "ingredients_id": [
+        "4 Telur",
+        "2 cup Riccota cheese",
+        "½ cup Cheddar",
+        "½ cup Parmesan",
+        "Brocoli",
+        "Spinach",
+        "Mushroom"
+      ],
+      "ingredients_en": [
+        "4 eggs (telur)",
+        "2 cups ricotta cheese",
+        "½ cup cheddar cheese",
+        "½ cup Parmesan cheese",
+        "Broccoli",
+        "Spinach (bayam)",
+        "Mushroom (jamur)"
+      ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "notes_id": "Hanya bahan — tidak ada cara membuat, tidak ada kulit pie, tidak ada takaran untuk sayuran.",
+      "notes_en": "FLAG: Berkas 5, Hal. 24. Ingredients only — no method, no pie crust, no quantities for vegetables. Please confirm with mother."
     },
     {
       "id": "resep-87",
@@ -3606,29 +4092,81 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "Seabass fish dipotong persegi ± ¾ lbs ± 8\"",
+        "⅓ haleng Black bean",
+        "2 s/mahan Kikoman",
+        "Tahu",
+        "1 s/m Sagu",
+        "3 s/m Olive oil"
+      ],
+      "ingredients_en": [
+        "± 8\" seabass fish, cut into squares ± ¾ lb / ± 8 inches",
+        "⅓ can black bean (kedelai hitam)",
+        "2 tbsp Kikkoman soy sauce",
+        "Tofu (tahu)",
+        "1 tbsp sago starch (sagu)",
+        "3 tbsp olive oil"
+      ],
+      "method_id": [
+        "Caranya: Soft tahu ditaruh didaser, dibering. Di masukkan lain airnya dibuang.",
+        "Bumbu diatas digogorengim asal anget lalu masukkan ikannya.",
+        "Lalu satukan dg. bahannya dan disteam supaya ikannya matang ± 15–20 menit.",
+        "Bisa djuga dimacrowave 3 menit."
+      ],
+      "method_en": [
+        "Method: Soft tofu placed at the base, arranged. Put in, drain excess water.",
+        "Stir fry the sauce ingredients until just warm then add the fish.",
+        "Then combine with the other ingredients and steam until the fish is cooked ± 15–20 minutes.",
+        "Can also be microwaved 3 minutes."
+      ],
+      "notes_id": "Halaman pertama Berkas 5, Hal. 1.",
+      "notes_en": "First page of File 5 (Berkas 5, Hal. 1). Mother's writing in mixed Indonesian and English."
     },
     {
       "id": "resep-89",
       "resep_num": 89,
       "category": "seafood",
-      "status": "flagged",
+      "status": "complete",
       "photo": "",
       "name_id": "Fish Head with Bean Sauce",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "ingredients_id": [],
-      "ingredients_en": [],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "",
-      "notes_en": ""
+      "ingredients_id": [
+        "Fry in Veg. oil: Slice ginger",
+        "3 Shallot slice",
+        "6 Garlic slice",
+        "2 tbls. Tauco (Bean Sauce)",
+        "2 tbls. Oyster Sauce",
+        "2 tbls. Sweet Soy Sauce",
+        "Add everything together, if it is too thick add chicken broth, add the head fish or fish and cooked ± 10 minutes.",
+        "Turn the fish 1× and cover and cooked slowly."
+      ],
+      "ingredients_en": [
+        "Fry in vegetable oil: sliced ginger (jahe iris)",
+        "3 shallots (bawang merah), sliced",
+        "6 cloves garlic (bawang putih), sliced",
+        "2 tbsp bean sauce (tauco / fermented soybean paste)",
+        "2 tbsp oyster sauce (saus tiram)",
+        "2 tbsp sweet soy sauce (kecap manis)",
+        "If sauce is too thick, add chicken broth. Add fish head or whole fish and cook ± 10 minutes.",
+        "Turn fish once, cover and cook slowly."
+      ],
+      "method_id": [
+        "Fry in Veg. oil: Slice ginger, 3 Shallot slice, 6 Garlic slice.",
+        "Add Tauco (Bean Sauce), Oyster Sauce, Sweet Soy Sauce.",
+        "Add everything together, if it is too thick add chicken broth, add the head fish or fish and cooked ± 10 minutes.",
+        "Turn the fish 1× and cover and cooked slowly."
+      ],
+      "method_en": [
+        "Fry in vegetable oil: sliced ginger, 3 sliced shallots, 6 sliced garlic cloves.",
+        "Add bean sauce, oyster sauce, sweet soy sauce.",
+        "Add everything together. If too thick, add chicken broth. Add fish head or fish and cook ± 10 minutes.",
+        "Turn the fish once, cover and cook slowly."
+      ],
+      "notes_id": "Tertanggal 7 Juni 2005 — resep dalam bahasa Inggris, salah satu resep dengan tanggal paling muda dalam koleksi.",
+      "notes_en": "Mother's original in English, dated June 7 2005. One of the later-dated recipes in the collection."
     },
     {
       "id": "cs-rendang",
