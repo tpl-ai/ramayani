@@ -3,7 +3,7 @@
 import { useState, useMemo, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import { allRecipes } from '@/lib/recipes';
+import { allRecipes, recipePhotoSrc } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
 import Header from '@/components/Header';
 
@@ -41,7 +41,7 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'EN' | 'I
       }}>
         {hasPhoto && (
           <img
-            src={`/images/${recipe.photo}`}
+            src={recipePhotoSrc(recipe.photo)}
             alt={name}
             onError={() => setErr(true)}
             style={{

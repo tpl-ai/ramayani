@@ -3,7 +3,7 @@
 import { useState, useMemo, Suspense } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import { allRecipes } from '@/lib/recipes';
+import { allRecipes, recipePhotoSrc } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
 
 function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'id' | 'en'; onClick: () => void }) {
@@ -34,7 +34,7 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'id' | 'e
       <div style={{ aspectRatio: '4/3', background: '#e8e2da', overflow: 'hidden' }}>
         {hasPhoto ? (
           <img
-            src={`/images/${recipe.photo}`}
+            src={recipePhotoSrc(recipe.photo)}
             alt={name}
             onError={() => setErr(true)}
             style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}

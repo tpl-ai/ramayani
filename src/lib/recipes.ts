@@ -17,6 +17,16 @@ export function getRecipeById(id: string): Recipe | undefined {
   return allRecipes.find(r => r.id === id);
 }
 
+/**
+ * recipe.photo is either a bare filename served from /public/images (the
+ * original convention) or a full URL from Vercel Blob (written by the
+ * admin tool's photo upload). Absolute URLs are used as-is; anything else
+ * is resolved against /images/.
+ */
+export function recipePhotoSrc(photo: string): string {
+  return /^https?:\/\//.test(photo) ? photo : `/images/${photo}`;
+}
+
 export function getRecipesByCategory(category: string): Recipe[] {
   return allRecipes.filter(r => r.category === category);
 }
