@@ -1,5 +1,11 @@
 export type RecipeStatus = 'complete' | 'needs_method' | 'coming_soon' | 'flagged';
 
+export interface IngredientLine {
+  amount: string;
+  unit: string;
+  name: string;
+}
+
 export interface Recipe {
   id: string;
   resep_num: number | null;
@@ -10,8 +16,8 @@ export interface Recipe {
   name_en: string;
   headnote_id: string;
   headnote_en: string;
-  ingredients_id: string[];
-  ingredients_en: string[];
+  ingredients_id: IngredientLine[];
+  ingredients_en: IngredientLine[];
   method_id: string[];
   method_en: string[];
   notes_id: string;

@@ -6,7 +6,8 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import { getRecipeById, meta, difficultyLevels, recipePhotoSrc } from '@/lib/recipes';
-import type { Recipe } from '@/types/recipe';
+import { displayQuantity } from '@/lib/units';
+import type { Recipe, IngredientLine } from '@/types/recipe';
 import Header from '@/components/Header';
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
@@ -71,7 +72,7 @@ function tx(r: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'):
   return (r[`${field}_id` as keyof Recipe] as string) || '';
 }
 
-function ingList(r: Recipe, lang: 'id' | 'en'): string[] {
+function ingList(r: Recipe, lang: 'id' | 'en'): IngredientLine[] {
   if (lang === 'en') return r.ingredients_en.length ? r.ingredients_en : r.ingredients_id;
   return r.ingredients_id.length ? r.ingredients_id : r.ingredients_en;
 }
@@ -81,29 +82,9 @@ function methodList(r: Recipe, lang: 'id' | 'en'): string[] {
   return r.method_id.length ? r.method_id : r.method_en;
 }
 
-function processIng(text: string, factor: number, imperial: boolean): string {
-  let out = text;
-  if (factor !== 1) {
-    out = out.replace(/(?<!\d)(\d+(?:\.\d+)?)(?!\d)/g, (m) => {
-      const n = parseFloat(m);
-      if (!n) return m;
-      const s = n * factor;
-      return s === Math.round(s) ? String(Math.round(s)) : String(Math.round(s * 10) / 10);
-    });
-  }
-  if (imperial) {
-    out = out
-      .replace(/(\d+(?:\.\d+)?)\s*kg\b/gi, (_, n) => `${Math.round(parseFloat(n) * 2.20462 * 10) / 10} lbs`)
-      .replace(/(\d+(?:\.\d+)?)\s*g\b/gi,  (_, n) => `${Math.round(parseFloat(n) / 28.35 * 10) / 10} oz`)
-      .replace(/(\d+(?:\.\d+)?)\s*ml\b/gi, (_, n) => {
-        const ml = parseFloat(n);
-        if (ml >= 59) return `${Math.round(ml / 236.6 * 4) / 4} cups`;
-        if (ml >= 15) return `${Math.round(ml / 14.79 * 2) / 2} tbsp`;
-        return `${Math.round(ml / 4.93)} tsp`;
-      })
-      .replace(/(\d+(?:\.\d+)?)\s*liter/gi, (_, n) => `${Math.round(parseFloat(n) * 4.227 * 4) / 4} cups`);
-  }
-  return out;
+function formatIngredient(item: IngredientLine, factor: number, unitSystem: 'metric' | 'imperial'): string {
+  const { amount, unit } = displayQuantity(item.amount, item.unit, factor, unitSystem);
+  return [amount, unit, item.name].filter(Boolean).join(' ');
 }
 
 // ── page ──────────────────────────────────────────────────────────
@@ -160,9 +141,8 @@ export default function ResepPage() {
   const ings      = ingList(recipe, ctxLang);
   const steps     = methodList(recipe, ctxLang);
   const factor    = serves / baseServes.current;
-  const imperial  = unitSystem === 'imperial';
   const isComingSoon = recipe.status === 'coming_soon';
-  const processedIngs = ings.map(i => processIng(i, factor, imperial));
+  const processedIngs = ings.map(i => formatIngredient(i, factor, unitSystem));
   const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim() ? recipe.serves : null;
 
   const servesFact = typeof recipe.serves === 'number'
