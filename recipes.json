@@ -227,10 +227,11 @@
         "no_headnote",
         "no_serves",
         "no_photo",
-        "scale"
+        "scale",
+        "units"
       ],
       "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
-      "reviewed": false
+      "reviewed": true
     },
     {
       "id": "resep-2",
