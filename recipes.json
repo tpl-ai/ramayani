@@ -11806,14 +11806,14 @@
       "category": "seafood",
       "photo": "",
       "name_id": "Steam Fish with Black Bean Sauce",
-      "name_en": "",
+      "name_en": "Steam Fish with Black Bean Sauce",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": ".75",
-          "unit": "s/m",
-          "name": "Seabass fish dipotong persegi ± ¾ lbs ± 8\""
+          "amount": "¾",
+          "unit": "lbs",
+          "name": "Seabass fish, dipotong persegi (± 1\" tebal)"
         },
         {
           "amount": "⅓",
@@ -11843,9 +11843,9 @@
       ],
       "ingredients_en": [
         {
-          "amount": ".75",
-          "unit": "tbsp",
-          "name": "Seabass cut into squares ± 1 inches"
+          "amount": "¾",
+          "unit": "lbs",
+          "name": "Seabass fish, cut into squares (± 1 inch thick)"
         },
         {
           "amount": "⅓",
@@ -11889,14 +11889,12 @@
       "notes_en": "First page of File 5 (Berkas 5, Hal. 1). Mother's writing in mixed Indonesian and English.",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Fixed the fish ingredient row against the original scan (Steamed Fish with Black Bean Sauce.png) on 2026-08-22. The amount/unit had been corrupted to '.75 tbsp' (nonsensical for a whole fish) with the real weight and size crammed into the name field, plus a stray unclosed quote mark; ID and EN also disagreed on the size (± 8\" vs ± 1 inches) — confirmed by Arman that it's ± 1 inch (thickness), the '8' was an optical illusion in the handwriting where the top of a '1' touched the descender of a nearby 'g'. Confirmed against the scan: amount ¾, unit lbs, cut into ± 1 inch thick squares. The rest of the recipe (black bean, Kikkoman, tofu, sago, olive oil, and the 4-step method) already matched the scan closely and was left untouched.",
+      "reviewed": true
     },
     {
       "id": "resep-89",
