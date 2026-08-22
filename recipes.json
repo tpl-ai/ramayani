@@ -11868,18 +11868,18 @@
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": "",
-          "unit": "",
+          "amount": ".75",
+          "unit": "s/m",
           "name": "Seabass fish dipotong persegi ± ¾ lbs ± 8\""
         },
         {
           "amount": "⅓",
-          "unit": "",
-          "name": "haleng Black bean"
+          "unit": "klaleng",
+          "name": "black bean"
         },
         {
           "amount": "2",
-          "unit": "s/mahan",
+          "unit": "s/makan",
           "name": "Kikoman"
         },
         {
@@ -11900,9 +11900,9 @@
       ],
       "ingredients_en": [
         {
-          "amount": "± 8",
-          "unit": "",
-          "name": "\" seabass fish, cut into squares ± ¾ lb / ± 8 inches"
+          "amount": ".75",
+          "unit": "tbsp",
+          "name": "Seabass cut into squares ± 1 inches"
         },
         {
           "amount": "⅓",
