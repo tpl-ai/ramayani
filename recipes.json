@@ -10420,14 +10420,14 @@
       "category": "sambal_saus",
       "photo": "",
       "name_id": "Bumbu Tumis Ramayani",
-      "name_en": "",
+      "name_en": "Bumbu Tumis Ramayani (Ramayani Stir-Fry Sauce Base)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": "",
-          "unit": "",
-          "name": "1 ORDER: 4 cup Oil"
+          "amount": "4",
+          "unit": "cup",
+          "name": "Oil"
         },
         {
           "amount": "0.6",
@@ -10437,22 +10437,22 @@
         {
           "amount": "14",
           "unit": "oz",
-          "name": "Bawang slice"
+          "name": "Bawang Slice"
         },
         {
           "amount": "16",
           "unit": "oz",
-          "name": "(1pak) Bumbu Thai"
+          "name": "Bumbu Thai (1 pak)"
         },
         {
           "amount": "1",
           "unit": "Can",
-          "name": "(6 lbs 4 oz) Crushed Tomato"
+          "name": "Crushed Tomato (6 lbs 4 oz)"
         },
         {
           "amount": "3",
           "unit": "cup",
-          "name": "Fish sauce"
+          "name": "Fish Sauce"
         },
         {
           "amount": "3",
@@ -10465,156 +10465,46 @@
           "name": "M.S.G."
         },
         {
-          "amount": "3¾",
+          "amount": "3¼",
           "unit": "oz",
           "name": "Gula"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "½ ORDER: 2 cup, 0.3 oz, 7 oz, 7 oz, ½ Can"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "1½ cup, 1½ oz, 1½ oz, 2¼ oz"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "SKALA RESTORAN: Oil 4 cup"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Trasi 6 oz"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Bawang Slice 14 oz"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Bumbu Thai 1 pak (16 oz)"
-        },
-        {
-          "amount": "1",
-          "unit": "Can",
-          "name": "Crushed Tomato (6 lbs 4 oz)"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Salt 3 oz"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Fish Sauce 3 cups"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "M.S.C. 3 oz"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Gula 3¼ lbs"
         }
       ],
       "ingredients_en": [
         {
-          "amount": "",
-          "unit": "",
-          "name": "1 ORDER: 4 cups oil (minyak)"
+          "amount": "4",
+          "unit": "cup",
+          "name": "Oil"
         },
         {
           "amount": "0.6",
           "unit": "oz",
-          "name": "shrimp paste"
+          "name": "Shrimp paste"
         },
         {
           "amount": "14",
           "unit": "oz",
-          "name": "sliced onion"
+          "name": "Sliced onion"
         },
         {
           "amount": "16",
           "unit": "oz",
-          "name": "/ 1 pack Thai spice paste"
+          "name": "Thai spice paste (1 pack)"
         },
         {
           "amount": "1",
-          "unit": "can",
-          "name": "(6 lbs 4 oz) crushed tomato (tomat hancur)"
+          "unit": "Can",
+          "name": "Crushed tomato (6 lbs 4 oz)"
         },
         {
           "amount": "3",
-          "unit": "cups",
-          "name": "fish sauce (kecap ikan)"
-        },
-        {
-          "amount": "3",
-          "unit": "oz",
-          "name": "salt"
+          "unit": "cup",
+          "name": "Fish sauce"
         },
         {
           "amount": "3",
           "unit": "oz",
-          "name": "MSG"
-        },
-        {
-          "amount": "3¾",
-          "unit": "oz",
-          "name": "sugar"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "½ ORDER (halved): 2 cups, 0.3 oz, 7 oz, 7 oz, ½ can"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "1½ cups, 1½ oz, 1½ oz, 2¼ oz"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "RESTAURANT SCALE: 4 cups oil"
-        },
-        {
-          "amount": "6",
-          "unit": "oz",
-          "name": "shrimp paste"
-        },
-        {
-          "amount": "14",
-          "unit": "oz",
-          "name": "sliced onion"
-        },
-        {
-          "amount": "1",
-          "unit": "pack",
-          "name": "(16 oz) Thai spice paste"
-        },
-        {
-          "amount": "1",
-          "unit": "can",
-          "name": "crushed tomato (6 lbs 4 oz)"
-        },
-        {
-          "amount": "3",
-          "unit": "oz",
-          "name": "salt"
-        },
-        {
-          "amount": "3",
-          "unit": "cups",
-          "name": "fish sauce"
+          "name": "Salt"
         },
         {
           "amount": "3",
@@ -10623,24 +10513,22 @@
         },
         {
           "amount": "3¼",
-          "unit": "lbs",
-          "name": "sugar"
+          "unit": "oz",
+          "name": "Sugar"
         }
       ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "Catatan Ibu: 'Bumbu Thai = Kang panang curry.' Tidak ditulis dalam catatan asli cara membuatnya.",
-      "notes_en": "FLAG: Berkas 3, Hal. 19–20. METHOD: Not written in the original notes. Mother's note: 'Bumbu Thai = Kang Panang curry.' Page 19 (1 order) and Page 20 (restaurant scale) are two quantity versions. Please confirm method with mother.",
+      "notes_id": "Catatan Ibu: 'Bumbu Thai = Kang Panang curry.'",
+      "notes_en": "Mother's note: 'Bumbu Thai = Kang Panang curry.'",
       "content_state": "partial",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Rewritten from the original scan (Bumbu Tumis.png) on 2026-08-22, using only the '1 ORDER' column — the page also has a '½ ORDER' column, dropped per Arman since it's just a straight half of the same quantities. The prior data's rows 9-19 (claimed by the old notes to be a separate 'restaurant scale' page) were dropped entirely — per Arman, they were actually a duplicated/garbled second transcription of largely the same '1 order' values (mostly matching this scan, but with a couple of numbers that appear to have been misread by a decimal or unit, e.g. '6 oz' trasi vs this scan's confirmed 0.6 oz), not a genuine second page. No method is written on this page, which matches what the prior notes already said.",
+      "reviewed": true
     },
     {
       "id": "resep-79",
