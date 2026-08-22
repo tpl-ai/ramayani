@@ -982,183 +982,304 @@
       "category": "ayam",
       "photo": "",
       "name_id": "Ayam Goreng Kuning",
-      "name_en": "",
+      "name_en": "Ayam Goreng Kuning (Yellow Fried Chicken)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": "6 cup – 4 cup",
-          "unit": "",
-          "name": "Air"
+          "amount": "16",
+          "unit": "cup",
+          "name": "Air",
+          "section": "Diblender"
         },
         {
-          "amount": "8 batang – 2",
-          "unit": "",
+          "amount": "8",
+          "unit": "batang",
           "name": "Sereh"
         },
         {
-          "amount": "40–50 gram",
+          "amount": "40",
           "unit": "",
-          "name": "Muncang (10)"
+          "name": "Muncang (Kemiri)"
         },
         {
-          "amount": "4 cup – 1 cup",
-          "unit": "",
+          "amount": "4",
+          "unit": "cup",
           "name": "Air Jeruk Nipis"
         },
         {
-          "amount": "130 oz – 7 s/makan",
-          "unit": "",
+          "amount": "13",
+          "unit": "oz",
           "name": "Garam"
         },
         {
-          "amount": "400 gr – 100 gram",
-          "unit": "",
+          "amount": "400",
+          "unit": "gram",
           "name": "Ketumbar"
         },
         {
-          "amount": "40 oz – 4 s/makan",
-          "unit": "",
+          "amount": "40",
+          "unit": "oz",
           "name": "Kunyit"
         },
         {
-          "amount": "120 gr – 30 gram",
-          "unit": "",
+          "amount": "120",
+          "unit": "gram",
           "name": "Langkuas"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "Not – 150 gram Bawang besar ± 2 buah"
+          "amount": "150",
+          "unit": "gram",
+          "name": "Bawang besar ± 2 buah"
         },
         {
-          "amount": "8 s/m – 2 s/makan",
-          "unit": "",
+          "amount": "8",
+          "unit": "s/makan",
           "name": "Cabe (oelek/segar)"
         },
         {
           "amount": "12",
           "unit": "",
-          "name": "Tomat – 3–4 buah Tomat"
+          "name": "Tomat"
         },
         {
-          "amount": "20 lembar – 5 lembar",
-          "unit": "",
+          "amount": "20",
+          "unit": "lembar",
           "name": "Salam"
         },
         {
-          "amount": "8 s/teh – 2 s/teh",
-          "unit": "",
+          "amount": "8",
+          "unit": "s/teh",
           "name": "Vetsin"
         },
         {
-          "amount": "100 oz – 4 s/makan",
-          "unit": "",
-          "name": "Sugar (gula)"
+          "amount": "10",
+          "unit": "oz",
+          "name": "Gula"
         },
         {
           "amount": "3",
           "unit": "cup",
-          "name": "Maherom"
+          "name": "[tidak teridentifikasi: \"maherom\"]"
+        },
+        {
+          "amount": "8½",
+          "unit": "lbs",
+          "name": "Bawang besar (tambahan)",
+          "section": "Bahan tambahan (bukan bagian dari pasta)"
+        },
+        {
+          "amount": "1",
+          "unit": "lb",
+          "name": "Cabe kaleng (+20?)"
+        },
+        {
+          "amount": "10",
+          "unit": "oz",
+          "name": "Jahe"
+        },
+        {
+          "amount": "150",
+          "unit": "",
+          "name": "Kemiri (tambahan)"
+        },
+        {
+          "amount": "7½",
+          "unit": "oz",
+          "name": "Sereh (tambahan)"
+        },
+        {
+          "amount": "1.5",
+          "unit": "s/teh",
+          "name": "Vetsin (tambahan)"
+        },
+        {
+          "amount": "15",
+          "unit": "oz",
+          "name": "Bawang putih"
+        },
+        {
+          "amount": "1 cup + 2 s/teh",
+          "unit": "",
+          "name": "Gula (tambahan)"
+        },
+        {
+          "amount": "1",
+          "unit": "lbs",
+          "name": "Langkuas (tambahan)"
+        },
+        {
+          "amount": "1.5",
+          "unit": "s/teh",
+          "name": "Citric acid"
+        },
+        {
+          "amount": "1 cup + 5 s/teh",
+          "unit": "",
+          "name": "[tidak teridentifikasi: \"Jaren\"]"
+        },
+        {
+          "amount": "20",
+          "unit": "ekor",
+          "name": "Ayam"
         }
       ],
       "ingredients_en": [
         {
-          "amount": "6–4 cups",
-          "unit": "",
-          "name": "water"
+          "amount": "16",
+          "unit": "cup",
+          "name": "Water",
+          "section": "To be blended"
         },
         {
-          "amount": "8–2 stalks",
-          "unit": "",
-          "name": "lemongrass"
+          "amount": "8",
+          "unit": "batang",
+          "name": "Lemongrass"
         },
         {
-          "amount": "40–50 g",
+          "amount": "40",
           "unit": "",
-          "name": "(10 nuts) candlenuts (muncang/kemiri)"
+          "name": "Candlenuts"
         },
         {
-          "amount": "4–1 cups",
-          "unit": "",
-          "name": "lime juice"
+          "amount": "4",
+          "unit": "cup",
+          "name": "Lime juice"
         },
         {
-          "amount": "130–7 oz",
-          "unit": "",
-          "name": "salt"
+          "amount": "13",
+          "unit": "oz",
+          "name": "Salt"
         },
         {
-          "amount": "400–100 g",
-          "unit": "",
-          "name": "coriander"
+          "amount": "400",
+          "unit": "gram",
+          "name": "Coriander"
         },
         {
-          "amount": "40–4 oz",
-          "unit": "",
-          "name": "turmeric"
+          "amount": "40",
+          "unit": "oz",
+          "name": "Turmeric"
         },
         {
-          "amount": "120–30 g",
-          "unit": "",
-          "name": "galangal"
+          "amount": "120",
+          "unit": "gram",
+          "name": "Galangal"
         },
         {
           "amount": "150",
-          "unit": "g",
-          "name": "large onion ± 2"
+          "unit": "gram",
+          "name": "Large onion, ± 2 pieces"
         },
         {
-          "amount": "8–2 tbsp",
-          "unit": "",
-          "name": "chilli paste or fresh chilli"
+          "amount": "8",
+          "unit": "s/makan",
+          "name": "Chili — sambal oelek or fresh"
         },
         {
-          "amount": "12–3",
+          "amount": "12",
           "unit": "",
-          "name": "to 4 tomatoes"
+          "name": "Tomatoes"
         },
         {
-          "amount": "20–5 leaves",
-          "unit": "",
-          "name": "Indonesian bay leaves (daun salam)"
+          "amount": "20",
+          "unit": "lembar",
+          "name": "Bay leaves"
         },
         {
-          "amount": "8–2 tsp",
-          "unit": "",
+          "amount": "8",
+          "unit": "s/teh",
           "name": "MSG"
         },
         {
-          "amount": "100–4 oz",
-          "unit": "",
-          "name": "sugar"
+          "amount": "10",
+          "unit": "oz",
+          "name": "Sugar"
         },
         {
           "amount": "3",
-          "unit": "cups",
-          "name": "maherom herb"
+          "unit": "cup",
+          "name": "[unidentified: \"maherom\"]"
+        },
+        {
+          "amount": "8½",
+          "unit": "lbs",
+          "name": "Large onion (additional)",
+          "section": "Additional ingredients (not part of the paste)"
+        },
+        {
+          "amount": "1",
+          "unit": "lb",
+          "name": "Canned chili (+20 unclear)"
+        },
+        {
+          "amount": "10",
+          "unit": "oz",
+          "name": "Ginger"
+        },
+        {
+          "amount": "150",
+          "unit": "",
+          "name": "Candlenut (additional)"
+        },
+        {
+          "amount": "7½",
+          "unit": "oz",
+          "name": "Lemongrass (additional)"
+        },
+        {
+          "amount": "1.5",
+          "unit": "s/teh",
+          "name": "MSG (additional)"
+        },
+        {
+          "amount": "15",
+          "unit": "oz",
+          "name": "Garlic"
+        },
+        {
+          "amount": "1 cup + 2 s/teh",
+          "unit": "",
+          "name": "Sugar (additional)"
+        },
+        {
+          "amount": "1",
+          "unit": "lbs",
+          "name": "Galangal (additional)"
+        },
+        {
+          "amount": "1.5",
+          "unit": "s/teh",
+          "name": "Citric acid"
+        },
+        {
+          "amount": "1 cup + 5 s/teh",
+          "unit": "",
+          "name": "[unidentified: \"Jaren\"]"
+        },
+        {
+          "amount": "20",
+          "unit": "ekor",
+          "name": "Whole chickens"
         }
       ],
       "method_id": [
-        "Diblender: air, sereh, muncang (10), air jeruk nipis.",
         "Ini semuanya disatukan dan di-aduk."
       ],
       "method_en": [
-        "Blend: water, lemongrass, candlenuts (10), lime juice.",
-        "All of these combined and stirred together."
+        "Combine all of this together and stir."
       ],
-      "notes_id": "FLAG: Berkas 1, Hal. 7. Halaman asli memiliki DUA KOLOM UKURAN untuk dua skala batch berbeda. Catatan pensil di bagian bawah berisi bahan produksi tambahan yang agak tidak jelas. Harap konfirmasi dengan Ibu.",
-      "notes_en": "FLAG: File 1, Page 7. Original page has TWO COLUMNS of quantities for two different batch sizes. Pencil notes at the bottom contain additional production quantities that are partially unclear. Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo",
-        "units"
+        "scale"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Fully rewritten from the original scan (Ayam Goreng Kuning.png) on 2026-08-22 — a restaurant-batch recipe for 20 whole chickens. The original page has two dash-separated quantities on almost every blended-paste ingredient (e.g. '16 cup — 4 cup' for water); per Arman's decision, only the first (larger) number was kept — the second number's meaning (reduced batch? alternate measure?) is unconfirmed and was not recorded. The previous data was also missing the entire 'additional ingredients' section (12 items, written in pencil at the bottom of the page) — now added. Two ingredient names could not be identified: 'maherom' (blended list, 3 cups) and 'Jaren' (additional list, 1 cup + 5 tsp) — both need confirming with Ibu, and are marked as unidentified rather than guessed at. The '+20' beside canned chili is also unclear — could be a piece count or a separate note. The only method actually written on the page is 'combine and stir' for the blended paste — no braise/fry steps or timings are given; the customary technique for this dish (marinate/braise then fry) is not transcribed here since it wasn't written on the source page. The previous data's other 'step' ('Diblender: air, sereh, muncang...') was just a restatement of four ingredient names, not a real instruction, so it was dropped. Ingredients are now grouped into two sections (Diblender / Bahan tambahan) matching the page layout, using the new `section` field on Ingredient.",
+      "reviewed": true
     },
     {
       "id": "resep-9",
