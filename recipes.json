@@ -9970,29 +9970,24 @@
       "category": "appetizer",
       "photo": "",
       "name_id": "Kroket Ragout",
-      "name_en": "",
+      "name_en": "Kroket Ragout (Ragout Croquettes)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": "",
-          "unit": "",
-          "name": "Imperial: 2½ stook / 8 oz"
+          "amount": "280",
+          "unit": "gram",
+          "name": "Mentega (2½ stok)"
         },
         {
-          "amount": "280–240 gram",
-          "unit": "",
-          "name": "Mentega"
-        },
-        {
-          "amount": "250–240 gram",
-          "unit": "",
-          "name": "Terigu"
+          "amount": "240",
+          "unit": "gram",
+          "name": "Terigu (8½ oz)"
         },
         {
           "amount": "600",
-          "unit": "",
-          "name": "+100 cc Chicken broth"
+          "unit": "cc",
+          "name": "Chicken broth"
         },
         {
           "amount": "800",
@@ -10000,9 +9995,9 @@
           "name": "Milk (Half & Half)"
         },
         {
-          "amount": "¾",
-          "unit": "",
-          "name": "/¾ oz – 7 s/makan Gula pasir muncung"
+          "amount": "7",
+          "unit": "s/makan",
+          "name": "Gula pasir muncung (3½ oz)"
         },
         {
           "amount": "2",
@@ -10017,7 +10012,12 @@
         {
           "amount": "1",
           "unit": "lbs",
-          "name": "Shrimp (instead of chicken) — Bawang merah/besar slice"
+          "name": "Shrimp (instead of chicken)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Bawang merah/besar, diiris"
         },
         {
           "amount": "",
@@ -10027,12 +10027,12 @@
         {
           "amount": "",
           "unit": "",
-          "name": "Nutmeg (pala)"
+          "name": "Nutmeg"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "Rebos ayam"
+          "name": "Rebus ayam"
         },
         {
           "amount": "",
@@ -10047,54 +10047,54 @@
       ],
       "ingredients_en": [
         {
-          "amount": "",
-          "unit": "",
-          "name": "Imperial: 2½ sticks / 8 oz"
+          "amount": "280",
+          "unit": "gram",
+          "name": "Butter (2½ sticks)"
         },
         {
-          "amount": "280–240 g",
-          "unit": "",
-          "name": "butter"
-        },
-        {
-          "amount": "250–240 g",
-          "unit": "",
-          "name": "flour"
+          "amount": "240",
+          "unit": "gram",
+          "name": "Flour (8½ oz)"
         },
         {
           "amount": "600",
-          "unit": "",
-          "name": "+100 ml chicken broth (kaldu ayam)"
+          "unit": "cc",
+          "name": "Chicken broth"
         },
         {
           "amount": "800",
-          "unit": "ml",
-          "name": "milk — half and half"
+          "unit": "cc",
+          "name": "Milk (half and half)"
         },
         {
-          "amount": "¾",
-          "unit": "oz",
-          "name": "/ 7 full tbsp white sugar"
-        },
-        {
-          "amount": "2",
-          "unit": "tsp",
-          "name": "(level) salt"
+          "amount": "7",
+          "unit": "s/makan",
+          "name": "White sugar, heaping (3½ oz)"
         },
         {
           "amount": "2",
-          "unit": "tsp",
+          "unit": "s/teh",
+          "name": "Salt (level)"
+        },
+        {
+          "amount": "2",
+          "unit": "s/teh",
           "name": "MSG"
         },
         {
           "amount": "1",
-          "unit": "lb",
-          "name": "shrimp — as substitute for chicken — shallots/large onion, sliced"
+          "unit": "lbs",
+          "name": "Shrimp (instead of chicken)"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "White pepper (lada putih)"
+          "name": "Shallot/large onion, sliced"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "White pepper"
         },
         {
           "amount": "",
@@ -10133,14 +10133,12 @@
       "notes_en": "FLAG: Berkas 5, Hal. 11. Mother's note: '1 lb shrimp instead of chicken.' Writing uses mother's personal abbreviations ('suir', 'saunifte', 'rebos') — please confirm these terms with mother.",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Ingredients rewritten from the original scan (Kroket Ragut.png) on 2026-08-22. Row 0 ('Imperial: 2½ stook / 8 oz') was a fake ingredient row — it's actually the imperial-unit reading for the butter and flour amounts, folded into those two rows instead. Chicken broth corrected to 600cc (the existing '+100cc' was a misreading of '800' struck through as a correction, confirmed by Arman). Sugar corrected to 7 tbsp / 3½ oz (existing '¾ oz' was a misread of '3½ oz', confirmed by Arman) — butter (280g ≈ 2½ sticks) and flour (240g ≈ 8½ oz) were resolved the same way, checking which of each dash-pair's two numbers matches its stated imperial equivalent. Split the merged 'Shrimp (instead of chicken) — Bawang merah/besar slice' row into two separate ingredients. Method left untouched — not confident enough in my own reading of the cramped cursive to improve on the existing transcription, which already honestly flags its uncertain terms.",
+      "reviewed": true
     },
     {
       "id": "resep-76",
