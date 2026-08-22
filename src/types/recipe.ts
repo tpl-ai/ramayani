@@ -10,6 +10,10 @@ export interface IngredientLine {
   amount: string;
   unit: string;
   name: string;
+  // If present, this row begins a new named sub-group (e.g. "Diblender" /
+  // "To be blended"); everything after it belongs to that group until the
+  // next row with a `section` value.
+  section?: string;
 }
 
 export interface Recipe {
