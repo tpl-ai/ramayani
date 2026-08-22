@@ -6059,165 +6059,125 @@
       "category": "desserts",
       "photo": "",
       "name_id": "Lapis Legit",
-      "name_en": "",
+      "name_en": "Lapis Legit (Indonesian Spiced Layer Cake)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": "",
-          "unit": "",
-          "name": "── ADONAN (3 loyang) ──"
-        },
-        {
           "amount": "7",
-          "unit": "Kaleng",
-          "name": "@ 200 gram Roomboter (mentega)"
+          "unit": "kaleng @ 200 gram",
+          "name": "Roomboter (mentega)",
+          "section": "Dikocok dalam bowl 1"
         },
         {
-          "amount": "1050 – 1200 gram",
-          "unit": "",
+          "amount": "1050",
+          "unit": "gram",
           "name": "Gula pasir"
         },
         {
-          "amount": "¾ – ¾ kaleng",
-          "unit": "",
+          "amount": "¾",
+          "unit": "kaleng",
           "name": "Susu kental"
         },
         {
-          "amount": "7 – 8¾ s/teh",
-          "unit": "",
+          "amount": "7",
+          "unit": "s/teh",
           "name": "Bumbu Lapis Legit"
         },
         {
-          "amount": "1¼ – 1¼ s/teh",
-          "unit": "",
+          "amount": "1¼",
+          "unit": "s/teh",
           "name": "Garam"
         },
         {
-          "amount": "3 – 3 pak",
-          "unit": "",
+          "amount": "3",
+          "unit": "pak",
           "name": "Vanilla"
         },
         {
-          "amount": "",
+          "amount": "60",
           "unit": "",
-          "name": "Dikocok dalam satu bowl"
+          "name": "Merah telur (untuk adonan & sepuhan kuning)",
+          "section": "Dikocok dalam bowl 2"
         },
         {
-          "amount": "60 – 70",
-          "unit": "",
-          "name": "Merah telur"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Sepuhan kuning (egg yolk wash)"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Dikocok dalam bowl"
-        },
-        {
-          "amount": "20 – 20",
+          "amount": "20",
           "unit": "",
           "name": "Putih telur"
         },
         {
-          "amount": "350 – 375 gram",
-          "unit": "",
+          "amount": "350",
+          "unit": "gram",
           "name": "Terigu disaring"
         }
       ],
       "ingredients_en": [
         {
-          "amount": "",
-          "unit": "",
-          "name": "── BATTER (3 trays) ──"
-        },
-        {
           "amount": "7",
-          "unit": "cans",
-          "name": "@ 200 g butter / roomboter"
+          "unit": "kaleng @ 200 gram",
+          "name": "Butter",
+          "section": "Beaten together, bowl 1"
         },
         {
-          "amount": "1,050–1,200 g",
-          "unit": "",
-          "name": "white sugar"
+          "amount": "1050",
+          "unit": "gram",
+          "name": "White sugar"
         },
         {
           "amount": "¾",
-          "unit": "can",
-          "name": "condensed milk"
+          "unit": "kaleng",
+          "name": "Condensed milk"
         },
         {
-          "amount": "7–8¾ tsp",
-          "unit": "",
-          "name": "lapis legit spice blend"
+          "amount": "7",
+          "unit": "s/teh",
+          "name": "Lapis legit spice blend"
         },
         {
           "amount": "1¼",
-          "unit": "tsp",
-          "name": "salt"
+          "unit": "s/teh",
+          "name": "Salt"
         },
         {
           "amount": "3",
-          "unit": "packets",
-          "name": "vanilla"
+          "unit": "pak",
+          "name": "Vanilla"
         },
         {
-          "amount": "",
+          "amount": "60",
           "unit": "",
-          "name": "Beaten together in one bowl"
-        },
-        {
-          "amount": "60–70",
-          "unit": "",
-          "name": "egg yolks"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "egg yolk wash"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Beaten in bowl"
+          "name": "Egg yolks (for the batter & the yolk wash between layers)",
+          "section": "Beaten together, bowl 2"
         },
         {
           "amount": "20",
           "unit": "",
-          "name": "egg whites"
+          "name": "Egg whites"
         },
         {
-          "amount": "350–375 g",
-          "unit": "",
-          "name": "(12–13 oz) flour, sifted"
+          "amount": "350",
+          "unit": "gram",
+          "name": "Sifted flour"
         }
       ],
       "method_id": [
-        "Kocokkan merah telur di fold ke kocokkan Roomboter. Terigu di fold ke kocokkan di atas dan terachir kocoka putih telur di fold ke bawah.",
-        "Oven: First bake 400°. Later BROL 400°.",
-        "NOTE: TIAP KALI BIKIN = 6 LOYANG (2 × 3 LOYANG/ADONAN)."
+        "Kocokkan merah telur di-fold ke kocokkan roomboter. Terigu di-fold ke kocokkan di atas, dan terakhir kocokan putih telur di-fold ke bawah.",
+        "Oven: First bake 400°. Then broil 400°."
       ],
       "method_en": [
         "Fold the beaten egg yolks into the beaten butter mixture. Fold in the sifted flour, then finally fold the beaten egg whites in from below.",
-        "Oven: First bake at 400°F. Then BROIL at 400°F.",
-        "NOTE: EACH TIME YOU MAKE = 6 TRAYS (2 × 3 trays per batter)."
+        "Oven: first bake at 400°F, then broil at 400°F."
       ],
-      "notes_id": "Catatan Ibu: TIAP KALI BIKIN = 6 LOYANG (2 × 3 LOYANG/ADONAN). Dua kolom ukuran untuk 3 loyang dan 4 loyang. FLAG: Berkas 5, Hal. 18–19. Dua kolom ukuran. Halaman 19 adalah kelanjutan dengan instruksi lapisan (merah-putih). Suhu oven dalam Fahrenheit.",
-      "notes_en": "Mother's note: 'Each time you make = 6 trays (2 × 3 trays per batter batch).' Two quantity columns for 3-tray and 4-tray batches. FLAG: File 5, Pages 18–19. Two quantity columns. Page 19 continues with layering colour instructions (merah-putih = red-white). Oven temperature in Fahrenheit.",
+      "notes_id": "Catatan Ibu: tiap kali bikin = 6 loyang (2 × 3 loyang/adonan).",
+      "notes_en": "Mother's note: each time you make it = 6 trays (2 batches × 3 trays per batch).",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Rewritten from the original scan (Lapis Legit.png) on 2026-08-22. The page has two quantity columns — for 3-tray and 4-tray batches — per Arman, only the 3-tray column was kept, since that's the amount actually used in practice (doubled to make 6 trays per the page's own note, not switched to the 4-tray column). 'Sepuhan kuning' (yolk wash) was merged into the 'Merah telur' (egg yolks) row rather than kept as a separate zero-quantity ingredient, since the scan brackets them together as one shared quantity (60 yolks used for both the batter and the between-layer wash). Ingredients grouped into two 'beaten in a bowl' sections matching the scan's brackets. Fixed an obvious 'BROL' -> 'broil' typo in the oven step.",
+      "reviewed": true
     },
     {
       "id": "resep-47",
