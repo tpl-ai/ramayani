@@ -8073,74 +8073,34 @@
       "category": "other",
       "photo": "",
       "name_id": "Gudeg",
-      "name_en": "",
+      "name_en": "Gudeg (Jackfruit Stew)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
           "amount": "4",
           "unit": "s/makan",
-          "name": "Red curry paste (MA-PLO)"
+          "name": "Red Curry Paste (Mae Ploy, MA-PL01)"
         },
         {
           "amount": "2",
-          "unit": "",
-          "name": "Kacang"
+          "unit": "blek besar",
+          "name": "Santan (atau 12 kaleng kecil)"
         },
         {
           "amount": "12",
-          "unit": "Kaleng",
+          "unit": "kaleng",
           "name": "Nangka muda"
         },
         {
-          "amount": "1",
-          "unit": "Tempat",
-          "name": "tahu"
-        },
-        {
-          "amount": "",
+          "amount": "4",
           "unit": "",
-          "name": "6 Potong"
+          "name": "Tempe"
         },
         {
           "amount": "5",
           "unit": "lbs",
-          "name": "Daging ayam (slices chicken)"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "── BUMBU ──"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Santan Jean (or 12 kecil) } diblender besar, lalu"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Cabe merah } dipotong kecil-kecil, diblender"
-        },
-        {
-          "amount": "1",
-          "unit": "Tempat",
-          "name": "tahu Bawang putih, diiriskan, diblender kecil-kecil, harus bake"
-        },
-        {
-          "amount": "1",
-          "unit": "Tempat",
-          "name": "tahu Bawang besar"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Cabe merah dicincang"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Tumpe ± ¾ Kencur"
+          "name": "Daging ayam (sliced chicken)"
         },
         {
           "amount": "",
@@ -8167,12 +8127,12 @@
         {
           "amount": "4",
           "unit": "tbsp",
-          "name": "red curry paste (MA-PLO brand)"
+          "name": "red curry paste (Mae Ploy, MA-PL01)"
         },
         {
           "amount": "2",
-          "unit": "",
-          "name": "peanuts / nuts"
+          "unit": "large cans",
+          "name": "coconut milk (or 12 small cans)"
         },
         {
           "amount": "12",
@@ -8180,102 +8140,54 @@
           "name": "young jackfruit"
         },
         {
-          "amount": "1",
-          "unit": "container",
-          "name": "tofu"
-        },
-        {
-          "amount": "6",
-          "unit": "pieces",
-          "name": "/ portions"
+          "amount": "4",
+          "unit": "",
+          "name": "tempeh"
         },
         {
           "amount": "5",
           "unit": "lbs",
-          "name": "sliced chicken"
+          "name": "chicken meat, sliced"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "── SPICE PASTE ──"
+          "name": "cumin"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "Coconut milk — blended large, then"
+          "name": "coriander"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "Red chilli — cut small, blended"
-        },
-        {
-          "amount": "1",
-          "unit": "container",
-          "name": "garlic, sliced, blended small, must bake"
-        },
-        {
-          "amount": "1",
-          "unit": "container",
-          "name": "large onion"
+          "name": "sugar"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "Red chilli, finely chopped"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Lesser galangal ± ¾"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Cumin (jintan)"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Coriander"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Sugar"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Salt"
+          "name": "salt"
         }
       ],
       "method_id": [
-        "Red curry digogorengim dengan minyak sambil lalu masukkan santan dari 1 kaleng air, masak sampai mengental.",
-        "Lalu ditambahkan 1 kaleng santan lagi, lalu masak. Sesudah ± ½ jam, masukkan 12 kaleng air santannya, harus dikecilkan api. Sesudah matang masukkan bumbu-bumbu: santan, cabe merah, bawang putih besar, cabe cincang, ketumbar, bawang besar. Aduk-aduk dan kasih bumbu lagi.",
-        "Goreng udang kering lalu dipisahkan. Sesudah garing masukkan parte (ground chicken yang sudah matang), lalu masukkan: djammur dan baso dipingnya, aduk-aduk dan kasih bumbu-bumbu lagi.",
-        "Kalan sudah empuk masukkan campuran nangka, lalu masak dan sampai santannya terbuka. Terakhir masukkan tahu dan biarkan ± 1 jam lagi.",
-        "Lalu sampai santannya benar-benar kental. Kalan sudah entuk dipanaskan kembali."
+        "Red curry digorengin dengan minyak, lalu ditambah 1 blek santan dan 1 blek air, dan godok nangkanya sampai empuk (± ½ jam), dan semua bumbu.",
+        "Kalau sudah mulai empuk, masukkan tempe dan daging ayamnya, dan sisa santannya."
       ],
       "method_en": [
-        "Fry red curry paste in oil then gradually add coconut milk from 1 can of water, cook until thickened.",
-        "Then add 1 more can of coconut milk and cook. After ± ½ hour, add 12 cans of coconut water, reduce heat. Once cooked add the spices: coconut milk, red chilli, large garlic and onion, chopped chilli, coriander, large onion. Stir and season again.",
-        "Fry dried shrimp then set aside. Once crispy add the cooked chicken, then add mushrooms and fish cake, stir and season again.",
-        "Once tender add the jackfruit mixture, cook until the coconut opens (separates). Finally add the tofu and leave for ± 1 more hour.",
-        "Cook until the coconut milk is truly thick. If already done, reheat when needed."
+        "Fry the red curry paste in oil, then add 1 can of coconut milk and 1 can of water, and boil the jackfruit until tender (± ½ hour), along with all the spices.",
+        "Once it starts to become tender, add the tempeh and the chicken, along with the remaining coconut milk."
       ],
-      "notes_id": "FLAG: Berkas 4, Hal. 11–14. Resep empat halaman, beberapa ditulis menyamping/sideways. Langkah 3 tampaknya tercampur dengan resep Bami Ayam (mungkin catatan Ibu beralih topik di tengah halaman). Harap konfirmasi urutan yang benar dengan Ibu.",
-      "notes_en": "FLAG: File 4, Pages 11–14. Four-page recipe, some pages sideways. Step 3 appears mixed with Bami Ayam notes — mother may have switched topics mid-page. Please confirm correct sequence with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Ingredients and method fully rewritten from the original handwritten recipe scan (Gudeg.png) on 2026-08-22, replacing a garbled/incomplete version that had mixed in unrelated content (previously flagged as possibly contaminated with Bami Ayam notes, and containing an unexplained duplicate tofu ingredient not present in the source). Category, serves, headnote, and photo still need filling in — not present in the source scan.",
+      "reviewed": true
     },
     {
       "id": "resep-63",
