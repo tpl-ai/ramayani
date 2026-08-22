@@ -72,19 +72,21 @@ function tx(r: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'):
   return (r[`${field}_id` as keyof Recipe] as string) || '';
 }
 
-function ingList(r: Recipe, lang: 'id' | 'en'): IngredientLine[] {
-  if (lang === 'en') return r.ingredients_en.length ? r.ingredients_en : r.ingredients_id;
-  return r.ingredients_id.length ? r.ingredients_id : r.ingredients_en;
-}
-
 function methodList(r: Recipe, lang: 'id' | 'en'): string[] {
   if (lang === 'en') return r.method_en.length ? r.method_en : r.method_id;
   return r.method_id.length ? r.method_id : r.method_en;
 }
 
-function formatIngredient(item: IngredientLine, factor: number, unitSystem: 'metric' | 'imperial'): string {
-  const { amount, unit } = displayQuantity(item.amount, item.unit, factor, unitSystem);
-  return [amount, unit, item.name].filter(Boolean).join(' ');
+function ingredientSection(item: IngredientLine, lang: 'id' | 'en'): string {
+  if (lang === 'en') return item.section_en || item.section_id || '';
+  return item.section_id || item.section_en || '';
+}
+
+function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: number, unitSystem: 'metric' | 'imperial'): string {
+  const rawAmount = lang === 'en' ? (item.amount_en || item.amount_id) : (item.amount_id || item.amount_en);
+  const name = lang === 'en' ? (item.name_en || item.name_id) : (item.name_id || item.name_en);
+  const { amount, unit } = displayQuantity(rawAmount, item.unit, factor, unitSystem);
+  return [amount, unit, name].filter(Boolean).join(' ');
 }
 
 // ── page ──────────────────────────────────────────────────────────
@@ -138,11 +140,11 @@ export default function ResepPage() {
   const headnote  = tx(recipe, 'headnote', ctxLang);
   const notes     = tx(recipe, 'notes', ctxLang);
   const showPhoto = !!recipe.photo && !photoFailed;
-  const ings      = ingList(recipe, ctxLang);
+  const ings      = recipe.ingredients;
   const steps     = methodList(recipe, ctxLang);
   const factor    = serves / baseServes.current;
   const isComingSoon = recipe.content_state === 'no_content';
-  const processedIngs = ings.map(i => formatIngredient(i, factor, unitSystem));
+  const processedIngs = ings.map(i => formatIngredient(i, ctxLang, factor, unitSystem));
   const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim() ? recipe.serves : null;
 
   const servesFact = typeof recipe.serves === 'number'
@@ -298,12 +300,12 @@ export default function ResepPage() {
                   <ul className="ing-list">
                     {processedIngs.map((item, i) => (
                       <Fragment key={i}>
-                        {ings[i].section && (
+                        {ingredientSection(ings[i], ctxLang) && (
                           <li
                             className="ing-section-heading"
                             style={{ listStyle: 'none', fontFamily: HELVETICA, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: 0.5, color: '#666', marginTop: i > 0 ? 16 : 0, marginBottom: 4 }}
                           >
-                            {ings[i].section}
+                            {ingredientSection(ings[i], ctxLang)}
                           </li>
                         )}
                         <li className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{item}</li>
