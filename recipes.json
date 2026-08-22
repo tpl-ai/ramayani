@@ -1532,100 +1532,109 @@
       "headnote_en": "",
       "ingredients_id": [
         {
-          "amount": "1.500 cc — 2.250 cc",
-          "unit": "",
-          "name": "Air"
+          "amount": "1500",
+          "unit": "cc",
+          "name": "Water"
         },
         {
           "amount": "6",
-          "unit": "kaleng",
-          "name": "kecil — 13–11 kaleng kecil Santan"
+          "unit": "kaleng kecil",
+          "name": "Santan"
         },
         {
-          "amount": "3 cup — 4½ cup",
-          "unit": "",
+          "amount": "3",
+          "unit": "cup",
           "name": "Kecap manis"
         },
         {
-          "amount": "3 cup — 4½ cup",
-          "unit": "",
+          "amount": "3",
+          "unit": "cup",
           "name": "Gula pasir"
         },
         {
-          "amount": "¼",
+          "amount": "1/4",
           "unit": "cup",
-          "name": "+ 4 s/m — ½ cup Garam"
+          "name": "Garam"
         },
         {
-          "amount": "5 s/m — 8 s/makan",
-          "unit": "",
+          "amount": "4",
+          "unit": "s/m",
+          "name": "Garam"
+        },
+        {
+          "amount": "5",
+          "unit": "s/m",
           "name": "Pepper"
         },
         {
-          "amount": "2 Box — 3 Box",
-          "unit": "",
-          "name": "Brown sugar"
+          "amount": "2",
+          "unit": "Box",
+          "name": "Brown Sugar"
         },
         {
-          "amount": "20 lembar — 30 lembar",
-          "unit": "",
+          "amount": "20",
+          "unit": "Lembar",
           "name": "Daun Jeruk Purut"
         }
       ],
       "ingredients_en": [
         {
-          "amount": "1,500 ml — 2,250 ml",
-          "unit": "",
+          "amount": "1500",
+          "unit": "cc",
           "name": "water"
         },
         {
-          "amount": "6 — 11",
-          "unit": "",
-          "name": "–13 small cans coconut milk"
+          "amount": "6",
+          "unit": "kaleng kecil",
+          "name": "coconut milk"
         },
         {
-          "amount": "3 — 4½ cups",
-          "unit": "",
+          "amount": "3",
+          "unit": "cup",
           "name": "sweet soy sauce"
         },
         {
-          "amount": "3 — 4½ cups",
-          "unit": "",
+          "amount": "3",
+          "unit": "cup",
           "name": "white sugar"
         },
         {
-          "amount": "¼",
+          "amount": "1/4",
           "unit": "cup",
-          "name": "+ 4 tbsp — ½ cup salt"
+          "name": "salt"
         },
         {
-          "amount": "5 — 8 tbsp",
-          "unit": "",
+          "amount": "4",
+          "unit": "s/m",
+          "name": "salt"
+        },
+        {
+          "amount": "5",
+          "unit": "s/m",
           "name": "pepper"
         },
         {
-          "amount": "2 — 3 boxes",
-          "unit": "",
+          "amount": "2",
+          "unit": "Box",
           "name": "brown sugar"
         },
         {
-          "amount": "20 — 30 leaves",
-          "unit": "",
+          "amount": "20",
+          "unit": "Lembar",
           "name": "kaffir lime leaves"
         }
       ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "Catatan: Gula Thai — kurangi jumlahnya. Tidak ada cara membuat yang tertulis di halaman aslinya.",
-      "notes_en": "FLAG: Berkas 1, Hal. 9 & 15. No method written in the original notes — please confirm cooking steps (e.g. combining, marinating/basting, grilling) with mother. Mother's note: 'Thai sugar — reduce the amount.' Page 15 has two quantity columns (1x and 1½x), both transcribed here.",
+      "notes_id": "Catatan Ibu: Gula Thai — kurangi jumlahnya. Tidak ada cara membuat yang tertulis di halaman asli.",
+      "notes_en": "Mother's note: Thai sugar — reduce the amount. No method is written on the original page.",
       "content_state": "partial",
       "flags": [
         "no_headnote",
-        "no_serves",
-        "units"
+        "no_serves"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Ingredient quantities rewritten from the original scan (Ayam Solo.png) on 2026-08-22. The source page has two quantity columns — a base (1x) column and a 1½x-batch column — per Arman's confirmation, only the base (1x) column was kept; the 1½x figures were not recorded. No method is written anywhere in the source (confirmed across File 1, pages 9 and 15).",
+      "reviewed": true
     },
     {
       "id": "resep-12",
