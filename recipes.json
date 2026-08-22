@@ -9040,8 +9040,8 @@
       "resep_num": 69,
       "category": "appetizer",
       "photo": "frekadel-jagung.jpg",
-      "name_id": "Trakadel Jagung",
-      "name_en": "",
+      "name_id": "Frikadel Jagung",
+      "name_en": "Frikadel Jagung (Corn Fritters)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
@@ -9051,39 +9051,34 @@
           "name": "Sweet kernel corn"
         },
         {
-          "amount": "",
+          "amount": "3",
           "unit": "",
-          "name": "3 Shaker"
+          "name": "Telur"
+        },
+        {
+          "amount": "1",
+          "unit": "s/makan",
+          "name": "Self rising flour"
         },
         {
           "amount": "125",
           "unit": "gram",
-          "name": "Self raising flour"
-        },
-        {
-          "amount": "1",
-          "unit": "Shaker",
-          "name": "Vanilla milk"
+          "name": "All purpose flour"
         },
         {
           "amount": "1½",
-          "unit": "shaker",
-          "name": "Self raising flour"
+          "unit": "s/makan",
+          "name": "Gula"
         },
         {
           "amount": "½",
           "unit": "s/teh",
-          "name": "Salt"
+          "name": "Garam"
         },
         {
           "amount": "",
           "unit": "",
           "name": "Pepper"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Backer powder"
         },
         {
           "amount": "",
@@ -9099,38 +9094,33 @@
         },
         {
           "amount": "3",
-          "unit": "shakers",
-          "name": "(unspecified quantity/item — unclear in original, see notes)"
-        },
-        {
-          "amount": "125",
-          "unit": "g",
-          "name": "self-raising flour"
+          "unit": "",
+          "name": "eggs"
         },
         {
           "amount": "1",
-          "unit": "shaker",
-          "name": "vanilla milk"
+          "unit": "s/makan",
+          "name": "self-rising flour"
+        },
+        {
+          "amount": "125",
+          "unit": "gram",
+          "name": "all-purpose flour"
         },
         {
           "amount": "1½",
-          "unit": "shakers",
-          "name": "self-raising flour"
+          "unit": "s/makan",
+          "name": "sugar"
         },
         {
           "amount": "½",
-          "unit": "tsp",
-          "name": "salt (garam)"
+          "unit": "s/teh",
+          "name": "salt"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "pepper (merica)"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "baking powder"
+          "name": "pepper"
         },
         {
           "amount": "",
@@ -9140,17 +9130,15 @@
       ],
       "method_id": [],
       "method_en": [],
-      "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli. FLAG: Berkas 4, Hal. 8. Halaman ditulis menyamping (sideways) — perlu diputar untuk dibaca. Beberapa bahan tidak jelas ('3 shaker' tidak ada keterangannya). Tidak ada cara membuat. Verifikasi: dikonfirmasi bahwa halaman ini benar-benar hanya berisi daftar bahan, tanpa cara membuat — sesuai flag indeks. Harap konfirmasi dengan Ibu.",
-      "notes_en": "METHOD: Not written in the original notes. FLAG: File 4, Page 8. Page written sideways — required rotation to read. Some ingredients unclear ('3 shaker' unexplained — quantity/unit ambiguous). No method written. Verified: this page genuinely contains ingredients only, no method — confirms the index flag. Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
-        "no_name_en",
-        "no_headnote",
-        "no_serves",
-        "units"
+        "no_headnote"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Recipe name corrected from 'Trakadel Jagung' to 'Frikadel Jagung' per the original scan title. Ingredient list fully rewritten from the scan (Frikadel Jagung (Corn Fritters).png) on 2026-08-22 — the previous data had a fabricated 'Vanilla milk' and 'Backer powder' ingredient not present in the source, and had scrambled amount/unit/name values across adjacent rows (e.g. '3 Shaker' was actually '3 Telur' [eggs]; two separate flours — 1 tbsp self-rising and 125g all-purpose — had been merged into one garbled row). Confirmed via the scan that this recipe card genuinely has no written method, matching what the previous notes already suspected. Serves ('16') taken from the '(16)' yield annotation in the scan title.",
+      "reviewed": true,
+      "serves": "16"
     },
     {
       "id": "resep-70",
