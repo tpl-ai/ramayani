@@ -3635,14 +3635,15 @@
       "category": "nasi_mie",
       "photo": "",
       "name_id": "Bacang Beras",
-      "name_en": "",
+      "name_en": "Bacang Beras (Rice Dumplings)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
         {
           "amount": "",
           "unit": "",
-          "name": "ISINYA: Bawang besar"
+          "name": "Bawang besar",
+          "section": "Isi"
         },
         {
           "amount": "",
@@ -3650,9 +3651,9 @@
           "name": "Bawang putih"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "Ground chicken or beef or pork — 5 lbs"
+          "amount": "5",
+          "unit": "lbs",
+          "name": "Ground chicken or beef or pork"
         },
         {
           "amount": "",
@@ -3662,7 +3663,7 @@
         {
           "amount": "",
           "unit": "",
-          "name": "Kecap asin (Kikoman)"
+          "name": "Kecap asin (Kikkoman)"
         },
         {
           "amount": "",
@@ -3687,143 +3688,110 @@
         {
           "amount": "",
           "unit": "",
-          "name": "Pedes"
+          "name": "Pedas"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "BERASNYA: 16 Cup Long grain AA"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Airnya 1½x = 16 x 1½ = 24 cups (boleh dikurangin 1 cup = 23 cups)"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Garam 3 s/teh"
-        },
-        {
-          "amount": "4",
+          "amount": "16",
           "unit": "cup",
-          "name": "(air) | 1 s/teh (garam) | 4 sendok (minyak ayam) | 7 cantiing (Kikoman)"
+          "name": "Long grain AA",
+          "section": "Beras"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "Lalu dibungkusin"
+          "amount": "23",
+          "unit": "cup",
+          "name": "Air (1½x beras)"
         },
         {
-          "amount": "1",
-          "unit": "lbs",
-          "name": "jadi ± 5 | 5 lbs. jadi ± 25–27"
+          "amount": "3",
+          "unit": "s/makan",
+          "name": "Garam"
         }
       ],
       "ingredients_en": [
         {
           "amount": "",
           "unit": "",
-          "name": "FILLING: large onion"
+          "name": "Large onion",
+          "section": "Filling"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "garlic"
+          "name": "Garlic"
         },
         {
           "amount": "5",
           "unit": "lbs",
-          "name": "ground chicken or beef or pork"
+          "name": "Ground chicken or beef or pork"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "spring onion / green onion"
+          "name": "Spring onion"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "soy sauce / Kikkoman"
+          "name": "Light soy sauce (Kikkoman)"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "fish sauce"
+          "name": "Fish sauce"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "sweet soy sauce"
+          "name": "Sweet soy sauce"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "sugar"
+          "name": "Sugar"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "salt"
+          "name": "Salt"
         },
         {
           "amount": "",
           "unit": "",
-          "name": "hot chilli"
+          "name": "Chili / heat, to taste"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "RICE: 16 cups long grain AA rice"
+          "amount": "16",
+          "unit": "cup",
+          "name": "Long grain rice, AA grade",
+          "section": "Rice"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "Water 1½x = 16 × 1½ = 24 cups (can reduce by 1 cup = 23 cups)"
+          "amount": "23",
+          "unit": "cup",
+          "name": "Water (1½x the rice)"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name": "Salt: 3 tsp"
-        },
-        {
-          "amount": "4",
-          "unit": "cups",
-          "name": "water | 1 tsp salt | 4 tbsp chicken oil | 7 canting Kikkoman"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name": "Then wrapped"
-        },
-        {
-          "amount": "1",
-          "unit": "lb",
-          "name": "makes ± 5 | 5 lbs makes ± 25–27"
+          "amount": "3",
+          "unit": "s/makan",
+          "name": "Salt"
         }
       ],
       "method_id": [
-        "5 lbs. Ketan direndam diair utk. satu jam.",
-        "Lalu kukus 20 menit, kemudian adonin dengan: 4 cup air, 1 s/teh garam, 4 sendok minyak ayam, 7 cantiing Kikoman.",
-        "Baru dibungkusin."
+        "Ini semua digoreng dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis."
       ],
       "method_en": [
-        "5 lbs glutinous rice (ketan) soaked in water for 1 hour.",
-        "Then steam 20 minutes, then season with: 4 cups water, 1 tsp salt, 4 tablespoons chicken oil, 7 canting Kikkoman.",
-        "Then wrap (in banana leaves or bamboo leaves)."
+        "All of this is fried together with a fairly generous amount of vegetable oil. It's stored overnight; before using, it's stirred again and more sweet soy sauce is added."
       ],
-      "notes_id": "Semua bumbu isian digogorengim dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis. FLAG: Berkas 1, Hal. 10 / Berkas 2, Hal. 5 & 24. Bahan isian tidak ada takaran terperinci. Harap konfirmasi dengan Ibu.",
-      "notes_en": "All filling spices fried in generous vegetable oil. Stored overnight; before use stir again and add more sweet soy sauce. FLAG: File 1 p.10 / File 2 pp.5 & 24. Recipe appears three times with minor variations. Filling ingredients have no detailed quantities. Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Fully rewritten from the original scan (Bacang Beras (Rice Dumplings).png) on 2026-08-22, using only what's on that page. The prior data had unrelated content mixed in — a completely different rice method (5 lbs glutinous rice/ketan, soaked, steamed, seasoned with water/salt/chicken oil/Kikkoman, then wrapped, yielding ±25-27 dumplings) that doesn't match this scan at all (different rice type, different quantities, different method). The prior notes already flagged that this recipe appears on three separate pages (File 1 p.10 / File 2 pp.5 & 24) — the ketan content is presumably from one of the other two pages, not verified against a source, and was dropped per Arman's decision rather than kept unverified. If that other page surfaces later it may be worth reconciling as a genuine alternate version. Water amount (23 cups) is the page's own final recommended figure: base ratio 16 cups rice × 1.5 = 24 cups, reduced by 1 cup per the page's own note.",
+      "reviewed": true
     },
     {
       "id": "resep-27",
