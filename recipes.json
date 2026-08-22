@@ -2285,14 +2285,14 @@
           "name": "Oyster sauce"
         },
         {
-          "amount": "4",
+          "amount": "1",
           "unit": "Tablespoon",
           "name": "Sugar"
         },
         {
-          "amount": "",
+          "amount": "secukupnya",
           "unit": "",
-          "name": "Salt"
+          "name": "Garam"
         },
         {
           "amount": "2",
@@ -2302,7 +2302,7 @@
         {
           "amount": "1",
           "unit": "Tablespoon",
-          "name": "Siqar (kecap asin)"
+          "name": "Sugar"
         },
         {
           "amount": "1½",
@@ -2362,7 +2362,7 @@
           "name": "oyster sauce (saus tiram)"
         },
         {
-          "amount": "4",
+          "amount": "1",
           "unit": "tbsp",
           "name": "sugar (gula)"
         },
@@ -2379,7 +2379,7 @@
         {
           "amount": "1",
           "unit": "tbsp",
-          "name": "soy sauce"
+          "name": "sugar"
         },
         {
           "amount": "1½",
@@ -2402,11 +2402,10 @@
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "units"
+        "no_photo"
       ],
-      "review_notes": "Indonesian-side ingredient amount/unit appears to have been left empty and folded into the name field during original data extraction; needs manual reconciliation against the English side.",
-      "reviewed": false
+      "review_notes": "Corrected against the original scan (Black Pepper Crab (Malaysian Style).png) on 2026-08-22: the ingredient transcribed as \"4 Tablespoon Sugar\" should be 1 tablespoon per the scan; a separate ingredient transcribed as \"Siqar (kecap asin)\" / \"soy sauce\" was a misreading of the handwritten word \"Sugar\" — the '(kecap asin)' soy-sauce gloss was fabricated on top of that misreading and has been removed. Sugar genuinely appears twice in the ingredient list (1 tbsp in each of the two method stages), confirmed by Arman against the source. The 'Salt' row (no amount, English name) was also corrected to 'secukupnya' / 'Garam', matching the English side's own parenthetical translation.",
+      "reviewed": true
     },
     {
       "id": "resep-17",
