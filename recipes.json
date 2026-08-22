@@ -366,8 +366,8 @@
       "resep_num": 3,
       "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Besengek",
-      "name_en": "Hello Kitty",
+      "name_id": "Ayam Besengek (Original 1986)",
+      "name_en": "Ayam Besengek (Original 1986)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
@@ -504,15 +504,16 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false
+      "reviewed": true,
+      "review_notes": "Renamed 2026-08-22 to distinguish from resep-4 — these are two different versions of the same dish (per Arman), not a duplicate entry. Matches the scan 'Ayam Besengek Original 1986.png' (dated Sept. 23, 1986 per the page's own note). Ingredients and method were already an accurate transcription of this scan; only name_en (was the garbage value 'Hello Kitty') and name_id (was the ambiguous plain 'Ayam Besengek') needed fixing."
     },
     {
       "id": "resep-4",
       "resep_num": 4,
       "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Besengek",
-      "name_en": "",
+      "name_id": "Ayam Besengek (Updated)",
+      "name_en": "Ayam Besengek (Updated)",
       "headnote_id": "",
       "headnote_en": "",
       "ingredients_id": [
@@ -609,18 +610,28 @@
           "name": "Indonesian bay leaves (daun salam)"
         }
       ],
-      "method_id": [],
-      "method_en": [],
-      "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 1, Hal. 4. Hanya daftar bahan yang tertulis — tidak ada cara membuat. Juga terdapat judul 'Ayam Kare' di bawah halaman (kemungkinan awal resep baru). Harap konfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. FLAG: File 1, Page 4. Ingredients list only — no method written. Also shows title 'Ayam Kare' at the bottom of the page (possibly the start of a new recipe). Please confirm with mother.",
-      "content_state": "partial",
+      "method_id": [
+        "Cabe diblender + terasi, lalu digoreng.",
+        "Cabe kaleng diblender juga.",
+        "Masak sampai matang.",
+        "Masukkan bumbu yang lain-lainnya."
+      ],
+      "method_en": [
+        "Blend the chilli + shrimp paste, then fry.",
+        "Blend the canned chilli as well.",
+        "Cook until done.",
+        "Add all the other ingredients."
+      ],
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false
+      "reviewed": true,
+      "review_notes": "Renamed 2026-08-22 to distinguish from resep-3 — these are two different versions of the same dish (per Arman), not a duplicate entry. Matches the scan 'Ayam Besengek Updated.png'. Ingredients were already an accurate transcription of this scan. This page has no method written at all (confirmed against the scan); per Arman, the method was copied over from resep-3 (Ayam Besengek Original 1986) rather than left empty, since the technique is treated as the same between the two versions."
     },
     {
       "id": "resep-5",
