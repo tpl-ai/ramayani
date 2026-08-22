@@ -12549,6 +12549,192 @@
         "no_serves"
       ],
       "reviewed": false
+    },
+    {
+      "id": "resep-90",
+      "resep_num": 90,
+      "category": "other",
+      "photo": "",
+      "name_id": "Goedeg Djawa (Gudeg Jawa)",
+      "name_en": "Gudeg Jawa (Javanese Jackfruit Stew)",
+      "headnote_id": "",
+      "headnote_en": "",
+      "ingredients_id": [
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Bawang merah (kulitnya dikupas dulu, dicuci)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Bawang putih"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Kemiri"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Laos"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Kesumba (direndam, diblender)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Gula djawa"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Garam"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Daun salam"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Laos (tambahan), digeprek (bukan dihaluskan)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Nangka muda"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Ayam"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Tahu"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Tempe"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Telor"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Rawit merah, satuan"
+        }
+      ],
+      "ingredients_en": [
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Shallots (skin peeled off first, then washed)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Garlic"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Candlenuts"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Galangal"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Annatto seeds / kesumba (soaked, then blended)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Palm sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Salt"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Bay leaves"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Galangal (additional), smashed (not ground)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Young jackfruit"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Chicken"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Tofu"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Tempeh"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Eggs"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name": "Whole red bird's-eye chilies"
+        }
+      ],
+      "method_id": [
+        "Bumbu dihaluskan, dipakai dengan gula djawa dan garam, dibuat seperti pasta.",
+        "Ayam dipotong-potong, dibacem dengan bumbu halus. Begitu pun nangkanya dipotong-potong, dibacem dengan bumbu yang sama.",
+        "Lalu dimasak dengan santan encer dulu. Lebih baik nangkanya, telor, dan tempe dimasukkan dulu, kurang lebih 1 jam, lalu masukkan ayamnya dan tahunya."
+      ],
+      "method_en": [
+        "Grind the spice paste, combine it with palm sugar and salt, and work it into a paste.",
+        "Cut the chicken into pieces and marinate it in the ground spice paste. Do the same with the jackfruit — cut into pieces and marinate in the same spice paste.",
+        "Then cook everything with thin coconut milk first. It's best to add the jackfruit, eggs, and tempeh first, and simmer for about 1 hour, then add the chicken and tofu."
+      ],
+      "notes_id": "Resep Sri, Juli 2004.",
+      "notes_en": "Recipe by Sri, July 2004.",
+      "serves": "",
+      "date": "Juli 2004",
+      "review_notes": "New recipe added 2026-08-22 from a scan that was originally missed during the initial 111-recipe scaffold. Arman transcribed and translated it directly from the source scan (not saved as a project file — Arman has the original elsewhere). No photo, headnote, or serves given in the source.",
+      "reviewed": true,
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "content_state": "full"
     }
   ]
 }
