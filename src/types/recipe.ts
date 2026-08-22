@@ -7,13 +7,18 @@
 export type ContentState = 'no_content' | 'partial' | 'full';
 
 export interface IngredientLine {
-  amount: string;
+  amount_id: string;
+  amount_en: string;
+  // Shared across languages, not translated — a can is a can regardless of
+  // whether the label reads "kaleng" or "can".
   unit: string;
-  name: string;
+  name_id: string;
+  name_en: string;
   // If present, this row begins a new named sub-group (e.g. "Diblender" /
   // "To be blended"); everything after it belongs to that group until the
-  // next row with a `section` value.
-  section?: string;
+  // next row with a `section_id`/`section_en` value.
+  section_id?: string;
+  section_en?: string;
 }
 
 export interface Recipe {
@@ -26,8 +31,7 @@ export interface Recipe {
   name_en: string;
   headnote_id: string;
   headnote_en: string;
-  ingredients_id: IngredientLine[];
-  ingredients_en: IngredientLine[];
+  ingredients: IngredientLine[];
   method_id: string[];
   method_en: string[];
   notes_id: string;
