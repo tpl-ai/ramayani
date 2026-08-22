@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Fragment } from 'react';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -297,7 +297,17 @@ export default function ResepPage() {
                 {ings.length > 0 ? (
                   <ul className="ing-list">
                     {processedIngs.map((item, i) => (
-                      <li key={i} className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{item}</li>
+                      <Fragment key={i}>
+                        {ings[i].section && (
+                          <li
+                            className="ing-section-heading"
+                            style={{ listStyle: 'none', fontFamily: HELVETICA, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: 0.5, color: '#666', marginTop: i > 0 ? 16 : 0, marginBottom: 4 }}
+                          >
+                            {ings[i].section}
+                          </li>
+                        )}
+                        <li className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{item}</li>
+                      </Fragment>
                     ))}
                   </ul>
                 ) : (
