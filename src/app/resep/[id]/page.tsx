@@ -315,7 +315,7 @@ export default function ResepPage() {
                         {ingredientSection(ings[i], ctxLang) && (
                           <li
                             className="ing-section-heading"
-                            style={{ listStyle: 'none', fontFamily: HELVETICA, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: 0.5, color: '#666', marginTop: i > 0 ? 16 : 0, marginBottom: 4 }}
+                            style={{ listStyle: 'none', fontFamily: HELVETICA, fontWeight: 700, fontSize: 16, color: '#333', marginTop: i > 0 ? 28 : 0, marginBottom: 6 }}
                           >
                             {ingredientSection(ings[i], ctxLang)}
                           </li>
