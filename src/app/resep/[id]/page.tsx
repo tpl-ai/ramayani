@@ -72,9 +72,22 @@ function tx(r: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'):
   return (r[`${field}_id` as keyof Recipe] as string) || '';
 }
 
+// Falls back per-line, not per-array — an editor may fill in only one
+// language's steps (leaving the other side's entries as empty strings
+// rather than omitted), so checking "does the array have any entries"
+// isn't enough to know a given line has real content.
 function methodList(r: Recipe, lang: 'id' | 'en'): string[] {
-  if (lang === 'en') return r.method_en.length ? r.method_en : r.method_id;
-  return r.method_id.length ? r.method_id : r.method_en;
+  const primary = lang === 'en' ? r.method_en : r.method_id;
+  const fallback = lang === 'en' ? r.method_id : r.method_en;
+  const n = Math.max(primary.length, fallback.length);
+  const result: string[] = [];
+  for (let i = 0; i < n; i++) {
+    const p = (primary[i] ?? '').trim();
+    const f = (fallback[i] ?? '').trim();
+    const value = p || f;
+    if (value) result.push(value);
+  }
+  return result;
 }
 
 function ingredientSection(item: IngredientLine, lang: 'id' | 'en'): string {
