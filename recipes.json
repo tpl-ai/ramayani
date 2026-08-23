@@ -745,40 +745,44 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
-          "name_id": "Ayam di-potong½ jadi 12–13 potong",
-          "name_en": "chicken cut into 12–13 pieces",
+          "name_id": "Ayam ",
+          "name_en": "",
           "amount": "½"
         },
         {
-          "unit": "cup",
-          "name_id": "atau 3 s/makan Kecap ikan",
-          "name_en": "or 3 tbsp (45 ml) fish sauce",
-          "amount": "¼"
+          "unit": "tbsp",
+          "name_id": "Kecap ikan",
+          "name_en": "",
+          "amount": "3"
         },
         {
           "unit": "tbsp",
           "name_id": "Cuka",
-          "name_en": "vinegar",
+          "name_en": "",
           "amount": "2"
         },
         {
           "unit": "tsp",
           "name_id": "Vetsin",
-          "name_en": "MSG",
+          "name_en": "",
           "amount": "1"
         }
       ],
       "method": [
         {
-          "step_id": "Marinade the chicken with kecap ikan, cuka, and vetsin and fry for 10 minutes.",
+          "step_id": "Ayam di-potong potong jadi 12–13 potong",
+          "step_en": ""
+        },
+        {
+          "step_id": "",
           "step_en": "Marinade the chicken with fish sauce, vinegar, and MSG and fry for 10 minutes."
         },
         {
-          "step_id": "Serve with sambal terasi.",
+          "step_id": "",
           "step_en": "Serve with sambal terasi."
         }
       ]
