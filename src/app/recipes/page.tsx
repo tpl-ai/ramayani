@@ -3,20 +3,18 @@
 import { useState, useMemo, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import { allRecipes, recipePhotoSrc } from '@/lib/recipes';
+import { allRecipes, getCategoriesWithStats, recipePhotoSrc } from '@/lib/recipes';
 import type { Recipe } from '@/types/recipe';
 import Header from '@/components/Header';
 
+// Derived from the same category data raspberry edits (recipes.json's
+// `categories`), not a second hardcoded list -- a prior hardcoded version
+// here had drifted out of sync with the real category keys (two dead
+// filter tabs matching zero recipes, four real categories with no tab at
+// all). getCategoriesWithStats() already excludes empty categories.
 const FILTER_CATS = [
-  { id: 'all',           label_en: 'All',            label_id: 'Semua' },
-  { id: 'ayam',          label_en: 'Chicken',        label_id: 'Ayam' },
-  { id: 'daging',        label_en: 'Beef & Lamb',    label_id: 'Daging' },
-  { id: 'seafood',       label_en: 'Seafood',        label_id: 'Seafood' },
-  { id: 'nasi_mie',      label_en: 'Rice & Noodles', label_id: 'Nasi & Mie' },
-  { id: 'sayuran_salad', label_en: 'Vegetables',     label_id: 'Sayuran' },
-  { id: 'sambal_saus',   label_en: 'Sambal',         label_id: 'Sambal' },
-  { id: 'sup',           label_en: 'Soups',          label_id: 'Sup' },
-  { id: 'kue_dessert',   label_en: 'Desserts',       label_id: 'Dessert' },
+  { id: 'all', label_en: 'All', label_id: 'Semua' },
+  ...getCategoriesWithStats().map(c => ({ id: c.key, label_en: c.name_en, label_id: c.name_id })),
 ];
 
 function RecipeCard({ recipe, lang, onClick }: { recipe: Recipe; lang: 'EN' | 'ID'; onClick: () => void }) {
