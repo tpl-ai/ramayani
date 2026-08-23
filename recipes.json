@@ -522,116 +522,117 @@
       "resep_num": 5,
       "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Bumbu Rujak Ramayani",
+      "name_id": "Ayam Bumbu Rujak Sauce",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Catatan Ibu: bumbu ini untuk ayam bumbu rujak. Semuanya diaduk hingga kental. Berkas 1, Hal. 5 — cara membuat ditulis dalam gaya daftar bahan (setiap bahan dengan instruksinya); disalin persis seperti aslinya.",
-      "notes_en": "Mother's note: this sauce is for Ayam Bumbu Rujak. Everything stirred together until thick. File 1, Page 5 — method written in ingredient-list style (each item with its instruction); transcribed exactly as written.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
-          "name_id": "Bawang besar digoreng dg. minyak 1 inch selama ½ jam — lalu masukkan",
-          "name_en": "large onions, fried in 1-inch oil for ½ hour — then added",
+          "name_id": "Bawang besar",
+          "name_en": "",
           "amount": "25"
         },
         {
-          "unit": "",
-          "name_id": "pelele Cabe merah dan digoreng lagi ± 20 menit — masukkan",
-          "name_en": "pelele red chilli, fried again ± 20 minutes — then added",
+          "unit": "cans",
+          "name_id": "Cabe merah",
+          "name_en": "",
           "amount": "5"
         },
         {
           "unit": "pieces",
-          "name_id": "Terasi yang digogorengim dulu dg. minyak dikwali lain, dan masukkan + lagi bumbu yang lain",
-          "name_en": "shrimp paste, fried separately in another pan with oil, then added with other spices",
+          "name_id": "Terasi",
+          "name_en": "",
           "amount": "3"
         },
         {
           "unit": "bowl",
           "name_id": "bami Bawang putih slice yg. kering",
-          "name_en": "dried garlic slices",
+          "name_en": "",
           "amount": "1"
         },
         {
           "unit": "container",
           "name_id": "Sambal pedas dan digogorengim lagi ± 15 menit lagi, lalu masukkan",
-          "name_en": "hot sambal, fried again ± 15 minutes, then added",
+          "name_en": "",
           "amount": "½"
         },
         {
           "unit": "boxes",
           "name_id": "Brown sugar",
-          "name_en": "brown sugar",
+          "name_en": "",
           "amount": "5"
         },
         {
           "unit": "cups",
           "name_id": "Gula pasir",
-          "name_en": "white sugar",
+          "name_en": "",
           "amount": "5"
         },
         {
           "unit": "cups",
           "name_id": "Garam",
-          "name_en": "salt",
+          "name_en": "",
           "amount": "1¾"
         },
         {
           "unit": "cup",
           "name_id": "Kecap manis",
-          "name_en": "sweet soy sauce",
+          "name_en": "",
           "amount": "1"
         },
         {
           "unit": "cup",
           "name_id": "Cabe kering",
-          "name_en": "dried chilli",
+          "name_en": "",
           "amount": "½"
         },
         {
           "unit": "",
-          "name_id": "Semuanya diaduk hingga kental",
-          "name_en": "Everything stirred together until thick",
+          "name_id": "",
+          "name_en": "",
           "amount": ""
         }
       ],
       "method": [
         {
           "step_id": "25 Bawang besar digoreng dg. minyak 1 inch selama ½ jam, lalu masukkan.",
-          "step_en": "25 large onions fried in 1-inch oil for ½ hour, then added."
+          "step_en": ""
         },
         {
-          "step_id": "5 pelele Cabe merah dan digoreng lagi ± 20 menit, masukkan.",
-          "step_en": "5 pelele red chilli fried again ± 20 minutes, then added."
+          "step_id": "5 blek Cabe merah dan digoreng lagi ± 20 menit, masukkan.",
+          "step_en": ""
         },
         {
           "step_id": "3 potong Terasi yang digogorengim dulu dg. minyak dikwali lain, dan masukkan + lagi bumbu yang lain.",
-          "step_en": "3 pieces shrimp paste fried separately in another pan with oil, then added with other spices."
+          "step_en": ""
         },
         {
           "step_id": "1 Mangkok bami Bawang putih slice yg. kering.",
-          "step_en": "1 bowl dried garlic slices."
+          "step_en": ""
         },
         {
           "step_id": "½ container Sambal pedas dan digogorengim lagi ± 15 menit lagi, lalu masukkan.",
-          "step_en": "½ container hot sambal fried again ± 15 minutes, then added."
+          "step_en": ""
         },
         {
           "step_id": "5 pak Brown sugar, 5 cup gula pasir, 1¾ cup garam, 1 cup kecap manis, ½ cup cabe kering.",
-          "step_en": "5 boxes brown sugar, 5 cups sugar, 1¾ cup salt, 1 cup sweet soy, ½ cup dried chilli."
+          "step_en": ""
         },
         {
           "step_id": "Semuanya diaduk hingga kental.",
-          "step_en": "Everything stirred together until thick."
+          "step_en": ""
         }
       ]
     },
