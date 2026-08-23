@@ -428,8 +428,8 @@
       "resep_num": 4,
       "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Besengek (Updated)",
-      "name_en": "Ayam Besengek (Updated)",
+      "name_id": "Ayam Besengek (Resep Baru)",
+      "name_en": "Ayam Besengek (New Recipe)",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "",
@@ -445,75 +445,75 @@
       "ingredients": [
         {
           "unit": "whole",
-          "name_id": "Ayam utuh",
+          "name_id": "",
           "name_en": "chickens",
           "amount": "7"
         },
         {
-          "unit": "",
+          "unit": "pieces",
           "name_id": "Terasi",
-          "name_en": "shrimp paste",
-          "amount": "3–4 pieces"
+          "name_en": "",
+          "amount": "3-4"
         },
         {
           "unit": "can",
-          "name_id": "Red dice pepper (cabe merah kaleng)",
-          "name_en": "diced red pepper / chilli",
+          "name_id": "",
+          "name_en": "red diced pepper",
           "amount": "1"
         },
         {
           "unit": "cans",
           "name_id": "Santan kaleng",
-          "name_en": "coconut milk",
+          "name_en": "",
           "amount": "8"
         },
         {
           "unit": "boxes",
-          "name_id": "Brown sugar",
+          "name_id": "",
           "name_en": "brown sugar",
           "amount": "2"
         },
         {
           "unit": "cups",
           "name_id": "Gula pasir",
-          "name_en": "white sugar",
+          "name_en": "",
           "amount": "4"
         },
         {
           "unit": "cup",
           "name_id": "Garam",
-          "name_en": "salt",
+          "name_en": "",
           "amount": "⅛"
         },
         {
           "unit": "handfuls",
           "name_id": "Cabe rawit",
-          "name_en": "bird's eye chilli",
+          "name_en": "",
           "amount": "2"
         },
         {
           "unit": "",
           "name_id": "Salam",
-          "name_en": "Indonesian bay leaves (daun salam)",
+          "name_en": "",
           "amount": "To taste"
         }
       ],
       "method": [
         {
           "step_id": "Cabe diblender + terasi, lalu digoreng.",
-          "step_en": "Blend the chilli + shrimp paste, then fry."
+          "step_en": ""
         },
         {
           "step_id": "Cabe kaleng diblender juga.",
-          "step_en": "Blend the canned chilli as well."
+          "step_en": ""
         },
         {
           "step_id": "Masak sampai matang.",
-          "step_en": "Cook until done."
+          "step_en": ""
         },
         {
           "step_id": "Masukkan bumbu yang lain-lainnya.",
-          "step_en": "Add all the other ingredients."
+          "step_en": ""
         }
       ]
     },
