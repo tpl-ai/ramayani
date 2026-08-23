@@ -90,15 +90,25 @@ function methodList(r: Recipe, lang: 'id' | 'en'): string[] {
   return result;
 }
 
+// Ingredient/section names are transcribed as-typed (deliberately, so
+// editors don't have to fix casing while entering recipes) and end up a
+// mix of cases. Display-only sentence case keeps the site consistent
+// without touching the stored data — only the first character changes,
+// so acronyms like "MSG" and anything already capitalized are untouched.
+function sentenceCase(s: string): string {
+  if (!s) return s;
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
 function ingredientSection(item: IngredientLine, lang: 'id' | 'en'): string {
-  if (lang === 'en') return item.section_en || item.section_id || '';
-  return item.section_id || item.section_en || '';
+  const value = lang === 'en' ? (item.section_en || item.section_id) : (item.section_id || item.section_en);
+  return sentenceCase(value || '');
 }
 
 function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: number, unitSystem: 'metric' | 'imperial'): string {
   const name = lang === 'en' ? (item.name_en || item.name_id) : (item.name_id || item.name_en);
   const { amount, unit } = displayQuantity(item.amount, item.unit, factor, unitSystem);
-  return [amount, unit, name].filter(Boolean).join(' ');
+  return [amount, unit, sentenceCase(name)].filter(Boolean).join(' ');
 }
 
 // ── page ──────────────────────────────────────────────────────────
