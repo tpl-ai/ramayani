@@ -196,7 +196,7 @@
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ayam-kare-9inyyEIckHZDVH0VO3weehoXRhpHgm.jpg",
       "name_id": "Ayam Kare",
       "name_en": "Chicken Curry",
-      "headnote_id": "Kari ayam andalan Ramayani — kuah santan yang kaya dengan rempah khas, disajikan dalam 6 mangkuk besar. Resep ini menggunakan Pasta Kari Ayam Ramayani sebagai bumbu dasarnya.",
+      "headnote_id": "",
       "headnote_en": "Ramayani's signature chicken curry — a rich coconut broth built on the restaurant's own curry paste. This is the dish that made the LA Weekly critic write: 'delicate chicken-and-coconut-milk broth with bits of chicken, bean sprouts and green onions.'",
       "method_id": [
         "Masukkan 2 kg Bumbu Ayam Kare ke dalam panci besar.",
@@ -212,57 +212,58 @@
         "Add the cut chicken pieces and cook until done.",
         "Serve topped with fried shallots and chopped spring onions."
       ],
-      "notes_id": "Resep skala restoran. Untuk memasak di rumah, kurangi semua bahan menjadi 1/20.",
-      "notes_en": "This is a restaurant-scale recipe. For home cooking reduce all quantities to 1/20.",
-      "serves": "6",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "",
       "date": "3 Oktober 2006",
       "featured_order": 1,
       "content_state": "full",
       "flags": [
+        "no_headnote",
+        "no_serves",
         "scale"
       ],
-      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
       "reviewed": false,
       "ingredients": [
         {
           "unit": "lbs",
-          "name_id": "ayam utuh",
-          "name_en": "whole chicken",
-          "amount": "64 4/5"
+          "name_id": "",
+          "name_en": "whole chickens",
+          "amount": "65"
         },
         {
-          "unit": "bag",
-          "name_id": "(± 2 kg) Pasta Kari Ayam Ramayani (lihat Resep 1)",
-          "name_en": "(2 kg) Ramayani Chicken Curry Paste — see Recipe 1",
-          "amount": "1"
+          "unit": "kg",
+          "name_id": "",
+          "name_en": "Ayam Curry Paste ",
+          "amount": "2"
         },
         {
           "unit": "fl oz",
-          "name_id": "santan — 2 kaleng besar",
+          "name_id": "",
           "name_en": "coconut milk — 2 large cans",
           "amount": "98"
         },
         {
           "unit": "gallons",
-          "name_id": "air",
+          "name_id": "",
           "name_en": "water",
           "amount": "2"
         },
         {
           "unit": "oz",
-          "name_id": "daun jeruk purut",
+          "name_id": "",
           "name_en": "kaffir lime leaves",
           "amount": "4"
         },
         {
           "unit": "oz",
-          "name_id": "daun salam",
+          "name_id": "",
           "name_en": "Indonesian bay leaves",
           "amount": "½"
         },
         {
           "unit": "oz",
-          "name_id": "laos kering",
+          "name_id": "",
           "name_en": "dried galangal",
           "amount": "2"
         },
@@ -270,7 +271,9 @@
           "unit": "",
           "name_id": "Bawang goreng untuk sajian",
           "name_en": "Fried shallots to serve",
-          "amount": ""
+          "amount": "",
+          "section_id": "",
+          "section_en": "To Serve"
         },
         {
           "unit": "",
