@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import { getRecipeById, meta, difficultyLevels, recipePhotoSrc } from '@/lib/recipes';
-import { displayQuantity } from '@/lib/units';
+import { displayQuantity, parseAmount } from '@/lib/units';
 import type { Recipe, IngredientLine, MethodStep } from '@/types/recipe';
 import Header from '@/components/Header';
 
@@ -102,6 +102,19 @@ function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: numbe
   return [amount, unit, sentenceCase(name)].filter(Boolean).join(' ');
 }
 
+// A row with recipe_ref calls for a quantity of another recipe's batch (a
+// paste, a stock) rather than a raw ingredient. Its amount/unit is written
+// in the same unit as that recipe's yield_unit, so dividing gives what
+// fraction of a full batch this row needs -- scaled by this page's own
+// current factor, since bumping "Makes: N" here should scale the nested
+// sub-recipe along with everything else.
+function subRecipeFactor(row: IngredientLine, refRecipe: Recipe, parentFactor: number): number | null {
+  if (!refRecipe.yield_amount) return null;
+  const parsed = parseAmount(row.amount);
+  if (!parsed) return null;
+  return (parsed.value * parentFactor) / refRecipe.yield_amount;
+}
+
 // ── page ──────────────────────────────────────────────────────────
 
 export default function ResepPage() {
@@ -112,19 +125,32 @@ export default function ResepPage() {
 
   const [photoFailed, setPhotoFailed] = useState(false);
   const [unitSystem, setUnitSystem] = useState<'metric' | 'imperial'>('metric');
-  const [serves, setServes] = useState(4);
-  const baseServes = useRef(4);
+  const recipe = getRecipeById(id);
+  // Drives the yield/serving-size control below — independent of the
+  // `serves` field, which is just descriptive text ("Serves 4-6"). Starts
+  // at the recipe's own full batch (as scanned/written), not an arbitrary
+  // default, so the reader sees the source-accurate quantities first and
+  // scales down (or up) from there.
+  const [qty, setQty] = useState(() => recipe?.yield_amount ?? 4);
+  const baseQty = useRef(recipe?.yield_amount ?? 4);
 
   useEffect(() => {
     if (localStorage.getItem('ramayani_units') === 'imperial') setUnitSystem('imperial');
   }, []);
 
+  // Reset the yield control when navigating client-side between recipes
+  // (Previous/Next) rather than carrying the old recipe's base/qty over.
+  useEffect(() => {
+    const base = recipe?.yield_amount ?? 4;
+    baseQty.current = base;
+    setQty(base);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
+
   const setUnit = (u: 'metric' | 'imperial') => {
     setUnitSystem(u);
     localStorage.setItem('ramayani_units', u);
   };
-
-  const recipe = getRecipeById(id);
 
   if (!recipe) {
     return (
@@ -146,9 +172,6 @@ export default function ResepPage() {
     );
   }
 
-  const recipeBase = typeof recipe.serves === 'number' ? recipe.serves : 4;
-  if (baseServes.current === 4 && recipeBase !== 4) baseServes.current = recipeBase;
-
   const name      = tx(recipe, 'name', ctxLang);
   const headnote  = tx(recipe, 'headnote', ctxLang);
   const notes     = tx(recipe, 'notes', ctxLang);
@@ -157,7 +180,7 @@ export default function ResepPage() {
   const steps = recipe.method
     .map((s) => ({ text: methodStepText(s, ctxLang), section: methodSection(s, ctxLang) }))
     .filter((s) => s.text);
-  const factor    = serves / baseServes.current;
+  const factor    = qty / baseQty.current;
   const isComingSoon = recipe.content_state === 'no_content';
   const processedIngs = ings.map(i => formatIngredient(i, ctxLang, factor, unitSystem));
   const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim() ? recipe.serves : null;
@@ -283,25 +306,25 @@ export default function ResepPage() {
                   </div>
                 </div>
 
-                {typeof recipe.serves === 'number' && (
+                {recipe.yield_amount != null && (
                   <div className="serves-row" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
-                    <span>{ctxLang === 'id' ? 'Porsi:' : 'Serves:'}</span>
+                    <span>{ctxLang === 'id' ? 'Jumlah:' : 'Makes:'}</span>
                     <button
                       className="serves-btn"
-                      onClick={() => setServes(s => Math.max(1, s - 1))}
-                      disabled={serves <= 1}
-                      aria-label="Fewer servings"
+                      onClick={() => setQty(q => Math.max(1, q - 1))}
+                      disabled={qty <= 1}
+                      aria-label="Fewer"
                       style={{ fontFamily: HELVETICA }}
                       onMouseEnter={e => { if (!e.currentTarget.disabled) { e.currentTarget.style.borderColor = '#cc0000'; e.currentTarget.style.color = '#cc0000'; } }}
                       onMouseLeave={e => { e.currentTarget.style.borderColor = ''; e.currentTarget.style.color = ''; }}
                     >
                       −
                     </button>
-                    <span className="serves-num">{serves}</span>
+                    <span className="serves-num">{qty}{recipe.yield_unit ? ` ${recipe.yield_unit}` : ''}</span>
                     <button
                       className="serves-btn"
-                      onClick={() => setServes(s => s + 1)}
-                      aria-label="More servings"
+                      onClick={() => setQty(q => q + 1)}
+                      aria-label="More"
                       style={{ fontFamily: HELVETICA }}
                       onMouseEnter={e => { e.currentTarget.style.borderColor = '#cc0000'; e.currentTarget.style.color = '#cc0000'; }}
                       onMouseLeave={e => { e.currentTarget.style.borderColor = ''; e.currentTarget.style.color = ''; }}
@@ -313,19 +336,42 @@ export default function ResepPage() {
 
                 {ings.length > 0 ? (
                   <ul className="ing-list">
-                    {processedIngs.map((item, i) => (
-                      <Fragment key={i}>
-                        {ingredientSection(ings[i], ctxLang) && (
-                          <li
-                            className="ing-section-heading"
-                            style={{ listStyle: 'none', fontFamily: HELVETICA, fontWeight: 700, fontSize: 14, color: '#333', marginTop: i > 0 ? 28 : 0, marginBottom: 6 }}
-                          >
-                            {ingredientSection(ings[i], ctxLang)}
+                    {processedIngs.map((item, i) => {
+                      const refRecipe = ings[i].recipe_ref ? getRecipeById(ings[i].recipe_ref!) : undefined;
+                      const subFactor = refRecipe ? subRecipeFactor(ings[i], refRecipe, factor) : null;
+                      return (
+                        <Fragment key={i}>
+                          {ingredientSection(ings[i], ctxLang) && (
+                            <li
+                              className="ing-section-heading"
+                              style={{ listStyle: 'none', fontFamily: HELVETICA, fontWeight: 700, fontSize: 14, color: '#333', marginTop: i > 0 ? 28 : 0, marginBottom: 6 }}
+                            >
+                              {ingredientSection(ings[i], ctxLang)}
+                            </li>
+                          )}
+                          <li className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
+                            {item}
+                            {refRecipe && subFactor != null && (
+                              <details className="ing-sub-recipe print-hide" style={{ marginTop: 4, marginBottom: 4 }}>
+                                <summary style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000', cursor: 'pointer' }}>
+                                  {ctxLang === 'id' ? 'Lihat resep' : 'Show recipe'} — {tx(refRecipe, 'name', ctxLang)}
+                                </summary>
+                                <ul style={{ margin: '8px 0 4px', paddingLeft: 18 }}>
+                                  {refRecipe.ingredients.map((sub, si) => (
+                                    <li key={si} style={{ fontFamily: HELVETICA, fontSize: 14, color: '#444' }}>
+                                      {formatIngredient(sub, ctxLang, subFactor, unitSystem)}
+                                    </li>
+                                  ))}
+                                </ul>
+                                <Link href={`/resep/${refRecipe.id}`} style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000' }}>
+                                  {ctxLang === 'id' ? 'Lihat resep lengkap →' : 'View full recipe →'}
+                                </Link>
+                              </details>
+                            )}
                           </li>
-                        )}
-                        <li className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{item}</li>
-                      </Fragment>
-                    ))}
+                        </Fragment>
+                      );
+                    })}
                   </ul>
                 ) : (
                   <p className="ing-empty" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
