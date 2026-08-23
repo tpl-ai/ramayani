@@ -429,8 +429,8 @@
       "resep_num": 4,
       "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Besengek (Resep Baru)",
-      "name_en": "Ayam Besengek (New Recipe)",
+      "name_id": "Ayam Besengek (Resep Baru) - Restaurant Batch",
+      "name_en": "Ayam Besengek (New Recipe) - Restaurant Batch",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "",
@@ -443,7 +443,7 @@
         "scale"
       ],
       "reviewed": true,
-      "review_notes": "Renamed 2026-08-22 to distinguish from resep-3 — these are two different versions of the same dish (per Arman), not a duplicate entry. Matches the scan 'Ayam Besengek Updated.png'. Ingredients were already an accurate transcription of this scan. This page has no method written at all (confirmed against the scan); per Arman, the method was copied over from resep-3 (Ayam Besengek Original 1986) rather than left empty, since the technique is treated as the same between the two versions.",
+      "review_notes": "Renamed 2026-08-22 to distinguish from resep-3 — these are two different versions of the same dish (per Arman), not a duplicate entry. Matches the scan 'Ayam Besengek Updated.png'. Ingredients were already an accurate transcription of this scan. This page has no method written at all (confirmed against the scan); per Arman, the method was copied over from resep-3 (Ayam Besengek Original 1986) rather than left empty, since the technique is treated as the same between the two versions. Renamed 2026-08-23 to append '- Restaurant Batch' -- resep-114 ('Ayam Besengek', 1 whole chicken) is the cookbook-scale version derived from this recipe, divided by 7. This one stays as the restaurant-scale internal record, hidden from the public site by the title convention, still fully editable via raspberry.",
       "ingredients": [
         {
           "unit": "whole",
@@ -9117,6 +9117,100 @@
       "review_notes": "New recipe added 2026-08-23: a single-serving version of resep-2 (Ayam Kare), calculated in a separate Claude session from that recipe's restaurant-batch quantities, not transcribed from a scan. Chicken amount matches resep-2's own stated per-order portion (4.5 lb balls / 6 orders = ¾ lb) directly; paste/coconut milk/water are adjusted for small-batch cooking rather than pure linear scaling.",
       "flags": [
         "no_headnote"
+      ],
+      "content_state": "full"
+    },
+    {
+      "id": "resep-114",
+      "resep_num": 114,
+      "category": "ayam",
+      "photo": "",
+      "name_id": "Ayam Besengek",
+      "name_en": "Ayam Besengek",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Ayam Besengek, scaled down to a single whole chicken from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "4",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "",
+          "name_en": "chicken, cut into pieces"
+        },
+        {
+          "amount": "½",
+          "unit": "piece",
+          "name_id": "Terasi",
+          "name_en": ""
+        },
+        {
+          "amount": "⅛",
+          "unit": "can",
+          "name_id": "",
+          "name_en": "red diced pepper"
+        },
+        {
+          "amount": "1",
+          "unit": "can",
+          "name_id": "Santan kaleng",
+          "name_en": ""
+        },
+        {
+          "amount": "¼",
+          "unit": "box",
+          "name_id": "",
+          "name_en": "brown sugar"
+        },
+        {
+          "amount": "9",
+          "unit": "tbsp",
+          "name_id": "Gula pasir",
+          "name_en": ""
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": ""
+        },
+        {
+          "amount": "1",
+          "unit": "small handful",
+          "name_id": "Cabe rawit",
+          "name_en": ""
+        },
+        {
+          "amount": "To taste",
+          "unit": "",
+          "name_id": "Salam",
+          "name_en": ""
+        }
+      ],
+      "method": [
+        {
+          "step_id": "Cabe diblender + terasi, lalu digoreng.",
+          "step_en": ""
+        },
+        {
+          "step_id": "Cabe kaleng diblender juga.",
+          "step_en": ""
+        },
+        {
+          "step_id": "Masak sampai matang.",
+          "step_en": ""
+        },
+        {
+          "step_id": "Masukkan bumbu yang lain-lainnya.",
+          "step_en": ""
+        }
+      ],
+      "reviewed": false,
+      "review_notes": "New recipe added 2026-08-23: resep-4's 7-whole-chicken restaurant recipe divided by 7 for a single whole chicken. Exact-unit conversions (cups/tbsp/tsp) are precise; can/box/piece items (red diced pepper, brown sugar, terasi) are expressed as a fraction of the original package rather than an absolute weight/volume, since the real can/box sizes Ramayani used aren't known -- Arman should adjust these if the actual packaging is smaller/larger than assumed. Serves estimated at 4, reasoning: Ramayani's own Ayam Kare defines 1 serving as 3-4 pieces of chicken (resep-2/resep-113); a whole chicken cut Indonesian-curry style commonly yields ~12-16 pieces, i.e. roughly 4 servings at that ratio -- also consistent with resep-2's own raw-chicken-per-order weight (65 lbs / 84 orders =~ 0.77 lb/order; an average 3.5-4 lb whole chicken lands at ~4.5-5 servings by that separate measure). A guess, not a scan fact -- for the historical record.",
+      "flags": [
+        "no_headnote",
+        "no_photo"
       ],
       "content_state": "full"
     }
