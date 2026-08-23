@@ -191,9 +191,9 @@
           "step_en": "Add Spices and package into 10 bags."
         }
       ],
-      "yield_amount": 100,
-      "yield_unit": "batches",
-      "review_notes": "Batch makes 10 bags per the scan. Yield re-estimated 2026-08-23 by Arman as enough paste for ~600 curry servings; reframed as 100 batches (1 batch = 6 servings' worth, matching resep-2's own method step 6 -- '4.5 lb balls of 6 orders each') so the default 1-unit view ('View recipe' links, or visiting directly) shows a realistic kitchen quantity instead of an unmeasurably tiny single-serving slice. A guess, not a scan fact -- for the historical record."
+      "yield_amount": 600,
+      "yield_unit": "servings",
+      "review_notes": "Batch makes 10 bags per the scan. Yield estimated 2026-08-23 by Arman as enough paste for ~600 servings of curry (1 order/serving = the 4 small pcs / 3 large pcs of chicken in resep-2's method step 7). 'View recipe' links from other recipes land here scaled to 4 servings by default (REF_LINK_SERVINGS in the site code) rather than 1, since a single serving's worth of paste is too fine-grained to measure. A guess, not a scan fact -- for the historical record."
     },
     {
       "id": "resep-2",
