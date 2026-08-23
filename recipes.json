@@ -192,8 +192,8 @@
         }
       ],
       "yield_amount": 600,
-      "yield_unit": "kg",
-      "review_notes": "Batch makes 10 bags per the scan; yield estimated as 20kg total (~2kg/bag) so resep-2's paste quantity can be scaled against it. This is a guess, not a scan fact -- for the historical record."
+      "yield_unit": "orders",
+      "review_notes": "Batch makes 10 bags per the scan. Yield re-estimated 2026-08-23 by Arman as enough paste for ~600 curry orders (yield_amount/yield_unit now track orders, not weight, so 'View recipe' links from other recipes land here scaled to 1 order). A guess, not a scan fact -- for the historical record."
     },
     {
       "id": "resep-2",
