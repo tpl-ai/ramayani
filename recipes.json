@@ -9406,7 +9406,7 @@
           "step_en": "Combine all of this together and stir."
         }
       ],
-      "reviewed": false,
+      "reviewed": true,
       "review_notes": "New recipe added 2026-08-23: resep-8's 20-whole-chicken restaurant recipe (Ayam Goreng Kuning) divided by 20 for a single whole chicken. Serves estimated at 4, same reasoning as resep-114 (Ayam Besengek). Ingredient names/structure (Diblender / Bahan tambahan sections) carried over unchanged from resep-8, including its two still-unidentified ingredients ('maherom', 'Jaren') -- still need confirming with Ibu, now just divided by 20 rather than resolved. Two source annotations were dropped since they don't scale meaningfully at this size: the large onion's '± 2 buah' piece count (150g/20 = 7.5g, nowhere near a whole piece) and the canned chili's unclear '+20' note (already flagged unresolved in resep-8 itself). A few very small amounts (MSG and galangal 'additional', citric acid) rounded up to a practical measurable minimum (1/8 tsp) rather than displaying an unmeasurable fraction. A guess, not a scan fact -- for the historical record, and resep-8's own two unidentified ingredients remain unresolved here too.",
       "flags": [
         "no_headnote",
