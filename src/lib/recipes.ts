@@ -11,7 +11,21 @@ const data = recipesJson as {
 export const meta: RecipeMeta = data.meta;
 export const categories: Record<string, CategoryInfo> = data.categories;
 export const difficultyLevels: Record<string, DifficultyInfo> = data.difficulty_levels;
-export const allRecipes: Recipe[] = data.recipes;
+
+// A "- Restaurant Batch" (or similar) suffix in either language's title
+// marks a recipe as an internal/historical record -- e.g. the original
+// restaurant-scale version once a cookbook-scale version of the same dish
+// exists as its own recipe. Filtered out here, at the single source every
+// other export in this file derives from, so it's never listed, searched,
+// or directly reachable on the public site -- it stays fully visible and
+// editable in the raspberry admin tool, which reads recipes.json directly
+// and never imports this file.
+function isPublic(recipe: Recipe): boolean {
+  const marker = 'restaurant batch';
+  return !recipe.name_id.toLowerCase().includes(marker) && !recipe.name_en.toLowerCase().includes(marker);
+}
+
+export const allRecipes: Recipe[] = data.recipes.filter(isPublic);
 
 export function getRecipeById(id: string): Recipe | undefined {
   return allRecipes.find(r => r.id === id);
