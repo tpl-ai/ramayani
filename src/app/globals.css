@@ -304,7 +304,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 .method-step:last-child { margin-bottom: 0; }
 .step-num {
