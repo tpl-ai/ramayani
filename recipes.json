@@ -215,7 +215,7 @@
         "no_serves",
         "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "lbs",
