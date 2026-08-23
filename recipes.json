@@ -27,12 +27,12 @@
       "en": "Chicken"
     },
     "seafood": {
-      "id": "Ikan & Seafood",
-      "en": "Fish & Seafood"
+      "id": "Seafood",
+      "en": "Seafood"
     },
     "daging": {
-      "id": "Daging",
-      "en": "Meat"
+      "id": "Sapi & Babi",
+      "en": "Beef & Pork"
     },
     "sambal_saus": {
       "id": "Sambal & Saus",
@@ -50,25 +50,17 @@
       "id": "Hidangan Pembuka",
       "en": "Appetizers"
     },
-    "desserts": {
-      "id": "Dessert",
-      "en": "Desserts"
-    },
     "bumbu_dasar": {
-      "id": "Bumbu Dasar",
-      "en": "Base Spice Pastes"
+      "id": "Bumbu & Marinasi",
+      "en": "Marinades & Pastes"
     },
     "other": {
       "id": "Lainnya",
       "en": "Other"
     },
     "desserts_drinks": {
-      "id": "Dessert & Minuman",
-      "en": "Desserts & Drinks"
-    },
-    "drinks": {
-      "id": "Minuman",
-      "en": "Drinks"
+      "id": "Minuman & Dessert",
+      "en": "Drinks & Desserts"
     }
   },
   "difficulty_levels": {
@@ -3499,7 +3491,7 @@
     {
       "id": "resep-37",
       "resep_num": 37,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Bubur Kacang Hijau",
       "name_en": "",
@@ -4178,7 +4170,7 @@
     {
       "id": "resep-45",
       "resep_num": 45,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Kue Pepe",
       "name_en": "",
@@ -4346,7 +4338,7 @@
     {
       "id": "resep-46",
       "resep_num": 46,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Lapis Legit",
       "name_en": "Lapis Legit (Indonesian Spiced Layer Cake)",
@@ -4436,7 +4428,7 @@
     {
       "id": "resep-47",
       "resep_num": 47,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Bolu Kukus",
       "name_en": "",
@@ -4502,7 +4494,7 @@
     {
       "id": "resep-48",
       "resep_num": 48,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "bubur-ketan-hitam.jpg",
       "name_id": "Bubur Ketan Hitam",
       "name_en": "",
@@ -4559,7 +4551,7 @@
     {
       "id": "resep-49",
       "resep_num": 49,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Bapaw & Kue Ku",
       "name_en": "",
@@ -5077,7 +5069,7 @@
     {
       "id": "resep-54",
       "resep_num": 54,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Mushroom Sauce",
       "name_en": "",
@@ -5163,7 +5155,7 @@
     {
       "id": "resep-55",
       "resep_num": 55,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Mashed Potatoes",
       "name_en": "",
@@ -5880,7 +5872,7 @@
     {
       "id": "resep-63",
       "resep_num": 63,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Gula Candeel",
       "name_en": "",
@@ -5951,7 +5943,7 @@
     {
       "id": "resep-64",
       "resep_num": 64,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Chilli Con Carne",
       "name_en": "",
@@ -6061,7 +6053,7 @@
     {
       "id": "resep-65",
       "resep_num": 65,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Green Chiffon Cake",
       "name_en": "",
@@ -8101,7 +8093,7 @@
     {
       "id": "resep-85",
       "resep_num": 85,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Lapis Pepe",
       "name_en": "",
@@ -8201,7 +8193,7 @@
     {
       "id": "resep-86",
       "resep_num": 86,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Quick Lorraine",
       "name_en": "",
@@ -8266,7 +8258,7 @@
     {
       "id": "resep-87",
       "resep_num": 87,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-durian.jpg",
       "name_id": "Ice Durian",
       "name_en": "",
@@ -8628,7 +8620,7 @@
     {
       "id": "cs-ice-cendol",
       "resep_num": 99,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-cendol.jpg",
       "name_id": "Ice Cendol",
       "name_en": "Ice Cendol",
@@ -8647,7 +8639,7 @@
     {
       "id": "cs-ice-kelapa",
       "resep_num": 100,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-kelapa.jpg",
       "name_id": "Ice Kelapa",
       "name_en": "Young Coconut Ice",
@@ -8666,7 +8658,7 @@
     {
       "id": "cs-ice-cincao",
       "resep_num": 101,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-cincao.jpg",
       "name_id": "Ice Cincao",
       "name_en": "Grass Jelly Ice",
@@ -8685,7 +8677,7 @@
     {
       "id": "cs-ice-shanghai",
       "resep_num": 102,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-shanghai.jpg",
       "name_id": "Ice Shanghai",
       "name_en": "Ice Shanghai",
@@ -8704,7 +8696,7 @@
     {
       "id": "cs-ice-teller",
       "resep_num": 103,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-teller.jpg",
       "name_id": "Ice Teller",
       "name_en": "Ice Teller",
@@ -8723,7 +8715,7 @@
     {
       "id": "cs-iced-bandrek",
       "resep_num": 104,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "iced-bandrek.jpg",
       "name_id": "Iced Bandrek",
       "name_en": "Iced Ginger Tea",
@@ -8742,7 +8734,7 @@
     {
       "id": "cs-ice-doger",
       "resep_num": 105,
-      "category": "desserts",
+      "category": "desserts_drinks",
       "photo": "ice-doger.jpg",
       "name_id": "Ice Doger / Tapé",
       "name_en": "Ice Doger / Fermented Yucca Ice",
@@ -8761,7 +8753,7 @@
     {
       "id": "cs-fresh-lime-soda",
       "resep_num": 106,
-      "category": "drinks",
+      "category": "desserts_drinks",
       "photo": "fresh-lime-soda.jpg",
       "name_id": "Fresh Lime Soda",
       "name_en": "Fresh Lime Soda",
@@ -8780,7 +8772,7 @@
     {
       "id": "cs-boba-tea",
       "resep_num": 107,
-      "category": "drinks",
+      "category": "desserts_drinks",
       "photo": "boba-tea.jpg",
       "name_id": "Boba Tea / Coffee",
       "name_en": "Boba Tea or Coffee",
@@ -8799,7 +8791,7 @@
     {
       "id": "cs-bandrek-hot",
       "resep_num": 108,
-      "category": "drinks",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Bandrek",
       "name_en": "Bandrek — Indonesian Spiced Ginger Drink",
@@ -8819,7 +8811,7 @@
     {
       "id": "cs-coffee-tubruk",
       "resep_num": 109,
-      "category": "drinks",
+      "category": "desserts_drinks",
       "photo": "",
       "name_id": "Kopi Tubruk",
       "name_en": "Coffee Tubruk",
