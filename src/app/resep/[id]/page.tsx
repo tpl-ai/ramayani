@@ -103,13 +103,17 @@ function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: numbe
 }
 
 // A row with recipe_ref calls for a quantity of another recipe's batch (a
-// paste, a stock) rather than a raw ingredient. Its amount/unit is written
-// in the same unit as that recipe's yield_unit, so dividing gives what
-// fraction of a full batch this row needs -- scaled by this page's own
-// current factor, since bumping "Makes: N" here should scale the nested
-// sub-recipe along with everything else.
+// paste, a stock) rather than a raw ingredient. When its unit matches that
+// recipe's yield_unit exactly, dividing gives what fraction of a full batch
+// this row needs -- scaled by this page's own current factor, since bumping
+// "Makes: N" here should scale the nested sub-recipe along with everything
+// else. When the units don't match (e.g. a home recipe calling for "1
+// heaping tbsp" of a paste whose yield is tracked in kg), there's no safe
+// way to compute a fraction -- the row still links to the recipe, just
+// without a scaled ingredient list (see the render site).
 function subRecipeFactor(row: IngredientLine, refRecipe: Recipe, parentFactor: number): number | null {
-  if (!refRecipe.yield_amount) return null;
+  if (!refRecipe.yield_amount || !refRecipe.yield_unit) return null;
+  if (row.unit.trim().toLowerCase() !== refRecipe.yield_unit.trim().toLowerCase()) return null;
   const parsed = parseAmount(row.amount);
   if (!parsed) return null;
   return (parsed.value * parentFactor) / refRecipe.yield_amount;
@@ -367,6 +371,13 @@ export default function ResepPage() {
                                   {ctxLang === 'id' ? 'Lihat resep lengkap →' : 'View full recipe →'}
                                 </Link>
                               </details>
+                            )}
+                            {refRecipe && subFactor == null && (
+                              <div className="print-hide" style={{ marginTop: 4 }}>
+                                <Link href={`/resep/${refRecipe.id}`} style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000' }}>
+                                  {ctxLang === 'id' ? 'Lihat resep' : 'View recipe'} — {tx(refRecipe, 'name', ctxLang)} →
+                                </Link>
+                              </div>
                             )}
                           </li>
                         </Fragment>
