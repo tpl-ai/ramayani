@@ -190,7 +190,10 @@
           "step_id": "",
           "step_en": "Add Spices and package into 10 bags."
         }
-      ]
+      ],
+      "yield_amount": 20,
+      "yield_unit": "kg",
+      "review_notes": "Batch makes 10 bags per the scan; yield estimated as 20kg total (~2kg/bag) so resep-2's paste quantity can be scaled against it. This is a guess, not a scan fact -- for the historical record."
     },
     {
       "id": "resep-2",
@@ -224,7 +227,8 @@
           "unit": "kg",
           "name_id": "",
           "name_en": "Ayam Curry Paste ",
-          "amount": "2"
+          "amount": "2",
+          "recipe_ref": "resep-1"
         },
         {
           "unit": "fl oz",
@@ -309,7 +313,9 @@
           "step_en": "Sprinkle Fried Onions and Green Onions"
         }
       ],
-      "review_notes": "Recipe created 2006"
+      "review_notes": "Recipe created 2006 Yield estimated at ~84 orders (65 lbs chicken / 4.5 lbs per ball x 6 orders per ball, per the scan's method step). This is a guess, not a scan fact -- for the historical record.",
+      "yield_amount": 84,
+      "yield_unit": "orders"
     },
     {
       "id": "resep-3",
