@@ -191,7 +191,7 @@
           "step_en": "Add Spices and package into 10 bags."
         }
       ],
-      "yield_amount": 20,
+      "yield_amount": 600,
       "yield_unit": "kg",
       "review_notes": "Batch makes 10 bags per the scan; yield estimated as 20kg total (~2kg/bag) so resep-2's paste quantity can be scaled against it. This is a guess, not a scan fact -- for the historical record."
     },
