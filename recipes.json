@@ -115,38 +115,37 @@
         "no_photo",
         "scale"
       ],
-      "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
       "reviewed": false,
       "ingredients": [
         {
           "unit": "lbs",
-          "name_id": "Bawang putih, digiling",
+          "name_id": "",
           "name_en": "white onions, ground",
           "amount": "45",
           "section_id": "",
-          "section_en": "GROUND INGREDIENT MIX"
+          "section_en": "Ground Ingredient Mix"
         },
         {
           "unit": "oz",
-          "name_id": "Kemiri, digiling",
+          "name_id": "",
           "name_en": "candlenuts, ground",
           "amount": "60"
         },
         {
           "unit": "oz",
-          "name_id": "Bawang putih, digiling",
+          "name_id": "",
           "name_en": "garlic, ground",
           "amount": "44"
         },
         {
           "unit": "oz",
-          "name_id": "Jahe, digiling",
+          "name_id": "",
           "name_en": "ginger, ground",
           "amount": "18"
         },
         {
           "unit": "oz",
-          "name_id": "Serai segar, digiling",
+          "name_id": "",
           "name_en": "fresh lemongrass, ground",
           "amount": "18"
         },
@@ -158,34 +157,34 @@
         },
         {
           "unit": "cups",
-          "name_id": "Kunyit",
+          "name_id": "",
           "name_en": "turmeric",
           "amount": "2½",
           "section_id": "",
-          "section_en": "SPICES"
+          "section_en": "Spices"
         },
         {
           "unit": "cups",
-          "name_id": "MSG",
+          "name_id": "",
           "name_en": "MSG",
           "amount": "2½"
         },
         {
           "unit": "cups",
-          "name_id": "Garam",
+          "name_id": "",
           "name_en": "salt",
           "amount": "7½"
         },
         {
           "unit": "cups",
-          "name_id": "Gula",
+          "name_id": "",
           "name_en": "sugar",
           "amount": "7½"
         },
         {
           "unit": "cups",
           "name_id": "Kencur",
-          "name_en": "lesser galangal powder",
+          "name_en": "",
           "amount": "5"
         }
       ]
