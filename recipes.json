@@ -191,9 +191,9 @@
           "step_en": "Add Spices and package into 10 bags."
         }
       ],
-      "yield_amount": 600,
-      "yield_unit": "orders",
-      "review_notes": "Batch makes 10 bags per the scan. Yield re-estimated 2026-08-23 by Arman as enough paste for ~600 curry orders (yield_amount/yield_unit now track orders, not weight, so 'View recipe' links from other recipes land here scaled to 1 order). A guess, not a scan fact -- for the historical record."
+      "yield_amount": 100,
+      "yield_unit": "batches",
+      "review_notes": "Batch makes 10 bags per the scan. Yield re-estimated 2026-08-23 by Arman as enough paste for ~600 curry servings; reframed as 100 batches (1 batch = 6 servings' worth, matching resep-2's own method step 6 -- '4.5 lb balls of 6 orders each') so the default 1-unit view ('View recipe' links, or visiting directly) shows a realistic kitchen quantity instead of an unmeasurably tiny single-serving slice. A guess, not a scan fact -- for the historical record."
     },
     {
       "id": "resep-2",
@@ -315,7 +315,7 @@
       ],
       "review_notes": "Recipe created 2006 Yield estimated at ~84 orders (65 lbs chicken / 4.5 lbs per ball x 6 orders per ball, per the scan's method step). This is a guess, not a scan fact -- for the historical record.",
       "yield_amount": 84,
-      "yield_unit": "orders"
+      "yield_unit": "servings"
     },
     {
       "id": "resep-3",
