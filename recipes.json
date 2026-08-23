@@ -9024,8 +9024,8 @@
       "serves": "1",
       "ingredients": [
         {
-          "amount": "4 small pieces or 3 large pieces",
-          "unit": "",
+          "amount": "3-4",
+          "unit": "pieces",
           "name_id": "",
           "name_en": "bone-in chicken, about ¾ lb / 340 g"
         },
