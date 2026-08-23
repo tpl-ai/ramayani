@@ -7,7 +7,7 @@ import { useParams } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import { getRecipeById, meta, difficultyLevels, recipePhotoSrc } from '@/lib/recipes';
 import { displayQuantity } from '@/lib/units';
-import type { Recipe, IngredientLine } from '@/types/recipe';
+import type { Recipe, IngredientLine, MethodStep } from '@/types/recipe';
 import Header from '@/components/Header';
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
@@ -72,24 +72,6 @@ function tx(r: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'):
   return (r[`${field}_id` as keyof Recipe] as string) || '';
 }
 
-// Falls back per-line, not per-array — an editor may fill in only one
-// language's steps (leaving the other side's entries as empty strings
-// rather than omitted), so checking "does the array have any entries"
-// isn't enough to know a given line has real content.
-function methodList(r: Recipe, lang: 'id' | 'en'): string[] {
-  const primary = lang === 'en' ? r.method_en : r.method_id;
-  const fallback = lang === 'en' ? r.method_id : r.method_en;
-  const n = Math.max(primary.length, fallback.length);
-  const result: string[] = [];
-  for (let i = 0; i < n; i++) {
-    const p = (primary[i] ?? '').trim();
-    const f = (fallback[i] ?? '').trim();
-    const value = p || f;
-    if (value) result.push(value);
-  }
-  return result;
-}
-
 // Ingredient/section names are transcribed as-typed (deliberately, so
 // editors don't have to fix casing while entering recipes) and end up a
 // mix of cases. Display-only sentence case keeps the site consistent
@@ -102,6 +84,15 @@ function sentenceCase(s: string): string {
 
 function ingredientSection(item: IngredientLine, lang: 'id' | 'en'): string {
   const value = lang === 'en' ? (item.section_en || item.section_id) : (item.section_id || item.section_en);
+  return sentenceCase(value || '');
+}
+
+function methodStepText(step: MethodStep, lang: 'id' | 'en'): string {
+  return lang === 'en' ? (step.step_en || step.step_id) : (step.step_id || step.step_en);
+}
+
+function methodSection(step: MethodStep, lang: 'id' | 'en'): string {
+  const value = lang === 'en' ? (step.section_en || step.section_id) : (step.section_id || step.section_en);
   return sentenceCase(value || '');
 }
 
@@ -163,7 +154,9 @@ export default function ResepPage() {
   const notes     = tx(recipe, 'notes', ctxLang);
   const showPhoto = !!recipe.photo && !photoFailed;
   const ings      = recipe.ingredients;
-  const steps     = methodList(recipe, ctxLang);
+  const steps = recipe.method
+    .map((s) => ({ text: methodStepText(s, ctxLang), section: methodSection(s, ctxLang) }))
+    .filter((s) => s.text);
   const factor    = serves / baseServes.current;
   const isComingSoon = recipe.content_state === 'no_content';
   const processedIngs = ings.map(i => formatIngredient(i, ctxLang, factor, unitSystem));
@@ -348,10 +341,20 @@ export default function ResepPage() {
                 </p>
                 {steps.length > 0 ? (
                   steps.map((step, i) => (
-                    <div key={i} className="method-step">
-                      <div className="step-num" style={{ fontFamily: HELVETICA, color: '#cc0000' }}>{i + 1}</div>
-                      <div className="step-text" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{step}</div>
-                    </div>
+                    <Fragment key={i}>
+                      {step.section && (
+                        <div
+                          className="method-section-heading"
+                          style={{ fontFamily: HELVETICA, fontWeight: 700, fontSize: 14, color: '#333', marginTop: i > 0 ? 28 : 0, marginBottom: 6 }}
+                        >
+                          {step.section}
+                        </div>
+                      )}
+                      <div className="method-step">
+                        <div className="step-num" style={{ fontFamily: HELVETICA, color: '#cc0000' }}>{i + 1}</div>
+                        <div className="step-text" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{step.text}</div>
+                      </div>
+                    </Fragment>
                   ))
                 ) : (
                   <p className="method-empty" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
