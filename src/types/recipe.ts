@@ -21,6 +21,14 @@ export interface IngredientLine {
   section_en?: string;
 }
 
+export interface MethodStep {
+  step_id: string;
+  step_en: string;
+  // Same convention as IngredientLine.section_id/section_en.
+  section_id?: string;
+  section_en?: string;
+}
+
 export interface Recipe {
   id: string;
   resep_num: number | null;
@@ -32,8 +40,7 @@ export interface Recipe {
   headnote_id: string;
   headnote_en: string;
   ingredients: IngredientLine[];
-  method_id: string[];
-  method_en: string[];
+  method: MethodStep[];
   notes_id: string;
   notes_en: string;
   serves?: string | number;
