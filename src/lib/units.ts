@@ -140,11 +140,10 @@ export function displayQuantity(
   targetSystem: System,
 ): { amount: string; unit: string } {
   const info = lookupUnit(unit);
-  const needsConversion = !!info && info.system !== targetSystem;
 
   // Nothing to scale and nothing to convert -- return the authored amount
   // untouched (e.g. don't reformat a fraction like "⅛" into "0.1").
-  if (factor === 1 && !needsConversion) {
+  if (factor === 1 && (!info || info.system === targetSystem)) {
     return { amount, unit };
   }
 
@@ -154,12 +153,18 @@ export function displayQuantity(
   }
   const scaled: ParsedAmount = { value: parsed.value * factor, approx: parsed.approx };
 
-  if (!needsConversion) {
+  if (!info) {
     return { amount: formatAmount(scaled), unit };
   }
 
-  const base = scaled.value * info!.toBase;
-  const picked = info!.category === 'weight' ? pickWeightUnit(base, targetSystem) : pickVolumeUnit(base, targetSystem);
+  // Route every scale through the base-unit auto-pick, not just cross-system
+  // conversions -- a big scale-down within the same system (e.g. a batch
+  // recipe's 45 lbs onions divided by 600 orders) needs the same "pick a
+  // unit that fits the magnitude" treatment as a metric<->imperial
+  // conversion, or it stays stuck in the original (now far too coarse) unit
+  // -- "0.1 lbs" instead of the much more legible "1.2 oz".
+  const base = scaled.value * info.toBase;
+  const picked = info.category === 'weight' ? pickWeightUnit(base, targetSystem) : pickVolumeUnit(base, targetSystem);
   const num = formatNumber(picked.amount);
   return { amount: scaled.approx ? `± ${num}` : num, unit: picked.unit };
 }
