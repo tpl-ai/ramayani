@@ -1143,7 +1143,10 @@
           "amount": "128"
         }
       ],
-      "method": []
+      "method": [],
+      "yield_amount": 50,
+      "yield_unit": "servings",
+      "review_notes": "Yield estimated 2026-08-23 at 50 servings. Total liquid volume of the ingredients as written comes to ~6.7L (~28 cups) -- dominated by the 128oz/1 gallon of tomato sauce -- computed from: butter (2 sticks = 1 cup), oil (6 small + 2 large canting; 1 canting = ~4oz per resep-52's own annotation, 'large' canting assumed 2x that, unconfirmed), Maggi sauce (1 cup), Worcestershire (1/4 cup), 1kg sugar (dissolved, ~1.18L), and MSG (negligible). Arman's own read of the recipe photo already on the site: this is a very generous sauce coating, more than just enough to coat -- some of it is eaten with the rice too -- so 50 (leaning toward the generous end of a ~55-75 order range from volume alone) rather than a lighter-coating estimate. A guess, not a scan fact -- for the historical record."
     },
     {
       "id": "resep-11",
