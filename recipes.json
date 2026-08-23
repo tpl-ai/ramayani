@@ -9030,7 +9030,8 @@
           "amount": "1",
           "unit": "heaping tbsp",
           "name_id": "",
-          "name_en": "Ayam Kare curry paste (about 18 g)"
+          "name_en": "Ayam Kare curry paste (about 18 g)",
+          "recipe_ref": "resep-1"
         },
         {
           "amount": "2",
