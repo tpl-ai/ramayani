@@ -95,16 +95,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "",
-        "",
-        ""
-      ],
-      "method_en": [
-        "Mix Ground Ingredients Mix",
-        "Stir fry the Mix for ½ hour.",
-        "Add Spices and package into 10 bags."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -187,6 +177,20 @@
           "name_en": "",
           "amount": "5"
         }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix Ground Ingredients Mix"
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir fry the Mix for ½ hour."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add Spices and package into 10 bags."
+        }
       ]
     },
     {
@@ -198,20 +202,6 @@
       "name_en": "Chicken Curry",
       "headnote_id": "",
       "headnote_en": "Ramayani's signature chicken curry — a rich coconut broth built on the restaurant's own curry paste. This is the dish that made the LA Weekly critic write: 'delicate chicken-and-coconut-milk broth with bits of chicken, bean sprouts and green onions.'",
-      "method_id": [
-        "Masukkan 2 kg Bumbu Ayam Kare ke dalam panci besar.",
-        "Tambahkan santan, air, daun jeruk purut, daun salam, dan laos kering.",
-        "Didihkan.",
-        "Masukkan ayam yang sudah dipotong ke dalam kuah dan masak hingga matang.",
-        "Sajikan dengan bawang goreng dan daun bawang cincang di atasnya."
-      ],
-      "method_en": [
-        "Put 2 kg of Bumbu Ayam Kare (Ramayani Chicken Curry Paste) into a large pot.",
-        "Add coconut milk, water, kaffir lime leaves, bay leaves, and dried galangal.",
-        "Bring to a boil.",
-        "Add the cut chicken pieces and cook until done.",
-        "Serve topped with fried shallots and chopped spring onions."
-      ],
       "notes_id": "",
       "notes_en": "",
       "serves": "",
@@ -281,6 +271,28 @@
           "name_en": "Spring onions chopped to serve",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Masukkan 2 kg Bumbu Ayam Kare ke dalam panci besar.",
+          "step_en": "Put 2 kg of Bumbu Ayam Kare (Ramayani Chicken Curry Paste) into a large pot."
+        },
+        {
+          "step_id": "Tambahkan santan, air, daun jeruk purut, daun salam, dan laos kering.",
+          "step_en": "Add coconut milk, water, kaffir lime leaves, bay leaves, and dried galangal."
+        },
+        {
+          "step_id": "Didihkan.",
+          "step_en": "Bring to a boil."
+        },
+        {
+          "step_id": "Masukkan ayam yang sudah dipotong ke dalam kuah dan masak hingga matang.",
+          "step_en": "Add the cut chicken pieces and cook until done."
+        },
+        {
+          "step_id": "Sajikan dengan bawang goreng dan daun bawang cincang di atasnya.",
+          "step_en": "Serve topped with fried shallots and chopped spring onions."
+        }
       ]
     },
     {
@@ -292,18 +304,6 @@
       "name_en": "Ayam Besengek (Original 1986)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Cabe diblender + terasi, lalu digoreng.",
-        "Cabe kaleng diblender juga.",
-        "Masak sampai matang.",
-        "Masukkan bumbu yang lain-lainnya."
-      ],
-      "method_en": [
-        "Blend the chilli + shrimp paste, then fry.",
-        "Blend the canned chilli as well.",
-        "Cook until done.",
-        "Add all the other ingredients."
-      ],
       "notes_id": "Catatan Ibu: 'Resep paling baru, Sept. 23–1986. Lihat di belakang.'",
       "notes_en": "Mother's note: 'Newest recipe, Sept. 23–1986. See at the back.'",
       "content_state": "full",
@@ -381,6 +381,24 @@
           "name_en": "vinegar",
           "amount": "4"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Cabe diblender + terasi, lalu digoreng.",
+          "step_en": "Blend the chilli + shrimp paste, then fry."
+        },
+        {
+          "step_id": "Cabe kaleng diblender juga.",
+          "step_en": "Blend the canned chilli as well."
+        },
+        {
+          "step_id": "Masak sampai matang.",
+          "step_en": "Cook until done."
+        },
+        {
+          "step_id": "Masukkan bumbu yang lain-lainnya.",
+          "step_en": "Add all the other ingredients."
+        }
       ]
     },
     {
@@ -392,18 +410,6 @@
       "name_en": "Ayam Besengek (Updated)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Cabe diblender + terasi, lalu digoreng.",
-        "Cabe kaleng diblender juga.",
-        "Masak sampai matang.",
-        "Masukkan bumbu yang lain-lainnya."
-      ],
-      "method_en": [
-        "Blend the chilli + shrimp paste, then fry.",
-        "Blend the canned chilli as well.",
-        "Cook until done.",
-        "Add all the other ingredients."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -469,6 +475,24 @@
           "name_en": "Indonesian bay leaves (daun salam)",
           "amount": "To taste"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Cabe diblender + terasi, lalu digoreng.",
+          "step_en": "Blend the chilli + shrimp paste, then fry."
+        },
+        {
+          "step_id": "Cabe kaleng diblender juga.",
+          "step_en": "Blend the canned chilli as well."
+        },
+        {
+          "step_id": "Masak sampai matang.",
+          "step_en": "Cook until done."
+        },
+        {
+          "step_id": "Masukkan bumbu yang lain-lainnya.",
+          "step_en": "Add all the other ingredients."
+        }
       ]
     },
     {
@@ -480,24 +504,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "25 Bawang besar digoreng dg. minyak 1 inch selama ½ jam, lalu masukkan.",
-        "5 pelele Cabe merah dan digoreng lagi ± 20 menit, masukkan.",
-        "3 potong Terasi yang digogorengim dulu dg. minyak dikwali lain, dan masukkan + lagi bumbu yang lain.",
-        "1 Mangkok bami Bawang putih slice yg. kering.",
-        "½ container Sambal pedas dan digogorengim lagi ± 15 menit lagi, lalu masukkan.",
-        "5 pak Brown sugar, 5 cup gula pasir, 1¾ cup garam, 1 cup kecap manis, ½ cup cabe kering.",
-        "Semuanya diaduk hingga kental."
-      ],
-      "method_en": [
-        "25 large onions fried in 1-inch oil for ½ hour, then added.",
-        "5 pelele red chilli fried again ± 20 minutes, then added.",
-        "3 pieces shrimp paste fried separately in another pan with oil, then added with other spices.",
-        "1 bowl dried garlic slices.",
-        "½ container hot sambal fried again ± 15 minutes, then added.",
-        "5 boxes brown sugar, 5 cups sugar, 1¾ cup salt, 1 cup sweet soy, ½ cup dried chilli.",
-        "Everything stirred together until thick."
-      ],
       "notes_id": "Catatan Ibu: bumbu ini untuk ayam bumbu rujak. Semuanya diaduk hingga kental. Berkas 1, Hal. 5 — cara membuat ditulis dalam gaya daftar bahan (setiap bahan dengan instruksinya); disalin persis seperti aslinya.",
       "notes_en": "Mother's note: this sauce is for Ayam Bumbu Rujak. Everything stirred together until thick. File 1, Page 5 — method written in ingredient-list style (each item with its instruction); transcribed exactly as written.",
       "content_state": "full",
@@ -575,6 +581,36 @@
           "name_en": "Everything stirred together until thick",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "25 Bawang besar digoreng dg. minyak 1 inch selama ½ jam, lalu masukkan.",
+          "step_en": "25 large onions fried in 1-inch oil for ½ hour, then added."
+        },
+        {
+          "step_id": "5 pelele Cabe merah dan digoreng lagi ± 20 menit, masukkan.",
+          "step_en": "5 pelele red chilli fried again ± 20 minutes, then added."
+        },
+        {
+          "step_id": "3 potong Terasi yang digogorengim dulu dg. minyak dikwali lain, dan masukkan + lagi bumbu yang lain.",
+          "step_en": "3 pieces shrimp paste fried separately in another pan with oil, then added with other spices."
+        },
+        {
+          "step_id": "1 Mangkok bami Bawang putih slice yg. kering.",
+          "step_en": "1 bowl dried garlic slices."
+        },
+        {
+          "step_id": "½ container Sambal pedas dan digogorengim lagi ± 15 menit lagi, lalu masukkan.",
+          "step_en": "½ container hot sambal fried again ± 15 minutes, then added."
+        },
+        {
+          "step_id": "5 pak Brown sugar, 5 cup gula pasir, 1¾ cup garam, 1 cup kecap manis, ½ cup cabe kering.",
+          "step_en": "5 boxes brown sugar, 5 cups sugar, 1¾ cup salt, 1 cup sweet soy, ½ cup dried chilli."
+        },
+        {
+          "step_id": "Semuanya diaduk hingga kental.",
+          "step_en": "Everything stirred together until thick."
+        }
       ]
     },
     {
@@ -586,12 +622,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Ayam dibacam paling sedikit 3 jam."
-      ],
-      "method_en": [
-        "Chicken marinated for at least 3 hours."
-      ],
       "notes_id": "FLAG: Berkas 1, Hal. 6 & 11. Ibu hanya menulis waktu marinasi — tidak ada langkah lebih lanjut (mis. cara menggoreng) yang tertulis di halaman asli. Harap konfirmasi cara menggoreng dengan Ibu.",
       "notes_en": "FLAG: File 1, Pages 6 & 11. Mother only wrote the marinade time — no further steps (e.g. frying method) are written on the original page. Please confirm frying method with mother.",
       "content_state": "full",
@@ -663,6 +693,12 @@
           "name_en": "Chicken marinated for at least 3 hours.",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Ayam dibacam paling sedikit 3 jam.",
+          "step_en": "Chicken marinated for at least 3 hours."
+        }
       ]
     },
     {
@@ -674,14 +710,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Marinade the chicken with kecap ikan, cuka, and vetsin and fry for 10 minutes.",
-        "Serve with sambal terasi."
-      ],
-      "method_en": [
-        "Marinade the chicken with fish sauce, vinegar, and MSG and fry for 10 minutes.",
-        "Serve with sambal terasi."
-      ],
       "notes_id": "Sajikan dengan sambal terasi.",
       "notes_en": "Serve with sambal terasi.",
       "content_state": "full",
@@ -717,6 +745,16 @@
           "name_en": "MSG",
           "amount": "1"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Marinade the chicken with kecap ikan, cuka, and vetsin and fry for 10 minutes.",
+          "step_en": "Marinade the chicken with fish sauce, vinegar, and MSG and fry for 10 minutes."
+        },
+        {
+          "step_id": "Serve with sambal terasi.",
+          "step_en": "Serve with sambal terasi."
+        }
       ]
     },
     {
@@ -728,12 +766,6 @@
       "name_en": "Ayam Goreng Kuning (Yellow Fried Chicken)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Ini semuanya disatukan dan di-aduk."
-      ],
-      "method_en": [
-        "Combine all of this together and stir."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -912,6 +944,12 @@
           "name_en": "Whole chickens",
           "amount": "20"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Ini semuanya disatukan dan di-aduk.",
+          "step_en": "Combine all of this together and stir."
+        }
       ]
     },
     {
@@ -923,8 +961,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Catatan Ibu: 'Sesudah empuk ayamnya, dibakar.' FLAG: Berkas 1, Hal. 8. Hanya daftar bahan — tidak ada takaran, tidak ada cara membuat. Bahan juga tidak ada ukurannya. Harap konfirmasi semua takaran dan langkah-langkah dengan Ibu.",
       "notes_en": "Mother's only note: 'Once the chicken is tender, grill it.' FLAG: File 1, Page 8. Ingredient names only — no quantities, no method. Please confirm all amounts and steps with mother.",
       "content_state": "partial",
@@ -1002,7 +1038,8 @@
           "name_en": "Once the chicken is tender, grill/roast",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-10",
@@ -1013,8 +1050,6 @@
       "name_en": "Chicken in Ramayani Sauce",
       "headnote_id": "Saus khas Ramayani yang digunakan untuk Ayam Sauce Ramayani — ayam goreng yang dilumuri saus barbecue manis dan segar. Cara membuat masih perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature sauce — the sweet and tangy barbecue-style glaze that made Ayam Sauce Ramayani one of the restaurant's most ordered dishes. Cooking method to be confirmed with Hertha.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Perlu dikonfirmasi dengan Ibu.",
       "notes_en": "Method not written in the original notes. To be confirmed with Hertha.\n\nFLAG: Berkas 1, Hal. 9 & 11. Confirmed by rereading both occurrences of this recipe in the cookbook — no method is written on either page. Page 11 is the cleaner copy. Ingredients on the page match what's already in recipes.json (no discrepancy found), so ingredients left blank per instructions. Please confirm method with mother.",
       "serves": "Restaurant scale",
@@ -1072,7 +1107,8 @@
           "name_en": "(64 oz each) tomato sauce / ketchup",
           "amount": "2"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-11",
@@ -1083,8 +1119,6 @@
       "name_en": "Grilled Coconut Chicken",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Catatan Ibu: Gula Thai — kurangi jumlahnya. Tidak ada cara membuat yang tertulis di halaman asli.",
       "notes_en": "Mother's note: Thai sugar — reduce the amount. No method is written on the original page.",
       "content_state": "partial",
@@ -1149,7 +1183,8 @@
           "name_en": "kaffir lime leaves",
           "amount": "20"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-12",
@@ -1160,16 +1195,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Gogorengim (tumis) terasi dan semua bumbu halus, tambahkan santan, daun jeruk purut, galangga, serai dan air asam.",
-        "Potong ayam dan goreng, lalu masukkan ke dalam bumbu.",
-        "Untuk Vegetarian jangan pakai trasi dan Kecap Ikan, gunakan sayuran dan kentang saja."
-      ],
-      "method_en": [
-        "Stir fry the shrimp paste and all the ground spices, add the coconut milk, kaffir lime leaves, galangal, lemon grass and tamarind juice.",
-        "Cut up the chicken and fry, then put into the bumbu.",
-        "For Vegetarian: do not use shrimp paste and fish sauce — use vegetables and potatoes."
-      ],
       "notes_id": "Catatan Ibu: 'bisa dipake djuga buat pesmol.' November 2000. Untuk Vegetarian: jangan pakai trasi & kecap ikan.",
       "notes_en": "Mother's note: 'Can also be used for Pesmol.' November 2000. Vegetarian note written by mother in the original.",
       "content_state": "full",
@@ -1283,6 +1308,20 @@
           "name_en": "VEGETARIAN: do not use shrimp paste or fish sauce — use vegetables + potatoes + etc.",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Gogorengim (tumis) terasi dan semua bumbu halus, tambahkan santan, daun jeruk purut, galangga, serai dan air asam.",
+          "step_en": "Stir fry the shrimp paste and all the ground spices, add the coconut milk, kaffir lime leaves, galangal, lemon grass and tamarind juice."
+        },
+        {
+          "step_id": "Potong ayam dan goreng, lalu masukkan ke dalam bumbu.",
+          "step_en": "Cut up the chicken and fry, then put into the bumbu."
+        },
+        {
+          "step_id": "Untuk Vegetarian jangan pakai trasi dan Kecap Ikan, gunakan sayuran dan kentang saja.",
+          "step_en": "For Vegetarian: do not use shrimp paste and fish sauce — use vegetables and potatoes."
+        }
       ]
     },
     {
@@ -1294,18 +1333,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Ikan dibacam dg. vinegar & salt lalu digoreng selama 10 menit.",
-        "Ikan dibelah supaya tidak terlalu tebal.",
-        "2 sendok bumbu ayam pulang, dipanaskan dg. kaldu ayam dan tambahkan 1 sendok teh kunyit bubuk, kecap ikan, 1 sendok teh gula dan cabe.",
-        "Masukkan ikan yang sudah digoreng ke dalam saus dan masak perlahan."
-      ],
-      "method_en": [
-        "Marinate the fish with vinegar and salt and fry for 10 minutes.",
-        "Cut open the fish so it won't be too thick.",
-        "Heat 2 ladles of Bumbu Ayam Pulang with chicken broth and add 1 teaspoon turmeric powder, fish sauce, 1 teaspoon sugar and chilli.",
-        "Add the fried fish to the sauce and cook slowly."
-      ],
       "notes_id": "Menggunakan bumbu yang sama dengan Resep 12 (Bumbu Ayam Pulang).",
       "notes_en": "Uses the same paste as Recipe 12 (Bumbu Ayam Pulang). Mother noted this connection on the original page.",
       "content_state": "full",
@@ -1359,6 +1386,24 @@
           "name_en": "chilli",
           "amount": "to taste"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Ikan dibacam dg. vinegar & salt lalu digoreng selama 10 menit.",
+          "step_en": "Marinate the fish with vinegar and salt and fry for 10 minutes."
+        },
+        {
+          "step_id": "Ikan dibelah supaya tidak terlalu tebal.",
+          "step_en": "Cut open the fish so it won't be too thick."
+        },
+        {
+          "step_id": "2 sendok bumbu ayam pulang, dipanaskan dg. kaldu ayam dan tambahkan 1 sendok teh kunyit bubuk, kecap ikan, 1 sendok teh gula dan cabe.",
+          "step_en": "Heat 2 ladles of Bumbu Ayam Pulang with chicken broth and add 1 teaspoon turmeric powder, fish sauce, 1 teaspoon sugar and chilli."
+        },
+        {
+          "step_id": "Masukkan ikan yang sudah digoreng ke dalam saus dan masak perlahan.",
+          "step_en": "Add the fried fish to the sauce and cook slowly."
+        }
       ]
     },
     {
@@ -1370,14 +1415,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "ACAR: Bumbunya digiiling halus. Ikannya dibacam bahai cuka dan garam lalu digoreng. Bumbu digogoreng.",
-        "PEPES: Bumbunya dichopp. Ikannya dibaluri dulu dengan: ragi, garam dan cuka."
-      ],
-      "method_en": [
-        "ACAR (Pickle): Grind the spices finely. Marinate the fish in vinegar and salt then fry. Fry the spice paste.",
-        "PEPES (Steamed): Roughly chop the spices (do not grind). Rub the fish first with yeast, salt and vinegar."
-      ],
       "notes_id": "Dua resep dalam satu halaman. Acar: bumbu halus. Pepes: bumbu cincang kasar. FLAG: Berkas 1, Hal. 18 / Berkas 4, Hal. 22. Metode Pepes sangat singkat — hanya persiapan yang ditulis, bukan waktu mengukus. Harap konfirmasi dengan Ibu.",
       "notes_en": "Two recipes on one page. Pickle uses ground paste; steamed fish uses rough chop. FLAG: File 1 Page 18 / File 4 Page 22. Method for Pepes is very brief — only preparation noted, not steaming time. Please confirm steaming time and full method with mother.",
       "content_state": "full",
@@ -1473,6 +1510,16 @@
           "name_en": "Fish rubbed first with: yeast, salt, and vinegar",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "ACAR: Bumbunya digiiling halus. Ikannya dibacam bahai cuka dan garam lalu digoreng. Bumbu digogoreng.",
+          "step_en": "ACAR (Pickle): Grind the spices finely. Marinate the fish in vinegar and salt then fry. Fry the spice paste."
+        },
+        {
+          "step_id": "PEPES: Bumbunya dichopp. Ikannya dibaluri dulu dengan: ragi, garam dan cuka.",
+          "step_en": "PEPES (Steamed): Roughly chop the spices (do not grind). Rub the fish first with yeast, salt and vinegar."
+        }
       ]
     },
     {
@@ -1484,8 +1531,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Ukuran ditulis sebagai 's/M' dengan volume cc di samping. FLAG: Berkas 1, Hal. 19. Hanya daftar bahan — tidak ada cara membuat. Harap konfirmasi dengan Ibu.",
       "notes_en": "Measurements written as 's/M' (sendok makan = tablespoon) with cc volume alongside. FLAG: File 1, Page 19. Ingredients list only — no method written. Please confirm with mother.",
       "content_state": "partial",
@@ -1545,7 +1590,8 @@
           "name_en": "fresh bird's eye chilli (cabe padi) — optional",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-16",
@@ -1556,14 +1602,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Goreng kepiting, lelehkan mentega dan masukkan bawang merah, bawang putih, bubuk udang kering, black bean (ground), lada hitam (kasar), daun kari, cabe.",
-        "Setelah selesai tambahkan bahan-bahan sisanya: kecap manis, oyster sauce, gula, garam."
-      ],
-      "method_en": [
-        "Fried crab, melt butter and put in shallot, garlic, dried powder shrimp, black bean (ground), black pepper (coarsely), curry leaves, chillies.",
-        "When finished add the remaining ingredients: kecap manis, oyster sauce, sugar, salt."
-      ],
       "notes_id": "Kalau bakai sambal oelek jangan pakai vinegar.",
       "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'",
       "content_state": "full",
@@ -1666,6 +1704,16 @@
           "name_en": "vinegar (cuka)",
           "amount": "1½"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Goreng kepiting, lelehkan mentega dan masukkan bawang merah, bawang putih, bubuk udang kering, black bean (ground), lada hitam (kasar), daun kari, cabe.",
+          "step_en": "Fried crab, melt butter and put in shallot, garlic, dried powder shrimp, black bean (ground), black pepper (coarsely), curry leaves, chillies."
+        },
+        {
+          "step_id": "Setelah selesai tambahkan bahan-bahan sisanya: kecap manis, oyster sauce, gula, garam.",
+          "step_en": "When finished add the remaining ingredients: kecap manis, oyster sauce, sugar, salt."
+        }
       ]
     },
     {
@@ -1677,16 +1725,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Panaskan minyak, goreng bawang putih 1 menit.",
-        "Tambahkan cabe — goreng 1 menit.",
-        "Tambahkan campuran saus. Didihkan lalu kecilkan api dan tambahkan 2 telur kocok."
-      ],
-      "method_en": [
-        "Heat oil, fry garlic 1 minute.",
-        "Add chilli — fry for 1 minute.",
-        "Add mixture of sauce. Bring to a boil and lower the heat and add 2 scrambled eggs."
-      ],
       "notes_id": "Kalau bakai Sambal Oelek langan pakai Vinegar.",
       "notes_en": "Mother's note: 'If using sambal oelek do not use vinegar.'",
       "content_state": "full",
@@ -1788,6 +1826,20 @@
           "name_en": "vinegar (cuka)",
           "amount": "1"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Panaskan minyak, goreng bawang putih 1 menit.",
+          "step_en": "Heat oil, fry garlic 1 minute."
+        },
+        {
+          "step_id": "Tambahkan cabe — goreng 1 menit.",
+          "step_en": "Add chilli — fry for 1 minute."
+        },
+        {
+          "step_id": "Tambahkan campuran saus. Didihkan lalu kecilkan api dan tambahkan 2 telur kocok.",
+          "step_en": "Add mixture of sauce. Bring to a boil and lower the heat and add 2 scrambled eggs."
+        }
       ]
     },
     {
@@ -1799,20 +1851,6 @@
       "name_en": "Grilled Fish, Sweet Soy",
       "headnote_id": "Ikan nila air tawar yang dilumuri pasta rempah lalu dipanggang — salah satu hidangan paling populer di Ramayani. Bumbu cabe merah, terasi, dan kacang tanah memberikan cita rasa yang dalam dan berasap.",
       "headnote_en": "Freshwater Nila fish rubbed with a fragrant spice paste and fire-grilled — one of Ramayani's most beloved dishes. The paste of red chilli, shrimp paste, and peanuts creates a deep, smoky flavour.",
-      "method_id": [
-        "Marinasi ikan dengan cuka dan garam sebelum dipanggang.",
-        "Haluskan semua bumbu: cabe merah, bawang merah, bawang putih, jahe, terasi, kacang tanah, kencur, garam, gula, kecap ikan.",
-        "Tumis bumbu halus hingga hangat lalu masukkan ikan.",
-        "Satukan dengan bahan-bahan dan kukus hingga matang ± 15–20 menit.",
-        "Bisa juga dimasak dengan microwave selama 3 menit."
-      ],
-      "method_en": [
-        "Marinate the fish with vinegar and salt before grilling.",
-        "Grind all spices together: red chilli, shallots, garlic, ginger, shrimp paste, peanuts, lesser galangal, salt, sugar, fish sauce.",
-        "Stir fry the spice paste until just warm then add the fish.",
-        "Combine with the other ingredients and steam until the fish is cooked, approximately 15–20 minutes.",
-        "Can also be microwaved for 3 minutes."
-      ],
       "notes_id": "Beberapa bahan tidak ada takarannya — sesuaikan dengan selera. Harap konfirmasi takaran dengan Ibu.",
       "notes_en": "Several ingredients without specific quantities — adjust to taste. Confirm proportions with Hertha.",
       "serves": "",
@@ -1884,6 +1922,28 @@
           "name_en": "Salt, sugar, fish sauce",
           "amount": "to taste"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Marinasi ikan dengan cuka dan garam sebelum dipanggang.",
+          "step_en": "Marinate the fish with vinegar and salt before grilling."
+        },
+        {
+          "step_id": "Haluskan semua bumbu: cabe merah, bawang merah, bawang putih, jahe, terasi, kacang tanah, kencur, garam, gula, kecap ikan.",
+          "step_en": "Grind all spices together: red chilli, shallots, garlic, ginger, shrimp paste, peanuts, lesser galangal, salt, sugar, fish sauce."
+        },
+        {
+          "step_id": "Tumis bumbu halus hingga hangat lalu masukkan ikan.",
+          "step_en": "Stir fry the spice paste until just warm then add the fish."
+        },
+        {
+          "step_id": "Satukan dengan bahan-bahan dan kukus hingga matang ± 15–20 menit.",
+          "step_en": "Combine with the other ingredients and steam until the fish is cooked, approximately 15–20 minutes."
+        },
+        {
+          "step_id": "Bisa juga dimasak dengan microwave selama 3 menit.",
+          "step_en": "Can also be microwaved for 3 minutes."
+        }
       ]
     },
     {
@@ -1895,8 +1955,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "PENTING: Berbeda dari yang tercantum di indeks buku ini, halaman aslinya hanya berisi daftar bahan saus — tidak ada cara membuat dan tidak ada berat daging babi yang tercantum. FLAG: Berkas 1, Hal. 20. Harap konfirmasi cara membuat dan berat daging dengan Ibu.",
       "notes_en": "IMPORTANT: Contrary to the collection's own index, the actual page contains only the sauce ingredient list — no method is written, and no pork weight is specified. FLAG: File 1, Page 20. Please confirm the method and meat quantity with mother.",
       "content_state": "partial",
@@ -1944,7 +2002,8 @@
           "name_en": "full tbsp (90 ml) sugar",
           "amount": "6"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-20",
@@ -1955,20 +2014,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Side Pork: ± 7lbs (2 pieces). Rebus daging babi selama ½ jam dan angin-anginkan selama 24 jam lalu goreng sampai kulitnya renyah. Lalu masukkan ke air es untuk melunakkan kulitnya.",
-        "Goreng selama ± 15 menit.",
-        "Iris daging dingin ± ⅓\" dan susun dalam mangkuk rebus dengan sayur asin kering, tambahkan saus campuran dan kukus selama 1½–2 jam.",
-        "Untuk kuah ekstra buat sausnya 1½x atau 2x.",
-        "Sayur asin kering harus direndam dalam air selama 24 jam dan dipotong ½\"."
-      ],
-      "method_en": [
-        "Side Pork: ± 7 lbs (2 pieces). Boil the side pork for ½ hour and air dry for 24 hours and fry until the skin crispy. And put into ice water to soften the shell.",
-        "Fry for about 15 minutes.",
-        "Slice the cold pork ± ⅓\" thick and arrange in the bowl with the dry sour vegetables and add the mix sauce and steam for 1½–2 hours.",
-        "For extra soup make the sauce 1½x or 2x.",
-        "The dry sour vegetables must be soaked in water for 24 hours and cut to ½\" pieces."
-      ],
       "notes_id": "Sayur asin kering harus direndam 24 jam. FLAG: Berkas 1, Hal. 21–22. Resep dua halaman; Hal. 22 berisi versi saus yang sedikit berbeda (Sauce Babi Tim). Harap konfirmasi versi mana yang digunakan.",
       "notes_en": "Mother's note: dry sour vegetables must soak 24 hours. FLAG: File 1, Pages 21–22. Two-page recipe. Page 22 contains a slightly different sauce version (Sauce Babi Tim). Please confirm which version mother uses.",
       "content_state": "full",
@@ -2022,6 +2067,28 @@
           "name_en": "dry sour vegetable (sayur asin kering) or fresh sour vegetable",
           "amount": "2"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Side Pork: ± 7lbs (2 pieces). Rebus daging babi selama ½ jam dan angin-anginkan selama 24 jam lalu goreng sampai kulitnya renyah. Lalu masukkan ke air es untuk melunakkan kulitnya.",
+          "step_en": "Side Pork: ± 7 lbs (2 pieces). Boil the side pork for ½ hour and air dry for 24 hours and fry until the skin crispy. And put into ice water to soften the shell."
+        },
+        {
+          "step_id": "Goreng selama ± 15 menit.",
+          "step_en": "Fry for about 15 minutes."
+        },
+        {
+          "step_id": "Iris daging dingin ± ⅓\" dan susun dalam mangkuk rebus dengan sayur asin kering, tambahkan saus campuran dan kukus selama 1½–2 jam.",
+          "step_en": "Slice the cold pork ± ⅓\" thick and arrange in the bowl with the dry sour vegetables and add the mix sauce and steam for 1½–2 hours."
+        },
+        {
+          "step_id": "Untuk kuah ekstra buat sausnya 1½x atau 2x.",
+          "step_en": "For extra soup make the sauce 1½x or 2x."
+        },
+        {
+          "step_id": "Sayur asin kering harus direndam dalam air selama 24 jam dan dipotong ½\".",
+          "step_en": "The dry sour vegetables must be soaked in water for 24 hours and cut to ½\" pieces."
+        }
       ]
     },
     {
@@ -2033,16 +2100,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "TLEN SE TLEW: Pork butt diiris lalu dibacam dg. Vetsin, White Pepper, Kecap ikan, Kikoman, 1 Telur; lalu masukkan: Terigu, Self rising dan sagu yang banyak.",
-        "SAM TJAU: Kalau mau jadinya kuning, digodok dg. air garam. Sebelum dipanggang dibalurin lagi garam baru dipanggang dg. api kecil ± 250° selama 45 menit. Sesudah kulitnya kering, digoreng ± 25 menit sampai seperti kerupuk. Boleh juga dibacam dg. kecap asin + cuka; rasanya lebih enak, hanya kalau digoreng jadi hitam.",
-        "B.B.Q. ROAST RED PORK: Marinasi dan masak sampai semua air terserap dan sisakan saus kental serta BBQ."
-      ],
-      "method_en": [
-        "TLEN SE TLEW: Pork butt sliced then marinated with MSG, white pepper, fish sauce, Kikkoman, 1 egg; then add flour, self-rising flour and plenty of sago starch.",
-        "SAM TJAU: If you want it golden, boil with salted water first. Before roasting rub again with salt then roast at low heat ± 250° for 45 minutes. Once the skin is dry, fry ± 25 minutes until crispy like crackling. Can also be marinated with kecap asin + vinegar — tastier, but it turns dark when fried.",
-        "B.B.Q. ROAST RED PORK: Marinate and cook until all the water is absorbed and leave the thick sauce and BBQ."
-      ],
       "notes_id": "Tiga resep dalam satu halaman.",
       "notes_en": "Three recipes on one page. Method transcribed exactly as written by mother.",
       "content_state": "full",
@@ -2102,6 +2159,20 @@
           "name_en": "Use 12 pork chops",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "TLEN SE TLEW: Pork butt diiris lalu dibacam dg. Vetsin, White Pepper, Kecap ikan, Kikoman, 1 Telur; lalu masukkan: Terigu, Self rising dan sagu yang banyak.",
+          "step_en": "TLEN SE TLEW: Pork butt sliced then marinated with MSG, white pepper, fish sauce, Kikkoman, 1 egg; then add flour, self-rising flour and plenty of sago starch."
+        },
+        {
+          "step_id": "SAM TJAU: Kalau mau jadinya kuning, digodok dg. air garam. Sebelum dipanggang dibalurin lagi garam baru dipanggang dg. api kecil ± 250° selama 45 menit. Sesudah kulitnya kering, digoreng ± 25 menit sampai seperti kerupuk. Boleh juga dibacam dg. kecap asin + cuka; rasanya lebih enak, hanya kalau digoreng jadi hitam.",
+          "step_en": "SAM TJAU: If you want it golden, boil with salted water first. Before roasting rub again with salt then roast at low heat ± 250° for 45 minutes. Once the skin is dry, fry ± 25 minutes until crispy like crackling. Can also be marinated with kecap asin + vinegar — tastier, but it turns dark when fried."
+        },
+        {
+          "step_id": "B.B.Q. ROAST RED PORK: Marinasi dan masak sampai semua air terserap dan sisakan saus kental serta BBQ.",
+          "step_en": "B.B.Q. ROAST RED PORK: Marinate and cook until all the water is absorbed and leave the thick sauce and BBQ."
+        }
       ]
     },
     {
@@ -2113,12 +2184,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Jahe + bawang putih digoreng sampai kuning, lalu masukkan cabenya terus goreng sampai matang, lalu masukkan yang lain-2nya; terakhir dagingnya."
-      ],
-      "method_en": [
-        "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
-      ],
       "notes_id": "Catatan Ibu: 'Asem — kalan cabenya sudah asem, tak usah pakei.' Resep muncul di tiga halaman (Berkas 1 Hal. 24 / Berkas 2 Hal. 1 & 8) — versi Berkas 2 Hal. 8 paling lengkap dan disimpan di sini.",
       "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.' Recipe appears on three pages (File 1 p.24 / File 2 pp.1 & 8) — File 2 Page 8 is the most complete version, kept here.",
       "content_state": "full",
@@ -2196,6 +2261,12 @@
           "name_en": "tamarind / asam (if chilli is already sour, don't use)",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Jahe + bawang putih digoreng sampai kuning, lalu masukkan cabenya terus goreng sampai matang, lalu masukkan yang lain-2nya; terakhir dagingnya.",
+          "step_en": "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
+        }
       ]
     },
     {
@@ -2207,8 +2278,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli. FLAG: Berkas 1, Hal. 16. Hanya daftar bahan — tidak ada cara membuat, tidak ada sayuran yang disebutkan. Harap konfirmasi sayuran apa yang digunakan dan cara membuatnya dengan Ibu.",
       "notes_en": "METHOD: Not written in the original notes. FLAG: File 1, Page 16. Ingredients only — no method, no vegetables specified. Please confirm which vegetables are used and the full method with mother.",
       "content_state": "partial",
@@ -2250,7 +2319,8 @@
           "name_en": "Turmeric, boiled for colour",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-24",
@@ -2261,8 +2331,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "CATATAN PENTING oleh Ibu: 'Bumbu Rujak → Cuha lebih banyak dari Bumbu Siomai/ot. Gula lebih sedikit.' FLAG: Berkas 2, Hal. 21 / Berkas 3, Hal. 11. Dua resep dalam satu halaman. Hanya bahan — tidak ada cara membuat. Harap konfirmasi cara memblender/mengolah dengan Ibu.",
       "notes_en": "Mother's important note (written at the bottom of the original): 'Rujak dressing has more vinegar than the Siomai sauce. Less sugar.' FLAG: File 2 Page 21 / File 3 Page 11. Two recipes on one page. Ingredients only — no method. Please confirm blending/preparation method with mother.",
       "content_state": "partial",
@@ -2375,7 +2443,8 @@
           "name_en": "NOTE: Rujak dressing → more vinegar than Siomai sauce. Less sugar.",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-25",
@@ -2386,14 +2455,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Heat the oil and fry the brown onion until soft and add the red paprika and red hot chilli also until soft.",
-        "Add the remaining ingredients and cook for another 15 minutes."
-      ],
-      "method_en": [
-        "Heat the oil and fry the brown onion until soft and add the red paprika and red hot chilli also until soft.",
-        "Add the remaining ingredients and cook for another 15 minutes."
-      ],
       "notes_id": "Untuk ikan bumbu belado, telur belado — gunakan juga untuk Nasi Rames. FLAG: Berkas 2, Hal. 20 & 22. Resep muncul dua kali dengan ukuran berbeda; cara membuat hanya ada di Hal. 22.",
       "notes_en": "For ikan belado (belado fish), telur belado (belado eggs) — also used for Nasi Rames. Method transcribed exactly from Page 22. FLAG: File 2, Pages 20 & 22. Recipe appears twice with different quantities; method only appears on Page 22.",
       "content_state": "full",
@@ -2494,6 +2555,16 @@
           "name_en": "dried chilli (cabe kering)",
           "amount": "1"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Heat the oil and fry the brown onion until soft and add the red paprika and red hot chilli also until soft.",
+          "step_en": "Heat the oil and fry the brown onion until soft and add the red paprika and red hot chilli also until soft."
+        },
+        {
+          "step_id": "Add the remaining ingredients and cook for another 15 minutes.",
+          "step_en": "Add the remaining ingredients and cook for another 15 minutes."
+        }
       ]
     },
     {
@@ -2505,12 +2576,6 @@
       "name_en": "Bacang Beras (Rice Dumplings)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Ini semua digoreng dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis."
-      ],
-      "method_en": [
-        "All of this is fried together with a fairly generous amount of vegetable oil. It's stored overnight; before using, it's stirred again and more sweet soy sauce is added."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -2604,6 +2669,12 @@
           "name_en": "Salt",
           "amount": "3"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Ini semua digoreng dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis.",
+          "step_en": "All of this is fried together with a fairly generous amount of vegetable oil. It's stored overnight; before using, it's stirred again and more sweet soy sauce is added."
+        }
       ]
     },
     {
@@ -2615,18 +2686,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Ketan direndam diair utk. satu jam.",
-        "Lalu kukus 20 menit, kemudian adonin dengan: 4 cup air, 1 s/teh garam, 4 sendok minyak ayam, 7 canting Kikoman.",
-        "Baru dibungkusin.",
-        "1 lbs. jadi ± 5 | 5 lbs. jadi ± 25–27."
-      ],
-      "method_en": [
-        "Soak the glutinous rice in water for 1 hour.",
-        "Steam 20 minutes, then season with: 4 cups water, 1 tsp salt, 4 tbsp chicken oil, 7 canting Kikkoman.",
-        "Then wrap.",
-        "1 lb makes ± 5 | 5 lbs makes ± 25–27."
-      ],
       "notes_id": "FLAG: Berkas 2, Hal. 6. Resep ini untuk ketan tanpa isian — lihat Resep 26 (Bacang Beras) untuk isian lengkapnya.",
       "notes_en": "FLAG: File 2, Page 6. This recipe covers the sticky rice wrapper only — see Recipe 26 (Bacang Beras) for the full filling.",
       "content_state": "full",
@@ -2668,6 +2727,24 @@
           "name_en": "Kikkoman soy sauce",
           "amount": "7"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Ketan direndam diair utk. satu jam.",
+          "step_en": "Soak the glutinous rice in water for 1 hour."
+        },
+        {
+          "step_id": "Lalu kukus 20 menit, kemudian adonin dengan: 4 cup air, 1 s/teh garam, 4 sendok minyak ayam, 7 canting Kikoman.",
+          "step_en": "Steam 20 minutes, then season with: 4 cups water, 1 tsp salt, 4 tbsp chicken oil, 7 canting Kikkoman."
+        },
+        {
+          "step_id": "Baru dibungkusin.",
+          "step_en": "Then wrap."
+        },
+        {
+          "step_id": "1 lbs. jadi ± 5 | 5 lbs. jadi ± 25–27.",
+          "step_en": "1 lb makes ± 5 | 5 lbs makes ± 25–27."
+        }
       ]
     },
     {
@@ -2679,14 +2756,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "3 Siomai dipotong ½ lalu digoreng.",
-        "Dikasik bumbu sate."
-      ],
-      "method_en": [
-        "Cut 3 siomai in half then fry.",
-        "Serve with sate peanut sauce."
-      ],
       "notes_id": "FLAG: Berkas 2, Hal. 6. Catatan sangat singkat — kemungkinan mengacu pada Siomai yang dibuat terpisah. Bumbu sate lihat Resep 24 (Bumbu Rujak). Harap konfirmasi dengan Ibu.",
       "notes_en": "FLAG: File 2, Page 6. Very brief note — likely refers to separately made siomai. Peanut sauce see Recipe 24 (Bumbu Rujak). Please confirm with mother.",
       "content_state": "full",
@@ -2710,6 +2779,16 @@
           "name_en": "Served with sate peanut sauce",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "3 Siomai dipotong ½ lalu digoreng.",
+          "step_en": "Cut 3 siomai in half then fry."
+        },
+        {
+          "step_id": "Dikasik bumbu sate.",
+          "step_en": "Serve with sate peanut sauce."
+        }
       ]
     },
     {
@@ -2721,18 +2800,6 @@
       "name_en": "Jakarta Chicken Noodles",
       "headnote_id": "Mie ayam spesial Ramayani — versi Jakarta dari mie telur yang dimasak dengan ayam cincang, jamur, dan udang kering. Disajikan dengan sup bakso.",
       "headnote_en": "Ramayani's special chicken noodles — the Jakarta version of braised egg noodles cooked with ground chicken, Chinese mushrooms, and dried shrimp. Served with an Asian meatball soup.",
-      "method_id": [
-        "Tumis bawang besar + bawang putih, lalu masukkan ayam cincang dengan bumbu: kecap asin, kecap ikan, vetsin, garam, merica. Angkat.",
-        "Goreng 3 bawang besar sampai kuning, angkat dan pisahkan. Gunakan minyaknya untuk menggoreng udang kering.",
-        "Setelah digoreng, masukkan ayam cincang yang sudah matang, lalu masukkan jamur dan kue ikan, aduk dan beri bumbu lagi.",
-        "Sajikan di atas mie telur dengan kuah bakso."
-      ],
-      "method_en": [
-        "Stir fry large onion + garlic, then add ground chicken with seasoning: soy sauce, fish sauce, MSG, salt, pepper. Remove from heat.",
-        "Fry 3 large onions until golden, remove and set aside. Use the oil to fry the dried shrimp.",
-        "Once fried, add the cooked ground chicken, then add mushrooms and fish cake, stir and season again.",
-        "Serve over egg noodles with meatball soup."
-      ],
       "notes_id": "Langkah-langkah perlu dikonfirmasi dengan Ibu — beberapa bagian tidak jelas dalam catatan asli.",
       "notes_en": "Steps to be confirmed with Hertha — some parts of the original notes were unclear.",
       "serves": "",
@@ -2792,6 +2859,24 @@
           "name_en": "Soy sauce, fish sauce, MSG, salt, pepper for seasoning",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Tumis bawang besar + bawang putih, lalu masukkan ayam cincang dengan bumbu: kecap asin, kecap ikan, vetsin, garam, merica. Angkat.",
+          "step_en": "Stir fry large onion + garlic, then add ground chicken with seasoning: soy sauce, fish sauce, MSG, salt, pepper. Remove from heat."
+        },
+        {
+          "step_id": "Goreng 3 bawang besar sampai kuning, angkat dan pisahkan. Gunakan minyaknya untuk menggoreng udang kering.",
+          "step_en": "Fry 3 large onions until golden, remove and set aside. Use the oil to fry the dried shrimp."
+        },
+        {
+          "step_id": "Setelah digoreng, masukkan ayam cincang yang sudah matang, lalu masukkan jamur dan kue ikan, aduk dan beri bumbu lagi.",
+          "step_en": "Once fried, add the cooked ground chicken, then add mushrooms and fish cake, stir and season again."
+        },
+        {
+          "step_id": "Sajikan di atas mie telur dengan kuah bakso.",
+          "step_en": "Serve over egg noodles with meatball soup."
+        }
       ]
     },
     {
@@ -2803,8 +2888,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 2, Hal. 7 & 23. Resep muncul dua kali — versi identik. Tidak ada cara membuat. Harap konfirmasi dengan Ibu.",
       "notes_en": "Method not written in the original notes. FLAG: File 2, Pages 7 & 23. Recipe appears twice — identical versions. No method written. Please confirm with mother.",
       "content_state": "partial",
@@ -2858,7 +2941,8 @@
           "name_en": "chilli / hot",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-31",
@@ -2869,8 +2953,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 2, Hal. 7. Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Harap konfirmasi dengan Ibu.",
       "notes_en": "Method not written in the original notes. FLAG: File 2, Page 7. Ingredient names only — no quantities, no method. Please confirm with mother.",
       "content_state": "partial",
@@ -2954,7 +3036,8 @@
           "name_en": "Malaysian Bak Kut Teh seasoning",
           "amount": "1"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-32",
@@ -2965,18 +3048,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Kwee Tiauw dipanaskan di Microwave 45 second.",
-        "Minyak ayam dipanaskan, masukkan daging + babatnya goreng sebentar, baru masukkan bawang putihnya.",
-        "Sesudah itu masukkan kwee tiawnya, aduk-aduk, baru kasih 2 telur.",
-        "Goreng sampai kering dan dikasih bumbu-bumbu: garam, vetsin, kecap hitam, kecap ikan, aduk-aduk lalu kasih toge dan daun bawang."
-      ],
-      "method_en": [
-        "Heat the kwee tiauw in microwave for 45 seconds.",
-        "Heat chicken oil, add meat + tripe and fry briefly, then add garlic.",
-        "After that add the kwee tiauw, stir, then add 2 eggs.",
-        "Fry until dry then season with: salt, MSG, dark soy sauce, fish sauce — stir, then add bean sprouts and spring onion."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -3035,6 +3106,24 @@
           "name_en": "bean sprouts and spring onion",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Kwee Tiauw dipanaskan di Microwave 45 second.",
+          "step_en": "Heat the kwee tiauw in microwave for 45 seconds."
+        },
+        {
+          "step_id": "Minyak ayam dipanaskan, masukkan daging + babatnya goreng sebentar, baru masukkan bawang putihnya.",
+          "step_en": "Heat chicken oil, add meat + tripe and fry briefly, then add garlic."
+        },
+        {
+          "step_id": "Sesudah itu masukkan kwee tiawnya, aduk-aduk, baru kasih 2 telur.",
+          "step_en": "After that add the kwee tiauw, stir, then add 2 eggs."
+        },
+        {
+          "step_id": "Goreng sampai kering dan dikasih bumbu-bumbu: garam, vetsin, kecap hitam, kecap ikan, aduk-aduk lalu kasih toge dan daun bawang.",
+          "step_en": "Fry until dry then season with: salt, MSG, dark soy sauce, fish sauce — stir, then add bean sprouts and spring onion."
+        }
       ]
     },
     {
@@ -3046,8 +3135,6 @@
       "name_en": "Nasi Uduk",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli untuk Nasi Kuning maupun Nasi Uduk. Catatan Ibu: 'Nasi Uduk: sama dengan Nasi Kuning, hanya tidak diberi kunyit.' FLAG: Berkas 6, Hal. 10 & 11. Tidak ada cara membuat. Laos dan sereh tidak ada takaran. Verifikasi: halaman ini memang hanya berisi daftar bahan tanpa cara membuat — dikonfirmasi sesuai flag indeks.",
       "notes_en": "METHOD: Not written in the original notes for either Nasi Kuning or Nasi Uduk. Mother's note: 'Nasi Uduk: same as Nasi Kuning but without turmeric.' FLAG: File 6, Pages 10 & 11. No method written. Quantities for galangal and lemongrass not specified. Verified: this page genuinely contains ingredients only, no method — confirms the index flag.",
       "content_state": "partial",
@@ -3069,7 +3156,8 @@
           "name_en": "Same as Nasi Kuning (16 cups coconut milk / santan, 10 cups rice / beras, 3 tsp salt / garam, Indonesian bay leaves / salam, galangal / laos, lemongrass / sereh), but without turmeric.",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-34",
@@ -3080,14 +3168,6 @@
       "name_en": "Belacan Water Spinach",
       "headnote_id": "Tumis kangkung dengan belacan — salah satu hidangan sayuran paling populer di Ramayani. Sederhana, cepat, dan penuh rasa.",
       "headnote_en": "Stir-fried water spinach with shrimp paste — one of Ramayani's most popular vegetable dishes. Simple, quick, and full of flavour. Called Tumis Kangkung on the menu.",
-      "method_id": [
-        "Tumis bawang putih dan bawang merah hingga layu, masukkan cabe merah, sambal bajak, tomat, kecap ikan, dan vetsin.",
-        "Masak selama 2 menit lagi, lalu masukkan batang kangkung terlebih dahulu baru kemudian daunnya."
-      ],
-      "method_en": [
-        "Sauté the garlic and shallot until soft, add red chilli, sambal bajak, tomato, fish sauce, and MSG.",
-        "Cook for another 2 minutes and add the kangkung stem first and the leaves later."
-      ],
       "notes_id": "Untuk versi vegetarian, ganti kecap ikan dengan kecap asin dan hapus terasi dari sambal bajak.",
       "notes_en": "For a vegetarian version, replace fish sauce with soy sauce and use a vegetarian sambal.",
       "serves": "",
@@ -3153,6 +3233,16 @@
           "name_en": "MSG",
           "amount": "5"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Tumis bawang putih dan bawang merah hingga layu, masukkan cabe merah, sambal bajak, tomat, kecap ikan, dan vetsin.",
+          "step_en": "Sauté the garlic and shallot until soft, add red chilli, sambal bajak, tomato, fish sauce, and MSG."
+        },
+        {
+          "step_id": "Masak selama 2 menit lagi, lalu masukkan batang kangkung terlebih dahulu baru kemudian daunnya.",
+          "step_en": "Cook for another 2 minutes and add the kangkung stem first and the leaves later."
+        }
       ]
     },
     {
@@ -3164,20 +3254,6 @@
       "name_en": "Gado-Gado",
       "headnote_id": "Saus kacang khas Ramayani untuk Gado-Gado dan Sate — resep restoran yang menghasilkan 3 porsi sekaligus. Saus ini yang membuat Gado-Gado Ramayani berbeda.",
       "headnote_en": "Ramayani's peanut sauce for Gado-Gado and Satay — a restaurant recipe making 3 orders at once. This sauce is what set Ramayani's Gado-Gado apart. Served over tofu, egg, and steamed vegetables.",
-      "method_id": [
-        "Blender cabe merah. Blender bawang, lalu goreng hingga kuning, kemudian masukkan cabe dan terus goreng hingga minyak keluar.",
-        "Tambahkan gula, garam, dan peanut butter. Aduk rata.",
-        "Tambahkan air sedikit demi sedikit sambil terus diaduk hingga kekentalan yang diinginkan.",
-        "Untuk Gado-Gado: tambahkan 2 sdt kencur dan 2 sdt garlic powder.",
-        "Untuk Sate: tambahkan 2 cups kecap manis."
-      ],
-      "method_en": [
-        "Blend the chilli. Blend the onion, then fry until golden, then add the chilli and keep frying until the oil comes out.",
-        "Add sugar, salt, and peanut butter. Mix well.",
-        "Add water gradually, stirring continuously until the desired consistency is reached.",
-        "For Gado-Gado: add 2 tsp kencur and 2 tsp garlic powder.",
-        "For Satay: add 2 cups sweet soy sauce (kecap manis) instead."
-      ],
       "notes_id": "Resep skala restoran. Untuk memasak di rumah, kurangi semua bahan menjadi 1/10. Sajikan saus di atas tahu, telur, dan sayuran kukus.",
       "notes_en": "Restaurant-scale recipe. For home cooking reduce to 1/10. Serve the sauce over tofu, hard-boiled egg, and steamed vegetables.",
       "serves": "Makes 3 orders",
@@ -3250,6 +3326,28 @@
           "name_en": "For Gado-Gado: add 2 tsp kencur + 2 tsp garlic powder",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Blender cabe merah. Blender bawang, lalu goreng hingga kuning, kemudian masukkan cabe dan terus goreng hingga minyak keluar.",
+          "step_en": "Blend the chilli. Blend the onion, then fry until golden, then add the chilli and keep frying until the oil comes out."
+        },
+        {
+          "step_id": "Tambahkan gula, garam, dan peanut butter. Aduk rata.",
+          "step_en": "Add sugar, salt, and peanut butter. Mix well."
+        },
+        {
+          "step_id": "Tambahkan air sedikit demi sedikit sambil terus diaduk hingga kekentalan yang diinginkan.",
+          "step_en": "Add water gradually, stirring continuously until the desired consistency is reached."
+        },
+        {
+          "step_id": "Untuk Gado-Gado: tambahkan 2 sdt kencur dan 2 sdt garlic powder.",
+          "step_en": "For Gado-Gado: add 2 tsp kencur and 2 tsp garlic powder."
+        },
+        {
+          "step_id": "Untuk Sate: tambahkan 2 cups kecap manis.",
+          "step_en": "For Satay: add 2 cups sweet soy sauce (kecap manis) instead."
+        }
       ]
     },
     {
@@ -3261,22 +3359,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Masak semuanya sambil diaduk sampai bergolak, kemudian campurkan blenderan: 3 s/sayur Red dice pepper, 175 gram Garlic.",
-        "Cara membuatnya: Masak 10.000 cc air sampai mendidih, lalu matikan apinya.",
-        "Dalam panci sedang, ambil air mendidih diatas sedikit utk. menghancurkan 2 botol petis udang; sesudah hancur masukkan kembali ke dalam air memaskan diatas.",
-        "Masukkan peanut butter (jadi memasak air mahsudnya supaya memudahkan melarutkan peanut butter).",
-        "Masukkan brown sugar, white sugar, garam, kecap manis dan lemon juice.",
-        "Kalan peanut butter dan yang lain-2nya sudah larut, baru nyalahkan kembali apinya (sambil diaduk). Kalan sudah mendidih masukkan garlic, red dice pepper."
-      ],
-      "method_en": [
-        "Cook everything together stirring until boiling, then blend in: 3 tbsp red diced pepper, 175 g garlic.",
-        "Method: Cook 10,000 cc water until boiling, then turn off heat.",
-        "In a medium pot, take some of the boiling water to dissolve the 2 bottles of shrimp paste liquid; once dissolved, return to the main pot.",
-        "Add the peanut butter (using boiling water makes it easier to dissolve the peanut butter).",
-        "Add brown sugar, white sugar, salt, sweet soy sauce and lemon juice.",
-        "Once peanut butter and everything else has dissolved, turn the heat back on (stirring). When boiling, add garlic and red diced pepper."
-      ],
       "notes_id": "Catatan Ibu: 'tidak palue sayuran lebih enak.' (Tertulis di bagian bawah halaman asli.) FLAG: Berkas 3, Hal. 2 & 8 / Berkas 5, Hal. 6 & 9. Resep muncul empat kali. Versi terlengkap di Berkas 3, Hal. 8 disimpan di sini.",
       "notes_en": "Mother's note: 'Not using vegetables tastes better.' (Written at the bottom of the original page.) FLAG: File 3 pp.2 & 8 / File 5 pp.6 & 9. Recipe appears four times. Most complete version at File 3 Page 8 kept here.",
       "content_state": "full",
@@ -3348,6 +3430,32 @@
           "name_en": "garlic (bawang putih)",
           "amount": "175"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Masak semuanya sambil diaduk sampai bergolak, kemudian campurkan blenderan: 3 s/sayur Red dice pepper, 175 gram Garlic.",
+          "step_en": "Cook everything together stirring until boiling, then blend in: 3 tbsp red diced pepper, 175 g garlic."
+        },
+        {
+          "step_id": "Cara membuatnya: Masak 10.000 cc air sampai mendidih, lalu matikan apinya.",
+          "step_en": "Method: Cook 10,000 cc water until boiling, then turn off heat."
+        },
+        {
+          "step_id": "Dalam panci sedang, ambil air mendidih diatas sedikit utk. menghancurkan 2 botol petis udang; sesudah hancur masukkan kembali ke dalam air memaskan diatas.",
+          "step_en": "In a medium pot, take some of the boiling water to dissolve the 2 bottles of shrimp paste liquid; once dissolved, return to the main pot."
+        },
+        {
+          "step_id": "Masukkan peanut butter (jadi memasak air mahsudnya supaya memudahkan melarutkan peanut butter).",
+          "step_en": "Add the peanut butter (using boiling water makes it easier to dissolve the peanut butter)."
+        },
+        {
+          "step_id": "Masukkan brown sugar, white sugar, garam, kecap manis dan lemon juice.",
+          "step_en": "Add brown sugar, white sugar, salt, sweet soy sauce and lemon juice."
+        },
+        {
+          "step_id": "Kalan peanut butter dan yang lain-2nya sudah larut, baru nyalahkan kembali apinya (sambil diaduk). Kalan sudah mendidih masukkan garlic, red dice pepper.",
+          "step_en": "Once peanut butter and everything else has dissolved, turn the heat back on (stirring). When boiling, add garlic and red diced pepper."
+        }
       ]
     },
     {
@@ -3359,16 +3467,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Wash the green beans and soaken it in cold water for at least 2 hours, drain thoroughly and boil in 2500 ml water with ginger and pandan leaves until the green beans become soft.",
-        "Add the salt, brown sugar, sugar, cook for another 10 minutes and before it is completely done, add the cornstarch to thicken the watery sauce (mix the cornstarch with a little water).",
-        "To serve: 1 bowl of green beans with coconut milk."
-      ],
-      "method_en": [
-        "Wash the green beans and soak in cold water for at least 2 hours, drain thoroughly and boil in 2500 ml water with ginger and pandan leaves until the green beans become soft.",
-        "Add the salt, brown sugar, sugar, cook for another 10 minutes and before it is completely done, add the cornstarch to thicken the watery sauce (mix the cornstarch with a little water).",
-        "To serve: 1 bowl of green beans with coconut milk."
-      ],
       "notes_id": "Metode ditulis dalam bahasa Inggris pada aslinya. Resep muncul dua kali — Hal. 15 & 16 identik; Hal. 16 diberi tanda 'M'. FLAG: Berkas 2, Hal. 15 & 16. Resep identik muncul dua kali.",
       "notes_en": "Method written in English in the original. Recipe appears twice — Pages 15 & 16 are identical. Page 16 is marked with 'M'. FLAG: File 2, Pages 15 & 16. Identical recipe appears twice.",
       "content_state": "full",
@@ -3428,6 +3526,20 @@
           "name_en": "Coconut milk — to serve",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Wash the green beans and soaken it in cold water for at least 2 hours, drain thoroughly and boil in 2500 ml water with ginger and pandan leaves until the green beans become soft.",
+          "step_en": "Wash the green beans and soak in cold water for at least 2 hours, drain thoroughly and boil in 2500 ml water with ginger and pandan leaves until the green beans become soft."
+        },
+        {
+          "step_id": "Add the salt, brown sugar, sugar, cook for another 10 minutes and before it is completely done, add the cornstarch to thicken the watery sauce (mix the cornstarch with a little water).",
+          "step_en": "Add the salt, brown sugar, sugar, cook for another 10 minutes and before it is completely done, add the cornstarch to thicken the watery sauce (mix the cornstarch with a little water)."
+        },
+        {
+          "step_id": "To serve: 1 bowl of green beans with coconut milk.",
+          "step_en": "To serve: 1 bowl of green beans with coconut milk."
+        }
       ]
     },
     {
@@ -3439,20 +3551,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Marinate the chicken with fish sauce, vinegar and M.S.G. Cut the whole chicken into 8 pieces and fry for ±10 minutes, put aside. After the chicken cool off, shred it into small pieces.",
-        "Boil the rice; 1 part rice to 10 parts of water. e.g.: 1 cup of rice cook with 10 cups of rice and salt.",
-        "Soak the dry Soy bean for 1 night and fry until crispy.",
-        "Crush the shrimp chips and the emping.",
-        "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ teaspoon M.S.G., ¼ teaspoon White Pepper, ¼ tablespoon Soy Sauce."
-      ],
-      "method_en": [
-        "Marinate the chicken with fish sauce, vinegar and M.S.G. Cut the whole chicken into 8 pieces and fry for ±10 minutes, put aside. After the chicken cool off, shred it into small pieces.",
-        "Boil the rice; 1 part rice to 10 parts of water. e.g.: 1 cup of rice cook with 10 cups of rice and salt.",
-        "Soak the dry soy bean for 1 night and fry until crispy.",
-        "Crush the shrimp chips and the emping.",
-        "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ tsp M.S.G., ¼ tsp white pepper, ¼ tbsp soy sauce."
-      ],
       "notes_id": "Topping: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Metode ditulis dalam bahasa Inggris pada aslinya.",
       "notes_en": "Topped with: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Method written in English in the original.",
       "content_state": "full",
@@ -3554,6 +3652,28 @@
           "name_en": "MSG",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Marinate the chicken with fish sauce, vinegar and M.S.G. Cut the whole chicken into 8 pieces and fry for ±10 minutes, put aside. After the chicken cool off, shred it into small pieces.",
+          "step_en": "Marinate the chicken with fish sauce, vinegar and M.S.G. Cut the whole chicken into 8 pieces and fry for ±10 minutes, put aside. After the chicken cool off, shred it into small pieces."
+        },
+        {
+          "step_id": "Boil the rice; 1 part rice to 10 parts of water. e.g.: 1 cup of rice cook with 10 cups of rice and salt.",
+          "step_en": "Boil the rice; 1 part rice to 10 parts of water. e.g.: 1 cup of rice cook with 10 cups of rice and salt."
+        },
+        {
+          "step_id": "Soak the dry Soy bean for 1 night and fry until crispy.",
+          "step_en": "Soak the dry soy bean for 1 night and fry until crispy."
+        },
+        {
+          "step_id": "Crush the shrimp chips and the emping.",
+          "step_en": "Crush the shrimp chips and the emping."
+        },
+        {
+          "step_id": "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ teaspoon M.S.G., ¼ teaspoon White Pepper, ¼ tablespoon Soy Sauce.",
+          "step_en": "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ tsp M.S.G., ¼ tsp white pepper, ¼ tbsp soy sauce."
+        }
       ]
     },
     {
@@ -3565,14 +3685,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Goreng bawang besar dan cabe merah sampai keluar minyah, lalu tambahkan gula, garam dan vetsin.",
-        "Kemudian masukkan daging diatas dengan bumbu."
-      ],
-      "method_en": [
-        "Fry large onions and red chilli until the oil comes out, then add sugar, salt and MSG.",
-        "Then add the meat on top with the spices."
-      ],
       "notes_id": "FLAG: Berkas 3, Hal. 1. Garam dan vetsin disebutkan dalam cara membuat tapi tidak ada di daftar bahan. Takaran tidak tercantum. Harap konfirmasi dengan Ibu.",
       "notes_en": "FLAG: File 3, Page 1. Salt and MSG mentioned in method but not in ingredients list. Quantities not specified. Please confirm with mother.",
       "content_state": "full",
@@ -3608,6 +3720,16 @@
           "name_en": "white sugar",
           "amount": "¾"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Goreng bawang besar dan cabe merah sampai keluar minyah, lalu tambahkan gula, garam dan vetsin.",
+          "step_en": "Fry large onions and red chilli until the oil comes out, then add sugar, salt and MSG."
+        },
+        {
+          "step_id": "Kemudian masukkan daging diatas dengan bumbu.",
+          "step_en": "Then add the meat on top with the spices."
+        }
       ]
     },
     {
@@ -3619,8 +3741,6 @@
       "name_en": "Lamb Curry Spice Blend",
       "headnote_id": "Campuran bumbu kering untuk Gule Kambing — kambing yang dimasak dalam kari 15 rempah aromatik Indonesia. Ini adalah bumbu dasarnya. Cara membuat gule lengkap perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "The dry spice blend for Gule Kambing — lamb stewed in a curry of aromatic Indonesian spices. This is the spice base. The complete cooking method for the stew is to be confirmed with Hertha.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Ini adalah campuran bumbu kering. Cara menggiling, menyimpan, dan menggunakannya untuk gule perlu dikonfirmasi dengan Ibu. Resep muncul dua kali dalam catatan asli dengan takaran yang identik.",
       "notes_en": "This is a dry spice blend. How to grind, store, and use it for the full gule stew to be confirmed with Hertha. Recipe appears twice in the original notes with identical measurements.\n\nFLAG: Berkas 3, Hal. 4 & 6. Confirmed by rereading — this is a dry spice blend recipe (anise, cinnamon, nutmeg, cardamom, coriander, turmeric, cloves, cumin, white pepper) with no method written (no grinding/storage instructions). Appears twice, identical. Ingredients match recipes.json, no discrepancy found.",
       "serves": "",
@@ -3686,7 +3806,8 @@
           "name_en": "white pepper",
           "amount": "4"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-41",
@@ -3697,16 +3818,6 @@
       "name_en": "Coconut Vegetable Soup",
       "headnote_id": "Sayur lodeh khas Ramayani — kuah kacang dan terasi yang diblender halus, disajikan dengan sayuran segar. Salah satu hidangan paling lembut dan menenangkan di menu.",
       "headnote_en": "Ramayani's Sayur Lodeh — a blended peanut and shrimp paste sauce served with vegetables in a luscious coconut milk broth. One of the most soothing dishes on the menu.",
-      "method_id": [
-        "Blender hingga halus: terasi matang, serrano, cabe merah, gula jawa, gula pasir, cuka lahang, garam, peanut butter.",
-        "Masukkan kacang sedikit demi sedikit sambil terus diblender.",
-        "Tuang saus di atas sayuran kukus atau rebus dengan kuah santan."
-      ],
-      "method_en": [
-        "Blend until smooth: cooked shrimp paste, serrano chillies, red chilli, palm sugar, white sugar, cane vinegar, salt, peanut butter.",
-        "Add the peanuts gradually while continuing to blend.",
-        "Pour sauce over steamed or boiled vegetables in coconut milk broth."
-      ],
       "notes_id": "Ini adalah saus bumbu loteh. Untuk sajian lengkap, tambahkan santan dan sayuran sesuai selera.",
       "notes_en": "This is the bumbu sauce base. For the complete dish, add coconut milk and vegetables of your choice.",
       "serves": "",
@@ -3778,6 +3889,20 @@
           "name_en": "Water — enough to fill the container",
           "amount": "secukupnya"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Blender hingga halus: terasi matang, serrano, cabe merah, gula jawa, gula pasir, cuka lahang, garam, peanut butter.",
+          "step_en": "Blend until smooth: cooked shrimp paste, serrano chillies, red chilli, palm sugar, white sugar, cane vinegar, salt, peanut butter."
+        },
+        {
+          "step_id": "Masukkan kacang sedikit demi sedikit sambil terus diblender.",
+          "step_en": "Add the peanuts gradually while continuing to blend."
+        },
+        {
+          "step_id": "Tuang saus di atas sayuran kukus atau rebus dengan kuah santan.",
+          "step_en": "Pour sauce over steamed or boiled vegetables in coconut milk broth."
+        }
       ]
     },
     {
@@ -3789,14 +3914,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "HOT: Aduk semuanya dimanghok, lalu diblender halus.",
-        "MEDIUM: Hanya 3 sendok besar Sambal Terasi + tambahkan lagi Terasi yang sudah dibakar ± secejung jari (satu ruas jari kelingking)."
-      ],
-      "method_en": [
-        "HOT: Mix everything together in a bowl, then blend until smooth.",
-        "MEDIUM: Only 3 large spoons of sambal terasi + add extra roasted shrimp paste approximately the size of one little fingertip."
-      ],
       "notes_id": "Dua versi dalam satu halaman. Takaran 'seukuran ujung jari kelingking' untuk versi medium adalah instruksi asli Ibu. FLAG: Berkas 3, Hal. 12 & 13. Lihat juga Resep 24 (Bumbu Rujak) dan Resep 43 (Bumbu Rujak Buah untuk 36 botol). Ada setidaknya tiga versi Bumbu Rujak dalam koleksi ini.",
       "notes_en": "Two versions on one page. The 'finger-tip' measurement for the medium version is mother's exact instruction. FLAG: File 3, Pages 12 & 13. See also Recipe 24 (Bumbu Rujak) and Recipe 43 (large-batch version). At least three versions of this sauce exist in the collection.",
       "content_state": "full",
@@ -3862,6 +3979,16 @@
           "name_en": "Only 3 large spoons of sambal terasi + add more roasted shrimp paste ± the size of one little fingertip",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "HOT: Aduk semuanya dimanghok, lalu diblender halus.",
+          "step_en": "HOT: Mix everything together in a bowl, then blend until smooth."
+        },
+        {
+          "step_id": "MEDIUM: Hanya 3 sendok besar Sambal Terasi + tambahkan lagi Terasi yang sudah dibakar ± secejung jari (satu ruas jari kelingking).",
+          "step_en": "MEDIUM: Only 3 large spoons of sambal terasi + add extra roasted shrimp paste approximately the size of one little fingertip."
+        }
       ]
     },
     {
@@ -3873,12 +4000,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Semua digodok djadi satu, terachir masukkan Trasinja."
-      ],
-      "method_en": [
-        "All cooked together, the shrimp paste (trasi) goes in last."
-      ],
       "notes_id": "Resep skala produksi untuk membuat 36 botol. Citric acid kemungkinan sebagai pengawet. Catatan editor: Resep 42 dan 43 adalah dua entri Bumbu Rujak Buah yang berbeda (42 = versi Hot/Medium rumahan; 43 = versi skala produksi 36 botol) — bukan duplikat identik, keduanya disalin apa adanya sesuai catatan Ibu. FLAG: Berkas 3, Hal. 15. Harap konfirmasi dengan Ibu.",
       "notes_en": "Production-scale recipe for bottling. The citric acid likely acts as a preservative. Editor's note: Recipes 42 and 43 are two distinct Bumbu Rujak Buah entries (42 = home Hot/Medium versions; 43 = 36-bottle production scale) — not identical duplicates; both transcribed as written by mother. FLAG: File 3, Page 15. Production-scale recipe for 36 bottles. Please confirm with mother.",
       "content_state": "full",
@@ -3934,6 +4055,12 @@
           "name_en": "Citric acid (asam sitrat)",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Semua digodok djadi satu, terachir masukkan Trasinja.",
+          "step_en": "All cooked together, the shrimp paste (trasi) goes in last."
+        }
       ]
     },
     {
@@ -3945,14 +4072,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Lalu rames dg. kelapa macaroon sampai rata dan panggang di oven dg. 275° selama ± 3 jam dengan diaduk-aduk setiap 30 menit.",
-        "Untuk ketan dan lontong: kalan serundengnya sudah kering di blender lagi supaya halus, utk. nasi rames tidak usah diblender."
-      ],
-      "method_en": [
-        "Mix with the desiccated coconut until even and bake in the oven at 275° for ± 3 hours, stirring every 30 minutes.",
-        "For sticky rice and lontong: once the serundeng is dry, blend again until fine. For nasi rames, do not need to blend."
-      ],
       "notes_id": "Untuk ketan dan lontong: serundeng kering lalu diblender halus. Untuk nasi rames: tidak usah diblender. FLAG: Berkas 3, Hal. 16 & 18. Resep muncul dua kali — Hal. 18 (tanpa judul 'with kencur') adalah versi lebih lengkap. Langkah menghaluskan/memblender bumbu-bumbu awal (sebelum dicampur kelapa) tidak tercantum secara eksplisit — hanya cara panggang. Harap konfirmasi dengan Ibu.",
       "notes_en": "Mother's note: 'For ketan and lontong blend until fine after drying. For nasi rames do not blend.' FLAG: File 3, Pages 16 & 18. Recipe appears twice — Page 18 is the more complete version. The initial spice-blending step (before mixing with coconut) is not explicitly written — only the baking method. Please confirm with mother.",
       "content_state": "full",
@@ -4006,6 +4125,16 @@
           "name_en": "A little water for blending the spices",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Lalu rames dg. kelapa macaroon sampai rata dan panggang di oven dg. 275° selama ± 3 jam dengan diaduk-aduk setiap 30 menit.",
+          "step_en": "Mix with the desiccated coconut until even and bake in the oven at 275° for ± 3 hours, stirring every 30 minutes."
+        },
+        {
+          "step_id": "Untuk ketan dan lontong: kalan serundengnya sudah kering di blender lagi supaya halus, utk. nasi rames tidak usah diblender.",
+          "step_en": "For sticky rice and lontong: once the serundeng is dry, blend again until fine. For nasi rames, do not need to blend."
+        }
       ]
     },
     {
@@ -4017,16 +4146,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Tuang sagu, vanilla dan garam kedalam panci, lalu tuang sedikit-sedikit santennya dan terachir blenderan kepalanya.",
-        "Santennya dan kepalanya: Lapisan atas Santen.",
-        "TALAM OLCI: [continued on reverse/upside-down page — see flag]"
-      ],
-      "method_en": [
-        "Pour sago, vanilla and salt into the pot, then gradually add the coconut milk and finally the blended top layer (kepala).",
-        "The coconut milk and kepala form the top layer.",
-        "TALAM OLCI layer: [continued on reverse/upside-down page — see flag]"
-      ],
       "notes_id": "FLAG: Berkas 1, Hal. 16–17. HALAMAN 17 TERBALIK (upside-down) — ini adalah sambungan dari Hal. 16. Teks terbaca dari bawah ke atas. Resep ini memiliki beberapa lapisan (layers) yang kompleks. Harap periksa bersama Ibu secara langsung.\n\nLihat juga Resep 85 (Lapis Pepe) — kelanjutan dari halaman ini (lapisan warna TALAM OLCI).",
       "notes_en": "FLAG: File 1, Pages 16–17. PAGE 17 IS UPSIDE-DOWN — it is the continuation of Page 16. Text reads from bottom to top. This is a complex multi-layered recipe. Please review directly with mother.\n\nSee also Recipe 85 (Lapis Pepe) — the continuation of this page (TALAM OLCI colour layers).",
       "content_state": "full",
@@ -4170,6 +4289,20 @@
           "name_en": "salt",
           "amount": "3"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Tuang sagu, vanilla dan garam kedalam panci, lalu tuang sedikit-sedikit santennya dan terachir blenderan kepalanya.",
+          "step_en": "Pour sago, vanilla and salt into the pot, then gradually add the coconut milk and finally the blended top layer (kepala)."
+        },
+        {
+          "step_id": "Santennya dan kepalanya: Lapisan atas Santen.",
+          "step_en": "The coconut milk and kepala form the top layer."
+        },
+        {
+          "step_id": "TALAM OLCI: [continued on reverse/upside-down page — see flag]",
+          "step_en": "TALAM OLCI layer: [continued on reverse/upside-down page — see flag]"
+        }
       ]
     },
     {
@@ -4181,14 +4314,6 @@
       "name_en": "Lapis Legit (Indonesian Spiced Layer Cake)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Kocokkan merah telur di-fold ke kocokkan roomboter. Terigu di-fold ke kocokkan di atas, dan terakhir kocokan putih telur di-fold ke bawah.",
-        "Oven: First bake 400°. Then broil 400°."
-      ],
-      "method_en": [
-        "Fold the beaten egg yolks into the beaten butter mixture. Fold in the sifted flour, then finally fold the beaten egg whites in from below.",
-        "Oven: first bake at 400°F, then broil at 400°F."
-      ],
       "notes_id": "Catatan Ibu: tiap kali bikin = 6 loyang (2 × 3 loyang/adonan).",
       "notes_en": "Mother's note: each time you make it = 6 trays (2 batches × 3 trays per batch).",
       "content_state": "full",
@@ -4258,6 +4383,16 @@
           "name_en": "Sifted flour",
           "amount": "350"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Kocokkan merah telur di-fold ke kocokkan roomboter. Terigu di-fold ke kocokkan di atas, dan terakhir kocokan putih telur di-fold ke bawah.",
+          "step_en": "Fold the beaten egg yolks into the beaten butter mixture. Fold in the sifted flour, then finally fold the beaten egg whites in from below."
+        },
+        {
+          "step_id": "Oven: First bake 400°. Then broil 400°.",
+          "step_en": "Oven: first bake at 400°F, then broil at 400°F."
+        }
       ]
     },
     {
@@ -4269,16 +4404,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Telur dan gula dikocok ± 10 menit, lalu pisahkan sedikit (sebelum dikasih terigu) dicampur dg. coklat bubuk (terlalu banyak coklat, bolu tidak bisa naik).",
-        "Sisa adonan kocokkan telur diatas dicampur dg. terigu dan kemudian orange crush.",
-        "Cetak dan steam ± ½ menit."
-      ],
-      "method_en": [
-        "Beat eggs and sugar ± 10 minutes, then set aside a little (before adding flour) and mix with cocoa powder (too much chocolate and the cake won't rise).",
-        "The remaining beaten egg mixture above is mixed with flour and then orange crush.",
-        "Pour into moulds and steam ± ½ minute."
-      ],
       "notes_id": "Catatan Ibu: terlalu banyak coklat, bolu tidak bisa naik. FLAG: Berkas 2, Hal. 12 & 13. Waktu steam '± ½ menit' kelihatannya terlalu singkat — kemungkinan ½ jam. Resep muncul dua kali (Hal. 12 & 13); Hal. 13 lebih rapi dan disimpan di sini. Harap konfirmasi dengan Ibu.",
       "notes_en": "Mother's note: 'Too much chocolate and the cake won't rise.' FLAG: File 2, Pages 12 & 13. Steam time of '± ½ minute' seems too short — likely ½ hour. Recipe appears twice — Pages 12 & 13 are identical; Page 13 has cleaner handwriting and is kept here. Please confirm with mother.",
       "content_state": "full",
@@ -4320,6 +4445,20 @@
           "name_en": "cocoa powder",
           "amount": "½"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Telur dan gula dikocok ± 10 menit, lalu pisahkan sedikit (sebelum dikasih terigu) dicampur dg. coklat bubuk (terlalu banyak coklat, bolu tidak bisa naik).",
+          "step_en": "Beat eggs and sugar ± 10 minutes, then set aside a little (before adding flour) and mix with cocoa powder (too much chocolate and the cake won't rise)."
+        },
+        {
+          "step_id": "Sisa adonan kocokkan telur diatas dicampur dg. terigu dan kemudian orange crush.",
+          "step_en": "The remaining beaten egg mixture above is mixed with flour and then orange crush."
+        },
+        {
+          "step_id": "Cetak dan steam ± ½ menit.",
+          "step_en": "Pour into moulds and steam ± ½ minute."
+        }
       ]
     },
     {
@@ -4331,8 +4470,6 @@
       "name_en": "",
       "headnote_id": "Bubur ketan hitam hangat yang manis dengan topping santan — salah satu dessert paling dicintai di Ramayani.",
       "headnote_en": "A warm, sweet, black wild rice pudding topped with coconut milk — one of Ramayani's most beloved desserts.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 2, Hal. 13. Ingredients only — no method written in the original notes. Please confirm cooking steps (soaking/boiling time, order of adding sugar and pandan) with mother.",
       "content_state": "partial",
@@ -4378,7 +4515,8 @@
           "name_en": "several leaves pandan leaves",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-49",
@@ -4389,8 +4527,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Dua resep dalam satu halaman. Keduanya berbagi bahan adonan yang sangat mirip. FLAG: Berkas 2, Hal. 11. Tidak ada cara membuat untuk keduanya. Takaran isian tidak lengkap. Harap konfirmasi dengan Ibu.",
       "notes_en": "Two recipes on one page. Both bapaw and kue ku share very similar dough ingredients. FLAG: File 2, Page 11. Two recipes on one page. No method for either. Filling quantities incomplete. Please confirm with mother.",
       "content_state": "partial",
@@ -4504,7 +4640,8 @@
           "name_en": "sugar, thick coconut milk, vanilla, pandan",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-50",
@@ -4515,8 +4652,6 @@
       "name_en": "Butter Squid Sauce — Cumi Cumi Goreng Mentega",
       "headnote_id": "Saus mentega khas Ramayani untuk cumi-cumi dan udang — perpaduan mentega, Maggi, Worcestershire, dan gula yang menciptakan glazur manis gurih. Cara membuat perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature butter sauce for squid and prawns — a combination of butter, Maggi, Worcestershire, and sugar that creates a sweet-savoury glaze. Cooking method to be confirmed with Hertha.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Tidak ada udang atau cumi dalam daftar bahan — perlu dikonfirmasi dengan Ibu berapa banyak seafood yang digunakan dan langkah-langkah memasaknya.",
       "notes_en": "Method not written in the original notes. No squid or prawns listed in ingredients — confirm with Hertha the quantity of seafood used and the cooking steps.\n\nFLAG: Berkas 3, Hal. 17. Confirmed by rereading — ingredients only, no method written, and no prawns/udang actually listed among the ingredients despite the recipe name 'Bumbu Udang Mentega'. Ingredients match recipes.json, no discrepancy found. Please confirm method and prawn quantity with mother.",
       "serves": "",
@@ -4570,7 +4705,8 @@
           "name_en": "water",
           "amount": "1"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-51",
@@ -4581,16 +4717,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "I Heat the salad oil and saute the chopped onion until soft, add the ground beef, cook until the beef changes in colour and season with curry powder, MSG, salt and pepper. Cook for another 2 minutes and set aside.",
-        "II In a bowl, mix 3 tablespoons of cooked meat above with 2 eggs, spring onion, white pepper. Mix well.",
-        "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla, like a parcel and lower the heat, and cook each side for ± 3 minutes."
-      ],
-      "method_en": [
-        "I Heat the salad oil and saute the chopped onion until soft, add the ground beef, cook until the beef changes in colour and season with curry powder, MSG, salt and pepper. Cook for another 2 minutes and set aside.",
-        "II In a bowl, mix 3 tablespoons of cooked meat above with 2 eggs, spring onion, white pepper. Mix well.",
-        "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla like a parcel and lower the heat, and cook each side for ± 3 minutes."
-      ],
       "notes_id": "Catatan Ibu: diberi label 'M' (mungkin singkatan untuk resep yang sudah diuji). Resep aslinya ditulis dalam bahasa Inggris.",
       "notes_en": "Mother's original notes written in English. Marked with 'M' (possibly indicating a tested/approved recipe).",
       "content_state": "full",
@@ -4667,6 +4793,20 @@
           "name_en": "eggs (telur)",
           "amount": "10"
         }
+      ],
+      "method": [
+        {
+          "step_id": "I Heat the salad oil and saute the chopped onion until soft, add the ground beef, cook until the beef changes in colour and season with curry powder, MSG, salt and pepper. Cook for another 2 minutes and set aside.",
+          "step_en": "I Heat the salad oil and saute the chopped onion until soft, add the ground beef, cook until the beef changes in colour and season with curry powder, MSG, salt and pepper. Cook for another 2 minutes and set aside."
+        },
+        {
+          "step_id": "II In a bowl, mix 3 tablespoons of cooked meat above with 2 eggs, spring onion, white pepper. Mix well.",
+          "step_en": "II In a bowl, mix 3 tablespoons of cooked meat above with 2 eggs, spring onion, white pepper. Mix well."
+        },
+        {
+          "step_id": "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla, like a parcel and lower the heat, and cook each side for ± 3 minutes.",
+          "step_en": "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla like a parcel and lower the heat, and cook each side for ± 3 minutes."
+        }
       ]
     },
     {
@@ -4678,14 +4818,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "1. Semua diblender jadi satu. Ditunggu ½ jam sampai naik.",
-        "2. Toppingnya: Butter, condensed milk, coklat sprinkle, kacang, keju."
-      ],
-      "method_en": [
-        "1. Blend everything together. Leave to rest for ½ hour until risen.",
-        "2. Toppings: butter, condensed milk, chocolate sprinkles, peanuts, cheese."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -4763,6 +4895,16 @@
           "name_en": "TOPPINGS: butter, condensed milk, chocolate sprinkles, peanuts, cheese",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "1. Semua diblender jadi satu. Ditunggu ½ jam sampai naik.",
+          "step_en": "1. Blend everything together. Leave to rest for ½ hour until risen."
+        },
+        {
+          "step_id": "2. Toppingnya: Butter, condensed milk, coklat sprinkle, kacang, keju.",
+          "step_en": "2. Toppings: butter, condensed milk, chocolate sprinkles, peanuts, cheese."
+        }
       ]
     },
     {
@@ -4774,18 +4916,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "I Boil the chicken until tender, put aside. Bring the chicken stock to a boil and season with MSG, white pepper and salt (see recipe).",
-        "II Marinate the chicken with MSG and fish sauce and vinegar and fry ± 7 minutes, set aside. After the chicken cool off, shred the meat for garnish.",
-        "III To make the soup: Fry the paste ingredients with a little oil until cooked and add chopped spring onion and continue to cook for another 30 seconds, add the slice tomatoes, sweet soy sauce and chicken stock, let it boil then add the cabbage and the noodles. After another boil, remove from heat and serve.",
-        "To serve: Topped the noodle with: Shredded fried chicken, celery (chopped), fried shallot."
-      ],
-      "method_en": [
-        "I Boil the chicken until tender, put aside. Bring the chicken stock to a boil and season with MSG, white pepper and salt (see recipe).",
-        "II Marinate the chicken with MSG and fish sauce and vinegar and fry ± 7 minutes, set aside. After the chicken cool off, shred the meat for garnish.",
-        "III To make the soup: Fry the paste ingredients with a little oil until cooked and add chopped spring onion and continue to cook for another 30 seconds, add the sliced tomatoes, sweet soy sauce and chicken stock, let it boil then add the cabbage and the noodles. After another boil, remove from heat and serve.",
-        "To serve: Top the noodle with: shredded fried chicken, celery (chopped), fried shallot."
-      ],
       "notes_id": "Catatan Ibu: Bumbu paste (kemiri, shallot, garlic) diblender sampai halus sebelum digoreng. Resep aslinya ditulis dalam bahasa Inggris, diberi label 'M'.",
       "notes_en": "Mother's original notes in English. Marked with 'M'. Paste of candlenuts, shallot and garlic blended smooth before frying.",
       "content_state": "full",
@@ -4886,6 +5016,24 @@
           "name_en": "ml/g sweet soy sauce (kecap manis)",
           "amount": "50"
         }
+      ],
+      "method": [
+        {
+          "step_id": "I Boil the chicken until tender, put aside. Bring the chicken stock to a boil and season with MSG, white pepper and salt (see recipe).",
+          "step_en": "I Boil the chicken until tender, put aside. Bring the chicken stock to a boil and season with MSG, white pepper and salt (see recipe)."
+        },
+        {
+          "step_id": "II Marinate the chicken with MSG and fish sauce and vinegar and fry ± 7 minutes, set aside. After the chicken cool off, shred the meat for garnish.",
+          "step_en": "II Marinate the chicken with MSG and fish sauce and vinegar and fry ± 7 minutes, set aside. After the chicken cool off, shred the meat for garnish."
+        },
+        {
+          "step_id": "III To make the soup: Fry the paste ingredients with a little oil until cooked and add chopped spring onion and continue to cook for another 30 seconds, add the slice tomatoes, sweet soy sauce and chicken stock, let it boil then add the cabbage and the noodles. After another boil, remove from heat and serve.",
+          "step_en": "III To make the soup: Fry the paste ingredients with a little oil until cooked and add chopped spring onion and continue to cook for another 30 seconds, add the sliced tomatoes, sweet soy sauce and chicken stock, let it boil then add the cabbage and the noodles. After another boil, remove from heat and serve."
+        },
+        {
+          "step_id": "To serve: Topped the noodle with: Shredded fried chicken, celery (chopped), fried shallot.",
+          "step_en": "To serve: Top the noodle with: shredded fried chicken, celery (chopped), fried shallot."
+        }
       ]
     },
     {
@@ -4897,14 +5045,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Stir fry the shallot with margarine until soft, add the flour; keep stirring until the flour becomes light brown and add the remaining ingredients.",
-        "Cook and stir constantly until the sauce becomes thick and smooth."
-      ],
-      "method_en": [
-        "Stir fry the shallot with margarine until soft, add the flour; keep stirring until the flour becomes light brown and add the remaining ingredients.",
-        "Cook and stir constantly until the sauce becomes thick and smooth."
-      ],
       "notes_id": "Catatan Ibu diberi label 'M'. Resep dalam bahasa Inggris. Dipasangkan dengan Mashed Potatoes (Resep 55) untuk Steak Nostalgia.",
       "notes_en": "Mother's original notes in English. Marked 'M'. Paired with Mashed Potatoes (Recipe 55) for Steak Nostalgia.",
       "content_state": "full",
@@ -4970,6 +5110,16 @@
           "name_en": "sweet soy sauce (kecap manis)",
           "amount": "⅛"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Stir fry the shallot with margarine until soft, add the flour; keep stirring until the flour becomes light brown and add the remaining ingredients.",
+          "step_en": "Stir fry the shallot with margarine until soft, add the flour; keep stirring until the flour becomes light brown and add the remaining ingredients."
+        },
+        {
+          "step_id": "Cook and stir constantly until the sauce becomes thick and smooth.",
+          "step_en": "Cook and stir constantly until the sauce becomes thick and smooth."
+        }
       ]
     },
     {
@@ -4981,8 +5131,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Catatan Ibu: diberi label 'M'.",
       "notes_en": "FLAG: Berkas 6, Hal. 6. No method written. Marked 'M' by mother. Paired with Mushroom Sauce (Recipe 54) for Steak Nostalgia. Please confirm method with mother.",
       "content_state": "partial",
@@ -5018,7 +5166,8 @@
           "name_en": "margarine or butter (mentega)",
           "amount": "100"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-56",
@@ -5029,18 +5178,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "I Marinate the sliced chicken with Kikoman, sugar, MSG and a little oil and put aside.",
-        "II Cook noodles.",
-        "III Saute garlic with a little salad oil and add 1 egg and fry until cooked, then add the sliced chicken meat and shrimp. Turn frequently until all cooked, then add all the vegetables and chicken broth. Season with: Kikoman, MSG, white pepper. After it boils then add the noodle and serve.",
-        "Garnish with fried shallot."
-      ],
-      "method_en": [
-        "I Marinate the sliced chicken with Kikoman, sugar, MSG and a little oil and put aside.",
-        "II Cook noodles.",
-        "III Saute garlic with a little salad oil and add 1 egg and fry until cooked, then add the sliced chicken meat and shrimp. Turn frequently until all cooked, then add all the vegetables and chicken broth. Season with: Kikoman, MSG, white pepper. After it boils then add the noodle and serve.",
-        "Garnish with fried shallot."
-      ],
       "notes_id": "Catatan Ibu diberi label 'M'. Resep dalam bahasa Inggris. Resep gaya restoran diberi label 'Hyatt'.",
       "notes_en": "Mother's original notes in English. Marked 'M'. A restaurant-style recipe labelled 'Hyatt'.",
       "content_state": "full",
@@ -5136,6 +5273,24 @@
           "name_en": "Chicken stock (kaldu ayam) as needed",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "I Marinate the sliced chicken with Kikoman, sugar, MSG and a little oil and put aside.",
+          "step_en": "I Marinate the sliced chicken with Kikoman, sugar, MSG and a little oil and put aside."
+        },
+        {
+          "step_id": "II Cook noodles.",
+          "step_en": "II Cook noodles."
+        },
+        {
+          "step_id": "III Saute garlic with a little salad oil and add 1 egg and fry until cooked, then add the sliced chicken meat and shrimp. Turn frequently until all cooked, then add all the vegetables and chicken broth. Season with: Kikoman, MSG, white pepper. After it boils then add the noodle and serve.",
+          "step_en": "III Saute garlic with a little salad oil and add 1 egg and fry until cooked, then add the sliced chicken meat and shrimp. Turn frequently until all cooked, then add all the vegetables and chicken broth. Season with: Kikoman, MSG, white pepper. After it boils then add the noodle and serve."
+        },
+        {
+          "step_id": "Garnish with fried shallot.",
+          "step_en": "Garnish with fried shallot."
+        }
       ]
     },
     {
@@ -5147,14 +5302,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "1. Elbow Macaroni cooked for 6 minutes. Bacon → fried and toss together with the sauce and bake at 350° for ..... minutes.",
-        "2. Topper with more cheese."
-      ],
-      "method_en": [
-        "1. Elbow macaroni cooked for 6 minutes. Bacon → fried and toss together with the sauce and bake at 350°F for ..... minutes.",
-        "2. Top with more cheese."
-      ],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 6, Hal. 8. Baking time left blank in the original ('for ..... minutes') — mother did not write a duration. No quantities given for sauce ingredients (butter/flour/milk/cheese amounts unspecified). Method is otherwise present but incomplete on these two points.",
       "content_state": "full",
@@ -5184,6 +5331,16 @@
           "name_en": "bacon, fried",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "1. Elbow Macaroni cooked for 6 minutes. Bacon → fried and toss together with the sauce and bake at 350° for ..... minutes.",
+          "step_en": "1. Elbow macaroni cooked for 6 minutes. Bacon → fried and toss together with the sauce and bake at 350°F for ..... minutes."
+        },
+        {
+          "step_id": "2. Topper with more cheese.",
+          "step_en": "2. Top with more cheese."
+        }
       ]
     },
     {
@@ -5195,14 +5352,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Diadul jadi satu, kecuali macaroninya.",
-        "Baken 25 menit, 370°."
-      ],
-      "method_en": [
-        "Mix together, except the macaroni.",
-        "Bake 25 minutes at 370°F."
-      ],
       "notes_id": "Catatan: +1 pak Tofu (optional). Suhu oven dalam Fahrenheit.",
       "notes_en": "Mother's note: '+1 pack Tofu (optional).' Oven temperature in Fahrenheit.",
       "content_state": "full",
@@ -5286,6 +5435,16 @@
           "name_en": "cheddar cheese (keju cheddar)",
           "amount": "± 2"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Diadul jadi satu, kecuali macaroninya.",
+          "step_en": "Mix together, except the macaroni."
+        },
+        {
+          "step_id": "Baken 25 menit, 370°.",
+          "step_en": "Bake 25 minutes at 370°F."
+        }
       ]
     },
     {
@@ -5297,20 +5456,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Bruine bean direndam semalam. Beef rib digodong, lalu angkat dagingnya, dipotong ½, buong tulangnya, buang minyak-2nya.",
-        "Bruine bean digodong dg. air daging pompe empuk, lalu dihancurkan kecil, bumbu-2: mince, pala, vetsin, garam, gula sedikit.",
-        "Sesudah kacangnya hancur masukkan carrot, celery dan green onion.",
-        "Onion putih digogorengim dg. mentega sampai kuning, lalu campurkan ke dlm soup-nya.",
-        "Note: tidak palue sayuran lebih enak."
-      ],
-      "method_en": [
-        "Soak brown beans overnight. Boil beef rib, then lift out the meat, cut in half, discard bones, remove the fat.",
-        "Cook brown beans in the beef broth until soft, then break down the beans. Season with: mince, nutmeg, MSG, salt, a little sugar.",
-        "Once the beans are broken down, add carrot, celery and green onion.",
-        "Fry white onion with butter until golden, then mix into the soup.",
-        "Note: 'Without the vegetables it tastes better.' (mother's note)"
-      ],
       "notes_id": "Catatan Ibu: 'tidak palue sayuran lebih enak.' (Written at the bottom of the original page.)",
       "notes_en": "Mother's note: 'Without the vegetables it tastes better.' Written at the bottom of the original page.",
       "content_state": "full",
@@ -5376,6 +5521,28 @@
           "name_en": "A little sugar",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Bruine bean direndam semalam. Beef rib digodong, lalu angkat dagingnya, dipotong ½, buong tulangnya, buang minyak-2nya.",
+          "step_en": "Soak brown beans overnight. Boil beef rib, then lift out the meat, cut in half, discard bones, remove the fat."
+        },
+        {
+          "step_id": "Bruine bean digodong dg. air daging pompe empuk, lalu dihancurkan kecil, bumbu-2: mince, pala, vetsin, garam, gula sedikit.",
+          "step_en": "Cook brown beans in the beef broth until soft, then break down the beans. Season with: mince, nutmeg, MSG, salt, a little sugar."
+        },
+        {
+          "step_id": "Sesudah kacangnya hancur masukkan carrot, celery dan green onion.",
+          "step_en": "Once the beans are broken down, add carrot, celery and green onion."
+        },
+        {
+          "step_id": "Onion putih digogorengim dg. mentega sampai kuning, lalu campurkan ke dlm soup-nya.",
+          "step_en": "Fry white onion with butter until golden, then mix into the soup."
+        },
+        {
+          "step_id": "Note: tidak palue sayuran lebih enak.",
+          "step_en": "Note: 'Without the vegetables it tastes better.' (mother's note)"
+        }
       ]
     },
     {
@@ -5387,8 +5554,6 @@
       "name_en": "Indonesian Laksa — Spiced Coconut Noodle Soup",
       "headnote_id": "Laksa khas Indonesia versi Ramayani — sup mie berempah dengan kuah santan. Catatan Ibu menyebutkan pelengkap: bihun, toge, ayam, telur, dan kerupuk. Cara membuat perlu dikonfirmasi.",
       "headnote_en": "Ramayani's Indonesian-style Laksa — a spiced coconut noodle soup. Hertha's notes list the accompaniments: rice vermicelli, bean sprouts, chicken, egg, and crackers. Full method to be confirmed.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Lihat juga Resep 61 — Laksa versi Malaysia dari Ibu. Harap konfirmasi dengan Ibu.",
       "notes_en": "Ingredients only — no quantities, no method. See also Recipe 61 — My Mum's Malaysian Laksa. Please confirm full recipe with Hertha.\n\nFLAG: Berkas 5, Hal. 22. Confirmed by rereading — ingredients only, no quantities and no method written. Mother's note lists accompaniments only: bihun, toge, ayam, telur, tauge, kerupuk. Ingredients match recipes.json, no discrepancy found. See also Recipe 61 (My Mum's Laksa, Malaysian) which does have a full method and may be a useful reference.",
       "serves": "",
@@ -5472,7 +5637,8 @@
           "name_en": "To serve: rice vermicelli, bean sprouts, chicken, egg, crackers",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-61",
@@ -5483,16 +5649,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Fry the spice paste for 30 minutes. Then add the ground prawns and fry for 5 minutes more with 2 tablespoons coconut milk until boil.",
-        "Add the remaining thick coconut milk and salt and sugar to taste and cook over medium heat for 5 minutes more.",
-        "To serve: Bihun, toge, slice tahu goreng, udang, otek-otek, cucumber, mint leaves, sambol oelek."
-      ],
-      "method_en": [
-        "Fry the spice paste for 30 minutes. Then add the ground prawns and fry for 5 minutes more with 2 tablespoons coconut milk until boil.",
-        "Add the remaining thick coconut milk and salt and sugar to taste and cook over medium heat for 5 minutes more.",
-        "To serve: rice vermicelli, bean sprouts, sliced fried tofu, shrimp, otak-otak, cucumber, mint leaves, sambal oelek."
-      ],
       "notes_id": "Judul asli 'My Mum's Laksa' — resep ini diwariskan kepada Ibu dari ibunya sendiri. Ditulis dalam bahasa Inggris pada aslinya.",
       "notes_en": "Mother's original notes written in English. Title 'My Mum's Laksa' — this recipe was passed down to her from her own mother.",
       "content_state": "full",
@@ -5581,6 +5737,20 @@
           "name_en": "Rice vermicelli, bean sprouts, fried tofu sliced, shrimp, otak-otak, cucumber, mint leaves, sambal oelek",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Fry the spice paste for 30 minutes. Then add the ground prawns and fry for 5 minutes more with 2 tablespoons coconut milk until boil.",
+          "step_en": "Fry the spice paste for 30 minutes. Then add the ground prawns and fry for 5 minutes more with 2 tablespoons coconut milk until boil."
+        },
+        {
+          "step_id": "Add the remaining thick coconut milk and salt and sugar to taste and cook over medium heat for 5 minutes more.",
+          "step_en": "Add the remaining thick coconut milk and salt and sugar to taste and cook over medium heat for 5 minutes more."
+        },
+        {
+          "step_id": "To serve: Bihun, toge, slice tahu goreng, udang, otek-otek, cucumber, mint leaves, sambol oelek.",
+          "step_en": "To serve: rice vermicelli, bean sprouts, sliced fried tofu, shrimp, otak-otak, cucumber, mint leaves, sambal oelek."
+        }
       ]
     },
     {
@@ -5592,14 +5762,6 @@
       "name_en": "Gudeg (Jackfruit Stew)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Red curry digorengin dengan minyak, lalu ditambah 1 blek santan dan 1 blek air, dan godok nangkanya sampai empuk (± ½ jam), dan semua bumbu.",
-        "Kalau sudah mulai empuk, masukkan tempe dan daging ayamnya, dan sisa santannya."
-      ],
-      "method_en": [
-        "Fry the red curry paste in oil, then add 1 can of coconut milk and 1 can of water, and boil the jackfruit until tender (± ½ hour), along with all the spices.",
-        "Once it starts to become tender, add the tempeh and the chicken, along with the remaining coconut milk."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -5665,6 +5827,16 @@
           "name_en": "salt",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Red curry digorengin dengan minyak, lalu ditambah 1 blek santan dan 1 blek air, dan godok nangkanya sampai empuk (± ½ jam), dan semua bumbu.",
+          "step_en": "Fry the red curry paste in oil, then add 1 can of coconut milk and 1 can of water, and boil the jackfruit until tender (± ½ hour), along with all the spices."
+        },
+        {
+          "step_id": "Kalau sudah mulai empuk, masukkan tempe dan daging ayamnya, dan sisa santannya.",
+          "step_en": "Once it starts to become tender, add the tempeh and the chicken, along with the remaining coconut milk."
+        }
       ]
     },
     {
@@ -5676,8 +5848,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 4, Hal. 16. Page written sideways. Two versions with different quantities, both transcribed here. No method written for either version. Please confirm cooking steps with mother.",
       "content_state": "partial",
@@ -5737,7 +5907,8 @@
           "name_en": "VERSION 2: pandan leaves to taste",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-64",
@@ -5748,20 +5919,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Heat salt in a wide frying pan over medium-high heat, crumble in ground beef and cook, stirring, until browned (about 5 minutes). Add onion and cook until limp.",
-        "Discard any fat, stir in tomatoes and their liquid, kidney beans and their liquid, chilli powder, oregano and cumin.",
-        "Simmer, uncovered, stirring occasionally, to break up tomatoes for about 15 minutes.",
-        "Garnish each serving with several avocado slices and coriander.",
-        "Makes about 4 servings."
-      ],
-      "method_en": [
-        "Heat salt in a wide frying pan over medium-high heat, crumble in ground beef and cook, stirring, until browned (about 5 minutes). Add onion and cook until limp.",
-        "Discard any fat, stir in tomatoes and their liquid, kidney beans and their liquid, chilli powder, oregano and cumin.",
-        "Simmer, uncovered, stirring occasionally, to break up tomatoes for about 15 minutes.",
-        "Garnish each serving with several avocado slices and coriander.",
-        "Makes about 4 servings."
-      ],
       "notes_id": "Catatan Ibu: resep dalam bahasa Inggris.",
       "notes_en": "Mother's original notes written in English.",
       "content_state": "full",
@@ -5839,6 +5996,28 @@
           "name_en": "Cilantro",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Heat salt in a wide frying pan over medium-high heat, crumble in ground beef and cook, stirring, until browned (about 5 minutes). Add onion and cook until limp.",
+          "step_en": "Heat salt in a wide frying pan over medium-high heat, crumble in ground beef and cook, stirring, until browned (about 5 minutes). Add onion and cook until limp."
+        },
+        {
+          "step_id": "Discard any fat, stir in tomatoes and their liquid, kidney beans and their liquid, chilli powder, oregano and cumin.",
+          "step_en": "Discard any fat, stir in tomatoes and their liquid, kidney beans and their liquid, chilli powder, oregano and cumin."
+        },
+        {
+          "step_id": "Simmer, uncovered, stirring occasionally, to break up tomatoes for about 15 minutes.",
+          "step_en": "Simmer, uncovered, stirring occasionally, to break up tomatoes for about 15 minutes."
+        },
+        {
+          "step_id": "Garnish each serving with several avocado slices and coriander.",
+          "step_en": "Garnish each serving with several avocado slices and coriander."
+        },
+        {
+          "step_id": "Makes about 4 servings.",
+          "step_en": "Makes about 4 servings."
+        }
       ]
     },
     {
@@ -5850,8 +6029,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 4, Hal. 3. Ingredients only — no method written in the original notes (no beating/folding order, pan/oven instructions). Please confirm with mother.",
       "content_state": "partial",
@@ -5929,7 +6106,8 @@
           "name_en": "cream of tartar",
           "amount": "1"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-66",
@@ -5940,18 +6118,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Keringkan di oven 250°, sampai airnya hilang.",
-        "Bumbunya: 14 Bawang besar + 2 kaleng Red dice pepper #10 — ini digogorengim sampai keluar minyaknya.",
-        "Lalu tambahkan: 3 pak brown sugar, ¾ cup garam, vetsin.",
-        "Terachir aduk daging diatas dengan bumbu."
-      ],
-      "method_en": [
-        "Dry the beef in oven at 250°F until all moisture is gone.",
-        "Spice paste: 14 large onions + 2 cans diced red pepper — fry together until the oil comes out.",
-        "Then add: 3 boxes brown sugar, ¾ cup salt, MSG.",
-        "Finally fold the dried meat into the spice paste."
-      ],
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
@@ -6035,6 +6201,24 @@
           "name_en": "Finally fold the meat above into the spice paste",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Keringkan di oven 250°, sampai airnya hilang.",
+          "step_en": "Dry the beef in oven at 250°F until all moisture is gone."
+        },
+        {
+          "step_id": "Bumbunya: 14 Bawang besar + 2 kaleng Red dice pepper #10 — ini digogorengim sampai keluar minyaknya.",
+          "step_en": "Spice paste: 14 large onions + 2 cans diced red pepper — fry together until the oil comes out."
+        },
+        {
+          "step_id": "Lalu tambahkan: 3 pak brown sugar, ¾ cup garam, vetsin.",
+          "step_en": "Then add: 3 boxes brown sugar, ¾ cup salt, MSG."
+        },
+        {
+          "step_id": "Terachir aduk daging diatas dengan bumbu.",
+          "step_en": "Finally fold the dried meat into the spice paste."
+        }
       ]
     },
     {
@@ -6046,14 +6230,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "EMPEK-EMPEK: Semua dikocek dan harus langsung disteamed ± ¾ jam lamanya.",
-        "CUKA: Masak semuanya sampai mendidih, lalu masukkan: 225 gram garlic diblender dg. air dari yang 60 cup."
-      ],
-      "method_en": [
-        "EMPEK-EMPEK: Mix everything together and must be steamed immediately for ± ¾ hour.",
-        "VINEGAR SAUCE: Cook everything until boiling, then add: 225 g garlic blended with water from the 60 cups."
-      ],
       "notes_id": "FLAG: Berkas 4, Hal. 5–6. Versi kedua cuka (Hal. 6, 'Cuka Empek-empek') identik dengan yang di atas. Resep cuka adalah skala produksi restoran.",
       "notes_en": "FLAG: File 4, Pages 5–6. A second version of the vinegar sauce (Page 6, 'Cuka Empek-empek') is identical to the above. Sauce recipe is production/restaurant scale.",
       "content_state": "full",
@@ -6163,6 +6339,16 @@
           "name_en": "Cook everything until boiling, then add: 225 g garlic blended with water from the 60 cups.",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "EMPEK-EMPEK: Semua dikocek dan harus langsung disteamed ± ¾ jam lamanya.",
+          "step_en": "EMPEK-EMPEK: Mix everything together and must be steamed immediately for ± ¾ hour."
+        },
+        {
+          "step_id": "CUKA: Masak semuanya sampai mendidih, lalu masukkan: 225 gram garlic diblender dg. air dari yang 60 cup.",
+          "step_en": "VINEGAR SAUCE: Cook everything until boiling, then add: 225 g garlic blended with water from the 60 cups."
+        }
       ]
     },
     {
@@ -6174,8 +6360,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 4, Hal. 7. No method written, and no quantities given for the seasoning ingredients (fish sauce, garlic powder, salt, pepper). Please confirm with mother.",
       "content_state": "partial",
@@ -6235,7 +6419,8 @@
           "name_en": "pepper (merica)",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-69",
@@ -6246,8 +6431,6 @@
       "name_en": "Frikadel Jagung (Corn Fritters)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "partial",
@@ -6306,7 +6489,8 @@
           "name_en": "spring onion",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-70",
@@ -6317,14 +6501,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "1. Bawang putih diigorengim, lalu masukkan Cabe merah dg. minyak sedikit-sedikit digorengim lagi. Sesudah itu masukkan bumbu-bumbu. Aduk digogorengim. Sesudah itu masukkan bumbu-bumbu lagi. Kala sudah entuk dipanaskan kembali.",
-        "2. Goreng udang kering lalu dipisahkan. Sesudah garing masukkan parte. Aduk dan kasih bumbu-bumbu lagi."
-      ],
-      "method_en": [
-        "1. Fry the garlic, then add the red chilli with a little oil and fry again. After that add the spices. Stir and fry. After that add the spices again. When done, reheat when needed.",
-        "2. Fry dried shrimp then set aside. Once crispy add the portion. Stir and season again."
-      ],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 4, Hal. 9–10. BOTH PAGES WRITTEN SIDEWAYS. Very irregular handwriting, several words unclear (e.g. 'Serma' in first ingredient line could not be confidently identified). Recipe appears to be a Gudeg variation and step 2 references dried shrimp not listed among these ingredients — the method may be tangled with another recipe's notes. Please confirm full ingredients and correct method sequence with mother.",
       "content_state": "full",
@@ -6408,6 +6584,16 @@
           "name_en": "sliced chicken",
           "amount": "5"
         }
+      ],
+      "method": [
+        {
+          "step_id": "1. Bawang putih diigorengim, lalu masukkan Cabe merah dg. minyak sedikit-sedikit digorengim lagi. Sesudah itu masukkan bumbu-bumbu. Aduk digogorengim. Sesudah itu masukkan bumbu-bumbu lagi. Kala sudah entuk dipanaskan kembali.",
+          "step_en": "1. Fry the garlic, then add the red chilli with a little oil and fry again. After that add the spices. Stir and fry. After that add the spices again. When done, reheat when needed."
+        },
+        {
+          "step_id": "2. Goreng udang kering lalu dipisahkan. Sesudah garing masukkan parte. Aduk dan kasih bumbu-bumbu lagi.",
+          "step_en": "2. Fry dried shrimp then set aside. Once crispy add the portion. Stir and season again."
+        }
       ]
     },
     {
@@ -6419,14 +6605,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "VERSI 1: Santen dipanaskan, lalu masukkan: Margarine + Garam. Kemudian jadikan satu dengan Terigu. Digiling di no.3.",
-        "VERSI 2 & 3: Sama dengan Versi 1."
-      ],
-      "method_en": [
-        "VERSION 1: Heat the coconut milk, then add margarine and salt. Then combine with flour. Roll at setting no.3.",
-        "VERSION 2 & 3: Same as Version 1."
-      ],
       "notes_id": "Tiga versi kulit pastel muncul di tiga halaman berbeda (Berkas 5, Hal. 12, 14, 16), semua menggunakan santen sebagai pengganti air. Takaran santen sedikit berbeda antar versi.",
       "notes_en": "FLAG: Berkas 5, Hal. 12, 14, 16. Three versions of this pastry skin appear across three separate pages with slightly different coconut milk quantities. All use coconut milk instead of water. Please confirm which version is preferred with mother.",
       "content_state": "full",
@@ -6498,6 +6676,16 @@
           "name_en": "Same as Version 2 — Roll at setting no. 3",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "VERSI 1: Santen dipanaskan, lalu masukkan: Margarine + Garam. Kemudian jadikan satu dengan Terigu. Digiling di no.3.",
+          "step_en": "VERSION 1: Heat the coconut milk, then add margarine and salt. Then combine with flour. Roll at setting no.3."
+        },
+        {
+          "step_id": "VERSI 2 & 3: Sama dengan Versi 1.",
+          "step_en": "VERSION 2 & 3: Same as Version 1."
+        }
       ]
     },
     {
@@ -6509,8 +6697,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 5, Hal. 12. No quantities written for any ingredient, and no method beyond the note 'digiling no.3' (roll pastry at setting 3, which relates to Recipe 71's pastry skin rather than this filling itself). Please confirm ingredient amounts and cooking method with mother.",
       "content_state": "partial",
@@ -6600,7 +6786,8 @@
           "name_en": "note: roll pastry at setting no. 3 (for wrapping the filling)",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-73",
@@ -6611,14 +6798,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "KULIT RISOLES: Blender air dahulu, kemudian masukkan terigu, garam. Bila sudah terasa rata, baru masukkan telurnya.",
-        "KULIT LUMPIA BASAH: Semua dicampur (blender sebentar) dan dadar tipis."
-      ],
-      "method_en": [
-        "RISOLES SKIN: Blend water first, then add flour and salt. Once smooth, add the eggs.",
-        "FRESH SPRING ROLL SKIN: Mix everything together (blend briefly) and make thin crepe-like pancakes."
-      ],
       "notes_id": "Resep Lumpia Basah dikreditkan pada buku masak Sisca Soewitomo, Hal. 59.",
       "notes_en": "The Lumpia Basah recipe is credited to Sisca Soewitomo's cookbook, page 59 — mother noted her source.",
       "content_state": "full",
@@ -6696,6 +6875,16 @@
           "name_en": "frying oil (minyak goreng)",
           "amount": "4"
         }
+      ],
+      "method": [
+        {
+          "step_id": "KULIT RISOLES: Blender air dahulu, kemudian masukkan terigu, garam. Bila sudah terasa rata, baru masukkan telurnya.",
+          "step_en": "RISOLES SKIN: Blend water first, then add flour and salt. Once smooth, add the eggs."
+        },
+        {
+          "step_id": "KULIT LUMPIA BASAH: Semua dicampur (blender sebentar) dan dadar tipis.",
+          "step_en": "FRESH SPRING ROLL SKIN: Mix everything together (blend briefly) and make thin crepe-like pancakes."
+        }
       ]
     },
     {
@@ -6707,8 +6896,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Tidak ditulis dalam catatan asli. Dua resep serupa di halaman berbeda (pp.22 & 24) — perbedaan utama: Lumpia memakai 'daging egg roll', Lumbiah memakai ground chicken. Kulit lumpia lihat Resep 73.",
       "notes_en": "FLAG: Berkas 5, Hal. 22 & 24. METHOD: Not written in the original notes. Two very similar recipes; main difference is Lumpia uses unspecified 'egg roll meat' while Lumbiah uses ground chicken. For skin see Recipe 73. Please confirm method with mother.",
       "content_state": "partial",
@@ -6815,7 +7002,8 @@
           "name_en": "Hot chilli",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-75",
@@ -6826,18 +7014,6 @@
       "name_en": "Kroket Ragout (Ragout Croquettes)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Bawang slice digogorengim dg. mentega. Sesudah matang masukkan terigunnya sedikit-sedikit. Dipanci lain satukan chicken broth, susu, gula, garam, vetsin, pepper, nutmeg, lalu dipanaskan.",
-        "Campuran susu + chicken broth tadi. Ke terigu saunifte di aduk. Sesudah itu masukkan semua bahannya ke dalam terigu, kasih bumbu lagi yg. enak.",
-        "Wortel di macronave / udang di-suir ½ dulu dg. margarine. Ayam di-suir ½ jadi ½ dg. margarine. Sesudah terigu matang, kala yg besar dihalusi kecil + jumpit + terigu saunifte. Ke terigu saunifte dan masukkan semua bahan bahan.",
-        "Cobain lalu masukkan semua bahan."
-      ],
-      "method_en": [
-        "Fry sliced onion with butter. Once cooked, add flour gradually. In another pan combine chicken broth, milk, sugar, salt, MSG, pepper, nutmeg, then heat.",
-        "Combine the milk + chicken broth mixture into the flour roux and stir. After that add all the ingredients into the flour, season again to taste.",
-        "Microwave the carrot / sauté the shrimp briefly with margarine. Sauté the chicken briefly with margarine. Once the flour is cooked, break any large pieces small + form + flour roux. Add into the roux all the ingredients.",
-        "Taste and adjust, then add all ingredients."
-      ],
       "notes_id": "1 lbs udang bisa dipakai sebagai pengganti ayam. Tulisan agak tidak teratur di beberapa bagian — beberapa istilah menggunakan singkatan pribadi Ibu ('suir', 'saunifte', 'rebos').",
       "notes_en": "FLAG: Berkas 5, Hal. 11. Mother's note: '1 lb shrimp instead of chicken.' Writing uses mother's personal abbreviations ('suir', 'saunifte', 'rebos') — please confirm these terms with mother.",
       "content_state": "full",
@@ -6933,6 +7109,24 @@
           "name_en": "Chopped celery",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Bawang slice digogorengim dg. mentega. Sesudah matang masukkan terigunnya sedikit-sedikit. Dipanci lain satukan chicken broth, susu, gula, garam, vetsin, pepper, nutmeg, lalu dipanaskan.",
+          "step_en": "Fry sliced onion with butter. Once cooked, add flour gradually. In another pan combine chicken broth, milk, sugar, salt, MSG, pepper, nutmeg, then heat."
+        },
+        {
+          "step_id": "Campuran susu + chicken broth tadi. Ke terigu saunifte di aduk. Sesudah itu masukkan semua bahannya ke dalam terigu, kasih bumbu lagi yg. enak.",
+          "step_en": "Combine the milk + chicken broth mixture into the flour roux and stir. After that add all the ingredients into the flour, season again to taste."
+        },
+        {
+          "step_id": "Wortel di macronave / udang di-suir ½ dulu dg. margarine. Ayam di-suir ½ jadi ½ dg. margarine. Sesudah terigu matang, kala yg besar dihalusi kecil + jumpit + terigu saunifte. Ke terigu saunifte dan masukkan semua bahan bahan.",
+          "step_en": "Microwave the carrot / sauté the shrimp briefly with margarine. Sauté the chicken briefly with margarine. Once the flour is cooked, break any large pieces small + form + flour roux. Add into the roux all the ingredients."
+        },
+        {
+          "step_id": "Cobain lalu masukkan semua bahan.",
+          "step_en": "Taste and adjust, then add all ingredients."
+        }
       ]
     },
     {
@@ -6944,14 +7138,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Digodok sampai wangi, lalu masukkan.",
-        "5 pak = 15 lbs. Gula pasir. Godok terus sampai jumlahnya hancur."
-      ],
-      "method_en": [
-        "Cook until fragrant, then add.",
-        "5 packs = 15 lbs sugar. Keep cooking until the sugar is completely dissolved."
-      ],
       "notes_id": "Dua versi hampir identik (Hal. 6 dan Hal. 8) — Versi 2 menggunakan botol plastik. Cara membuat sangat singkat, kemungkinan singkatan Ibu untuk resep yang sudah dikuasai.",
       "notes_en": "FLAG: Berkas 5, Hal. 6 & 8. Two nearly identical versions; Version 2 specifies plastic bottles. Method is very brief — please confirm full steps with mother, including cooking time and straining.",
       "content_state": "full",
@@ -7005,6 +7191,16 @@
           "name_en": "= 15 lbs (6.8 kg) white sugar",
           "amount": "5"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Digodok sampai wangi, lalu masukkan.",
+          "step_en": "Cook until fragrant, then add."
+        },
+        {
+          "step_id": "5 pak = 15 lbs. Gula pasir. Godok terus sampai jumlahnya hancur.",
+          "step_en": "5 packs = 15 lbs sugar. Keep cooking until the sugar is completely dissolved."
+        }
       ]
     },
     {
@@ -7016,14 +7212,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Masak semuanya sampai mendidih, lalu masukkan: 225 gram Garlic, diblender dg. air dari yang 60 cup.",
-        "Cuka Final Iris, brown sugar, gula pasir, garam, cabe merah, rawit — semuanya dimasak."
-      ],
-      "method_en": [
-        "Cook everything until boiling, then add: 225 g garlic, blended with water set aside from the batch.",
-        "Cane vinegar, brown sugar, white sugar, salt, red chilli, bird's eye chilli — all cooked together."
-      ],
       "notes_id": "Halaman asli memiliki tiga kolom ukuran (1 adonan, ½ adonan, ¼ adonan) — hanya dua kolom pertama tertranskripsi di sini. Cuka lahang juga termasuk bahan tapi takarannya tidak jelas dalam konteks resep ini. Catatan: langkah cara membuat pada halaman ini tampak mengulang teks dari Resep 67 (Cuka Empek-Empek) — kemungkinan kesalahan transkripsi atau bumbu yang tumpang tindih.",
       "notes_en": "FLAG: Berkas 3, Hal. 22. Three quantity columns exist in the original (full, half, quarter batch) — only two are captured here. Cane vinegar (cuka lahang) is part of the recipe but its quantity is unclear in this context. The method text closely mirrors Recipe 67's vinegar sauce method, suggesting possible cross-contamination between the two pages — please confirm the correct method with mother.",
       "content_state": "full",
@@ -7119,6 +7307,16 @@
           "name_en": "Bird's eye chilli",
           "amount": "to taste"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Masak semuanya sampai mendidih, lalu masukkan: 225 gram Garlic, diblender dg. air dari yang 60 cup.",
+          "step_en": "Cook everything until boiling, then add: 225 g garlic, blended with water set aside from the batch."
+        },
+        {
+          "step_id": "Cuka Final Iris, brown sugar, gula pasir, garam, cabe merah, rawit — semuanya dimasak.",
+          "step_en": "Cane vinegar, brown sugar, white sugar, salt, red chilli, bird's eye chilli — all cooked together."
+        }
       ]
     },
     {
@@ -7130,8 +7328,6 @@
       "name_en": "Bumbu Tumis Ramayani (Ramayani Stir-Fry Sauce Base)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Catatan Ibu: 'Bumbu Thai = Kang Panang curry.'",
       "notes_en": "Mother's note: 'Bumbu Thai = Kang Panang curry.'",
       "content_state": "partial",
@@ -7197,7 +7393,8 @@
           "name_en": "Sugar",
           "amount": "3¼"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-79",
@@ -7208,12 +7405,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Semua daging dimasak dulu dan buang semua airnya, lalu tambahkan ke sausnya."
-      ],
-      "method_en": [
-        "Cooked all the meat first and discard all the water and add to the sauce."
-      ],
       "notes_id": "Catatan Ibu: 'Singapore 2000.' Cara membuat sangat singkat.",
       "notes_en": "FLAG: Berkas 8, Hal. 1. Method is very brief — please confirm whether garlic and chilli are sautéed first before combining with the sauce, since that step is not explicitly written.",
       "content_state": "full",
@@ -7279,6 +7470,12 @@
           "name_en": "Serve with: shrimp, chicken, beef or combination seafood",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Semua daging dimasak dulu dan buang semua airnya, lalu tambahkan ke sausnya.",
+          "step_en": "Cooked all the meat first and discard all the water and add to the sauce."
+        }
       ]
     },
     {
@@ -7290,16 +7487,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Nasi Hainan: Bawang putih digogorengim, lalu masukkan beras. Gogorengim sampai kuning. Sesudah itu masukkan kaldu ayam dan tutup. Masak sampai matang.",
-        "Nasi Tim: 1 bagian beras dengan 2½ bagian air.",
-        "Bubur: 1 bagian beras dengan 10 bagian air."
-      ],
-      "method_en": [
-        "Hainanese Rice: Fry garlic, then add rice. Fry until golden. Then add chicken broth and cover. Cook until done.",
-        "Nasi Tim: 1 part rice to 2½ parts water.",
-        "Rice Porridge: 1 part rice to 10 parts water."
-      ],
       "notes_id": "'5 Can djuhe' tidak jelas — kemungkinan jahe (ginger) iris. Tiga olahan nasi pada dua halaman.",
       "notes_en": "FLAG: Berkas 6, Hal. 11–12. '5 Can djuhe' is unclear — possibly sliced ginger (jahe). Please confirm with mother.",
       "content_state": "full",
@@ -7401,6 +7588,20 @@
           "name_en": "water",
           "amount": "10"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Nasi Hainan: Bawang putih digogorengim, lalu masukkan beras. Gogorengim sampai kuning. Sesudah itu masukkan kaldu ayam dan tutup. Masak sampai matang.",
+          "step_en": "Hainanese Rice: Fry garlic, then add rice. Fry until golden. Then add chicken broth and cover. Cook until done."
+        },
+        {
+          "step_id": "Nasi Tim: 1 bagian beras dengan 2½ bagian air.",
+          "step_en": "Nasi Tim: 1 part rice to 2½ parts water."
+        },
+        {
+          "step_id": "Bubur: 1 bagian beras dengan 10 bagian air.",
+          "step_en": "Rice Porridge: 1 part rice to 10 parts water."
+        }
       ]
     },
     {
@@ -7412,12 +7613,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Campur semua bahan, bungkus dengan lembaran kulit tahu; kukus lalu goreng."
-      ],
-      "method_en": [
-        "Mix all the ingredients, wrapped with bean curd sheet; steamed and fried."
-      ],
       "notes_id": "Resep dalam bahasa Inggris pada catatan asli.",
       "notes_en": "Mother's original notes written in English. Classic Peranakan-Chinese recipe — steamed first, then fried.",
       "content_state": "full",
@@ -7519,6 +7714,12 @@
           "name_en": "five-spice powder (bumbu lima rempah)",
           "amount": "1"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Campur semua bahan, bungkus dengan lembaran kulit tahu; kukus lalu goreng.",
+          "step_en": "Mix all the ingredients, wrapped with bean curd sheet; steamed and fried."
+        }
       ]
     },
     {
@@ -7530,18 +7731,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Panaskan minyak (350 ml) dan tambahkan terigu sambil terus diaduk sampai adonan menjadi halus.",
-        "Tambahkan garam, gula, 1 kuning telur, cuka, mustard — campur dalam mixer selama 1 jam, terus diaduk.",
-        "Tambahkan sisa ½ (300 ml) air dan susu dan relish sampai adonan mengental, terakhir tambahkan mayonnaise.",
-        "Jika karena suatu sebab adonan menjadi terlalu kental, tambahkan lebih banyak air."
-      ],
-      "method_en": [
-        "Heat the oil (350 ml) and add the flour, constantly stirring until the mixture becomes smooth.",
-        "Add the salt, sugar, 1 egg yolk, vinegar, mustard — blend this together in a mixer for 1 hour, keep stirring.",
-        "Add the remaining ½ (300 ml) water and milk and relish until the mixture becomes thick, last add mayonnaise.",
-        "If for some reason the mixture becomes too thick, just add more water."
-      ],
       "notes_id": "Diberi label 'M'. Halaman asli ditulis menyamping (sideways). Resep khas pengaruh Belanda, sesuai dengan masakan Indonesia-Belanda kolonial.",
       "notes_en": "FLAG: Berkas 4, Hal. 17–18. Pages written SIDEWAYS. Marked 'M'. Some words unclear; '5 Cups Relish' not further specified. A Dutch-influenced (Indo) recipe. Please confirm with mother.",
       "content_state": "full",
@@ -7667,6 +7856,24 @@
           "name_en": "raisins (kismis), soaked in rum",
           "amount": "2"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Panaskan minyak (350 ml) dan tambahkan terigu sambil terus diaduk sampai adonan menjadi halus.",
+          "step_en": "Heat the oil (350 ml) and add the flour, constantly stirring until the mixture becomes smooth."
+        },
+        {
+          "step_id": "Tambahkan garam, gula, 1 kuning telur, cuka, mustard — campur dalam mixer selama 1 jam, terus diaduk.",
+          "step_en": "Add the salt, sugar, 1 egg yolk, vinegar, mustard — blend this together in a mixer for 1 hour, keep stirring."
+        },
+        {
+          "step_id": "Tambahkan sisa ½ (300 ml) air dan susu dan relish sampai adonan mengental, terakhir tambahkan mayonnaise.",
+          "step_en": "Add the remaining ½ (300 ml) water and milk and relish until the mixture becomes thick, last add mayonnaise."
+        },
+        {
+          "step_id": "Jika karena suatu sebab adonan menjadi terlalu kental, tambahkan lebih banyak air.",
+          "step_en": "If for some reason the mixture becomes too thick, just add more water."
+        }
       ]
     },
     {
@@ -7678,20 +7885,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Mashed potato with onion disebluk sama air panas, sampai kira-kira kentalnya.",
-        "Sesudah di-isi daging — dipulung — lalu dibedaskin sama terigu sampai terbungkus putik.",
-        "Sebagai pengganti putik telur, campur terigu sama susu broth. Adonan kroket diatas dicelup dicampuran terigu/susu dan lalu dibedaskin dengan bread crumbs.",
-        "Kemudian harus dideep fry.",
-        "Bisa juga diapakei untuk goreng ikan (Fish & chips)."
-      ],
-      "method_en": [
-        "Mashed potato with onion, mixed with hot water until approximately the right consistency.",
-        "Once filled with meat — shaped — then coated with flour until covered (acting like egg white).",
-        "As egg white substitute, mix flour with milk broth. Dip the croquette in this flour/milk mixture then coat with bread crumbs.",
-        "Then must be deep fry.",
-        "Can also be used for frying fish (Fish & Chips)."
-      ],
       "notes_id": "Resep BNA, tertanggal 8 Januari 1990.",
       "notes_en": "Recipe dated 8 January 1990, credited 'BNA'.",
       "content_state": "full",
@@ -7745,6 +7938,28 @@
           "name_en": "Can also be used for frying fish.",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Mashed potato with onion disebluk sama air panas, sampai kira-kira kentalnya.",
+          "step_en": "Mashed potato with onion, mixed with hot water until approximately the right consistency."
+        },
+        {
+          "step_id": "Sesudah di-isi daging — dipulung — lalu dibedaskin sama terigu sampai terbungkus putik.",
+          "step_en": "Once filled with meat — shaped — then coated with flour until covered (acting like egg white)."
+        },
+        {
+          "step_id": "Sebagai pengganti putik telur, campur terigu sama susu broth. Adonan kroket diatas dicelup dicampuran terigu/susu dan lalu dibedaskin dengan bread crumbs.",
+          "step_en": "As egg white substitute, mix flour with milk broth. Dip the croquette in this flour/milk mixture then coat with bread crumbs."
+        },
+        {
+          "step_id": "Kemudian harus dideep fry.",
+          "step_en": "Then must be deep fry."
+        },
+        {
+          "step_id": "Bisa juga diapakei untuk goreng ikan (Fish & chips).",
+          "step_en": "Can also be used for frying fish (Fish & Chips)."
+        }
       ]
     },
     {
@@ -7756,14 +7971,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Kambing dilumuri dg. bumbu, lalu dibakar ± 3 jam dan diolesi mentega berulang kali.",
-        "Makannya dengan kecap."
-      ],
-      "method_en": [
-        "Rub the goat with the spices, then roast for ± 3 hours, basting with butter repeatedly.",
-        "Serve with sweet soy sauce (kecap)."
-      ],
       "notes_id": "Tidak ada takaran untuk semua bahan bumbu.",
       "notes_en": "FLAG: Berkas 5, Hal. 5. No quantities specified for any spice ingredient. Please confirm amounts with mother.",
       "content_state": "full",
@@ -7841,6 +8048,16 @@
           "name_en": "Served with sweet soy sauce.",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Kambing dilumuri dg. bumbu, lalu dibakar ± 3 jam dan diolesi mentega berulang kali.",
+          "step_en": "Rub the goat with the spices, then roast for ± 3 hours, basting with butter repeatedly."
+        },
+        {
+          "step_id": "Makannya dengan kecap.",
+          "step_en": "Serve with sweet soy sauce (kecap)."
+        }
       ]
     },
     {
@@ -7852,12 +8069,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Lapisan dari bawah ke atas: MERAH — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH."
-      ],
-      "method_en": [
-        "Layering order from bottom to top: RED — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED."
-      ],
       "notes_id": "Ini adalah kelanjutan dari Resep 45 (Kue Pepe); tidak berisi bahan mandiri — lihat Resep 45 untuk bahan lengkap.",
       "notes_en": "FLAG: Berkas 5, Hal. 19. This is the continuation of Recipe 45 (Kue Pepe) — no standalone ingredients; see Recipe 45. Please review both pages together with mother.",
       "content_state": "full",
@@ -7941,6 +8152,12 @@
           "name_en": "Note: IJO = pandan green colour",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Lapisan dari bawah ke atas: MERAH — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH.",
+          "step_en": "Layering order from bottom to top: RED — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED."
+        }
       ]
     },
     {
@@ -7952,8 +8169,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "Hanya bahan — tidak ada cara membuat, tidak ada kulit pie, tidak ada takaran untuk sayuran.",
       "notes_en": "FLAG: Berkas 5, Hal. 24. Ingredients only — no method, no pie crust, no quantities for vegetables. Please confirm with mother.",
       "content_state": "partial",
@@ -8007,7 +8222,8 @@
           "name_en": "Mushroom (jamur)",
           "amount": ""
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-87",
@@ -8018,8 +8234,6 @@
       "name_en": "",
       "headnote_id": "Durian manis, gula jawa, dan santan — untuk pecinta durian sejati.",
       "headnote_en": "Sweet durian, brown sugar, and coconut milk — for the true durian lover.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "FLAG: Berkas 5, Hal. 3. Ingredients only — no method written in the original notes. Please confirm mixing/blending and freezing steps with mother.",
       "content_state": "partial",
@@ -8053,7 +8267,8 @@
           "name_en": "salt",
           "amount": "2"
         }
-      ]
+      ],
+      "method": []
     },
     {
       "id": "resep-88",
@@ -8064,18 +8279,6 @@
       "name_en": "Steam Fish with Black Bean Sauce",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Caranya: Soft tahu ditaruh didaser, dibering. Di masukkan lain airnya dibuang.",
-        "Bumbu diatas digogorengim asal anget lalu masukkan ikannya.",
-        "Lalu satukan dg. bahannya dan disteam supaya ikannya matang ± 15–20 menit.",
-        "Bisa djuga dimacrowave 3 menit."
-      ],
-      "method_en": [
-        "Method: Soft tofu placed at the base, arranged. Put in, drain excess water.",
-        "Stir fry the sauce ingredients until just warm then add the fish.",
-        "Then combine with the other ingredients and steam until the fish is cooked ± 15–20 minutes.",
-        "Can also be microwaved 3 minutes."
-      ],
       "notes_id": "Halaman pertama Berkas 5, Hal. 1.",
       "notes_en": "First page of File 5 (Berkas 5, Hal. 1). Mother's writing in mixed Indonesian and English.",
       "content_state": "full",
@@ -8123,6 +8326,24 @@
           "name_en": "olive oil",
           "amount": "3"
         }
+      ],
+      "method": [
+        {
+          "step_id": "Caranya: Soft tahu ditaruh didaser, dibering. Di masukkan lain airnya dibuang.",
+          "step_en": "Method: Soft tofu placed at the base, arranged. Put in, drain excess water."
+        },
+        {
+          "step_id": "Bumbu diatas digogorengim asal anget lalu masukkan ikannya.",
+          "step_en": "Stir fry the sauce ingredients until just warm then add the fish."
+        },
+        {
+          "step_id": "Lalu satukan dg. bahannya dan disteam supaya ikannya matang ± 15–20 menit.",
+          "step_en": "Then combine with the other ingredients and steam until the fish is cooked ± 15–20 minutes."
+        },
+        {
+          "step_id": "Bisa djuga dimacrowave 3 menit.",
+          "step_en": "Can also be microwaved 3 minutes."
+        }
       ]
     },
     {
@@ -8134,18 +8355,6 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Fry in Veg. oil: Slice ginger, 3 Shallot slice, 6 Garlic slice.",
-        "Add Tauco (Bean Sauce), Oyster Sauce, Sweet Soy Sauce.",
-        "Add everything together, if it is too thick add chicken broth, add the head fish or fish and cooked ± 10 minutes.",
-        "Turn the fish 1× and cover and cooked slowly."
-      ],
-      "method_en": [
-        "Fry in vegetable oil: sliced ginger, 3 sliced shallots, 6 sliced garlic cloves.",
-        "Add bean sauce, oyster sauce, sweet soy sauce.",
-        "Add everything together. If too thick, add chicken broth. Add fish head or fish and cook ± 10 minutes.",
-        "Turn the fish once, cover and cook slowly."
-      ],
       "notes_id": "Tertanggal 7 Juni 2005 — resep dalam bahasa Inggris, salah satu resep dengan tanggal paling muda dalam koleksi.",
       "notes_en": "Mother's original in English, dated June 7 2005. One of the later-dated recipes in the collection.",
       "content_state": "full",
@@ -8205,6 +8414,24 @@
           "name_en": "Turn fish once, cover and cook slowly.",
           "amount": ""
         }
+      ],
+      "method": [
+        {
+          "step_id": "Fry in Veg. oil: Slice ginger, 3 Shallot slice, 6 Garlic slice.",
+          "step_en": "Fry in vegetable oil: sliced ginger, 3 sliced shallots, 6 sliced garlic cloves."
+        },
+        {
+          "step_id": "Add Tauco (Bean Sauce), Oyster Sauce, Sweet Soy Sauce.",
+          "step_en": "Add bean sauce, oyster sauce, sweet soy sauce."
+        },
+        {
+          "step_id": "Add everything together, if it is too thick add chicken broth, add the head fish or fish and cooked ± 10 minutes.",
+          "step_en": "Add everything together. If too thick, add chicken broth. Add fish head or fish and cook ± 10 minutes."
+        },
+        {
+          "step_id": "Turn the fish 1× and cover and cooked slowly.",
+          "step_en": "Turn the fish once, cover and cook slowly."
+        }
       ]
     },
     {
@@ -8216,8 +8443,6 @@
       "name_en": "Beef Rendang",
       "headnote_id": "Daging sapi mini yang dimasak perlahan dalam kari cabai merah, bawang putih, dan santan",
       "headnote_en": "Savory mini beef steaks slow cooked in a red-chili, garlic, and coconut curry",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "featured_order": 10,
@@ -8226,7 +8451,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-tahu-telor",
@@ -8237,8 +8463,6 @@
       "name_en": "Tofu and Egg Loaf",
       "headnote_id": "Tahu dan telur yang dipotong tangan, dilapisi tepung, digoreng, dan disajikan dengan saus kecap asli",
       "headnote_en": "Hand-cut tofu and egg, breaded, deep fried into a loaf, served with our original soy sauce",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8246,7 +8470,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-soto-ayam",
@@ -8257,8 +8482,6 @@
       "name_en": "Soto Ayam",
       "headnote_id": "Ayam, tauge, dan bihun dalam kuah santan aromatik dengan serai dan daun jeruk",
       "headnote_en": "Chicken, bean sprouts, and rice noodles in an aromatic coconut-milk broth with lemongrass and kaffir lime leaves",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8266,7 +8489,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-sambal-goreng-tahu-buncis",
@@ -8277,8 +8501,6 @@
       "name_en": "String Beans and Tofu in Coconut Curry",
       "headnote_id": "Buncis dan tahu dalam kari santan berbumbu khas Ramayani",
       "headnote_en": "String beans and tofu in a seasoned coconut curry",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8286,7 +8508,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-nasi-goreng",
@@ -8297,8 +8520,6 @@
       "name_en": "Indonesian Fried Rice",
       "headnote_id": "Nasi goreng Indonesia dengan pilihan ayam, udang, babi, atau sayuran",
       "headnote_en": "Indonesian-style fried rice with your choice of chicken, shrimp, pork, or vegetables",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8306,7 +8527,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-lettuce-wrap",
@@ -8317,8 +8539,6 @@
       "name_en": "Indonesian Lettuce Wrap",
       "headnote_id": "Ayam cincang yang dimarinasi dengan kecap manis, bawang, dan bawang putih. Disajikan dengan selada segar",
       "headnote_en": "Ground chicken marinated with sweet soy sauce, onions, and garlic. Served with fresh iceberg lettuce",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8326,7 +8546,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-rempeyek-kacang",
@@ -8337,8 +8558,6 @@
       "name_en": "Crispy Peanut Fritters",
       "headnote_id": "Rempeyek kacang yang renyah dengan sentuhan bawang putih dan ketumbar",
       "headnote_en": "Crispy peanut fritter chips spiced with garlic and coriander",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8346,7 +8565,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-sambal-goreng-tempe",
@@ -8357,8 +8577,6 @@
       "name_en": "Crispy Tempe in Ramayani Chili",
       "headnote_id": "Tempe goreng renyah dengan sambal Ramayani istimewa",
       "headnote_en": "Crispy fried soybean cakes mixed with a special Ramayani Chili",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8366,7 +8584,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ice-cendol",
@@ -8377,8 +8596,6 @@
       "name_en": "Ice Cendol",
       "headnote_id": "Cendol kacang hijau dalam gula jawa dan santan — minuman dessert Indonesia yang paling menyegarkan.",
       "headnote_en": "Mung-bean jelly in brown sugar and coconut milk — one of Indonesia's most refreshing dessert drinks.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8386,7 +8603,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ice-kelapa",
@@ -8397,8 +8615,6 @@
       "name_en": "Young Coconut Ice",
       "headnote_id": "Kelapa muda segar dalam sirup vanila yang menyegarkan.",
       "headnote_en": "Young coconut in a refreshing vanilla syrup — light, sweet, and unmistakably Indonesian.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8406,7 +8622,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ice-cincao",
@@ -8417,8 +8634,6 @@
       "name_en": "Grass Jelly Ice",
       "headnote_id": "Cincau hitam dalam sirup vanila — dessert favorit yang menyegarkan.",
       "headnote_en": "Grass jelly in vanilla syrup — a cooling Indonesian classic.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8426,7 +8641,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ice-shanghai",
@@ -8437,8 +8653,6 @@
       "name_en": "Ice Shanghai",
       "headnote_id": "Buah-buahan segar, cendol, dan cincau disiram sirup vanila dan susu kental manis.",
       "headnote_en": "Mixed fruits, cendol, and grass jelly topped with vanilla syrup and condensed milk — Ramayani's most generous dessert.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8446,7 +8660,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ice-teller",
@@ -8457,8 +8672,6 @@
       "name_en": "Ice Teller",
       "headnote_id": "Alpukat, kelapa muda, dan nangka manis — kombinasi tropis yang sempurna.",
       "headnote_en": "Avocado, young coconut, and sweet jackfruit — a tropical combination that surprises every first-timer.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8466,7 +8679,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-iced-bandrek",
@@ -8477,8 +8691,6 @@
       "name_en": "Iced Ginger Tea",
       "headnote_id": "Teh jahe khas Indonesia yang disajikan dingin — hangat di dalam, segar di luar.",
       "headnote_en": "Indonesian spiced ginger tea served over ice — warming spices in a cold glass.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8486,7 +8698,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ice-doger",
@@ -8497,8 +8710,6 @@
       "name_en": "Ice Doger / Fermented Yucca Ice",
       "headnote_id": "Tapé singkong yang difermentasi dengan kelapa muda dalam sirup vanila — unik dan tak terlupakan.",
       "headnote_en": "Sweet fermented yucca root topped with young coconut in vanilla syrup — uniquely Indonesian and utterly unforgettable.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8506,7 +8717,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-fresh-lime-soda",
@@ -8517,8 +8729,6 @@
       "name_en": "Fresh Lime Soda",
       "headnote_id": "Jeruk nipis segar dalam air mineral berkarbonasi dengan sirup vanila — minuman andalan Ramayani.",
       "headnote_en": "Fresh lime in carbonated mineral water with vanilla syrup — the signature Ramayani refresher.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8526,7 +8736,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-boba-tea",
@@ -8537,8 +8748,6 @@
       "name_en": "Boba Tea or Coffee",
       "headnote_id": "Teh atau kopi es Thailand dengan bola tapioka — favorit pelanggan muda Ramayani.",
       "headnote_en": "Thai iced tea or iced coffee with tapioca pearls — a customer favourite that kept the younger crowd coming back.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8546,7 +8755,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-bandrek-hot",
@@ -8557,8 +8767,6 @@
       "name_en": "Bandrek — Indonesian Spiced Ginger Drink",
       "headnote_id": "Minuman jahe hangat khas Indonesia dengan kayu manis, cengkeh, dan pala. Juga enak disajikan dingin.",
       "headnote_en": "A warm and spicy Indonesian ginger beverage with cinnamon, cloves, and nutmeg. Also delicious on ice.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8567,7 +8775,8 @@
         "no_photo"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-coffee-tubruk",
@@ -8578,8 +8787,6 @@
       "name_en": "Coffee Tubruk",
       "headnote_id": "Kopi Indonesia yang diseduh kuat — cara minum kopi yang paling otentik dari Nusantara.",
       "headnote_en": "Freshly brewed strong Indonesian coffee — the most authentic way to end an Indonesian meal.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8588,7 +8795,8 @@
         "no_photo"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-sambal-bajak",
@@ -8599,8 +8807,6 @@
       "name_en": "Sambal Bajak — Red Hot Pepper Chili Sauce",
       "headnote_id": "Sambal bajak khas Ramayani — tersedia dalam botol untuk dibawa pulang.",
       "headnote_en": "Ramayani's signature red hot pepper chili sauce — so popular it was sold by the bottle to take home.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8609,7 +8815,8 @@
         "no_photo"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-sambal-terasi",
@@ -8620,8 +8827,6 @@
       "name_en": "Sambal Terasi",
       "headnote_id": "Sambal terasi buatan sendiri khas Ramayani — aroma yang kuat dan rasa yang tak terlupakan.",
       "headnote_en": "Ramayani's homemade shrimp-paste chili sauce — bold, pungent, and utterly addictive.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8630,7 +8835,8 @@
         "no_photo"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "cs-ayam-satay",
@@ -8641,8 +8847,6 @@
       "name_en": "Chicken Satay",
       "headnote_id": "Sate ayam khas Ramayani — ditusuk dan dipanggang di atas arang, disajikan dengan bumbu kacang Ramayani.",
       "headnote_en": "Ramayani's chicken satay — skewered, charcoal-grilled, and served with the restaurant's own peanut sauce.",
-      "method_id": [],
-      "method_en": [],
       "notes_id": "",
       "notes_en": "",
       "content_state": "no_content",
@@ -8650,7 +8854,8 @@
         "no_serves"
       ],
       "reviewed": false,
-      "ingredients": []
+      "ingredients": [],
+      "method": []
     },
     {
       "id": "resep-90",
@@ -8661,16 +8866,6 @@
       "name_en": "Gudeg Jawa (Javanese Jackfruit Stew)",
       "headnote_id": "",
       "headnote_en": "",
-      "method_id": [
-        "Bumbu dihaluskan, dipakai dengan gula djawa dan garam, dibuat seperti pasta.",
-        "Ayam dipotong-potong, dibacem dengan bumbu halus. Begitu pun nangkanya dipotong-potong, dibacem dengan bumbu yang sama.",
-        "Lalu dimasak dengan santan encer dulu. Lebih baik nangkanya, telor, dan tempe dimasukkan dulu, kurang lebih 1 jam, lalu masukkan ayamnya dan tahunya."
-      ],
-      "method_en": [
-        "Grind the spice paste, combine it with palm sugar and salt, and work it into a paste.",
-        "Cut the chicken into pieces and marinate it in the ground spice paste. Do the same with the jackfruit — cut into pieces and marinate in the same spice paste.",
-        "Then cook everything with thin coconut milk first. It's best to add the jackfruit, eggs, and tempeh first, and simmer for about 1 hour, then add the chicken and tofu."
-      ],
       "notes_id": "Resep Sri, Juli 2004.",
       "notes_en": "Recipe by Sri, July 2004.",
       "serves": "",
@@ -8773,6 +8968,20 @@
           "name_id": "Rawit merah, satuan",
           "name_en": "Whole red bird's-eye chilies",
           "amount": ""
+        }
+      ],
+      "method": [
+        {
+          "step_id": "Bumbu dihaluskan, dipakai dengan gula djawa dan garam, dibuat seperti pasta.",
+          "step_en": "Grind the spice paste, combine it with palm sugar and salt, and work it into a paste."
+        },
+        {
+          "step_id": "Ayam dipotong-potong, dibacem dengan bumbu halus. Begitu pun nangkanya dipotong-potong, dibacem dengan bumbu yang sama.",
+          "step_en": "Cut the chicken into pieces and marinate it in the ground spice paste. Do the same with the jackfruit — cut into pieces and marinate in the same spice paste."
+        },
+        {
+          "step_id": "Lalu dimasak dengan santan encer dulu. Lebih baik nangkanya, telor, dan tempe dimasukkan dulu, kurang lebih 1 jam, lalu masukkan ayamnya dan tahunya.",
+          "step_en": "Then cook everything with thin coconut milk first. It's best to add the jackfruit, eggs, and tempeh first, and simmer for about 1 hour, then add the chicken and tofu."
         }
       ]
     }
