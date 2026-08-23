@@ -169,5 +169,14 @@ export function displayQuantity(
   const base = scaled.value * info.toBase;
   const picked = info.category === 'weight' ? pickWeightUnit(base, targetSystem) : pickVolumeUnit(base, targetSystem);
   const num = formatNumber(picked.amount);
-  return { amount: scaled.approx ? `± ${num}` : num, unit: picked.unit };
+  const pickedUnit = num === '1' ? singularizeUnit(picked.unit) : picked.unit;
+  return { amount: scaled.approx ? `± ${num}` : num, unit: pickedUnit };
+}
+
+// pickWeightUnit/pickVolumeUnit return their fixed plural form ("lbs",
+// "cups") regardless of the resulting number -- only matters when a
+// conversion or scale happens to land on exactly 1.
+const SINGULAR: Record<string, string> = { lbs: 'lb', cups: 'cup' };
+function singularizeUnit(unit: string): string {
+  return SINGULAR[unit] ?? unit;
 }
