@@ -13,6 +13,18 @@ import Header from '@/components/Header';
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
 const FACT_ICON = { width: 17, height: 17, viewBox: '0 0 24 24', fill: 'none', stroke: '#cc0000', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
 
+// A recipe_ref ingredient links to another recipe -- kept name-free (just
+// "View recipe") since the ingredient's own name and the referenced
+// recipe's title are two independently-edited fields that don't always
+// agree (e.g. "Ayam Kare curry paste" vs. that recipe's own title "Chicken
+// Curry Paste"), so repeating one next to the other read as a mismatch.
+const RECIPE_LINK_BTN = {
+  display: 'inline-block', marginTop: 6,
+  padding: '4px 12px', fontFamily: HELVETICA, fontSize: 12, fontWeight: 500,
+  color: '#cc0000', border: '1px solid #cc0000', borderRadius: 999,
+  textDecoration: 'none',
+} as const;
+
 function ServesIcon() {
   return (
     <svg {...FACT_ICON}>
@@ -358,7 +370,7 @@ export default function ResepPage() {
                             {refRecipe && subFactor != null && (
                               <details className="ing-sub-recipe print-hide" style={{ marginTop: 4, marginBottom: 4 }}>
                                 <summary style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000', cursor: 'pointer' }}>
-                                  {ctxLang === 'id' ? 'Lihat resep' : 'Show recipe'} — {tx(refRecipe, 'name', ctxLang)}
+                                  {ctxLang === 'id' ? 'Lihat resep' : 'Show recipe'}
                                 </summary>
                                 <ul style={{ margin: '8px 0 4px', paddingLeft: 18 }}>
                                   {refRecipe.ingredients.map((sub, si) => (
@@ -367,15 +379,15 @@ export default function ResepPage() {
                                     </li>
                                   ))}
                                 </ul>
-                                <Link href={`/resep/${refRecipe.id}`} style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000' }}>
-                                  {ctxLang === 'id' ? 'Lihat resep lengkap →' : 'View full recipe →'}
+                                <Link href={`/resep/${refRecipe.id}`} style={RECIPE_LINK_BTN}>
+                                  {ctxLang === 'id' ? 'Lihat resep lengkap' : 'View full recipe'}
                                 </Link>
                               </details>
                             )}
                             {refRecipe && subFactor == null && (
-                              <div className="print-hide" style={{ marginTop: 4 }}>
-                                <Link href={`/resep/${refRecipe.id}`} style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000' }}>
-                                  {ctxLang === 'id' ? 'Lihat resep' : 'View recipe'} — {tx(refRecipe, 'name', ctxLang)} →
+                              <div className="print-hide">
+                                <Link href={`/resep/${refRecipe.id}`} style={RECIPE_LINK_BTN}>
+                                  {ctxLang === 'id' ? 'Lihat resep' : 'View recipe'}
                                 </Link>
                               </div>
                             )}
