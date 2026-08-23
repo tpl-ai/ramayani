@@ -986,22 +986,23 @@
     {
       "id": "resep-9",
       "resep_num": 9,
-      "category": "ayam",
+      "category": "bumbu_dasar",
       "photo": "",
-      "name_id": "Ayam Panggang Padang",
+      "name_id": "Ayam Panggang Padang Marinade",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Catatan Ibu: 'Sesudah empuk ayamnya, dibakar.' FLAG: Berkas 1, Hal. 8. Hanya daftar bahan — tidak ada takaran, tidak ada cara membuat. Bahan juga tidak ada ukurannya. Harap konfirmasi semua takaran dan langkah-langkah dengan Ibu.",
-      "notes_en": "Mother's only note: 'Once the chicken is tender, grill it.' FLAG: File 1, Page 8. Ingredient names only — no quantities, no method. Please confirm all amounts and steps with mother.",
-      "content_state": "partial",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "units"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
@@ -1062,15 +1063,14 @@
           "name_id": "Santen",
           "name_en": "coconut milk",
           "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Sesudah empuk ayamnya, dibakar",
-          "name_en": "Once the chicken is tender, grill/roast",
-          "amount": ""
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "Sesudah empuk ayamnya, dibakar",
+          "step_en": ""
+        }
+      ]
     },
     {
       "id": "resep-10",
