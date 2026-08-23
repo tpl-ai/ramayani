@@ -439,7 +439,8 @@
       "flags": [
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
       "reviewed": true,
       "review_notes": "Renamed 2026-08-22 to distinguish from resep-3 — these are two different versions of the same dish (per Arman), not a duplicate entry. Matches the scan 'Ayam Besengek Updated.png'. Ingredients were already an accurate transcription of this scan. This page has no method written at all (confirmed against the scan); per Arman, the method was copied over from resep-3 (Ayam Besengek Original 1986) rather than left empty, since the technique is treated as the same between the two versions.",
