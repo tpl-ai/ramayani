@@ -104,7 +104,7 @@
         "no_photo",
         "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "lbs",
