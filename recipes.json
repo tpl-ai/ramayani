@@ -339,87 +339,87 @@
       "ingredients": [
         {
           "unit": "whole",
-          "name_id": "(8) Ayam dipotong (1 jadi 8 potong)",
+          "name_id": "",
           "name_en": "chickens, each cut into 8 pieces",
           "amount": "8"
         },
         {
           "unit": "canting",
           "name_id": "Minyak",
-          "name_en": "oil",
+          "name_en": "",
           "amount": "8"
         },
         {
           "unit": "can",
           "name_id": "Cabe merah",
-          "name_en": "red chilli",
+          "name_en": "",
           "amount": "1"
         },
         {
           "unit": "boxes",
-          "name_id": "Brown sugar",
+          "name_id": "",
           "name_en": "brown sugar",
           "amount": "2"
         },
         {
           "unit": "boxes",
-          "name_id": "Tahu di-potong ½",
-          "name_en": "tofu, cut in half",
+          "name_id": "Tahu di-potong potong",
+          "name_en": "",
           "amount": "4"
         },
         {
           "unit": "cup",
           "name_id": "Garam",
-          "name_en": "salt",
+          "name_en": "",
           "amount": "⅛"
         },
         {
           "unit": "cups",
           "name_id": "Gula pasir",
-          "name_en": "white sugar",
+          "name_en": "",
           "amount": "4"
         },
         {
           "unit": "small cans",
-          "name_id": "Santen kecil",
-          "name_en": "coconut milk",
+          "name_id": "Santen",
+          "name_en": "",
           "amount": "8"
         },
         {
           "unit": "pieces",
           "name_id": "Terasi",
-          "name_en": "shrimp paste",
+          "name_en": "",
           "amount": "3"
         },
         {
           "unit": "",
-          "name_id": "Cabe pedas (sambal)",
-          "name_en": "hot chilli sambal",
+          "name_id": "Cabe pedas",
+          "name_en": "",
           "amount": "To taste"
         },
         {
           "unit": "tbsp",
           "name_id": "Cuka",
-          "name_en": "vinegar",
+          "name_en": "",
           "amount": "4"
         }
       ],
       "method": [
         {
           "step_id": "Cabe diblender + terasi, lalu digoreng.",
-          "step_en": "Blend the chilli + shrimp paste, then fry."
+          "step_en": ""
         },
         {
           "step_id": "Cabe kaleng diblender juga.",
-          "step_en": "Blend the canned chilli as well."
+          "step_en": ""
         },
         {
           "step_id": "Masak sampai matang.",
-          "step_en": "Cook until done."
+          "step_en": ""
         },
         {
           "step_id": "Masukkan bumbu yang lain-lainnya.",
-          "step_en": "Add all the other ingredients."
+          "step_en": ""
         }
       ]
     },
