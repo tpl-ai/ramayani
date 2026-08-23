@@ -792,14 +792,15 @@
       "resep_num": 8,
       "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Goreng Kuning",
-      "name_en": "Ayam Goreng Kuning (Yellow Fried Chicken)",
+      "name_id": "Ayam Goreng Kuning - Restaurant Batch",
+      "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
       "flags": [
+        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo",
@@ -877,13 +878,13 @@
           "amount": "12"
         },
         {
-          "unit": "lembar",
+          "unit": "pieces",
           "name_id": "Salam",
           "name_en": "Bay leaves",
           "amount": "20"
         },
         {
-          "unit": "s/teh",
+          "unit": "tsp",
           "name_id": "Vetsin",
           "name_en": "MSG",
           "amount": "8"
