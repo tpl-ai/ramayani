@@ -7,8 +7,8 @@
 export type ContentState = 'no_content' | 'partial' | 'full';
 
 export interface IngredientLine {
-  amount_id: string;
-  amount_en: string;
+  // Shared across languages, like unit.
+  amount: string;
   // Shared across languages, not translated — a can is a can regardless of
   // whether the label reads "kaleng" or "can".
   unit: string;
