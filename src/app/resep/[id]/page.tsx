@@ -83,9 +83,8 @@ function ingredientSection(item: IngredientLine, lang: 'id' | 'en'): string {
 }
 
 function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: number, unitSystem: 'metric' | 'imperial'): string {
-  const rawAmount = lang === 'en' ? (item.amount_en || item.amount_id) : (item.amount_id || item.amount_en);
   const name = lang === 'en' ? (item.name_en || item.name_id) : (item.name_id || item.name_en);
-  const { amount, unit } = displayQuantity(rawAmount, item.unit, factor, unitSystem);
+  const { amount, unit } = displayQuantity(item.amount, item.unit, factor, unitSystem);
   return [amount, unit, name].filter(Boolean).join(' ');
 }
 
