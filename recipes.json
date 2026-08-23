@@ -641,22 +641,23 @@
     {
       "id": "resep-6",
       "resep_num": 6,
-      "category": "ayam",
+      "category": "sambal_saus",
       "photo": "",
-      "name_id": "Ayam Goreng Jakarta",
+      "name_id": "Ayam Goreng Jakarta Marinade",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "FLAG: Berkas 1, Hal. 6 & 11. Ibu hanya menulis waktu marinasi — tidak ada langkah lebih lanjut (mis. cara menggoreng) yang tertulis di halaman asli. Harap konfirmasi cara menggoreng dengan Ibu.",
-      "notes_en": "FLAG: File 1, Pages 6 & 11. Mother only wrote the marinade time — no further steps (e.g. frying method) are written on the original page. Please confirm frying method with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "cups",
