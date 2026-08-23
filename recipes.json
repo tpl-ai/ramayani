@@ -274,26 +274,43 @@
       ],
       "method": [
         {
-          "step_id": "Masukkan 2 kg Bumbu Ayam Kare ke dalam panci besar.",
-          "step_en": "Put 2 kg of Bumbu Ayam Kare (Ramayani Chicken Curry Paste) into a large pot."
+          "step_id": "",
+          "step_en": "Put 2 kg of Bumbu Ayam Kare (Chicken Curry Paste) into a large pot.",
+          "section_id": "",
+          "section_en": "Prepare"
         },
         {
-          "step_id": "Tambahkan santan, air, daun jeruk purut, daun salam, dan laos kering.",
+          "step_id": "",
           "step_en": "Add coconut milk, water, kaffir lime leaves, bay leaves, and dried galangal."
         },
         {
-          "step_id": "Didihkan.",
+          "step_id": "",
           "step_en": "Bring to a boil."
         },
         {
-          "step_id": "Masukkan ayam yang sudah dipotong ke dalam kuah dan masak hingga matang.",
-          "step_en": "Add the cut chicken pieces and cook until done."
+          "step_id": "",
+          "step_en": "Add Chicken, and bring to a boil"
         },
         {
-          "step_id": "Sajikan dengan bawang goreng dan daun bawang cincang di atasnya.",
-          "step_en": "Serve topped with fried shallots and chopped spring onions."
+          "step_id": "",
+          "step_en": "Simmer for 30 min"
+        },
+        {
+          "step_id": "",
+          "step_en": "Take chicken out and portion into 4.5 lbs \"balls\" of 6 orders each"
+        },
+        {
+          "step_id": "",
+          "step_en": "Put 4 small pcs or 3 large pcs in a bowl",
+          "section_id": "",
+          "section_en": "Serve"
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle Fried Onions and Green Onions"
         }
-      ]
+      ],
+      "review_notes": "Recipe created 2006"
     },
     {
       "id": "resep-3",
