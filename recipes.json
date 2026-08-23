@@ -9110,7 +9110,7 @@
           "step_en": "Sprinkle with fried onions and chopped green onions."
         }
       ],
-      "reviewed": false,
+      "reviewed": true,
       "review_notes": "New recipe added 2026-08-23: a single-serving version of resep-2 (Ayam Kare), calculated in a separate Claude session from that recipe's restaurant-batch quantities, not transcribed from a scan. Chicken amount matches resep-2's own stated per-order portion (4.5 lb balls / 6 orders = ¾ lb) directly; paste/coconut milk/water are adjusted for small-batch cooking rather than pure linear scaling.",
       "flags": [
         "no_headnote"
