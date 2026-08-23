@@ -122,7 +122,10 @@ function pickVolumeUnit(ml: number, system: System): { amount: number; unit: str
   }
   if (ml >= 59) return { amount: Math.round((ml / 236.588) * 4) / 4, unit: 'cups' };
   if (ml >= 15) return { amount: Math.round((ml / 14.7868) * 2) / 2, unit: 'tbsp' };
-  return { amount: Math.round(ml / 4.92892), unit: 'tsp' };
+  // Round to the nearest 1/4 tsp (matches a real measuring spoon set) --
+  // rounding to a whole tsp here was silently flooring small-but-real
+  // amounts (a scaled-down spice quantity) straight to "0 tsp".
+  return { amount: Math.round((ml / 4.92892) * 4) / 4, unit: 'tsp' };
 }
 
 /**

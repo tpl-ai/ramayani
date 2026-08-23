@@ -129,6 +129,11 @@ function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | null):
   return recipe?.yield_amount ?? 4;
 }
 
+function singularizeUnit(unit: string): string {
+  if (/(ch|sh|x)es$/.test(unit)) return unit.slice(0, -2);
+  return unit.replace(/s$/, '');
+}
+
 // ── page ──────────────────────────────────────────────────────────
 
 export default function ResepPage() {
@@ -337,7 +342,7 @@ export default function ResepPage() {
                       −
                     </button>
                     <span className="serves-num">
-                      {qty}{recipe.yield_unit ? ` ${qty === 1 ? recipe.yield_unit.replace(/s$/, '') : recipe.yield_unit}` : ''}
+                      {qty}{recipe.yield_unit ? ` ${qty === 1 ? singularizeUnit(recipe.yield_unit) : recipe.yield_unit}` : ''}
                     </span>
                     <button
                       className="serves-btn"
