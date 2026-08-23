@@ -1075,20 +1075,24 @@
     {
       "id": "resep-10",
       "resep_num": 10,
-      "category": "ayam",
+      "category": "sambal_saus",
       "photo": "ayam-sauce-ramayani.jpg",
-      "name_id": "Saus Ayam Ramayani",
-      "name_en": "Chicken in Ramayani Sauce",
+      "name_id": "Ayam Sauce Ramayani Sauce",
+      "name_en": "",
       "headnote_id": "Saus khas Ramayani yang digunakan untuk Ayam Sauce Ramayani — ayam goreng yang dilumuri saus barbecue manis dan segar. Cara membuat masih perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature sauce — the sweet and tangy barbecue-style glaze that made Ayam Sauce Ramayani one of the restaurant's most ordered dishes. Cooking method to be confirmed with Hertha.",
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Perlu dikonfirmasi dengan Ibu.",
       "notes_en": "Method not written in the original notes. To be confirmed with Hertha.\n\nFLAG: Berkas 1, Hal. 9 & 11. Confirmed by rereading both occurrences of this recipe in the cookbook — no method is written on either page. Page 11 is the cleaner copy. Ingredients on the page match what's already in recipes.json (no discrepancy found), so ingredients left blank per instructions. Please confirm method with mother.",
-      "serves": "Restaurant scale",
+      "serves": "",
       "date": "",
       "featured_order": 9,
       "content_state": "partial",
-      "flags": [],
-      "reviewed": false,
+      "flags": [
+        "no_name_en",
+        "no_serves",
+        "scale"
+      ],
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "sticks",
@@ -1128,15 +1132,15 @@
         },
         {
           "unit": "tsp",
-          "name_id": "vetsin (MSG)",
+          "name_id": "vetsin",
           "name_en": "MSG",
           "amount": "2"
         },
         {
-          "unit": "large bottles",
-          "name_id": "besar (64 oz) saus tomat",
-          "name_en": "(64 oz each) tomato sauce / ketchup",
-          "amount": "2"
+          "unit": "oz",
+          "name_id": "saus tomat",
+          "name_en": "tomato sauce / ketchup",
+          "amount": "128"
         }
       ],
       "method": []
