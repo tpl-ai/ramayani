@@ -119,8 +119,13 @@ function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: numbe
 // recipe's batch this specific row needs -- fragile, since it would require
 // the row's own amount/unit to exactly match the referenced recipe's
 // yield_unit -- the link just sends the reader to that recipe's own page
-// pre-scaled to one unit of its own yield (`?qty=1`), e.g. "the paste
-// ingredients needed for 1 order" when the paste's yield_unit is "orders".
+// pre-scaled to REF_LINK_SERVINGS servings, e.g. "the paste ingredients
+// needed for 4 servings of curry". 1 serving alone is too fine-grained for
+// a concentrated ingredient like a spice paste -- fractions of a teaspoon
+// even with decimal precision -- so this lands on a normal small
+// stovetop-batch quantity instead, the way a cookbook recipe would.
+const REF_LINK_SERVINGS = 4;
+
 function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | null): number {
   if (qtyParam) {
     const n = Number(qtyParam);
@@ -375,7 +380,7 @@ export default function ResepPage() {
                             {item}
                             {refRecipe && (
                               <div className="print-hide">
-                                <Link href={`/resep/${refRecipe.id}?qty=1`} style={RECIPE_LINK_BTN}>
+                                <Link href={`/resep/${refRecipe.id}?qty=${REF_LINK_SERVINGS}`} style={RECIPE_LINK_BTN}>
                                   {ctxLang === 'id' ? 'Lihat resep' : 'View recipe'}
                                 </Link>
                               </div>
