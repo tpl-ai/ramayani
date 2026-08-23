@@ -332,7 +332,8 @@
       "flags": [
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
       "reviewed": true,
       "review_notes": "Renamed 2026-08-22 to distinguish from resep-4 — these are two different versions of the same dish (per Arman), not a duplicate entry. Matches the scan 'Ayam Besengek Original 1986.png' (dated Sept. 23, 1986 per the page's own note). Ingredients and method were already an accurate transcription of this scan; only name_en (was the garbage value 'Hello Kitty') and name_id (was the ambiguous plain 'Ayam Besengek') needed fixing.",
