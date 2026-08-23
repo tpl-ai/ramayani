@@ -9006,6 +9006,115 @@
           "step_en": "Then cook everything with thin coconut milk first. It's best to add the jackfruit, eggs, and tempeh first, and simmer for about 1 hour, then add the chicken and tofu."
         }
       ]
+    },
+    {
+      "id": "resep-113",
+      "resep_num": 113,
+      "category": "ayam",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ayam-kare-9inyyEIckHZDVH0VO3weehoXRhpHgm.jpg",
+      "name_id": "Ayam Kare — Porsi Tunggal",
+      "name_en": "Chicken Curry — Single Serving",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's signature chicken curry, scaled down to a single serving from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "Adapted from Ramayani's restaurant-batch Ayam Kare (see Recipe #2). The chicken portion matches that recipe's own stated per-order amount directly rather than being recalculated.",
+      "serves": "1",
+      "ingredients": [
+        {
+          "amount": "4 small pieces or 3 large pieces",
+          "unit": "",
+          "name_id": "",
+          "name_en": "bone-in chicken, about ¾ lb / 340 g"
+        },
+        {
+          "amount": "1",
+          "unit": "heaping tbsp",
+          "name_id": "",
+          "name_en": "Ayam Kare curry paste (about 18 g)"
+        },
+        {
+          "amount": "2",
+          "unit": "tbsp",
+          "name_id": "",
+          "name_en": "coconut milk"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "",
+          "name_en": "water"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "",
+          "name_en": "kaffir lime leaf"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "",
+          "name_en": "small Indonesian bay leaf (daun salam)"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "",
+          "name_en": "small slice dried galangal"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "",
+          "name_en": "Fried onions, for garnish"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "",
+          "name_en": "Chopped green onions, for garnish"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Put the curry paste in a small pot.",
+          "section_id": "",
+          "section_en": "Prepare"
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the coconut milk, water, kaffir lime leaf, bay leaf, and dried galangal."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the chicken pieces and bring back to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Reduce heat and simmer for 30 minutes, until the chicken is cooked through and the sauce has reduced slightly."
+        },
+        {
+          "step_id": "",
+          "step_en": "Place the chicken and sauce in a bowl.",
+          "section_id": "",
+          "section_en": "Serve"
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle with fried onions and chopped green onions."
+        }
+      ],
+      "reviewed": false,
+      "review_notes": "New recipe added 2026-08-23: a single-serving version of resep-2 (Ayam Kare), calculated in a separate Claude session from that recipe's restaurant-batch quantities, not transcribed from a scan. Chicken amount matches resep-2's own stated per-order portion (4.5 lb balls / 6 orders = ¾ lb) directly; paste/coconut milk/water are adjusted for small-batch cooking rather than pure linear scaling.",
+      "flags": [
+        "no_headnote"
+      ],
+      "content_state": "full"
     }
   ]
 }
