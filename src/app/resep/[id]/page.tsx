@@ -3,10 +3,10 @@
 import { useState, useEffect, useRef, Fragment } from 'react';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import { getRecipeById, meta, difficultyLevels, recipePhotoSrc } from '@/lib/recipes';
-import { displayQuantity, parseAmount } from '@/lib/units';
+import { displayQuantity } from '@/lib/units';
 import type { Recipe, IngredientLine, MethodStep } from '@/types/recipe';
 import Header from '@/components/Header';
 
@@ -114,21 +114,19 @@ function formatIngredient(item: IngredientLine, lang: 'id' | 'en', factor: numbe
   return [amount, unit, sentenceCase(name)].filter(Boolean).join(' ');
 }
 
-// A row with recipe_ref calls for a quantity of another recipe's batch (a
-// paste, a stock) rather than a raw ingredient. When its unit matches that
-// recipe's yield_unit exactly, dividing gives what fraction of a full batch
-// this row needs -- scaled by this page's own current factor, since bumping
-// "Makes: N" here should scale the nested sub-recipe along with everything
-// else. When the units don't match (e.g. a home recipe calling for "1
-// heaping tbsp" of a paste whose yield is tracked in kg), there's no safe
-// way to compute a fraction -- the row still links to the recipe, just
-// without a scaled ingredient list (see the render site).
-function subRecipeFactor(row: IngredientLine, refRecipe: Recipe, parentFactor: number): number | null {
-  if (!refRecipe.yield_amount || !refRecipe.yield_unit) return null;
-  if (row.unit.trim().toLowerCase() !== refRecipe.yield_unit.trim().toLowerCase()) return null;
-  const parsed = parseAmount(row.amount);
-  if (!parsed) return null;
-  return (parsed.value * parentFactor) / refRecipe.yield_amount;
+// A row with recipe_ref calls for a quantity of another recipe (a paste, a
+// stock) as a component. Rather than try to compute what fraction of that
+// recipe's batch this specific row needs -- fragile, since it would require
+// the row's own amount/unit to exactly match the referenced recipe's
+// yield_unit -- the link just sends the reader to that recipe's own page
+// pre-scaled to one unit of its own yield (`?qty=1`), e.g. "the paste
+// ingredients needed for 1 order" when the paste's yield_unit is "orders".
+function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | null): number {
+  if (qtyParam) {
+    const n = Number(qtyParam);
+    if (Number.isFinite(n) && n > 0) return n;
+  }
+  return recipe?.yield_amount ?? 4;
 }
 
 // ── page ──────────────────────────────────────────────────────────
@@ -136,6 +134,7 @@ function subRecipeFactor(row: IngredientLine, refRecipe: Recipe, parentFactor: n
 export default function ResepPage() {
   const params = useParams();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
+  const searchParams = useSearchParams();
   const { lang: ctxLang } = useLang();
   const [lang, setLang] = useState<'EN' | 'ID'>('EN');
 
@@ -146,8 +145,9 @@ export default function ResepPage() {
   // `serves` field, which is just descriptive text ("Serves 4-6"). Starts
   // at the recipe's own full batch (as scanned/written), not an arbitrary
   // default, so the reader sees the source-accurate quantities first and
-  // scales down (or up) from there.
-  const [qty, setQty] = useState(() => recipe?.yield_amount ?? 4);
+  // scales down (or up) from there -- unless arrived at via a recipe_ref
+  // link with a `?qty=` override (see resolveInitialQty above).
+  const [qty, setQty] = useState(() => resolveInitialQty(recipe, searchParams.get('qty')));
   const baseQty = useRef(recipe?.yield_amount ?? 4);
 
   useEffect(() => {
@@ -155,11 +155,11 @@ export default function ResepPage() {
   }, []);
 
   // Reset the yield control when navigating client-side between recipes
-  // (Previous/Next) rather than carrying the old recipe's base/qty over.
+  // (Previous/Next, or a recipe_ref link) rather than carrying the old
+  // recipe's base/qty over.
   useEffect(() => {
-    const base = recipe?.yield_amount ?? 4;
-    baseQty.current = base;
-    setQty(base);
+    baseQty.current = recipe?.yield_amount ?? 4;
+    setQty(resolveInitialQty(recipe, searchParams.get('qty')));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
@@ -336,7 +336,9 @@ export default function ResepPage() {
                     >
                       −
                     </button>
-                    <span className="serves-num">{qty}{recipe.yield_unit ? ` ${recipe.yield_unit}` : ''}</span>
+                    <span className="serves-num">
+                      {qty}{recipe.yield_unit ? ` ${qty === 1 ? recipe.yield_unit.replace(/s$/, '') : recipe.yield_unit}` : ''}
+                    </span>
                     <button
                       className="serves-btn"
                       onClick={() => setQty(q => q + 1)}
@@ -354,7 +356,6 @@ export default function ResepPage() {
                   <ul className="ing-list">
                     {processedIngs.map((item, i) => {
                       const refRecipe = ings[i].recipe_ref ? getRecipeById(ings[i].recipe_ref!) : undefined;
-                      const subFactor = refRecipe ? subRecipeFactor(ings[i], refRecipe, factor) : null;
                       return (
                         <Fragment key={i}>
                           {ingredientSection(ings[i], ctxLang) && (
@@ -367,26 +368,9 @@ export default function ResepPage() {
                           )}
                           <li className="ing-item" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
                             {item}
-                            {refRecipe && subFactor != null && (
-                              <details className="ing-sub-recipe print-hide" style={{ marginTop: 4, marginBottom: 4 }}>
-                                <summary style={{ fontFamily: HELVETICA, fontSize: 13, color: '#cc0000', cursor: 'pointer' }}>
-                                  {ctxLang === 'id' ? 'Lihat resep' : 'Show recipe'}
-                                </summary>
-                                <ul style={{ margin: '8px 0 4px', paddingLeft: 18 }}>
-                                  {refRecipe.ingredients.map((sub, si) => (
-                                    <li key={si} style={{ fontFamily: HELVETICA, fontSize: 14, color: '#444' }}>
-                                      {formatIngredient(sub, ctxLang, subFactor, unitSystem)}
-                                    </li>
-                                  ))}
-                                </ul>
-                                <Link href={`/resep/${refRecipe.id}`} style={RECIPE_LINK_BTN}>
-                                  {ctxLang === 'id' ? 'Lihat resep lengkap' : 'View full recipe'}
-                                </Link>
-                              </details>
-                            )}
-                            {refRecipe && subFactor == null && (
+                            {refRecipe && (
                               <div className="print-hide">
-                                <Link href={`/resep/${refRecipe.id}`} style={RECIPE_LINK_BTN}>
+                                <Link href={`/resep/${refRecipe.id}?qty=1`} style={RECIPE_LINK_BTN}>
                                   {ctxLang === 'id' ? 'Lihat resep' : 'View recipe'}
                                 </Link>
                               </div>
