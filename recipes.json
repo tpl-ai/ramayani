@@ -1364,7 +1364,7 @@
       "resep_num": 13,
       "category": "seafood",
       "photo": "",
-      "name_id": "Pesmol",
+      "name_id": "Ikan Pesmol",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
@@ -1377,19 +1377,36 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
-          "name_id": "Ikan (gurame, nila, atau sejenis)",
-          "name_en": "fish (gurame / snapper / tilapia or similar)",
+          "name_id": "",
+          "name_en": "Trout",
           "amount": ""
         },
         {
+          "amount": "",
+          "unit": "",
+          "name_id": "",
+          "name_en": "Vinegar",
+          "section_id": "",
+          "section_en": "Fish Marinade"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "",
+          "name_en": "Salt"
+        },
+        {
           "unit": "ladles",
-          "name_id": "sendok Bumbu Ayam Pulang (lihat Resep 12)",
-          "name_en": "Bumbu Ayam Pulang — see Recipe 12",
-          "amount": "2"
+          "name_id": "Bumbu Ayam Pulang",
+          "name_en": "",
+          "amount": "2",
+          "recipe_ref": "resep-12",
+          "section_id": "",
+          "section_en": "Pesmol Ingredients"
         },
         {
           "unit": "",
@@ -1424,8 +1441,8 @@
       ],
       "method": [
         {
-          "step_id": "Ikan dibacam dg. vinegar & salt lalu digoreng selama 10 menit.",
-          "step_en": "Marinate the fish with vinegar and salt and fry for 10 minutes."
+          "step_id": "Trout dibacam dg. vinegar & salt lalu digoreng selama 10 menit.",
+          "step_en": "Marinate the trout with vinegar and salt and fry for 10 minutes."
         },
         {
           "step_id": "Ikan dibelah supaya tidak terlalu tebal.",
