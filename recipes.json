@@ -2324,27 +2324,28 @@
     {
       "id": "resep-23",
       "resep_num": 23,
-      "category": "sambal_saus",
+      "category": "bumbu_dasar",
       "photo": "",
-      "name_id": "Acar Ramayani",
+      "name_id": "Acar Ramayani Marinade",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli. FLAG: Berkas 1, Hal. 16. Hanya daftar bahan — tidak ada cara membuat, tidak ada sayuran yang disebutkan. Harap konfirmasi sayuran apa yang digunakan dan cara membuatnya dengan Ibu.",
-      "notes_en": "METHOD: Not written in the original notes. FLAG: File 1, Page 16. Ingredients only — no method, no vegetables specified. Please confirm which vegetables are used and the full method with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "bottle",
-          "name_id": "(⅝ galon) Cuka",
-          "name_en": "(⅝ gallon / 2.4 L) vinegar",
+          "unit": "gallon",
+          "name_id": "Cuka",
+          "name_en": "",
           "amount": "1"
         },
         {
@@ -2360,10 +2361,10 @@
           "amount": "1"
         },
         {
-          "unit": "packet",
-          "name_id": "+ 2 Gallon Air",
-          "name_en": "+ 2 gallons (7.6 L) water",
-          "amount": "1"
+          "unit": "gallons",
+          "name_id": "Air",
+          "name_en": "",
+          "amount": "2"
         },
         {
           "unit": "",
