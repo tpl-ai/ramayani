@@ -2093,7 +2093,7 @@
           "name_en": "",
           "amount": "200",
           "section_id": "",
-          "section_en": "Mix Sauce"
+          "section_en": ""
         },
         {
           "unit": "ml",
@@ -2126,6 +2126,44 @@
           "amount": "2",
           "section_id": "",
           "section_en": "To Serve"
+        },
+        {
+          "amount": "8",
+          "unit": "oz",
+          "name_id": "",
+          "name_en": "Kikkoman",
+          "section_id": "",
+          "section_en": "Sauce Babi Tim"
+        },
+        {
+          "amount": "20",
+          "unit": "oz",
+          "name_id": "Air",
+          "name_en": ""
+        },
+        {
+          "amount": "2",
+          "unit": "oz",
+          "name_id": "Kecap Ikan",
+          "name_en": ""
+        },
+        {
+          "amount": "3",
+          "unit": "oz",
+          "name_id": "Kecap Manis",
+          "name_en": ""
+        },
+        {
+          "amount": "4",
+          "unit": "oz",
+          "name_id": "Arak",
+          "name_en": ""
+        },
+        {
+          "amount": "4",
+          "unit": "tbsp",
+          "name_id": "Gula",
+          "name_en": ""
         }
       ],
       "method": [
