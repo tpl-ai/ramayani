@@ -9606,32 +9606,28 @@
       ],
       "method": [
         {
-          "step_id": "Buat adonan Pepe Sagu: kocok santan, gula, garam, dan vanili sampai gula larut. Masukkan sagu sedikit-sedikit sambil diaduk sampai licin tanpa gumpalan. Saring.",
-          "step_en": "Make the Pepe Sagu batter: whisk the coconut milk, sugar, salt, and vanilla until the sugar dissolves. Gradually stir in the sago starch until smooth with no lumps. Strain."
+          "step_id": "Buat \"kepala\" (pengental) untuk adonan Pepe Sagu: masak sagu dengan air sampai jadi pasta kental. Sisihkan.",
+          "step_en": "Make the \"kepala\" (thickener) for the Pepe Sagu batter: cook the sago starch with the water until it forms a thick paste. Set aside."
         },
         {
-          "step_id": "Buat lapisan pengental atas Pepe Sagu secara terpisah: masak sagu dan air di atas api kecil sampai jadi pasta kental. Sisihkan.",
-          "step_en": "Make the Pepe Sagu top thickener separately: cook the sago starch and water over low heat until a thick paste forms. Set aside."
+          "step_id": "Buat adonan Pepe Sagu: masukkan sagu, gula, garam, dan vanili ke dalam panci, lalu tuang santan sedikit-sedikit, dan terakhir masukkan kepala yang sudah dimasak.",
+          "step_en": "Make the Pepe Sagu batter: put the sago starch, sugar, salt, and vanilla into a pot, gradually stir in the coconut milk, then fold in the cooked kepala last."
         },
         {
-          "step_id": "Buat adonan Talam Obi: campur sagu, tepung beras, gula, garam, dan vanili, lalu aduk rata dengan santan dan minyak sawit merah yang sudah direbus sebentar.",
-          "step_en": "Make the Talam Obi batter: combine the sago starch, rice flour, sugar, salt, and vanilla, then stir in the coconut milk and the briefly boiled red palm oil."
+          "step_id": "Buat adonan Talam Obi: campur sagu, tepung beras, gula, garam, dan vanili dengan santan dan minyak sawit merah yang sudah direbus.",
+          "step_en": "Make the Talam Obi batter: combine the sago starch, rice flour, sugar, salt, and vanilla with the coconut milk and the boiled red palm oil."
         },
         {
-          "step_id": "Buat lapisan atas santan Talam Obi: kocok santan dengan tepung beras, sagu, dan garam sampai licin.",
-          "step_en": "Make the Talam Obi top coconut cream layer: whisk the coconut milk with the rice flour, sago starch, and salt until smooth."
+          "step_id": "Buat lapisan atas santan Talam Obi: campur santan dengan tepung beras, sagu, dan garam.",
+          "step_en": "Make the Talam Obi top coconut layer: combine the coconut milk with the rice flour, sago starch, and salt."
         },
         {
-          "step_id": "Sisihkan sedikit adonan Pepe Sagu dan beri warna hijau dengan pandan untuk lapisan IJO. Sisanya dibiarkan putih.",
-          "step_en": "Set aside a small portion of the Pepe Sagu batter and tint it green with pandan for the GREEN layers. Leave the rest plain (white)."
+          "step_id": "Sisihkan sedikit adonan Pepe Sagu untuk lapisan IJO (catatan asli tidak menyebutkan cara mewarnainya — pandan adalah cara tradisional, tapi ini bukan fakta dari sumber). Sisanya dibiarkan putih.",
+          "step_en": "Set aside a small portion of the Pepe Sagu batter for the GREEN layers (the original notes don't say how it's coloured — pandan is the traditional choice, but that's not stated in the source). Leave the rest plain for WHITE."
         },
         {
-          "step_id": "Olesi loyang 20×20 cm dengan sedikit minyak. Susun lapisan tipis (3–4 mm) di dalam steamer sesuai urutan Resep 85: MERAH (Talam Obi bawah) — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH (Talam Obi bawah lagi, atau lapisan atas santan Talam Obi — lihat catatan). Kukus tiap lapisan sekitar 5 menit sampai set sebelum menuang lapisan berikutnya.",
-          "step_en": "Grease a 20×20 cm pan. Following Recipe 85's layering order, pour thin layers (3–4 mm) into the steamer: RED (Talam Obi bottom) — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED (Talam Obi bottom again, or the Talam Obi coconut cream layer — see note). Steam each layer about 5 minutes until set before pouring the next."
-        },
-        {
-          "step_id": "Untuk lapisan Pepe Sagu terakhir, campurkan pasta pengental yang sudah dimasak ke sisa adonan sebelum dituang, lalu kukus seluruh loyang 15–20 menit tambahan sampai benar-benar set.",
-          "step_en": "For the final Pepe Sagu layer, whisk the cooked thickener paste into the remaining batter before pouring, then steam the whole pan an additional 15–20 minutes until fully set."
+          "step_id": "Olesi loyang 20×20 cm dengan sedikit minyak. Ikuti urutan lapisan Resep 85, kukus tiap lapisan tipis: MERAH — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH, biarkan tiap lapisan set sebelum menuang lapisan berikutnya. (Catatan: sumber asli tidak menjelaskan adonan Talam Obi mana — lapisan bawah atau lapisan atas santan — yang jadi lapisan MERAH yang mana.)",
+          "step_en": "Grease a 20×20 cm pan. Following Recipe 85's layering order, steam thin layers: RED — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED, letting each layer set before pouring the next. (Note: the original source doesn't specify which Talam Obi batter — bottom layer or top coconut layer — goes into which RED stripe.)"
         },
         {
           "step_id": "Dinginkan sepenuhnya sebelum dipotong.",
@@ -9639,7 +9635,7 @@
         }
       ],
       "reviewed": false,
-      "review_notes": "New recipe added 2026-08-24: derived by a parallel Claude Code session (working on ramayani) from resep-45 (Kue Pepe) and resep-85 (Lapis Pepe), then independently re-verified here against the current live data before adding. Every ingredient divided by 9 (resep-45's serves is \"9 Loyang\") and rounded to clean kitchen units -- every line checked exactly against resep-45's current amounts, including the two vanilla lines (4 tbsp / 9 = 1.5 tsp) and the Talam Obi top-layer coconut milk (4 cans / 9 = 0.44 can), both originally ambiguous in the old source-unit transcription (\"bhs\", \"heling\") and only resolved once resep-45 was migrated to the current ingredient schema. The layering order (RED-WHITE-WHITE-GREEN-WHITE-WHITE-GREEN-WHITE-WHITE-RED) matches resep-85's own method step exactly. One correction made here: the Talam Obi top-layer coconut milk was written as \"half can (~200ml)\" using an outdated can-size assumption -- corrected to 133ml (4 cans x 300ml/can [confirmed via resep-12, see raspberry_package_sizes] / 9). \"1/2 cup + 1 tbsp\" amounts (oil, sago in the bottom layer) simplified to the exact equivalent, 9 tbsp. FLAG (carried over from the source): resep-85's own notes say it's a continuation of resep-45 with no explicit merge given in the original -- exactly how the Talam Obi batter (bottom layer vs. top coconut cream layer) splits across the recipe's 2 RED stripes isn't specified in the source, so step 6's guess there is a reasonable reconstruction, not a confirmed fact. Not yet kitchen-tested.",
+      "review_notes": "New recipe added 2026-08-24: derived by a parallel Claude Code session (working on ramayani) from resep-45 (Kue Pepe) and resep-85 (Lapis Pepe), then independently re-verified here against the current live data before adding. Every ingredient divided by 9 (resep-45's serves is \"9 Loyang\") and rounded to clean kitchen units -- every line checked exactly against resep-45's current amounts, including the two vanilla lines (4 tbsp / 9 = 1.5 tsp) and the Talam Obi top-layer coconut milk (4 cans / 9 = 0.44 can), both originally ambiguous in the old source-unit transcription (\"bhs\", \"heling\") and only resolved once resep-45 was migrated to the current ingredient schema. The layering order (RED-WHITE-WHITE-GREEN-WHITE-WHITE-GREEN-WHITE-WHITE-RED) matches resep-85's own method step exactly. One correction made here: the Talam Obi top-layer coconut milk was written as \"half can (~200ml)\" using an outdated can-size assumption -- corrected to 133ml (4 cans x 300ml/can [confirmed via resep-12, see raspberry_package_sizes] / 9). \"1/2 cup + 1 tbsp\" amounts (oil, sago in the bottom layer) simplified to the exact equivalent, 9 tbsp. METHOD REVISED 2026-08-24: the first draft's method (8 steps) invented specific technique -- whisking order, \"strain\", cook times, layer thickness in mm, an unflagged claim that the GREEN colour comes from pandan (pandan isn't in the ingredient list at all) -- none of which is in resep-45/85's actual text (2 sparse sentences total for Kue Pepe, 1 for the layering order). Arman caught this. Pared back to only what's directly translated from the source, plus the minimum any steamed layered kue mechanically requires (a starch+water paste needs heat to thicken; each poured layer must set before the next; a hot steamed dessert needs to cool before slicing) -- nothing beyond that is stated as fact. The pandan colouring method and which Talam Obi batter maps to which RED stripe are now flagged inline in the method text itself, not just in these notes. Still not yet kitchen-tested.",
       "flags": [
         "no_name_en"
       ],
