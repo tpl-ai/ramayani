@@ -1593,53 +1593,53 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "parts",
-          "name_id": "Lime juice (air jeruk nipis)",
-          "name_en": "(500 ml) lime juice",
+          "unit": "tbl spoon",
+          "name_id": "",
+          "name_en": "lime juice",
           "amount": "5"
         },
         {
-          "unit": "parts",
-          "name_id": "Fish sauce (kecap ikan)",
-          "name_en": "(400 ml) fish sauce",
+          "unit": "tbl spoon",
+          "name_id": "",
+          "name_en": "fish sauce",
           "amount": "4"
         },
         {
-          "unit": "parts",
-          "name_id": "Air (water)",
-          "name_en": "(300 ml) water",
+          "unit": "tbl spoon",
+          "name_id": "",
+          "name_en": "water",
           "amount": "3"
         },
         {
-          "unit": "parts",
-          "name_id": "Sugar (gula)",
-          "name_en": "(450 ml) sugar",
-          "amount": "3"
+          "unit": "tbl spoon",
+          "name_id": "",
+          "name_en": "sugar",
+          "amount": "4.5"
         },
         {
           "unit": "",
-          "name_id": "Shredded apple",
-          "name_en": "shredded apple (apel diparut)",
+          "name_id": "",
+          "name_en": "shredded apple ",
           "amount": ""
         },
         {
           "unit": "",
-          "name_id": "Dry grounded chilli",
-          "name_en": "dry ground chilli (cabe kering digiling)",
+          "name_id": "",
+          "name_en": "dry ground chilli ",
           "amount": ""
         },
         {
           "unit": "",
-          "name_id": "Garlic",
-          "name_en": "garlic (bawang putih)",
+          "name_id": "",
+          "name_en": "garlic ",
           "amount": ""
         },
         {
           "unit": "",
-          "name_id": "Fresh chilli padi (optional)",
+          "name_id": "",
           "name_en": "fresh bird's eye chilli (cabe padi) — optional",
           "amount": ""
         }
