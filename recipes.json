@@ -9479,7 +9479,7 @@
       "resep_num": 117,
       "category": "desserts_drinks",
       "photo": "",
-      "name_id": "Kue Pepe & Talam Obi (Skala Rumahan — 1 Loyang)",
+      "name_id": "",
       "name_en": "Kue Pepe & Talam Obi (Home Batch — 1 Pan)",
       "headnote_id": "Versi skala rumahan dari Resep 45 (Kue Pepe) dan Resep 85 (Lapis Pepe) — dikecilkan menjadi 1/9 dari resep restoran (yang menghasilkan sekitar 9 loyang, ±200 potong) supaya pas untuk satu loyang 20×20 cm, sekitar 20 potong. Semua takaran dibulatkan ke satuan dapur yang mudah diukur (sendok teh/makan, cup).",
       "headnote_en": "A home-sized version of Recipe 45 (Kue Pepe) and Recipe 85 (Lapis Pepe) — scaled down to 1/9 of the restaurant batch (which made about 9 pans, ~200 slices) to fit exactly one 20×20 cm pan, about 20 slices. All quantities rounded to easy-to-measure kitchen units (tsp/tbsp, cups).",
@@ -9643,7 +9643,7 @@
       "flags": [
         "no_photo"
       ],
-      "content_state": "full"
+      "content_state": "partial"
     }
   ]
 }
