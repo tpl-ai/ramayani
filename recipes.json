@@ -4208,14 +4208,14 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "FLAG: Berkas 1, Hal. 16–17. HALAMAN 17 TERBALIK (upside-down) — ini adalah sambungan dari Hal. 16. Teks terbaca dari bawah ke atas. Resep ini memiliki beberapa lapisan (layers) yang kompleks. Harap periksa bersama Ibu secara langsung.\n\nLihat juga Resep 85 (Lapis Pepe) — kelanjutan dari halaman ini (lapisan warna TALAM OLCI).",
-      "notes_en": "FLAG: File 1, Pages 16–17. PAGE 17 IS UPSIDE-DOWN — it is the continuation of Page 16. Text reads from bottom to top. This is a complex multi-layered recipe. Please review directly with mother.\n\nSee also Recipe 85 (Lapis Pepe) — the continuation of this page (TALAM OLCI colour layers).",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
       "reviewed": false,
       "ingredients": [
@@ -4226,14 +4226,14 @@
           "amount": "3,400"
         },
         {
-          "unit": "boxes",
-          "name_id": "pok = 3 lbs Sagu",
-          "name_en": "/ 3 lbs sago starch",
+          "unit": "lbs",
+          "name_id": "Sagu",
+          "name_en": "Sago starch",
           "amount": "3"
         },
         {
           "unit": "tbsp",
-          "name_id": "bhs Vanilla",
+          "name_id": "Vanilla",
           "name_en": "vanilla",
           "amount": "4"
         },
@@ -4250,16 +4250,12 @@
           "amount": "1,350"
         },
         {
-          "unit": "",
-          "name_id": "── KEPALANYA ──",
-          "name_en": "── TOP LAYER ──",
-          "amount": ""
-        },
-        {
           "unit": "tbsp",
           "name_id": "Sagu",
           "name_en": "sago starch",
-          "amount": "4"
+          "amount": "4",
+          "section_id": "",
+          "section_en": "Top Layer"
         },
         {
           "unit": "cup",
@@ -4316,32 +4312,28 @@
           "amount": "4"
         },
         {
-          "unit": "ml",
-          "name_id": "t 8 cups Santen",
-          "name_en": "+ 8 cups coconut milk (santan)",
-          "amount": "2,000"
+          "unit": "cups",
+          "name_id": "Santen",
+          "name_en": "Coconut milk",
+          "amount": "8"
         },
         {
-          "unit": "",
-          "name_id": "── Kepalanya: Lapisan atas Santen ──",
-          "name_en": "── Top coconut cream layer ──",
-          "amount": ""
-        },
-        {
-          "unit": "ladles",
-          "name_id": "heling Santen",
+          "unit": "cans",
+          "name_id": "Santen",
           "name_en": "coconut milk",
-          "amount": "4"
+          "amount": "4",
+          "section_id": "",
+          "section_en": "Top Coconut Cream Layer"
         },
         {
           "unit": "tbsp",
-          "name_id": "t. beras",
+          "name_id": "tapung beras",
           "name_en": "rice flour",
           "amount": "8"
         },
         {
           "unit": "tbsp",
-          "name_id": "t. sagu",
+          "name_id": "tapung sagu",
           "name_en": "sago starch",
           "amount": "8"
         },
@@ -4365,7 +4357,8 @@
           "step_id": "TALAM OLCI: [continued on reverse/upside-down page — see flag]",
           "step_en": "TALAM OLCI layer: [continued on reverse/upside-down page — see flag]"
         }
-      ]
+      ],
+      "serves": "9 Loyang"
     },
     {
       "id": "resep-46",
