@@ -4217,7 +4217,7 @@
         "no_photo",
         "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "ml",
@@ -4270,16 +4270,12 @@
           "amount": ""
         },
         {
-          "unit": "",
-          "name_id": "── TALAM OLCI → P.T.O. ──",
-          "name_en": "── TALAM OLCI LAYER → see overleaf ──",
-          "amount": ""
-        },
-        {
           "unit": "cups",
           "name_id": "Oli merah direbus",
           "name_en": "red palm oil, boiled",
-          "amount": "5"
+          "amount": "5",
+          "section_id": "Talam Obi",
+          "section_en": ""
         },
         {
           "unit": "cups",
@@ -4352,10 +4348,6 @@
         {
           "step_id": "Santennya dan kepalanya: Lapisan atas Santen.",
           "step_en": "The coconut milk and kepala form the top layer."
-        },
-        {
-          "step_id": "TALAM OLCI: [continued on reverse/upside-down page — see flag]",
-          "step_en": "TALAM OLCI layer: [continued on reverse/upside-down page — see flag]"
         }
       ],
       "serves": "9 Loyang"
