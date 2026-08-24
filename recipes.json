@@ -1474,7 +1474,8 @@
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
       "reviewed": true,
       "ingredients": [
