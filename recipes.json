@@ -1221,10 +1221,10 @@
       "resep_num": 12,
       "category": "ayam",
       "photo": "",
-      "name_id": "Bumbu Ayam Pulang",
+      "name_id": "Ayam Pukang",
       "name_en": "",
       "headnote_id": "",
-      "headnote_en": "",
+      "headnote_en": "Ayam pukang is particularly known in Betawi (Jakarta) cuisine. It features chicken that is first grilled or fried, then lightly bruised or pounded (pukul), and finally simmered in a spiced coconut milk gravy.",
       "notes_id": "Catatan Ibu: 'bisa dipake djuga buat pesmol.' November 2000. Untuk Vegetarian: jangan pakai trasi & kecap ikan.",
       "notes_en": "Mother's note: 'Can also be used for Pesmol.' November 2000. Vegetarian note written by mother in the original.",
       "content_state": "full",
@@ -1232,9 +1232,10 @@
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "whole",
@@ -1280,9 +1281,11 @@
         },
         {
           "unit": "",
-          "name_id": "BUMBU fg. digogorengim (ground spices): Vegetable oil",
-          "name_en": "GROUND SPICE PASTE: vegetable oil (minyak sayur)",
-          "amount": ""
+          "name_id": "minyak sayur",
+          "name_en": "vegetable oil",
+          "amount": "",
+          "section_id": "Bumbu jg. di go gorengin",
+          "section_en": "Ground spices for frying"
         },
         {
           "unit": "g",
@@ -1347,11 +1350,13 @@
         {
           "step_id": "Potong ayam dan goreng, lalu masukkan ke dalam bumbu.",
           "step_en": "Cut up the chicken and fry, then put into the bumbu."
-        },
-        {
-          "step_id": "Untuk Vegetarian jangan pakai trasi dan Kecap Ikan, gunakan sayuran dan kentang saja.",
-          "step_en": "For Vegetarian: do not use shrimp paste and fish sauce — use vegetables and potatoes."
         }
+      ],
+      "tips_id": [
+        ""
+      ],
+      "tips_en": [
+        "For Vegetarian: Do not use shrimp paste and fish sauce. Use vegetables, potatoes, and egg blend"
       ]
     },
     {
