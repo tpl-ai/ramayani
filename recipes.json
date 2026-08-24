@@ -2064,7 +2064,7 @@
       "id": "resep-20",
       "resep_num": 20,
       "category": "daging",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/20_Babi_Tim_AI-XiZLx162NP4LuNMTJM5DS9ygd3Nrfa.jpeg",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/20_Babi_Tim_AI_v2-czpawsSqq3MjoywgEjndbg2wftrA2N.jpeg",
       "name_id": "Babi Tim",
       "name_en": "",
       "headnote_id": "",
@@ -2091,7 +2091,7 @@
           "name_id": "Kikkoman",
           "name_en": "",
           "amount": "200",
-          "section_id": "",
+          "section_id": "Sauce Babi Tim",
           "section_en": ""
         },
         {
@@ -2125,44 +2125,6 @@
           "amount": "2",
           "section_id": "",
           "section_en": "To Serve"
-        },
-        {
-          "amount": "8",
-          "unit": "oz",
-          "name_id": "",
-          "name_en": "Kikkoman",
-          "section_id": "",
-          "section_en": "Sauce Babi Tim"
-        },
-        {
-          "amount": "20",
-          "unit": "oz",
-          "name_id": "Air",
-          "name_en": ""
-        },
-        {
-          "amount": "2",
-          "unit": "oz",
-          "name_id": "Kecap Ikan",
-          "name_en": ""
-        },
-        {
-          "amount": "3",
-          "unit": "oz",
-          "name_id": "Kecap Manis",
-          "name_en": ""
-        },
-        {
-          "amount": "4",
-          "unit": "oz",
-          "name_id": "Arak",
-          "name_en": ""
-        },
-        {
-          "amount": "4",
-          "unit": "tbsp",
-          "name_id": "Gula",
-          "name_en": ""
         }
       ],
       "method": [
