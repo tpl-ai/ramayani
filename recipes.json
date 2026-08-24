@@ -2065,7 +2065,7 @@
       "resep_num": 20,
       "category": "daging",
       "photo": "",
-      "name_id": "Bali Tim",
+      "name_id": "Babi Tim",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
@@ -2076,15 +2076,24 @@
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "",
-          "name_id": "MIX SAUCE: 200 cc Kikoman",
-          "name_en": "MIX SAUCE: 200 ml (7 fl oz) Kikkoman soy sauce",
-          "amount": ""
+          "unit": "lbs",
+          "name_id": "Side Pork (2 pieces)",
+          "name_en": "side pork — 2 pieces",
+          "amount": "± 7"
+        },
+        {
+          "unit": "ml",
+          "name_id": "Kikkoman",
+          "name_en": "",
+          "amount": "200",
+          "section_id": "",
+          "section_en": "Mix Sauce"
         },
         {
           "unit": "ml",
@@ -2111,16 +2120,12 @@
           "amount": "100"
         },
         {
-          "unit": "lbs",
-          "name_id": "Side Pork (2 pieces)",
-          "name_en": "side pork — 2 pieces",
-          "amount": "± 7"
-        },
-        {
           "unit": "packets",
           "name_id": "pk. Dry Sayur Asin atau Smo Sayur Asin",
           "name_en": "dry sour vegetable (sayur asin kering) or fresh sour vegetable",
-          "amount": "2"
+          "amount": "2",
+          "section_id": "",
+          "section_en": "To Serve"
         }
       ],
       "method": [
@@ -2144,7 +2149,9 @@
           "step_id": "Sayur asin kering harus direndam dalam air selama 24 jam dan dipotong ½\".",
           "step_en": "The dry sour vegetables must be soaked in water for 24 hours and cut to ½\" pieces."
         }
-      ]
+      ],
+      "serves": "",
+      "yield_amount": 16
     },
     {
       "id": "resep-21",
