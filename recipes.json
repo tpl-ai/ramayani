@@ -9473,6 +9473,177 @@
         "no_headnote"
       ],
       "content_state": "full"
+    },
+    {
+      "id": "resep-117",
+      "resep_num": 117,
+      "category": "desserts_drinks",
+      "photo": "",
+      "name_id": "Kue Pepe & Talam Obi (Skala Rumahan — 1 Loyang)",
+      "name_en": "Kue Pepe & Talam Obi (Home Batch — 1 Pan)",
+      "headnote_id": "Versi skala rumahan dari Resep 45 (Kue Pepe) dan Resep 85 (Lapis Pepe) — dikecilkan menjadi 1/9 dari resep restoran (yang menghasilkan sekitar 9 loyang, ±200 potong) supaya pas untuk satu loyang 20×20 cm, sekitar 20 potong. Semua takaran dibulatkan ke satuan dapur yang mudah diukur (sendok teh/makan, cup).",
+      "headnote_en": "A home-sized version of Recipe 45 (Kue Pepe) and Recipe 85 (Lapis Pepe) — scaled down to 1/9 of the restaurant batch (which made about 9 pans, ~200 slices) to fit exactly one 20×20 cm pan, about 20 slices. All quantities rounded to easy-to-measure kitchen units (tsp/tbsp, cups).",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "1 pan 20×20cm (≈20 slices)",
+      "ingredients": [
+        {
+          "amount": "380",
+          "unit": "ml",
+          "name_id": "Santan kental",
+          "name_en": "Thick coconut milk (santan kental)",
+          "section_id": "Pepe Sagu Batter",
+          "section_en": "Pepe Sagu Batter"
+        },
+        {
+          "amount": "150",
+          "unit": "g",
+          "name_id": "Sagu (tepung sagu)",
+          "name_en": "Sago starch (tepung sagu)"
+        },
+        {
+          "amount": "150",
+          "unit": "g",
+          "name_id": "Gula pasir",
+          "name_en": "White sugar"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Vanili cair",
+          "name_en": "Vanilla extract"
+        },
+        {
+          "amount": "⅓",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "Salt"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Sagu",
+          "name_en": "Sago starch",
+          "section_id": "Lapisan Pengental Atas",
+          "section_en": "Top Thickener"
+        },
+        {
+          "amount": "2",
+          "unit": "tbsp",
+          "name_id": "Air",
+          "name_en": "Water"
+        },
+        {
+          "amount": "9",
+          "unit": "tbsp",
+          "name_id": "Minyak sawit merah, direbus sebentar",
+          "name_en": "Red palm oil, boiled briefly",
+          "section_id": "Talam Obi — Lapisan Bawah",
+          "section_en": "Talam Obi — Bottom Layer"
+        },
+        {
+          "amount": "9",
+          "unit": "tbsp",
+          "name_id": "Sagu",
+          "name_en": "Sago starch"
+        },
+        {
+          "amount": "1",
+          "unit": "tbsp",
+          "name_id": "Tepung beras",
+          "name_en": "Rice flour"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Gula pasir",
+          "name_en": "White sugar"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "Salt"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Vanili cair",
+          "name_en": "Vanilla extract"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Santen",
+          "name_en": "Coconut milk"
+        },
+        {
+          "amount": "133",
+          "unit": "ml",
+          "name_id": "Santan kental",
+          "name_en": "Coconut milk",
+          "section_id": "Talam Obi — Lapisan Atas Santan",
+          "section_en": "Talam Obi — Top Coconut Cream Layer"
+        },
+        {
+          "amount": "1",
+          "unit": "tbsp",
+          "name_id": "Tepung beras",
+          "name_en": "Rice flour"
+        },
+        {
+          "amount": "1",
+          "unit": "tbsp",
+          "name_id": "Sagu",
+          "name_en": "Sago starch"
+        },
+        {
+          "amount": "⅓",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "Salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "Buat adonan Pepe Sagu: kocok santan, gula, garam, dan vanili sampai gula larut. Masukkan sagu sedikit-sedikit sambil diaduk sampai licin tanpa gumpalan. Saring.",
+          "step_en": "Make the Pepe Sagu batter: whisk the coconut milk, sugar, salt, and vanilla until the sugar dissolves. Gradually stir in the sago starch until smooth with no lumps. Strain."
+        },
+        {
+          "step_id": "Buat lapisan pengental atas Pepe Sagu secara terpisah: masak sagu dan air di atas api kecil sampai jadi pasta kental. Sisihkan.",
+          "step_en": "Make the Pepe Sagu top thickener separately: cook the sago starch and water over low heat until a thick paste forms. Set aside."
+        },
+        {
+          "step_id": "Buat adonan Talam Obi: campur sagu, tepung beras, gula, garam, dan vanili, lalu aduk rata dengan santan dan minyak sawit merah yang sudah direbus sebentar.",
+          "step_en": "Make the Talam Obi batter: combine the sago starch, rice flour, sugar, salt, and vanilla, then stir in the coconut milk and the briefly boiled red palm oil."
+        },
+        {
+          "step_id": "Buat lapisan atas santan Talam Obi: kocok santan dengan tepung beras, sagu, dan garam sampai licin.",
+          "step_en": "Make the Talam Obi top coconut cream layer: whisk the coconut milk with the rice flour, sago starch, and salt until smooth."
+        },
+        {
+          "step_id": "Sisihkan sedikit adonan Pepe Sagu dan beri warna hijau dengan pandan untuk lapisan IJO. Sisanya dibiarkan putih.",
+          "step_en": "Set aside a small portion of the Pepe Sagu batter and tint it green with pandan for the GREEN layers. Leave the rest plain (white)."
+        },
+        {
+          "step_id": "Olesi loyang 20×20 cm dengan sedikit minyak. Susun lapisan tipis (3–4 mm) di dalam steamer sesuai urutan Resep 85: MERAH (Talam Obi bawah) — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH (Talam Obi bawah lagi, atau lapisan atas santan Talam Obi — lihat catatan). Kukus tiap lapisan sekitar 5 menit sampai set sebelum menuang lapisan berikutnya.",
+          "step_en": "Grease a 20×20 cm pan. Following Recipe 85's layering order, pour thin layers (3–4 mm) into the steamer: RED (Talam Obi bottom) — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED (Talam Obi bottom again, or the Talam Obi coconut cream layer — see note). Steam each layer about 5 minutes until set before pouring the next."
+        },
+        {
+          "step_id": "Untuk lapisan Pepe Sagu terakhir, campurkan pasta pengental yang sudah dimasak ke sisa adonan sebelum dituang, lalu kukus seluruh loyang 15–20 menit tambahan sampai benar-benar set.",
+          "step_en": "For the final Pepe Sagu layer, whisk the cooked thickener paste into the remaining batter before pouring, then steam the whole pan an additional 15–20 minutes until fully set."
+        },
+        {
+          "step_id": "Dinginkan sepenuhnya sebelum dipotong.",
+          "step_en": "Let cool completely before slicing."
+        }
+      ],
+      "reviewed": false,
+      "review_notes": "New recipe added 2026-08-24: derived by a parallel Claude Code session (working on ramayani) from resep-45 (Kue Pepe) and resep-85 (Lapis Pepe), then independently re-verified here against the current live data before adding. Every ingredient divided by 9 (resep-45's serves is \"9 Loyang\") and rounded to clean kitchen units -- every line checked exactly against resep-45's current amounts, including the two vanilla lines (4 tbsp / 9 = 1.5 tsp) and the Talam Obi top-layer coconut milk (4 cans / 9 = 0.44 can), both originally ambiguous in the old source-unit transcription (\"bhs\", \"heling\") and only resolved once resep-45 was migrated to the current ingredient schema. The layering order (RED-WHITE-WHITE-GREEN-WHITE-WHITE-GREEN-WHITE-WHITE-RED) matches resep-85's own method step exactly. One correction made here: the Talam Obi top-layer coconut milk was written as \"half can (~200ml)\" using an outdated can-size assumption -- corrected to 133ml (4 cans x 300ml/can [confirmed via resep-12, see raspberry_package_sizes] / 9). \"1/2 cup + 1 tbsp\" amounts (oil, sago in the bottom layer) simplified to the exact equivalent, 9 tbsp. FLAG (carried over from the source): resep-85's own notes say it's a continuation of resep-45 with no explicit merge given in the original -- exactly how the Talam Obi batter (bottom layer vs. top coconut cream layer) splits across the recipe's 2 RED stripes isn't specified in the source, so step 6's guess there is a reasonable reconstruction, not a confirmed fact. Not yet kitchen-tested.",
+      "flags": [
+        "no_photo"
+      ],
+      "content_state": "full"
     }
   ]
 }
