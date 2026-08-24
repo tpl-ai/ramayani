@@ -1463,7 +1463,7 @@
       "resep_num": 14,
       "category": "seafood",
       "photo": "",
-      "name_id": "Acar Ikan Pombret / Nila & Pepes Ikan Emas / Trout",
+      "name_id": "Ikan Acar & Pepes",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
@@ -1476,12 +1476,18 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
-          "name_id": "── ACAR IKAN POMBRET / NILA ──",
-          "name_en": "── POMFRET / TILAPIA PICKLE ──",
+          "name_id": "For Acar: Pomfret or Tilapia",
+          "name_en": "For Pickeled: Pomfret or Tilapia",
+          "amount": ""
+        },
+        {
+          "unit": "",
+          "name_id": "For Pepes: Carp or Trout",
+          "name_en": "For Banana Leaf: Carp or Trout",
           "amount": ""
         },
         {
@@ -1546,12 +1552,6 @@
         },
         {
           "unit": "",
-          "name_id": "── PEPES IKAN EMAS / TROUT ──",
-          "name_en": "── BANANA LEAF STEAMED FISH ──",
-          "amount": ""
-        },
-        {
-          "unit": "",
           "name_id": "Bumbunya dichopp (tidak dihaluskan)",
           "name_en": "Spices roughly chopped (not ground)",
           "amount": ""
@@ -1565,12 +1565,12 @@
       ],
       "method": [
         {
-          "step_id": "ACAR: Bumbunya digiiling halus. Ikannya dibacam bahai cuka dan garam lalu digoreng. Bumbu digogoreng.",
+          "step_id": "",
           "step_en": "ACAR (Pickle): Grind the spices finely. Marinate the fish in vinegar and salt then fry. Fry the spice paste."
         },
         {
-          "step_id": "PEPES: Bumbunya dichopp. Ikannya dibaluri dulu dengan: ragi, garam dan cuka.",
-          "step_en": "PEPES (Steamed): Roughly chop the spices (do not grind). Rub the fish first with yeast, salt and vinegar."
+          "step_id": "",
+          "step_en": "PEPES (Steamed): Roughly chop the spices. Marinate the fish in vinegar and salt. Wrap the fish with banana leaves, chopped spices, and steam"
         }
       ]
     },
