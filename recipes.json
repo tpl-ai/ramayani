@@ -2008,33 +2008,34 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "PENTING: Berbeda dari yang tercantum di indeks buku ini, halaman aslinya hanya berisi daftar bahan saus — tidak ada cara membuat dan tidak ada berat daging babi yang tercantum. FLAG: Berkas 1, Hal. 20. Harap konfirmasi cara membuat dan berat daging dengan Ibu.",
-      "notes_en": "IMPORTANT: Contrary to the collection's own index, the actual page contains only the sauce ingredient list — no method is written, and no pork weight is specified. FLAG: File 1, Page 20. Please confirm the method and meat quantity with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "other"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "ml",
           "name_id": "Kikoman",
-          "name_en": "Kikkoman soy sauce",
+          "name_en": "",
           "amount": "600"
         },
         {
           "unit": "ml",
           "name_id": "Water",
-          "name_en": "water (air)",
+          "name_en": "",
           "amount": "900"
         },
         {
           "unit": "ml",
           "name_id": "Kecap Ikan",
-          "name_en": "fish sauce",
+          "name_en": "",
           "amount": "225"
         },
         {
@@ -2046,17 +2047,18 @@
         {
           "unit": "ml",
           "name_id": "Arak",
-          "name_en": "rice wine",
+          "name_en": "",
           "amount": "300"
         },
         {
-          "unit": "s/m",
+          "unit": "tbsp",
           "name_id": "penuh Gula",
-          "name_en": "full tbsp (90 ml) sugar",
+          "name_en": "",
           "amount": "6"
         }
       ],
-      "method": []
+      "method": [],
+      "review_notes": "No method"
     },
     {
       "id": "resep-20",
