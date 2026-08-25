@@ -45,6 +45,16 @@ export function getRecipesByCategory(category: string): Recipe[] {
   return allRecipes.filter(r => r.category === category);
 }
 
+// Display order for category tabs/tiles, independent of recipes.json's key
+// order (which reflects edit history in the admin tool, not intended
+// display order). Categories not listed here (e.g. a brand-new one added
+// in the admin tool before this list is updated) sort after all listed
+// ones rather than disappearing.
+const CATEGORY_ORDER = [
+  'ayam', 'daging', 'seafood', 'nasi_mie', 'sayuran_salad',
+  'appetizer', 'desserts_drinks', 'sambal_saus', 'bumbu_dasar', 'other',
+];
+
 export function getCategoriesWithStats(): CategoryWithStats[] {
   return Object.entries(categories)
     .map(([key, cat]) => {
@@ -52,7 +62,12 @@ export function getCategoriesWithStats(): CategoryWithStats[] {
       const photo = recipes.find(r => r.photo)?.photo ?? '';
       return { key, name_id: cat.id, name_en: cat.en, count: recipes.length, photo };
     })
-    .filter(c => c.count > 0);
+    .filter(c => c.count > 0)
+    .sort((a, b) => {
+      const ai = CATEGORY_ORDER.indexOf(a.key);
+      const bi = CATEGORY_ORDER.indexOf(b.key);
+      return (ai === -1 ? CATEGORY_ORDER.length : ai) - (bi === -1 ? CATEGORY_ORDER.length : bi);
+    });
 }
 
 export function t(recipe: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'): string {

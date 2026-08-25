@@ -68,22 +68,26 @@ img { max-width: 100%; height: auto; display: block; }
 /* ════════════════════════════════════════════════
    HOMEPAGE — splash + section headings, mobile
    ════════════════════════════════════════════════ */
-.splash-hero { height: 850px; }
+.splash-hero { height: 950px; }
 .splash-text-block { max-width: 55%; }
-.splash-title { font-size: 74px; }
-.splash-subtitle { font-size: 24px; }
+.splash-title { font-size: 94px; }
+.splash-subtitle { font-size: 38px; }
 .section-heading { font-size: 38px; }
-.category-tile { width: 280px; height: 280px; }
+.category-tile { width: 220px; height: 220px; }
 .category-label { font-size: 34px; }
+.recipe-card { width: 320px; }
+.recipe-photo { width: 320px; height: 500px; }
 @media (max-width: 640px) {
-  .splash-hero { height: 500px; }
+  .splash-hero { height: 600px; }
   .splash-text-block { max-width: 90%; }
-  .splash-title { font-size: 36px; }
-  .splash-subtitle { font-size: 16px; }
+  .splash-title { font-size: 56px; }
+  .splash-subtitle { font-size: 22px; }
   .section-heading { font-size: 26px; }
-  .category-icon { width: 84px; height: 84px; }
-  .category-tile { width: 188px; height: 188px; }
+  .category-icon { width: 64px; height: 64px; }
+  .category-tile { width: 140px; height: 140px; }
   .category-label { font-size: 22px; }
+  .recipe-card { width: 180px; }
+  .recipe-photo { width: 180px; height: 220px; }
   .scroll-arrow { display: none !important; }
 }
 
@@ -110,7 +114,14 @@ img { max-width: 100%; height: auto; display: block; }
   .categories-mobile-filter { display: none; }
 }
 
-.recipes-grid { grid-template-columns: repeat(4, 1fr); }
+/* minmax's floor is normally 240px, but once the container is wide enough
+   that splitting it into 6 equal 240px+ columns would need a track wider
+   than 240px, the floor itself grows to that share instead -- so auto-fill
+   can never fit a 7th column. This caps columns at 6 without a breakpoint,
+   so the count only ever increases as the viewport widens (no dip like a
+   fixed "6 columns at 2000px" media query would cause once auto-fill can
+   otherwise fit 7 at a narrower width). */
+.recipes-grid { grid-template-columns: repeat(auto-fill, minmax(max(240px, calc((100% - 120px) / 6)), 1fr)); }
 @media (max-width: 1024px) {
   .recipes-grid { grid-template-columns: repeat(3, 1fr); }
 }
@@ -201,7 +212,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
 }
 @media (min-width: 768px) {
-  .recipe-hero-photo { height: 520px; }
+  .recipe-hero-photo { height: 620px; }
 }
 
 /* Description — relocated notes, full width */

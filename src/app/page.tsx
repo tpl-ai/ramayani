@@ -2,27 +2,31 @@
 import React, { useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import Header from '@/components/Header'
+import { getRecipeById, recipePhotoSrc } from '@/lib/recipes'
 
-const RECIPES = [
-  { id: 'resep-2',    name: 'Ramayani Chicken Curry',       photo: 'ayam-kare.jpg',             ready: true  },
-  { id: 'resep-18',   name: 'Grilled Fish, Sweet Soy',      photo: 'ikan-bakar.jpg',             ready: true  },
-  { id: 'resep-29',   name: 'Ramayani Special Chicken Noodles', photo: 'bakmi-ayam-jakarta.jpg', ready: true  },
-  { id: 'resep-34',   name: 'Belacan Water Spinach',        photo: 'tumis-kangkung.jpg',         ready: true  },
-  { id: 'resep-35',   name: 'Gado-Gado',                    photo: 'gado-gado.jpg',              ready: true  },
-  { id: 'resep-41',   name: 'Coconut Vegetable Soup',       photo: 'sayur-lodeh.jpg',            ready: true  },
-  { id: 'resep-40',   name: 'Lamb Curry',                   photo: 'gule-kambing.jpg',           ready: false },
-  { id: 'resep-50',   name: 'Butter Squid',                 photo: 'cumi-cumi-goreng.jpg',       ready: false },
-  { id: 'resep-10',   name: 'Chicken in Ramayani Sauce',    photo: 'ayam-sauce-ramayani.jpg',    ready: false },
-  { id: 'cs-rendang', name: 'Beef Rendang',                 photo: 'rendang.jpg',                ready: false },
+// Which recipes to feature is an editorial choice that doesn't live in
+// recipes.json, so it has to be a curated id list -- but everything else
+// (name, photo, whether it's clickable) is looked up live below instead of
+// being duplicated here, so this list can't drift out of sync the way the
+// old hardcoded name/photo/ready fields did (e.g. resep-2 was renamed to
+// "Chicken Curry - Restaurant Batch" and hidden from the public site when
+// resep-113 replaced it as the cookbook-scale version, silently 404-ing
+// this card until the swap below).
+const FAVORITE_RECIPE_IDS = [
+  'resep-113', 'resep-29', 'resep-34', 'resep-40', 'resep-50', 'resep-10', 'cs-rendang',
 ]
 
 const CATEGORIES = [
-  { id: 'ayam',          label: 'Chicken'       },
-  { id: 'daging',        label: 'Beef & Pork'   },
-  { id: 'seafood',       label: 'Seafood'        },
-  { id: 'nasi_mie',      label: 'Rice & Noodles' },
-  { id: 'sayuran_salad', label: 'Vegetables'     },
-  { id: 'sambal_saus',   label: 'Sambal'         },
+  { id: 'ayam',            label: 'Chicken'            },
+  { id: 'daging',          label: 'Beef & Pork'        },
+  { id: 'seafood',         label: 'Seafood'            },
+  { id: 'nasi_mie',        label: 'Rice & Noodles'     },
+  { id: 'sayuran_salad',   label: 'Vegetables & Salads' },
+  { id: 'appetizer',       label: 'Appetizers'         },
+  { id: 'desserts_drinks', label: 'Drinks & Desserts'  },
+  { id: 'sambal_saus',     label: 'Sambals & Sauces'   },
+  { id: 'bumbu_dasar',     label: 'Marinades'          },
+  { id: 'other',           label: 'Extras'             },
 ]
 
 function ChickenIcon() {
@@ -49,13 +53,33 @@ function SambalIcon() {
   return <img src="/images/icon-sambal.svg" alt="" width={125} height={125} className="category-icon" />
 }
 
+function AppetizerIcon() {
+  return <img src="/images/icon_appetizers.svg" alt="" width={125} height={125} className="category-icon" />
+}
+
+function DrinksIcon() {
+  return <img src="/images/icon_drinks.svg" alt="" width={125} height={125} className="category-icon" />
+}
+
+function MarinadesIcon() {
+  return <img src="/images/icon_marinades.svg" alt="" width={125} height={125} className="category-icon" />
+}
+
+function ExtrasIcon() {
+  return <img src="/images/icon_extras.svg" alt="" width={125} height={125} className="category-icon" />
+}
+
 const ICONS: Record<string, () => React.ReactElement> = {
   ayam: ChickenIcon,
   daging: BeefIcon,
   seafood: SeafoodIcon,
   nasi_mie: RiceIcon,
   sayuran_salad: VegetableIcon,
+  appetizer: AppetizerIcon,
+  desserts_drinks: DrinksIcon,
   sambal_saus: SambalIcon,
+  bumbu_dasar: MarinadesIcon,
+  other: ExtrasIcon,
 }
 
 export default function Home() {
@@ -63,6 +87,10 @@ export default function Home() {
   const [lang, setLang] = useState<'EN' | 'ID'>('EN')
   const recipesScrollRef = useRef<HTMLDivElement>(null)
   const categoriesScrollRef = useRef<HTMLDivElement>(null)
+
+  const favoriteRecipes = FAVORITE_RECIPE_IDS
+    .map(id => getRecipeById(id))
+    .filter((r): r is NonNullable<typeof r> => !!r)
 
   return (
     <div style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', background: '#fff', color: '#1a1a1a' }}>
@@ -82,7 +110,7 @@ export default function Home() {
           background: 'linear-gradient(to right, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.40) 50%, rgba(0,0,0,0.05) 100%)',
         }} />
         {/* Title — top-left */}
-        <div className="splash-text-block" style={{ position: 'absolute', top: 0, left: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', padding: '48px 0 0 56px' }}>
+        <div className="splash-text-block" style={{ position: 'absolute', top: 0, left: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', padding: '78px 0 0 46px' }}>
           <h1 className="splash-title" style={{ fontWeight: 400, color: '#fff', lineHeight: 1, marginBottom: 14 }}>
             Hertha's<br />Indonesian Cookbook
           </h1>
@@ -115,23 +143,27 @@ export default function Home() {
           paddingLeft: 48, paddingRight: 48, paddingBottom: 28,
           scrollbarWidth: 'none', msOverflowStyle: 'none',
         }}>
-          {RECIPES.map(r => (
-            <div key={r.id} onClick={() => r.ready && router.push(`/resep/${r.id}`)}
-              style={{ flexShrink: 0, width: 320, cursor: r.ready ? 'pointer' : 'default', opacity: r.ready ? 1 : 0.5 }}>
-              <div style={{ width: 320, height: 500, overflow: 'hidden', position: 'relative', background: '#e8e2da', marginBottom: 8 }}>
-                <img src={`/images/${r.photo}`} alt={r.name}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                {!r.ready && (
-                  <div style={{
-                    position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
-                    background: '#cc0000', color: '#fff', fontSize: 10, fontWeight: 600,
-                    padding: '4px 12px', letterSpacing: '0.08em', textTransform: 'uppercase', whiteSpace: 'nowrap',
-                  }}>Coming soon</div>
-                )}
+          {favoriteRecipes.map(r => {
+            const name = lang === 'ID' ? (r.name_id || r.name_en) : (r.name_en || r.name_id)
+            const ready = r.content_state !== 'no_content'
+            return (
+              <div key={r.id} className="recipe-card" onClick={() => ready && router.push(`/resep/${r.id}`)}
+                style={{ flexShrink: 0, cursor: ready ? 'pointer' : 'default', opacity: ready ? 1 : 0.5 }}>
+                <div className="recipe-photo" style={{ overflow: 'hidden', position: 'relative', background: '#e8e2da', marginBottom: 8 }}>
+                  <img src={recipePhotoSrc(r.photo)} alt={name}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  {!ready && (
+                    <div style={{
+                      position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)',
+                      background: '#cc0000', color: '#fff', fontSize: 10, fontWeight: 600,
+                      padding: '4px 12px', letterSpacing: '0.08em', textTransform: 'uppercase', whiteSpace: 'nowrap',
+                    }}>Coming soon</div>
+                  )}
+                </div>
+                <div style={{ fontSize: 20, fontWeight: 500, color: ready ? '#1a1a1a' : '#999', lineHeight: 1.3 }}>{name}</div>
               </div>
-              <div style={{ fontSize: 20, fontWeight: 500, color: r.ready ? '#1a1a1a' : '#999', lineHeight: 1.3 }}>{r.name}</div>
-            </div>
-          ))}
+            )
+          })}
         </div>
         <div
           className="scroll-arrow"
@@ -168,7 +200,7 @@ export default function Home() {
       </section>
 
       {/* RECIPES BY CATEGORY */}
-      <section style={{ padding: '48px 0 72px', position: 'relative' }}>
+      <section style={{ padding: '18px 0 72px', position: 'relative' }}>
         <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
           {lang === 'EN' ? 'Recipes by category' : 'Resep menurut jenis'}
         </h2>
