@@ -1,5 +1,14 @@
-import type { Recipe, CategoryInfo, DifficultyInfo, RecipeMeta, CategoryWithStats } from '@/types/recipe';
+import type { Recipe, CategoryInfo, DifficultyInfo, RecipeMeta, CategoryWithStats, RecipeSummary } from '@/types/recipe';
 import recipesJson from '../../recipes.json';
+
+// This module imports the full recipes.json -- including admin-only
+// fields like review_notes/flags/reviewed that aren't even in the Recipe
+// type, and every recipe regardless of content_state or public/archived
+// status. It must only ever be imported from server-side code (a Server
+// Component, a Route Handler) -- never from a 'use client' file, or the
+// whole dataset ships to every visitor's browser as part of the page's
+// JS bundle. Client components receive data through toClientRecipe/
+// toSummary below, which explicitly whitelist what's safe to send.
 
 const data = recipesJson as {
   meta: RecipeMeta;
@@ -12,15 +21,21 @@ export const meta: RecipeMeta = data.meta;
 export const categories: Record<string, CategoryInfo> = data.categories;
 export const difficultyLevels: Record<string, DifficultyInfo> = data.difficulty_levels;
 
-// A "- Restaurant Batch" (or similar) suffix in either language's title
-// marks a recipe as an internal/historical record -- e.g. the original
-// restaurant-scale version once a cookbook-scale version of the same dish
-// exists as its own recipe. Filtered out here, at the single source every
-// other export in this file derives from, so it's never listed, searched,
-// or directly reachable on the public site -- it stays fully visible and
+// A batch/restaurant-scale recipe (recipe_type: 'batch') is an internal
+// historical record, kept permanently once a home-scale version exists as
+// its own recipe (linked_recipe_id) -- never edited again, never shown on
+// the public site. Filtered out here, at the single source every other
+// export in this file derives from, so it's never listed, searched, or
+// directly reachable on the public site -- it stays fully visible and
 // editable in the raspberry admin tool, which reads recipes.json directly
 // and never imports this file.
+//
+// The "- Restaurant Batch" name-suffix check is the original convention
+// this replaces (still checked too, for the few recipes tagged that way
+// before recipe_type existed) -- new batch recipes should get
+// recipe_type: 'batch' set directly instead of relying on the name.
 function isPublic(recipe: Recipe): boolean {
+  if (recipe.recipe_type === 'batch') return false;
   const marker = 'restaurant batch';
   return !recipe.name_id.toLowerCase().includes(marker) && !recipe.name_en.toLowerCase().includes(marker);
 }
@@ -31,18 +46,92 @@ export function getRecipeById(id: string): Recipe | undefined {
   return allRecipes.find(r => r.id === id);
 }
 
-/**
- * recipe.photo is either a bare filename served from /public/images (the
- * original convention) or a full URL from Vercel Blob (written by the
- * admin tool's photo upload). Absolute URLs are used as-is; anything else
- * is resolved against /images/.
- */
-export function recipePhotoSrc(photo: string): string {
-  return /^https?:\/\//.test(photo) ? photo : `/images/${photo}`;
-}
+export { recipePhotoSrc } from './photo';
 
 export function getRecipesByCategory(category: string): Recipe[] {
   return allRecipes.filter(r => r.category === category);
+}
+
+// Explicit whitelist, not a type cast -- TypeScript types are erased at
+// build time and don't stop a stray field from actually being present on
+// the runtime object (this is exactly how review_notes leaked to the
+// client before: Recipe never declared it, but the real JSON object
+// still had it, and passing that object straight into a 'use client'
+// component ships whatever properties it actually carries). Rebuilding a
+// plain object field-by-field means a new admin-only field added to
+// recipes.json later is excluded by default, not included by accident.
+export function toClientRecipe(r: Recipe): Recipe {
+  return {
+    id: r.id,
+    resep_num: r.resep_num,
+    category: r.category,
+    content_state: r.content_state,
+    photo: r.photo,
+    name_id: r.name_id,
+    name_en: r.name_en,
+    headnote_id: r.headnote_id,
+    headnote_en: r.headnote_en,
+    ingredients: r.ingredients,
+    method: r.method,
+    notes_id: r.notes_id,
+    notes_en: r.notes_en,
+    serves: r.serves,
+    featured_order: r.featured_order,
+    yield_amount: r.yield_amount,
+    yield_unit: r.yield_unit,
+    prep_time_minutes: r.prep_time_minutes,
+    difficulty: r.difficulty,
+    recipe_type: r.recipe_type,
+    linked_recipe_id: r.linked_recipe_id,
+  };
+}
+
+function toSummary(r: Recipe): RecipeSummary {
+  return {
+    id: r.id,
+    category: r.category,
+    content_state: r.content_state,
+    photo: r.photo,
+    name_id: r.name_id,
+    name_en: r.name_en,
+  };
+}
+
+// The full recipe list, shaped for a listing/card view (homepage
+// favorites, /recipes grid, /search results) -- none of those views need
+// ingredients, method, notes, or yield data, just enough to render a
+// card and filter/search by name.
+export function getAllRecipeSummaries(): RecipeSummary[] {
+  return allRecipes.map(toSummary);
+}
+
+// Order-preserving, missing-id-dropping lookup for a curated id list (e.g.
+// the homepage's hand-picked "Favorite recipes" row) -- summary-shaped for
+// the same reason getAllRecipeSummaries is.
+export function getRecipeSummariesByIds(ids: string[]): RecipeSummary[] {
+  return ids
+    .map(id => allRecipes.find(r => r.id === id))
+    .filter((r): r is Recipe => !!r)
+    .map(toSummary);
+}
+
+// A recipe that another recipe's ingredient list references via
+// recipe_ref (a paste, a component sauce) doesn't have a "serving" of its
+// own -- its yield_amount is denominated in servings of whatever dish it
+// flavors, scaled to the full historical/restaurant batch (e.g. 600
+// servings of curry for one batch of paste). That's correct for the
+// record but not a sane thing to land on directly (via search, /recipes,
+// a bookmark) -- so the page defaults component recipes to a small
+// consumer-scale quantity instead. Derived from actual recipe_ref usage
+// rather than a category check (bumbu_dasar/sambal_saus also contain
+// standalone dishes eaten as-is), so any newly-linked component is
+// covered automatically.
+const componentRecipeIds = new Set(
+  data.recipes.flatMap(r => r.ingredients.map(i => i.recipe_ref).filter((id): id is string => !!id))
+);
+
+export function isComponentRecipe(id: string): boolean {
+  return componentRecipeIds.has(id);
 }
 
 // Display order for category tabs/tiles, independent of recipes.json's key

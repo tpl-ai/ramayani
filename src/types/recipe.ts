@@ -58,6 +58,19 @@ export interface Recipe {
   yield_unit?: string;
   prep_time_minutes?: number;
   difficulty?: string;
+  // A dish can exist as two separate recipes: the restaurant/batch
+  // original (kept permanently as the historical record, never edited
+  // again once a home version exists) and a home-scale version derived
+  // from it (its own hand-adjusted ingredients/method/serves, not just
+  // the batch numbers divided down -- see resep-113 through resep-117
+  // for real examples). 'batch' is excluded from the public site
+  // (isPublic in lib/recipes.ts); 'home' is what visitors see.
+  // linked_recipe_id points at the other half of the pair, when one
+  // exists. Most recipes have neither field set yet -- absence doesn't
+  // mean "batch" or "home", it means not yet classified under this
+  // scheme, and stays visible as-is in the meantime.
+  recipe_type?: 'batch' | 'home';
+  linked_recipe_id?: string;
 }
 
 export interface CategoryInfo {
@@ -88,4 +101,19 @@ export interface CategoryWithStats {
   name_en: string;
   count: number;
   photo: string;
+}
+
+// The minimal shape a listing/card view needs (homepage favorites,
+// /recipes grid, /search results) -- deliberately excludes ingredients,
+// method, notes, and everything else, so pages that only render a grid of
+// cards don't pull full recipe content (or the JSON's admin-only fields
+// like review_notes/flags/reviewed) into the client bundle just to show a
+// photo and a name.
+export interface RecipeSummary {
+  id: string;
+  category: string;
+  content_state: ContentState;
+  photo: string;
+  name_id: string;
+  name_en: string;
 }

@@ -307,7 +307,9 @@
       ],
       "review_notes": "Original restaurant recipe created 2006. Yield estimated at ~84 orders (65 lbs chicken / 4.5 lbs per ball x 6 orders per ball, per the scan's method step). This is a guess, not a scan fact -- for the historical record.",
       "yield_amount": 84,
-      "yield_unit": "servings"
+      "yield_unit": "servings",
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-113"
     },
     {
       "id": "resep-3",
@@ -509,7 +511,9 @@
           "step_id": "Masukkan bumbu yang lain-lainnya.",
           "step_en": ""
         }
-      ]
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-114"
     },
     {
       "id": "resep-5",
@@ -973,7 +977,9 @@
           "step_id": "Ini semuanya disatukan dan di-aduk.",
           "step_en": "Combine all of this together and stir."
         }
-      ]
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-115"
     },
     {
       "id": "resep-9",
@@ -4350,7 +4356,9 @@
           "step_en": "The coconut milk and kepala form the top layer."
         }
       ],
-      "serves": "9 Loyang"
+      "serves": "9 Loyang",
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-117"
     },
     {
       "id": "resep-46",
@@ -9140,7 +9148,9 @@
       "flags": [
         "no_headnote"
       ],
-      "content_state": "full"
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-2"
     },
     {
       "id": "resep-114",
@@ -9234,7 +9244,9 @@
         "no_headnote",
         "no_photo"
       ],
-      "content_state": "full"
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-4"
     },
     {
       "id": "resep-115",
@@ -9428,7 +9440,9 @@
         "no_headnote",
         "no_photo"
       ],
-      "content_state": "full"
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-8"
     },
     {
       "id": "resep-116",
@@ -9639,7 +9653,9 @@
       "flags": [
         "no_name_en"
       ],
-      "content_state": "full"
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-45"
     }
   ]
 }
