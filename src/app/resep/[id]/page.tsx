@@ -1,20 +1,27 @@
-import { getRecipeById, toClientRecipe, isComponentRecipe, difficultyLevels } from '@/lib/recipes';
+import { getRecipeById, toClientRecipe, difficultyLevels } from '@/lib/recipes';
 import { REF_LINK_SERVINGS } from '@/lib/recipeConstants';
 import type { Recipe } from '@/types/recipe';
 import ResepView from './ResepView';
 
-function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | undefined, isComponent: boolean): number {
+function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | undefined): number {
   if (qtyParam) {
     const n = Number(qtyParam);
     if (Number.isFinite(n) && n > 0) return n;
   }
-  // A component recipe (a paste/sauce another recipe links to) lands at
-  // consumer scale by default, same as arriving via that recipe's own
-  // "View recipe" link -- its yield_amount is the full historical batch,
-  // not a sane thing to show someone who found this page directly (e.g.
-  // via search) rather than through a parent dish.
-  if (isComponent) return REF_LINK_SERVINGS;
-  return recipe?.yield_amount ?? 4;
+  // yield_amount is only ever set on a recipe written at restaurant/batch
+  // scale -- a real home-scale recipe (recipe_type: 'home', or anything
+  // not yet reviewed under that scheme) uses the descriptive `serves`
+  // field instead and has no yield_amount at all. So any recipe with
+  // yield_amount set lands at a small consumer-scale quantity by
+  // default, same as arriving via a recipe_ref "View recipe" link,
+  // rather than showing the full batch (which could be hundreds of
+  // servings) to someone who found this page directly via search or a
+  // bookmark. This is a display default, not a claim that the recipe has
+  // been reviewed/converted -- an unreviewed batch recipe still shows
+  // its interpolated (linearly-divided) quantities, not a hand-adjusted
+  // home version.
+  if (recipe?.yield_amount != null) return REF_LINK_SERVINGS;
+  return 4;
 }
 
 // Server Component: reads the full dataset (via lib/recipes.ts) and does
@@ -30,8 +37,7 @@ export default function ResepPage({ params, searchParams }: {
   searchParams: { qty?: string };
 }) {
   const recipe = getRecipeById(params.id);
-  const isComponent = recipe ? isComponentRecipe(recipe.id) : false;
-  const initialQty = resolveInitialQty(recipe, searchParams.qty, isComponent);
+  const initialQty = resolveInitialQty(recipe, searchParams.qty);
 
   const validRefIds = recipe
     ? Array.from(new Set(

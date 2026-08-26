@@ -115,24 +115,6 @@ export function getRecipeSummariesByIds(ids: string[]): RecipeSummary[] {
     .map(toSummary);
 }
 
-// A recipe that another recipe's ingredient list references via
-// recipe_ref (a paste, a component sauce) doesn't have a "serving" of its
-// own -- its yield_amount is denominated in servings of whatever dish it
-// flavors, scaled to the full historical/restaurant batch (e.g. 600
-// servings of curry for one batch of paste). That's correct for the
-// record but not a sane thing to land on directly (via search, /recipes,
-// a bookmark) -- so the page defaults component recipes to a small
-// consumer-scale quantity instead. Derived from actual recipe_ref usage
-// rather than a category check (bumbu_dasar/sambal_saus also contain
-// standalone dishes eaten as-is), so any newly-linked component is
-// covered automatically.
-const componentRecipeIds = new Set(
-  data.recipes.flatMap(r => r.ingredients.map(i => i.recipe_ref).filter((id): id is string => !!id))
-);
-
-export function isComponentRecipe(id: string): boolean {
-  return componentRecipeIds.has(id);
-}
 
 // Display order for category tabs/tiles, independent of recipes.json's key
 // order (which reflects edit history in the admin tool, not intended
