@@ -652,9 +652,7 @@
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
-        "no_photo",
-        "scale"
+        "no_photo"
       ],
       "reviewed": true,
       "ingredients": [
@@ -728,7 +726,8 @@
           "step_id": "Ayam dibacam paling sedikit 3 jam.",
           "step_en": "Chicken marinated for at least 3 hours."
         }
-      ]
+      ],
+      "serves": "6-8"
     },
     {
       "id": "resep-7",
