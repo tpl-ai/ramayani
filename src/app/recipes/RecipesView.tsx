@@ -7,7 +7,7 @@ import { recipePhotoSrc } from '@/lib/photo';
 import type { RecipeSummary } from '@/types/recipe';
 import Header from '@/components/Header';
 
-function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
+function RecipeCard({ recipe, lang, onClick, onPhotoError }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void; onPhotoError: () => void }) {
   const [err, setErr] = useState(false);
   const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
   const hasPhoto = !!recipe.photo && !err;
@@ -29,9 +29,20 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'e
       }}>
         {hasPhoto && (
           <img
+            // Server-rendered <img> tags start loading as soon as the
+            // browser parses the HTML -- often before React hydrates and
+            // attaches onError. A fast 404 (this file is missing) can
+            // finish failing before that listener exists, so it never
+            // fires and the broken image sits there silently. The ref
+            // callback catches that already-failed state the moment
+            // React attaches to the DOM node, same idiom as the fade-in
+            // effect on the recipe detail page.
+            ref={img => {
+              if (img && img.complete && img.naturalWidth === 0) { setErr(true); onPhotoError(); }
+            }}
             src={recipePhotoSrc(recipe.photo)}
             alt={name}
-            onError={() => setErr(true)}
+            onError={() => { setErr(true); onPhotoError(); }}
             style={{
               position: 'absolute', inset: 0,
               width: '100%', height: '100%',
@@ -51,6 +62,40 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'e
   )
 }
 
+// A recipe with no photo (or a broken one -- see onPhotoError above), shown
+// as a plain text row below the photo grid rather than a card with an
+// empty gray box -- browsing shouldn't be dominated by placeholders while
+// photos get added over time. The small square is a quiet accent mark
+// (sized to the header's EN/ID button height, in the same red as the
+// Ramayani logo) rather than an icon, so a row still reads as "the same
+// kind of card, just without a photo yet" rather than an unrelated plain
+// link list.
+function TextRow({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
+  const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
+  const ready = recipe.content_state !== 'no_content';
+
+  return (
+    <div
+      onClick={ready ? onClick : undefined}
+      style={{
+        display: 'flex', alignItems: 'center', gap: 14,
+        padding: '14px 0', borderBottom: '1px solid #eee',
+        cursor: ready ? 'pointer' : 'default',
+        opacity: ready ? 1 : 0.6,
+      }}
+    >
+      <div style={{ width: 14, height: 14, background: '#cc0000', flexShrink: 0 }} />
+      <div style={{
+        fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+        fontSize: 20, fontWeight: 400, lineHeight: 1.2,
+        color: ready ? '#1a1a1a' : '#999',
+      }}>
+        {name}
+      </div>
+    </div>
+  );
+}
+
 interface FilterCat { id: string; label_en: string; label_id: string }
 
 export default function RecipesView({ recipes, categories, initialCategory }: {
@@ -63,6 +108,12 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [visible, setVisible] = useState(24);
   const [filterOpen, setFilterOpen] = useState(false);
+  // Recipes whose photo field is set but the actual file 404s (a stale/
+  // wrong filename) -- discovered only client-side, via the img's own
+  // onError, since the server has no way to know a referenced file is
+  // missing without fetching it. Falls through to the text list below
+  // instead of sitting in the grid as an empty gray box.
+  const [brokenPhotoIds, setBrokenPhotoIds] = useState<Set<string>>(new Set());
 
   const activeCat = categories.find(c => c.id === activeCategory);
   const activeCatLabel = activeCat ? (ctxLang === 'id' ? activeCat.label_id : activeCat.label_en) : (ctxLang === 'id' ? 'Semua' : 'All');
@@ -81,6 +132,13 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
   }, [recipes, activeCategory]);
 
   const displayed = sorted.slice(0, visible);
+  // `sorted` already puts photo recipes first (see above), so splitting
+  // just this page's slice keeps the two sections correct as "Load more"
+  // reveals further into the no-photo tail. A recipe moves to the
+  // no-photo list either because it never had one, or because its photo
+  // just failed to load (brokenPhotoIds, set by RecipeCard's onError).
+  const displayedWithPhoto = displayed.filter(r => r.photo && r.photo.trim() !== '' && !brokenPhotoIds.has(r.id));
+  const displayedWithoutPhoto = displayed.filter(r => !r.photo || r.photo.trim() === '' || brokenPhotoIds.has(r.id));
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
@@ -169,20 +227,55 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
           {ctxLang === 'id' ? 'Tidak ada resep yang cocok.' : 'No recipes match.'}
         </p>
       ) : (
-        <div className="recipes-grid" style={{
-          display: 'grid',
-          gap: 24,
-          padding: '0 48px',
-        }}>
-          {displayed.map((r) => (
-            <RecipeCard
-              key={r.id}
-              recipe={r}
-              lang={ctxLang}
-              onClick={() => router.push(`/resep/${r.id}`)}
-            />
-          ))}
-        </div>
+        <>
+          {displayedWithPhoto.length > 0 && (
+            <div className="recipes-grid" style={{
+              display: 'grid',
+              gap: 24,
+              padding: '0 48px',
+            }}>
+              {displayedWithPhoto.map((r) => (
+                <RecipeCard
+                  key={r.id}
+                  recipe={r}
+                  lang={ctxLang}
+                  onClick={() => router.push(`/resep/${r.id}`)}
+                  onPhotoError={() => setBrokenPhotoIds(prev => new Set(prev).add(r.id))}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Recipes without a photo yet — plain text rows, no placeholder box.
+              A heading names the section explicitly (not just a divider line)
+              so it reads as a continuation of the same recipe list, not
+              unrelated content; single column and a capped width match how a
+              list wants to be read (top to bottom), not a grid. */}
+          {displayedWithoutPhoto.length > 0 && (
+            <>
+              {displayedWithPhoto.length > 0 && (
+                <hr style={{ margin: '44px 48px 0', border: 'none', borderTop: '1px solid #e8e8e8' }} />
+              )}
+              <h2 style={{
+                fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+                fontSize: 22, fontWeight: 300, color: '#cc0000',
+                padding: '28px 48px 4px', margin: 0,
+              }}>
+                {ctxLang === 'id' ? 'Resep lainnya' : 'More recipes'}
+              </h2>
+              <div style={{ maxWidth: 640, padding: '0 48px' }}>
+                {displayedWithoutPhoto.map((r) => (
+                  <TextRow
+                    key={r.id}
+                    recipe={r}
+                    lang={ctxLang}
+                    onClick={() => router.push(`/resep/${r.id}`)}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </>
       )}
 
       {/* Load more */}
