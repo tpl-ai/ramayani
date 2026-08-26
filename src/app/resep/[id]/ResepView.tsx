@@ -127,7 +127,6 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
   difficultyInfo?: { id: string; en: string };
 }) {
   const { lang: ctxLang } = useLang();
-  const [lang, setLang] = useState<'EN' | 'ID'>('EN');
 
   const [photoFailed, setPhotoFailed] = useState(false);
   const [unitSystem, setUnitSystem] = useState<'metric' | 'imperial'>('metric');
@@ -161,7 +160,7 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
   if (!recipe) {
     return (
       <div style={{ background: '#fff', minHeight: '100vh', fontFamily: HELVETICA }}>
-        <Header lang={lang} setLang={setLang} />
+        <Header />
         <div style={{ padding: '16px 48px 0' }}>
           <a href="/recipes" style={{ fontSize: 13, color: '#999', textDecoration: 'none', fontFamily: HELVETICA }}>← All recipes</a>
         </div>
@@ -210,7 +209,7 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
       `}</style>
 
       <div className="print-hide">
-        <Header lang={lang} setLang={setLang} />
+        <Header />
       </div>
 
       <div className="recipe-container">

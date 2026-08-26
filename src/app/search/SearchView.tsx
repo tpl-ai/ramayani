@@ -10,9 +10,9 @@ import Header from '@/components/Header';
 // Card, grid, and search-bar styling mirror /recipes/RecipesView.tsx
 // exactly, so this page reads as the same product surface rather than a
 // separately designed one.
-function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'EN' | 'ID'; onClick: () => void }) {
+function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
   const [err, setErr] = useState(false);
-  const name = lang === 'ID' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
+  const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
   const hasPhoto = !!recipe.photo && !err;
 
   return (
@@ -57,7 +57,6 @@ function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'E
 export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
   const router = useRouter();
   const { lang: ctxLang } = useLang();
-  const [lang, setLang] = useState<'EN' | 'ID'>('EN');
   const [query, setQuery] = useState('');
   const [visible, setVisible] = useState(24);
 
@@ -75,7 +74,7 @@ export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
-      <Header lang={lang} setLang={setLang} />
+      <Header />
 
       {/* Search */}
       <div style={{ padding: '20px 32px 0' }}>
@@ -118,7 +117,7 @@ export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
           </div>
           <div className="recipes-grid" style={{ display: 'grid', gap: 24, padding: '16px 48px 0' }}>
             {displayed.map(r => (
-              <RecipeCard key={r.id} recipe={r} lang={lang} onClick={() => router.push(`/resep/${r.id}`)} />
+              <RecipeCard key={r.id} recipe={r} lang={ctxLang} onClick={() => router.push(`/resep/${r.id}`)} />
             ))}
           </div>
         </>

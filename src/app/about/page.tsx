@@ -88,7 +88,6 @@ function PressCard({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
 
 export default function AboutPage() {
   const { lang: ctxLang } = useLang();
-  const [lang, setLang] = useState<'EN' | 'ID'>('EN');
 
   const mainSections = storySections.filter(s => s.type !== 'closing');
   const closingSections = storySections.filter(s => s.type === 'closing');
@@ -96,7 +95,7 @@ export default function AboutPage() {
   return (
     <div style={{ background: '#ffffff', minHeight: '100vh' }}>
 
-      <Header lang={lang} setLang={setLang} />
+      <Header />
 
       {/* Portrait */}
       <div className="about-hero-wrap" style={{ padding: '24px 32px 0' }}>

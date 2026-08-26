@@ -2,11 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-
-interface HeaderProps {
-  lang: 'EN' | 'ID';
-  setLang: (lang: 'EN' | 'ID') => void;
-}
+import { useLang } from './LanguageContext';
 
 const NAV_ITEMS = [
   { label: 'RECIPES', href: '/recipes' },
@@ -16,9 +12,17 @@ const NAV_ITEMS = [
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
 
-export default function Header({ lang, setLang }: HeaderProps) {
+// Reads/writes the shared LanguageContext directly rather than taking
+// lang/setLang as props -- every page used to keep its own separate
+// useState('EN') just to hand to this component, disconnected from the
+// context that actually drives what content renders (tx(), t(), etc. all
+// read useLang()'s lang). Clicking EN/ID visibly changed which button was
+// highlighted here but never touched the page content -- this is the fix,
+// in the one place responsible for the toggle, rather than in every page.
+export default function Header() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, setLang } = useLang();
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
@@ -57,14 +61,14 @@ export default function Header({ lang, setLang }: HeaderProps) {
           <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
         </svg>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-          {(['EN', 'ID'] as const).map(l => (
+          {(['en', 'id'] as const).map(l => (
             <button key={l} onClick={() => setLang(l)} style={{
               fontSize: 11, fontWeight: lang === l ? 700 : 400,
               color: lang === l ? '#cc0000' : '#999',
               background: 'none', border: lang === l ? '1px solid #cc0000' : 'none',
               padding: '2px 6px', cursor: 'pointer',
               fontFamily: HELVETICA,
-            }}>{l}</button>
+            }}>{l.toUpperCase()}</button>
           ))}
         </div>
       </nav>
@@ -142,14 +146,14 @@ export default function Header({ lang, setLang }: HeaderProps) {
           }}>{item.label}</a>
         ))}
         <div style={{ display: 'flex', gap: 12, alignItems: 'center', marginTop: 24 }}>
-          {(['EN', 'ID'] as const).map(l => (
+          {(['en', 'id'] as const).map(l => (
             <button key={l} onClick={() => setLang(l)} style={{
               fontSize: 13, fontWeight: lang === l ? 700 : 400,
               color: lang === l ? '#cc0000' : '#999',
               background: 'none', border: `1px solid ${lang === l ? '#cc0000' : '#e8e8e8'}`,
               padding: '6px 14px', cursor: 'pointer',
               fontFamily: HELVETICA,
-            }}>{l}</button>
+            }}>{l.toUpperCase()}</button>
           ))}
         </div>
       </div>

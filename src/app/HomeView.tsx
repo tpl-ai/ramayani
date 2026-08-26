@@ -1,7 +1,8 @@
 'use client'
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import Header from '@/components/Header'
+import { useLang } from '@/components/LanguageContext'
 import { recipePhotoSrc } from '@/lib/photo'
 import type { RecipeSummary } from '@/types/recipe'
 
@@ -73,7 +74,7 @@ const ICONS: Record<string, () => React.ReactElement> = {
 
 export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeSummary[] }) {
   const router = useRouter()
-  const [lang, setLang] = useState<'EN' | 'ID'>('EN')
+  const { lang } = useLang()
   const recipesScrollRef = useRef<HTMLDivElement>(null)
   const categoriesScrollRef = useRef<HTMLDivElement>(null)
 
@@ -81,7 +82,7 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
     <div style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', background: '#fff', color: '#1a1a1a' }}>
 
       {/* NAV */}
-      <Header lang={lang} setLang={setLang} />
+      <Header />
 
       {/* SPLASH */}
       <div className="splash-hero" style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
@@ -121,7 +122,7 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
       {/* FAVORITE RECIPES */}
       <section id="recipes" style={{ paddingTop: 48, position: 'relative' }}>
         <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
-          {lang === 'EN' ? 'Favorite recipes' : 'Resep favorit'}
+          {lang === 'en' ? 'Favorite recipes' : 'Resep favorit'}
         </h2>
         <div ref={recipesScrollRef} style={{
           display: 'flex', gap: 35, overflowX: 'auto',
@@ -129,7 +130,7 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
           scrollbarWidth: 'none', msOverflowStyle: 'none',
         }}>
           {favoriteRecipes.map(r => {
-            const name = lang === 'ID' ? (r.name_id || r.name_en) : (r.name_en || r.name_id)
+            const name = lang === 'id' ? (r.name_id || r.name_en) : (r.name_en || r.name_id)
             const ready = r.content_state !== 'no_content'
             return (
               <div key={r.id} className="recipe-card" onClick={() => ready && router.push(`/resep/${r.id}`)}
@@ -187,7 +188,7 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
       {/* RECIPES BY CATEGORY */}
       <section style={{ padding: '18px 0 72px', position: 'relative' }}>
         <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
-          {lang === 'EN' ? 'Recipes by category' : 'Resep menurut jenis'}
+          {lang === 'en' ? 'Recipes by category' : 'Resep menurut jenis'}
         </h2>
         <div ref={categoriesScrollRef} style={{
           display: 'flex', gap: 30, overflowX: 'auto',

@@ -7,9 +7,9 @@ import { recipePhotoSrc } from '@/lib/photo';
 import type { RecipeSummary } from '@/types/recipe';
 import Header from '@/components/Header';
 
-function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'EN' | 'ID'; onClick: () => void }) {
+function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
   const [err, setErr] = useState(false);
-  const name = lang === 'ID' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
+  const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
   const hasPhoto = !!recipe.photo && !err;
 
   return (
@@ -60,7 +60,6 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
 }) {
   const router = useRouter();
   const { lang: ctxLang } = useLang();
-  const [lang, setLang] = useState<'EN' | 'ID'>('EN');
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [visible, setVisible] = useState(24);
   const [filterOpen, setFilterOpen] = useState(false);
@@ -85,7 +84,7 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
-      <Header lang={lang} setLang={setLang} />
+      <Header />
 
       {/* Category filter */}
       <div className="recipes-filter-row" style={{ padding: '20px 32px 16px' }}>
@@ -179,7 +178,7 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
             <RecipeCard
               key={r.id}
               recipe={r}
-              lang={lang}
+              lang={ctxLang}
               onClick={() => router.push(`/resep/${r.id}`)}
             />
           ))}
