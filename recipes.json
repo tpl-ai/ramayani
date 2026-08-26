@@ -640,9 +640,9 @@
     {
       "id": "resep-6",
       "resep_num": 6,
-      "category": "bumbu_dasar",
+      "category": "ayam",
       "photo": "",
-      "name_id": "Ayam Goreng Jakarta Marinade",
+      "name_id": "Ayam Goreng Jakarta",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
@@ -662,7 +662,9 @@
           "unit": "cups",
           "name_id": "Air",
           "name_en": "water",
-          "amount": "6"
+          "amount": "6",
+          "section_id": "",
+          "section_en": "Marinade"
         },
         {
           "unit": "cup",
@@ -713,10 +715,12 @@
           "amount": "2"
         },
         {
-          "unit": "",
-          "name_id": "Ayam dibacam paling sedikit 3 jam.",
-          "name_en": "Chicken marinated for at least 3 hours.",
-          "amount": ""
+          "unit": "whole",
+          "name_id": "",
+          "name_en": "Game Hens",
+          "amount": "4",
+          "section_id": "",
+          "section_en": "Chicken"
         }
       ],
       "method": [
