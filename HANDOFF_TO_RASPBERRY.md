@@ -10,6 +10,20 @@ about going forward. Nothing here requires a code change in raspberry itself
 ones. `recipes.json`'s location (project root) and overall shape are
 unchanged.
 
+## The agreed process (confirmed 2026-08-26)
+
+1. **Arman verifies the batch recipe** — confirms the scan transcription
+   (ingredients/method) is accurate. This is the existing `reviewed`/`flags`
+   fields' job.
+2. **Raspberry helps create the home-scale version** — a genuinely
+   rescaled-and-rounded recipe (real ingredient/method adjustments, not
+   linear division alone), as its own entry, linked back via
+   `recipe_type`/`linked_recipe_id` (section 1 below).
+3. **The website shows only home versions** — a batch recipe
+   (`recipe_type: "batch"`) is permanently hidden from the public site the
+   moment its home twin exists. It's kept forever as the unedited historical
+   record; nothing about it changes again once linked.
+
 ## 1. New fields: `recipe_type` and `linked_recipe_id`
 
 A dish can now exist as two separate recipe entries:
@@ -155,6 +169,38 @@ converting `resep-10` to a real unit, that same link will instead land on
 would then use the site's own [-]/[+] stepper, or the amount `resep-116`'s
 own ingredient line states it needs, to figure out how much to actually
 make — same as flipping to a sauce's own page in a physical cookbook.
+
+**Done** — raspberry converted both `resep-5` (now 20kg) and `resep-10` as
+requested. Confirmed live on the site.
+
+### Next task (2026-08-26): home-scale versions for Ayam Bumbu Rujak
+
+Now that `resep-5`'s real batch weight is recorded, the next step is the
+actual home conversion — two recipes needed, not one:
+
+**1. Sauce home version**, linked to `resep-5` as its batch original.
+Target **"makes about 4 cups"** — a real proportional rescale of every
+ingredient down to that amount (with sensible rounding), not a relabel of
+the batch quantities. This becomes the recipe a "View recipe" link lands
+on.
+
+**2. Dish home version** — the actual chicken-with-rujak-sauce recipe.
+**This dish doesn't exist as a recipe yet at any scale** — unlike Ayam
+Sauce Ramayani, which has both `resep-10` (sauce) and `resep-116` (dish) as
+separate entries, only the sauce (`resep-5`) exists for Bumbu Rujak. Please
+check whether a batch-scale version of this dish exists in the scans (the
+way `resep-7` supplied real per-order chicken-piece data that `resep-116`
+was built from). If it does, treat it the same as `resep-4`→`resep-114` etc.
+If it doesn't, this dish may need composing more like `resep-116` was —
+from real technique/ratio knowledge (Arman/Hertha) rather than a scan
+transcription.
+
+The dish's home version should reference the sauce home version via
+`recipe_ref`, with an ingredient line like *"1 cup Ayam Bumbu Rujak Sauce"*
+(however much less than 4 cups one order actually needs) — same pattern as
+`resep-113`'s curry-paste ingredient line pointing at `resep-1`. Once both
+exist, clicking that link will correctly land on the sauce's own "4 cups"
+page with no override, matching section 2's behavior above.
 
 ## 3. Please keep review/TODO commentary out of `notes_en`/`notes_id`/`headnote_en`/`headnote_id`
 
