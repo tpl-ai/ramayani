@@ -113,6 +113,49 @@ of this update — converting them to their real recorded volume/weight (from
 the scan, where available) is a good next data task, but not urgent; the
 site behaves correctly either way in the meantime.
 
+### Action requested (2026-08-26): convert resep-5 and resep-10 first
+
+Arman asked for these two specifically. Both already have the real batch
+total computed in their own `review_notes` — this is a re-labeling task,
+not new research.
+
+**`resep-5` (Ayam Bumbu Rujak Sauce)** — currently `yield_amount: 550,
+yield_unit: "servings"`. Its own `review_notes` already computed the real
+batch total: **~19.98kg / ~21.3L** (terasi excluded — quantity unknown,
+flagged rather than guessed, per the existing note). Suggest setting
+`yield_amount`/`yield_unit` to that total (e.g. `20` / `"kg"` — your call on
+rounding/precision), and updating `review_notes` to note the field now
+holds the real batch weight, not the servings estimate. Keep the existing
+servings/orders derivation in `review_notes` as background if it's useful,
+just not as the literal `yield_amount` anymore.
+
+**`resep-10` (Ayam Sauce Ramayani Sauce)** — currently `yield_amount: 200,
+yield_unit: "servings"`. Two things to know before converting this one:
+
+1. Its `review_notes` contain two candidate real totals that don't quite
+   agree: **~7.01kg** (summed from the ingredient list: ~140g/order × 50
+   orders) and a separate, rougher **~6.7L** estimate (visual/photo-based).
+   Please reconcile or pick one authoritative figure rather than us
+   guessing — not something to resolve from the website side.
+2. The current `200` was *deliberately* rigged (50 orders × the site's old
+   hardcoded `REF_LINK_SERVINGS = 4`) so that clicking "View recipe" from
+   `resep-116` landed pre-scaled to exactly one order's worth of sauce. That
+   workaround is now retired — see the site-side consequence above: a
+   physical-unit target no longer gets its quantity overridden by the link,
+   it just shows its own real yield, the way a cookbook's sauce recipe
+   states its own yield rather than being reframed around whichever dish
+   linked to it. So there's no need to reverse-engineer a number that makes
+   the link "come out even" anymore — just record the real batch weight.
+
+**Heads-up on the resulting behavior change** (intentional, not a
+regression): today, clicking "View recipe" on `resep-116`'s sauce
+ingredient lands on `resep-10` pre-scaled to "one order's worth." After
+converting `resep-10` to a real unit, that same link will instead land on
+`resep-10` showing its own full recorded yield (e.g. "7 kg"). A reader
+would then use the site's own [-]/[+] stepper, or the amount `resep-116`'s
+own ingredient line states it needs, to figure out how much to actually
+make — same as flipping to a sauce's own page in a physical cookbook.
+
 ## 3. Please keep review/TODO commentary out of `notes_en`/`notes_id`/`headnote_en`/`headnote_id`
 
 These four fields are rendered directly on the public website — verified,
