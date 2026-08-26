@@ -5,7 +5,6 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { useLang } from '@/components/LanguageContext';
 import { recipePhotoSrc } from '@/lib/photo';
-import { REF_LINK_SERVINGS } from '@/lib/recipeConstants';
 import { displayQuantity } from '@/lib/units';
 import type { Recipe, IngredientLine, MethodStep } from '@/types/recipe';
 import Header from '@/components/Header';
@@ -121,10 +120,10 @@ function singularizeUnit(unit: string): string {
 
 // ── page ──────────────────────────────────────────────────────────
 
-export default function ResepView({ recipe, initialQty, validRefIds, difficultyInfo }: {
+export default function ResepView({ recipe, initialQty, refLinkQty, difficultyInfo }: {
   recipe: Recipe | null;
   initialQty: number;
-  validRefIds: string[];
+  refLinkQty: Record<string, number | null>;
   difficultyInfo?: { id: string; en: string };
 }) {
   const { lang: ctxLang } = useLang();
@@ -134,8 +133,8 @@ export default function ResepView({ recipe, initialQty, validRefIds, difficultyI
   const [unitSystem, setUnitSystem] = useState<'metric' | 'imperial'>('metric');
   // Drives the yield/serving-size control below — independent of the
   // `serves` field, which is just descriptive text ("Serves 4-6"). Starts
-  // at initialQty, computed server-side (the recipe's own full batch by
-  // default, a REF_LINK_SERVINGS-scaled amount for a component recipe, or
+  // at initialQty, computed server-side (the recipe's own recorded yield,
+  // a smaller default for the ambiguous "servings" unit specifically, or
   // a `?qty=` override from a recipe_ref link -- see resolveInitialQty in
   // page.tsx).
   const [qty, setQty] = useState(initialQty);
@@ -346,7 +345,8 @@ export default function ResepView({ recipe, initialQty, validRefIds, difficultyI
                   <ul className="ing-list">
                     {processedIngs.map((item, i) => {
                       const refId = ings[i].recipe_ref;
-                      const showRefLink = !!refId && validRefIds.includes(refId);
+                      const showRefLink = !!refId && refId in refLinkQty;
+                      const refQty = refId ? refLinkQty[refId] : null;
                       return (
                         <Fragment key={i}>
                           {ingredientSection(ings[i], ctxLang) && (
@@ -361,7 +361,7 @@ export default function ResepView({ recipe, initialQty, validRefIds, difficultyI
                             {item}
                             {showRefLink && (
                               <div className="print-hide">
-                                <Link href={`/resep/${refId}?qty=${REF_LINK_SERVINGS}`} style={RECIPE_LINK_BTN}>
+                                <Link href={refQty ? `/resep/${refId}?qty=${refQty}` : `/resep/${refId}`} style={RECIPE_LINK_BTN}>
                                   {ctxLang === 'id' ? 'Lihat resep' : 'View recipe'}
                                 </Link>
                               </div>

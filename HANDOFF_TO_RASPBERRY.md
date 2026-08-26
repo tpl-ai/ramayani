@@ -1,6 +1,6 @@
 # Handoff to raspberry — recipes.json changes from the ramayani side
 
-Date: 2026-08-25
+Date: 2026-08-25 (section 2 updated 2026-08-26)
 
 This documents what changed in `recipes.json`'s schema and conventions from a
 session working on the **ramayani** website repo. Raspberry is the tool that
@@ -49,7 +49,48 @@ Note `resep-116` (Ayam Sauce Ramayani, the dish) has *no* `linked_recipe_id`
 freshly-written method, not a scaled twin of a single batch recipe. Not every
 home recipe needs a batch counterpart to link to.
 
-## 2. "Serving" vs. "order" — please don't conflate these in `yield_amount`
+## 2. UPDATED 2026-08-26 — For a sauce/paste/marinade, use a real physical
+   unit for `yield_amount`/`yield_unit`, not "servings"
+
+This corrects what an earlier version of this doc said (below, for the
+record) — checked against how actual cookbooks do it (America's Test
+Kitchen, Food Network, professional culinary references): a sauce/paste
+yield is always given in **volume or weight** — "makes about 2 cups,"
+"makes 600mL" — never "servings." The reasoning holds up: how much sauce
+one "serving" uses is inherently variable (a tablespoon as a condiment vs.
+a half-cup tossed with pasta), so "servings" doesn't have a fixed meaning
+for a sauce the way it does for a plated dish. When a cookbook does want to
+connect a sauce's yield to a dish, it's a *separate* note alongside the real
+measurement — Test Kitchen's own phrasing is "makes about 2 cups (for 4
+curries)" — two different units, kept distinct, not conflated into one
+"servings" number.
+
+This is also, in hindsight, the actual root cause of every yield estimate
+that's needed correcting so far (`resep-1`'s 600, `resep-10`'s 50→200,
+`resep-5`'s low-confidence 550) — all three were back-deriving a "servings"
+figure from a real, directly-known volume/weight by guessing things like
+"grams of sauce per order" and "people per order." That guesswork is
+avoidable: if a scan states the actual batch quantity (liters, kg, bags),
+record *that* directly as `yield_amount`/`yield_unit` — no conversion, no
+guessing, no LOW-confidence caveats needed for this field. A separate,
+optional, plainly-labeled note (in `notes_en`/`headnote_en` if worth
+telling a reader, or `review_notes` if just useful context) can still say
+"enough for about N servings of X" when that's actually known — same as
+Test Kitchen's parenthetical — but that estimate shouldn't be the number
+stored in `yield_amount` itself.
+
+**Site-side consequence, already implemented:** a recipe's default display
+quantity is only shrunk to a small number when `yield_unit === "servings"`
+exactly (still true for the not-yet-updated `resep-1`/`resep-10`/`resep-5`).
+Any other unit (cups, mL, g, kg, ...) is shown as recorded, no shrinking —
+a real physical yield is self-explanatory on its own, the way "makes about
+2 cups" doesn't need softening in any cookbook. Same logic for a
+`recipe_ref` "View recipe" link: it only overrides the target's quantity
+when the target is servings-denominated; a physical-unit target just links
+to its own page showing its own recorded yield.
+
+<details>
+<summary>Original 2026-08-25 version of this section (superseded)</summary>
 
 `yield_amount`/`yield_unit` should always be denominated in true **servings**
 — what one diner eats in one sitting. Not "orders" (a Ramayani menu/scan
@@ -64,6 +105,13 @@ count in "orders" or "batches" rather than individual servings, that
 conversion assumption needs to be worked out and written into
 `review_notes` (the way `resep-116`'s correction did), not typed directly
 into `yield_amount` as-is.
+
+</details>
+
+`resep-1`, `resep-10`, and `resep-5` still use `yield_unit: "servings"` as
+of this update — converting them to their real recorded volume/weight (from
+the scan, where available) is a good next data task, but not urgent; the
+site behaves correctly either way in the meantime.
 
 ## 3. Please keep review/TODO commentary out of `notes_en`/`notes_id`/`headnote_en`/`headnote_id`
 

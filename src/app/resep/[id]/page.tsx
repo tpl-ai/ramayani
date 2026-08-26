@@ -8,20 +8,16 @@ function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | undefi
     const n = Number(qtyParam);
     if (Number.isFinite(n) && n > 0) return n;
   }
-  // yield_amount is only ever set on a recipe written at restaurant/batch
-  // scale -- a real home-scale recipe (recipe_type: 'home', or anything
-  // not yet reviewed under that scheme) uses the descriptive `serves`
-  // field instead and has no yield_amount at all. So any recipe with
-  // yield_amount set lands at a small consumer-scale quantity by
-  // default, same as arriving via a recipe_ref "View recipe" link,
-  // rather than showing the full batch (which could be hundreds of
-  // servings) to someone who found this page directly via search or a
-  // bookmark. This is a display default, not a claim that the recipe has
-  // been reviewed/converted -- an unreviewed batch recipe still shows
-  // its interpolated (linearly-divided) quantities, not a hand-adjusted
-  // home version.
-  if (recipe?.yield_amount != null) return REF_LINK_SERVINGS;
-  return 4;
+  // "servings" is an ambiguous, back-derived proxy unit for a sauce/paste
+  // component -- its yield_amount in that case is an estimate of how many
+  // servings of some OTHER dish the batch supports (guessed from
+  // portion-per-order conventions), not a directly measured quantity, so
+  // the raw number (which can run into the hundreds) isn't something to
+  // show a reader by default. A real physical unit (cups, mL, g, kg...)
+  // is self-explanatory by comparison, the way any cookbook's "makes
+  // about 2 cups" already is -- shown as recorded, no softening needed.
+  if (recipe?.yield_amount != null && recipe.yield_unit === 'servings') return REF_LINK_SERVINGS;
+  return recipe?.yield_amount ?? 4;
 }
 
 // Server Component: reads the full dataset (via lib/recipes.ts) and does
@@ -39,13 +35,25 @@ export default function ResepPage({ params, searchParams }: {
   const recipe = getRecipeById(params.id);
   const initialQty = resolveInitialQty(recipe, searchParams.qty);
 
-  const validRefIds = recipe
-    ? Array.from(new Set(
-        recipe.ingredients
-          .map(i => i.recipe_ref)
-          .filter((id): id is string => !!id && !!getRecipeById(id))
-      ))
-    : [];
+  // Each recipe_ref ingredient links to that recipe's own page. Only
+  // force a `?qty=` override when the target's yield is denominated in
+  // the ambiguous "servings" unit -- that's the case where "servings of
+  // curry" needs translating into "servings of the referenced paste" via
+  // REF_LINK_SERVINGS. A target with a real physical yield_unit doesn't
+  // need translating -- its own page already shows its own honest yield
+  // (see resolveInitialQty), the way a cookbook's paste recipe just
+  // states "makes about 2 cups" on its own page rather than being
+  // reframed in terms of the dish that sent you there.
+  const refLinkQty: Record<string, number | null> = {};
+  if (recipe) {
+    for (const ing of recipe.ingredients) {
+      const refId = ing.recipe_ref;
+      if (refId && !(refId in refLinkQty)) {
+        const target = getRecipeById(refId);
+        if (target) refLinkQty[refId] = target.yield_unit === 'servings' ? REF_LINK_SERVINGS : null;
+      }
+    }
+  }
 
   const difficultyInfo = recipe?.difficulty ? difficultyLevels[recipe.difficulty] : undefined;
 
@@ -53,7 +61,7 @@ export default function ResepPage({ params, searchParams }: {
     <ResepView
       recipe={recipe ? toClientRecipe(recipe) : null}
       initialQty={initialQty}
-      validRefIds={validRefIds}
+      refLinkQty={refLinkQty}
       difficultyInfo={difficultyInfo}
     />
   );
