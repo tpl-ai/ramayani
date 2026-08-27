@@ -3,11 +3,13 @@
 import { useState, useEffect, useRef, Fragment } from 'react';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import { recipePhotoSrc } from '@/lib/photo';
 import { displayQuantity } from '@/lib/units';
-import type { Recipe, IngredientLine, MethodStep } from '@/types/recipe';
+import type { Recipe, IngredientLine, MethodStep, FilterCat } from '@/types/recipe';
 import Header from '@/components/Header';
+import CategoryTabs from '@/components/CategoryTabs';
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
 const FACT_ICON = { width: 17, height: 17, viewBox: '0 0 24 24', fill: 'none', stroke: '#cc0000', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
@@ -120,13 +122,27 @@ function singularizeUnit(unit: string): string {
 
 // ── page ──────────────────────────────────────────────────────────
 
-export default function ResepView({ recipe, initialQty, refLinkQty, difficultyInfo }: {
+export default function ResepView({ recipe, initialQty, refLinkQty, difficultyInfo, categories }: {
   recipe: Recipe | null;
   initialQty: number;
   refLinkQty: Record<string, number | null>;
   difficultyInfo?: { id: string; en: string };
+  categories: FilterCat[];
 }) {
+  const router = useRouter();
   const { lang: ctxLang } = useLang();
+
+  // "Back" goes to wherever the reader actually came from (the calling
+  // recipe's "View recipe" link, search results, a category listing) --
+  // ordinary browser/SPA history, not a guess about the referrer (which
+  // Next.js client-side navigation doesn't reliably expose anyway). Falls
+  // back to /recipes only when there's no in-app history to go back to
+  // (e.g. the recipe URL was opened directly, or this is the first page
+  // in the tab).
+  const goBack = () => {
+    if (typeof window !== 'undefined' && window.history.length > 1) router.back();
+    else router.push('/recipes');
+  };
 
   const [photoFailed, setPhotoFailed] = useState(false);
   const [unitSystem, setUnitSystem] = useState<'metric' | 'imperial'>('metric');
@@ -223,6 +239,24 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
 
       <div className="print-hide">
         <Header />
+        <div className="recipes-filter-row" style={{ padding: '16px 32px' }}>
+          <button
+            onClick={goBack}
+            style={{
+              fontSize: 13, color: '#999', background: 'none', border: 'none',
+              padding: 0, cursor: 'pointer', fontFamily: HELVETICA, flexShrink: 0,
+              marginRight: 24,
+            }}
+          >
+            ← {ctxLang === 'id' ? 'Kembali' : 'Back'}
+          </button>
+          <CategoryTabs
+            categories={categories}
+            activeCategory={recipe.category}
+            lang={ctxLang}
+            onSelect={(id) => router.push(id === 'all' ? '/recipes' : `/recipes?category=${id}`)}
+          />
+        </div>
       </div>
 
       <div className="recipe-container">

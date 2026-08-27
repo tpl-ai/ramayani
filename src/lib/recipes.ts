@@ -1,4 +1,4 @@
-import type { Recipe, CategoryInfo, DifficultyInfo, RecipeMeta, CategoryWithStats, RecipeSummary } from '@/types/recipe';
+import type { Recipe, CategoryInfo, DifficultyInfo, RecipeMeta, CategoryWithStats, RecipeSummary, FilterCat } from '@/types/recipe';
 import recipesJson from '../../recipes.json';
 
 // This module imports the full recipes.json -- including admin-only
@@ -140,6 +140,16 @@ export function getCategoriesWithStats(): CategoryWithStats[] {
       const bi = CATEGORY_ORDER.indexOf(b.key);
       return (ai === -1 ? CATEGORY_ORDER.length : ai) - (bi === -1 ? CATEGORY_ORDER.length : bi);
     });
+}
+
+// The category-tab bar's data, including the "All" entry -- shared by
+// /recipes and the recipe detail page rather than each building this
+// array separately.
+export function getFilterCategories(): FilterCat[] {
+  return [
+    { id: 'all', label_en: 'All', label_id: 'Semua' },
+    ...getCategoriesWithStats().map(c => ({ id: c.key, label_en: c.name_en, label_id: c.name_id })),
+  ];
 }
 
 export function t(recipe: Recipe, field: 'name' | 'headnote' | 'notes', lang: 'id' | 'en'): string {

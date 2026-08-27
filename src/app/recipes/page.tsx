@@ -1,4 +1,4 @@
-import { getAllRecipeSummaries, getCategoriesWithStats } from '@/lib/recipes';
+import { getAllRecipeSummaries, getFilterCategories } from '@/lib/recipes';
 import RecipesView from './RecipesView';
 
 // Server Component: reads the full dataset once, server-side, and hands
@@ -9,10 +9,7 @@ import RecipesView from './RecipesView';
 // that only renders a grid of cards.
 export default function RecipesPage({ searchParams }: { searchParams: { category?: string } }) {
   const recipes = getAllRecipeSummaries();
-  const categories = [
-    { id: 'all', label_en: 'All', label_id: 'Semua' },
-    ...getCategoriesWithStats().map(c => ({ id: c.key, label_en: c.name_en, label_id: c.name_id })),
-  ];
+  const categories = getFilterCategories();
   const initialCategory = searchParams.category || 'all';
 
   return <RecipesView recipes={recipes} categories={categories} initialCategory={initialCategory} />;

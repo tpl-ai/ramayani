@@ -127,3 +127,11 @@ export interface RecipeSummary {
   name_id: string;
   name_en: string;
 }
+
+// The category-tab bar's shape -- used on both /recipes (filters its own
+// grid) and the recipe detail page (navigates to /recipes?category=X).
+export interface FilterCat {
+  id: string;
+  label_en: string;
+  label_id: string;
+}
