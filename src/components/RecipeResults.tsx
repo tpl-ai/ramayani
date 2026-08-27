@@ -63,15 +63,15 @@ function RecipeCard({ recipe, lang, onClick, onPhotoError }: { recipe: RecipeSum
   );
 }
 
-// A recipe with no photo (or a broken one -- see onPhotoError above), shown
-// as a plain text row below the photo grid rather than a card with an
-// empty gray box -- browsing shouldn't be dominated by placeholders while
-// photos get added over time. The small square is a quiet accent mark
-// (sized to the header's EN/ID button height, in the same red as the
-// Ramayani logo) rather than an icon, so a row still reads as "the same
-// kind of card, just without a photo yet" rather than an unrelated plain
-// link list.
-function TextRow({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
+// A recipe shown as a plain text row rather than a photo card -- either
+// because it has no photo yet (the /recipes "More recipes" section below),
+// or because the surface it's on (search results) deliberately never shows
+// photos at all, to avoid fetching images for every partial keystroke as
+// someone types -- see SearchView, which uses this directly. The small
+// square is a quiet accent mark (sized to the header's EN/ID button
+// height, in the same red as the Ramayani logo) rather than an icon, so a
+// row still reads as "a recipe card," just without a photo.
+export function TextRow({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
   const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
   const ready = recipe.content_state !== 'no_content';
 
@@ -93,6 +93,23 @@ function TextRow({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' 
       }}>
         {name}
       </div>
+    </div>
+  );
+}
+
+export function LoadMoreButton({ lang, onClick }: { lang: 'en' | 'id'; onClick: () => void }) {
+  return (
+    <div style={{ textAlign: 'center', padding: '32px 32px 0' }}>
+      <button
+        onClick={onClick}
+        style={{
+          fontSize: 15, fontWeight: 500, color: '#1a1a1a',
+          border: '1.5px solid #e0e0e0', borderRadius: 50,
+          padding: '11px 28px', background: '#fff', cursor: 'pointer', fontFamily: 'inherit',
+        }}
+      >
+        {lang === 'id' ? 'Lihat lebih banyak' : 'Load more'}
+      </button>
     </div>
   );
 }
@@ -164,20 +181,7 @@ export default function RecipeResults({ items, lang, onSelect, hasMore, onLoadMo
         </>
       )}
 
-      {hasMore && (
-        <div style={{ textAlign: 'center', padding: '32px 32px 0' }}>
-          <button
-            onClick={onLoadMore}
-            style={{
-              fontSize: 15, fontWeight: 500, color: '#1a1a1a',
-              border: '1.5px solid #e0e0e0', borderRadius: 50,
-              padding: '11px 28px', background: '#fff', cursor: 'pointer', fontFamily: 'inherit',
-            }}
-          >
-            {lang === 'id' ? 'Lihat lebih banyak' : 'Load more'}
-          </button>
-        </div>
-      )}
+      {hasMore && <LoadMoreButton lang={lang} onClick={onLoadMore} />}
     </>
   );
 }

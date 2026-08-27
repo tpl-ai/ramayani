@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import type { RecipeSummary } from '@/types/recipe';
 import Header from '@/components/Header';
-import RecipeResults from '@/components/RecipeResults';
+import { TextRow, LoadMoreButton } from '@/components/RecipeResults';
 
 export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
   const router = useRouter();
@@ -52,7 +52,12 @@ export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
         </div>
       </div>
 
-      {/* Results */}
+      {/* Results — text only, no photos. Searching is a fast, narrowing
+          lookup by name, not visual browsing (that's what /recipes is
+          for), and images would otherwise get fetched and discarded on
+          every partial keystroke as someone types toward what they want.
+          The photo itself still loads normally once they click through
+          to the recipe page. */}
       {query.trim() === '' ? (
         <p style={{ padding: '40px 32px', fontSize: 14, color: '#aaa', textAlign: 'center' }}>
           {ctxLang === 'id' ? 'Ketik untuk mencari resep' : 'Start typing to search'}
@@ -68,15 +73,19 @@ export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
               {results.length} {ctxLang === 'id' ? 'resep' : 'results'}
             </span>
           </div>
-          <div style={{ paddingTop: 16 }}>
-            <RecipeResults
-              items={displayed}
-              lang={ctxLang}
-              onSelect={(id) => router.push(`/resep/${id}`)}
-              hasMore={results.length > visible}
-              onLoadMore={() => setVisible(v => v + 24)}
-            />
+          <div style={{ maxWidth: 640, padding: '16px 48px 0' }}>
+            {displayed.map(r => (
+              <TextRow
+                key={r.id}
+                recipe={r}
+                lang={ctxLang}
+                onClick={() => router.push(`/resep/${r.id}`)}
+              />
+            ))}
           </div>
+          {results.length > visible && (
+            <LoadMoreButton lang={ctxLang} onClick={() => setVisible(v => v + 24)} />
+          )}
         </>
       )}
 
