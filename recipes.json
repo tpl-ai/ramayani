@@ -1162,7 +1162,7 @@
       "id": "resep-11",
       "resep_num": 11,
       "category": "ayam",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ayam_bakar_solo_cookpad-dk1nqjTX7hVqduPkBBmCtUgYp2tx2V.webp",
+      "photo": "",
       "name_id": "Ayam Solo",
       "name_en": "Grilled Coconut Chicken",
       "headnote_id": "",
@@ -1172,7 +1172,8 @@
       "content_state": "partial",
       "flags": [
         "no_headnote",
-        "no_serves"
+        "no_serves",
+        "no_photo"
       ],
       "review_notes": "Ingredient quantities rewritten from the original scan (Ayam Solo.png) on 2026-08-22. The source page has two quantity columns — a base (1x) column and a 1½x-batch column — per Arman's confirmation, only the base (1x) column was kept; the 1½x figures were not recorded. No method is written anywhere in the source (confirmed across File 1, pages 9 and 15).",
       "reviewed": true,
