@@ -1,6 +1,7 @@
 # Handoff to raspberry — recipes.json changes from the ramayani side
 
-Date: 2026-08-25 (section 2 updated 2026-08-26)
+Date: 2026-08-25 (section 2 updated 2026-08-26; `yield_per_serving` reply
+added 2026-08-27, see bottom)
 
 This documents what changed in `recipes.json`'s schema and conventions from a
 session working on the **ramayani** website repo. Raspberry is the tool that
@@ -270,3 +271,53 @@ notes above were technically extractable by anyone opening browser dev
 tools, not just visible in the rendered page. This was a website-side fix
 (moving data-fetching to Next.js Server Components); it doesn't change
 `recipes.json`'s shape or how raspberry should write to it.
+
+## 5. Reply to `HANDOFF_TO_RAMAYANI.md`: `yield_per_serving` is live (2026-08-27)
+
+Read `HANDOFF_TO_RAMAYANI.md` and `docs/yield-scaling.md`, verified
+`resep-10`/`resep-120`/`resep-116` in the live data match what both docs
+describe before implementing anything. Shipped:
+
+- `yield_per_serving?: number` added to the `Recipe` type, whitelisted
+  through `toClientRecipe` (it's a plain number, no privacy concern, but
+  everything sent to the client is an explicit whitelist, not a type cast
+  — see section 4 above / the earlier data-leak fix — so new fields don't
+  reach the browser by accident).
+- Recipe page now shows `servings = qty / yield_per_serving`, rendered
+  next to the yield stepper: *"Makes: [-] 4 cups [+] (≈4 servings)"*.
+- Only shown when `yield_per_serving` is actually set (so `resep-1`,
+  still `yield_unit: "servings"`, correctly shows nothing extra — no
+  divide-by-the-wrong-thing risk).
+- `REF_LINK_SERVINGS`/the `recipe_ref` link override logic — untouched,
+  as asked. Confirmed by reading `page.tsx` before changing anything: it
+  already only fires for `yield_unit === "servings"` exactly, so this was
+  already independent, not something this change could have entangled by
+  accident.
+
+**Verified live** (temporarily, locally, `yield_per_serving: 1` on
+`resep-120`, never committed since that's raspberry's field to set):
+confirmed the display renders correctly, confirmed it updates dynamically
+as the `[-]`/`[+]` stepper changes (not frozen at the original
+`yield_amount`), confirmed the EN/ID toggle switches "servings"/"porsi"
+correctly, confirmed `resep-1` is unaffected. Test value reverted before
+committing.
+
+**The two open questions, decided:**
+- **Rounding**: nearest whole number, minimum 1
+  (`Math.max(1, Math.round(qty / yield_per_serving))`) — exactly the doc's
+  own suggestion, no reason to deviate. Documented inline in the code
+  comment, not just here.
+- **Where else to display it**: recipe detail page only, *not* added to
+  `RecipeSummary` (the shape used by `/recipes`, `/search`, and the
+  homepage's card/list views). Reasoning: those surfaces were deliberately
+  kept to a minimal shape earlier this session specifically so listing
+  pages don't ship more than a name/photo/category need — adding a
+  servings figure there would mean growing that shared summary payload on
+  every listing page just to serve one field on cards, for a number
+  that's arguably most useful at the point where someone's actually
+  deciding how much to make (the stepper itself), not while skimming a
+  list of names. Revisit if there's an actual product reason to show it
+  earlier — not needed to ship this.
+
+Go ahead and backfill `yield_per_serving: 1` on `resep-118`/`resep-120`
+and add the input field to `RecipeEditor.tsx` whenever's convenient.

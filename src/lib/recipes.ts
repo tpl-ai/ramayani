@@ -79,6 +79,7 @@ export function toClientRecipe(r: Recipe): Recipe {
     featured_order: r.featured_order,
     yield_amount: r.yield_amount,
     yield_unit: r.yield_unit,
+    yield_per_serving: r.yield_per_serving,
     prep_time_minutes: r.prep_time_minutes,
     difficulty: r.difficulty,
     recipe_type: r.recipe_type,

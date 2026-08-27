@@ -56,6 +56,16 @@ export interface Recipe {
   // reference this one as a component (see IngredientLine.recipe_ref).
   yield_amount?: number;
   yield_unit?: string;
+  // How much of yield_amount (in the same yield_unit) equals one serving
+  // -- e.g. yield_amount: 4, yield_unit: "cups", yield_per_serving: 1
+  // means 1 cup is a serving. Only meaningful when yield_unit is a real
+  // physical unit (not the ambiguous "servings" unit itself, where the
+  // amount already IS the serving count with nothing to divide). Lets
+  // the site compute and display an approximate servings count instead
+  // of that only existing as unstructured headnote prose ("about 1 cup
+  // per order"). See HANDOFF_TO_RAMAYANI.md / docs/yield-scaling.md for
+  // the full spec and history.
+  yield_per_serving?: number;
   prep_time_minutes?: number;
   difficulty?: string;
   // A dish can exist as two separate recipes: the restaurant/batch

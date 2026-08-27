@@ -186,6 +186,19 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
     .map((s) => ({ text: methodStepText(s, ctxLang), section: methodSection(s, ctxLang) }))
     .filter((s) => s.text);
   const factor    = qty / baseQty.current;
+  // Approximate servings for the *current* qty, not just the recipe's
+  // base yield_amount -- as the reader dials the stepper up/down, this
+  // follows along (qty=2 cups at 1 cup/serving reads "≈2 servings", not
+  // stuck at the original 4). Only meaningful for a real physical
+  // yield_unit; the ambiguous "servings" unit already IS the serving
+  // count, nothing to divide (yield_per_serving is never set for it --
+  // see the Recipe type comment). Rounded to the nearest whole serving,
+  // minimum 1 -- "servings" is already an inherently soft number in any
+  // cookbook, a single approximate figure is honest enough without
+  // building a range on top of it.
+  const approxServings = recipe.yield_per_serving
+    ? Math.max(1, Math.round(qty / recipe.yield_per_serving))
+    : null;
   const isComingSoon = recipe.content_state === 'no_content';
   const processedIngs = ings.map(i => formatIngredient(i, ctxLang, factor, unitSystem));
   const servesDisplay = typeof recipe.serves === 'string' && recipe.serves.trim() ? recipe.serves : null;
@@ -327,6 +340,11 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
                     <span className="serves-num">
                       {qty}{recipe.yield_unit ? ` ${qty === 1 ? singularizeUnit(recipe.yield_unit) : recipe.yield_unit}` : ''}
                     </span>
+                    {approxServings != null && (
+                      <span style={{ color: '#999', fontSize: '0.9em' }}>
+                        ({ctxLang === 'id' ? `≈${approxServings} porsi` : `≈${approxServings} serving${approxServings === 1 ? '' : 's'}`})
+                      </span>
+                    )}
                     <button
                       className="serves-btn"
                       onClick={() => setQty(q => q + 1)}
