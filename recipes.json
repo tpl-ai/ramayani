@@ -1245,9 +1245,9 @@
       "name_id": "Ayam Pukang",
       "name_en": "",
       "headnote_id": "",
-      "headnote_en": "Ayam pukang is particularly known in Betawi (Jakarta) cuisine. It features chicken that is first grilled or fried, then lightly bruised or pounded (pukul), and finally simmered in a spiced coconut milk gravy.",
-      "notes_id": "Catatan Ibu: 'bisa dipake djuga buat pesmol.' November 2000. Untuk Vegetarian: jangan pakai trasi & kecap ikan.",
-      "notes_en": "Mother's note: 'Can also be used for Pesmol.' November 2000. Vegetarian note written by mother in the original.",
+      "headnote_en": "The chicken is first simmered in coconut milk infused with ground spices and aromatics until tender, and then grilled over charcoal while being basted with the remaining coconut paste",
+      "notes_id": "",
+      "notes_en": "The ground spices also be used for Pesmol.(November 2000)",
       "content_state": "full",
       "flags": [
         "no_name_en",
@@ -1268,7 +1268,9 @@
           "unit": "stalks",
           "name_id": "serai (lemon grass)",
           "name_en": "lemongrass",
-          "amount": "2"
+          "amount": "2",
+          "section_id": "",
+          "section_en": "Coconut milk infused with spices and aromatics"
         },
         {
           "unit": "cm",
@@ -1378,7 +1380,8 @@
       ],
       "tips_en": [
         "For Vegetarian: Do not use shrimp paste and fish sauce. Use vegetables, potatoes, and egg blend"
-      ]
+      ],
+      "story_en": "Pre-cooking free-range chicken is a traditional Javanese technique that tenderizes and locks in the coconut flavors before grilling"
     },
     {
       "id": "resep-13",
