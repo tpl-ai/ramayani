@@ -1,6 +1,6 @@
 # Handoff to ramayani — a `yield_per_serving` field for site display
 
-Date: 2026-08-27
+Date: 2026-08-27 (correction + follow-up spec added same day, see bottom)
 
 This is the reverse direction of `HANDOFF_TO_RASPBERRY.md` — a spec from the
 raspberry side asking for a small site-code change on the ramayani side.
@@ -40,8 +40,13 @@ yield_per_serving?: number;  // NEW — how much of yield_amount (in yield_unit)
 
 **Semantics:**
 - Expressed in the *same* `yield_unit` as `yield_amount`. E.g. resep-120
-  (`yield_amount: 4, yield_unit: "cups"`) would get `yield_per_serving: 1`
-  — meaning 1 cup = 1 serving.
+  (`yield_amount: 4, yield_unit: "cups"`) got `yield_per_serving: 0.4` —
+  meaning 0.4 cup (1 cup per order ÷ 2.5 people/order) = 1 real serving.
+  **Careful here** — this was actually implemented wrong the first time:
+  don't set this to "how much = 1 order," set it to "how much = 1 real
+  serving." An order and a serving aren't the same thing (an order is
+  shared between multiple people) — see the correction note near the
+  bottom of this doc.
 - Computed servings: `servings = yield_amount / yield_per_serving`.
 - Only meaningful when `yield_unit` is a real physical unit. When
   `yield_unit === "servings"` already (currently only resep-1, the curry
@@ -80,13 +85,14 @@ same playbook, `REF_LINK_SERVINGS` becomes fully dead code on its own —
 `yield_per_serving` doesn't retire it by itself. Please don't bundle these
 into one change; they're independent.
 
-## Data already available (raspberry side will backfill these once this ships)
+## Data already available (raspberry side backfilled these once this shipped)
 
 - `resep-118` (Ayam Bumbu Rujak Sauce): `yield_amount: 4, yield_unit:
-  "cups"` → `yield_per_serving: 1` (1 cup/order, already stated in its own
-  headnote).
+  "cups"` → `yield_per_serving: 0.4` (real correction — see the note near
+  the bottom of this doc; not 1, despite the headnote saying "1 cup per
+  order").
 - `resep-120` (Ayam Sauce Ramayani Sauce): same — `yield_amount: 4,
-  yield_unit: "cups"` → `yield_per_serving: 1`.
+  yield_unit: "cups"` → `yield_per_serving: 0.4`.
 - `resep-1` (curry paste): no value yet — still `yield_unit: "servings"`,
   out of scope for this change (see above).
 
@@ -107,3 +113,74 @@ for completeness, not asking ramayani to build it.
 - Whether to show the computed servings anywhere besides the recipe detail
   page (a recipe card/list view, search results) — not required for this
   change, just worth deciding explicitly rather than by omission.
+
+## Correction (2026-08-27): `yield_per_serving` is servings, not orders
+
+This shipped fast and worked, but the first backfilled value was wrong.
+Recorded here so nobody copies the mistake into the next sauce conversion.
+
+`yield_per_serving: 1` on resep-118/resep-120 meant "1 cup = 1 serving" —
+but 1 cup is 1 **order** of the dish, and an order is shared between 2-3
+people (the standing convention already established when `resep-116`'s
+`serves` field was corrected from "4" to "2-3" — an order isn't a serving).
+Setting `yield_per_serving` to the "1 unit per order" figure straight out
+of a headnote silently reintroduces the exact order/serving conflation
+this whole yield-scaling effort already fixed once.
+
+**Corrected value:** 0.4 (1 cup ÷ 2.5 people-per-order midpoint) on both
+recipes → computed servings = 4 / 0.4 = **10**, not 4. Sanity check: 0.4
+cup (~95ml) per serving lines up closely with the original ~90g (~0.36
+cup) BBQ-wings-based per-serving estimate computed way earlier, before the
+"1 cup per order" shorthand — two independent derivations landing near the
+same number.
+
+**Rule for next time:** `yield_per_serving` should answer "how much of
+this yield does one *person* eat," not "how much is one order/portion of
+the dish." If a headnote states an "X per order" figure and an order
+serves N people, divide by N before using it as `yield_per_serving` — don't
+copy the per-order figure directly into the field.
+
+## Follow-up spec: pre-scale `recipe_ref` "View recipe" links to what's actually needed
+
+Separate issue, raised the same day using the now-live `yield_per_serving`
+feature. Arman's actual workflow: open resep-116 (Ayam Sauce Ramayani, the
+dish), see its sauce ingredient line ("1 cup Ayam Sauce Ramayani sauce"),
+click "View recipe" to go make the sauce — and lands on resep-120 showing
+its full 4-cup batch, not the 1 cup actually needed. Has to notice the
+original ingredient line said "1 cup" and manually dial the stepper down
+from 4 to 1. Real friction, not hypothetical.
+
+This is the intended behavior from the 2026-08-26 redesign (a physical-unit
+target shows its own full recorded yield, "the way a cookbook's paste
+recipe states its own yield" when you flip to its page) — but actual usage
+says that convention is more confusing than helpful here.
+
+**Proposed fix:** a `recipe_ref` ingredient row's `amount` is *already*
+required, by long-standing convention (see `docs/yield-scaling.md`), to be
+expressed in the *referenced* recipe's own `yield_unit` — resep-116's row
+already says `amount: "1", unit: "cup"`, matching resep-120's
+`yield_unit: "cups"`. So when building the "View recipe" href, read that
+row's own stated `amount` and pass it as `?qty=` — e.g.
+`/resep/resep-120?qty=1` — landing the reader exactly where they need to
+be, instead of either the current "no override" (full batch) or the old
+`REF_LINK_SERVINGS`-style flat default.
+
+**Where this lives in the code (per `docs/yield-scaling.md`'s history):**
+`page.tsx` builds `refLinkQty` — currently
+`target.yield_unit === 'servings' ? REF_LINK_SERVINGS : null`. This would
+become something like: if the row's own `unit` matches `target.yield_unit`
+(case-insensitive, allow simple pluralization), parse the row's `amount`
+and use that as `refLinkQty`; otherwise fall back to `null` (today's
+behavior — no override, land on the full yield) rather than guessing.
+
+**Scope/edge cases to think through while implementing:**
+- Row `amount` isn't always a clean number (fractions like "¾", ranges).
+  Whatever amount-parsing logic already exists for ingredient scaling
+  (`units.ts`'s `parseAmount()` or similar) should be reusable here rather
+  than writing a second parser.
+- Keep the `yield_unit === "servings"` / `REF_LINK_SERVINGS` path exactly
+  as-is for resep-1 — this fix is additive, for physical-unit targets only,
+  not a replacement of the existing servings-target behavior.
+- If the row's unit *doesn't* match the target's `yield_unit`, don't guess
+  — fall back to no override, same as today, rather than a wrong number
+  silently sending someone to make too much or too little sauce.
