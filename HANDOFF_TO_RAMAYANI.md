@@ -1,6 +1,6 @@
 # Handoff to ramayani — a `yield_per_serving` field for site display
 
-Date: 2026-08-27 (correction + two follow-up specs added same day, see bottom)
+Date: 2026-08-27 (correction + three follow-up specs added same day, see bottom)
 
 This is the reverse direction of `HANDOFF_TO_RASPBERRY.md` — a spec from the
 raspberry side asking for a small site-code change on the ramayani side.
@@ -256,3 +256,50 @@ resep-121's ingredients now cluster around values (0.25, 0.5, 0.75) where
 the distortion is obvious. Not urgent, but worth fixing since it's
 web-wide (any recipe, any stepper interaction) and includes a genuine
 correctness bug (0.25 → "0.3"), not only a cosmetic one.
+
+## Follow-up spec 3: cap the recipe_ref auto-link at the target's own minimum batch, don't scale below it
+
+Found 2026-08-27 following directly from follow-up spec 1 (which shipped
+and works correctly for resep-116→resep-120). The same mechanism produces
+a bad outcome for resep-113→resep-121: Ayam Kare needs "1 Tbsp" of curry
+paste, so the link correctly computes `?qty=1` — landing on a page that
+says "make 1 Tbsp of curry paste." Making 1 Tbsp of a ground/blended spice
+paste from scratch (chop onion, garlic, candlenuts, blend, stir-fry) isn't
+a realistic thing anyone would do — you always batch-prepare a paste like
+this and use a spoonful at a time. Arman's diagnosis: "the scaling makes
+sense until it falls to a quantity below a realistic amount."
+
+**The fix, and why it needs no new field:** as of the batch-sizing work
+done the same day (see `docs/yield-scaling.md`'s "standing minimum batch
+size" rule), a batch/paste/marinade recipe's `yield_amount` is now defined
+as *the smallest amount of that specific thing that's sensible to
+prepare* (4oz/8Tbsp/½cup floor, or whatever a given recipe's own real
+minimum is) — not just "whatever this batch happens to produce." That
+means `yield_amount` already *is* the right floor to enforce. Change the
+`refLinkQty` computation from spec 1:
+
+```
+qty = matched-unit-amount-from-the-row  // spec 1's existing logic
+qty = Math.max(qty, target.yield_amount)  // NEW: never request less than the target's own minimum
+```
+
+Concretely: resep-113 needs 1 Tbsp of resep-121 (yield_amount 8) →
+`max(1, 8) = 8` → link becomes `/resep/resep-121?qty=8` (or equivalently,
+no override at all, since 8 is already resep-121's own default — either
+implementation is fine, whichever is simpler in the existing code shape).
+
+**Known, accepted side effect — please don't special-case around this:**
+this also caps resep-116→resep-120 (the BBQ sauce). resep-116 needs "1
+cup" of resep-120 (yield_amount 4 cups) → `max(1, 4) = 4` → that link will
+now also land on the full 4-cup batch instead of the pre-scaled "1 cup" it
+shows today. This is a deliberate consequence of applying one consistent
+rule, not a bug to work around with a per-recipe-type flag. If 1 cup of
+that sauce really is a sensible amount to make on its own, the right fix
+is to reconsider resep-120's own `yield_amount` (lower it to match its
+true minimum), not to add an exception to this link logic. Not asking for
+that reconsideration in this handoff — just flagging so the "regression"
+isn't mistaken for something broken.
+
+**Scope:** this only touches the branch of `refLinkQty` that already does
+unit-matching (spec 1's logic) — the `yield_unit === "servings"` /
+`REF_LINK_SERVINGS` branch for resep-1 is untouched, same as spec 1 asked.
