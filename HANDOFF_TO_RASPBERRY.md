@@ -202,6 +202,36 @@ The dish's home version should reference the sauce home version via
 exist, clicking that link will correctly land on the sauce's own "4 cups"
 page with no override, matching section 2's behavior above.
 
+**Done** — `resep-118` (Ayam Bumbu Rujak Sauce, home, ~4 cups) exists,
+linked to `resep-5`. `resep-119` (the dish) was created and then removed
+again by raspberry's own judgment (*"remove unsourced dish"* — no batch
+version existed in the scans to base it on, unlike `resep-116`). Fine as
+the record stands; the sauce conversion is what mattered here.
+
+### Next task (2026-08-27): a home-scale version of `resep-10` too
+
+Same situation as `resep-5`, one step behind: `resep-10` (Ayam Sauce
+Ramayani Sauce) got converted to a real batch weight (6.7 L) per the
+request above, but — unlike `resep-5`→`resep-118` — **nobody's created its
+home-scale twin yet**. It's still the only version, so the website
+correctly (per section 2's rule) shows its full 6.7 L batch by default,
+which isn't what a visitor wants to see.
+
+Target the same convention already set for its sibling: **"makes about 4
+cups (about 4 orders, at 1 cup per order)"** — matches `resep-118`'s
+framing and the "standardize sauce-per-order to 1 cup" convention already
+applied to `resep-116`. Real proportional rescale + rounding, not a
+relabel, same as every other conversion here.
+
+**One thing this one needs that `resep-5` didn't**: `resep-116` (the dish)
+already exists and its ingredient list already has a `recipe_ref` pointing
+directly at `resep-10`. Once `resep-10` is archived (`recipe_type: "batch"`,
+linked to the new home recipe), that `recipe_ref` needs updating to point
+at the *new* home-scale sauce id instead — otherwise `resep-116`'s "View
+recipe" link would point at a now-hidden page. Same fix as was already
+done between `resep-119`→`resep-118` before `resep-119` was removed, just
+for `resep-116` this time.
+
 ## 3. Please keep review/TODO commentary out of `notes_en`/`notes_id`/`headnote_en`/`headnote_id`
 
 These four fields are rendered directly on the public website — verified,
