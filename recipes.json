@@ -1177,7 +1177,7 @@
         "no_serves",
         "no_photo"
       ],
-      "review_notes": "Ingredient quantities rewritten from the original scan (Ayam Solo.png) on 2026-08-22. The source page has two quantity columns — a base (1x) column and a 1½x-batch column — per Arman's confirmation, only the base (1x) column was kept; the 1½x figures were not recorded. No method is written anywhere in the source (confirmed across File 1, pages 9 and 15).",
+      "review_notes": "Ingredient quantities rewritten from the original scan (Ayam Solo.png) on 2026-08-22. The source page has two quantity columns — a base (1x) column and a 1½x-batch column — per Arman's confirmation, only the base (1x) column was kept; the 1½x figures were not recorded. No method is written anywhere in the source (confirmed across File 1, pages 9 and 15). Added 2026-08-27: the source scan never states how many chickens this batch of braising sauce is for -- no chicken count or weight is written anywhere on the page. Arman confirmed the 1500cc \"Water\" line is plain water (not coconut water). Per his guidance, standard Ayam Solo/Ayam Bacem-style braises use roughly 500 mL of liquid per whole chicken (chopped into pieces, tightly packed) up to 1 L (whole butterflied bird); at 500 mL/chicken, 1500cc / 500 = 3 chickens exactly. Every other ingredient divides into a plausible, clean per-chicken amount at that same ÷3 (1 cup kecap manis, 1 cup sugar, ~7 kaffir lime leaves, 2 small cans coconut milk), which supports treating this as a 3-whole-chicken batch. The \"3 ekor Ayam\" line above was added on this basis -- it is an inference from the liquid volume, not a number written on the scan. The recipe's two separate salt lines (1/4 cup, and 4 sendok makan) are confirmed by Arman to be two genuinely separate additions -- one for salting the chicken directly, one for the marinade -- not a duplicate transcription; which physical line corresponds to which use isn't specified by the source, so both are kept generically labeled \"Salt.\"",
       "reviewed": true,
       "ingredients": [
         {
@@ -1233,9 +1233,17 @@
           "name_id": "Daun Jeruk Purut",
           "name_en": "kaffir lime leaves",
           "amount": "20"
+        },
+        {
+          "unit": "ekor",
+          "name_id": "Ayam",
+          "name_en": "Whole chickens",
+          "amount": "3"
         }
       ],
-      "method": []
+      "method": [],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-123"
     },
     {
       "id": "resep-12",
@@ -10059,6 +10067,91 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-6"
+    },
+    {
+      "id": "resep-123",
+      "resep_num": 123,
+      "category": "ayam",
+      "photo": "",
+      "name_id": "Ayam Solo",
+      "name_en": "Grilled Coconut Chicken",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Ayam Solo, scaled down to a single whole chicken from the restaurant's own braising-sauce recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "4",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "",
+          "name_en": "chicken, cut into pieces"
+        },
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Water",
+          "name_en": "water"
+        },
+        {
+          "amount": "2",
+          "unit": "kaleng kecil",
+          "name_id": "Santan",
+          "name_en": "coconut milk"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Gula pasir",
+          "name_en": "white sugar"
+        },
+        {
+          "amount": "4",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "4",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "5",
+          "unit": "tsp",
+          "name_id": "Pepper",
+          "name_en": "pepper"
+        },
+        {
+          "amount": "1½",
+          "unit": "cups",
+          "name_id": "Brown Sugar",
+          "name_en": "brown sugar, packed"
+        },
+        {
+          "amount": "7",
+          "unit": "Lembar",
+          "name_id": "Daun Jeruk Purut",
+          "name_en": "kaffir lime leaves"
+        }
+      ],
+      "method": [],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-27: resep-11's Ayam Solo braising-sauce recipe, back-solved as a 3-whole-chicken batch (see resep-11 review_notes for the reasoning behind the ÷3) and divided for a single whole chicken. Serves estimated at 4, same reasoning as resep-115 (Ayam Goreng Kuning) -- one whole chicken, cut into pieces, as a shared dish in an Indonesian home meal. Coconut milk converted from \"kaleng kecil\" using the confirmed 300ml/small-can size (see raspberry_package_sizes memory / resep-114 review_notes) -- 2 cans = 600ml. Brown sugar converted using the confirmed 1lb box = 2⅓ cups packed size -- 2 boxes / 3 = 1.56 cups, rounded to 1½ cups. Kaffir lime leaves rounded from 6.67 to 7. The two \"Garam\"/salt lines are kept separate per Arman (one salts the chicken directly, one salts the marinade) -- both happen to divide to the same 4 tsp at this scale, which is a coincidence of the original 1x amounts (1/4 cup and 4 Tbsp) being numerically equal, not an error. No method is included since resep-11's source scan has no method written at all; the customary technique (simmer the chicken pieces in the combined sauce until it reduces to a thick glaze) is not transcribed here since it is not a scan fact.",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-11"
     }
   ]
 }
