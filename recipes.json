@@ -1610,13 +1610,12 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Ukuran ditulis sebagai 's/M' dengan volume cc di samping. FLAG: Berkas 1, Hal. 19. Hanya daftar bahan — tidak ada cara membuat. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Measurements written as 's/M' (sendok makan = tablespoon) with cc volume alongside. FLAG: File 1, Page 19. Ingredients list only — no method written. Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
         "no_photo"
       ],
       "reviewed": true,
@@ -1670,7 +1669,8 @@
           "amount": ""
         }
       ],
-      "method": []
+      "method": [],
+      "serves": "1"
     },
     {
       "id": "resep-16",
