@@ -1499,8 +1499,8 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Dua resep dalam satu halaman. Acar: bumbu halus. Pepes: bumbu cincang kasar. FLAG: Berkas 1, Hal. 18 / Berkas 4, Hal. 22. Metode Pepes sangat singkat — hanya persiapan yang ditulis, bukan waktu mengukus. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Two recipes on one page. Pickle uses ground paste; steamed fish uses rough chop. FLAG: File 1 Page 18 / File 4 Page 22. Method for Pepes is very brief — only preparation noted, not steaming time. Please confirm steaming time and full method with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
         "no_name_en",
@@ -1527,7 +1527,9 @@
           "unit": "kg",
           "name_id": "Cabe merah",
           "name_en": "red chilli",
-          "amount": "1.2"
+          "amount": "1.2",
+          "section_id": "",
+          "section_en": "Spice mix"
         },
         {
           "unit": "kg",
@@ -1582,18 +1584,6 @@
           "name_id": "Minyak",
           "name_en": "oil",
           "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Bumbunya dichopp (tidak dihaluskan)",
-          "name_en": "Spices roughly chopped (not ground)",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Ikannya dibaluri dulu dengan: ragi, garam dan cuka",
-          "name_en": "Fish rubbed first with: yeast, salt, and vinegar",
-          "amount": ""
         }
       ],
       "method": [
@@ -1604,6 +1594,10 @@
         {
           "step_id": "",
           "step_en": "PEPES (Steamed): Roughly chop the spices. Marinate the fish in vinegar and salt. Wrap the fish with banana leaves, chopped spices, and steam"
+        },
+        {
+          "step_id": "",
+          "step_en": "Wrap with banana leaves and then steamed until cooked through, and briefly charred over charcoal or a hot pan"
         }
       ]
     },
