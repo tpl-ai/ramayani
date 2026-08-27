@@ -232,6 +232,17 @@ recipe" link would point at a now-hidden page. Same fix as was already
 done between `resep-119`→`resep-118` before `resep-119` was removed, just
 for `resep-116` this time.
 
+**Done (2026-08-27)** — `resep-120` (Ayam Sauce Ramayani Sauce, home,
+~4 cups) exists, linked to `resep-10`; `resep-10` is archived
+(`recipe_type: "batch"`, `linked_recipe_id: "resep-120"`); `resep-116`'s
+sauce ingredient `recipe_ref` repointed from `resep-10` to `resep-120`
+(amount stays "1 cup", already on the standardized convention). No method
+existed on `resep-10` to begin with (still flagged for Hertha), so
+`resep-120` inherits that same gap rather than inventing one — everything
+else (ingredients rescaled ~1/7.08, oil's two canting-based rows merged
+into one, same photo reused) follows the process agreed for this task, now
+written up as a general playbook for any future batch-sauce conversion.
+
 ## 3. Please keep review/TODO commentary out of `notes_en`/`notes_id`/`headnote_en`/`headnote_id`
 
 These four fields are rendered directly on the public website — verified,
