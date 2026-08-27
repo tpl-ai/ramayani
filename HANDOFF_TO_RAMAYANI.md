@@ -1,6 +1,6 @@
 # Handoff to ramayani — a `yield_per_serving` field for site display
 
-Date: 2026-08-27 (correction + follow-up spec added same day, see bottom)
+Date: 2026-08-27 (correction + two follow-up specs added same day, see bottom)
 
 This is the reverse direction of `HANDOFF_TO_RASPBERRY.md` — a spec from the
 raspberry side asking for a small site-code change on the ramayani side.
@@ -184,3 +184,75 @@ behavior — no override, land on the full yield) rather than guessing.
 - If the row's unit *doesn't* match the target's `yield_unit`, don't guess
   — fall back to no override, same as today, rather than a wrong number
   silently sending someone to make too much or too little sauce.
+
+## Follow-up spec 2: scaled amounts display as raw decimals instead of fractions (and one of those decimals is a real math error, not just ugly)
+
+Found 2026-08-27 while checking resep-121 (Chicken Curry Paste) live after
+the link pre-scaling fix above shipped. Landing on
+`/resep/resep-121?qty=1` (exactly 1 dish-portion, the smallest meaningful
+view) showed:
+
+```
+0.5 Candlenuts
+0.5 cloves Garlic
+0.3 tsp Ginger, grated
+0.3 tsp Turmeric, ground (or grated fresh turmeric root)
+```
+
+The *unscaled* page (`/resep/resep-121`, factor 1) shows the same
+ingredients as `1½`, `½ clove`, `1 tsp`, `1 tsp` — clean fractions/whole
+numbers, because `displayQuantity()` in `units.ts` has an explicit early
+return for that case: `if (factor === 1 && ...) return { amount, unit }`
+— the authored string is preserved untouched. The moment `factor` is
+anything else, that path is skipped entirely and the number goes through
+`formatAmount()` → `formatNumber()`:
+
+```ts
+function formatNumber(n: number): string {
+  return String(Math.round(n * 10) / 10);
+}
+```
+
+This **always** produces a decimal string — there's no equivalent of the
+factor-1 path's fraction-preservation for the scaled case. This affects
+every ingredient at every non-1 factor, on every recipe with a stepper —
+not specific to resep-121.
+
+**There's also a real correctness bug here, not just a display preference.**
+`pickVolumeUnit()`'s tsp branch already buckets to the nearest ¼ tsp
+(`Math.round((ml / 4.92892) * 4) / 4`) — e.g. resep-121's turmeric at 1
+portion correctly computes to exactly `0.25`. But `formatNumber()` then
+rounds *that already-correct value* to 1 decimal place again:
+`Math.round(0.25 * 10) / 10 = 0.3` — **0.25 is being displayed as "0.3",
+which is simply wrong**, not a rounding style choice. The same double-
+rounding turns `0.75` into `0.8`. (`0.5` happens to survive intact, which
+is why it wasn't obvious from the candlenuts/garlic case alone.)
+
+**Proposed fix:** before falling back to a plain decimal, check whether
+the value is close (small epsilon, e.g. ±0.03) to a common kitchen
+fraction, and if so render it the same way authored amounts already are —
+reuse the existing `UNICODE_FRACTIONS` table (already used for *parsing*
+in `parseAmount()`) in reverse: given a decimal, find the nearest
+half/third/quarter/eighth/fifth/sixth, and if within tolerance, output
+`"{whole}{fractionChar}"` (e.g. `1½`, `¾`) instead of calling
+`formatNumber()`. Fall back to the current decimal formatting only when
+nothing matches closely enough — some values genuinely won't land on a
+clean fraction (e.g. an odd manual stepper position), and a decimal is the
+right answer there.
+
+**Where this applies:** `formatAmount()` (used for unrecognized units —
+count-based ingredients like "clove", "candlenuts" with no unit at all,
+which skip `pickWeightUnit`/`pickVolumeUnit` entirely) and the final
+`formatNumber(picked.amount)` call inside `displayQuantity()` (used for
+recognized weight/volume units after bucketing). Both currently go through
+the same lossy `formatNumber()` — a single shared helper fix (something
+like `formatNumber()` gaining the fraction-snap behavior internally) would
+cover both call sites at once.
+
+**Scope note:** this is independent of both follow-up spec 1 above and the
+`yield_per_serving` work — it's a pre-existing formatting behavior in
+`units.ts` that predates all of this, just newly visible because
+resep-121's ingredients now cluster around values (0.25, 0.5, 0.75) where
+the distortion is obvious. Not urgent, but worth fixing since it's
+web-wide (any recipe, any stepper interaction) and includes a genuine
+correctness bug (0.25 → "0.3"), not only a cosmetic one.
