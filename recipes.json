@@ -2035,16 +2035,15 @@
       "name_id": "Babi Hong",
       "name_en": "",
       "headnote_id": "",
-      "headnote_en": "",
+      "headnote_en": "Melt-in your mouth pork belly slices slow steamed in a deeply savory, aromatic soy sauce glaze and served with preserved mustard greens",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo",
-        "other"
+        "no_photo"
       ],
       "reviewed": true,
       "ingredients": [
@@ -2085,8 +2084,20 @@
           "amount": "6"
         }
       ],
-      "method": [],
-      "review_notes": "No method"
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "From Google: Boil & Deep-Fry: Pork belly slabs are parboiled, the skin is pricked and rubbed with rice wine or vinegar, then deep-fried until blistered to create air pockets in the rind."
+        },
+        {
+          "step_id": "",
+          "step_en": "Slice & Layer: The pork is sliced into uniform slabs and arranged skin-side-down in a steaming bowl over a bed of seasoned preserved mustard greens (sayur asin / meicai) or shiitake mushrooms."
+        },
+        {
+          "step_id": "",
+          "step_en": "Steaming: The spice-and-soy liquid is poured over, and the entire bowl is steamed low-and-slow for 1.5 to 3 hours. It is inverted onto a serving platter right before dining."
+        }
+      ]
     },
     {
       "id": "resep-20",
