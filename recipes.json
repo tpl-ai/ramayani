@@ -731,7 +731,9 @@
         }
       ],
       "serves": "6-8",
-      "review_notes": "English version completed 2026-08-26: name_en was blank -- filled in as 'Ayam Goreng Jakarta', matching this recipe's rename to the full dish (see below), dropping 'Marinade' since it's no longer just the marinade component. Also originally removed a trailing pseudo-ingredient row that just duplicated the method step verbatim ('Ayam dibacam paling sedikit 3 jam.' / 'Chicken marinated for at least 3 hours.') with blank amount/unit -- a leftover from before method had its own field, not a real ingredient; superseded by the real '4 whole Game Hens' ingredient row added concurrently via raspberry (next paragraph), category changed to 'ayam', and 'serves: 6-8' set.\n\nGame-hen coverage estimated 2026-08-26 (Arman's question, at the time not a stated fact): this marinade's liquid totals 7.5 cups (6 cups water + 1.5 cups combined vinegar/fish sauce/soy), for what reads as a turn-to-coat soak (bag or snug container, not full bowl submersion). Using a rough ~1-1.5 cups of marinade per pound of poultry, and an average Cornish/game hen weight of ~1.25 lb: about 1.5 cups per hen, so 6 cups of water alone covers roughly 4 hens, or about 5 counting the full 7.5 cups. This recipe was independently edited around the same time to state '4 whole Game Hens' directly -- lines up with the 4-hen estimate from the water figure, so treating that as confirmation rather than two competing guesses."
+      "review_notes": "English version completed 2026-08-26: name_en was blank -- filled in as 'Ayam Goreng Jakarta', matching this recipe's rename to the full dish (see below), dropping 'Marinade' since it's no longer just the marinade component. Also originally removed a trailing pseudo-ingredient row that just duplicated the method step verbatim ('Ayam dibacam paling sedikit 3 jam.' / 'Chicken marinated for at least 3 hours.') with blank amount/unit -- a leftover from before method had its own field, not a real ingredient; superseded by the real '4 whole Game Hens' ingredient row added concurrently via raspberry (next paragraph), category changed to 'ayam', and 'serves: 6-8' set.\n\nGame-hen coverage estimated 2026-08-26 (Arman's question, at the time not a stated fact): this marinade's liquid totals 7.5 cups (6 cups water + 1.5 cups combined vinegar/fish sauce/soy), for what reads as a turn-to-coat soak (bag or snug container, not full bowl submersion). Using a rough ~1-1.5 cups of marinade per pound of poultry, and an average Cornish/game hen weight of ~1.25 lb: about 1.5 cups per hen, so 6 cups of water alone covers roughly 4 hens, or about 5 counting the full 7.5 cups. This recipe was independently edited around the same time to state '4 whole Game Hens' directly -- lines up with the 4-hen estimate from the water figure, so treating that as confirmation rather than two competing guesses.\n\nLinked 2026-08-27: resep-122 (Ayam Goreng Jakarta, home-scale, 1 game hen) now exists, using the clean-divisor pattern (÷4 game hens → 1 hen, same pattern as resep-4→114/resep-8→115/resep-45→117) -- every ingredient divides evenly with no floor issues at all (unlike the sauce/paste conversions, nothing here landed below a sensible minimum). Set recipe_type: 'batch' and linked_recipe_id: 'resep-122' -- per the agreed process, this recipe is now permanently hidden from the public site and should not be edited again; it stays as the unedited restaurant-scale historical record. No existing recipe_ref pointed at resep-6, so no repointing was needed.",
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-122"
     },
     {
       "id": "resep-7",
@@ -9961,6 +9963,99 @@
       "yield_per_serving": 0.667,
       "recipe_type": "home",
       "linked_recipe_id": "resep-1"
+    },
+    {
+      "id": "resep-122",
+      "resep_num": 122,
+      "category": "ayam",
+      "photo": "",
+      "name_id": "Ayam Goreng Jakarta",
+      "name_en": "Ayam Goreng Jakarta",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's crispy whole garlic game hen, scaled down to a single hen from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "1-2",
+      "ingredients": [
+        {
+          "unit": "cups",
+          "name_id": "",
+          "name_en": "water",
+          "amount": "1½",
+          "section_id": "",
+          "section_en": "Marinade"
+        },
+        {
+          "unit": "tbsp",
+          "name_id": "",
+          "name_en": "vinegar",
+          "amount": "2"
+        },
+        {
+          "unit": "tbsp",
+          "name_id": "",
+          "name_en": "fish sauce",
+          "amount": "2"
+        },
+        {
+          "unit": "tbsp",
+          "name_id": "",
+          "name_en": "superior soy sauce",
+          "amount": "2"
+        },
+        {
+          "unit": "cloves",
+          "name_id": "",
+          "name_en": "garlic",
+          "amount": "9"
+        },
+        {
+          "unit": "",
+          "name_id": "",
+          "name_en": "a 1-inch piece ginger, sliced",
+          "amount": ""
+        },
+        {
+          "unit": "tsp",
+          "name_id": "",
+          "name_en": "salt",
+          "amount": "1"
+        },
+        {
+          "unit": "tsp",
+          "name_id": "",
+          "name_en": "MSG",
+          "amount": "½"
+        },
+        {
+          "unit": "tsp",
+          "name_id": "",
+          "name_en": "sugar",
+          "amount": "1½"
+        },
+        {
+          "unit": "whole",
+          "name_id": "",
+          "name_en": "Game Hen",
+          "amount": "1",
+          "section_id": "",
+          "section_en": "Chicken"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Chicken marinated for at least 3 hours."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-27: home-scale version of resep-6 (Ayam Goreng Jakarta), using the clean-divisor pattern -- resep-6's own ingredient list already divides evenly by 4 (4 whole game hens -> 1), so every other ingredient was divided by the same integer rather than re-derived from any serving-count math. No floor issues anywhere (unlike the sauce/paste conversions in this dataset) -- every resulting amount (1½ cups water, 2 tbsp each of vinegar/fish sauce/soy, 9 cloves garlic, 1 tsp salt, ½ tsp MSG, 1½ tsp sugar) is comfortably above any rounding floor, so no ingredient needed bumping up beyond its precise proportional share.\n\nGarlic (150g/4 = 37.5g) converted to a count (9 cloves, @~4g/clove, rounded down slightly) rather than left in grams -- home-scale ingredients should stay kitchen-plain (whole units a person actually preps with), matching the same principle already applied to the sauce/paste conversions even though this is a whole-dish conversion, not a sauce. Ginger (100g/4 = 25g) similarly converted to a descriptive '1-inch piece' rather than a gram weight.\n\nMethod: only the marinating step exists on resep-6 (no method for actually cooking/frying the hen afterward, despite the headnote's 'crispy' framing) -- inherited that same gap rather than inventing a cooking technique not in the source, same principle as resep-120/121's 'no method' handling.\n\nServes '1-2' set directly per Arman ('1 hen should serve 1-2 persons') -- a stated fact, not derived from any ratio math here.\n\nNo yield_amount/yield_unit/yield_per_serving fields -- those are specific to the sauce/paste `recipe_type` home-scale pattern (see docs/yield-scaling.md's canonical methodology, items 1-6), not applicable here since this is a whole dish using the clean-divisor pattern instead, matching resep-113/114/115/117's precedent (none of which use yield_amount either).",
+      "flags": [
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-6"
     }
   ]
 }
