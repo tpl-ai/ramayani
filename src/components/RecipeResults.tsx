@@ -8,9 +8,13 @@ import type { RecipeSummary } from '@/types/recipe';
 // they did before -- /search kept its own copy of this exact rendering and
 // didn't get the grid/no-photo-list split when /recipes did.
 
-function RecipeCard({ recipe, lang, onClick, onPhotoError }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void; onPhotoError: () => void }) {
+function RecipeCard({ recipe, onClick, onPhotoError }: { recipe: RecipeSummary; onClick: () => void; onPhotoError: () => void }) {
   const [err, setErr] = useState(false);
-  const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
+  // The dish's name is always shown Indonesian-first, regardless of the
+  // EN/ID toggle -- people know these dishes by their Indonesian names;
+  // English is just the translation. See TextRow below and ResepView's
+  // recipe-page title for the same rule.
+  const name = recipe.name_id || recipe.name_en;
   const hasPhoto = !!recipe.photo && !err;
 
   return (
@@ -71,8 +75,9 @@ function RecipeCard({ recipe, lang, onClick, onPhotoError }: { recipe: RecipeSum
 // square is a quiet accent mark (sized to the header's EN/ID button
 // height, in the same red as the Ramayani logo) rather than an icon, so a
 // row still reads as "a recipe card," just without a photo.
-export function TextRow({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
-  const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
+export function TextRow({ recipe, onClick }: { recipe: RecipeSummary; onClick: () => void }) {
+  // Indonesian-first, always -- see RecipeCard above.
+  const name = recipe.name_id || recipe.name_en;
   const ready = recipe.content_state !== 'no_content';
 
   return (
@@ -143,7 +148,6 @@ export default function RecipeResults({ items, lang, onSelect, hasMore, onLoadMo
             <RecipeCard
               key={r.id}
               recipe={r}
-              lang={lang}
               onClick={() => onSelect(r.id)}
               onPhotoError={() => setBrokenPhotoIds(prev => new Set(prev).add(r.id))}
             />
@@ -173,7 +177,6 @@ export default function RecipeResults({ items, lang, onSelect, hasMore, onLoadMo
               <TextRow
                 key={r.id}
                 recipe={r}
-                lang={lang}
                 onClick={() => onSelect(r.id)}
               />
             ))}

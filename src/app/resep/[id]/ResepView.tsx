@@ -181,7 +181,14 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
     );
   }
 
-  const name      = tx(recipe, 'name', ctxLang);
+  // The recipe's title is always Indonesian-first, regardless of the
+  // EN/ID toggle -- people know these dishes by their Indonesian names,
+  // English is just the translation (see RecipeResults.tsx for the same
+  // rule on /recipes and /search). The English name still appears, as a
+  // secondary line below the title -- omitted when there isn't a distinct
+  // translation to show.
+  const name        = recipe.name_id || recipe.name_en;
+  const nameEnglish = recipe.name_en && recipe.name_en !== recipe.name_id ? recipe.name_en : null;
   const headnote  = tx(recipe, 'headnote', ctxLang);
   const notes     = tx(recipe, 'notes', ctxLang);
   const showPhoto = !!recipe.photo && !photoFailed;
@@ -257,6 +264,9 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
             >
               {name}
             </h1>
+            {nameEnglish && (
+              <p className="recipe-title-en" style={{ fontFamily: HELVETICA, color: '#888' }}>{nameEnglish}</p>
+            )}
             {headnote && <p className="recipe-headnote" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>{headnote}</p>}
             <p className="coming-soon-note" style={{ fontFamily: HELVETICA, color: '#1a1a1a' }}>
               {ctxLang === 'id' ? 'Resep segera hadir.' : 'Recipe coming soon.'}
@@ -282,6 +292,9 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
                 <h1 className="recipe-hero-title" style={{ fontFamily: HELVETICA, fontWeight: 350, color: '#1a1a1a', lineHeight: 1.15, margin: 0 }}>
                   {name}
                 </h1>
+                {nameEnglish && (
+                  <p className="recipe-hero-title-en" style={{ fontFamily: HELVETICA, fontWeight: 400, color: '#888', lineHeight: 1.2 }}>{nameEnglish}</p>
+                )}
                 <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', rowGap: 10, columnGap: 24, margin: '48px 0 20px' }}>
                   {servesFact && <FactItem icon={<ServesIcon />} label={servesFact} />}
                   {prepFact && <FactItem icon={<PrepTimeIcon />} label={prepFact} />}

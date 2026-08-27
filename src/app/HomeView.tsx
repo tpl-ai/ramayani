@@ -130,7 +130,9 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
           scrollbarWidth: 'none', msOverflowStyle: 'none',
         }}>
           {favoriteRecipes.map(r => {
-            const name = lang === 'id' ? (r.name_id || r.name_en) : (r.name_en || r.name_id)
+            // Indonesian-first, always -- see RecipeResults.tsx for the
+            // same rule applied on /recipes and /search.
+            const name = r.name_id || r.name_en
             const ready = r.content_state !== 'no_content'
             return (
               <div key={r.id} className="recipe-card" onClick={() => ready && router.push(`/resep/${r.id}`)}

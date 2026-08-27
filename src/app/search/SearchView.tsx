@@ -78,7 +78,6 @@ export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
               <TextRow
                 key={r.id}
                 recipe={r}
-                lang={ctxLang}
                 onClick={() => router.push(`/resep/${r.id}`)}
               />
             ))}

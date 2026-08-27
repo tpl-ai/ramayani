@@ -220,6 +220,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 0 56px;
 }
 .recipe-hero-title { font-size: 60px; }
+.recipe-hero-title-en { font-size: 26px; margin: 6px 0 0; }
 .recipe-title {
   font-size: 26px;
   font-weight: 600;
@@ -228,6 +229,7 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 24px 0 10px;
 }
 .recipe-title-nophoto { margin-top: 0; }
+.recipe-title-en { font-size: 16px; line-height: 1.2; margin: -4px 0 10px; }
 .recipe-meta {
   font-size: 13px;
   color: #888888;
@@ -451,6 +453,8 @@ img { max-width: 100%; height: auto; display: block; }
 @media (max-width: 480px) {
   :root { --pad: 16px; }
   .recipe-title { font-size: 22px; }
+  .recipe-title-en { font-size: 14px; }
   .step-num { font-size: 26px; }
   .recipe-hero-title { font-size: 28px; }
+  .recipe-hero-title-en { font-size: 15px; }
 }
