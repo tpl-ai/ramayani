@@ -132,18 +132,6 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
   const router = useRouter();
   const { lang: ctxLang } = useLang();
 
-  // "Back" goes to wherever the reader actually came from (the calling
-  // recipe's "View recipe" link, search results, a category listing) --
-  // ordinary browser/SPA history, not a guess about the referrer (which
-  // Next.js client-side navigation doesn't reliably expose anyway). Falls
-  // back to /recipes only when there's no in-app history to go back to
-  // (e.g. the recipe URL was opened directly, or this is the first page
-  // in the tab).
-  const goBack = () => {
-    if (typeof window !== 'undefined' && window.history.length > 1) router.back();
-    else router.push('/recipes');
-  };
-
   const [photoFailed, setPhotoFailed] = useState(false);
   const [unitSystem, setUnitSystem] = useState<'metric' | 'imperial'>('metric');
   // Drives the yield/serving-size control below — independent of the
@@ -240,16 +228,6 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
       <div className="print-hide">
         <Header />
         <div className="recipes-filter-row" style={{ padding: '16px 32px' }}>
-          <button
-            onClick={goBack}
-            style={{
-              fontSize: 13, color: '#999', background: 'none', border: 'none',
-              padding: 0, cursor: 'pointer', fontFamily: HELVETICA, flexShrink: 0,
-              marginRight: 24,
-            }}
-          >
-            ← {ctxLang === 'id' ? 'Kembali' : 'Back'}
-          </button>
           <CategoryTabs
             categories={categories}
             activeCategory={recipe.category}
