@@ -1599,7 +1599,9 @@
           "step_id": "",
           "step_en": "Wrap with banana leaves and then steamed until cooked through, and briefly charred over charcoal or a hot pan"
         }
-      ]
+      ],
+      "recipe_type": "batch",
+      "review_notes": "Split 2026-08-27 into two home-scale dishes -- resep-124 (Ikan Acar) and resep-125 (Pepes) -- since this recipe is really one shared spice paste (bumbu) used for two different final preparations (fried/pickled vs. banana-leaf-wrapped/steamed). No linked_recipe_id set here since the field only holds one id; see resep-124/resep-125 for both. The batch never states how many fish it was designed for -- no fish count, weight, or paste yield anywhere on the source page. Per Arman's direction (2026-08-27), used the same method as resep-11 (Ayam Solo): back-solve a fish count from total spice-paste weight against an external reference (a standard Ikan Acar/Pepes ratio for one ~400-500g whole fish), then divide every ingredient in THIS recipe by that same count, preserving Ramayani's own proportions rather than substituting the reference's ratios. Total spice-paste weight here (chili 1200g + candlenut 1000g + shallot 1000g + garlic 100g + ginger 200g + salt 400g + MSG ~24g + sugar ~113g) is ~4037g. The reference's per-fish spice-paste total, estimated using typical piece weights (shallot ~12g/clove, garlic ~4g/clove, candlenut ~4.5g/piece, chili ~12g/piece), is ~141g/fish. 4037 / 141 = ~28.6, rounded to a batch of **28 fish**. Cross-check: the recipe's tomato (2000g, listed separately from the spice paste, matching the reference's own \"aromatic layering\" category rather than \"spice paste\") divides to 2000/28 = 71g/fish -- lining up closely with the reference's own \"1/2 medium tomato\" estimate, independent support for 28 being a reasonable batch size. Note: dividing each spice-paste ingredient individually by the reference's own per-fish amount gives a much wider spread (implied counts from ~10 to ~67 across ingredients) than the clean, consistent divide Ayam Solo's water gave -- this means Ramayani's actual paste is proportionally heavier on candlenut/salt/sugar and lighter on garlic than a generic reference recipe. That is expected and intentional, not an error -- per Arman's direction, the home version keeps Ramayani's own ratios (computed from the ORIGINAL batch numbers directly, not re-derived from the reference), only using the reference to size the batch overall. The \"4 oz\" sugar amount is ambiguous -- the adjacent salt line's name_id (\"ons Garam\") confirms Indonesian \"ons\" (100g) was mistranscribed into the schema's \"oz\" unit field for at least that one row; sugar may have the same issue (400g) rather than literal 4oz (113g). Used the literal 113g reading since it isn't explicitly flagged the way salt was, but this is unconfirmed -- if it should be 400g instead, sugar in both home recipes would need revisiting."
     },
     {
       "id": "resep-15",
@@ -10146,6 +10148,260 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-11"
+    },
+    {
+      "id": "resep-124",
+      "resep_num": 124,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Ikan Acar",
+      "name_en": "Pickled Fried Fish",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Ikan Acar, scaled down to a single whole fish from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "1-2",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "",
+          "name_en": "Pomfret or Tilapia, cleaned"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cuka",
+          "name_en": "vinegar, for marinating"
+        },
+        {
+          "amount": "4",
+          "unit": "",
+          "name_id": "Cabe merah",
+          "name_en": "large red chilies",
+          "section_id": "Bumbu (dihaluskan)",
+          "section_en": "Spice paste"
+        },
+        {
+          "amount": "8",
+          "unit": "",
+          "name_id": "Kemiri",
+          "name_en": "candlenuts, roasted"
+        },
+        {
+          "amount": "3",
+          "unit": "",
+          "name_id": "Bawang merah",
+          "name_en": "shallots"
+        },
+        {
+          "amount": "1",
+          "unit": "clove",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Jahe",
+          "name_en": "fresh ginger, grated"
+        },
+        {
+          "amount": "2¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "½",
+          "unit": "",
+          "name_id": "Tomat",
+          "name_en": "medium tomato, sliced"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Minyak",
+          "name_en": "oil, for frying"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Marinate the fish in vinegar and salt, then fry."
+        },
+        {
+          "step_id": "",
+          "step_en": "Grind the spice paste ingredients finely, then fry until fragrant."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve the fried fish with the fried spice paste and sliced tomato."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-27: one of two home-scale dishes split from resep-14 (Ikan Acar & Pepes), for a single whole fish. Spice-paste amounts (chili, candlenut, shallot, garlic, ginger, salt, MSG, sugar) are resep-14's own batch quantities divided by 28 -- see resep-14 review_notes for how that fish count was back-solved from total spice-paste weight against an external reference ratio, and why Ramayani's own proportions (not the reference's) were kept. Piece counts (chilies, candlenuts, shallots) are estimates converting the batch's gram weights using typical piece sizes, flagged as approximate. Tomato (2000g/28 = ~71g) is treated as a separate layering ingredient, not part of the blended paste, matching the source method's wording and the reference's own categorization. Vinegar and oil amounts were never quantified in the source scan (no amount recorded there either -- matches resep-14's own \"Minyak\" line) so both are left as \"to taste\" rather than guessed. Method steps are resep-14's own Acar text, reorganized per-step; no technique was invented.",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-14"
+    },
+    {
+      "id": "resep-125",
+      "resep_num": 125,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Pepes Ikan",
+      "name_en": "Banana-Leaf Wrapped Steamed Fish",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Pepes Ikan, scaled down to a single whole fish from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "1-2",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "",
+          "name_en": "Carp or Trout, cleaned"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cuka",
+          "name_en": "vinegar, for marinating"
+        },
+        {
+          "amount": "4",
+          "unit": "",
+          "name_id": "Cabe merah",
+          "name_en": "large red chilies",
+          "section_id": "Bumbu (dihaluskan)",
+          "section_en": "Spice paste"
+        },
+        {
+          "amount": "8",
+          "unit": "",
+          "name_id": "Kemiri",
+          "name_en": "candlenuts, roasted"
+        },
+        {
+          "amount": "3",
+          "unit": "",
+          "name_id": "Bawang merah",
+          "name_en": "shallots"
+        },
+        {
+          "amount": "1",
+          "unit": "clove",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Jahe",
+          "name_en": "fresh ginger, grated"
+        },
+        {
+          "amount": "2¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "½",
+          "unit": "",
+          "name_id": "Tomat",
+          "name_en": "medium tomato, sliced",
+          "section_id": "Lapisan aromatik & pembungkus",
+          "section_en": "Aromatic layering & wrapping"
+        },
+        {
+          "amount": "1",
+          "unit": "large packed cup",
+          "name_id": "Kemangi",
+          "name_en": "lemon basil leaves (~20-30g)"
+        },
+        {
+          "amount": "1",
+          "unit": "stalk",
+          "name_id": "Sereh",
+          "name_en": "lemongrass, bruised and cut into sections"
+        },
+        {
+          "amount": "2-3",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaves"
+        },
+        {
+          "amount": "2-3",
+          "unit": "",
+          "name_id": "Daun jeruk purut",
+          "name_en": "kaffir lime leaves, torn"
+        },
+        {
+          "amount": "1",
+          "unit": "large sheet",
+          "name_id": "Daun pisang",
+          "name_en": "banana leaf (~30x40cm), softened over a flame"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Marinate the fish in vinegar and salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Roughly chop the spice paste ingredients."
+        },
+        {
+          "step_id": "",
+          "step_en": "Wrap the fish in banana leaf together with the chopped spice paste, tomato, kemangi, lemongrass, salam, and kaffir lime leaves, then steam until cooked through."
+        },
+        {
+          "step_id": "",
+          "step_en": "Briefly char the wrapped parcel over charcoal or in a hot pan before serving."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-27: one of two home-scale dishes split from resep-14 (Ikan Acar & Pepes), for a single whole fish. Spice-paste amounts (chili, candlenut, shallot, garlic, ginger, salt, MSG, sugar) are resep-14's own batch quantities divided by 28 -- see resep-14 review_notes for how that fish count was back-solved from total spice-paste weight against an external reference ratio, and why Ramayani's own proportions (not the reference's) were kept. Piece counts (chilies, candlenuts, shallots) are estimates converting the batch's gram weights using typical piece sizes, flagged as approximate. Tomato (2000g/28 = ~71g) is treated as a separate layering ingredient, not part of the blended paste, matching the source method's wording and the reference's own categorization. The aromatic-layering/wrapping ingredients (kemangi, lemongrass, salam, kaffir lime leaves, banana leaf) are NOT in resep-14 at all -- the source scan never quantified them, even though its own method mentions wrapping in banana leaf. Added here using Arman-supplied reference quantities for a standard ~400-500g whole fish, since Pepes structurally requires them and there is nothing Ramayani-specific to scale down instead -- flagged as sourced from external reference, not from the scan. Vinegar amount was never quantified in the source scan either, left as \"to taste.\" Method steps combine resep-14's own Pepes text with the aromatic additions described above.",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-14"
     }
   ]
 }
