@@ -1,7 +1,17 @@
 import { getRecipeById, toClientRecipe, difficultyLevels } from '@/lib/recipes';
 import { REF_LINK_SERVINGS } from '@/lib/recipeConstants';
+import { parseAmount } from '@/lib/units';
 import type { Recipe } from '@/types/recipe';
 import ResepView from './ResepView';
+
+// "1 cup" vs "cups", "kg" vs "kg" -- good enough for the handful of real
+// units in use; not a general unit-conversion table (there isn't one --
+// see docs/yield-scaling.md on why cross-unit bridging was deliberately
+// never built).
+function unitsMatch(a: string, b: string): boolean {
+  const norm = (u: string) => u.trim().toLowerCase().replace(/s$/, '');
+  return !!a && !!b && norm(a) === norm(b);
+}
 
 function resolveInitialQty(recipe: Recipe | undefined, qtyParam: string | undefined): number {
   if (qtyParam) {
@@ -35,22 +45,33 @@ export default function ResepPage({ params, searchParams }: {
   const recipe = getRecipeById(params.id);
   const initialQty = resolveInitialQty(recipe, searchParams.qty);
 
-  // Each recipe_ref ingredient links to that recipe's own page. Only
-  // force a `?qty=` override when the target's yield is denominated in
-  // the ambiguous "servings" unit -- that's the case where "servings of
-  // curry" needs translating into "servings of the referenced paste" via
-  // REF_LINK_SERVINGS. A target with a real physical yield_unit doesn't
-  // need translating -- its own page already shows its own honest yield
-  // (see resolveInitialQty), the way a cookbook's paste recipe just
-  // states "makes about 2 cups" on its own page rather than being
-  // reframed in terms of the dish that sent you there.
+  // Each recipe_ref ingredient links to that recipe's own page, pre-scaled
+  // to what THIS row actually needs where that's knowable:
+  //  - target yield is the ambiguous "servings" unit (only resep-1 today)
+  //    -- REF_LINK_SERVINGS, unchanged, same as always.
+  //  - target yield is a real physical unit AND this row's own unit
+  //    matches it (by convention, a recipe_ref row is written in the
+  //    target's yield_unit -- e.g. resep-116's "1 cup" matches resep-120's
+  //    yield_unit: "cups") -- parse the row's stated amount and use that,
+  //    landing the reader on exactly the quantity they need instead of
+  //    the full batch they'd have to manually dial down from.
+  //  - anything else (units don't match, amount doesn't parse -- a range,
+  //    "to taste") -- no override, same fallback as before this change.
   const refLinkQty: Record<string, number | null> = {};
   if (recipe) {
     for (const ing of recipe.ingredients) {
       const refId = ing.recipe_ref;
       if (refId && !(refId in refLinkQty)) {
         const target = getRecipeById(refId);
-        if (target) refLinkQty[refId] = target.yield_unit === 'servings' ? REF_LINK_SERVINGS : null;
+        if (!target) continue;
+        if (target.yield_unit === 'servings') {
+          refLinkQty[refId] = REF_LINK_SERVINGS;
+        } else if (target.yield_unit && unitsMatch(ing.unit, target.yield_unit)) {
+          const parsed = parseAmount(ing.amount);
+          refLinkQty[refId] = parsed && parsed.value > 0 ? parsed.value : null;
+        } else {
+          refLinkQty[refId] = null;
+        }
       }
     }
   }

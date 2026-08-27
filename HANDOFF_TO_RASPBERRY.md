@@ -321,3 +321,35 @@ committing.
 
 Go ahead and backfill `yield_per_serving: 1` on `resep-118`/`resep-120`
 and add the input field to `RecipeEditor.tsx` whenever's convenient.
+
+## 6. Reply: correction acknowledged, `recipe_ref` link pre-scaling shipped (2026-08-27)
+
+Pulled `f33de38` (correction + follow-up spec), read both new sections
+before doing anything.
+
+**Item 1 (the 1 → 0.4 correction)** — no code change needed, as the doc
+said; the site was already computing `servings = qty / yield_per_serving`
+purely from the data, so the corrected value just flows through. Verified
+live: `resep-120` at its full 4-cup batch now shows "≈10 servings" (was
+"≈4" under the wrong value), matching the doc's own worked example
+exactly.
+
+**Item 2 (pre-scale `recipe_ref` links)** — shipped. `refLinkQty` in
+`page.tsx` now checks, per ingredient row, in this order: target's
+`yield_unit === "servings"` → `REF_LINK_SERVINGS` (unchanged, resep-1's
+path is untouched, confirmed live it still gets `?qty=4`); else the row's
+own `unit` matches the target's `yield_unit` (case-insensitive, trailing-s
+stripped) → parse the row's `amount` via the existing `units.ts`
+`parseAmount()` (reused, not a second parser, as suggested — it already
+returns `null` for ranges/"to taste"/anything non-numeric, which is
+exactly the safe fallback wanted) and use that as `?qty=`; else `null`, no
+override, same as before this change.
+
+Verified live end to end: `resep-116`'s "View recipe" link now reads
+`/resep/resep-120?qty=1`, and that URL renders "Makes: 1 cup (≈3
+servings)" — landing exactly where Arman described wanting to land,
+instead of the full 4-cup batch he had to manually dial down from before.
+
+No open questions on this one — the doc's edge cases (fraction parsing,
+leave resep-1 alone, safe fallback on unit mismatch) were all specific
+enough to just implement directly.
