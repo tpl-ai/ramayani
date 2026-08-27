@@ -9063,7 +9063,7 @@
       "headnote_en": "Ramayani's signature chicken curry, scaled down to a single serving from the restaurant's own recipe.",
       "notes_id": "Kari ayam khas Ramayani — kuah santan yang kaya rasa, dibuat dari bumbu kari racikan restoran sendiri. Inilah hidangan yang membuat kritikus LA Weekly menulis: 'kuah ayam dan santan yang lembut dengan potongan ayam, tauge, dan daun bawang.'",
       "notes_en": "Ramayani's signature chicken curry — a rich coconut broth built on the restaurant's own curry paste. This is the dish that made the LA Weekly critic write: 'delicate chicken-and-coconut-milk broth with bits of chicken, bean sprouts and green onions.'",
-      "serves": "1",
+      "serves": "1-2",
       "ingredients": [
         {
           "amount": "3-4",
@@ -9073,9 +9073,9 @@
         },
         {
           "amount": "1",
-          "unit": "heaping tbsp",
-          "name_id": "bumbu kari Ayam Kare (sekitar 18 g)",
-          "name_en": "Ayam Kare curry paste (about 18 g)",
+          "unit": "tbsp",
+          "name_id": "bumbu kari Ayam Kare",
+          "name_en": "Ayam Kare curry paste",
           "recipe_ref": "resep-121"
         },
         {
@@ -9156,7 +9156,7 @@
         }
       ],
       "reviewed": true,
-      "review_notes": "New recipe added 2026-08-23: a single-serving version of resep-2 (Ayam Kare), calculated in a separate Claude session from that recipe's restaurant-batch quantities, not transcribed from a scan. Chicken amount matches resep-2's own stated per-order portion (4.5 lb balls / 6 orders = ¾ lb) directly; paste/coconut milk/water are adjusted for small-batch cooking rather than pure linear scaling.\n\nIndonesian version completed 2026-08-26: this recipe was English-only throughout (headnote, notes, every ingredient, every method step/section) -- filled in headnote_id/notes_id plus every name_id/step_id/section_id as direct translations of the existing English content, no new information added.\n\nRecipe_ref repointed 2026-08-27: was 'resep-1', now 'resep-121'. resep-1 got its home-scale twin (resep-121, 432g/~24 servings) and was archived (recipe_type: batch, now hidden). Amount/unit on this ingredient line ('1 heaping tbsp') left unchanged -- still the correct real amount needed per serving of this dish -- only the recipe_ref target changed. Note: this line's unit ('heaping tbsp') doesn't textually match resep-121's yield_unit ('g'), so a future recipe_ref link auto-scaling feature (if built per HANDOFF_TO_RAMAYANI.md's follow-up spec) would correctly fall back to no override here rather than guess.",
+      "review_notes": "New recipe added 2026-08-23: a single-serving version of resep-2 (Ayam Kare), calculated in a separate Claude session from that recipe's restaurant-batch quantities, not transcribed from a scan. Chicken amount matches resep-2's own stated per-order portion (4.5 lb balls / 6 orders = ¾ lb) directly; paste/coconut milk/water are adjusted for small-batch cooking rather than pure linear scaling.\n\nIndonesian version completed 2026-08-26: this recipe was English-only throughout (headnote, notes, every ingredient, every method step/section) -- filled in headnote_id/notes_id plus every name_id/step_id/section_id as direct translations of the existing English content, no new information added.\n\nRecipe_ref repointed 2026-08-27: was 'resep-1', now 'resep-121'. resep-1 got its home-scale twin (resep-121, 432g/~24 servings) and was archived (recipe_type: batch, now hidden). Amount/unit on this ingredient line ('1 heaping tbsp') left unchanged -- still the correct real amount needed per serving of this dish -- only the recipe_ref target changed. Note: this line's unit ('heaping tbsp') doesn't textually match resep-121's yield_unit ('g'), so a future recipe_ref link auto-scaling feature (if built per HANDOFF_TO_RAMAYANI.md's follow-up spec) would correctly fall back to no override here rather than guess.\n\nServes corrected 2026-08-27: was '1', now '1-2'. This is the actual root fix behind resep-121's `yield_per_serving` methodology (see resep-121's own review_notes for the full derivation) -- the original '1' was a guess made before the yield-to-servings framework existed, never itself derived from anything. Arman's real-world estimate: the 3-4 chicken pieces / ¾ lb this recipe already states per serving realistically feeds 1-2 people, not exactly 1. Chicken amount/paste amount on the ingredient lines are unchanged -- this is a `serves` label correction only, matching what this recipe already, correctly, calls for.",
       "flags": [],
       "content_state": "full",
       "recipe_type": "home",
@@ -9859,74 +9859,74 @@
       "photo": "",
       "name_id": "Bumbu Ayam Kare",
       "name_en": "Chicken Curry Paste",
-      "headnote_id": "Versi skala rumah dari bumbu kari khas Ramayani, diperkecil dari resep restoran aslinya. Menghasilkan sekitar 432g (sekitar 1½ cup) -- cukup untuk sekitar 24 porsi Ayam Kare (sekitar 18g / 1 sdm munjung per porsi, sesuai resep-113). Sengaja dibuat dalam jumlah lebih besar -- bumbu ini tahan lama jika disimpan di kulkas atau freezer, jadi lebih praktis dibuat lebih dari satu porsi masak sekaligus; jika diperkecil lagi, beberapa bahan (bawang putih, kemiri, rempah) jadi terlalu sedikit untuk diukur dengan mudah.",
-      "headnote_en": "A home-kitchen version of Ramayani's curry paste, scaled down from the restaurant's own recipe. Makes about 432g (about 1½ cups) -- enough for about 24 servings of Ayam Kare (about 18g / 1 heaping tbsp per serving, matching resep-113). A deliberately bigger batch than one meal's worth -- curry paste keeps well refrigerated or frozen, and scaling down further made several ingredients (garlic, candlenuts, spices) awkwardly small to measure.",
+      "headnote_id": "Versi skala rumah dari bumbu kari khas Ramayani, diperkecil dari resep restoran aslinya. Menghasilkan sekitar 4 sdm (Tbsp) -- cukup untuk sekitar 4 porsi Ayam Kare (sekitar 6 porsi orang, kira-kira 2 sdt bumbu per porsi).",
+      "headnote_en": "A home-kitchen version of Ramayani's curry paste, scaled down from the restaurant's own recipe. Makes about 4 Tbsp -- enough for about 4 orders of Ayam Kare (about 6 servings, roughly 2 tsp of paste per serving).",
       "notes_id": "",
       "notes_en": "",
       "ingredients": [
         {
-          "amount": "1",
-          "unit": "",
+          "amount": "¼",
+          "unit": "cup",
           "name_id": "",
-          "name_en": "onion, roughly chopped (about 260g)"
+          "name_en": "onion, chopped"
         },
         {
-          "amount": "9",
+          "amount": "1½",
           "unit": "",
           "name_id": "",
           "name_en": "candlenuts"
         },
         {
-          "amount": "4",
-          "unit": "cloves",
+          "amount": "½",
+          "unit": "clove",
           "name_id": "",
           "name_en": "garlic"
         },
         {
-          "amount": "1¼",
+          "amount": "¼",
           "unit": "tsp",
           "name_id": "",
           "name_en": "ginger, grated"
         },
         {
-          "amount": "1",
+          "amount": "",
           "unit": "",
           "name_id": "",
-          "name_en": "stalk lemongrass, tender part only, sliced"
+          "name_en": "a small piece (about 1 inch) lemongrass, thinly sliced"
         },
         {
-          "amount": "3",
-          "unit": "tbsp",
+          "amount": "1½",
+          "unit": "tsp",
           "name_id": "",
           "name_en": "vegetable oil"
         },
         {
-          "amount": "1½",
+          "amount": "¼",
           "unit": "tsp",
           "name_id": "",
           "name_en": "turmeric, ground (or grated fresh turmeric root)"
         },
         {
-          "amount": "1½",
+          "amount": "¼",
           "unit": "tsp",
           "name_id": "",
           "name_en": "MSG (optional)"
         },
         {
-          "amount": "1½",
-          "unit": "tbsp",
+          "amount": "¾",
+          "unit": "tsp",
           "name_id": "",
           "name_en": "salt, or to taste"
         },
         {
-          "amount": "1½",
-          "unit": "tbsp",
+          "amount": "¾",
+          "unit": "tsp",
           "name_id": "",
           "name_en": "sugar"
         },
         {
-          "amount": "1",
-          "unit": "tbsp",
+          "amount": "½",
+          "unit": "tsp",
           "name_id": "",
           "name_en": "kencur, grated (or ground kencur powder)"
         }
@@ -9938,7 +9938,7 @@
         },
         {
           "step_id": "",
-          "step_en": "Heat the oil in a pan and stir-fry the paste until fragrant and the raw smell is gone, about 6-8 minutes."
+          "step_en": "Heat the oil in a pan and stir-fry the paste until fragrant and the raw smell is gone, about 4-5 minutes."
         },
         {
           "step_id": "",
@@ -9946,15 +9946,15 @@
         }
       ],
       "reviewed": true,
-      "review_notes": "New recipe added 2026-08-27: home-scale version of resep-1 (Bumbu Ayam Kare), calculated from that recipe's own real batch total (~33.63kg, summed from the ingredient list -- onion/candlenut/garlic/ginger/lemongrass by weight, oil/turmeric/MSG/salt/sugar/kencur by volume at typical densities) rather than transcribed from a scan.\n\nTarget yield chosen differently than the sauce conversions: resep-113 already states a real per-serving fact directly ('1 heaping tbsp curry paste, about 18g, per serving') -- no order/people conversion needed here the way the sauces required, since curry is plated per person, not shared. First tried scaling straight to that fact's smallest useful multiple (12 servings, 216g), but several ingredients came out awkwardly small to measure (ginger/turmeric/MSG under 1 tsp, garlic under 2 whole cloves, lemongrass a fraction of a stalk). Arman's call: it's fine to make a deliberately bigger batch than one meal's worth if that's what it takes to get clean, measurable quantities -- curry paste keeps well refrigerated/frozen, so this isn't impractical the way an oversized single-use sauce batch would be. Landed on 24 servings (432g, ~1/78 scale-down factor) after comparing a few sizes -- garlic lands on exactly 4 cloves, kencur on exactly 1 tbsp, turmeric/salt/sugar on clean tsp/tbsp fractions.\n\nyield_amount/yield_unit: 432 / 'g' (weight, not volume -- matches how curry paste is actually measured/sold, unlike the pourable BBQ-style sauces). yield_per_serving: 18 (g) -- not a new estimate, copied directly from resep-113's own already-stated fact, the most solidly-grounded yield_per_serving value set so far. Computed servings = 432 / 18 = 24, exactly matching the target (by construction).\n\nOne assumption flagged rather than silently guessed: turmeric and kencur are treated as fresh/ground (density ~1.0 g/ml, matching the other fresh aromatics in this recipe's 'Ground Ingredient Mix' section) rather than dry powder (~0.5-0.6 g/ml) -- the original recipe groups them under 'Spices' alongside MSG/salt/sugar (unambiguously dry), so this is a judgment call, not a confirmed fact. If wrong, actual gram amounts for those two rows would be roughly half what's stated here; the ingredient text offers 'ground ... or grated fresh' as a hedge either way.\n\nMethod: adapted from resep-1's 3 steps (mix, stir-fry ½ hour, add spices + package into 10 bags) to home scale -- stir-fry time shortened to 6-8 minutes for the much smaller volume; the 'package into 10 bags' step doesn't apply at this scale, replaced with a general storage note (curry pastes keeping refrigerated/frozen is standard, uncontroversial food-handling knowledge, not an invented specific technique).\n\nresep-113's paste ingredient (recipe_ref) repointed from resep-1 to this recipe -- see resep-113's own review_notes. Caveat for whoever eventually builds the recipe_ref link pre-scaling fix (HANDOFF_TO_RAMAYANI.md): resep-113's ingredient row states its amount as '1 heaping tbsp', which does NOT textually match this recipe's yield_unit ('g') -- that fix would correctly fall back to no override here rather than guess, exactly the kind of case flagged in that spec's edge cases.",
+      "review_notes": "New recipe added 2026-08-27, revised same day (see below): home-scale version of resep-1 (Bumbu Ayam Kare), calculated from that recipe's own real batch total (~33.63kg, summed from the ingredient list -- onion/candlenut/garlic/ginger/lemongrass by weight, oil/turmeric/MSG/salt/sugar/kencur by volume at typical densities) rather than transcribed from a scan.\n\nMETHODOLOGY, locked in 2026-08-27 (Arman): yield_amount/yield_unit is the exact, objective physical quantity a sauce/paste produces -- never adjusted to make anything come out even. yield_per_serving is a subjective conversion factor (how much of that yield one real person eats), and it MUST be derived from the dish that actually uses the sauce/paste, never invented by looking at the sauce/paste alone. Deriving it takes two facts from the dish: (a) the dish's own stated amount of the sauce/paste per dish-portion -- resep-113 says 1 tbsp (dropping the old 'heaping' qualifier, an unmeasurable descriptor) of paste per its own 3-4-piece chicken portion; (b) how many real people that same dish-portion feeds -- resep-113's serves was corrected 2026-08-27 from '1' (a guess made before this framework existed) to '1-2' (see resep-113's own review_notes). yield_per_serving = (a) / (b) = 1 tbsp (3 tsp) / 1.5 (midpoint) = 2 tsp per real serving -- NOT the raw 18g/1tbsp dish-portion figure used in the first pass below, which conflated 'per dish-portion' with 'per real person' exactly the same way the sauces' first-pass yield_per_serving did.\n\nWhen the dish's own base unit is too small to be a sensible standalone batch (1 tbsp alone isn't worth making), scale up by taking that whole base unit -- paste amount, dish-portions, and people-fed together -- and multiplying all of it by the same integer K. First attempt used K=24 dish-portions specifically to land on whole aromatics units (4 garlic cloves, 9 candlenuts) -- rejected 2026-08-27 as unrealistic (implies feeding ~36 people from one batch, and Arman doesn't remake the same dish often enough to want that much paste on hand). Revised to K=4 (Arman: 'I would imagine somebody making paste for maybe 4-6 orders if they really like it, I rarely make the same dish twice a year') -- within the 4-6 range but toward the lower end matching realistic single-household reuse. At K=4: paste yield = 4 tbsp (12 tsp), feeds ~6 people (4 x 1.5).\n\nAromatics precision, explicitly relaxed 2026-08-27 (Arman): fractional units like half a garlic clove or one and a half candlenuts are fine -- don't force whole-unit rounding just to avoid a fraction. This let K=4 (rather than a larger K forcing whole cloves/nuts) be the final batch size.\n\nAll gram measurements removed 2026-08-27 -- previously mixed precise-looking grams (18g, 432g, 260g) with imprecise volume estimates (~1.5 cups) in the same recipe, which is inconsistent for a home cook measuring by spoon, not scale. Every ingredient and the yield itself are now stated only in tsp/Tbsp/cups. yield_amount/yield_unit: 12 / 'tsp' (not Tbsp, so yield_per_serving divides out to a clean whole number rather than a fraction) -- displayed to a reader as '4 Tbsp' in the headnote, which is the more natural way to say the same quantity.\n\nSame assumption as before, still flagged: turmeric and kencur treated as fresh/ground (density ~1.0 g/ml, matching this recipe's other fresh aromatics) rather than dry powder, a judgment call not a confirmed fact -- doesn't change the tsp amounts stated here either way, since those were derived from volume (cups) in the original batch, not from a weight assumption.\n\nMethod: stir-fry time shortened further (to 4-5 minutes) for the now much smaller K=4 volume. Storage note (keeps refrigerated/frozen) is standard food-handling knowledge, not an invented specific technique.\n\nresep-113's paste ingredient (recipe_ref) repointed from resep-1 to this recipe -- see resep-113's own review_notes; its amount/unit there was also simplified from '1 heaping tbsp' to plain '1 tbsp' (dropping 'heaping', an unmeasurable qualifier, same fix applied everywhere else in this recipe). Note for whoever eventually builds the recipe_ref link pre-scaling fix (HANDOFF_TO_RAMAYANI.md): resep-113's unit ('tbsp') still doesn't exactly string-match this recipe's yield_unit ('tsp'), even though they're the same measuring system and trivially convertible (1 tbsp = 3 tsp) -- worth having that fix handle simple tsp/tbsp/cup conversions rather than requiring an exact string match, or it'll fall back to no override on a case where it actually could work.",
       "flags": [
         "no_serves",
         "no_photo"
       ],
       "content_state": "full",
-      "yield_amount": 432,
-      "yield_unit": "g",
-      "yield_per_serving": 18,
+      "yield_amount": 12,
+      "yield_unit": "tsp",
+      "yield_per_serving": 2,
       "recipe_type": "home",
       "linked_recipe_id": "resep-1"
     }
