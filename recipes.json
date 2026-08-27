@@ -9504,7 +9504,7 @@
       "id": "resep-117",
       "resep_num": 117,
       "category": "desserts_drinks",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Kue%20Pe%20Pe%20v2-VzafmycZi40nDZUQJ81pPt46rQYHxX.jpeg",
+      "photo": "",
       "name_id": "Kue Pepe",
       "name_en": "",
       "headnote_id": "Versi skala rumahan dari Resep 45 (Kue Pepe) dan Resep 85 (Lapis Pepe) — dikecilkan menjadi 1/9 dari resep restoran (yang menghasilkan sekitar 9 loyang, ±200 potong) supaya pas untuk satu loyang 20×20 cm, sekitar 20 potong. Semua takaran dibulatkan ke satuan dapur yang mudah diukur (sendok teh/makan, cup).",
@@ -9663,7 +9663,8 @@
       "reviewed": false,
       "review_notes": "New recipe added 2026-08-24: derived by a parallel Claude Code session (working on ramayani) from resep-45 (Kue Pepe) and resep-85 (Lapis Pepe), then independently re-verified here against the current live data before adding. Every ingredient divided by 9 (resep-45's serves is \"9 Loyang\") and rounded to clean kitchen units -- every line checked exactly against resep-45's current amounts, including the two vanilla lines (4 tbsp / 9 = 1.5 tsp) and the Talam Obi top-layer coconut milk (4 cans / 9 = 0.44 can), both originally ambiguous in the old source-unit transcription (\"bhs\", \"heling\") and only resolved once resep-45 was migrated to the current ingredient schema. The layering order (RED-WHITE-WHITE-GREEN-WHITE-WHITE-GREEN-WHITE-WHITE-RED) matches resep-85's own method step exactly. One correction made here: the Talam Obi top-layer coconut milk was written as \"half can (~200ml)\" using an outdated can-size assumption -- corrected to 133ml (4 cans x 300ml/can [confirmed via resep-12, see raspberry_package_sizes] / 9). \"1/2 cup + 1 tbsp\" amounts (oil, sago in the bottom layer) simplified to the exact equivalent, 9 tbsp. METHOD REVISED 2026-08-24: the first draft's method (8 steps) invented specific technique -- whisking order, \"strain\", cook times, layer thickness in mm, an unflagged claim that the GREEN colour comes from pandan (pandan isn't in the ingredient list at all) -- none of which is in resep-45/85's actual text (2 sparse sentences total for Kue Pepe, 1 for the layering order). Arman caught this. Pared back to only what's directly translated from the source, plus the minimum any steamed layered kue mechanically requires (a starch+water paste needs heat to thicken; each poured layer must set before the next; a hot steamed dessert needs to cool before slicing) -- nothing beyond that is stated as fact. The pandan colouring method and which Talam Obi batter maps to which RED stripe are now flagged inline in the method text itself, not just in these notes. Still not yet kitchen-tested.",
       "flags": [
-        "no_name_en"
+        "no_name_en",
+        "no_photo"
       ],
       "content_state": "full",
       "recipe_type": "home",
