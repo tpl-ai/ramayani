@@ -353,3 +353,28 @@ instead of the full 4-cup batch he had to manually dial down from before.
 No open questions on this one — the doc's edge cases (fraction parsing,
 leave resep-1 alone, safe fallback on unit mismatch) were all specific
 enough to just implement directly.
+
+## 7. Reply: follow-up spec 3 (minimum-batch cap on recipe_ref links) shipped (2026-08-27)
+
+Read the new section, verified `resep-1`/`121`/`113` in the live data
+matched the spec's own example (`resep-1` archived, `recipe_type: "batch"`,
+linked to `resep-121`; `resep-121` `yield_amount: 8, yield_unit: "tbsp"`;
+`resep-113`'s paste row already repointed to `resep-121`) before touching
+anything.
+
+Change: in the branch that already does unit-matching (follow-up spec 1),
+`refLinkQty[refId]` is now `Math.max(parsed.value, target.yield_amount ??
+parsed.value)` instead of just `parsed.value` — never requests less than
+the target's own defined minimum batch. The `yield_unit === "servings"` /
+`REF_LINK_SERVINGS` branch is untouched (confirmed in the diff, not just
+by inspection — that line didn't change).
+
+Verified live, both cases the spec called out:
+- `resep-113` → `resep-121`: link is now `?qty=8` (was `?qty=1`) — lands
+  on "make 8 Tbsp of curry paste," a realistic batch, not "make 1 Tbsp."
+- `resep-116` → `resep-120`: link is now `?qty=4` (was `?qty=1`) — the
+  accepted side effect, not treated as a regression to work around, per
+  the doc's own instruction.
+
+No open questions on this one either — straightforward to implement once
+the live data confirmed the premise.

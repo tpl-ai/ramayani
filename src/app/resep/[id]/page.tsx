@@ -52,9 +52,17 @@ export default function ResepPage({ params, searchParams }: {
   //  - target yield is a real physical unit AND this row's own unit
   //    matches it (by convention, a recipe_ref row is written in the
   //    target's yield_unit -- e.g. resep-116's "1 cup" matches resep-120's
-  //    yield_unit: "cups") -- parse the row's stated amount and use that,
-  //    landing the reader on exactly the quantity they need instead of
-  //    the full batch they'd have to manually dial down from.
+  //    yield_unit: "cups") -- parse the row's stated amount, but never go
+  //    below the target's own yield_amount. A batch/paste/marinade
+  //    recipe's yield_amount is now defined as the smallest sensible
+  //    amount of that thing to prepare (the standing minimum-batch rule,
+  //    see docs/yield-scaling.md) -- e.g. resep-113 needing "1 Tbsp" of
+  //    curry paste would otherwise link to a page saying "make 1 Tbsp,"
+  //    which isn't something anyone actually does (you batch-prepare a
+  //    paste and use a spoonful). Capping at the target's own floor means
+  //    a small per-row amount lands on that floor instead of an
+  //    unrealistically tiny one; a large amount is unaffected (Math.max
+  //    is a no-op once the row's own amount already clears the floor).
   //  - anything else (units don't match, amount doesn't parse -- a range,
   //    "to taste") -- no override, same fallback as before this change.
   const refLinkQty: Record<string, number | null> = {};
@@ -68,7 +76,9 @@ export default function ResepPage({ params, searchParams }: {
           refLinkQty[refId] = REF_LINK_SERVINGS;
         } else if (target.yield_unit && unitsMatch(ing.unit, target.yield_unit)) {
           const parsed = parseAmount(ing.amount);
-          refLinkQty[refId] = parsed && parsed.value > 0 ? parsed.value : null;
+          refLinkQty[refId] = parsed && parsed.value > 0
+            ? Math.max(parsed.value, target.yield_amount ?? parsed.value)
+            : null;
         } else {
           refLinkQty[refId] = null;
         }
