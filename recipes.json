@@ -9783,10 +9783,10 @@
       "photo": "ayam-sauce-ramayani.jpg",
       "name_id": "Ayam Sauce Ramayani Sauce",
       "name_en": "Ayam Sauce Ramayani Sauce",
-      "headnote_id": "Versi skala rumah dari saus barbecue manis dan segar khas Ramayani, diperkecil dari resep restoran aslinya. Menghasilkan sekitar 4 cup -- cukup untuk sekitar 4 porsi Ayam Sauce Ramayani (sekitar 1 cup per porsi).",
-      "headnote_en": "A home-kitchen version of Ramayani's sweet, tangy barbecue-style glaze, scaled down from the restaurant's own recipe. Makes about 4 cups -- enough for about 4 orders of Ayam Sauce Ramayani (about 1 cup per order).",
-      "notes_id": "Cara membuat belum dikonfirmasi; lihat resep-10 untuk detail.",
-      "notes_en": "Method not yet confirmed; see resep-10 for detail.",
+      "headnote_id": "",
+      "headnote_en": "A home-kitchen version of Ramayani's sweet, tangy barbecue-style glaze, scaled down from the restaurant's own recipe. ",
+      "notes_id": "",
+      "notes_en": "",
       "ingredients": [
         {
           "amount": "2",
@@ -9831,13 +9831,19 @@
           "name_en": "ketchup"
         }
       ],
-      "method": [],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Melt butter and oil in pan and mix in the tomato ketchup. Add other ingredients and adjust to taste"
+        }
+      ],
       "reviewed": true,
       "review_notes": "New recipe added 2026-08-27: home-scale version of resep-10 (Ayam Sauce Ramayani Sauce), calculated from that recipe's own real batch total (6.7L / ~7.01kg, see resep-10's review_notes) rather than transcribed from a scan. Target yield: about 4 cups (~946ml), matching resep-118's convention -- a ~1/7.08 scale-down factor (946.35ml / 6698.4ml) applied uniformly to every ingredient, then rounded to practical home measures (2 tbsp butter instead of ~2.26 tbsp, 2¼ cups ketchup instead of an odd fraction, etc.) rather than left as exact fractions. The two separate canting-based oil rows on resep-10 ('kecil minyak' 24oz, 'besar minyak sayur' 16oz) were combined into a single 'vegetable oil' row here -- the small/large-canting distinction only mattered for matching the original restaurant measuring tool, not two different ingredients.\n\nNo method: resep-10 itself has no method at all ('Cooking method to be confirmed with Hertha') -- rather than invent a technique for the home version, this recipe inherits that same gap; notes_en/notes_id mirror resep-10's own disclosure of it. content_state left as 'partial' for the same reason.\n\nReused resep-10's own photo -- same sauce, nothing scale-specific about the image.\n\n'Makes about 4 cups (about 4 orders, 1 cup per order)' framing matches resep-118's Test Kitchen-style convention and the already-standardized 'about 1 cup per order' figure (see resep-116's review_notes) -- not re-derived for this sauce specifically.\n\nyield_per_serving added 2026-08-27: initially set to 1 (cup), matching this recipe's own headnote -- WRONG, caught by Arman the same day: 1 cup is 1 *order*, not 1 *serving* (an order is shared between 2-3 people, per the standing convention -- see resep-116's review_notes for that correction). Corrected to 0.4 (1 cup / 2.5 people-per-order midpoint) -> computed servings = 4 / 0.4 = 10, a single number rather than a range, per Arman's standing call. See resep-118's review_notes for the fuller reasoning and a sanity-check cross-reference (this matches the same fix applied there for the identical mistake).",
       "flags": [
+        "no_headnote",
         "no_serves"
       ],
-      "content_state": "partial",
+      "content_state": "full",
       "yield_amount": 4,
       "yield_unit": "cups",
       "yield_per_serving": 0.4,
