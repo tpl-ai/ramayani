@@ -9786,49 +9786,49 @@
       "name_id": "Ayam Sauce Ramayani Sauce",
       "name_en": "Ayam Sauce Ramayani Sauce",
       "headnote_id": "",
-      "headnote_en": "A home-kitchen version of Ramayani's sweet, tangy barbecue-style glaze, scaled down from the restaurant's own recipe. ",
+      "headnote_en": "A home-kitchen version of Ramayani's sweet, tangy barbecue-style glaze, scaled down from the restaurant's own recipe. Makes about 1 cup -- enough for one order of Ayam Sauce Ramayani (about 2-3 servings). Scale up using the stepper above for a bigger batch.",
       "notes_id": "",
       "notes_en": "",
       "ingredients": [
         {
-          "amount": "2",
-          "unit": "tbsp",
+          "amount": "1½",
+          "unit": "tsp",
           "name_id": "",
           "name_en": "butter or margarine"
         },
         {
-          "amount": "¾",
-          "unit": "cup",
-          "name_id": "",
-          "name_en": "vegetable oil"
-        },
-        {
-          "amount": "2",
+          "amount": "3",
           "unit": "tbsp",
           "name_id": "",
-          "name_en": "Maggi seasoning sauce"
+          "name_en": "vegetable oil"
         },
         {
           "amount": "1½",
           "unit": "tsp",
           "name_id": "",
-          "name_en": "Lea & Perrins Worcestershire sauce"
-        },
-        {
-          "amount": "¾",
-          "unit": "cup",
-          "name_id": "",
-          "name_en": "sugar"
+          "name_en": "Maggi seasoning sauce"
         },
         {
           "amount": "¼",
           "unit": "tsp",
           "name_id": "",
+          "name_en": "Lea & Perrins Worcestershire sauce"
+        },
+        {
+          "amount": "3",
+          "unit": "tbsp",
+          "name_id": "",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "",
           "name_en": "MSG (optional)"
         },
         {
-          "amount": "2¼",
-          "unit": "cups",
+          "amount": "9",
+          "unit": "tbsp",
           "name_id": "",
           "name_en": "ketchup"
         }
@@ -9840,14 +9840,14 @@
         }
       ],
       "reviewed": true,
-      "review_notes": "New recipe added 2026-08-27: home-scale version of resep-10 (Ayam Sauce Ramayani Sauce), calculated from that recipe's own real batch total (6.7L / ~7.01kg, see resep-10's review_notes) rather than transcribed from a scan. Target yield: about 4 cups (~946ml), matching resep-118's convention -- a ~1/7.08 scale-down factor (946.35ml / 6698.4ml) applied uniformly to every ingredient, then rounded to practical home measures (2 tbsp butter instead of ~2.26 tbsp, 2¼ cups ketchup instead of an odd fraction, etc.) rather than left as exact fractions. The two separate canting-based oil rows on resep-10 ('kecil minyak' 24oz, 'besar minyak sayur' 16oz) were combined into a single 'vegetable oil' row here -- the small/large-canting distinction only mattered for matching the original restaurant measuring tool, not two different ingredients.\n\nNo method: resep-10 itself has no method at all ('Cooking method to be confirmed with Hertha') -- rather than invent a technique for the home version, this recipe inherits that same gap; notes_en/notes_id mirror resep-10's own disclosure of it. content_state left as 'partial' for the same reason.\n\nReused resep-10's own photo -- same sauce, nothing scale-specific about the image.\n\n'Makes about 4 cups (about 4 orders, 1 cup per order)' framing matches resep-118's Test Kitchen-style convention and the already-standardized 'about 1 cup per order' figure (see resep-116's review_notes) -- not re-derived for this sauce specifically.\n\nyield_per_serving added 2026-08-27: initially set to 1 (cup), matching this recipe's own headnote -- WRONG, caught by Arman the same day: 1 cup is 1 *order*, not 1 *serving* (an order is shared between 2-3 people, per the standing convention -- see resep-116's review_notes for that correction). Corrected to 0.4 (1 cup / 2.5 people-per-order midpoint) -> computed servings = 4 / 0.4 = 10, a single number rather than a range, per Arman's standing call. See resep-118's review_notes for the fuller reasoning and a sanity-check cross-reference (this matches the same fix applied there for the identical mistake).\n\nPhoto cleared 2026-08-27: was reusing ayam-sauce-ramayani.jpg (the finished plated dish, resep-116/10's photo) -- misleading on the sauce's own page, since it shows glazed chicken, not the sauce by itself. No dedicated sauce-only photo exists yet; falls back to the site's no-photo list until one does.",
+      "review_notes": "New recipe added 2026-08-27: home-scale version of resep-10 (Ayam Sauce Ramayani Sauce), calculated from that recipe's own real batch total (6.7L / ~7.01kg, see resep-10's review_notes) rather than transcribed from a scan. Target yield: about 4 cups (~946ml), matching resep-118's convention -- a ~1/7.08 scale-down factor (946.35ml / 6698.4ml) applied uniformly to every ingredient, then rounded to practical home measures (2 tbsp butter instead of ~2.26 tbsp, 2¼ cups ketchup instead of an odd fraction, etc.) rather than left as exact fractions. The two separate canting-based oil rows on resep-10 ('kecil minyak' 24oz, 'besar minyak sayur' 16oz) were combined into a single 'vegetable oil' row here -- the small/large-canting distinction only mattered for matching the original restaurant measuring tool, not two different ingredients.\n\nNo method: resep-10 itself has no method at all ('Cooking method to be confirmed with Hertha') -- rather than invent a technique for the home version, this recipe inherits that same gap; notes_en/notes_id mirror resep-10's own disclosure of it. content_state left as 'partial' for the same reason.\n\nReused resep-10's own photo -- same sauce, nothing scale-specific about the image.\n\n'Makes about 4 cups (about 4 orders, 1 cup per order)' framing matches resep-118's Test Kitchen-style convention and the already-standardized 'about 1 cup per order' figure (see resep-116's review_notes) -- not re-derived for this sauce specifically.\n\nyield_per_serving added 2026-08-27: initially set to 1 (cup), matching this recipe's own headnote -- WRONG, caught by Arman the same day: 1 cup is 1 *order*, not 1 *serving* (an order is shared between 2-3 people, per the standing convention -- see resep-116's review_notes for that correction). Corrected to 0.4 (1 cup / 2.5 people-per-order midpoint) -> computed servings = 4 / 0.4 = 10, a single number rather than a range, per Arman's standing call. See resep-118's review_notes for the fuller reasoning and a sanity-check cross-reference (this matches the same fix applied there for the identical mistake).\n\nPhoto cleared 2026-08-27: was reusing ayam-sauce-ramayani.jpg (the finished plated dish, resep-116/10's photo) -- misleading on the sauce's own page, since it shows glazed chicken, not the sauce by itself. No dedicated sauce-only photo exists yet; falls back to the site's no-photo list until one does.\n\nResized 2026-08-27 (eighth pass, cross-referencing resep-121's work): the '4 cups = 4 orders' framing was never actually verified against the true per-order ratio from resep-10's original ingredients -- checked directly (each resep-10 ingredient's original amount / 50 orders, same method used to fix resep-121) and found the true per-order total is ~134ml (~140g, matching resep-10's own already-documented '~140g/order produced' figure) -- meaning a 4-cup (946ml) batch actually represents ~7 true orders' worth, not 4. This wasn't the same bug as resep-121's (resep-120's own ingredients DO sum correctly to ~4 cups -- verified, ~955ml vs 946ml stated, fine); the error was in the 'X cups = Y orders' headline claim, not the ingredient math itself.\n\nRather than fix that mismatch by recomputing 'how many true orders is 4 cups,' Arman's simpler fix (matching resep-121's newly-adopted standing minimum-batch rule): size the sauce to exactly what one order needs -- 1 cup, matching resep-116's own stated ingredient amount, and comfortably above the ½-cup floor -- so there's no batch-vs-order mismatch to get wrong in the first place, and no future division-based rounding risk either (the recipe's own default view already IS 1 order; scaling only ever goes up from here, not down, so the ¼-tsp floor problem that hit resep-121 structurally can't recur on this recipe). Rescaled every ingredient by ÷4 from the previous 4-cup version (already-verified-consistent numbers, so dividing was safe here unlike resep-121's onion/salt/sugar, which had never been checked against the true ratio in the first place). Only MSG needed a floor-adjustment: true ÷4 value is 0.0625 tsp (would round to 0 tsp using the site's ¼-tsp bucketing) -- set to ⅛ tsp instead, a real measurable minimum, kept 'optional' as before. Re-summed the full ingredient list after this change: ~48.4 tsp vs the 48 tsp (1 cup) target -- consistent (the small excess is just MSG's floor-bump, same pattern documented in resep-121's item-8 lesson).\n\nyield_amount: 4 -> 1 (cup). yield_unit unchanged ('cup', already matching resep-116's own ingredient unit). yield_per_serving unchanged (0.4) -- this doesn't depend on the total batch size, only on the dish's own per-order/per-person facts, which haven't changed. Computed servings: 1 / 0.4 = 2.5 -> rounds to 3 (matches the site's already-verified live rendering: 'Makes: 1 cup (≈3 servings)'). This also means the recipe_ref auto-link cap (HANDOFF_TO_RAMAYANI.md follow-up spec 3, qty = max(needed, target.yield_amount)) now resolves to max(1,1)=1 with no forcing -- resep-116's link lands correctly on exactly 1 cup, matching what it actually needs, without requiring any special-casing in the link logic itself.\n\nresep-118 (Ayam Bumbu Rujak Sauce) likely has the same '4 cups vs true order count' framing issue, not yet checked/fixed -- flagged for a follow-up pass, lower urgency since no dish currently links to it (resep-119 was deleted for lack of a source).",
       "flags": [
         "no_headnote",
         "no_serves"
       ],
       "content_state": "full",
-      "yield_amount": 4,
-      "yield_unit": "cups",
+      "yield_amount": 1,
+      "yield_unit": "cup",
       "yield_per_serving": 0.4,
       "recipe_type": "home",
       "linked_recipe_id": "resep-10"
