@@ -3,56 +3,9 @@
 import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import { recipePhotoSrc } from '@/lib/photo';
 import type { RecipeSummary } from '@/types/recipe';
 import Header from '@/components/Header';
-
-// Card, grid, and search-bar styling mirror /recipes/RecipesView.tsx
-// exactly, so this page reads as the same product surface rather than a
-// separately designed one.
-function RecipeCard({ recipe, lang, onClick }: { recipe: RecipeSummary; lang: 'en' | 'id'; onClick: () => void }) {
-  const [err, setErr] = useState(false);
-  const name = lang === 'id' ? (recipe.name_id || recipe.name_en) : (recipe.name_en || recipe.name_id);
-  const hasPhoto = !!recipe.photo && !err;
-
-  return (
-    <div
-      onClick={recipe.content_state !== 'no_content' ? onClick : undefined}
-      style={{
-        cursor: recipe.content_state !== 'no_content' ? 'pointer' : 'default',
-        opacity: recipe.content_state === 'no_content' ? 0.45 : 1,
-      }}
-    >
-      <div style={{
-        width: '100%',
-        paddingBottom: '130%',
-        position: 'relative',
-        overflow: 'hidden',
-        background: '#e8e2da',
-      }}>
-        {hasPhoto && (
-          <img
-            src={recipePhotoSrc(recipe.photo)}
-            alt={name}
-            onError={() => setErr(true)}
-            style={{
-              position: 'absolute', inset: 0,
-              width: '100%', height: '100%',
-              objectFit: 'cover', display: 'block',
-            }}
-          />
-        )}
-      </div>
-      <div style={{
-        fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
-        fontSize: 20, fontWeight: 400, color: '#1a1a1a', lineHeight: 1.2,
-        marginTop: 8, paddingBottom: 16,
-      }}>
-        {name}
-      </div>
-    </div>
-  );
-}
+import RecipeResults from '@/components/RecipeResults';
 
 export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
   const router = useRouter();
@@ -115,28 +68,16 @@ export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
               {results.length} {ctxLang === 'id' ? 'resep' : 'results'}
             </span>
           </div>
-          <div className="recipes-grid" style={{ display: 'grid', gap: 24, padding: '16px 48px 0' }}>
-            {displayed.map(r => (
-              <RecipeCard key={r.id} recipe={r} lang={ctxLang} onClick={() => router.push(`/resep/${r.id}`)} />
-            ))}
+          <div style={{ paddingTop: 16 }}>
+            <RecipeResults
+              items={displayed}
+              lang={ctxLang}
+              onSelect={(id) => router.push(`/resep/${id}`)}
+              hasMore={results.length > visible}
+              onLoadMore={() => setVisible(v => v + 24)}
+            />
           </div>
         </>
-      )}
-
-      {/* Load more */}
-      {results.length > visible && (
-        <div style={{ textAlign: 'center', padding: '32px 32px 0' }}>
-          <button
-            onClick={() => setVisible(v => v + 24)}
-            style={{
-              fontSize: 15, fontWeight: 500, color: '#1a1a1a',
-              border: '1.5px solid #e0e0e0', borderRadius: 50,
-              padding: '11px 28px', background: '#fff', cursor: 'pointer', fontFamily: 'inherit',
-            }}
-          >
-            {ctxLang === 'id' ? 'Lihat lebih banyak' : 'Load more'}
-          </button>
-        </div>
       )}
 
       <div style={{ height: 48 }} />
