@@ -2082,6 +2082,12 @@
           "name_id": "penuh Gula",
           "name_en": "",
           "amount": "6"
+        },
+        {
+          "unit": "lbs",
+          "name_id": "Perut babi",
+          "name_en": "Pork belly",
+          "amount": "9"
         }
       ],
       "method": [
@@ -2097,7 +2103,10 @@
           "step_id": "",
           "step_en": "Steaming: The spice-and-soy liquid is poured over, and the entire bowl is steamed low-and-slow for 1.5 to 3 hours. It is inverted onto a serving platter right before dining."
         }
-      ]
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-126",
+      "review_notes": "Added 2026-08-27: the source scan never states a pork belly weight -- no amount for the dish's namesake protein anywhere on the page, only the braising liquid. Per Arman's direction, back-solved it the same way as resep-11/resep-14: summed the batch's liquid ingredients (Kikoman 600ml + water 900ml + kecap ikan 225ml + kecap manis 225ml + arak 300ml = 2250ml total, sugar excluded as a dissolved solid, not liquid), then divided by the midpoint of an external reference ratio (450-650 mL liquid per 1kg/2.2lb pork belly, midpoint 550 mL/kg) -- 2250 / 550 = ~4.09 kg, i.e. **9 lbs**, added above as the \"Perut babi\" line. This is an inference from liquid volume, not a number written on the scan."
     },
     {
       "id": "resep-20",
@@ -10413,6 +10422,87 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-14"
+    },
+    {
+      "id": "resep-126",
+      "resep_num": 126,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Babi Hong",
+      "name_en": "",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Babi Hong, scaled down to 1 kg (2.2 lbs) of pork belly from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "3-4",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "kg",
+          "name_id": "Perut babi",
+          "name_en": "Pork belly (2.2 lbs), skin on, sliced into slabs"
+        },
+        {
+          "amount": "⅝",
+          "unit": "cup",
+          "name_id": "Kikoman",
+          "name_en": "soy sauce"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Water",
+          "name_en": ""
+        },
+        {
+          "amount": "3¾",
+          "unit": "Tbsp",
+          "name_id": "Kecap Ikan",
+          "name_en": "fish sauce"
+        },
+        {
+          "amount": "3¾",
+          "unit": "Tbsp",
+          "name_id": "Kecap Manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "5",
+          "unit": "Tbsp",
+          "name_id": "Arak",
+          "name_en": "rice wine"
+        },
+        {
+          "amount": "1½",
+          "unit": "Tbsp",
+          "name_id": "Gula, penuh",
+          "name_en": "sugar, heaping"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil & Deep-Fry: Parboil the pork belly slab, prick and rub the skin with rice wine or vinegar, then deep-fry until blistered to create air pockets in the rind."
+        },
+        {
+          "step_id": "",
+          "step_en": "Slice & Layer: Slice the pork into uniform slabs and arrange skin-side-down in a steaming bowl, optionally over a bed of seasoned preserved mustard greens (sayur asin / meicai) or shiitake mushrooms."
+        },
+        {
+          "step_id": "",
+          "step_en": "Steaming: Pour the soy liquid over, and steam low-and-slow for 1.5 to 3 hours. Invert onto a serving platter right before dining."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-27: home-scale version of resep-19 (Babi Hong), for 1 kg (2.2 lbs) of pork belly -- see resep-19 review_notes for how that batch pork belly amount (9 lbs) was back-solved from total liquid volume against an external reference ratio. Liquid ingredients here are resep-19's own amounts divided by the same factor (1kg / 9.02lbs, i.e. total liquid scaled from 2250ml down to the reference's own 550ml/kg midpoint), preserving Ramayani's own liquid proportions exactly -- only the batch size changes, not the recipe's flavor ratios. Converted from raw mL to kitchen-plain cup/tablespoon measures for a home cook (e.g. 600ml Kikoman -> 5/8 cup, 300ml Arak -> 5 Tbsp), rounding each to the nearest clean fraction. Preserved mustard greens / shiitake mushrooms mentioned in the method were never quantified anywhere in the source scan (batch or otherwise) -- left as an unquantified serving suggestion rather than guessing an amount with no basis. Serves estimated at 3-4 for 1kg pork belly as part of a shared meal -- a guess, not a scan fact. Method steps are resep-19's own text, lightly reworded for a single slab rather than multiple.",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-19"
     }
   ]
 }
