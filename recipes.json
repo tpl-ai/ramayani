@@ -814,7 +814,7 @@
         "no_photo",
         "scale"
       ],
-      "review_notes": "Fully rewritten from the original scan (Ayam Goreng Kuning.png) on 2026-08-22 — a restaurant-batch recipe for 20 whole chickens. The original page has two dash-separated quantities on almost every blended-paste ingredient (e.g. '16 cup — 4 cup' for water); per Arman's decision, only the first (larger) number was kept — the second number's meaning (reduced batch? alternate measure?) is unconfirmed and was not recorded. The previous data was also missing the entire 'additional ingredients' section (12 items, written in pencil at the bottom of the page) — now added. Two ingredient names could not be identified: 'maherom' (blended list, 3 cups) and 'Jaren' (additional list, 1 cup + 5 tsp) — both need confirming with Ibu, and are marked as unidentified rather than guessed at. The '+20' beside canned chili is also unclear — could be a piece count or a separate note. The only method actually written on the page is 'combine and stir' for the blended paste — no braise/fry steps or timings are given; the customary technique for this dish (marinate/braise then fry) is not transcribed here since it wasn't written on the source page. The previous data's other 'step' ('Diblender: air, sereh, muncang...') was just a restatement of four ingredient names, not a real instruction, so it was dropped. Ingredients are now grouped into two sections (Diblender / Bahan tambahan) matching the page layout, using the new `section` field on Ingredient.",
+      "review_notes": "Fully rewritten from the original scan (Ayam Goreng Kuning.png) on 2026-08-22 — a restaurant-batch recipe for 20 whole chickens. The original page has two dash-separated quantities on almost every blended-paste ingredient (e.g. '16 cup — 4 cup' for water); per Arman's decision, only the first (larger) number was kept — the second number's meaning (reduced batch? alternate measure?) is unconfirmed and was not recorded. The previous data was also missing the entire 'additional ingredients' section (12 items, written in pencil at the bottom of the page) — now added. One ingredient name could not be identified: 'Jaren' (additional list, 1 cup + 5 tsp) — needs confirming with Ibu. The blended-list 'maherom' has since been identified (2026-08-27, per Arman) as makaron — shredded/grated coconut, matching Indonesian treats like Kue Makaron Coconut — consistent with its 3-cup measurement. The '+20' beside canned chili is also unclear — could be a piece count or a separate note. The only method actually written on the page is 'combine and stir' for the blended paste — no braise/fry steps or timings are given; the customary technique for this dish (marinate/braise then fry) is not transcribed here since it wasn't written on the source page. The previous data's other 'step' ('Diblender: air, sereh, muncang...') was just a restatement of four ingredient names, not a real instruction, so it was dropped. Ingredients are now grouped into two sections (Diblender / Bahan tambahan) matching the page layout, using the new `section` field on Ingredient. Also flagged (2026-08-27): the blended-paste large onion (150g for '± 2 buah') is quite small relative to the much larger 8.5lb additional-onion line elsewhere in the same recipe — kept as transcribed since it plausibly reflects a small blended aromatic rather than the bulk onion, but not independently confirmed.",
       "reviewed": true,
       "ingredients": [
         {
@@ -905,8 +905,8 @@
         },
         {
           "unit": "cup",
-          "name_id": "[tidak teridentifikasi: \"maherom\"]",
-          "name_en": "[unidentified: \"maherom\"]",
+          "name_id": "Makaron (kelapa parut)",
+          "name_en": "Shredded coconut (makaron)",
           "amount": "3"
         },
         {
@@ -9285,8 +9285,8 @@
           "name_en": "chicken, cut into pieces"
         },
         {
-          "amount": "13",
-          "unit": "tbsp",
+          "amount": "¾",
+          "unit": "cup",
           "name_id": "Air",
           "name_en": "Water",
           "section_id": "Diblender",
@@ -9311,34 +9311,34 @@
           "name_en": "Lime juice"
         },
         {
-          "amount": "⅔",
-          "unit": "oz",
+          "amount": "1",
+          "unit": "Tbsp",
           "name_id": "Garam",
           "name_en": "Salt"
         },
         {
-          "amount": "20",
-          "unit": "gram",
+          "amount": "3",
+          "unit": "Tbsp",
           "name_id": "Ketumbar",
           "name_en": "Coriander"
         },
         {
-          "amount": "2",
-          "unit": "oz",
+          "amount": "4",
+          "unit": "Tbsp",
           "name_id": "Kunyit",
           "name_en": "Turmeric"
         },
         {
-          "amount": "6",
-          "unit": "gram",
+          "amount": "1¼",
+          "unit": "tsp",
           "name_id": "Langkuas",
           "name_en": "Galangal"
         },
         {
-          "amount": "7.5",
-          "unit": "gram",
+          "amount": "1½",
+          "unit": "tsp",
           "name_id": "Bawang besar",
-          "name_en": "Large onion"
+          "name_en": "Large onion, minced"
         },
         {
           "amount": "1¼",
@@ -9365,34 +9365,34 @@
           "name_en": "MSG"
         },
         {
-          "amount": "½",
-          "unit": "oz",
+          "amount": "1",
+          "unit": "Tbsp",
           "name_id": "Gula",
           "name_en": "Sugar"
         },
         {
           "amount": "2½",
           "unit": "tbsp",
-          "name_id": "[tidak teridentifikasi: \"maherom\"]",
-          "name_en": "[unidentified: \"maherom\"]"
+          "name_id": "Makaron (kelapa parut)",
+          "name_en": "Shredded coconut (makaron)"
         },
         {
-          "amount": "6.8",
-          "unit": "oz",
+          "amount": "¾",
+          "unit": "cup",
           "name_id": "Bawang besar (tambahan)",
-          "name_en": "Large onion (additional)",
+          "name_en": "Large onion (additional), chopped",
           "section_id": "Bahan tambahan (bukan bagian dari pasta)",
           "section_en": "Additional ingredients (not part of the paste)"
         },
         {
-          "amount": "0.8",
-          "unit": "oz",
+          "amount": "4",
+          "unit": "tsp",
           "name_id": "Cabe kaleng",
           "name_en": "Canned chili"
         },
         {
-          "amount": "½",
-          "unit": "oz",
+          "amount": "1",
+          "unit": "Tbsp",
           "name_id": "Jahe",
           "name_en": "Ginger"
         },
@@ -9403,8 +9403,8 @@
           "name_en": "Candlenut (additional)"
         },
         {
-          "amount": "⅜",
-          "unit": "oz",
+          "amount": "2",
+          "unit": "tsp",
           "name_id": "Sereh (tambahan)",
           "name_en": "Lemongrass (additional)"
         },
@@ -9415,10 +9415,10 @@
           "name_en": "MSG (additional)"
         },
         {
-          "amount": "¾",
-          "unit": "oz",
+          "amount": "5",
+          "unit": "clove",
           "name_id": "Bawang putih",
-          "name_en": "Garlic"
+          "name_en": "Garlic, minced"
         },
         {
           "amount": "2½",
@@ -9427,8 +9427,8 @@
           "name_en": "Sugar (additional)"
         },
         {
-          "amount": "0.8",
-          "unit": "oz",
+          "amount": "1½",
+          "unit": "Tbsp",
           "name_id": "Langkuas (tambahan)",
           "name_en": "Galangal (additional)"
         },
@@ -9452,7 +9452,7 @@
         }
       ],
       "reviewed": true,
-      "review_notes": "New recipe added 2026-08-23: resep-8's 20-whole-chicken restaurant recipe (Ayam Goreng Kuning) divided by 20 for a single whole chicken. Serves estimated at 4, same reasoning as resep-114 (Ayam Besengek). Ingredient names/structure (Diblender / Bahan tambahan sections) carried over unchanged from resep-8, including its two still-unidentified ingredients ('maherom', 'Jaren') -- still need confirming with Ibu, now just divided by 20 rather than resolved. Two source annotations were dropped since they don't scale meaningfully at this size: the large onion's '± 2 buah' piece count (150g/20 = 7.5g, nowhere near a whole piece) and the canned chili's unclear '+20' note (already flagged unresolved in resep-8 itself). A few very small amounts (MSG and galangal 'additional', citric acid) rounded up to a practical measurable minimum (1/8 tsp) rather than displaying an unmeasurable fraction. A guess, not a scan fact -- for the historical record, and resep-8's own two unidentified ingredients remain unresolved here too.",
+      "review_notes": "New recipe added 2026-08-23: resep-8's 20-whole-chicken restaurant recipe (Ayam Goreng Kuning) divided by 20 for a single whole chicken. Serves estimated at 4, same reasoning as resep-114 (Ayam Besengek). Ingredient names/structure (Diblender / Bahan tambahan sections) carried over unchanged from resep-8, including its (at the time) two unidentified ingredients ('maherom', 'Jaren'). 'Maherom' has since been identified (2026-08-27) as makaron — shredded coconut. 'Jaren' remains unresolved and still needs confirming with Ibu. Two source annotations were dropped since they don't scale meaningfully at this size: the large onion's '± 2 buah' piece count (150g/20 = 7.5g, nowhere near a whole piece) and the canned chili's unclear '+20' note (already flagged unresolved in resep-8 itself). A few very small amounts (MSG and galangal 'additional', citric acid) rounded up to a practical measurable minimum (1/8 tsp) rather than displaying an unmeasurable fraction. A guess, not a scan fact -- for the historical record. Units converted (2026-08-27) from raw gram/oz weights to practical kitchen-spoon/cup measures for a home cook (e.g. 13 tbsp water -> ¾ cup, 20g coriander -> 3 Tbsp, ¾oz garlic -> 5 cloves minced), using standard ingredient-density estimates; the underlying quantities are unchanged, only the units. The blended-paste large onion (7.5g, ~1½ tsp minced) looks tiny next to the ¾-cup additional onion elsewhere in the same recipe — carried over as-is from resep-8 since the division is correct, but the small source amount itself is unconfirmed (see resep-8 review_notes).",
       "flags": [
         "no_headnote",
         "no_photo"
