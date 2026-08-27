@@ -1391,9 +1391,9 @@
       "name_id": "Ikan Pesmol",
       "name_en": "",
       "headnote_id": "",
-      "headnote_en": "",
-      "notes_id": "Menggunakan bumbu yang sama dengan Resep 12 (Bumbu Ayam Pulang).",
-      "notes_en": "Uses the same paste as Recipe 12 (Bumbu Ayam Pulang). Mother noted this connection on the original page.",
+      "headnote_en": "Whole fish seasoned with salt and vinegar and coated with an aromatic spice paste that is also used for Ayam Pukang",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
         "no_name_en",
@@ -1425,7 +1425,7 @@
         },
         {
           "unit": "ladles",
-          "name_id": "Bumbu Ayam Pulang",
+          "name_id": "Bumbu Ayam Pukang",
           "name_en": "",
           "amount": "2",
           "recipe_ref": "resep-12",
