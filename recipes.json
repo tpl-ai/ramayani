@@ -2083,7 +2083,7 @@
       "id": "resep-20",
       "resep_num": 20,
       "category": "daging",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/20_Babi_Tim_AI_v2-QKHurPAZrHECsSGr4r5AUpy4FweQyR.jpeg",
+      "photo": "",
       "name_id": "Babi Tim",
       "name_en": "",
       "headnote_id": "",
@@ -2095,6 +2095,7 @@
         "no_name_en",
         "no_headnote",
         "no_serves",
+        "no_photo",
         "scale"
       ],
       "reviewed": true,
