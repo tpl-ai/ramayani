@@ -5875,7 +5875,7 @@
         "no_serves",
         "no_photo"
       ],
-      "review_notes": "Ingredients and method fully rewritten from the original handwritten recipe scan (Gudeg.png) on 2026-08-22, replacing a garbled/incomplete version that had mixed in unrelated content (previously flagged as possibly contaminated with Bami Ayam notes, and containing an unexplained duplicate tofu ingredient not present in the source). Category, serves, headnote, and photo still need filling in — not present in the source scan.",
+      "review_notes": "Ingredients and method fully rewritten from the original handwritten recipe scan (Gudeg.png) on 2026-08-22, replacing a garbled/incomplete version that had mixed in unrelated content (previously flagged as possibly contaminated with Bami Ayam notes, and containing an unexplained duplicate tofu ingredient not present in the source). Category, serves, headnote, and photo still need filling in — not present in the source scan. Split 2026-08-28 into resep-129, a home-scale version using 2 cans of jackfruit (exactly 1/6 of this batch's 12 cans, per Arman's request) -- every ingredient divided by 6.",
       "reviewed": true,
       "ingredients": [
         {
@@ -5942,7 +5942,9 @@
           "step_id": "Kalau sudah mulai empuk, masukkan tempe dan daging ayamnya, dan sisa santannya.",
           "step_en": "Once it starts to become tender, add the tempeh and the chicken, along with the remaining coconut milk."
         }
-      ]
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-129"
     },
     {
       "id": "resep-63",
@@ -10712,6 +10714,106 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-22"
+    },
+    {
+      "id": "resep-129",
+      "resep_num": 129,
+      "category": "other",
+      "photo": "",
+      "name_id": "Gudeg",
+      "name_en": "Gudeg (Jackfruit Stew)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Gudeg, scaled down to 2 cans of jackfruit from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "4-6",
+      "ingredients": [
+        {
+          "amount": "2",
+          "unit": "cans",
+          "name_id": "Nangka muda",
+          "name_en": "young jackfruit (20 oz / 565g cans)"
+        },
+        {
+          "amount": "1",
+          "unit": "small can",
+          "name_id": "Santan",
+          "name_en": "coconut milk (about 13.5-14 fl oz / 400ml), added at the start"
+        },
+        {
+          "amount": "1",
+          "unit": "small can",
+          "name_id": "Air",
+          "name_en": "water (use the empty coconut milk can to measure), added at the start"
+        },
+        {
+          "amount": "1",
+          "unit": "small can",
+          "name_id": "Santan",
+          "name_en": "coconut milk (about 13.5-14 fl oz / 400ml), added later with the tempeh and chicken"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Red Curry Paste (Mae Ploy, MA-PL01)",
+          "name_en": "red curry paste (Mae Ploy, MA-PL01)"
+        },
+        {
+          "amount": "⅔",
+          "unit": "package",
+          "name_id": "Tempe",
+          "name_en": "tempeh (8oz package size), about 5 oz"
+        },
+        {
+          "amount": "⅚",
+          "unit": "lb",
+          "name_id": "Daging ayam (sliced chicken)",
+          "name_en": "chicken meat, sliced (about 13 oz)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cumin",
+          "name_en": "cumin, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Ketumbar",
+          "name_en": "coriander, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Gula",
+          "name_en": "sugar, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Garam",
+          "name_en": "salt, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Fry the red curry paste in oil, then add the first can of coconut milk and the can of water, and boil the jackfruit until tender (about 1/2 hour), along with all the spices."
+        },
+        {
+          "step_id": "",
+          "step_en": "Once it starts to become tender, add the tempeh and the chicken, along with the second can of coconut milk."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-28: home-scale version of resep-62 (Gudeg), sized to 2 cans of jackfruit per Arman's request -- exactly 1/6 of resep-62's own stated 12 cans, so every ingredient was divided by 6 directly. Coconut milk: resep-62's own annotation (\"2 large cans (or 12 kaleng kecil)\") gives a scan-stated large:small ratio of 1:6, so 12 small cans / 6 = 2 small cans exactly -- no external research needed for the can COUNT. Split into 1 can added at the start (with the water) and 1 can added later with the tempeh/chicken, mirroring resep-62's own method (\"1 blek santan + 1 blek air\" up front, \"sisa santannya\" [remaining coconut milk] later) at the 1 large can = 6 small cans ratio. Can-size annotations (jackfruit: 20oz/565g, matching standard US canned young jackfruit brands like Aroy-D/Chaokoh/Native Forest/Trader Joe's; coconut milk small can: ~13.5-14 fl oz/400ml, matching standard US grocery-retail cans) are from research Arman supplied 2026-08-28, for a US home cook's convenience -- note this 400ml figure is LARGER than the 300ml \"kaleng kecil\" figure established earlier (raspberry_package_sizes memory, from resep-12's own scan annotation) for a different recipe's Indonesian-market-style small can; both coexist since they describe different products, and the can COUNT (not the mL figure) is what actually drives this recipe's math. Tempeh (4/6 = 2/3) and chicken (5lb/6 = 5/6 lb, about 13oz) are exact fractions of resep-62's own counts, expressed against a standard 8oz tempeh package for practicality. Curry paste (4 Tbsp/6 = 2 tsp) is exact. Cumin, coriander, sugar, and salt were never quantified in the source scan (\"to taste\") -- left as-is, not guessed at. Serves estimated at 4-6 for this size batch -- a guess, not a scan fact.",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-62"
     }
   ]
 }
