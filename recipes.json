@@ -7430,13 +7430,14 @@
       "name_en": "Bumbu Tumis Ramayani (Ramayani Stir-Fry Sauce Base)",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Catatan Ibu: 'Bumbu Thai = Kang Panang curry.'",
-      "notes_en": "Mother's note: 'Bumbu Thai = Kang Panang curry.'",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "other"
       ],
       "review_notes": "Rewritten from the original scan (Bumbu Tumis.png) on 2026-08-22, using only the '1 ORDER' column — the page also has a '½ ORDER' column, dropped per Arman since it's just a straight half of the same quantities. The prior data's rows 9-19 (claimed by the old notes to be a separate 'restaurant scale' page) were dropped entirely — per Arman, they were actually a duplicated/garbled second transcription of largely the same '1 order' values (mostly matching this scan, but with a couple of numbers that appear to have been misread by a decimal or unit, e.g. '6 oz' trasi vs this scan's confirmed 0.6 oz), not a genuine second page. No method is written on this page, which matches what the prior notes already said.",
       "reviewed": true,
