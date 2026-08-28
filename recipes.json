@@ -2686,7 +2686,7 @@
       "category": "nasi_mie",
       "photo": "",
       "name_id": "Bacang Beras",
-      "name_en": "Bacang Beras (Rice Dumplings)",
+      "name_en": "Rice Dumplings",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "",
@@ -2786,7 +2786,9 @@
       "method": [
         {
           "step_id": "Ini semua digoreng dengan minyak sayur agak banyak. Disimpan satu malam; sebelum dipakai diaduk-aduk dan ditambah lagi kecap manis.",
-          "step_en": "All of this is fried together with a fairly generous amount of vegetable oil. It's stored overnight; before using, it's stirred again and more sweet soy sauce is added."
+          "step_en": "All of this is fried together with a fairly generous amount of vegetable oil. It's stored overnight; before using, it's stirred again and more sweet soy sauce is added.",
+          "section_id": "",
+          "section_en": "Prepare the Filling"
         }
       ]
     },
