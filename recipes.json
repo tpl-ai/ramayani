@@ -2430,7 +2430,10 @@
           "amount": ""
         }
       ],
-      "method": []
+      "method": [],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-127",
+      "review_notes": "Marked batch 2026-08-28: this recipe only ever recorded the pickling brine (1 gal vinegar + 2 gal water + 15 lbs sugar + 1 cup salt + turmeric for colour, no amount) -- it never included the vegetables that go into the finished acar, and nothing in the data referenced this recipe via recipe_ref. Split into resep-127, a complete home-scale acar (brine + vegetables) making one quart jar, using an external reference (Gemini-estimated) for the vegetable-to-liquid ratio and raw vegetable weight, since Ramayani's own recipe never recorded a vegetable amount at all. See resep-127 review_notes for the full math."
     },
     {
       "id": "resep-24",
@@ -10502,6 +10505,111 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-19"
+    },
+    {
+      "id": "resep-127",
+      "resep_num": 127,
+      "category": "sayuran_salad",
+      "photo": "",
+      "name_id": "Acar Ramayani",
+      "name_en": "",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Acar Ramayani, scaled down to a single quart jar (32 fl oz) from the restaurant's own pickling brine recipe.",
+      "notes_id": "",
+      "notes_en": "",
+      "serves": "4-6",
+      "ingredients": [
+        {
+          "amount": "1⅛",
+          "unit": "lb",
+          "name_id": "Timun dan wortel",
+          "name_en": "cucumber and carrot, cut into matchsticks or diced",
+          "section_id": "Sayuran",
+          "section_en": "Vegetables"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang merah",
+          "name_en": "shallots, peeled (a few, to taste)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cabe rawit",
+          "name_en": "whole bird's eye chilies (a few, to taste)"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Garam (untuk menggarami sayuran)",
+          "name_en": "salt, for salting/draining the cut vegetables"
+        },
+        {
+          "amount": "⅘",
+          "unit": "cup",
+          "name_id": "Cuka",
+          "name_en": "vinegar",
+          "section_id": "Air garam (brine)",
+          "section_en": "Pickling brine"
+        },
+        {
+          "amount": "1⅗",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1⅔",
+          "unit": "cup",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "2½",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt, for the brine"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kunyit digodok (untuk warna)",
+          "name_en": "a small piece of turmeric, boiled for colour"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Cut the cucumber and carrot into matchsticks or dice; peel the shallots and leave the bird's eye chilies whole."
+        },
+        {
+          "step_id": "",
+          "step_en": "Toss the cut cucumber and carrot with the salt and let sit in a colander for 20-30 minutes, then squeeze gently to purge excess moisture. This keeps the brine from being diluted."
+        },
+        {
+          "step_id": "",
+          "step_en": "Heat the water, vinegar, sugar, brine salt, and turmeric until dissolved, then let cool."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pack the salted vegetables, shallots, and chilies tightly into a clean quart jar, leaving 1 inch of headspace."
+        },
+        {
+          "step_id": "",
+          "step_en": "Ladle the cooled brine over the vegetables until completely covered, leaving 1/2 inch of headspace. Seal and refrigerate."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-28: home-scale version of resep-23 (Acar Ramayani Marinade), completed into a full acar (brine + vegetables) and sized to one quart jar (32 fl oz). Brine ingredients (vinegar, water, sugar, brine salt, turmeric) are resep-23's own amounts divided by 20, preserving Ramayani's own brine proportions exactly -- Arman confirmed resep-23's liquid (1 gal vinegar + 2 gal water = 3 gallons total) already matches an external reference's stated starting brine size (3 gallons), and that reference estimates 3 gallons of brine yields about 22-24 quart jars; Arman rounded to 20 jars for simplicity and asked to divide everything by 20. Vegetable amount (1 1/8 lb cucumber and carrot) is NOT from Ramayani's own data at all -- resep-23 never recorded any vegetable quantity. Used the same external reference's estimated 20-25 lbs raw cucumber/carrot for the full 3-gallon batch (midpoint 22.5 lbs), divided by 20. Shallots and bird's eye chilies are left as \"a few, to taste\" rather than an invented amount -- the reference describes them qualitatively (\"peel small shallots and keep red bird's eye chilies whole\") without a weight, unlike cucumber/carrot which it explicitly weighs together. The reference's separate ~1/3 cup draining salt (for salting the whole raw-vegetable batch, distinct from resep-23's own brine salt) divides to 0.8 tsp at this scale, rounded up to 1 tsp as a practical minimum. Serves estimated at 4-6 for one quart jar of pickled vegetables as a shared condiment/side -- a guess, not a scan or reference fact. Method steps combine resep-23's own (nonexistent) method -- there was none -- with the reference's own described process, adapted to a single jar.",
+      "flags": [
+        "no_name_en",
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-23"
     }
   ]
 }
