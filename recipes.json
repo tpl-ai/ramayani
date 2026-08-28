@@ -1801,7 +1801,7 @@
       "id": "resep-17",
       "resep_num": 17,
       "category": "seafood",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/DSC04519-UNuU4Q44BFdk1DX3LUe8rl1DUBYMgG.JPG",
       "name_id": "Chilli Crab",
       "name_en": "",
       "headnote_id": "",
@@ -1812,8 +1812,7 @@
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": false,
       "ingredients": [
