@@ -8553,13 +8553,74 @@
       "notes_id": "",
       "notes_en": "",
       "featured_order": 10,
-      "content_state": "no_content",
+      "content_state": "full",
       "flags": [
         "no_serves"
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "kg",
+          "name_id": "Daging sapi has, diiris",
+          "name_en": "beef knuckle, sliced (2.2 lbs)"
+        },
+        {
+          "amount": "1",
+          "unit": "batch",
+          "name_id": "Bumbu Rendang",
+          "name_en": "Rendang Paste",
+          "recipe_ref": "resep-133"
+        },
+        {
+          "amount": "⅖",
+          "unit": "cup",
+          "name_id": "Santan",
+          "name_en": "coconut milk"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onions, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Put the rendang paste in a pot and add the water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the beef."
+        },
+        {
+          "step_id": "",
+          "step_en": "When the rendang is tender, remove the meat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour in the coconut milk, bring to a boil, then return the meat to the pot to coat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Transfer to a bowl and top with fried onions."
+        }
+      ],
+      "serves": "4-5",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-134",
+      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly, split across two sheets: \"Rendang\" (the dish, resep-134) and \"Factory Cook - Rendang Paste\" (resep-132/resep-133). resep-134's beef batch is 67 1/7 lbs -- chose K=30 (close to the exact 30.46 implied by 2.2 lbs / 67.14 lbs) as a clean divisor landing near 1 kg beef, matching the recent 1kg-protein convention (Daging Bumbu Bali, Babi Hong). Coconut milk (98 fl oz/30 = ~3.27 fl oz, rounded to 2/5 cup) and water (0.5 gal/30 = ~2.13 fl oz, rounded to 1/4 cup) divided by the same K -- these are genuinely small amounts, but that matches rendang's own style (a long reduction down to a nearly dry, thickly spiced coating, using proportionally less liquid than a wetter curry), not an error. Rendang paste (resep-132's \"1 bag\") is assumed to be sized to exactly this beef batch (see resep-132 review_notes for that assumption) -- resep-133 is that paste at the same K=30, referenced here via recipe_ref. Serves estimated at 4-5 for 1kg raw beef (roughly 24oz cooked after shrinkage, portioned at the source sheet's own ~5oz/serving) -- a guess, not a scan fact. Method combines resep-134's \"Create Pre-prepared\" and \"Serve\" steps into one sequence appropriate for a single home batch (skipping the restaurant's container-portioning-for-later-reheating step, since a home cook would serve directly) -- an adaptation, not literal sheet text."
     },
     {
       "id": "cs-tahu-telor",
@@ -11028,6 +11089,327 @@
       ],
       "recipe_type": "home",
       "linked_recipe_id": "resep-130"
+    },
+    {
+      "id": "resep-132",
+      "resep_num": 132,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Bumbu Rendang - Restaurant Batch",
+      "name_en": "Rendang Paste - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Added 2026-08-28 from an Excel \"Factory Cook - Rendang Paste\" prep sheet Arman found and pasted directly (not a handwritten scan). This is the spice-paste component referenced as \"1 bag Rendang Paste\" in resep-134 (the Rendang dish batch). Assumption, not a stated fact: treated this whole Factory Cook batch as exactly \"1 bag,\" i.e. exactly the amount resep-134's 67 1/7 lb beef batch needs -- the sheet never states a yield or bag count, but a same-batch-to-same-batch sizing is the most natural reading of two prep sheets for the same dish, and the resulting paste-to-beef ratio (~40% by raw weight, mostly oil/onion bulk) is plausible for rendang's long, thick reduction style. Flag if Arman knows the actual bag count/yield. California Red Chili Paste is a Ramayani-branded purchased product, not something with a known recipe in this dataset (same situation as Soto Ayam Mix, resep-130). IMPORTANT: the source sheet's method is truncated -- it stops at step 6 (\"add 1/2 of the salt, sugar, MSG\") with no further steps. It never says what happens to the other half of the salt/sugar/MSG, nor when the bay leaves or kaffir lime leaves get added, despite both being in the ingredient list. This is preserved as-is, not filled in with an invented ending.",
+      "ingredients": [
+        {
+          "amount": "400",
+          "unit": "gm",
+          "name_id": "Kemiri",
+          "name_en": "Candlenut"
+        },
+        {
+          "amount": "400",
+          "unit": "gm",
+          "name_id": "Laos",
+          "name_en": "Galangal"
+        },
+        {
+          "amount": "600",
+          "unit": "gm",
+          "name_id": "Bawang putih",
+          "name_en": "Garlic"
+        },
+        {
+          "amount": "12",
+          "unit": "lbs",
+          "name_id": "Bawang bombay putih",
+          "name_en": "White onion"
+        },
+        {
+          "amount": "2",
+          "unit": "lbs",
+          "name_id": "California Red Chili Paste",
+          "name_en": "California Red Chili Paste (Ramayani brand)"
+        },
+        {
+          "amount": "200",
+          "unit": "gm",
+          "name_id": "Jahe",
+          "name_en": "Ginger"
+        },
+        {
+          "amount": "2",
+          "unit": "oz",
+          "name_id": "Daun salam",
+          "name_en": "Bay leaves"
+        },
+        {
+          "amount": "1⅛",
+          "unit": "cup",
+          "name_id": "Garam",
+          "name_en": "Salt"
+        },
+        {
+          "amount": "5",
+          "unit": "cup",
+          "name_id": "Gula",
+          "name_en": "Sugar"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "2",
+          "unit": "handfuls",
+          "name_id": "Daun jeruk purut",
+          "name_en": "Kaffir lime leaves (optional)"
+        },
+        {
+          "amount": "1",
+          "unit": "gal",
+          "name_id": "Minyak sayur",
+          "name_en": "Vegetable oil"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Blend all wet spices (candlenut, galangal, garlic, ginger) into a pulp using the robocoup."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour 1 gallon of vegetable oil into the tub."
+        },
+        {
+          "step_id": "",
+          "step_en": "Brown the onions for 20 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the California Red Chili Paste."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add garlic and ginger and brown for 10 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add half of the salt, sugar, and MSG."
+        }
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-133"
+    },
+    {
+      "id": "resep-133",
+      "resep_num": 133,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Bumbu Rendang",
+      "name_en": "Rendang Paste",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Rendang Paste, sized to exactly what 1 kg of beef needs.",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-28: home-scale version of resep-132, sized to match cs-rendang's home beef quantity (1 kg / 2.2 lbs) -- see cs-rendang and resep-134 review_notes for how that batch size (K=30, close to the exact 30.46 implied by 67 1/7 lbs / 2.2 lbs) was chosen. Every paste ingredient divided by the same 30. Candlenut (13.3g) converted to ~3 pieces (~4.5g/piece), galangal (13.3g) and ginger (6.7g) converted to tsp using fresh-aromatic density (~1g/mL), garlic (20g) converted to 5 cloves (~4g/clove) -- all approximate piece-size conversions, flagged as estimates. White onion (6.4oz) is about 1 medium onion. California Red Chili Paste (1.07oz) converted to Tbsp assuming a paste-like density (~1.1g/mL) -> ~2 Tbsp. Bay leaves (1.9g) converted to a leaf count (~0.2g/dried leaf) -> ~8-10 leaves. MSG (0.8 tsp) rounded to 3/4 tsp. Kaffir lime leaves (already optional, 2 handfuls at batch scale) floor to \"a few leaves\" at this size -- negligible otherwise.",
+      "ingredients": [
+        {
+          "amount": "3",
+          "unit": "",
+          "name_id": "Kemiri",
+          "name_en": "candlenuts"
+        },
+        {
+          "amount": "2¾",
+          "unit": "tsp",
+          "name_id": "Laos",
+          "name_en": "galangal, grated"
+        },
+        {
+          "amount": "5",
+          "unit": "clove",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Bawang bombay putih",
+          "name_en": "medium white onion, sliced"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "California Red Chili Paste",
+          "name_en": "California Red Chili Paste (Ramayani brand)"
+        },
+        {
+          "amount": "1⅓",
+          "unit": "tsp",
+          "name_id": "Jahe",
+          "name_en": "ginger, grated"
+        },
+        {
+          "amount": "8-10",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "bay leaves"
+        },
+        {
+          "amount": "1¾",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "2⅔",
+          "unit": "Tbsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun jeruk purut",
+          "name_en": "a few kaffir lime leaves (optional)"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Blend the candlenut, galangal, garlic, and ginger into a paste using a food processor or blender."
+        },
+        {
+          "step_id": "",
+          "step_en": "Heat the vegetable oil in a pot."
+        },
+        {
+          "step_id": "",
+          "step_en": "Brown the onion for about 20 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the California Red Chili Paste."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the blended garlic and ginger and brown for about 10 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add half of the salt, sugar, and MSG."
+        }
+      ],
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-132"
+    },
+    {
+      "id": "resep-134",
+      "resep_num": 134,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Rendang - Restaurant Batch",
+      "name_en": "Rendang - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Added 2026-08-28 from an Excel \"Rendang\" prep sheet Arman found and pasted directly (not a handwritten scan). Coconut milk read as \"98 fl oz total using 2 (large, Chaokoh-brand) cans\" -- the sheet's BOX=2 column and its own \"(2 cans)\" parenthetical describe the same 2 cans, not a further multiplication of the 98 fl oz figure. Beef amount (67 1/7 lbs) kept exactly as given -- an oddly precise number, likely itself derived from a supplier case-pack calculation upstream of this sheet, not altered here. Split 2026-08-28 into cs-rendang, a home-scale version for 1 kg of beef -- see cs-rendang review_notes for the K=30 scaling and the \"1 bag = this batch's exact paste need\" assumption used for resep-132/resep-133.",
+      "ingredients": [
+        {
+          "amount": "67 1/7",
+          "unit": "lbs",
+          "name_id": "Daging sapi has, diiris (Beef Knuckle #26 by Bangluck)",
+          "name_en": "Beef Knuckle, sliced (Beef Knuckle #26 by Bangluck)"
+        },
+        {
+          "amount": "1",
+          "unit": "bag",
+          "name_id": "Bumbu Rendang",
+          "name_en": "Rendang Paste (Ramayani brand)",
+          "recipe_ref": "resep-132"
+        },
+        {
+          "amount": "98",
+          "unit": "fl oz",
+          "name_id": "Santan (2 kaleng, Chaokoh)",
+          "name_en": "Coconut milk (2 cans, Chaokoh)"
+        },
+        {
+          "amount": "½",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "Water"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Put the Rendang Boiling Paste in a large pot and add the water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the beef knuckle."
+        },
+        {
+          "step_id": "",
+          "step_en": "When the rendang is tender, take out the meat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour in the coconut milk and bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Portion 4-6 pieces of meat per container (about 5 oz each)."
+        }
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "cs-rendang"
     }
   ]
 }
