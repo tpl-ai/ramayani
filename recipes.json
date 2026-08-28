@@ -2289,26 +2289,26 @@
       "resep_num": 22,
       "category": "daging",
       "photo": "",
-      "name_id": "Bali",
-      "name_en": "",
+      "name_id": "Daging Bumbu Bali",
+      "name_en": "Balinese Style Beef",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Catatan Ibu: 'Asem — kalan cabenya sudah asem, tak usah pakei.' Resep muncul di tiga halaman (Berkas 1 Hal. 24 / Berkas 2 Hal. 1 & 8) — versi Berkas 2 Hal. 8 paling lengkap dan disimpan di sini.",
-      "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.' Recipe appears on three pages (File 1 p.24 / File 2 pp.1 & 8) — File 2 Page 8 is the most complete version, kept here.",
+      "notes_id": "",
+      "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "",
-          "name_id": "Bola Daging di-potong ½",
-          "name_en": "balls beef, cut into pieces",
-          "amount": "2"
+          "unit": "kg",
+          "name_id": "Daging di-potong ½",
+          "name_en": "beef, cut into pieces",
+          "amount": "4"
         },
         {
           "unit": "can",
@@ -2376,7 +2376,8 @@
           "step_id": "Jahe + bawang putih digoreng sampai kuning, lalu masukkan cabenya terus goreng sampai matang, lalu masukkan yang lain-2nya; terakhir dagingnya.",
           "step_en": "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
         }
-      ]
+      ],
+      "review_notes": "Changed 2 bola of beef to 4 kg (estimate)"
     },
     {
       "id": "resep-23",
