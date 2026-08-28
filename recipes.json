@@ -7118,7 +7118,7 @@
       "category": "appetizer",
       "photo": "",
       "name_id": "Kroket Ragout",
-      "name_en": "Kroket Ragout (Ragout Croquettes)",
+      "name_en": "Croquettes",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "1 lbs udang bisa dipakai sebagai pengganti ayam. Tulisan agak tidak teratur di beberapa bagian — beberapa istilah menggunakan singkatan pribadi Ibu ('suir', 'saunifte', 'rebos').",
@@ -7126,7 +7126,6 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
         "no_photo"
       ],
       "review_notes": "Ingredients rewritten from the original scan (Kroket Ragut.png) on 2026-08-22. Row 0 ('Imperial: 2½ stook / 8 oz') was a fake ingredient row — it's actually the imperial-unit reading for the butter and flour amounts, folded into those two rows instead. Chicken broth corrected to 600cc (the existing '+100cc' was a misreading of '800' struck through as a correction, confirmed by Arman). Sugar corrected to 7 tbsp / 3½ oz (existing '¾ oz' was a misread of '3½ oz', confirmed by Arman) — butter (280g ≈ 2½ sticks) and flour (240g ≈ 8½ oz) were resolved the same way, checking which of each dash-pair's two numbers matches its stated imperial equivalent. Split the merged 'Shrimp (instead of chicken) — Bawang merah/besar slice' row into two separate ingredients. Method left untouched — not confident enough in my own reading of the cramped cursive to improve on the existing transcription, which already honestly flags its uncertain terms.",
@@ -7176,8 +7175,8 @@
         },
         {
           "unit": "lbs",
-          "name_id": "Shrimp (instead of chicken)",
-          "name_en": "Shrimp (instead of chicken)",
+          "name_id": "Shrimp or Chicken",
+          "name_en": "Shrimp or Chicken",
           "amount": "1"
         },
         {
@@ -7234,7 +7233,8 @@
           "step_id": "Cobain lalu masukkan semua bahan.",
           "step_en": "Taste and adjust, then add all ingredients."
         }
-      ]
+      ],
+      "serves": "35"
     },
     {
       "id": "resep-76",
