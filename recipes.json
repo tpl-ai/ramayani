@@ -2694,7 +2694,6 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
         "no_photo"
       ],
       "review_notes": "Fully rewritten from the original scan (Bacang Beras (Rice Dumplings).png) on 2026-08-22, using only what's on that page. The prior data had unrelated content mixed in — a completely different rice method (5 lbs glutinous rice/ketan, soaked, steamed, seasoned with water/salt/chicken oil/Kikkoman, then wrapped, yielding ±25-27 dumplings) that doesn't match this scan at all (different rice type, different quantities, different method). The prior notes already flagged that this recipe appears on three separate pages (File 1 p.10 / File 2 pp.5 & 24) — the ketan content is presumably from one of the other two pages, not verified against a source, and was dropped per Arman's decision rather than kept unverified. If that other page surfaces later it may be worth reconciling as a genuine alternate version. Water amount (23 cups) is the page's own final recommended figure: base ratio 16 cups rice × 1.5 = 24 cups, reduced by 1 cup per the page's own note.",
@@ -2790,7 +2789,8 @@
           "section_id": "",
           "section_en": "Prepare the Filling"
         }
-      ]
+      ],
+      "serves": "30"
     },
     {
       "id": "resep-27",
