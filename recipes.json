@@ -2298,7 +2298,6 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
         "no_photo",
         "scale"
       ],
@@ -2377,7 +2376,8 @@
           "step_en": "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
         }
       ],
-      "review_notes": "Changed 2 bola of beef to 4 kg (estimate)"
+      "review_notes": "Changed 2 bola of beef to 4 kg (estimate)",
+      "serves": "24"
     },
     {
       "id": "resep-23",
