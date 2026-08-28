@@ -2801,16 +2801,15 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "FLAG: Berkas 2, Hal. 6. Resep ini untuk ketan tanpa isian — lihat Resep 26 (Bacang Beras) untuk isian lengkapnya.",
-      "notes_en": "FLAG: File 2, Page 6. This recipe covers the sticky rice wrapper only — see Recipe 26 (Bacang Beras) for the full filling.",
+      "notes_id": "",
+      "notes_en": "See Bacang Beras for the filling.",
       "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "lbs",
@@ -2858,9 +2857,10 @@
         },
         {
           "step_id": "1 lbs. jadi ± 5 | 5 lbs. jadi ± 25–27.",
-          "step_en": "1 lb makes ± 5 | 5 lbs makes ± 25–27."
+          "step_en": "1 lb makes ± 5 bacang\n5 lbs makes ± 25–27 bacang"
         }
-      ]
+      ],
+      "serves": "25"
     },
     {
       "id": "resep-28",
