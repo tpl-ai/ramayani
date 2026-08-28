@@ -8583,7 +8583,7 @@
     {
       "id": "cs-soto-ayam",
       "resep_num": 93,
-      "category": "sayuran_salad",
+      "category": "ayam",
       "photo": "soto-ayam.jpg",
       "name_id": "Soto Ayam",
       "name_en": "Soto Ayam",
@@ -8591,13 +8591,79 @@
       "headnote_en": "Chicken, bean sprouts, and rice noodles in an aromatic coconut-milk broth with lemongrass and kaffir lime leaves",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
+      "content_state": "full",
       "flags": [
         "no_serves"
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Kuah Soto Ayam",
+          "name_en": "Soto Ayam soup base",
+          "recipe_ref": "resep-131"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Bihun",
+          "name_en": "thin rice noodles"
+        },
+        {
+          "amount": "1",
+          "unit": "pc",
+          "name_id": "Telur rebus",
+          "name_en": "boiled egg"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Tauge",
+          "name_en": "bean sprouts"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun bawang",
+          "name_en": "green onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onion, to taste"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Ayam suwir",
+          "name_en": "shredded chicken"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil 2 cups of soup base."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add noodles to a bowl."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add egg, bean sprouts, and shredded chicken to the bowl."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour the hot soup base into the bowl."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with green onions and fried onions."
+        }
+      ],
+      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly (the \"To Serve\" section, i.e. one bowl) -- see resep-130/resep-131 for the soup-base component this recipe references. Also fixed category from sayuran_salad (Vegetables & Salads) to ayam (Chicken) -- a chicken noodle soup was miscategorized under salads before any real content existed here. Green onion and fried onion amounts were not given in the source (listed with no quantity, garnish-style) -- left unspecified rather than guessed."
     },
     {
       "id": "cs-sambal-goreng-tahu-buncis",
@@ -10813,6 +10879,155 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-62"
+    },
+    {
+      "id": "resep-130",
+      "resep_num": 130,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Kuah Soto Ayam - Restaurant Batch",
+      "name_en": "Soto Ayam Soup Base - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Added 2026-08-28 from an Excel prep sheet Arman found and pasted directly (not a handwritten scan). This is the soup-base component of Soto Ayam (cs-soto-ayam) -- makes about 3.5 gallons (2.5 gal unseasoned chicken broth from 2 chickens + 1 gal coconut milk = 3.5 gal, matching the sheet's own \"makes about 3.5 gallons\" label exactly). \"Soto Ayam Mix\" is a Ramayani-branded proprietary spice blend, not something with a known recipe/composition in this dataset -- treated as a purchased ingredient, like Mae Ploy curry paste or Kikoman soy sauce elsewhere. The prep method (step 1) mentions \"Indonesian Bay Leaves\" but no bay leaf amount appears anywhere in the sheet's own ingredient table -- a real gap in the source, not something invented here. Split into resep-131, a home-scale version sized to exactly 2 cups -- what one bowl of the finished dish (cs-soto-ayam) needs.",
+      "ingredients": [
+        {
+          "amount": "2½",
+          "unit": "gal",
+          "name_id": "Kaldu ayam tawar (dari 2 ekor ayam)",
+          "name_en": "Unseasoned chicken broth (from 2 chickens)"
+        },
+        {
+          "amount": "1",
+          "unit": "gal",
+          "name_id": "Santan",
+          "name_en": "Coconut milk"
+        },
+        {
+          "amount": "3",
+          "unit": "pc",
+          "name_id": "Sereh",
+          "name_en": "Lemongrass"
+        },
+        {
+          "amount": "200",
+          "unit": "gm",
+          "name_id": "Jahe",
+          "name_en": "Ginger"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaves (amount not given in source)"
+        },
+        {
+          "amount": "8",
+          "unit": "oz",
+          "name_id": "Soto Ayam Mix",
+          "name_en": "Soto Ayam Mix (Ramayani brand)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Add lemongrass, ginger, and Indonesian bay leaves to the chicken broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil and add the coconut milk."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining spices (Soto Ayam Mix)."
+        }
+      ],
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-131"
+    },
+    {
+      "id": "resep-131",
+      "resep_num": 131,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Kuah Soto Ayam",
+      "name_en": "Soto Ayam Soup Base",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Soto Ayam soup base, sized to the 2 cups one bowl of Soto Ayam needs.",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-28: home-scale version of resep-130, sized to exactly 2 cups -- what cs-soto-ayam's own \"To Serve\" table states one bowl needs (from the same Excel sheet), rather than a bigger batch. This structurally avoids any floor-rounding risk the way resep-120 (Ayam Sauce Ramayani Sauce) does. resep-130's 56 cups (3.5 gal) total divided by 28 to reach 2 cups: chicken broth 40/28=1.43 cups (rounded to 1 2/5 cup), coconut milk 16/28=0.57 cup (rounded to 3/5 cup), ginger 200g/28=7.1g converted to ~1.5 tsp (fresh ginger density). Lemongrass (3pc/28=0.1pc) is far below any measurable amount -- floor-raised to \"a small piece, bruised,\" a real increase beyond pure proportional scaling, per the standing floor-protection rule. Soto Ayam Mix (8oz/28=0.29oz, rounded to 1/4 oz) is a Ramayani-branded proprietary blend with no known recipe in this dataset -- note this may not be practically available to a home cook in such a small amount; no substitute was invented. Bay leaf amount is unconfirmed in the source (see resep-130) and left unspecified here too.",
+      "ingredients": [
+        {
+          "amount": "1⅖",
+          "unit": "cup",
+          "name_id": "Kaldu ayam tawar",
+          "name_en": "unseasoned chicken broth (or low-sodium chicken stock)"
+        },
+        {
+          "amount": "⅗",
+          "unit": "cup",
+          "name_id": "Santan",
+          "name_en": "coconut milk"
+        },
+        {
+          "amount": "1",
+          "unit": "small piece",
+          "name_id": "Sereh",
+          "name_en": "lemongrass, bruised"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Jahe",
+          "name_en": "ginger, grated"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaf (amount not given in source)"
+        },
+        {
+          "amount": "¼",
+          "unit": "oz",
+          "name_id": "Soto Ayam Mix",
+          "name_en": "Soto Ayam Mix (Ramayani brand)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Add lemongrass, ginger, and Indonesian bay leaf to the chicken broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil and add the coconut milk."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining spices (Soto Ayam Mix)."
+        }
+      ],
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-130"
     }
   ]
 }
