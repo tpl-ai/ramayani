@@ -2376,8 +2376,10 @@
           "step_en": "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
         }
       ],
-      "review_notes": "Changed 2 bola of beef to 4 kg (estimate)",
-      "serves": "24"
+      "review_notes": "Changed 2 bola of beef to 4 kg (estimate) Split 2026-08-28 into resep-128, a home-scale version for 1 kg of beef (exactly 1/4 of this batch's 4 kg) -- every ingredient divided by 4.",
+      "serves": "24",
+      "recipe_type": "batch",
+      "linked_recipe_id": "resep-128"
     },
     {
       "id": "resep-23",
@@ -10614,6 +10616,102 @@
       "content_state": "full",
       "recipe_type": "home",
       "linked_recipe_id": "resep-23"
+    },
+    {
+      "id": "resep-128",
+      "resep_num": 128,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Daging Bumbu Bali",
+      "name_en": "Balinese Style Beef",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Daging Bumbu Bali, scaled down to 1 kg of beef from the restaurant's own recipe.",
+      "notes_id": "",
+      "notes_en": "Mother's note: 'Tamarind — if the chilli is already sour, don't use it.",
+      "serves": "6",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "kg",
+          "name_id": "Daging di-potong",
+          "name_en": "beef, cut into pieces"
+        },
+        {
+          "amount": "1",
+          "unit": "lb",
+          "name_id": "Red Dice Pepper diblender",
+          "name_en": "red diced pepper (cabe merah), blended (about 16 oz)"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Bawang putih diblender",
+          "name_en": "garlic, blended"
+        },
+        {
+          "amount": "5",
+          "unit": "tsp",
+          "name_id": "Jahe",
+          "name_en": "ginger, grated"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "⅗",
+          "unit": "cup",
+          "name_id": "Brown sugar",
+          "name_en": "brown sugar, packed"
+        },
+        {
+          "amount": "⅜",
+          "unit": "cup",
+          "name_id": "Gula pasir",
+          "name_en": "white sugar"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cabe kering kira-kira",
+          "name_en": "some dried chilli"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Asem (kalan cabenya sudah asem, tak usah pakei)",
+          "name_en": "tamarind / asam (if chilli is already sour, don't use)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "Jahe + bawang putih digoreng sampai kuning, lalu masukkan cabenya terus goreng sampai matang, lalu masukkan yang lain-2nya; terakhir dagingnya.",
+          "step_en": "Fry ginger + garlic until golden, then add the chilli and keep frying until done, then add the other ingredients; the meat goes in last."
+        }
+      ],
+      "reviewed": true,
+      "review_notes": "New recipe added 2026-08-28: home-scale version of resep-22 (Daging Bumbu Bali), for 1 kg of beef -- exactly 1/4 of resep-22's own stated 4 kg batch, so every ingredient was divided by 4 directly (no back-solving needed, unlike recent conversions where the batch never stated its own size). Serves 24/4 = 6. Ginger (100g/4=25g) converted to tsp using fresh-ginger density (~1g/mL) -> 5 tsp, a clean number. Brown sugar (1 box/4) uses the confirmed 1lb-box = 2 1/3 cups packed size (see raspberry_package_sizes memory) -> 0.583 cup, rounded to 3/5 cup. Red diced pepper (1 can/4) uses the confirmed #10 can net-drained weight (~60-64 oz, see same memory) -> ~15-16 oz, rounded to 1 lb. The garlic \"container\" unit (1 container/4) has no confirmed real size anywhere in the data -- estimated at 1 cup blended garlic per container (a plausible deli-tub size for this quantity of meat) purely by normal-home-quantity judgment, giving 1/4 cup here. Unconfirmed -- flag if Arman knows the real container size. Vegetable oil, dried chilli, and tamarind were never quantified in the source scan (\"to taste\"/conditional use) -- left as-is, not guessed at.",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "content_state": "full",
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-22"
     }
   ]
 }
