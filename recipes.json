@@ -2118,7 +2118,7 @@
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "",
-      "notes_en": "We always felt guilty eating this dish,  but it always tasted so good.  The melt-in-your-mouth tender pork paired so well with the sweetness of the kecap manis and the salty sour taste of the salted cabbage. And of course don’t forget the steaming plate of white rice. Decadence that tastes like home. ",
+      "notes_en": "We always felt guilty eating this dish,  but it always tasted so good.  The melt-in-your-mouth tender pork pairs so well with the sweetness of the kecap manis and the salty sour taste of the salted cabbage. And of course don’t forget the steaming plate of white rice. ",
       "content_state": "full",
       "flags": [
         "no_name_en",
@@ -2178,8 +2178,8 @@
       ],
       "method": [
         {
-          "step_id": "Side Pork: ± 7lbs (2 pieces). Rebus daging babi selama ½ jam dan angin-anginkan selama 24 jam lalu goreng sampai kulitnya renyah. Lalu masukkan ke air es untuk melunakkan kulitnya.",
-          "step_en": "Side Pork: ± 7 lbs (2 pieces). Boil the side pork for ½ hour and air dry for 24 hours and fry until the skin crispy. And put into ice water to soften the shell."
+          "step_id": "Side Pork: Rebus daging babi selama ½ jam dan angin-anginkan selama 24 jam lalu goreng sampai kulitnya renyah. Lalu masukkan ke air es untuk melunakkan kulitnya.",
+          "step_en": "Side Pork: Boil the side pork for ½ hour and air dry for 24 hours and fry until the skin crispy. And put into ice water to soften the shell."
         },
         {
           "step_id": "Goreng selama ± 15 menit.",
