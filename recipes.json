@@ -739,7 +739,7 @@
       "id": "resep-7",
       "resep_num": 7,
       "category": "ayam",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/IMG_3461AyamGorengKering-sGqBaxqaA8QwNewRC5LkRhyFsLiCeQ.jpg",
       "name_id": "Ayam Goreng Kering",
       "name_en": "Crispy Fried Chicken",
       "headnote_id": "",
@@ -749,8 +749,7 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": true,
       "ingredients": [
