@@ -6873,15 +6873,14 @@
       "resep_num": 73,
       "category": "nasi_mie",
       "photo": "",
-      "name_id": "Kulit Risoles & Kulit Lumpia Basah",
-      "name_en": "",
+      "name_id": "Kulit Resaules & Kulit Lumpia Basah",
+      "name_en": "Resaules & Lumpia Skin",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "Resep Lumpia Basah dikreditkan pada buku masak Sisca Soewitomo, Hal. 59.",
       "notes_en": "The Lumpia Basah recipe is credited to Sisca Soewitomo's cookbook, page 59 — mother noted her source.",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo"
