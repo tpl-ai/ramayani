@@ -12225,7 +12225,7 @@
       "id": "resep-142",
       "resep_num": 142,
       "category": "appetizer",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Otak%20Otak%20DSC01198-Jp0aRP4ORnBALEC08KbrRQsFkpNoqL.JPG",
       "name_id": "Otak-Otak - Restaurant Batch",
       "name_en": "Otak Otak - Restaurant Batch",
       "headnote_id": "",
@@ -12325,7 +12325,6 @@
       "flags": [
         "no_headnote",
         "no_serves",
-        "no_photo",
         "scale"
       ],
       "reviewed": true,
