@@ -8936,16 +8936,16 @@
           "name_en": "chili, to taste (optional)"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name_id": "Kecap manis (topping)",
-          "name_en": "sweet soy sauce / ketchap manis, to top"
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam (tambahan)",
+          "name_en": "salt (second addition)"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name_id": "Kecap ikan (topping)",
-          "name_en": "fish sauce, to top"
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Kecap manis",
+          "name_en": "ketchap manis (sweet soy sauce)"
         }
       ],
       "method": [
@@ -8971,15 +8971,15 @@
         },
         {
           "step_id": "",
-          "step_en": "Add the MSG and white pepper."
+          "step_en": "Add the MSG, white pepper, salt, and ketchap manis."
         },
         {
           "step_id": "",
-          "step_en": "Serve topped with sweet soy sauce and fish sauce to taste."
+          "step_en": "Serve."
         }
       ],
       "serves": "1-2",
-      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row."
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row. CORRECTED 2026-08-29 after reading the master spreadsheet's \".Nasi & Bihun Goreng\" sheet directly (not just the pasted excerpt): the sheet has a second seasoning addition after MSG/white pepper -- 1/4 tsp salt (a real ingredient I'd missed entirely) and 1 1/2 tsp ketchap manis (previously listed here as a no-amount 'to taste' topping, per Arman's own recollection at the time -- the sheet gives a real amount and lists it in the same cooking step as MSG/pepper, so it's mixed in, not a post-plate garnish). The sheet's fish sauce line at this same point is explicitly annotated \"(NG Babat Only)\" -- specific to a Nasi Goreng Babat (tripe) variant not built here -- so fish sauce is dropped from this recipe entirely, not included at any amount."
     },
     {
       "id": "cs-lettuce-wrap",
@@ -11778,16 +11778,16 @@
           "name_en": "chili, to taste (optional)"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name_id": "Kecap manis (topping)",
-          "name_en": "sweet soy sauce / ketchap manis, to top"
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
         },
         {
-          "amount": "",
-          "unit": "",
-          "name_id": "Kecap ikan (topping)",
-          "name_en": "fish sauce, to top"
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Kecap manis",
+          "name_en": "ketchap manis (sweet soy sauce)"
         }
       ],
       "method": [
@@ -11813,11 +11813,11 @@
         },
         {
           "step_id": "",
-          "step_en": "Add the MSG and white pepper."
+          "step_en": "Add the MSG, white pepper, salt, and ketchap manis."
         },
         {
           "step_id": "",
-          "step_en": "Serve topped with sweet soy sauce and fish sauce to taste."
+          "step_en": "Serve."
         }
       ],
       "serves": "1-2",
@@ -11826,7 +11826,7 @@
         "no_photo"
       ],
       "reviewed": true,
-      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row."
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row. CORRECTED 2026-08-29 after reading the master spreadsheet's \".Nasi & Bihun Goreng\" sheet directly (not just the pasted excerpt): the sheet has a second seasoning addition after MSG/white pepper -- 1/4 tsp salt (a real ingredient I'd missed entirely) and 1 1/2 tsp ketchap manis (previously listed here as a no-amount 'to taste' topping, per Arman's own recollection at the time -- the sheet gives a real amount and lists it in the same cooking step as MSG/pepper, so it's mixed in, not a post-plate garnish). The sheet's fish sauce line at this same point is explicitly annotated \"(NG Babat Only)\" -- specific to a Nasi Goreng Babat (tripe) variant not built here -- so fish sauce is dropped from this recipe entirely, not included at any amount."
     },
     {
       "id": "resep-136",
@@ -12546,6 +12546,207 @@
       "reviewed": true,
       "review_notes": "Added 2026-08-29 to fill a traceability gap Arman flagged: this tier (the actual curry, made from 1 bag of resep-141's paste plus water/galangal/bay leaf/coconut milk/tofu/garlic/onion) previously existed only as prose math inside cs-sambal-goreng-tahu-buncis's own review_notes, with no stored restaurant-scale recipe to check it against -- exactly why a real error (coconut milk read as 98 fl oz instead of 2 x 98 = 196 fl oz) went unnoticed. Read directly from the master spreadsheet (ramayani/docs/Ramayani Southeast Asian Recipe v13.xls, sheet '.Sambal Goreng Tahu Buncis') rather than pasted text -- see [[raspberry-master-spreadsheet]]. Coconut milk confirmed as 196 fl oz (2 x 98 fl oz, a #10 can = 98 fl oz per Arman) by the same resolution applied to resep-2's identical '2 | 98 | fl oz | (2 large cans)' pattern, verified there against the original scan. yield_amount/unit (3 containers) kept as a real count rather than converted to a weight/volume, since 'container' is how this recipe's own next step (serving) already denominates it -- string beans are added per-container at serve time, not part of this batch.",
       "linked_recipe_id": "cs-sambal-goreng-tahu-buncis"
+    },
+    {
+      "id": "resep-145",
+      "resep_num": 145,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Saus Kuey Teow - Restaurant Batch",
+      "name_en": "Kuey Teow Sauce - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Kuey Teow Sauce, used to season Kuey Teow.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "2½",
+          "unit": "cup",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "2",
+          "unit": "cup",
+          "name_id": "Kecap ikan",
+          "name_en": "fish sauce"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Kecap asin (hitam)",
+          "name_en": "black soy sauce"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Gula (dimasak dengan kecap ikan)",
+          "name_en": "sugar (cooked with the fish sauce)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Cook the sugar with the fish sauce until dissolved."
+        },
+        {
+          "step_id": "",
+          "step_en": "Combine with the sweet soy sauce and black soy sauce."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 48,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Added 2026-08-29, read directly from the master spreadsheet (\"Factory Mix - Nasi Goreng Sauce\" sheet, which despite its name also documents the separate Kuey Teow dish and this sauce -- see [[raspberry-master-spreadsheet]]) -- discovered while comparing recipes.json against the spreadsheet per Arman's request, not originally part of what was pasted for Nasi/Bihun Goreng. yield_amount (48 oz) = 2.5+2+0.5+1 = 6 cups x 8 oz/cup. Method not stated on the sheet beyond the ingredient list -- \"cook sugar with fish sauce\" is directly from the ingredient's own description (\"Sugar (cooked with Fish Sauce)\"), the combine step is mechanically inherent, not invented technique."
+    },
+    {
+      "id": "resep-146",
+      "resep_num": 146,
+      "category": "nasi_mie",
+      "photo": "",
+      "name_id": "Kuey Teow Goreng",
+      "name_en": "Fried Flat Rice Noodles (Kuey Teow)",
+      "headnote_id": "Kuey teow goreng ala Indonesia dengan pilihan ayam, udang, babi, atau sayuran",
+      "headnote_en": "Indonesian-style fried flat rice noodles with your choice of chicken, shrimp, pork, or vegetables",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "⅓",
+          "unit": "package",
+          "name_id": "Kuey teow segar (mi beras pipih)",
+          "name_en": "fresh kuey teow (flat rice noodles) — package size not confirmed"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Brokoli",
+          "name_en": "broccoli"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "2½",
+          "unit": "tsp",
+          "name_id": "Kecap ikan",
+          "name_en": "fish sauce"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Kecap asin (hitam)",
+          "name_en": "black soy sauce"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Lemak ayam",
+          "name_en": "chicken fat"
+        },
+        {
+          "amount": "¾",
+          "unit": "cup",
+          "name_id": "Ayam matang, babi matang, atau udang kecil mentah (12 ct) (opsional untuk vegetarian)",
+          "name_en": "cooked chicken, cooked pork, or raw small shrimp (12ct) — omit for vegetarian"
+        },
+        {
+          "amount": "1",
+          "unit": "pc",
+          "name_id": "Telur",
+          "name_en": "egg"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Taoge",
+          "name_en": "bean sprouts"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Daun bawang, cincang",
+          "name_en": "green onion, chopped"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Merica putih",
+          "name_en": "white pepper, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cabai (opsional)",
+          "name_en": "chili, to taste (optional)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Put the chicken fat in the wok."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the chicken, pork, or shrimp (omit for vegetarian)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the garlic, egg, broccoli, and chili (optional)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the noodles."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the bean sprouts and green onion."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the MSG, white pepper, sweet soy sauce, fish sauce, black soy sauce, and sugar."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve."
+        }
+      ],
+      "serves": "1-2",
+      "content_state": "full",
+      "flags": [
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "New dish added 2026-08-29, discovered while comparing recipes.json against the master spreadsheet per Arman's request -- a third noodle variant alongside Nasi Goreng/Bihun Goreng, using fresh flat rice noodles + broccoli + garlic + its own Kuey Teow Sauce (resep-145) instead of Nasi Goreng Sauce. Shares the same Main Stir Fry base (chicken fat, protein choice, egg, bean sprouts, green onion, MSG) as its siblings, used directly per the same no-batch-multiplier convention. Kuey Teow Sauce is used only by this one dish, so per the multi-tier playbook (see [[raspberry-yield-scaling]]) it's decomposed directly into this recipe's own ingredients rather than kept as a separate home sauce: 1.25 oz used per order (the sheet's own \"To Serve\" figure, not estimated) out of resep-145's 48 oz batch, a ~1/38.4 fraction applied to each of the sauce's raw ingredients and rounded to kitchen units. Re-summed the rounded amounts (~7.25 tsp) against the 7.5 tsp (1.25 fl oz) target: ~3% under, normal rounding. Package size for fresh kuey teow noodles isn't known -- left as \"1/3 package\" rather than guessing a weight. Method's sauce placement (final step, with MSG/pepper) is directly stated on the sheet, unlike Nasi/Bihun Goreng's sauce timing, which had to be inferred."
     }
   ]
 }
