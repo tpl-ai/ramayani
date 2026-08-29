@@ -11217,7 +11217,7 @@
       "id": "resep-133",
       "resep_num": 133,
       "category": "bumbu_dasar",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/rendang-GMKJg2N4lDqXY2obOasvP1Z6wZwGbW.jpg",
       "name_id": "Bumbu Rendang",
       "name_en": "Rendang Paste",
       "headnote_id": "",
@@ -11227,8 +11227,7 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": true,
       "review_notes": "New recipe added 2026-08-28: home-scale version of resep-132, sized to match cs-rendang's home beef quantity (1 kg / 2.2 lbs) -- see cs-rendang and resep-134 review_notes for how that batch size (K=30, close to the exact 30.46 implied by 67 1/7 lbs / 2.2 lbs) was chosen. Every paste ingredient divided by the same 30. Candlenut (13.3g) converted to ~3 pieces (~4.5g/piece), galangal (13.3g) and ginger (6.7g) converted to tsp using fresh-aromatic density (~1g/mL), garlic (20g) converted to 5 cloves (~4g/clove) -- all approximate piece-size conversions, flagged as estimates. White onion (6.4oz) is about 1 medium onion. California Red Chili Paste (1.07oz) converted to Tbsp assuming a paste-like density (~1.1g/mL) -> ~2 Tbsp. Bay leaves (1.9g) converted to a leaf count (~0.2g/dried leaf) -> ~8-10 leaves. MSG (0.8 tsp) rounded to 3/4 tsp. Kaffir lime leaves (already optional, 2 handfuls at batch scale) floor to \"a few leaves\" at this size -- negligible otherwise.",
