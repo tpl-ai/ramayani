@@ -11339,7 +11339,7 @@
       "id": "resep-134",
       "resep_num": 134,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/rendang-GMKJg2N4lDqXY2obOasvP1Z6wZwGbW.jpg",
       "name_id": "Rendang - Restaurant Batch",
       "name_en": "Rendang - Restaurant Batch",
       "headnote_id": "",
@@ -11350,7 +11350,6 @@
       "flags": [
         "no_headnote",
         "no_serves",
-        "no_photo",
         "scale"
       ],
       "reviewed": true,
