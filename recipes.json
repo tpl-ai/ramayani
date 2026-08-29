@@ -10721,7 +10721,7 @@
       "id": "resep-125",
       "resep_num": 125,
       "category": "seafood",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20Ikan%20Pepes%203-AavDorEQN0sI7Hf8EukxL5rPoGQvBB.JPG",
       "name_id": "Pepes Ikan",
       "name_en": "Banana-Leaf Wrapped Steamed Fish",
       "headnote_id": "",
@@ -10852,8 +10852,7 @@
       "reviewed": true,
       "review_notes": "New recipe added 2026-08-27: one of two home-scale dishes split from resep-14 (Ikan Acar & Pepes), for a single whole fish. Spice-paste amounts (chili, candlenut, shallot, garlic, ginger, salt, MSG, sugar) are resep-14's own batch quantities divided by 28 -- see resep-14 review_notes for how that fish count was back-solved from total spice-paste weight against an external reference ratio, and why Ramayani's own proportions (not the reference's) were kept. Piece counts (chilies, candlenuts, shallots) are estimates converting the batch's gram weights using typical piece sizes, flagged as approximate. Tomato (2000g/28 = ~71g) is treated as a separate layering ingredient, not part of the blended paste, matching the source method's wording and the reference's own categorization. The aromatic-layering/wrapping ingredients (kemangi, lemongrass, salam, kaffir lime leaves, banana leaf) are NOT in resep-14 at all -- the source scan never quantified them, even though its own method mentions wrapping in banana leaf. Added here using Arman-supplied reference quantities for a standard ~400-500g whole fish, since Pepes structurally requires them and there is nothing Ramayani-specific to scale down instead -- flagged as sourced from external reference, not from the scan. Vinegar amount was never quantified in the source scan either, left as \"to taste.\" Method steps combine resep-14's own Pepes text with the aromatic additions described above.",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "content_state": "full",
       "recipe_type": "home",
