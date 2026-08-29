@@ -11701,7 +11701,7 @@
       "id": "resep-137",
       "resep_num": 137,
       "category": "bumbu_dasar",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/nasi-goreng-LsscdISf6C7XUVmtq1cdvqSzjToPsC.jpg",
       "name_id": "Saus Nasi Goreng",
       "name_en": "Nasi Goreng Sauce",
       "headnote_id": "",
@@ -11734,8 +11734,7 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": true,
       "review_notes": "Home-scale version of resep-136, keeping the same 3:2 sweet soy : fish sauce ratio at 1/4 the restaurant batch (10 oz total) so it works as a reusable fridge batch rather than a single-use portion -- an arbitrary size choice on my part, not derived from a stated home quantity (see resep-135/cs-nasi-goreng review_notes for the rest of this addition). Nasi Goreng and Bihun Goreng reference this recipe via recipe_ref at 1 oz and 1.5 oz respectively, matching the sheet's own stated \"Serve\" amounts exactly.",
