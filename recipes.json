@@ -8726,8 +8726,8 @@
           "name_en": "vegetable oil"
         },
         {
-          "amount": "¼",
-          "unit": "cup",
+          "amount": "3½",
+          "unit": "Tbsp",
           "name_id": "Bawang bombay, diblender atau diparut",
           "name_en": "onion, blended or grated"
         },
@@ -8738,13 +8738,13 @@
           "name_en": "California Chili Paste (or any chili paste/sambal)"
         },
         {
-          "amount": "2",
+          "amount": "1¾",
           "unit": "Tbsp",
           "name_id": "Gula",
           "name_en": "sugar"
         },
         {
-          "amount": "1½",
+          "amount": "1¼",
           "unit": "tsp",
           "name_id": "Garam",
           "name_en": "salt"
@@ -8757,18 +8757,18 @@
         },
         {
           "amount": "1",
-          "unit": "Tbsp",
+          "unit": "tsp",
           "name_id": "Laos kering, iris",
           "name_en": "dried galangal slices"
         },
         {
-          "amount": "1¼",
-          "unit": "cups",
+          "amount": "1",
+          "unit": "cup",
           "name_id": "Air",
           "name_en": "water"
         },
         {
-          "amount": "⅔",
+          "amount": "1",
           "unit": "cup",
           "name_id": "Santan",
           "name_en": "coconut milk"
@@ -8780,7 +8780,7 @@
           "name_en": "granulated onion (onion powder)"
         },
         {
-          "amount": "6",
+          "amount": "5½",
           "unit": "oz",
           "name_id": "Tahu, dipotong dadu dan digoreng",
           "name_en": "tofu, diced and fried (about 1/2 a standard block)"
@@ -8798,7 +8798,7 @@
           "name_en": "sliced onion"
         },
         {
-          "amount": "5",
+          "amount": "4",
           "unit": "oz",
           "name_id": "Buncis potong beku",
           "name_en": "frozen cut string beans"
@@ -8843,7 +8843,9 @@
         }
       ],
       "serves": "2-3",
-      "review_notes": "Filled in 2026-08-29 from Excel prep sheets Arman pasted directly (\"Sambal Goreng Tahu Buncis\" plus its \"Factory Cook - SGTB Paste\" sub-sheet, which itself reuses resep-138's California Chili Paste -- same component as Satay Sauce Base). Arman gave the anchor facts directly: one bowl/order is about 3.5 cups and serves 2-3. Sizing derivation: expanded the full restaurant chain (1 bag/6 of SGTB Base Paste's ingredients, plus SGTB Batch's own water/galangal/bay leaf/coconut milk/granulated onion/tofu/garlic/onion, plus the string beans added per container) to a full-batch weight of about 18.0 kg using standard ingredient-density approximations (veg oil 0.92g/mL, sugar 200g/cup, salt 288g/cup, coconut milk ~1g/mL, minced garlic ~136g/cup, sliced onion ~160g/cup). Estimated 3.5 cups of finished curry at ~894g (curry density ~1.08g/mL, a bit above water given the solids). Fraction = 894/18,000 ~= 1/20, i.e. the whole batch (3 containers) works out to about 20 orders total -- a clean, plausible number for a batch stated to last \"about 1 week,\" and a nice convergence check on the estimate (not derived from that framing, landed there independently). Re-summed the rounded ingredients after scaling by that fraction: ~923g vs. the ~894g target, about 3% high, well within normal rounding. Tofu: \"9 pgk\" (package) converted using an estimated standard ~14 oz/package block (per Arman, no real package weight on file -- see [[raspberry-package-sizes]]), giving ~6 oz tofu per order after scaling. Bay leaf floor-bumped from a true scaled value of ~0.06 leaf up to 1 whole leaf (can't measure a fraction of a dried leaf in practice) -- flagged, not proportional. \"Red/Sweet Diced Peppers\" in the paste's method and \"Indian Bay Leaves\" naming are the same recurring sheet issues already resolved on the Satay family -- see resep-141 review_notes, not re-asked here."
+      "review_notes": "CORRECTED 2026-08-29: coconut milk was originally read as 98 fl oz total; confirmed via resep-2's identical source pattern (verified against its original scan by Arman) that this actually means 2 x 98 fl oz = 196 fl oz (a #10 can = 98 fl oz). That roughly doubled the coconut milk's real contribution to the batch, which shifted the whole scaling fraction -- every ingredient below is freshly recomputed from the corrected total (see derivations/sgtb.py), not just the coconut milk line. Full batch now ~20.8kg (was ~18.0kg), target 3.5 cups (~894g, Arman's stated one-bowl amount, serves 2-3) gives a fraction of ~1/23.2 (was ~1/20) -- independently implies ~23 orders from the whole batch (3 containers), still a plausible number for stock meant to last about a week. Re-summed the rounded ingredients (~870g) against the 894g target: about 3% under, well within normal rounding. Also fixed an unrelated small error found during this recompute: galangal was previously listed as 1 Tbsp, about 3x the ~1 tsp the batch math actually supports -- an independent conversion mistake, not connected to the coconut milk issue. Now linked to resep-144 (Sambal Goreng Tahu Buncis - Restaurant Batch), a previously-missing recipe that stores this tier's real restaurant-scale ingredients so this kind of error is checkable going forward instead of buried in prose math. Read directly from the master spreadsheet this time, not pasted text -- see [[raspberry-master-spreadsheet]].",
+      "linked_recipe_id": "resep-144",
+      "recipe_type": "home"
     },
     {
       "id": "cs-nasi-goreng",
@@ -12432,6 +12434,118 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-142",
       "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Otak Otak\" plus its \"Factory Mix - Otak Otak Paste\" sub-sheet). Per Arman's explicit instruction: built as ONE recipe covering paste + wrapping + grilling + serving (no separate paste-tier recipe, unlike the Satay/SGTB chains), the Singaporean Otak Otak variant (red curry) intentionally excluded, and sized around \"~0.75oz (1.5 Tbsp) of fish paste per stick.\" Interpreted that figure as the amount of raw Fresh Fish Paste (the first ingredient) per stick, not the total finished/mixed paste weight per stick -- this reconciles cleanly: 84 oz fish paste (6 boxes) / 0.75 oz = exactly 112 sticks for the full batch, a clean whole number, vs. treating 0.75oz as total-mixture weight (which would include the added coconut milk/starch/sugar/etc. and imply a messier ~149 sticks). At Arman's stated 1-box (14oz) starting point for the scaled recipe, that same ratio gives ~18.7, rounded to 19 sticks -- close to but not exactly his own \"about 20\" ballpark, noted here rather than forced to match. Coconut milk conversions (fl oz -> Tbsp) are exact, no rounding (1 fl oz = 2 Tbsp); salt and white pepper were rounded up slightly (0.083 tsp -> 1/8 tsp, 0.167 tsp -> 1/4 tsp) to the nearest measurable spoon increment. The banana-leaf wrapping technique isn't detailed beyond \"cut into squares\" / \"grill until brown\" in the source, so the method describes it generically (portion paste onto the leaf, wrap into a stick) rather than inventing a specific fold or fastening method. Separately worth flagging: resep-24 (\"Bumbu Rujak & Bumbu Siomai / Bumbu Otak-Otak\", a peanut-vinegar-chili dressing) has a section literally named \"Bumbu Otak-Otak\" that may be the same thing as this sheet's \"Sambal Kacang\" serving accompaniment -- not linked or resolved here (resep-24 itself is still only partially reviewed, per its own notes), \"sambal kacang\" is left as a plain to-taste serving ingredient; worth Arman's look if/when resep-24 gets revisited. serves (3-4) is my own estimate for ~19 sticks as a shared appetizer portion -- not a stated fact."
+    },
+    {
+      "id": "resep-144",
+      "resep_num": 144,
+      "category": "sayuran_salad",
+      "photo": "",
+      "name_id": "Sambal Goreng Tahu Buncis - Restaurant Batch",
+      "name_en": "Sambal Goreng Tahu Buncis - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's full SGTB curry batch, before the string beans are added at serving. Makes 3 containers, about a week's worth.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "5",
+          "unit": "lbs",
+          "name_id": "Sambal Goreng Tahu Buncis - Bumbu Dasar (1 kantong)",
+          "name_en": "Sambal Goreng Tahu Buncis Base Paste (1 bag)",
+          "recipe_ref": "resep-141"
+        },
+        {
+          "amount": "1½",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "100",
+          "unit": "gm",
+          "name_id": "Laos kering",
+          "name_en": "dry galangal (laos)"
+        },
+        {
+          "amount": "15",
+          "unit": "gm",
+          "name_id": "Daun salam (½ pkt)",
+          "name_en": "Indonesian bay leaves (½ pkt)"
+        },
+        {
+          "amount": "196",
+          "unit": "fl oz",
+          "name_id": "Santan (2 kaleng besar)",
+          "name_en": "coconut milk (2 large #10 cans)"
+        },
+        {
+          "amount": "2¼",
+          "unit": "oz",
+          "name_id": "Bawang bubuk",
+          "name_en": "granulated onion"
+        },
+        {
+          "amount": "9",
+          "unit": "pgk",
+          "name_id": "Tahu, dipotong dadu dan digoreng",
+          "name_en": "tofu, diced and fried"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Bawang putih cincang",
+          "name_en": "chopped garlic"
+        },
+        {
+          "amount": "3",
+          "unit": "cup",
+          "name_id": "Bawang bombay, iris",
+          "name_en": "sliced onions"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Dice the tofu into small squares and deep-fry for 4 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put 1 bag of SGTB Base Paste in a pot."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the water and bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the galangal and bay leaves, and boil for 5 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the coconut milk and bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the granulated onion, fried tofu, chopped garlic, and sliced onions, and boil for 5 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Turn off the heat, divide into 3 containers, and refrigerate."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 3,
+      "yield_unit": "containers",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Added 2026-08-29 to fill a traceability gap Arman flagged: this tier (the actual curry, made from 1 bag of resep-141's paste plus water/galangal/bay leaf/coconut milk/tofu/garlic/onion) previously existed only as prose math inside cs-sambal-goreng-tahu-buncis's own review_notes, with no stored restaurant-scale recipe to check it against -- exactly why a real error (coconut milk read as 98 fl oz instead of 2 x 98 = 196 fl oz) went unnoticed. Read directly from the master spreadsheet (ramayani/docs/Ramayani Southeast Asian Recipe v13.xls, sheet '.Sambal Goreng Tahu Buncis') rather than pasted text -- see [[raspberry-master-spreadsheet]]. Coconut milk confirmed as 196 fl oz (2 x 98 fl oz, a #10 can = 98 fl oz per Arman) by the same resolution applied to resep-2's identical '2 | 98 | fl oz | (2 large cans)' pattern, verified there against the original scan. yield_amount/unit (3 containers) kept as a real count rather than converted to a weight/volume, since 'container' is how this recipe's own next step (serving) already denominates it -- string beans are added per-container at serve time, not part of this batch.",
+      "linked_recipe_id": "cs-sambal-goreng-tahu-buncis"
     }
   ]
 }
