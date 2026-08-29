@@ -11039,7 +11039,7 @@
       "id": "resep-128",
       "resep_num": 128,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Daging%20Bali-d3tlKzmOrz9fJWWhU8sIc7axGO1v9L.JPG",
       "name_id": "Daging Bumbu Bali",
       "name_en": "Balinese Style Beef",
       "headnote_id": "",
@@ -11124,8 +11124,7 @@
       "reviewed": true,
       "review_notes": "New recipe added 2026-08-28: home-scale version of resep-22 (Daging Bumbu Bali), for 1 kg of beef -- exactly 1/4 of resep-22's own stated 4 kg batch, so every ingredient was divided by 4 directly (no back-solving needed, unlike recent conversions where the batch never stated its own size). Serves 24/4 = 6. Ginger (100g/4=25g) converted to tsp using fresh-ginger density (~1g/mL) -> 5 tsp, a clean number. Brown sugar (1 box/4) uses the confirmed 1lb-box = 2 1/3 cups packed size (see raspberry_package_sizes memory) -> 0.583 cup, rounded to 3/5 cup. Red diced pepper (1 can/4) uses the confirmed #10 can net-drained weight (~60-64 oz, see same memory) -> ~15-16 oz, rounded to 1 lb. The garlic \"container\" unit (1 container/4) has no confirmed real size anywhere in the data -- estimated at 1 cup blended garlic per container (a plausible deli-tub size for this quantity of meat) purely by normal-home-quantity judgment, giving 1/4 cup here. Unconfirmed -- flag if Arman knows the real container size. Vegetable oil, dried chilli, and tamarind were never quantified in the source scan (\"to taste\"/conditional use) -- left as-is, not guessed at.",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "content_state": "full",
       "recipe_type": "home",
