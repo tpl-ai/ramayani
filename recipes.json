@@ -8518,7 +8518,7 @@
       "id": "cs-rendang",
       "resep_num": 91,
       "category": "daging",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/rendang-GMKJg2N4lDqXY2obOasvP1Z6wZwGbW.jpg",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20Rendang%204-hAPv6hG3QISz5djRmB7r6YywerRutp.JPG",
       "name_id": "Rendang",
       "name_en": "Beef Rendang",
       "headnote_id": "Daging sapi mini yang dimasak perlahan dalam kari cabai merah, bawang putih, dan santan",
@@ -8527,9 +8527,7 @@
       "notes_en": "",
       "featured_order": 10,
       "content_state": "full",
-      "flags": [
-        "no_serves"
-      ],
+      "flags": [],
       "reviewed": true,
       "ingredients": [
         {
