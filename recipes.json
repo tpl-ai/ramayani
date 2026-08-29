@@ -12921,9 +12921,9 @@
       "id": "resep-149",
       "resep_num": 149,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Gule%20Kambing%20Big-nNZanaFqdt8mNvlyhDBLSnEk6TIbP1.JPG",
       "name_id": "Gule Kambing",
-      "name_en": "Lamb/Goat Curry (Gule Kambing)",
+      "name_en": "Lamb Curry",
       "headnote_id": "",
       "headnote_en": "Ramayani's original lamb or goat curry in an aromatic Indonesian spice broth, from the family's own handwritten recipe.",
       "notes_id": "",
@@ -13073,8 +13073,7 @@
       "serves": "2-3",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
