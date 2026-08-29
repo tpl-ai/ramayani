@@ -12336,7 +12336,7 @@
       "id": "resep-143",
       "resep_num": 143,
       "category": "appetizer",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Otak%20Otak%20DSC01198-Jp0aRP4ORnBALEC08KbrRQsFkpNoqL.JPG",
       "name_id": "Otak-Otak",
       "name_en": "Gourmet fish cakes grilled in banana leaves",
       "headnote_id": "",
@@ -12429,8 +12429,7 @@
       "yield_unit": "sticks",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
