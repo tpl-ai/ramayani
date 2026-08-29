@@ -5653,7 +5653,7 @@
       "id": "resep-60",
       "resep_num": 60,
       "category": "nasi_mie",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/SporeLaksaIMG_8612-aU4qmkT7dGhATnqrlG63EpMad5cnzT.jpg",
       "name_id": "Laksa Indonesia",
       "name_en": "Indonesian Laksa — Spiced Coconut Noodle Soup",
       "headnote_id": "Laksa khas Indonesia versi Ramayani — sup mie berempah dengan kuah santan. Catatan Ibu menyebutkan pelengkap: bihun, toge, ayam, telur, dan kerupuk. Cara membuat perlu dikonfirmasi.",
@@ -5664,8 +5664,7 @@
       "date": "",
       "content_state": "partial",
       "flags": [
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": false,
       "ingredients": [
