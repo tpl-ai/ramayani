@@ -8600,13 +8600,114 @@
       "headnote_en": "Hand-cut tofu and egg, breaded, deep fried into a loaf, served with our original soy sauce",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "1½",
+          "unit": "pc",
+          "name_id": "Tahu",
+          "name_en": "tofu"
+        },
+        {
+          "amount": "1¼",
+          "unit": "cup",
+          "name_id": "Tahu Telur Flour Mix (merek Ramayani)",
+          "name_en": "Tahu Telur flour mix (Ramayani brand)"
+        },
+        {
+          "amount": "1",
+          "unit": "pc",
+          "name_id": "Telur",
+          "name_en": "egg"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Minyak goreng, secukupnya",
+          "name_en": "oil, for deep-frying"
+        },
+        {
+          "amount": "5½",
+          "unit": "Tbsp",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "1½",
+          "unit": "Tbsp",
+          "name_id": "Petis udang",
+          "name_en": "shrimp paste (petis udang)"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "1¾",
+          "unit": "tsp",
+          "name_id": "Air jeruk nipis",
+          "name_en": "lime juice"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Bawang putih, digiling",
+          "name_en": "garlic, ground"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine the sweet soy sauce, shrimp paste, sugar, lime juice, and garlic to make the sauce; set aside."
+        },
+        {
+          "step_id": "",
+          "step_en": "Heat the oil in a small pot for deep-frying (make sure the flame heats the sides of the pan)."
+        },
+        {
+          "step_id": "",
+          "step_en": "While the oil heats, cut the tofu into cubes."
+        },
+        {
+          "step_id": "",
+          "step_en": "In a bowl, mix the Tahu Telur flour mix, egg, salt, and water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the tofu."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour the tofu-egg mixture into a small pot or ladle set in the hot oil; as it sets, make a cylindrical hole in the middle."
+        },
+        {
+          "step_id": "",
+          "step_en": "Once it forms into a cake, remove it and deep-fry for 2 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve topped with the sauce."
+        }
+      ],
+      "serves": "1",
+      "linked_recipe_id": "resep-150",
+      "review_notes": "Filled in 2026-08-29 from the master spreadsheet (\".Tahu Telur\" + \"Factory Mix - Tahu Telur Sauce\" sheets, read directly, not pasted text -- see [[raspberry-master-spreadsheet]]). Main dish quantities (tofu, flour mix, egg, salt, water) are already order-sized on the sheet, used directly, no scaling needed. \"Tahu Telur Flour Mix\" is a Ramayani-branded product with no recipe of its own anywhere in the spreadsheet -- left as a named branded ingredient per Arman, not substituted or invented. Sauce sized to exactly 1/2 cup per Arman's stated one-order amount, which sits exactly at the standing minimum batch size (4oz/8Tbsp/1/2 cup), so no bigger batch was built -- see resep-150 for the full restaurant-batch sauce this was scaled from (fraction ~1/24.1). Re-summed the rounded amounts (~118.3ml) against the 118.3ml (1/2 cup) target: essentially exact. The sheet's method never explicitly says to top with the sauce (it just lists Tahu Telur Sauce as an ingredient with no serve step) -- added a serve step as the natural, obviously-intended use, not left unexplained. Serves estimated at 1 (a single tofu-egg cake using 1.5pc tofu and 1 egg reads as one portion) -- not a stated fact."
     },
     {
       "id": "cs-soto-ayam",
@@ -13074,6 +13175,69 @@
       "recipe_type": "home",
       "review_notes": "Built 2026-08-29 from Arman's original handwritten scan (\"Gule Kambing\", Cookbook Recipe Scan/Individual Recipe Scan), NOT the master spreadsheet -- Arman's explicit call: the spreadsheet's Gule Kambing chain is a further-scaled-up version of the same lineage for the second restaurant (multiple cases of goat/lamb vs. this scan's one whole goat), and mixing the two sources' different absolute quantities into one recipe would produce something neither source actually says. The spreadsheet was used only to help read a few unclear handwritten words, never to substitute a number. One thing this resolved: the spreadsheet's mysterious \"Cucumber\" spice line (15oz) is confirmed to be a mistyped \"Cinnamon\" (also 15oz in this scan) -- not an omitted or different ingredient, so the two sources' spice blend is actually identical where they overlap; the real reason to prefer the handwritten scan is that it's the original, complete, human-scale recipe, not a cinnamon discrepancy. Several handwriting readings are uncertain, flagged rather than guessed past: \"Tahe\" read as \"Jahe\" (ginger) from context; \"La machine\" (a food processor/blender) left untranslated, brand/model unclear; the garlic amount in the ginger-frying step (\"satu tempat lebih Bawang putih\", lit. \"one portion more garlic\") has no clear number, estimated at a small amount; galangal is given as \"1 bungkus\" (1 packet) with no weight; \"32 cup santen [beras?]\" -- the word after \"santen\" is hard to read, possibly \"biasa\" (regular); read as plain coconut milk, the qualifier not translated with confidence. No raw whole-goat weight is stated anywhere in the scan (only the finished yield, \"±75 containers @ 16oz\"), so the home meat quantity below is a practical estimate sized to the finished-yield fraction, not a precise fraction of a stated raw weight -- flagged, not presented as scan-exact. Sizing: the scan states \"1 whole goat -> ~75 containers @ 16oz\" as its only batch fact -- no raw meat weight. Rather than invent a raw-weight estimate, anchored to that stated finished yield instead: sized this recipe to 2 containers (32oz / ~0.9kg finished dish), close to the ~1kg protein-scale convention used for Rendang, giving a divisor of 75/2 = 37.5 applied to every precisely-stated quantity (oil, onions, ginger, red pepper, dried chili, salt, spice blend, sugar, coconut milk). This is a total-dish-weight anchor, not a pure-meat-weight one like Rendang's -- flagged as a real difference from that precedent, not silently presented as equivalent. The meat quantity itself (2 lbs bone-in goat/lamb) is a separate practical estimate for what a home 2-3-serving portion needs, not derived from the 37.5 divisor (nothing in the scan states meat weight to divide). Bone stock (\"tulang direbus, ± 3/4 panci besar\") has no stated volume, so substituted with lamb/goat stock at a practical \"enough to cover\" amount rather than a false-precision figure. Per the multi-tier playbook (see [[raspberry-yield-scaling]]), this is ONE combined home recipe -- resep-147 (Broth Mix) and resep-148 (Gule Paste) are stored separately only for traceability, their math is fully decomposed into this recipe's own ingredients above, not recipe_ref'd as sub-batches.",
       "linked_recipe_id": "resep-148"
+    },
+    {
+      "id": "resep-150",
+      "resep_num": 150,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Saus Tahu Telur - Restaurant Batch",
+      "name_en": "Tahu Telur Sauce - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's sweet soy and shrimp paste sauce for Tahu Telur.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "2000",
+          "unit": "ml",
+          "name_id": "Kecap manis (2 botol)",
+          "name_en": "sweet soy sauce (2 bottles)"
+        },
+        {
+          "amount": "500",
+          "unit": "gm",
+          "name_id": "Petis udang (2 pkt)",
+          "name_en": "shrimp paste / petis udang (2 packages)"
+        },
+        {
+          "amount": "100",
+          "unit": "ml",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "200",
+          "unit": "ml",
+          "name_id": "Air jeruk nipis",
+          "name_en": "lime juice"
+        },
+        {
+          "amount": "50",
+          "unit": "ml",
+          "name_id": "Bawang putih (digiling)",
+          "name_en": "garlic, ground"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine all the ingredients."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 2850,
+      "yield_unit": "ml",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Added 2026-08-29, read directly from the master spreadsheet (\".Tahu Telur\" + \"Factory Mix - Tahu Telur Sauce\" sheets) -- see [[raspberry-master-spreadsheet]]. yield_amount (2850 ml) is the raw sum of the listed ingredients (2000+500+100+200+50, treating the 500g shrimp paste as ~500mL for a paste-like density) -- no method is given on the sheet beyond the ingredient list, so \"combine\" is mechanically inherent, not invented technique.",
+      "linked_recipe_id": "cs-tahu-telor"
     }
   ]
 }
