@@ -6872,7 +6872,7 @@
       "id": "resep-73",
       "resep_num": 73,
       "category": "nasi_mie",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/_Resaules_1401-EnbBDJPwWg9fy0AJlUua951bFKyoDd.jpg",
       "name_id": "Kulit Resaules & Kulit Lumpia Basah",
       "name_en": "Resaules & Lumpia Skin",
       "headnote_id": "",
@@ -6882,8 +6882,7 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": false,
       "ingredients": [
