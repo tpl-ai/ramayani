@@ -5748,7 +5748,7 @@
       "id": "resep-61",
       "resep_num": 61,
       "category": "nasi_mie",
-      "photo": "laksa.jpg",
+      "photo": "",
       "name_id": "My Mum's Laksa",
       "name_en": "",
       "headnote_id": "",
@@ -5759,7 +5759,8 @@
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves"
+        "no_serves",
+        "no_photo"
       ],
       "reviewed": false,
       "ingredients": [
@@ -5767,12 +5768,6 @@
           "unit": "",
           "name_id": "Coconut milk: 4x blender",
           "name_en": "Coconut milk — blended 4 times",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "── SPICE PASTE (food processor) ──",
-          "name_en": "── SPICE PASTE ──",
           "amount": ""
         },
         {
@@ -5831,15 +5826,11 @@
         },
         {
           "unit": "",
-          "name_id": "── TO SERVE ──",
-          "name_en": "── TO SERVE ──",
-          "amount": ""
-        },
-        {
-          "unit": "",
           "name_id": "Bihun, toge, slice tahu goreng, udang, otek-otek, cucumber, mint leaves, sambol oelek",
           "name_en": "Rice vermicelli, bean sprouts, fried tofu sliced, shrimp, otak-otak, cucumber, mint leaves, sambal oelek",
-          "amount": ""
+          "amount": "",
+          "section_id": "",
+          "section_en": "To Serve"
         }
       ],
       "method": [
