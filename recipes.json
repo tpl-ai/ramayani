@@ -8725,13 +8725,135 @@
       "headnote_en": "String beans and tofu in a seasoned coconut curry",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Bawang bombay, diblender atau diparut",
+          "name_en": "onion, blended or grated"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "California Chili Paste (atau sambal apa saja)",
+          "name_en": "California Chili Paste (or any chili paste/sambal)"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "bay leaf"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Laos kering, iris",
+          "name_en": "dried galangal slices"
+        },
+        {
+          "amount": "1¼",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "⅔",
+          "unit": "cup",
+          "name_id": "Santan",
+          "name_en": "coconut milk"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Bawang bubuk",
+          "name_en": "granulated onion (onion powder)"
+        },
+        {
+          "amount": "6",
+          "unit": "oz",
+          "name_id": "Tahu, dipotong dadu dan digoreng",
+          "name_en": "tofu, diced and fried (about 1/2 a standard block)"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Bawang putih cincang",
+          "name_en": "chopped garlic"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Bawang bombay, iris",
+          "name_en": "sliced onion"
+        },
+        {
+          "amount": "5",
+          "unit": "oz",
+          "name_id": "Buncis potong beku",
+          "name_en": "frozen cut string beans"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Dice the tofu into small cubes and deep-fry until golden, about 4 minutes; set aside."
+        },
+        {
+          "step_id": "",
+          "step_en": "In a pot, cook the onion in the oil until it just begins to turn golden."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the California Chili Paste and cook for a few minutes, until slightly thickened."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the sugar, salt, bay leaf, and galangal."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the water and bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the coconut milk and bring back to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the granulated onion, fried tofu, garlic, and sliced onion, and boil for a few minutes more."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the string beans and cook until tender."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve."
+        }
+      ],
+      "serves": "2-3",
+      "review_notes": "Filled in 2026-08-29 from Excel prep sheets Arman pasted directly (\"Sambal Goreng Tahu Buncis\" plus its \"Factory Cook - SGTB Paste\" sub-sheet, which itself reuses resep-138's California Chili Paste -- same component as Satay Sauce Base). Arman gave the anchor facts directly: one bowl/order is about 3.5 cups and serves 2-3. Sizing derivation: expanded the full restaurant chain (1 bag/6 of SGTB Base Paste's ingredients, plus SGTB Batch's own water/galangal/bay leaf/coconut milk/granulated onion/tofu/garlic/onion, plus the string beans added per container) to a full-batch weight of about 18.0 kg using standard ingredient-density approximations (veg oil 0.92g/mL, sugar 200g/cup, salt 288g/cup, coconut milk ~1g/mL, minced garlic ~136g/cup, sliced onion ~160g/cup). Estimated 3.5 cups of finished curry at ~894g (curry density ~1.08g/mL, a bit above water given the solids). Fraction = 894/18,000 ~= 1/20, i.e. the whole batch (3 containers) works out to about 20 orders total -- a clean, plausible number for a batch stated to last \"about 1 week,\" and a nice convergence check on the estimate (not derived from that framing, landed there independently). Re-summed the rounded ingredients after scaling by that fraction: ~923g vs. the ~894g target, about 3% high, well within normal rounding. Tofu: \"9 pgk\" (package) converted using an estimated standard ~14 oz/package block (per Arman, no real package weight on file -- see [[raspberry-package-sizes]]), giving ~6 oz tofu per order after scaling. Bay leaf floor-bumped from a true scaled value of ~0.06 leaf up to 1 whole leaf (can't measure a fraction of a dried leaf in practice) -- flagged, not proportional. \"Red/Sweet Diced Peppers\" in the paste's method and \"Indian Bay Leaves\" naming are the same recurring sheet issues already resolved on the Satay family -- see resep-141 review_notes, not re-asked here."
     },
     {
       "id": "cs-nasi-goreng",
@@ -12018,6 +12140,96 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-139",
       "review_notes": "Home-scale version of resep-139, sized per the standing sauce playbook: Arman confirmed one order of Satay (6 skewers) uses 1/2 cup Satay Sauce -- since 1/2 cup already sits exactly at the standing minimum batch size (4oz/8Tbsp/1/2 cup), this recipe is sized to exactly that one-order amount rather than a bigger batch, per that rule. Derivation: expanded the restaurant chain to its raw ingredients (1 bag Satay Sauce Base = 1/3 of resep-139's ingredients, plus 4 gal water and 15 lbs peanut butter for the final mix), estimated the full batch at ~25.1 kg / ~106 cups (using standard ingredient-density approximations -- oil 0.92g/mL, sugar 200g/cup, salt 288g/cup, water 1g/mL), then scaled every raw ingredient by (0.5 cup / ~106 cups = ~1/201). California Chili Paste's true scaled amount was negligible (~0.4g) and floor-bumped up to a measurable 1/2 tsp -- flagged, not a proportional amount. Re-summed the rounded ingredients (~135g) against the 0.5-cup target (~125g): about 8% higher, consistent with expected reduction during the simmer step, not an error. yield_per_serving (0.33) = 0.5 cup / 1.5 (midpoint of cs-ayam-satay's serves \"1-2\"), per the canonical formula -- derived from the dish that uses this sauce, not invented here."
+    },
+    {
+      "id": "resep-141",
+      "resep_num": 141,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Sambal Goreng Tahu Buncis - Bumbu Dasar",
+      "name_en": "Sambal Goreng Tahu Buncis Base Paste",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's factory-cooked base paste for Sambal Goreng Tahu Buncis (string beans and tofu in coconut curry).",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "½",
+          "unit": "gal",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "16",
+          "unit": "lbs",
+          "name_id": "Bawang bombay, diblender",
+          "name_en": "onions, blended into a pulp"
+        },
+        {
+          "amount": "3",
+          "unit": "lbs",
+          "name_id": "California Chili Paste",
+          "name_en": "California Chili Paste",
+          "recipe_ref": "resep-138"
+        },
+        {
+          "amount": "1½",
+          "unit": "oz",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaves (daun salam)"
+        },
+        {
+          "amount": "1½",
+          "unit": "oz",
+          "name_id": "Laos kering",
+          "name_en": "dried galangal (laos)"
+        },
+        {
+          "amount": "15",
+          "unit": "cups",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "3½",
+          "unit": "cups",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Blend the onions into a pulp and drain off the excess water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cook the onions in the vegetable oil until almost brown."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the California Chili Paste and cook until the mixture thickens, about 2-3 hours."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the bay leaves, galangal, sugar, and salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Divide into 6 bags (about 5 lbs each)."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 30,
+      "yield_unit": "lbs",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Filled in 2026-08-29 from the \"Factory Cook - SGTB Paste\" prep sheet Arman pasted directly, as part of Sambal Goreng Tahu Buncis -- see cs-sambal-goreng-tahu-buncis review_notes for the rest of this addition. The method's \"Red Diced Peppers\"/\"Sweet Diced Peppers\" wording is the same recurring sheet artifact already resolved on Satay Sauce Base (see resep-139) -- treated as loose phrasing for the California Chili Paste already listed, not a separate missing ingredient, per that established precedent, not re-asked here. Sheet said \"Indian Bay Leaves\" for this ingredient; normalized to \"Indonesian bay leaves (daun salam)\" to match how the same ingredient (Daun Salam) is named everywhere else in the dataset -- almost certainly a mislabel, not a different product. yield_amount (30 lbs) = 6 bags x 5 lbs, as stated. Cross-check: raw ingredients sum to ~31.9 lbs (using standard density approximations), only ~6% above the stated cooked yield -- much less shrinkage than Satay Sauce Base's ~62%, which makes sense here since sugar/salt/bay/galangal are added *after* the 2-3 hour reduction (per the method's own ordering), so only the oil+onion+chili-paste portion (~10.4kg of the ~14.5kg raw total) actually undergoes the long cook."
     }
   ]
 }
