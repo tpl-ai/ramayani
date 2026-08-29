@@ -12338,9 +12338,9 @@
       "category": "appetizer",
       "photo": "",
       "name_id": "Otak-Otak",
-      "name_en": "Otak Otak",
+      "name_en": "Gourmet fish cakes grilled in banana leaves",
       "headnote_id": "",
-      "headnote_en": "Ramayani's grilled fish paste in banana leaf, sized to one box of fish paste -- about 19 sticks, one order.",
+      "headnote_en": "",
       "notes_id": "",
       "notes_en": "",
       "ingredients": [
@@ -12395,8 +12395,11 @@
         {
           "amount": "",
           "unit": "",
-          "name_id": "Saus sambal manis dan/atau sambal kacang",
-          "name_en": "sweet chili sauce and/or sambal kacang, to taste, for serving"
+          "name_id": "Bumbu kacang",
+          "name_en": "Bumbu kacang for serving",
+          "recipe_ref": "resep-24",
+          "section_id": "",
+          "section_en": "To Serve"
         }
       ],
       "method": [
@@ -12418,19 +12421,11 @@
         },
         {
           "step_id": "",
-          "step_en": "Refrigerate (shelf life about 1 week)."
-        },
-        {
-          "step_id": "",
-          "step_en": "To serve, microwave for 45-49 seconds on high power."
-        },
-        {
-          "step_id": "",
-          "step_en": "Serve with sweet chili sauce and/or sambal kacang."
+          "step_en": "Serve with Otak Otak Dipping Sauce"
         }
       ],
-      "serves": "3-4",
-      "yield_amount": 19,
+      "serves": "2-4",
+      "yield_amount": 20,
       "yield_unit": "sticks",
       "content_state": "full",
       "flags": [
