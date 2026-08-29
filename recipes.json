@@ -9190,21 +9190,96 @@
     {
       "id": "cs-ayam-satay",
       "resep_num": 112,
-      "category": "ayam",
+      "category": "appetizer",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/satay-combination-gTP56baITlvNbLob1cpuvoxlD7Xbag.jpg",
-      "name_id": "Sate Ayam",
-      "name_en": "Chicken Satay",
-      "headnote_id": "Sate ayam khas Ramayani — ditusuk dan dipanggang di atas arang, disajikan dengan bumbu kacang Ramayani.",
-      "headnote_en": "Ramayani's chicken satay — skewered, charcoal-grilled, and served with the restaurant's own peanut sauce.",
+      "name_id": "Sate",
+      "name_en": "Satay",
+      "headnote_id": "Sate ala Ramayani — ditusuk dan dipanggang, dengan pilihan ayam atau babi, disajikan dengan bumbu kacang Ramayani.",
+      "headnote_en": "Ramayani's satay — skewered and grilled, with your choice of chicken or pork, served with the restaurant's own peanut sauce.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "½",
+          "unit": "lb",
+          "name_id": "Dada ayam atau has luar babi",
+          "name_en": "chicken breast or pork loin"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Ketumbar",
+          "name_en": "coriander"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Minyak",
+          "name_en": "oil"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Saus Satay",
+          "name_en": "Satay Sauce",
+          "recipe_ref": "resep-140"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kecap manis (topping)",
+          "name_en": "sweet soy sauce, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onions, to taste"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "If using chicken breast, cut it in half lengthwise if the halves are still attached, then trim off the fat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cut the meat into 1-inch strips, then into 1\"x½\"x½\" cubes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Toss the cubes with the salt, coriander, sweet soy sauce, and oil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Skewer the meat and refrigerate until ready to grill."
+        },
+        {
+          "step_id": "",
+          "step_en": "Grill over charcoal (or on a hot grill), turning occasionally, until cooked through and lightly charred."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve topped with Satay Sauce, extra sweet soy sauce, and fried onions."
+        }
+      ],
+      "serves": "1-2",
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Satay\" plus its \"Factory Cook - Satay Sauce Base\" and \"!Satay & GadoGado Sauce\" sub-sheets -- Gado Gado Sauce itself deliberately left out of this pass, per Arman, for when Gado Gado is actually built). Combined chicken and pork into one recipe with a single protein-choice ingredient line (Arman's call over separate variant recipes) -- renamed from \"Chicken Satay\"/\"Sate Ayam\" to plain \"Satay\"/\"Sate\" and recategorized from Chicken to Appetizers to match. The meat rub (1 Tbsp salt, 2 Tbsp coriander, 1/2 cup sweet soy sauce, 1/4 cup oil per the sheet's stated \"10 lbs of cut meat\") is scaled to 1/2 lb here -- an estimate of how much raw meat makes one order's 6 skewers, based on standard 1\"x1/2\"x1/2\" cube sizing, not a stated fact; the 1/2 cup Satay Sauce and \"6 skewers\" figures themselves ARE Arman's own stated facts. The sheet's \"Serve\" steps (microwave 1 min, dip in boiling oil 10 sec, grill 3 min) are a restaurant reheat sequence for pre-skewered refrigerated meat -- replaced with a straightforward grill-from-raw method per Arman's explicit confirmation, same pattern as Rendang's restaurant-portioning step being dropped for its home version. No marinating time was given in the source, so none was invented."
     },
     {
       "id": "resep-90",
@@ -11740,6 +11815,221 @@
       "review_notes": "Home-scale version of resep-136, keeping the same 3:2 sweet soy : fish sauce ratio at 1/4 the restaurant batch (10 oz total) so it works as a reusable fridge batch rather than a single-use portion -- an arbitrary size choice on my part, not derived from a stated home quantity (see resep-135/cs-nasi-goreng review_notes for the rest of this addition). Nasi Goreng and Bihun Goreng reference this recipe via recipe_ref at 1 oz and 1.5 oz respectively, matching the sheet's own stated \"Serve\" amounts exactly.",
       "recipe_type": "home",
       "linked_recipe_id": "resep-136"
+    },
+    {
+      "id": "resep-138",
+      "resep_num": 138,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "California Chili Paste",
+      "name_en": "California Chili Paste",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's California Chili Paste, used to make Satay Sauce Base.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "3",
+          "unit": "lbs",
+          "name_id": "Cabai kering California (atau New Mexico)",
+          "name_en": "California (or New Mexico) dried chilies"
+        },
+        {
+          "amount": "¼",
+          "unit": "gal",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "½",
+          "unit": "Tbsp",
+          "name_id": "Asam sitrat",
+          "name_en": "citric acid"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Soak the dried chilies in water for 10 hours."
+        },
+        {
+          "step_id": "",
+          "step_en": "Blend into a paste with the oil, salt, and citric acid."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 3,
+      "yield_unit": "lbs",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Filled in 2026-08-29 from a Factory Cook prep sheet Arman pasted directly, in response to a question about \"Red Diced Peppers\"/\"Sweet Diced Peppers\" appearing in Satay Sauce Base's method with no matching ingredient row -- this is the real recipe behind that sheet's \"California Chili Paste\" line. Ingredient originally read \"...Dry Chili Paste\"; dropped the trailing \"Paste\" since method step 1 (\"soak chili in water\") makes clear this is the dried chili input, not the finished output this recipe itself produces -- likely a copy-paste label carried over from the recipe's own name. yield_amount (3 lbs) is labeled on the dry-chili-input convention, matching how Satay Sauce Base's own ingredient row says \"3 lbs California Chili Paste\" (i.e. \"use one full batch\") -- the true finished/blended weight is almost certainly higher from the 10-hour soak's absorbed water, but that weight isn't stated anywhere and wasn't guessed. Method step 2 assumes oil, salt, and citric acid are blended in along with the soaked chili (the sheet's own step just says \"blend to a paste with Chopper\" without saying what goes in) -- inferred, not stated."
+    },
+    {
+      "id": "resep-139",
+      "resep_num": 139,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Saus Satay Dasar - Restaurant Batch",
+      "name_en": "Satay Sauce Base - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's factory-cooked Satay Sauce Base, used to make Satay Sauce.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "½",
+          "unit": "gal",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "16",
+          "unit": "lbs",
+          "name_id": "Bawang bombay, diblender",
+          "name_en": "onions, blended into a pulp"
+        },
+        {
+          "amount": "3",
+          "unit": "lbs",
+          "name_id": "California Chili Paste",
+          "name_en": "California Chili Paste",
+          "recipe_ref": "resep-138"
+        },
+        {
+          "amount": "21",
+          "unit": "cups",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "3",
+          "unit": "cups",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Blend the onions into a pulp and drain off the excess water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cook the onions in the vegetable oil until almost brown."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the California Chili Paste, sugar, and salt, and cook until the sauce thickens, about 2-3 hours."
+        },
+        {
+          "step_id": "",
+          "step_en": "Divide into 3 bags (about 7 lbs each)."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 21,
+      "yield_unit": "lbs",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Filled in 2026-08-29 from the \"Factory Cook - Satay Sauce Base\" prep sheet Arman pasted directly, as part of Satay -- see cs-ayam-satay review_notes for the rest of this addition. Sugar and salt are on the ingredient list but never mentioned in the sheet's own method steps at all -- added them at the same step as the chili paste, before the long simmer, as the most sensible placement; not a stated fact. yield_amount (21 lbs) comes from the later sheet's own \"1 bag (About 7 lbs)\" reference x 3 bags. Cross-check: summing the raw ingredients (oil ~1.7kg, onion ~7.3kg, chili paste ~1.4kg, sugar ~4.2kg, salt ~0.9kg, using standard cup-to-gram approximations) comes to roughly 34 lbs, about 62% more than the stated 21 lb cooked yield -- plausible as ordinary water evaporation from a 2-3 hour onion-heavy reduction, not treated as an arithmetic error.",
+      "linked_recipe_id": "resep-140"
+    },
+    {
+      "id": "resep-140",
+      "resep_num": 140,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Saus Satay",
+      "name_en": "Satay Sauce",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Satay Sauce, sized to exactly what one order (6 skewers) of Satay needs.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Bawang bombay, diparut atau diblender",
+          "name_en": "onion, grated or blended"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "California Chili Paste (atau sambal apa saja)",
+          "name_en": "California Chili Paste (or any chili paste/sambal)"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "5",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Selai kacang (crunchy)",
+          "name_en": "crunchy peanut butter"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine all the ingredients in a small pot."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil, then reduce heat and simmer, stirring, until thickened to a sauce consistency, about 5-10 minutes."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 0.5,
+      "yield_unit": "cup",
+      "yield_per_serving": 0.33,
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-139",
+      "review_notes": "Home-scale version of resep-139, sized per the standing sauce playbook: Arman confirmed one order of Satay (6 skewers) uses 1/2 cup Satay Sauce -- since 1/2 cup already sits exactly at the standing minimum batch size (4oz/8Tbsp/1/2 cup), this recipe is sized to exactly that one-order amount rather than a bigger batch, per that rule. Derivation: expanded the restaurant chain to its raw ingredients (1 bag Satay Sauce Base = 1/3 of resep-139's ingredients, plus 4 gal water and 15 lbs peanut butter for the final mix), estimated the full batch at ~25.1 kg / ~106 cups (using standard ingredient-density approximations -- oil 0.92g/mL, sugar 200g/cup, salt 288g/cup, water 1g/mL), then scaled every raw ingredient by (0.5 cup / ~106 cups = ~1/201). California Chili Paste's true scaled amount was negligible (~0.4g) and floor-bumped up to a measurable 1/2 tsp -- flagged, not a proportional amount. Re-summed the rounded ingredients (~135g) against the 0.5-cup target (~125g): about 8% higher, consistent with expected reduction during the simmer step, not an error. yield_per_serving (0.33) = 0.5 cup / 1.5 (midpoint of cs-ayam-satay's serves \"1-2\"), per the canonical formula -- derived from the dish that uses this sauce, not invented here."
     }
   ]
 }
