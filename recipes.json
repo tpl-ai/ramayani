@@ -2441,31 +2441,26 @@
       "resep_num": 24,
       "category": "sambal_saus",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/otak-otak-DUAeWSrtwYtXm8qPNjcdPRgGGQPPdp.jpg",
-      "name_id": "Bumbu Rujak & Bumbu Siomai / Bumbu Otak-Otak",
-      "name_en": "",
+      "name_id": "Bumbu Kacang Untuk Rujak, Siomai, & Otak-Otak",
+      "name_en": "Rujak Salad Dressing & Otak Otak Peanut Sauce",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "CATATAN PENTING oleh Ibu: 'Bumbu Rujak → Cuha lebih banyak dari Bumbu Siomai/ot. Gula lebih sedikit.' FLAG: Berkas 2, Hal. 21 / Berkas 3, Hal. 11. Dua resep dalam satu halaman. Hanya bahan — tidak ada cara membuat. Harap konfirmasi cara memblender/mengolah dengan Ibu.",
-      "notes_en": "Mother's important note (written at the bottom of the original): 'Rujak dressing has more vinegar than the Siomai sauce. Less sugar.' FLAG: File 2 Page 21 / File 3 Page 11. Two recipes on one page. Ingredients only — no method. Please confirm blending/preparation method with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
-        {
-          "unit": "",
-          "name_id": "── BUMBU RUJAK ──",
-          "name_en": "── RUJAK DRESSING ──",
-          "amount": ""
-        },
         {
           "unit": "cups",
           "name_id": "/ 1 Batoh tahu Kacang",
           "name_en": "/ 1 container peanuts",
-          "amount": "3"
+          "amount": "3",
+          "section_id": "Bumbu Rujak",
+          "section_en": "Rujak Salad Dressing"
         },
         {
           "unit": "",
@@ -2504,16 +2499,12 @@
           "amount": "1"
         },
         {
-          "unit": "",
-          "name_id": "── BUMBU SIOMAI / BUMBU OTAK-OTAK ──",
-          "name_en": "── SIOMAI / OTAK-OTAK DIPPING SAUCE ──",
-          "amount": ""
-        },
-        {
           "unit": "cups",
           "name_id": "Kacang",
           "name_en": "peanuts",
-          "amount": "3"
+          "amount": "3",
+          "section_id": "Bumbu Sio Mai & Otak Otak",
+          "section_en": "Sio Mai & Otak Otak Dipping Sauce"
         },
         {
           "unit": "cup",
@@ -2550,15 +2541,15 @@
           "name_id": "Air",
           "name_en": "water as needed",
           "amount": "secukupnya"
-        },
-        {
-          "unit": "",
-          "name_id": "NOTE: Bumbu Rujak → Cuha lebih banyak dari Bumbu Siomai/ot. Gula lebih sedikit —",
-          "name_en": "NOTE: Rujak dressing → more vinegar than Siomai sauce. Less sugar.",
-          "amount": ""
         }
       ],
-      "method": []
+      "method": [],
+      "tips_id": [
+        ""
+      ],
+      "tips_en": [
+        "Rujak dressing has more vinegar and less sugar than the Siomai and Otak Otak sauces"
+      ]
     },
     {
       "id": "resep-25",
