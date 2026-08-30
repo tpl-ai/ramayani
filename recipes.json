@@ -3854,7 +3854,8 @@
       "featured_order": 7,
       "content_state": "partial",
       "flags": [
-        "no_serves"
+        "no_serves",
+        "scale"
       ],
       "reviewed": false,
       "ingredients": [
