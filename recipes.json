@@ -13017,8 +13017,8 @@
         {
           "amount": "1",
           "unit": "cup",
-          "name_id": "Brokoli",
-          "name_en": "broccoli"
+          "name_id": "kai lan",
+          "name_en": "kai lan"
         },
         {
           "amount": "1",
@@ -13110,7 +13110,7 @@
         },
         {
           "step_id": "",
-          "step_en": "Add the garlic, egg, broccoli, and chili (optional)."
+          "step_en": "Add the garlic, egg, kai lan, and chili (optional)."
         },
         {
           "step_id": "",
