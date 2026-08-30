@@ -3357,7 +3357,7 @@
       "category": "sayuran_salad",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Gado%20Gado%20DSC01250-CiE3yuMnsUYRq7XD8hGPpDsn84ynub.JPG",
       "name_id": "Bumbu Gado-Gado Ramayani",
-      "name_en": "Gado-Gado",
+      "name_en": "Gado-Gado Sauce",
       "headnote_id": "Saus kacang khas Ramayani untuk Gado-Gado dan Sate — resep restoran yang menghasilkan 3 porsi sekaligus. Saus ini yang membuat Gado-Gado Ramayani berbeda.",
       "headnote_en": "Ramayani's peanut sauce for Gado-Gado and Satay — a restaurant recipe making 3 orders at once. This sauce is what set Ramayani's Gado-Gado apart. Served over tofu, egg, and steamed vegetables.",
       "notes_id": "Resep skala restoran. Untuk memasak di rumah, kurangi semua bahan menjadi 1/10. Sajikan saus di atas tahu, telur, dan sayuran kukus.",
@@ -3366,9 +3366,7 @@
       "date": "",
       "featured_order": 5,
       "content_state": "full",
-      "flags": [
-        "scale"
-      ],
+      "flags": [],
       "review_notes": "Recipe notes indicate this is written at restaurant/production scale; needs a decision on whether to convert to home portions.",
       "reviewed": false,
       "ingredients": [
