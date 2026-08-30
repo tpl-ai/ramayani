@@ -13000,9 +13000,9 @@
       "id": "resep-146",
       "resep_num": 146,
       "category": "nasi_mie",
-      "photo": "",
-      "name_id": "Kuey Teow Goreng",
-      "name_en": "Fried Flat Rice Noodles (Kuey Teow)",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Cah%20Kuey%20Teow-bZ8LSBkLdhVKr9eA4DLQXV49jOdX8f.jpg",
+      "name_id": "Cah Kuey Teow",
+      "name_en": "Fried Flat Rice Noodles",
       "headnote_id": "Kuey teow goreng ala Indonesia dengan pilihan ayam, udang, babi, atau sayuran",
       "headnote_en": "Indonesian-style fried flat rice noodles with your choice of chicken, shrimp, pork, or vegetables",
       "notes_id": "",
@@ -13131,9 +13131,7 @@
       ],
       "serves": "1-2",
       "content_state": "full",
-      "flags": [
-        "no_photo"
-      ],
+      "flags": [],
       "reviewed": true,
       "review_notes": "New dish added 2026-08-29, discovered while comparing recipes.json against the master spreadsheet per Arman's request -- a third noodle variant alongside Nasi Goreng/Bihun Goreng, using fresh flat rice noodles + broccoli + garlic + its own Kuey Teow Sauce (resep-145) instead of Nasi Goreng Sauce. Shares the same Main Stir Fry base (chicken fat, protein choice, egg, bean sprouts, green onion, MSG) as its siblings, used directly per the same no-batch-multiplier convention. Kuey Teow Sauce is used only by this one dish, so per the multi-tier playbook (see [[raspberry-yield-scaling]]) it's decomposed directly into this recipe's own ingredients rather than kept as a separate home sauce: 1.25 oz used per order (the sheet's own \"To Serve\" figure, not estimated) out of resep-145's 48 oz batch, a ~1/38.4 fraction applied to each of the sauce's raw ingredients and rounded to kitchen units. Re-summed the rounded amounts (~7.25 tsp) against the 7.5 tsp (1.25 fl oz) target: ~3% under, normal rounding. Package size for fresh kuey teow noodles isn't known -- left as \"1/3 package\" rather than guessing a weight. Method's sauce placement (final step, with MSG/pepper) is directly stated on the sheet, unlike Nasi/Bihun Goreng's sauce timing, which had to be inferred."
     },
