@@ -4792,8 +4792,8 @@
       "resep_num": 50,
       "category": "seafood",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/cumi-cumi-goreng-5GTVrDsWSTiu8tZ57sh4F8KcMUibyt.jpg",
-      "name_id": "Bumbu Udang Mentega (Cumi Cumi Goreng Mentega)",
-      "name_en": "Butter Squid Sauce — Cumi Cumi Goreng Mentega",
+      "name_id": "Bumbu Udang / Cumi Cumi Mentega",
+      "name_en": "Shrimp and Squid Butter Sauce",
       "headnote_id": "Saus mentega khas Ramayani untuk cumi-cumi dan udang — perpaduan mentega, Maggi, Worcestershire, dan gula yang menciptakan glazur manis gurih. Cara membuat perlu dikonfirmasi dengan Ibu.",
       "headnote_en": "Ramayani's signature butter sauce for squid and prawns — a combination of butter, Maggi, Worcestershire, and sugar that creates a sweet-savoury glaze. Cooking method to be confirmed with Hertha.",
       "notes_id": "Cara membuat tidak ditulis dalam catatan asli. Tidak ada udang atau cumi dalam daftar bahan — perlu dikonfirmasi dengan Ibu berapa banyak seafood yang digunakan dan langkah-langkah memasaknya.",
@@ -13704,7 +13704,7 @@
         }
       ],
       "serves": "",
-      "yield_amount": 28.0,
+      "yield_amount": 28,
       "yield_unit": "oz",
       "content_state": "full",
       "flags": [
