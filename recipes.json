@@ -4554,57 +4554,113 @@
       "resep_num": 48,
       "category": "desserts_drinks",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/bubur-ketan-hitam-ewLux5MFbbHGz9agMoBBgDxHkInVTb.jpg",
-      "name_id": "Bubur Ketan Hitam",
-      "name_en": "",
+      "name_id": "Bubur Ketan Hitam - Restaurant Batch",
+      "name_en": "Bubur Ketan Hitam - Restaurant Batch",
       "headnote_id": "Bubur ketan hitam hangat yang manis dengan topping santan — salah satu dessert paling dicintai di Ramayani.",
       "headnote_en": "A warm, sweet, black wild rice pudding topped with coconut milk — one of Ramayani's most beloved desserts.",
       "notes_id": "",
       "notes_en": "FLAG: Berkas 2, Hal. 13. Ingredients only — no method written in the original notes. Please confirm cooking steps (soaking/boiling time, order of adding sugar and pandan) with mother.",
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
-        "no_name_en",
-        "no_serves"
+        "no_serves",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "pack",
-          "name_id": "(5 lbs) Ketan hitam",
-          "name_en": "(5 lbs / 2.3 kg) black glutinous rice",
-          "amount": "1"
+          "amount": "5",
+          "unit": "lbs",
+          "name_id": "Ketan hitam",
+          "name_en": "black glutinous rice"
         },
         {
-          "unit": "",
-          "name_id": "X banyaknya ketan — air",
-          "name_en": "× the amount of rice, water",
-          "amount": "2½"
-        },
-        {
-          "unit": "pieces",
-          "name_id": "Gula Jawa",
-          "name_en": "palm sugar",
-          "amount": "2"
-        },
-        {
-          "unit": "cups",
-          "name_id": "Gula pasir",
-          "name_en": "white sugar",
-          "amount": "4"
-        },
-        {
+          "amount": "2",
           "unit": "tsp",
           "name_id": "Garam",
-          "name_en": "salt",
-          "amount": "3"
+          "name_en": "salt"
         },
         {
-          "unit": "",
-          "name_id": "Tidak anzingam Daun Pandan",
-          "name_en": "several leaves pandan leaves",
-          "amount": ""
+          "amount": "2",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1",
+          "unit": "gal",
+          "name_id": "Air (tambahan)",
+          "name_en": "water (additional)"
+        },
+        {
+          "amount": "100",
+          "unit": "gm",
+          "name_id": "Daun pandan",
+          "name_en": "pandan leaves"
+        },
+        {
+          "amount": "1",
+          "unit": "lbs",
+          "name_id": "Gula jawa Indonesia (1 pkt)",
+          "name_en": "Indonesian brown sugar (1 package)"
+        },
+        {
+          "amount": "4",
+          "unit": "cup",
+          "name_id": "Gula pasir",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "3",
+          "unit": "Tbsp",
+          "name_id": "Garam",
+          "name_en": "salt"
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash the rice and leave it soaking in a pot of water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil water and add the salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour in the rice and bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Tie the pandan leaves into a bunch."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil over low heat for 1/2 hour."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the pandan leaves and boil for another 1/2 hour, until the rice has the consistency of porridge."
+        },
+        {
+          "step_id": "",
+          "step_en": "Mix in the rest of the ingredients."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the additional water a little at a time, until done."
+        },
+        {
+          "step_id": "",
+          "step_en": "Separate into 8oz containers and freeze."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve: microwave for 4 minutes if frozen (220 seconds if refrigerated), transfer to a bowl, and add 1oz of Santen."
+        }
+      ],
+      "serves": "",
+      "review_notes": "\n\nCORRECTED/COMPLETED 2026-08-29: this recipe's ingredients (5lbs ketan hitam, 4 cups sugar) matched the master spreadsheet's \">Dessert - Bubur Ketan Hitam\" sheet closely -- used the spreadsheet to fill in the method the scan itself flagged as missing, and replaced the scan's vaguer water ratio (\"2 1/2 x the rice amount\") and single salt line (\"3 tsp\") with the spreadsheet's explicit figures (2gal + 1gal water, two separate salt additions at 2tsp and 3Tbsp) since they clearly describe the same recipe more precisely. \"2 pieces Gula Jawa\" (scan) vs \"1 lb (1 package) Indonesian Brown Sugar\" (spreadsheet) -- kept the spreadsheet's weight-based figure since piece size is unknown. Renamed with \"- Restaurant Batch\" and linked to a new home-scale twin (resep-158).",
+      "linked_recipe_id": "resep-158"
     },
     {
       "id": "resep-49",
@@ -8306,45 +8362,62 @@
       "resep_num": 87,
       "category": "desserts_drinks",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ice-durian-dQOgbwODNBI0vbhr2J5B5nveGcXsml.jpg",
-      "name_id": "Ice Durian",
-      "name_en": "",
+      "name_id": "Ice Durian - Restaurant Batch",
+      "name_en": "Ice Durian - Restaurant Batch",
       "headnote_id": "Durian manis, gula jawa, dan santan — untuk pecinta durian sejati.",
       "headnote_en": "Sweet durian, brown sugar, and coconut milk — for the true durian lover.",
       "notes_id": "",
       "notes_en": "FLAG: Berkas 5, Hal. 3. Ingredients only — no method written in the original notes. Please confirm mixing/blending and freezing steps with mother.",
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
-        "no_name_en",
-        "no_serves"
+        "no_serves",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
+          "amount": "3",
           "unit": "lbs",
-          "name_id": "Durian No seed",
-          "name_en": "durian flesh, no seeds (durian tanpa biji)",
-          "amount": "3"
+          "name_id": "Durian, tanpa biji",
+          "name_en": "durian flesh, no seeds"
         },
         {
-          "unit": "cans",
-          "name_id": "Santen",
-          "name_en": "coconut milk (santan)",
-          "amount": "4"
+          "amount": "4",
+          "unit": "kg",
+          "name_id": "Krim kelapa",
+          "name_en": "coconut cream"
         },
         {
-          "unit": "cans",
-          "name_id": "Gula Jawa masak",
-          "name_en": "palm sugar syrup, cooked",
-          "amount": "3"
+          "amount": "3",
+          "unit": "kg",
+          "name_id": "Gula Cendol",
+          "name_en": "Gula Cendol (Palm Sugar Syrup)",
+          "recipe_ref": "resep-151"
         },
         {
+          "amount": "2",
           "unit": "tsp",
           "name_id": "Garam",
-          "name_en": "salt",
-          "amount": "2"
+          "name_en": "salt"
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Place all ingredients in a pot and boil for 15 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve: place 2 scoops (about 4oz) in a glass and fill with crushed ice."
+        }
+      ],
+      "serves": "",
+      "review_notes": "\n\nCORRECTED/COMPLETED 2026-08-29: this recipe's ingredients (3lbs durian, salt 2tsp) matched the master spreadsheet's \">Dessert - Ice Durian\" sheet almost exactly (coconut cream 4 cans vs 4kg, Gula Jawa syrup 3 cans vs Gula Cendol 3kg -- same numbers, different units), unlike Gule Kambing's genuinely different batch sizes -- so used the spreadsheet to fill in the method the scan itself flagged as missing, and tightened units to match it exactly. Renamed with \"- Restaurant Batch\" and linked to a new home-scale twin (resep-157), same pattern as every other bulk dish this session.",
+      "linked_recipe_id": "resep-157"
     },
     {
       "id": "resep-88",
@@ -9139,13 +9212,77 @@
       "headnote_en": "Mung-bean jelly in brown sugar and coconut milk — one of Indonesia's most refreshing dessert drinks.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Tepung kacang hijau vanila",
+          "name_en": "vanilla mung bean flour (Boenga Desserts Mix brand)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Pewarna hijau",
+          "name_en": "green food coloring, a drop"
+        },
+        {
+          "amount": "2.5",
+          "unit": "oz",
+          "name_id": "Gula Cendol",
+          "name_en": "Gula Cendol (Palm Sugar Syrup)",
+          "recipe_ref": "resep-152"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Es serut",
+          "name_en": "crushed ice"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Santen, secukupnya untuk mengisi gelas",
+          "name_en": "Santen, to fill the glass",
+          "recipe_ref": "resep-153"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix the hot water with the mung bean flour and food coloring."
+        },
+        {
+          "step_id": "",
+          "step_en": "Drip the mixture into cold water to form jelly strands (teardrops); strain and rinse."
+        },
+        {
+          "step_id": "",
+          "step_en": "Place the Gula Cendol in a glass."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add a scoop of the mung bean jelly."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fill the glass with crushed ice."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fill the top of the glass with Santen."
+        }
+      ],
+      "serves": "1",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Mung bean jelly (resep-156) decomposed directly into this recipe's own first two steps rather than kept as a separate factory-only reference, since it's only ever used here; Gula Cendol (resep-152) and Santen (resep-153) are both genuinely reused elsewhere (Ice Durian, Bubur Ketan Hitam) so stay as recipe_ref links. Santen amount is \"to fill the glass\" on the sheet -- no oz given, left as-is rather than guessed."
     },
     {
       "id": "cs-ice-kelapa",
@@ -9215,13 +9352,91 @@
       "headnote_en": "Avocado, young coconut, and sweet jackfruit — a tropical combination that surprises every first-timer.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "⅓",
+          "unit": "",
+          "name_id": "Alpukat sedang",
+          "name_en": "medium avocado"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "¾",
+          "unit": "Tbsp",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Gula vanila",
+          "name_en": "vanilla sugar, a pinch"
+        },
+        {
+          "amount": "1¾",
+          "unit": "Tbsp",
+          "name_id": "Susu kental manis",
+          "name_en": "condensed milk"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Nangka",
+          "name_en": "jackfruit"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Kelapa muda",
+          "name_en": "young coconut"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Es serut",
+          "name_en": "crushed ice"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Susu kental manis, untuk topping",
+          "name_en": "condensed milk, to top"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mash the avocado with the water, cane sugar, vanilla sugar, condensed milk, and salt to make the Teller Mix; refrigerate."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the Teller Mix in a glass."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the jackfruit and young coconut on top of the Teller Mix in visible layers."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fill the glass with crushed ice and top with condensed milk."
+        }
+      ],
+      "serves": "1",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Teller Mix's full batch (6 avocados + 1 cup Gula Putih + 1 can condensed milk + salt, yielding many 2 Tbsp servings) was scaled down to a 1/2-cup home batch (K~15.6, the standing floor). Gula Putih (resep-155) is nested two levels deep (used only within Teller Mix, itself used only here) -- decomposed all the way to its raw water/sugar/vanilla using the combined fraction (~1/669 of Gula Putih's own batch), not kept as an intermediate reference. Serve-step quantities (jackfruit, young coconut, crushed ice, condensed milk topping) are already order-sized on the sheet, used directly."
     },
     {
       "id": "cs-iced-bandrek",
@@ -9253,13 +9468,97 @@
       "headnote_en": "Sweet fermented yucca root topped with young coconut in vanilla syrup — uniquely Indonesian and utterly unforgettable.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "¾",
+          "unit": "cup",
+          "name_id": "Singkong fermentasi",
+          "name_en": "fermented cassava/yucca"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Santan",
+          "name_en": "coconut milk"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Susu kental manis",
+          "name_en": "condensed milk"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1½",
+          "unit": "Tbsp",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Gula vanila",
+          "name_en": "vanilla sugar, a pinch"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Pewarna merah",
+          "name_en": "red food coloring, a drop"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Es serut, dibagi",
+          "name_en": "crushed ice, divided"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Steam the cassava/yucca for 1/2 hour, then let cool to room temperature."
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle with yeast, cover, and leave in a warm room for 2 nights to ferment."
+        },
+        {
+          "step_id": "",
+          "step_en": "Transfer to the refrigerator (keeps up to 2 weeks)."
+        },
+        {
+          "step_id": "",
+          "step_en": "For the Gula Merah, combine the water, cane sugar, vanilla sugar, and red food coloring; bring to a boil, then refrigerate."
+        },
+        {
+          "step_id": "",
+          "step_en": "Mix the fermented cassava/yucca, salt, coconut milk, condensed milk, and Gula Merah."
+        },
+        {
+          "step_id": "",
+          "step_en": "Mix in half the crushed ice."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour into a glass and top with the rest of the crushed ice."
+        }
+      ],
+      "serves": "1",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. The sheet gives no weight for \"1 case Frozen Whole Yucca\" or an amount for the yeast, only the finished serve quantity (3/4 cup fermented cassava/yucca) -- used that directly rather than back-deriving a raw starting weight from an unstated case size. Gula Merah (resep-154) is used only here, so its raw ingredients (water/sugar/vanilla/coloring) are decomposed directly into this recipe's own list at the 1oz/serving fraction (~1/376) rather than kept as a separate reference."
     },
     {
       "id": "cs-fresh-lime-soda",
@@ -13238,6 +13537,560 @@
       "reviewed": true,
       "review_notes": "Added 2026-08-29, read directly from the master spreadsheet (\".Tahu Telur\" + \"Factory Mix - Tahu Telur Sauce\" sheets) -- see [[raspberry-master-spreadsheet]]. yield_amount (2850 ml) is the raw sum of the listed ingredients (2000+500+100+200+50, treating the 500g shrimp paste as ~500mL for a paste-like density) -- no method is given on the sheet beyond the ingredient list, so \"combine\" is mechanically inherent, not invented technique.",
       "linked_recipe_id": "cs-tahu-telor"
+    },
+    {
+      "id": "resep-151",
+      "resep_num": 151,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Gula Cendol - Restaurant Batch",
+      "name_en": "Gula Cendol - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's palm sugar syrup, used in Ice Cendol and Ice Durian.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "4",
+          "unit": "pc",
+          "name_id": "Gula jawa (palm sugar)",
+          "name_en": "palm sugar, pieces"
+        },
+        {
+          "amount": "11",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "7½",
+          "unit": "lbs",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun pandan",
+          "name_en": "pandan leaves, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Bring everything to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 6.41,
+      "yield_unit": "kg",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. yield_amount (6.41 kg, ~226 oz) estimated from the raw ingredients (11 cups water + 7.5 lbs cane sugar + 4 pieces palm sugar, piece weight estimated at ~100g/piece -- not a stated fact, flagged). Reused by two dishes (Ice Cendol as a topping, Ice Durian cooked into the base) -- kept standalone per the multi-tier playbook's reuse exception.",
+      "linked_recipe_id": "resep-152"
+    },
+    {
+      "id": "resep-152",
+      "resep_num": 152,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Gula Cendol",
+      "name_en": "Gula Cendol (Palm Sugar Syrup)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's palm sugar syrup, for topping Ice Cendol.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "4",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "⅜",
+          "unit": "cup",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Gula jawa, cincang",
+          "name_en": "palm sugar, chopped"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Sepotong kecil daun pandan",
+          "name_en": "small piece pandan leaf"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Bring everything to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 5,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-151",
+      "review_notes": "Home-scale version of resep-151. Ice Cendol needs 2.5oz/serving, which is under the standing 4oz floor -- sized to 5oz instead (about 2 servings) rather than the bare minimum, since 2.5oz is already easily measurable and doubling it avoids an awkward leftover-syrup situation. Fraction ~1/45.2 from resep-151's estimated total (see derivations/desserts.py). Palm sugar (8.85g precise) floor-bumped to 1 Tbsp chopped, a measurable minimum."
+    },
+    {
+      "id": "resep-153",
+      "resep_num": 153,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Santen",
+      "name_en": "Sweetened Coconut Cream (Santen)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's sweetened coconut cream, for topping Ice Cendol and Bubur Ketan Hitam.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "14",
+          "unit": "fl oz",
+          "name_id": "Krim kelapa (1 kaleng kecil)",
+          "name_en": "coconut cream (1 small can)"
+        },
+        {
+          "amount": "14",
+          "unit": "fl oz",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "8",
+          "unit": "gm",
+          "name_id": "Gula vanila (1 pkt)",
+          "name_en": "vanilla sugar (1 packet)"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix all ingredients and refrigerate."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 28.0,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Used as-is with no scale-down -- the restaurant batch itself is already only \"1 small can\" of coconut cream plus an equal amount of water (~3.5 cups / 28oz total), already a practical home quantity, unlike the bulk sugar syrups. Reused by two dishes (Ice Cendol, topped to taste; Bubur Ketan Hitam, 1 oz/serving) -- kept standalone per the multi-tier playbook's reuse exception."
+    },
+    {
+      "id": "resep-154",
+      "resep_num": 154,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Gula Merah",
+      "name_en": "Gula Merah (Red Sugar Syrup)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's red-tinted vanilla sugar syrup, used in Ice Doger.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "9",
+          "unit": "pkg",
+          "name_id": "Gula vanila",
+          "name_en": "vanilla sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "15",
+          "unit": "lbs",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Pewarna merah",
+          "name_en": "red food coloring"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Bring everything to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 376,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Used only by Ice Doger, so not given a separate home twin -- its raw ingredients are decomposed directly into cs-ice-doger's own ingredient list at the 1oz/serving fraction (~1/376), per the multi-tier playbook. Vanilla packet weight estimated at ~5g/pkg (not stated), used only to size the full-batch yield, not the per-serving fraction directly."
+    },
+    {
+      "id": "resep-155",
+      "resep_num": 155,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Gula Putih",
+      "name_en": "Gula Putih (Vanilla-Pandan Syrup)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's vanilla-pandan sugar syrup, used in Ice Teller's Teller Mix.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "9",
+          "unit": "pkg",
+          "name_id": "Gula vanila",
+          "name_en": "vanilla sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "15",
+          "unit": "lbs",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun pandan",
+          "name_en": "pandan leaves, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Bring everything to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 376,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Used only within Teller Mix (itself used only by Ice Teller) -- a two-level single-use chain, decomposed all the way down into cs-ice-teller's own ingredients (see its review_notes for the combined fraction), not kept as an intermediate recipe_ref."
+    },
+    {
+      "id": "resep-156",
+      "resep_num": 156,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Cendol (Mung Bean Jelly)",
+      "name_en": "Mung Bean Jelly (Cendol)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's mung bean flour jelly strands (cendol), used in Ice Cendol.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "4",
+          "unit": "oz",
+          "name_id": "Tepung kacang hijau vanila (2 pkt)",
+          "name_en": "vanilla mung bean flour (2 packages, Boenga Desserts Mix brand)"
+        },
+        {
+          "amount": "6",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Pewarna hijau",
+          "name_en": "green food coloring, a few drops"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix hot water with the mung bean flour and food coloring."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the mixture into a drip container."
+        },
+        {
+          "step_id": "",
+          "step_en": "Let the mixture drip into cold water to form teardrops (jelly strands)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Strain out the teardrops."
+        },
+        {
+          "step_id": "",
+          "step_en": "Wash with water and store in crushed ice with a little water."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 24,
+      "yield_unit": "servings",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Used only by Ice Cendol -- no separate home twin, decomposed directly into cs-ice-cendol's own ingredients. \"1 scoop\" per serving on the sheet has no stated volume; estimated at 1/4 cup (a reasonable drink-topping scoop), giving yield_amount ~24 servings from the full batch (6 cups water / 0.25 cup, not a stated fact -- flagged)."
+    },
+    {
+      "id": "resep-157",
+      "resep_num": 157,
+      "category": "desserts_drinks",
+      "photo": "",
+      "name_id": "Ice Durian",
+      "name_en": "Ice Durian",
+      "headnote_id": "Durian manis, gula jawa, dan santan — untuk pecinta durian sejati.",
+      "headnote_en": "Sweet durian, palm sugar syrup, and coconut cream — for the true durian lover.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "50",
+          "unit": "gm",
+          "name_id": "Durian, tanpa biji",
+          "name_en": "durian flesh, no seeds"
+        },
+        {
+          "amount": "⅝",
+          "unit": "cup",
+          "name_id": "Krim kelapa",
+          "name_en": "coconut cream"
+        },
+        {
+          "amount": "3",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "5⅔",
+          "unit": "Tbsp",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Gula jawa, cincang",
+          "name_en": "palm sugar, chopped"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Es serut",
+          "name_en": "crushed ice"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Place all ingredients (except the ice) in a pot and boil for 15 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve, scoop into a glass and fill with crushed ice."
+        }
+      ],
+      "serves": "2-3",
+      "content_state": "full",
+      "flags": [
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-87",
+      "review_notes": "Home-scale version of resep-87. Sizing to exactly one order (4oz) would make the durian portion itself impractically tiny (~18g, well under a real durian segment) -- sized instead so the durian amount is a practical ~50g (about one small piece), same reasoning as resep-121's candlenut floor-bump: accept a bigger batch when the literal floor makes a key ingredient unusable. This gives K~27.2 and makes about 2-3 servings (~11oz total), not exactly 1 order. Gula Cendol (resep-151) is decomposed directly into this recipe's own water/sugar/palm-sugar lines at the combined fraction (~1/96.7 of its full batch) rather than kept as a recipe_ref, since the amount needed here doesn't relate cleanly to resep-152's own 5oz Ice-Cendol-topping sizing -- two different use-contexts of the same syrup, decomposed separately rather than forced through one shared home recipe."
+    },
+    {
+      "id": "resep-158",
+      "resep_num": 158,
+      "category": "desserts_drinks",
+      "photo": "",
+      "name_id": "Bubur Ketan Hitam",
+      "name_en": "Black Glutinous Rice Porridge (Bubur Ketan Hitam)",
+      "headnote_id": "Bubur ketan hitam hangat yang manis dengan topping santan — salah satu dessert paling dicintai di Ramayani.",
+      "headnote_en": "A warm, sweet, black glutinous rice porridge topped with coconut milk — one of Ramayani's most beloved desserts.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1¼",
+          "unit": "oz",
+          "name_id": "Ketan hitam",
+          "name_en": "black glutinous rice"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Garam, sejumput",
+          "name_en": "salt, a pinch"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Air (tambahan)",
+          "name_en": "water (additional)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Sepotong kecil daun pandan",
+          "name_en": "small piece pandan leaf"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Gula jawa Indonesia",
+          "name_en": "Indonesian brown sugar"
+        },
+        {
+          "amount": "3",
+          "unit": "tsp",
+          "name_id": "Gula pasir",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Garam, sejumput",
+          "name_en": "salt, a pinch (second addition)"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Santen",
+          "name_en": "Santen (Sweetened Coconut Cream)",
+          "recipe_ref": "resep-153"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash the rice and leave it soaking in a pot of water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil the water and add the first pinch of salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pour in the rice and bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil over low heat for 1/2 hour."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the pandan leaf and boil for another 1/2 hour, until the rice has the consistency of porridge."
+        },
+        {
+          "step_id": "",
+          "step_en": "Mix in the brown sugar, sugar, and the second pinch of salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the additional water a little at a time, until done."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve warm, topped with the Santen."
+        }
+      ],
+      "serves": "1",
+      "content_state": "full",
+      "flags": [
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-48",
+      "review_notes": "Home-scale version of resep-48, sized to exactly 1 container (8oz finished porridge -- the dish's own natural serving unit, already comfortably above the standing floor). Raw ingredients scaled by ~1/66.3 (see derivations/desserts.py); finished yield estimated at ~90% of raw weight (rice porridge mostly absorbs its liquid rather than losing it to evaporation) for the container-count cross-check (~60 containers from the full batch, plausible for a bulk freezer-prep recipe). Both salt additions floor-bumped from sub-1/8-tsp true values to a practical pinch each rather than a precise fraction."
     }
   ]
 }
