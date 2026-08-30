@@ -14482,7 +14482,7 @@
       "id": "resep-163",
       "resep_num": 163,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Sop%20Kambing%20DSC01570-whrA8gCUDfzpdHv4OWXNu8ga7KfcJJ.JPG",
       "name_id": "Sop Kambing",
       "name_en": "Lamb Soup (Sop Kambing)",
       "headnote_id": "",
@@ -14662,8 +14662,7 @@
       "serves": "6-8",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
