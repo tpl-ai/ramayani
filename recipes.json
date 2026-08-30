@@ -14215,7 +14215,7 @@
       "id": "resep-160",
       "resep_num": 160,
       "category": "seafood",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/cumi-cumi-goreng-5GTVrDsWSTiu8tZ57sh4F8KcMUibyt.jpg",
       "name_id": "Cumi Goreng Mentega",
       "name_en": "Butter Fried Squid",
       "headnote_id": "",
@@ -14307,8 +14307,7 @@
       "serves": "2",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
