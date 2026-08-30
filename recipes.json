@@ -3852,64 +3852,71 @@
       "serves": "",
       "date": "",
       "featured_order": 7,
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
         "no_serves",
         "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "amount": "16",
-          "unit": "cups",
-          "name_id": "ketumbar",
-          "name_en": "coriander"
-        },
-        {
-          "amount": "±4",
-          "unit": "cups",
-          "name_id": "kayu manis",
-          "name_en": "cinnamon"
-        },
-        {
-          "amount": "2⅔",
-          "unit": "cups",
-          "name_id": "pala",
-          "name_en": "nutmeg"
-        },
-        {
-          "amount": "±2",
-          "unit": "cups",
-          "name_id": "kapulaga",
-          "name_en": "cardamom"
+          "unit": "cup",
+          "name_id": "Ketumbar",
+          "name_en": "coriander (48 oz / 3 lbs)"
         },
         {
           "amount": "1½",
-          "unit": "cups",
-          "name_id": "kunyit",
-          "name_en": "turmeric"
+          "unit": "cup",
+          "name_id": "Kunyit",
+          "name_en": "turmeric (6 oz)"
         },
         {
           "amount": "1",
           "unit": "cup",
-          "name_id": "cengkeh",
-          "name_en": "cloves"
+          "name_id": "Cengkeh",
+          "name_en": "cloves (4½ oz)"
         },
         {
           "amount": "4",
-          "unit": "cups",
-          "name_id": "lada",
-          "name_en": "pepper"
+          "unit": "cup",
+          "name_id": "Lada",
+          "name_en": "pepper (15 oz)"
         },
         {
-          "amount": "±4",
-          "unit": "cups",
-          "name_id": "adas manis",
-          "name_en": "anise"
+          "amount": "4",
+          "unit": "cup",
+          "name_id": "Adas manis",
+          "name_en": "anise (12 oz)"
+        },
+        {
+          "amount": "4",
+          "unit": "cup",
+          "name_id": "Kayu manis",
+          "name_en": "cinnamon (15 oz)"
+        },
+        {
+          "amount": "2⅔",
+          "unit": "cup",
+          "name_id": "Pala",
+          "name_en": "nutmeg (11 oz)"
+        },
+        {
+          "amount": "2",
+          "unit": "cup",
+          "name_id": "Kapulaga",
+          "name_en": "cardamom (9 oz)"
         }
       ],
-      "method": [],
-      "review_notes": "\n\nCORRECTED 2026-08-29: this recipe had 9 ingredients (splitting a single spice into two entries, \"cumin\" and \"white pepper,\" neither with an oz figure) where a fresh re-read of the same handwritten scan (in the course of building resep-147, the same blend for Gule Kambing) confirms only 8 line items, one \"Pepper\" (4 cup = 15 oz) -- no cumin anywhere on the page. Removed the erroneous \"cumin\" duplicate; kept one \"pepper\" line. See resep-147's review_notes and [[raspberry-master-spreadsheet]] for the fuller cross-check (coriander and anise both match the spreadsheet's independent figures exactly)."
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine all the spices."
+        }
+      ],
+      "review_notes": "MERGED 2026-08-30: this recipe and resep-147 (\"Gule Broth Mix\", built independently from the same handwritten scan during the Gule Kambing session) turned out to be the identical 8-spice blend -- confirmed spice-by-spice, all 8 amounts match exactly. resep-147 has been deleted; its completed content (method, yield_amount, oz conversions) is merged in below. Kept resep-40 as the surviving id since it's the original scan entry.\n\nCORRECTED 2026-08-29 (from the original entry, retained for history): this recipe had 9 ingredients, splitting a single spice into two entries, \"cumin\" and \"white pepper,\" neither with an oz figure -- a fresh read of the same handwritten scan (in the course of building the Gule Kambing chain) confirmed only 8 line items, one \"Pepper\" (4 cup = 15 oz) -- no cumin anywhere on the page. Removed the erroneous \"cumin\" duplicate; kept one \"pepper\" line. Cross-checked coriander and anise against the spreadsheet's independent Gule Broth Mix figures -- both match exactly, confirming the two sources' spice blend is identical despite different absolute batch sizes elsewhere in the dish (see [[raspberry-master-spreadsheet]]).\n\nyield_amount (120.5 oz / 6.41 kg) is the raw sum of the 8 spice amounts. No grinding/storage method is given anywhere in the scan (the original open question this recipe flagged) -- \"combine\" is mechanically inherent, not invented technique. Used at 5 oz (1 packet) per whole-goat batch in resep-149 (Gule Kambing).",
+      "yield_amount": 120.5,
+      "yield_unit": "oz"
     },
     {
       "id": "resep-41",
@@ -13137,86 +13144,6 @@
       "review_notes": "New dish added 2026-08-29, discovered while comparing recipes.json against the master spreadsheet per Arman's request -- a third noodle variant alongside Nasi Goreng/Bihun Goreng, using fresh flat rice noodles + broccoli + garlic + its own Kuey Teow Sauce (resep-145) instead of Nasi Goreng Sauce. Shares the same Main Stir Fry base (chicken fat, protein choice, egg, bean sprouts, green onion, MSG) as its siblings, used directly per the same no-batch-multiplier convention. Kuey Teow Sauce is used only by this one dish, so per the multi-tier playbook (see [[raspberry-yield-scaling]]) it's decomposed directly into this recipe's own ingredients rather than kept as a separate home sauce: 1.25 oz used per order (the sheet's own \"To Serve\" figure, not estimated) out of resep-145's 48 oz batch, a ~1/38.4 fraction applied to each of the sauce's raw ingredients and rounded to kitchen units. Re-summed the rounded amounts (~7.25 tsp) against the 7.5 tsp (1.25 fl oz) target: ~3% under, normal rounding. Package size for fresh kuey teow noodles isn't known -- left as \"1/3 package\" rather than guessing a weight. Method's sauce placement (final step, with MSG/pepper) is directly stated on the sheet, unlike Nasi/Bihun Goreng's sauce timing, which had to be inferred."
     },
     {
-      "id": "resep-147",
-      "resep_num": 147,
-      "category": "bumbu_dasar",
-      "photo": "",
-      "name_id": "Bumbu Gule",
-      "name_en": "Gule Broth Mix (Bumbu Gule)",
-      "headnote_id": "",
-      "headnote_en": "Ramayani's 8-spice dry blend for Gule Kambing, from the original handwritten recipe. Used at 5 oz (1 packet) per whole-goat batch.",
-      "notes_id": "",
-      "notes_en": "How to grind and store this blend isn't specified in the scan -- same open question resep-40 already flagged.",
-      "ingredients": [
-        {
-          "amount": "16",
-          "unit": "cup",
-          "name_id": "Ketumbar",
-          "name_en": "coriander (48 oz / 3 lbs)"
-        },
-        {
-          "amount": "1½",
-          "unit": "cup",
-          "name_id": "Kunyit",
-          "name_en": "turmeric (6 oz)"
-        },
-        {
-          "amount": "1",
-          "unit": "cup",
-          "name_id": "Cengkeh",
-          "name_en": "cloves (4½ oz)"
-        },
-        {
-          "amount": "4",
-          "unit": "cup",
-          "name_id": "Lada",
-          "name_en": "pepper (15 oz)"
-        },
-        {
-          "amount": "4",
-          "unit": "cup",
-          "name_id": "Adas manis",
-          "name_en": "anise (12 oz)"
-        },
-        {
-          "amount": "4",
-          "unit": "cup",
-          "name_id": "Kayu manis",
-          "name_en": "cinnamon (15 oz)"
-        },
-        {
-          "amount": "2⅔",
-          "unit": "cup",
-          "name_id": "Pala",
-          "name_en": "nutmeg (11 oz)"
-        },
-        {
-          "amount": "2",
-          "unit": "cup",
-          "name_id": "Kapulaga",
-          "name_en": "cardamom (9 oz)"
-        }
-      ],
-      "method": [
-        {
-          "step_id": "",
-          "step_en": "Combine all the spices."
-        }
-      ],
-      "serves": "",
-      "yield_amount": 120.5,
-      "yield_unit": "oz",
-      "content_state": "full",
-      "flags": [
-        "no_headnote",
-        "no_serves",
-        "no_photo",
-        "scale"
-      ],
-      "reviewed": true,
-      "review_notes": "Built 2026-08-29 from Arman's original handwritten scan (\"Gule Kambing\", Cookbook Recipe Scan/Individual Recipe Scan), NOT the master spreadsheet -- Arman's explicit call: the spreadsheet's Gule Kambing chain is a further-scaled-up version of the same lineage for the second restaurant (multiple cases of goat/lamb vs. this scan's one whole goat), and mixing the two sources' different absolute quantities into one recipe would produce something neither source actually says. The spreadsheet was used only to help read a few unclear handwritten words, never to substitute a number. One thing this resolved: the spreadsheet's mysterious \"Cucumber\" spice line (15oz) is confirmed to be a mistyped \"Cinnamon\" (also 15oz in this scan) -- not an omitted or different ingredient, so the two sources' spice blend is actually identical where they overlap; the real reason to prefer the handwritten scan is that it's the original, complete, human-scale recipe, not a cinnamon discrepancy. Cross-checked against resep-40 (\"Bumbu Gule Kambing\"), the existing scan-transcribed version of this same spice blend: coriander and anise match exactly (48oz, 12oz); the rest are in the same range. resep-40 itself has a likely pre-existing error (fixed separately, see its own review_notes): it splits this sheet's single \"Pepper\" line (4 cup = 15 oz) into two ingredients, \"cumin\" and \"white pepper,\" neither with an oz figure -- this scan has no cumin at all, just one Pepper line."
-    },
-    {
       "id": "resep-148",
       "resep_num": 148,
       "category": "bumbu_dasar",
@@ -13471,7 +13398,7 @@
       ],
       "reviewed": true,
       "recipe_type": "home",
-      "review_notes": "Built 2026-08-29 from Arman's original handwritten scan (\"Gule Kambing\", Cookbook Recipe Scan/Individual Recipe Scan), NOT the master spreadsheet -- Arman's explicit call: the spreadsheet's Gule Kambing chain is a further-scaled-up version of the same lineage for the second restaurant (multiple cases of goat/lamb vs. this scan's one whole goat), and mixing the two sources' different absolute quantities into one recipe would produce something neither source actually says. The spreadsheet was used only to help read a few unclear handwritten words, never to substitute a number. One thing this resolved: the spreadsheet's mysterious \"Cucumber\" spice line (15oz) is confirmed to be a mistyped \"Cinnamon\" (also 15oz in this scan) -- not an omitted or different ingredient, so the two sources' spice blend is actually identical where they overlap; the real reason to prefer the handwritten scan is that it's the original, complete, human-scale recipe, not a cinnamon discrepancy. Several handwriting readings are uncertain, flagged rather than guessed past: \"Tahe\" read as \"Jahe\" (ginger) from context; \"La machine\" (a food processor/blender) left untranslated, brand/model unclear; the garlic amount in the ginger-frying step (\"satu tempat lebih Bawang putih\", lit. \"one portion more garlic\") has no clear number, estimated at a small amount; galangal is given as \"1 bungkus\" (1 packet) with no weight; \"32 cup santen [beras?]\" -- the word after \"santen\" is hard to read, possibly \"biasa\" (regular); read as plain coconut milk, the qualifier not translated with confidence. No raw whole-goat weight is stated anywhere in the scan (only the finished yield, \"±75 containers @ 16oz\"), so the home meat quantity below is a practical estimate sized to the finished-yield fraction, not a precise fraction of a stated raw weight -- flagged, not presented as scan-exact. Sizing: the scan states \"1 whole goat -> ~75 containers @ 16oz\" as its only batch fact -- no raw meat weight. Rather than invent a raw-weight estimate, anchored to that stated finished yield instead: sized this recipe to 2 containers (32oz / ~0.9kg finished dish), close to the ~1kg protein-scale convention used for Rendang, giving a divisor of 75/2 = 37.5 applied to every precisely-stated quantity (oil, onions, ginger, red pepper, dried chili, salt, spice blend, sugar, coconut milk). This is a total-dish-weight anchor, not a pure-meat-weight one like Rendang's -- flagged as a real difference from that precedent, not silently presented as equivalent. The meat quantity itself (2 lbs bone-in goat/lamb) is a separate practical estimate for what a home 2-3-serving portion needs, not derived from the 37.5 divisor (nothing in the scan states meat weight to divide). Bone stock (\"tulang direbus, ± 3/4 panci besar\") has no stated volume, so substituted with lamb/goat stock at a practical \"enough to cover\" amount rather than a false-precision figure. Per the multi-tier playbook (see [[raspberry-yield-scaling]]), this is ONE combined home recipe -- resep-147 (Broth Mix) and resep-148 (Gule Paste) are stored separately only for traceability, their math is fully decomposed into this recipe's own ingredients above, not recipe_ref'd as sub-batches.",
+      "review_notes": "Built 2026-08-29 from Arman's original handwritten scan (\"Gule Kambing\", Cookbook Recipe Scan/Individual Recipe Scan), NOT the master spreadsheet -- Arman's explicit call: the spreadsheet's Gule Kambing chain is a further-scaled-up version of the same lineage for the second restaurant (multiple cases of goat/lamb vs. this scan's one whole goat), and mixing the two sources' different absolute quantities into one recipe would produce something neither source actually says. The spreadsheet was used only to help read a few unclear handwritten words, never to substitute a number. One thing this resolved: the spreadsheet's mysterious \"Cucumber\" spice line (15oz) is confirmed to be a mistyped \"Cinnamon\" (also 15oz in this scan) -- not an omitted or different ingredient, so the two sources' spice blend is actually identical where they overlap; the real reason to prefer the handwritten scan is that it's the original, complete, human-scale recipe, not a cinnamon discrepancy. Several handwriting readings are uncertain, flagged rather than guessed past: \"Tahe\" read as \"Jahe\" (ginger) from context; \"La machine\" (a food processor/blender) left untranslated, brand/model unclear; the garlic amount in the ginger-frying step (\"satu tempat lebih Bawang putih\", lit. \"one portion more garlic\") has no clear number, estimated at a small amount; galangal is given as \"1 bungkus\" (1 packet) with no weight; \"32 cup santen [beras?]\" -- the word after \"santen\" is hard to read, possibly \"biasa\" (regular); read as plain coconut milk, the qualifier not translated with confidence. No raw whole-goat weight is stated anywhere in the scan (only the finished yield, \"±75 containers @ 16oz\"), so the home meat quantity below is a practical estimate sized to the finished-yield fraction, not a precise fraction of a stated raw weight -- flagged, not presented as scan-exact. Sizing: the scan states \"1 whole goat -> ~75 containers @ 16oz\" as its only batch fact -- no raw meat weight. Rather than invent a raw-weight estimate, anchored to that stated finished yield instead: sized this recipe to 2 containers (32oz / ~0.9kg finished dish), close to the ~1kg protein-scale convention used for Rendang, giving a divisor of 75/2 = 37.5 applied to every precisely-stated quantity (oil, onions, ginger, red pepper, dried chili, salt, spice blend, sugar, coconut milk). This is a total-dish-weight anchor, not a pure-meat-weight one like Rendang's -- flagged as a real difference from that precedent, not silently presented as equivalent. The meat quantity itself (2 lbs bone-in goat/lamb) is a separate practical estimate for what a home 2-3-serving portion needs, not derived from the 37.5 divisor (nothing in the scan states meat weight to divide). Bone stock (\"tulang direbus, ± 3/4 panci besar\") has no stated volume, so substituted with lamb/goat stock at a practical \"enough to cover\" amount rather than a false-precision figure. Per the multi-tier playbook (see [[raspberry-yield-scaling]]), this is ONE combined home recipe -- resep-40 (Broth Mix) and resep-148 (Gule Paste) are stored separately only for traceability, their math is fully decomposed into this recipe's own ingredients above, not recipe_ref'd as sub-batches.",
       "linked_recipe_id": "resep-148"
     },
     {
