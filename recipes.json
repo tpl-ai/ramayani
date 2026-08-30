@@ -14231,6 +14231,444 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-159",
       "review_notes": "CORRECTED 2026-08-30: previously sized to 5 squid (half the restaurant's own 10-squid/bag unit), aiming for ~1kg per the Rendang-style protein convention -- Arman corrected this: the spreadsheet states 1 bag = 1 order = 10 squid directly, and that stated order size should be used as-is rather than adjusted toward an external convention. Now sized to exactly 1 bag (10 squid): the serve-stage quantities (butter, garlic, fish sauce) are resep-159's own per-bag figures used directly, unscaled. Only the boiling-stage salt/citric acid are scaled, from the full 100-squid batch at 1/10 (3 Tbsp salt -> 1 tsp, 1 Tbsp citric acid -> 1/3 tsp) -- both exact, no floor-bumping needed. Dropped the restaurant's freeze/bag/microwave-reheat step (2, 7-8 in resep-159's method) in favor of cooking the squid directly once cleaned, same reasoning as Satay's dropped reheat sequence -- a home cook isn't working from a pre-frozen prep bag. Serves re-estimated at 3-4 for 10 squid (~2kg using the 50-squid/10kg-case figure), not a stated fact."
+    },
+    {
+      "id": "resep-161",
+      "resep_num": 161,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Bumbu Betawi",
+      "name_en": "Bumbu Betawi (Sop Kambing Spice Mix)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's dry spice mix, used in Sop Kambing.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "60",
+          "unit": "gm",
+          "name_id": "Ketumbar",
+          "name_en": "coriander"
+        },
+        {
+          "amount": "20",
+          "unit": "gm",
+          "name_id": "Jintan",
+          "name_en": "cumin"
+        },
+        {
+          "amount": "70",
+          "unit": "gm",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "420",
+          "unit": "gm",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "20",
+          "unit": "gm",
+          "name_id": "Merica putih",
+          "name_en": "white pepper"
+        },
+        {
+          "amount": "300",
+          "unit": "gm",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix all the ingredients."
+        },
+        {
+          "step_id": "",
+          "step_en": "Separate into 2 bags."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 890,
+      "yield_unit": "gm",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "From the master spreadsheet's \"Factory Mix - Bumbu Betawi\" sheet, referenced as a Ramayani-branded ingredient in Sop Kambing (\"1040 gm Bumbu Betawi\"). Not currently confirmed reused by any other dish (a few old scan recipes fuzzy-matched the name loosely -- Daging Bumbu Bali, Bumbu Rujak Buah -- but those weren't verified and are almost certainly unrelated, \"Betawi\" vs \"Bali\"), so treated as single-use for now: stored here for traceability, decomposed directly into resep-163's own ingredients rather than recipe_ref'd from there, since 1040g doesn't divide cleanly into this recipe's 890g/2-bag batch."
+    },
+    {
+      "id": "resep-162",
+      "resep_num": 162,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Sop Kambing - Restaurant Batch",
+      "name_en": "Lamb Soup (Sop Kambing) - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's lamb soup with milk, nutmeg, and Bumbu Betawi.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "6",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "41.89",
+          "unit": "lbs",
+          "name_id": "Daging kambing/domba, dengan tulang",
+          "name_en": "bone-in lamb (leg and body, cut into 3-4 pieces by the butcher)"
+        },
+        {
+          "amount": "500",
+          "unit": "gm",
+          "name_id": "Jahe, iris 1/8\"",
+          "name_en": "ginger, sliced 1/8\" thick"
+        },
+        {
+          "amount": "1040",
+          "unit": "gm",
+          "name_id": "Bumbu Betawi",
+          "name_en": "Bumbu Betawi",
+          "recipe_ref": "resep-161"
+        },
+        {
+          "amount": "20",
+          "unit": "gm",
+          "name_id": "Pala",
+          "name_en": "nutmeg"
+        },
+        {
+          "amount": "1.1",
+          "unit": "gal",
+          "name_id": "Susu",
+          "name_en": "milk"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Susu (per kontainer)",
+          "name_en": "milk (per container, added when serving)"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Vetsin (per kontainer)",
+          "name_en": "MSG (per container)"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam (per kontainer)",
+          "name_en": "salt (per container)"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Gula (per kontainer)",
+          "name_en": "sugar (per container)"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Mentega (per kontainer)",
+          "name_en": "butter (per container)"
+        },
+        {
+          "amount": "½",
+          "unit": "pc",
+          "name_id": "Tomat, potong (per kontainer)",
+          "name_en": "tomato, chopped (per container)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun bawang, cincang",
+          "name_en": "chopped green onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Emping",
+          "name_en": "emping crackers, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "When purchasing the lamb, have the butcher cut the leg and body into 3-4 parts."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil the lamb in the water for 1 hour 40 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Take the lamb out of the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Debone the lamb and cut into bite-sized cubes; return the meat to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the Bumbu Betawi and nutmeg to the broth and boil for about 10 minutes, until the ginger is cooked."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the milk."
+        },
+        {
+          "step_id": "",
+          "step_en": "Separate into 16oz containers."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve one container: add 1 cup milk and the container of soup to a pot."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the MSG, salt, and sugar."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the butter and chopped tomato in a serving bowl and ladle the soup over."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with emping."
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle with chopped green onion, fried onion, and sweet soy sauce."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 71,
+      "yield_unit": "containers",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet (\"Xtra - Sop Kambing\") -- see [[raspberry-master-spreadsheet]]. Water corrected from the sheet's literal \"8 gal\" row to \"6 gal\" per the sheet's own attached note (\"Next time do only 6 gal since 3 gal left over\") -- treated as the recipe's real intended amount, not the as-written figure that produced excess. \"Return the meat to the broth\" (method step 4) isn't explicitly stated on the sheet -- the deboned/cubed lamb is taken out, diced, and the soup is finished without an explicit \"add it back\" instruction, but Sop Kambing (lamb soup) obviously needs the lamb meat in the final product, so this was filled in as the only sensible reading, not left as a literal gap. yield_amount (71 containers) is a rough estimate (~25% water evaporation over the ~110min boil, ~50% lamb meat yield after deboning, both flagged assumptions, not stated facts) -- used only to size resep-163's fraction, not treated as precise. \"Fried Onion\" appears in the method (step 12) but not in the sheet's own ingredient list -- added here since the method clearly calls for it.",
+      "linked_recipe_id": "resep-163"
+    },
+    {
+      "id": "resep-163",
+      "resep_num": 163,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Sop Kambing",
+      "name_en": "Lamb Soup (Sop Kambing)",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's lamb soup with milk, nutmeg, and Bumbu Betawi spices.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "8",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "3½",
+          "unit": "lbs",
+          "name_id": "Daging kambing/domba, dengan tulang",
+          "name_en": "bone-in lamb (leg and body pieces)"
+        },
+        {
+          "amount": "2¾",
+          "unit": "Tbsp",
+          "name_id": "Jahe, iris 1/8\"",
+          "name_en": "ginger, sliced 1/8\" thick"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Ketumbar",
+          "name_en": "coriander"
+        },
+        {
+          "amount": "⅜",
+          "unit": "tsp",
+          "name_id": "Jintan",
+          "name_en": "cumin"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Vetsin (bumbu)",
+          "name_en": "MSG (in the spice blend)"
+        },
+        {
+          "amount": "2¾",
+          "unit": "Tbsp",
+          "name_id": "Garam (bumbu)",
+          "name_en": "salt (in the spice blend)"
+        },
+        {
+          "amount": "⅜",
+          "unit": "tsp",
+          "name_id": "Merica putih",
+          "name_en": "white pepper"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Gula (bumbu)",
+          "name_en": "sugar (in the spice blend)"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Pala",
+          "name_en": "nutmeg"
+        },
+        {
+          "amount": "1½",
+          "unit": "cups",
+          "name_id": "Susu",
+          "name_en": "milk"
+        },
+        {
+          "amount": "6",
+          "unit": "cups",
+          "name_id": "Susu (tambahan)",
+          "name_en": "milk (additional, added when serving)"
+        },
+        {
+          "amount": "4½",
+          "unit": "tsp",
+          "name_id": "Vetsin (tambahan)",
+          "name_en": "MSG (additional)"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Garam (tambahan)",
+          "name_en": "salt (additional)"
+        },
+        {
+          "amount": "3",
+          "unit": "tsp",
+          "name_id": "Gula (tambahan)",
+          "name_en": "sugar (additional)"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Mentega",
+          "name_en": "butter"
+        },
+        {
+          "amount": "3",
+          "unit": "",
+          "name_id": "Tomat, potong",
+          "name_en": "tomatoes, chopped"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Daun bawang, cincang",
+          "name_en": "chopped green onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Emping",
+          "name_en": "emping crackers, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Have the butcher cut the lamb leg and body into 3-4 parts (or use bone-in lamb pieces)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil the lamb in the water for 1 hour 40 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Take the lamb out of the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Debone the lamb, cut into bite-sized cubes, and return the meat to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the coriander, cumin, MSG, salt, white pepper, sugar, and nutmeg to the broth, and boil for about 10 minutes, until the ginger is cooked."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the 1 1/2 cups milk."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve: add the additional milk, MSG, salt, and sugar, and bring back to a simmer."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the butter and chopped tomatoes into serving bowls and ladle the soup over."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with emping."
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle with chopped green onion, fried onion, and sweet soy sauce."
+        }
+      ],
+      "serves": "6-8",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-162",
+      "review_notes": "Read directly from the master spreadsheet (\"Xtra - Sop Kambing\") -- see [[raspberry-master-spreadsheet]]. Sized to 6 x 16oz containers (96oz) per Arman's explicit instruction, giving 6-8 servings. Fraction (~1/11.9) computed from resep-162's estimated ~71-container total batch (see derivations/sop_kambing.py for the full calculation and its flagged assumptions -- 25% water evaporation, 50% lamb meat yield after deboning). Bumbu Betawi (resep-161) is decomposed directly into its own 6 spice lines (coriander/cumin/MSG/salt/white pepper/sugar) rather than kept as a recipe_ref, since it's single-use and the fractional amount needed doesn't correspond to a clean sub-multiple of its own batch. Note the two separate MSG/salt/sugar additions (in the spice blend vs. added again when serving) are both real, from two different points in the source method, not a duplication error."
     }
   ]
 }
