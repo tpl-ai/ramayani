@@ -14091,6 +14091,229 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-48",
       "review_notes": "Home-scale version of resep-48, sized to exactly 1 container (8oz finished porridge -- the dish's own natural serving unit, already comfortably above the standing floor). Raw ingredients scaled by ~1/66.3 (see derivations/desserts.py); finished yield estimated at ~90% of raw weight (rice porridge mostly absorbs its liquid rather than losing it to evaporation) for the container-count cross-check (~60 containers from the full batch, plausible for a bulk freezer-prep recipe). Both salt additions floor-bumped from sub-1/8-tsp true values to a practical pinch each rather than a precise fraction."
+    },
+    {
+      "id": "resep-159",
+      "resep_num": 159,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Cumi Goreng Mentega - Restaurant Batch",
+      "name_en": "Butter Fried Squid - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's butter-garlic-fish sauce fried squid.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "20",
+          "unit": "kg",
+          "name_id": "Cumi-cumi beku (2 kotak, ~100 ekor)",
+          "name_en": "frozen squid (2 cases, ~100 squid, assuming 50/10kg case)"
+        },
+        {
+          "amount": "3",
+          "unit": "Tbsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Asam sitrat",
+          "name_en": "citric acid"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Air, secukupnya untuk merebus",
+          "name_en": "water, enough to boil the squid"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Mentega (per kantong, 10 cumi)",
+          "name_en": "butter (per bag, 10 squid)"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Bawang putih cincang (per kantong)",
+          "name_en": "chopped garlic (per bag)"
+        },
+        {
+          "amount": "¾",
+          "unit": "oz",
+          "name_id": "Kecap ikan (per kantong)",
+          "name_en": "fish sauce (per bag)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Thaw the frozen squid in warm water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fill a pot with water and add the salt and citric acid."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil and add the squid."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring back to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Take the squid out, keeping the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Clean the squid: separate the heads and remove the cartilage."
+        },
+        {
+          "step_id": "",
+          "step_en": "Portion about 10 large squid per bag and fill with the squid broth; refrigerate or freeze."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve one bag: microwave for 2 minutes in the bag, then drain off the excess water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the butter in a wok, add the squid, and stir into the butter."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cover and cook over high heat for 2.5 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the chopped garlic."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the fish sauce and stir-fry for 1 more minute (total cooking time about 3.5-4 minutes)."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 10,
+      "yield_unit": "bags",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet (\".Cumi Goreng Mentega\") -- see [[raspberry-master-spreadsheet]]. Distinct from resep-50 (\"Bumbu Udang / Cumi Cumi Mentega\"), a pre-existing scan recipe that turns out to be a genuinely different sauce (butter, oil, ghee, Maggi, Worcestershire, sugar, water -- no garlic or fish sauce, no squid quantity or method at all) -- not a units/scale difference like Ice Durian, an actually different recipe, same pattern as Gule Kambing. Left resep-50 untouched; this is a new, separate entry. Squid count (100, ~10 bags of 10) is per Arman's stated assumption: 50 squid per 10kg case, 2 cases = 20kg total (BOX x QTY/BOX = 2 x 10kg, same convention confirmed on resep-2's coconut milk). yield_amount/unit uses \"bags\" (the sheet's own natural portioning unit) rather than a weight, since that's how the serve-stage quantities (butter/garlic/fish sauce) are themselves denominated.",
+      "linked_recipe_id": "resep-160"
+    },
+    {
+      "id": "resep-160",
+      "resep_num": 160,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Cumi Goreng Mentega",
+      "name_en": "Butter Fried Squid",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's butter-garlic-fish sauce fried squid.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "5",
+          "unit": "",
+          "name_id": "Cumi-cumi besar, dibersihkan",
+          "name_en": "large squid, cleaned"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Asam sitrat",
+          "name_en": "citric acid"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Air, secukupnya untuk merebus",
+          "name_en": "water, enough to cover the squid"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Mentega",
+          "name_en": "butter"
+        },
+        {
+          "amount": "5",
+          "unit": "tsp",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, chopped"
+        },
+        {
+          "amount": "¾",
+          "unit": "Tbsp",
+          "name_id": "Kecap ikan",
+          "name_en": "fish sauce"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Thaw the squid if frozen."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fill a pot with water and add the salt and citric acid."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil and add the squid."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring back to a boil, then remove the squid (the broth can be saved for another use)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Clean the squid: separate the heads and remove the cartilage."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the butter in a wok, add the squid, and stir into the butter."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cover and cook over high heat for about 2.5 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the chopped garlic."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the fish sauce and stir-fry for about 1 more minute (total cooking time about 3.5-4 minutes)."
+        }
+      ],
+      "serves": "2",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-159",
+      "review_notes": "Home-scale version of resep-159. Sized to 5 squid (half of the restaurant's own 10-squid/bag portioning unit), landing close to ~1kg of squid (using Arman's ~200g/squid figure, from the 50-squid/10kg-case assumption) -- matching the Rendang-style ~1kg-protein convention rather than the literal per-bag amount, since a whole bag (~2kg) reads as more than one home meal. Serve-stage quantities (butter, garlic, fish sauce) are exactly half of the sheet's own per-bag figures, a clean K=2 off the restaurant's own natural sub-unit, not re-derived from the full 20kg batch. Dropped the restaurant's freeze/bag/microwave-reheat step (2, 7-8 in resep-159's method) in favor of cooking the squid directly once cleaned, same reasoning as Satay's dropped reheat sequence -- a home cook isn't working from a pre-frozen prep bag. Serves estimated at 2, not a stated fact."
     }
   ]
 }
