@@ -4018,7 +4018,7 @@
       "id": "resep-42",
       "resep_num": 42,
       "category": "bumbu_dasar",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20Rujak%20Buah%20DSC00924-idN91x9WuMGog4bCHunfVAkTOnW6Xp.JPG",
       "name_id": "Bumbu Rujak Buah",
       "name_en": "",
       "headnote_id": "",
@@ -4029,8 +4029,7 @@
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": false,
       "ingredients": [
