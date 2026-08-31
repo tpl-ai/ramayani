@@ -8,7 +8,7 @@ import type { RecipeSummary } from '@/types/recipe'
 
 const CATEGORIES = [
   { id: 'ayam',            label: 'Chicken'            },
-  { id: 'daging',          label: 'Beef & Pork'        },
+  { id: 'daging',          label: 'Meats'              },
   { id: 'seafood',         label: 'Seafood'            },
   { id: 'nasi_mie',        label: 'Rice & Noodles'     },
   { id: 'sayuran_salad',   label: 'Vegetables & Salads' },
