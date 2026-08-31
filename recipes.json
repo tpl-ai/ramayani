@@ -9368,22 +9368,11 @@
           "name_en": "medium avocado"
         },
         {
-          "amount": "1¼",
-          "unit": "tsp",
-          "name_id": "Air",
-          "name_en": "water"
-        },
-        {
-          "amount": "¾",
+          "amount": "1",
           "unit": "Tbsp",
-          "name_id": "Gula pasir kasar",
-          "name_en": "cane sugar"
-        },
-        {
-          "amount": "",
-          "unit": "",
-          "name_id": "Gula vanila",
-          "name_en": "vanilla sugar, a pinch"
+          "name_id": "Sirup Vanila Pandan",
+          "name_en": "Vanilla-Pandan Syrup",
+          "recipe_ref": "resep-165"
         },
         {
           "amount": "1¾",
@@ -9425,7 +9414,7 @@
       "method": [
         {
           "step_id": "",
-          "step_en": "Mash the avocado with the water, cane sugar, vanilla sugar, condensed milk, and salt to make the Teller Mix; refrigerate."
+          "step_en": "Mash the avocado with the Vanilla-Pandan Syrup, condensed milk, and salt to make the Teller Mix; refrigerate."
         },
         {
           "step_id": "",
@@ -9441,7 +9430,7 @@
         }
       ],
       "serves": "1",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Teller Mix's full batch (6 avocados + 1 cup Gula Putih + 1 can condensed milk + salt, yielding many 2 Tbsp servings) was scaled down to a 1/2-cup home batch (K~15.6, the standing floor). Gula Putih (resep-155) is nested two levels deep (used only within Teller Mix, itself used only here) -- decomposed all the way to its raw water/sugar/vanilla using the combined fraction (~1/669 of Gula Putih's own batch), not kept as an intermediate reference. Serve-step quantities (jackfruit, young coconut, crushed ice, condensed milk topping) are already order-sized on the sheet, used directly."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Teller Mix's full batch (6 avocados + 1 cup Gula Putih + 1 can condensed milk + salt, yielding many 2 Tbsp servings) was scaled down to a 1/2-cup home batch (K~15.6, the standing floor). Vanilla-Pandan Syrup (formerly \"Gula Putih\") is now linked via recipe_ref to resep-165 rather than decomposed into raw water/sugar/vanilla-sugar in place -- reworked 2026-08-31 at Arman's request. The 1 Tbsp amount is the same quantity previously folded in directly (1.25 tsp water + 2.25 tsp cane sugar + a pinch of vanilla sugar, ~0.58oz, rounded up to a measurable 1 Tbsp); see resep-165 and derivations/ice_teller_syrup.py. Serve-step quantities (jackfruit, young coconut, crushed ice, condensed milk topping) are already order-sized on the sheet, used directly."
     },
     {
       "id": "cs-iced-bandrek",
@@ -13702,8 +13691,8 @@
       "resep_num": 155,
       "category": "bumbu_dasar",
       "photo": "",
-      "name_id": "Vanilla-Pandan Syrup",
-      "name_en": "",
+      "name_id": "Vanilla-Pandan Syrup - Restaurant Batch",
+      "name_en": "Vanilla-Pandan Syrup - Restaurant Batch",
       "headnote_id": "",
       "headnote_en": "Ramayani's vanilla-pandan sugar syrup, used in Ice Teller's Teller Mix.",
       "notes_id": "",
@@ -13749,14 +13738,14 @@
       "yield_unit": "oz",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo",
         "scale"
       ],
       "reviewed": true,
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Used only within Teller Mix (itself used only by Ice Teller) -- a two-level single-use chain, decomposed all the way down into cs-ice-teller's own ingredients (see its review_notes for the combined fraction), not kept as an intermediate recipe_ref."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Renamed by Arman from \"Gula Putih\" to \"Vanilla-Pandan Syrup\" (2026-08-31); this batch version then got the \"- Restaurant Batch\" suffix added and a home twin (resep-165) was created and linked, since Arman asked for Ice Teller to actually link to this syrup rather than have it silently decomposed into raw ingredients. See resep-165 and cs-ice-teller's own review_notes for the rework.",
+      "linked_recipe_id": "resep-165"
     },
     {
       "id": "resep-156",
@@ -14801,6 +14790,74 @@
       "flags": [],
       "reviewed": true,
       "review_notes": "From the master spreadsheet's \".Bakmi Goreng & KueyTeow\" sheet -- same family as Bihun Goreng/Nasi Goreng (resep-135/cs-nasi-goreng), same Main Stir Fry base, just egg noodles instead of rice noodles/rice. Sauce amount (1.5oz) and structural position exactly matches Bihun Goreng's own Nasi Goreng Sauce usage, so recipe_ref'd to the same resep-137, even though this sheet's own row labels it \"Kuey Teow Sauce\" rather than \"Nasi Goreng Sauce\". Note for whoever looks at this family next: the spreadsheet is internally inconsistent about this sauce's name -- this sheet's own top-of-page section header (and the '.Nasi & Bihun Goreng' sheet's identical header) both list a 4-ingredient recipe (sweet soy + fish sauce + black soy + sugar) under the label \"Kuey Teow Sauce\", matching resep-145 exactly -- yet individual dishes in both sheets reference amounts that line up with resep-137's simpler 2-ingredient recipe (sweet soy + fish sauce only, from the separate 'Factory Mix - Nasi Goreng Sauce' sheet). Not resolved here since it doesn't change Bakmi Goreng's own build (the 1.5oz amount and dish role match Bihun Goreng's precedent either way) -- flagged in derivations/SPREADSHEET_MAPPING.md for a future pass if the two sauces ever need to be reconciled. Also: this sheet's Kuey Teow section has an explicit \"2oz Kuey Teow Sauce\" ingredient row and an \"Add Kuey Teow Sauce\" method step that the '.Nasi & Bihun Goreng' sheet (used to originally build resep-146) does not have -- resep-146 was NOT revisited here, just flagged as worth re-checking against this more complete sheet."
+    },
+    {
+      "id": "resep-165",
+      "resep_num": 165,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Sirup Vanila Pandan",
+      "name_en": "Vanilla-Pandan Syrup",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "2¾",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "5¾",
+          "unit": "Tbsp",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Gula vanila, sejumput",
+          "name_en": "vanilla sugar, a pinch"
+        },
+        {
+          "amount": "1",
+          "unit": "pc",
+          "name_id": "Daun pandan, potong kecil",
+          "name_en": "pandan leaf, torn into a few pieces"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine the water, cane sugar, and vanilla sugar in a small saucepan."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the pandan leaf."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a simmer, stirring, until the sugar dissolves."
+        },
+        {
+          "step_id": "",
+          "step_en": "Let cool, then remove the pandan leaf before using."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 4,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "linked_recipe_id": "resep-155",
+      "review_notes": "Home-scale twin of resep-155 (Vanilla-Pandan Syrup - Restaurant Batch), created 2026-08-31 at Arman's request so Ice Teller links to a real, makeable syrup recipe instead of having it decomposed invisibly into raw ingredients. Sized to the standing 4oz/1/2-cup floor rather than the bare amount one Ice Teller needs (~0.58oz) -- see derivations/ice_teller_syrup.py for the full calculation. Makes enough for several Ice Tellers; keeps in the fridge like any simple syrup."
     }
   ]
 }
