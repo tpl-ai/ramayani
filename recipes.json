@@ -13702,8 +13702,8 @@
       "resep_num": 155,
       "category": "bumbu_dasar",
       "photo": "",
-      "name_id": "Gula Putih",
-      "name_en": "Gula Putih (Vanilla-Pandan Syrup)",
+      "name_id": "Vanilla-Pandan Syrup",
+      "name_en": "",
       "headnote_id": "",
       "headnote_en": "Ramayani's vanilla-pandan sugar syrup, used in Ice Teller's Teller Mix.",
       "notes_id": "",
@@ -13749,6 +13749,7 @@
       "yield_unit": "oz",
       "content_state": "full",
       "flags": [
+        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo",
