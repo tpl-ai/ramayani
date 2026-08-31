@@ -14673,7 +14673,7 @@
       "id": "resep-164",
       "resep_num": 164,
       "category": "nasi_mie",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/DSC04189%20bakmi2-anRWmSFTR6bwuUz5G1u7Q6L1jmYnWc.jpg",
       "name_id": "Bakmi Goreng",
       "name_en": "Indonesian Fried Egg Noodles",
       "headnote_id": "Bakmi goreng ala Indonesia dengan pilihan ayam, udang, babi, atau sayuran",
@@ -14797,9 +14797,7 @@
       ],
       "serves": "1-2",
       "content_state": "full",
-      "flags": [
-        "no_photo"
-      ],
+      "flags": [],
       "reviewed": true,
       "review_notes": "From the master spreadsheet's \".Bakmi Goreng & KueyTeow\" sheet -- same family as Bihun Goreng/Nasi Goreng (resep-135/cs-nasi-goreng), same Main Stir Fry base, just egg noodles instead of rice noodles/rice. Sauce amount (1.5oz) and structural position exactly matches Bihun Goreng's own Nasi Goreng Sauce usage, so recipe_ref'd to the same resep-137, even though this sheet's own row labels it \"Kuey Teow Sauce\" rather than \"Nasi Goreng Sauce\". Note for whoever looks at this family next: the spreadsheet is internally inconsistent about this sauce's name -- this sheet's own top-of-page section header (and the '.Nasi & Bihun Goreng' sheet's identical header) both list a 4-ingredient recipe (sweet soy + fish sauce + black soy + sugar) under the label \"Kuey Teow Sauce\", matching resep-145 exactly -- yet individual dishes in both sheets reference amounts that line up with resep-137's simpler 2-ingredient recipe (sweet soy + fish sauce only, from the separate 'Factory Mix - Nasi Goreng Sauce' sheet). Not resolved here since it doesn't change Bakmi Goreng's own build (the 1.5oz amount and dish role match Bihun Goreng's precedent either way) -- flagged in derivations/SPREADSHEET_MAPPING.md for a future pass if the two sauces ever need to be reconciled. Also: this sheet's Kuey Teow section has an explicit \"2oz Kuey Teow Sauce\" ingredient row and an \"Add Kuey Teow Sauce\" method step that the '.Nasi & Bihun Goreng' sheet (used to originally build resep-146) does not have -- resep-146 was NOT revisited here, just flagged as worth re-checking against this more complete sheet."
     }
