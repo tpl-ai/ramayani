@@ -14668,6 +14668,140 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-162",
       "review_notes": "Read directly from the master spreadsheet (\"Xtra - Sop Kambing\") -- see [[raspberry-master-spreadsheet]]. Sized to 6 x 16oz containers (96oz) per Arman's explicit instruction, giving 6-8 servings. Fraction (~1/11.9) computed from resep-162's estimated ~71-container total batch (see derivations/sop_kambing.py for the full calculation and its flagged assumptions -- 25% water evaporation, 50% lamb meat yield after deboning). Bumbu Betawi (resep-161) is decomposed directly into its own 6 spice lines (coriander/cumin/MSG/salt/white pepper/sugar) rather than kept as a recipe_ref, since it's single-use and the fractional amount needed doesn't correspond to a clean sub-multiple of its own batch. Note the two separate MSG/salt/sugar additions (in the spice blend vs. added again when serving) are both real, from two different points in the source method, not a duplication error."
+    },
+    {
+      "id": "resep-164",
+      "resep_num": 164,
+      "category": "nasi_mie",
+      "photo": "",
+      "name_id": "Bakmi Goreng",
+      "name_en": "Indonesian Fried Egg Noodles",
+      "headnote_id": "Bakmi goreng ala Indonesia dengan pilihan ayam, udang, babi, atau sayuran",
+      "headnote_en": "Indonesian-style fried egg noodles with your choice of chicken, shrimp, pork, or vegetables",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "8",
+          "unit": "oz",
+          "name_id": "Mie telur",
+          "name_en": "egg noodles"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Kol",
+          "name_en": "cabbage"
+        },
+        {
+          "amount": "1½",
+          "unit": "oz",
+          "name_id": "Saus Nasi Goreng",
+          "name_en": "Nasi Goreng Sauce",
+          "recipe_ref": "resep-137"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Lemak ayam",
+          "name_en": "chicken fat"
+        },
+        {
+          "amount": "¾",
+          "unit": "cup",
+          "name_id": "Ayam masak, babi masak, atau udang kecil mentah (12ct) — atau, untuk vegetarian, brokoli secukupnya",
+          "name_en": "cooked chicken, cooked pork, or raw small shrimp (12ct) — or, for vegetarian, broccoli to taste instead"
+        },
+        {
+          "amount": "1",
+          "unit": "pc",
+          "name_id": "Telur",
+          "name_en": "egg"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Tauge",
+          "name_en": "bean sprouts"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Daun bawang, cincang",
+          "name_en": "green onion, chopped"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Merica putih, secukupnya",
+          "name_en": "white pepper, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cabai, secukupnya (opsional)",
+          "name_en": "chili, to taste (optional)"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Kecap manis",
+          "name_en": "ketchap manis (sweet soy sauce)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Put the chicken fat in the wok."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the chicken, pork, or shrimp (or broccoli for the vegetarian version)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the egg, cabbage, and chili (optional)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the egg noodles."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the bean sprouts and green onion."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the MSG, white pepper, salt, and ketchap manis."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the Nasi Goreng Sauce."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve."
+        }
+      ],
+      "serves": "1-2",
+      "content_state": "full",
+      "flags": [
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "From the master spreadsheet's \".Bakmi Goreng & KueyTeow\" sheet -- same family as Bihun Goreng/Nasi Goreng (resep-135/cs-nasi-goreng), same Main Stir Fry base, just egg noodles instead of rice noodles/rice. Sauce amount (1.5oz) and structural position exactly matches Bihun Goreng's own Nasi Goreng Sauce usage, so recipe_ref'd to the same resep-137, even though this sheet's own row labels it \"Kuey Teow Sauce\" rather than \"Nasi Goreng Sauce\". Note for whoever looks at this family next: the spreadsheet is internally inconsistent about this sauce's name -- this sheet's own top-of-page section header (and the '.Nasi & Bihun Goreng' sheet's identical header) both list a 4-ingredient recipe (sweet soy + fish sauce + black soy + sugar) under the label \"Kuey Teow Sauce\", matching resep-145 exactly -- yet individual dishes in both sheets reference amounts that line up with resep-137's simpler 2-ingredient recipe (sweet soy + fish sauce only, from the separate 'Factory Mix - Nasi Goreng Sauce' sheet). Not resolved here since it doesn't change Bakmi Goreng's own build (the 1.5oz amount and dish role match Bihun Goreng's precedent either way) -- flagged in derivations/SPREADSHEET_MAPPING.md for a future pass if the two sauces ever need to be reconciled. Also: this sheet's Kuey Teow section has an explicit \"2oz Kuey Teow Sauce\" ingredient row and an \"Add Kuey Teow Sauce\" method step that the '.Nasi & Bihun Goreng' sheet (used to originally build resep-146) does not have -- resep-146 was NOT revisited here, just flagged as worth re-checking against this more complete sheet."
     }
   ]
 }
