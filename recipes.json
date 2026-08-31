@@ -5701,22 +5701,22 @@
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/SporeLaksaIMG_8612-aU4qmkT7dGhATnqrlG63EpMad5cnzT.jpg",
       "name_id": "Laksa Indonesia",
       "name_en": "Indonesian Laksa — Spiced Coconut Noodle Soup",
-      "headnote_id": "Laksa khas Indonesia versi Ramayani — sup mie berempah dengan kuah santan. Catatan Ibu menyebutkan pelengkap: bihun, toge, ayam, telur, dan kerupuk. Cara membuat perlu dikonfirmasi.",
-      "headnote_en": "Ramayani's Indonesian-style Laksa — a spiced coconut noodle soup. Hertha's notes list the accompaniments: rice vermicelli, bean sprouts, chicken, egg, and crackers. Full method to be confirmed.",
-      "notes_id": "Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Lihat juga Resep 61 — Laksa versi Malaysia dari Ibu. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Ingredients only — no quantities, no method. See also Recipe 61 — My Mum's Malaysian Laksa. Please confirm full recipe with Hertha.\n\nFLAG: Berkas 5, Hal. 22. Confirmed by rereading — ingredients only, no quantities and no method written. Mother's note lists accompaniments only: bihun, toge, ayam, telur, tauge, kerupuk. Ingredients match recipes.json, no discrepancy found. See also Recipe 61 (My Mum's Laksa, Malaysian) which does have a full method and may be a useful reference.",
+      "headnote_id": "Laksa khas Indonesia versi Ramayani — sup mie berempah dengan kuah santan.",
+      "headnote_en": "Ramayani's Indonesian-style Laksa — a spiced coconut noodle soup.",
+      "notes_id": "Catatan Ibu tidak mencantumkan takaran — hanya bahan dan cara membuat. Lihat juga Resep 61 — Laksa Malaysia dari Ibu.",
+      "notes_en": "Hertha's notes don't include quantities — only the ingredients and method are given. See also Recipe 61 — My Mum's Malaysian Laksa.",
       "serves": "",
       "date": "",
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
         "no_serves"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
-          "name_id": "Bawang merah + cabe merah, diblender",
-          "name_en": "Shallots + red chilli, blended",
+          "name_id": "Bawang merah + cabe merah kaleng, diblender",
+          "name_en": "Shallots + canned red chili, blended",
           "amount": ""
         },
         {
@@ -5780,13 +5780,45 @@
           "amount": ""
         },
         {
+          "amount": "",
           "unit": "",
-          "name_id": "Pelengkap: bihun, toge, ayam, telur, kerupuk",
-          "name_en": "To serve: rice vermicelli, bean sprouts, chicken, egg, crackers",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "unit": "",
+          "name_id": "Pelengkap: bihun, toge rebus, ayam, telur, bawang goreng, kerupuk",
+          "name_en": "To serve: rice vermicelli, blanched bean sprouts, chicken, egg, fried shallots, crackers",
           "amount": ""
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil the water with the bay leaves, lemongrass, and galangal."
+        },
+        {
+          "step_id": "",
+          "step_en": "Grind the toasted coconut until fine."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pound the candlenuts, canned red chili, shallots, turmeric, and coriander together, then fry."
+        },
+        {
+          "step_id": "",
+          "step_en": "Once cooked, add the fried spice paste and ground toasted coconut into the boiling water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the coconut milk, sugar, salt, and MSG."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve with rice vermicelli, blanched bean sprouts, chicken, egg, and fried shallots."
+        }
+      ],
+      "review_notes": "Read directly from the original handwritten scan (Laksa Indonesia.png). A previous review pass concluded this recipe had no method -- rereading carefully (2026-08-31, prompted by Arman), the scan actually does describe a full method in continuous prose (not step-by-step), which was missed. No quantities are given anywhere in the source, only ingredients, method, and accompaniments, so ingredient amounts remain blank -- that part of the earlier assessment was correct. Corrections made from this reread: added \"Vetsin\" (MSG) as a separate ingredient (previously missing entirely), added \"bawang goreng\" (fried shallots) to the accompaniments (the scan doesn't mention \"kerupuk\", which was already listed -- left in place since its source isn't clear, just flagging the discrepancy), noted the red chili is canned (\"cabe merah kaleng\"), and specified the bean sprouts are blanched (\"toge rebus\"). The toasted coconut's exact addition point isn't restated in the \"once cooked, add to the boiling water\" line -- inferred to be added alongside the fried spice paste, since it's listed as its own prep step between the water-boiling and spice-grinding lines."
     },
     {
       "id": "resep-61",
