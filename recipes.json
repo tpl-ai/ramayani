@@ -4422,17 +4422,16 @@
       "id": "resep-46",
       "resep_num": 46,
       "category": "desserts_drinks",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20Kue%20Lapis%20DSC00456-r3YOBA95h2Y5TJ4NLHFFzG0ul8qdHg.JPG",
       "name_id": "Lapis Legit",
       "name_en": "Indonesian Spiced Layer Cake",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Catatan Ibu: tiap kali bikin = 6 loyang (2 × 3 loyang/adonan).",
-      "notes_en": "Each production run is 6 trays = 2 batches × 3 trays) ",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "review_notes": "Rewritten from the original scan (Lapis Legit.png) on 2026-08-22. The page has two quantity columns — for 3-tray and 4-tray batches — per Arman, only the 3-tray column was kept, since that's the amount actually used in practice (doubled to make 6 trays per the page's own note, not switched to the 4-tray column). 'Sepuhan kuning' (yolk wash) was merged into the 'Merah telur' (egg yolks) row rather than kept as a separate zero-quantity ingredient, since the scan brackets them together as one shared quantity (60 yolks used for both the batter and the between-layer wash). Ingredients grouped into two 'beaten in a bowl' sections matching the scan's brackets. Fixed an obvious 'BROL' -> 'broil' typo in the oven step.",
       "reviewed": true,
