@@ -15183,7 +15183,7 @@
       "id": "resep-167",
       "resep_num": 167,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20Soto%20Betawi%20DSC00998-mHPtn7f9vpy07sasxqMgg0NdHCyPIb.jpg",
       "name_id": "Soto Betawi",
       "name_en": "Soto Betawi (Jakarta Beef & Tripe Soup)",
       "headnote_id": "",
@@ -15372,8 +15372,7 @@
       "serves": "1-2",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
