@@ -16184,9 +16184,9 @@
       "id": "resep-175",
       "resep_num": 175,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Babat%20Goreng%200353-albxAxDZqP0eRZwilS3CHbu2MKEwYI.jpg",
       "name_id": "Babat Goreng",
-      "name_en": "Babat Goreng (Stir-Fried Beef Tripe)",
+      "name_en": "Stir-Fried Beef Tripe",
       "headnote_id": "",
       "headnote_en": "Beef tripe stir-fried with onion, garlic, and chili, finished with Sambal Bajak.",
       "notes_id": "",
@@ -16289,8 +16289,7 @@
       "serves": "1",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `.Babat Goreng`. Already order-sized on the sheet, used directly -- no scale-down math needed. References cs-sambal-bajak (Sambal Bajak, home) via recipe_ref for its 1 tsp addition -- a single hop, consistent with the at-most-one-link rule (unlike Gado Gado Dressing, this ingredient is a small seasoning garnish, not most of the recipe's own composition, so a link here reads better than decomposing a condiment down into sub-quarter-teaspoon fragments of a totally different dish). \"Babat Gr. Sauce\" (Ramayani brand, 1oz) has no recipe anywhere in the spreadsheet -- left as a named branded ingredient, same treatment as Tahu Telur Flour Mix; added to Open Questions in derivations/AUDIT.md. `Factory Mix - Babat Goreng` is a near-duplicate of this same dish sheet (not a separate sauce recipe), differing only in a slightly higher Babat Gr. Sauce amount (1.25oz vs 1oz) -- used this sheet's own 1oz figure since it's the primary dish sheet."
