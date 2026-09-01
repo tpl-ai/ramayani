@@ -9782,7 +9782,7 @@
       "id": "cs-sambal-bajak",
       "resep_num": 110,
       "category": "sambal_saus",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/SambalBajak_IMG_2695-hydtbCX65qWKmBPcioRvFhB3clN3Xm.jpg",
       "name_id": "Sambal Bajak",
       "name_en": "Sambal Bajak — Red Hot Pepper Chili Sauce",
       "headnote_id": "Sambal bajak khas Ramayani — tersedia dalam botol untuk dibawa pulang.",
@@ -9791,8 +9791,7 @@
       "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": true,
       "ingredients": [
