@@ -4745,15 +4745,14 @@
       "resep_num": 49,
       "category": "desserts_drinks",
       "photo": "",
-      "name_id": "Bapaw & Kue Ku",
-      "name_en": "",
+      "name_id": "Bapaw",
+      "name_en": "Bapaw (Steamed Filled Buns)",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Dua resep dalam satu halaman. Keduanya berbagi bahan adonan yang sangat mirip. FLAG: Berkas 2, Hal. 11. Tidak ada cara membuat untuk keduanya. Takaran isian tidak lengkap. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Two recipes on one page. Both bapaw and kue ku share very similar dough ingredients. FLAG: File 2, Page 11. Two recipes on one page. No method for either. Filling quantities incomplete. Please confirm with mother.",
+      "notes_id": "Isi tidak dicantumkan untuk Bapaw secara spesifik dalam catatan asli -- hanya isi Kue Ku yang tertulis (lihat resep terpisah). Cara membuat tidak ditulis untuk kedua resep (aslinya satu halaman). FLAG: Berkas 2, Hal. 11. Harap konfirmasi dengan Ibu.",
+      "notes_en": "Filling was not specified anywhere in the original notes for Bapaw specifically -- only Kue Ku's filling was written down (see the separate Kue Ku recipe). No method written for either recipe (originally one shared page). FLAG: File 2, Page 11. Please confirm with Hertha.",
       "content_state": "partial",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo"
@@ -4761,106 +4760,40 @@
       "reviewed": false,
       "ingredients": [
         {
-          "unit": "",
-          "name_id": "── BAPAW ──",
-          "name_en": "── BAPAW (Steamed Filled Buns) ──",
-          "amount": ""
-        },
-        {
+          "amount": "½",
           "unit": "kg",
           "name_id": "Terigu",
-          "name_en": "flour",
-          "amount": "½"
+          "name_en": "flour"
         },
         {
-          "unit": "bt",
+          "amount": "2",
+          "unit": "",
           "name_id": "Telur",
-          "name_en": "eggs",
-          "amount": "2"
+          "name_en": "eggs"
         },
         {
+          "amount": "10",
           "unit": "g",
           "name_id": "Gist (100 cc air hangat + 150 gram terigu)",
-          "name_en": "yeast — dissolved in 100 ml warm water + 150 g flour",
-          "amount": "10"
+          "name_en": "yeast, dissolved in 100 ml warm water + 150 g flour"
         },
         {
+          "amount": "½",
           "unit": "tbsp",
           "name_id": "Mentega",
-          "name_en": "butter",
-          "amount": "½"
+          "name_en": "butter"
         },
         {
+          "amount": "2",
           "unit": "glasses",
           "name_id": "Santen kental",
-          "name_en": "thick coconut milk",
-          "amount": "2"
+          "name_en": "thick coconut milk"
         },
         {
+          "amount": "100",
           "unit": "g",
           "name_id": "Gula pasir",
-          "name_en": "white sugar",
-          "amount": "100"
-        },
-        {
-          "unit": "",
-          "name_id": "── KUE KU ──",
-          "name_en": "── KUE KU (Glutinous Rice Cakes) ──",
-          "amount": ""
-        },
-        {
-          "unit": "kg",
-          "name_id": "Terigu",
-          "name_en": "flour",
-          "amount": "½"
-        },
-        {
-          "unit": "bt",
-          "name_id": "Telur",
-          "name_en": "egg",
-          "amount": "1"
-        },
-        {
-          "unit": "g",
-          "name_id": "Gist (100 cc Air hangat + 150 mm Terigu)",
-          "name_en": "yeast — dissolved in 100 ml warm water + 150 ml flour",
-          "amount": "10"
-        },
-        {
-          "unit": "tbsp",
-          "name_id": "Mentega",
-          "name_en": "butter",
-          "amount": "½"
-        },
-        {
-          "unit": "glasses",
-          "name_id": "Santen kental",
-          "name_en": "thick coconut milk",
-          "amount": "2"
-        },
-        {
-          "unit": "g",
-          "name_id": "Gula putik",
-          "name_en": "white sugar (gula putih)",
-          "amount": "125"
-        },
-        {
-          "unit": "",
-          "name_id": "ISINYA:",
-          "name_en": "FILLING:",
-          "amount": ""
-        },
-        {
-          "unit": "kg",
-          "name_id": "Kentang",
-          "name_en": "potato",
-          "amount": "½"
-        },
-        {
-          "unit": "",
-          "name_id": "Gula, Santan kental, Vanilla, Pandan",
-          "name_en": "sugar, thick coconut milk, vanilla, pandan",
-          "amount": ""
+          "name_en": "white sugar"
         }
       ],
       "method": []
@@ -17631,6 +17564,80 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-186",
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/10 of resep-186's batch -- exact division (the sheet states 10 fish directly, and lemongrass/bay leaves are stated at a clean 2pc/fish ratio, confirming 10 as the right anchor for the whole recipe, not just the fish itself). This spice paste is genuinely much richer than resep-14/125's own version (~674g/fish here vs. ~144g/fish there, roughly 4.7x) and structurally different (tomato and oil blended directly into the paste, vs. layered separately) -- kept as a second, separate Ikan Pepes rather than reconciled with resep-125 (now renamed \"(Original)\"), same treatment as Gule Kambing's two source generations. Dry ground turmeric used instead of the sheet's fresh-turmeric option, for home practicality. Steam time (45min-1hr) is an adaptation, not a sheet fact -- the sheet's own 2-hour pressure-cook time is for the full 10-fish batch cooked together, too long for a single wrapped fish. Charring finish borrowed from resep-14's own Pepes description, not stated on this specific sheet (which instead has an unrelated \"pour chicken curry sauce\" serve step, not used here -- see resep-186's review_notes). Candlenuts/chilies/shallots converted from weight to piece counts using the same reference weights established for resep-125's own conversion -- estimates, not exact. See derivations/ikan_pepes_new.py."
+    },
+    {
+      "id": "resep-188",
+      "resep_num": 188,
+      "category": "desserts_drinks",
+      "photo": "",
+      "name_id": "Kue Ku",
+      "name_en": "Kue Ku / Ang Ku Kueh (Red Turtle Cake)",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "Bahan isi (selain kentang) tidak ada takarannya dalam catatan asli. Cara membuat tidak ditulis untuk kedua resep (aslinya satu halaman bersama Bapaw, resep-49). FLAG: Berkas 2, Hal. 11. Harap konfirmasi dengan Ibu.",
+      "notes_en": "Filling ingredients beyond potato have no stated amounts in the original notes. No method written for either recipe (originally one shared page with Bapaw, resep-49). FLAG: File 2, Page 11. Please confirm with Hertha.",
+      "content_state": "partial",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": false,
+      "ingredients": [
+        {
+          "amount": "½",
+          "unit": "kg",
+          "name_id": "Terigu",
+          "name_en": "flour"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Telur",
+          "name_en": "egg"
+        },
+        {
+          "amount": "10",
+          "unit": "g",
+          "name_id": "Gist (100 cc air hangat + 150 gram terigu)",
+          "name_en": "yeast, dissolved in 100 ml warm water + 150 g flour"
+        },
+        {
+          "amount": "½",
+          "unit": "tbsp",
+          "name_id": "Mentega",
+          "name_en": "butter"
+        },
+        {
+          "amount": "2",
+          "unit": "glasses",
+          "name_id": "Santen kental",
+          "name_en": "thick coconut milk"
+        },
+        {
+          "amount": "125",
+          "unit": "g",
+          "name_id": "Gula putih",
+          "name_en": "white sugar"
+        },
+        {
+          "amount": "½",
+          "unit": "kg",
+          "name_id": "Kentang",
+          "name_en": "potato",
+          "section_id": "Isinya",
+          "section_en": "Filling"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Gula, santen kental, vanilla, pandan",
+          "name_en": "sugar, thick coconut milk, vanilla, pandan",
+          "section_id": "Isinya",
+          "section_en": "Filling"
+        }
+      ],
+      "method": []
     }
   ]
 }
