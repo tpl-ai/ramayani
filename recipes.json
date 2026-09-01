@@ -3394,7 +3394,8 @@
           "unit": "tbsp",
           "name_id": "sambal bajak",
           "name_en": "sambal bajak (shrimp paste sambal)",
-          "amount": "1"
+          "amount": "1",
+          "recipe_ref": "cs-sambal-bajak"
         },
         {
           "unit": "ml",
