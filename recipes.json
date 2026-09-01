@@ -3642,17 +3642,16 @@
       "category": "desserts_drinks",
       "photo": "",
       "name_id": "Bubur Kacang Hijau",
-      "name_en": "",
+      "name_en": "Sweet Mung Bean Porridge",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Metode ditulis dalam bahasa Inggris pada aslinya. Resep muncul dua kali — Hal. 15 & 16 identik; Hal. 16 diberi tanda 'M'. FLAG: Berkas 2, Hal. 15 & 16. Resep identik muncul dua kali.",
-      "notes_en": "Method written in English in the original. Recipe appears twice — Pages 15 & 16 are identical. Page 16 is marked with 'M'. FLAG: File 2, Pages 15 & 16. Identical recipe appears twice.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_photo",
+        "scale"
       ],
       "reviewed": false,
       "ingredients": [
@@ -3718,7 +3717,8 @@
           "step_id": "To serve: 1 bowl of green beans with coconut milk.",
           "step_en": "To serve: 1 bowl of green beans with coconut milk."
         }
-      ]
+      ],
+      "serves": "20"
     },
     {
       "id": "resep-38",
