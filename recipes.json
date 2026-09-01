@@ -2576,18 +2576,17 @@
       "category": "bumbu_dasar",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/belado-tahu-1gVlKtZMHme9Vyds3tbK5YVbIvykHU.jpg",
       "name_id": "Bumbu Belado Ramayani",
-      "name_en": "",
+      "name_en": "Sweet red-bell pepper sauce",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Untuk ikan bumbu belado, telur belado — gunakan juga untuk Nasi Rames. FLAG: Berkas 2, Hal. 20 & 22. Resep muncul dua kali dengan ukuran berbeda; cara membuat hanya ada di Hal. 22.",
-      "notes_en": "For ikan belado (belado fish), telur belado (belado eggs) — also used for Nasi Rames. Method transcribed exactly from Page 22. FLAG: File 2, Pages 20 & 22. Recipe appears twice with different quantities; method only appears on Page 22.",
+      "notes_id": "",
+      "notes_en": "For ikan belado (belado fish), telur belado (belado eggs), and Nasi Rames.",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
