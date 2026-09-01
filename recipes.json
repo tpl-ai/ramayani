@@ -4743,21 +4743,21 @@
     {
       "id": "resep-49",
       "resep_num": 49,
-      "category": "desserts_drinks",
+      "category": "appetizer",
       "photo": "",
       "name_id": "Bapaw",
-      "name_en": "Bapaw (Steamed Filled Buns)",
+      "name_en": "Steamed Buns",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Isi tidak dicantumkan untuk Bapaw secara spesifik dalam catatan asli -- hanya isi Kue Ku yang tertulis (lihat resep terpisah). Cara membuat tidak ditulis untuk kedua resep (aslinya satu halaman). FLAG: Berkas 2, Hal. 11. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Filling was not specified anywhere in the original notes for Bapaw specifically -- only Kue Ku's filling was written down (see the separate Kue Ku recipe). No method written for either recipe (originally one shared page). FLAG: File 2, Page 11. Please confirm with Hertha.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_headnote",
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "amount": "½",
