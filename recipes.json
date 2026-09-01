@@ -3256,34 +3256,89 @@
       "id": "resep-33",
       "resep_num": 33,
       "category": "nasi_mie",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/nasi-uduk-lqFOO83aCzReInbZY0p8APSdGDomJH.jpg",
-      "name_id": "Nasi Uduk",
-      "name_en": "Nasi Uduk",
+      "photo": "",
+      "name_id": "Nasi Uduk - Restaurant Batch",
+      "name_en": "Nasi Uduk - Restaurant Batch",
       "headnote_id": "",
-      "headnote_en": "",
-      "notes_id": "CARA MEMBUAT: Tidak ditulis dalam catatan asli untuk Nasi Kuning maupun Nasi Uduk. Catatan Ibu: 'Nasi Uduk: sama dengan Nasi Kuning, hanya tidak diberi kunyit.' FLAG: Berkas 6, Hal. 10 & 11. Tidak ada cara membuat. Laos dan sereh tidak ada takaran. Verifikasi: halaman ini memang hanya berisi daftar bahan tanpa cara membuat — dikonfirmasi sesuai flag indeks.",
-      "notes_en": "METHOD: Not written in the original notes for either Nasi Kuning or Nasi Uduk. Mother's note: 'Nasi Uduk: same as Nasi Kuning but without turmeric.' FLAG: File 6, Pages 10 & 11. No method written. Quantities for galangal and lemongrass not specified. Verified: this page genuinely contains ingredients only, no method — confirms the index flag.",
-      "content_state": "partial",
+      "headnote_en": "Ramayani's coconut rice, cooked with lemongrass and a savory seasoning mix.",
+      "notes_id": "",
+      "notes_en": "",
+      "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves"
+        "no_serves",
+        "no_photo",
+        "scale"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "",
-          "name_id": "── NASI UDUK ──",
-          "name_en": "── WHITE COCONUT RICE ──",
-          "amount": ""
+          "amount": "10",
+          "unit": "cups",
+          "name_id": "Beras jasmine",
+          "name_en": "jasmine rice"
         },
         {
-          "unit": "",
-          "name_id": "Sama dengan Nasi Kuning, hanya tidak diberi kunyit.",
-          "name_en": "Same as Nasi Kuning (16 cups coconut milk / santan, 10 cups rice / beras, 3 tsp salt / garam, Indonesian bay leaves / salam, galangal / laos, lemongrass / sereh), but without turmeric.",
-          "amount": ""
+          "amount": "5",
+          "unit": "can",
+          "name_id": "Santan (kaleng kecil)",
+          "name_en": "coconut milk (small cans)"
+        },
+        {
+          "amount": "9⅔",
+          "unit": "cups",
+          "name_id": "Air (secukupnya, hingga total 1 galon dengan santan)",
+          "name_en": "water (enough, combined with the coconut milk, to total 1 gallon)"
+        },
+        {
+          "amount": "2",
+          "unit": "pc",
+          "name_id": "Sereh",
+          "name_en": "lemongrass"
+        },
+        {
+          "amount": "3.75",
+          "unit": "oz",
+          "name_id": "Nasi Uduk Mix (1 bungkus)",
+          "name_en": "Nasi Uduk Mix (1 package)",
+          "recipe_ref": "resep-183"
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash the rice."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil the water and coconut milk with the lemongrass and Nasi Uduk Mix."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the rice and stir until it absorbs all the water, about 10 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Turn off the heat and let the rice sit to absorb the remaining liquid, at least 15 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Steam the rice, or refrigerate for later use."
+        },
+        {
+          "step_id": "",
+          "step_en": "If steaming from cold: put the rice in a steamer for 20 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Transfer to small bowls and refrigerate; shelf life is about 4 days."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 10,
+      "yield_unit": "cups (uncooked rice)",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Rebuilt 2026-09-02 from `!Coconut Rice` + `Factory Mix - Nasi Uduk Mix`, replacing the prior sparse entry (which had no real ingredient list or method, just a note pointing at Nasi Kuning's own recipe: \"same, but without turmeric\" -- 16 cups coconut milk, 10 cups rice, 3 tsp salt). Real numbers differ substantially from that note's figures (this batch: ~5 small cans coconut milk vs. the note's 16 cups, ~1.75oz/~2.9Tbsp salt vs. 3 tsp) -- not reconciled, since the old note was never itself a verified source (just Hertha's own cross-reference shorthand, and Nasi Kuning hasn't been independently checked either). Water amount derives from the sheet's own description (\"Water: 1 gal less 5 small cans\") using the established 300ml/small-can figure. Renamed with the \"- Restaurant Batch\" suffix now that a home twin exists (resep-184) -- moved the existing photo there too, so it isn't orphaned behind this now-hidden page.",
+      "linked_recipe_id": "resep-184"
     },
     {
       "id": "resep-34",
@@ -9711,13 +9766,56 @@
       "headnote_en": "Fresh lime in carbonated mineral water with vanilla syrup — the signature Ramayani refresher.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
-      "flags": [
-        "no_serves"
+      "content_state": "full",
+      "flags": [],
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Jeruk nipis, peras (sekitar 1½ oz)",
+          "name_en": "lime, juiced (about 1½ oz)"
+        },
+        {
+          "amount": "2½",
+          "unit": "oz",
+          "name_id": "Sirup Vanila Pandan",
+          "name_en": "Vanilla-Pandan Syrup",
+          "recipe_ref": "resep-165"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Air soda (seperti Perrier), untuk melengkapi gelas",
+          "name_en": "sparkling water (such as Perrier), to fill the glass"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Es batu",
+          "name_en": "ice"
+        }
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Hand-squeeze the lime juice into a glass."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the Vanilla-Pandan Syrup."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with sparkling water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add ice."
+        }
+      ],
+      "serves": "1",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `>Dessert - Fresh Lime Soda`. Already order-sized on the sheet (\"hand squeeze 1 lime\" is literally step 1), used directly. References resep-165 (Vanilla-Pandan Syrup, home, 4oz total) via recipe_ref for its 2.5oz addition -- a single hop; judged fine under the at-most-one-link rule since the syrup is one of several components in a genuinely different drink (~20% of the glass by volume), not most of this recipe's own composition, same reasoning as Babat Goreng referencing Sambal Bajak. Perrier left as \"to fill the glass\" rather than converting the sheet's \"0.75 bottle\" to a precise oz figure -- bottle size isn't confirmed, and a home cook doesn't need a precise sparkling-water amount anyway."
     },
     {
       "id": "cs-boba-tea",
@@ -17005,6 +17103,143 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-181",
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/31 of resep-181's batch -- the sheet states 31 orders directly, so this is exact division, not an estimate. Celery/green onion/tomato converted from weight to practical piece counts (2 ribs celery, 1 stalk green onion, 1/3 large tomato) -- reasonable produce-piece estimates, not sheet facts. Carrots and chicken broth topping left as no-amount lines, matching resep-181's own gaps. See derivations/six_more_dishes.py."
+    },
+    {
+      "id": "resep-183",
+      "resep_num": 183,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Nasi Uduk Mix - Restaurant Batch",
+      "name_en": "Nasi Uduk Mix - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's seasoning mix for Nasi Uduk, sized for 10 cups of rice.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Kaldu ayam bubuk",
+          "name_en": "chicken bouillon"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Kencur bubuk",
+          "name_en": "kencur (zedoary root) powder"
+        },
+        {
+          "amount": "1.75",
+          "unit": "oz",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine all ingredients."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 3.75,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Factory Mix - Nasi Uduk Mix`, explicitly labeled \"for 10 cups of rice\" -- matching `!Coconut Rice`'s own 10-cup batch exactly, so no separate \"how big is 1 package\" assumption was needed."
+    },
+    {
+      "id": "resep-184",
+      "resep_num": 184,
+      "category": "nasi_mie",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/nasi-uduk-lqFOO83aCzReInbZY0p8APSdGDomJH.jpg",
+      "name_id": "Nasi Uduk",
+      "name_en": "Nasi Uduk (Indonesian Coconut Rice)",
+      "headnote_id": "",
+      "headnote_en": "Fragrant coconut rice, cooked with lemongrass -- Ramayani's savory counterpart to Nasi Kuning.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Beras jasmine",
+          "name_en": "jasmine rice"
+        },
+        {
+          "amount": "1",
+          "unit": "can",
+          "name_id": "Santan (kaleng kecil)",
+          "name_en": "coconut milk (1 small can)"
+        },
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Sereh, memarkan",
+          "name_en": "small piece lemongrass, bruised"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Kaldu ayam bubuk",
+          "name_en": "chicken bouillon"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Kencur bubuk",
+          "name_en": "kencur (zedoary root) powder"
+        },
+        {
+          "amount": "2⅛",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash the rice."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil the water and coconut milk with the lemongrass, chicken bouillon, kencur, and salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the rice and stir until it absorbs all the liquid, about 10 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Turn off the heat and let the rice sit for at least 15 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Steam the rice for 20 minutes."
+        }
+      ],
+      "serves": "4-6",
+      "content_state": "full",
+      "flags": [
+        "no_headnote"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-33",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/5 of resep-33's batch (a clean divisor landing at 2 cups rice, a practical home quantity) -- the batch has a real stated scale (10 cups rice) to divide against, not an estimate. Coconut milk lands on exactly 1 whole small can at this fraction, a nice round number. Nasi Uduk Mix (resep-183) decomposed directly into its 3 ingredients rather than recipe_ref'd, matching how other single-use factory mixes (Bumbu Betawi, Rempeyek Flour) were handled for their home twins. Lemongrass floor-bumped from 0.4pc to 1 small piece. Photo moved here from resep-33 (now hidden as a restaurant-batch page)."
     }
   ]
 }
