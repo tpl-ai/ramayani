@@ -8685,7 +8685,7 @@
           "recipe_ref": "resep-133"
         },
         {
-          "amount": "⅖",
+          "amount": "⅘",
           "unit": "cup",
           "name_id": "Santan",
           "name_en": "coconut milk"
@@ -8732,7 +8732,7 @@
       "serves": "4-5",
       "recipe_type": "home",
       "linked_recipe_id": "resep-134",
-      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly, split across two sheets: \"Rendang\" (the dish, resep-134) and \"Factory Cook - Rendang Paste\" (resep-132/resep-133). resep-134's beef batch is 67 1/7 lbs -- chose K=30 (close to the exact 30.46 implied by 2.2 lbs / 67.14 lbs) as a clean divisor landing near 1 kg beef, matching the recent 1kg-protein convention (Daging Bumbu Bali, Babi Hong). Coconut milk (98 fl oz/30 = ~3.27 fl oz, rounded to 2/5 cup) and water (0.5 gal/30 = ~2.13 fl oz, rounded to 1/4 cup) divided by the same K -- these are genuinely small amounts, but that matches rendang's own style (a long reduction down to a nearly dry, thickly spiced coating, using proportionally less liquid than a wetter curry), not an error. Rendang paste (resep-132's \"1 bag\") is assumed to be sized to exactly this beef batch (see resep-132 review_notes for that assumption) -- resep-133 is that paste at the same K=30, referenced here via recipe_ref. Serves estimated at 4-5 for 1kg raw beef (roughly 24oz cooked after shrinkage, portioned at the source sheet's own ~5oz/serving) -- a guess, not a scan fact. Method combines resep-134's \"Create Pre-prepared\" and \"Serve\" steps into one sequence appropriate for a single home batch (skipping the restaurant's container-portioning-for-later-reheating step, since a home cook would serve directly) -- an adaptation, not literal sheet text."
+      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly, split across two sheets: \"Rendang\" (the dish, resep-134) and \"Factory Cook - Rendang Paste\" (resep-132/resep-133). resep-134's beef batch is 67 1/7 lbs -- chose K=30 (close to the exact 30.46 implied by 2.2 lbs / 67.14 lbs) as a clean divisor landing near 1 kg beef, matching the recent 1kg-protein convention (Daging Bumbu Bali, Babi Hong). Water (0.5 gal/30 = ~2.13 fl oz, rounded to 1/4 cup) divided by the same K -- this is a genuinely small amount, but that matches rendang's own style (a long reduction down to a nearly dry, thickly spiced coating, using proportionally less liquid than a wetter curry), not an error. Rendang paste (resep-132's \"1 bag\") is assumed to be sized to exactly this beef batch (see resep-132 review_notes for that assumption -- an open question, not a confirmed fact, see derivations/AUDIT.md) -- resep-133 is that paste at the same K=30, referenced here via recipe_ref. Serves estimated at 4-5 for 1kg raw beef (roughly 24oz cooked after shrinkage, portioned at the source sheet's own ~5oz/serving) -- a guess, not a scan fact. Method combines resep-134's \"Create Pre-prepared\" and \"Serve\" steps into one sequence appropriate for a single home batch (skipping the restaurant's container-portioning-for-later-reheating step, since a home cook would serve directly) -- an adaptation, not literal sheet text.\n\nCORRECTED 2026-09-01: coconut milk was 2/5 cup (98 fl oz / 30), derived from resep-134's undercounted coconut milk figure -- see resep-134's review_notes for the fix (98 -> 196 fl oz, a BOX x QTY/BOX undercounting bug matching the one already found on resep-2/SGTB). Since the batch total exactly doubled, this recipe's coconut milk exactly doubles too: 4/5 cup (196/30 = 6.53 fl oz, rounds cleanly to 4/5 cup = 6.4 fl oz)."
     },
     {
       "id": "cs-tahu-telor",
@@ -12106,7 +12106,7 @@
         "scale"
       ],
       "reviewed": true,
-      "review_notes": "Added 2026-08-28 from an Excel \"Rendang\" prep sheet Arman found and pasted directly (not a handwritten scan). Coconut milk read as \"98 fl oz total using 2 (large, Chaokoh-brand) cans\" -- the sheet's BOX=2 column and its own \"(2 cans)\" parenthetical describe the same 2 cans, not a further multiplication of the 98 fl oz figure. Beef amount (67 1/7 lbs) kept exactly as given -- an oddly precise number, likely itself derived from a supplier case-pack calculation upstream of this sheet, not altered here. Split 2026-08-28 into cs-rendang, a home-scale version for 1 kg of beef -- see cs-rendang review_notes for the K=30 scaling and the \"1 bag = this batch's exact paste need\" assumption used for resep-132/resep-133.",
+      "review_notes": "Added 2026-08-28 from an Excel \"Rendang\" prep sheet Arman found and pasted directly (not a handwritten scan). Beef amount (67 1/7 lbs) kept exactly as given -- an oddly precise number, likely itself derived from a supplier case-pack calculation upstream of this sheet, not altered here. Split 2026-08-28 into cs-rendang, a home-scale version for 1 kg of beef -- see cs-rendang review_notes for the K=30 scaling and the \"1 bag = this batch's exact paste need\" assumption used for resep-132/resep-133 (open question, see derivations/AUDIT.md).\n\nCORRECTED 2026-09-01: coconut milk was 98 fl oz, undercounted by exactly half -- the sheet's row is \"2 | 98 | fl oz | (2 cans) Coconut Milk\", and the BOX=2 column is a real multiplier (confirmed via resep-2's identical pattern, cross-checked against its original scan and the #10-can=98oz fact) rather than a redundant restatement of the \"(2 cans)\" parenthetical, which is how this was originally (incorrectly) read. Corrected to 196 fl oz. Propagated to cs-rendang's own coconut milk amount -- see its review_notes.",
       "ingredients": [
         {
           "amount": "67 1/7",
@@ -12122,7 +12122,7 @@
           "recipe_ref": "resep-132"
         },
         {
-          "amount": "98",
+          "amount": "196",
           "unit": "fl oz",
           "name_id": "Santan (2 kaleng, Chaokoh)",
           "name_en": "Coconut milk (2 cans, Chaokoh)"
