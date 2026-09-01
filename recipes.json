@@ -1940,20 +1940,21 @@
       "resep_num": 18,
       "category": "seafood",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ikan-bakar-kJY0Dlne24DLVev8D9OUjkOZkqtcHU.jpg",
-      "name_id": "Ikan Bakar",
-      "name_en": "Grilled Fish, Sweet Soy",
-      "headnote_id": "Ikan nila air tawar yang dilumuri pasta rempah lalu dipanggang — salah satu hidangan paling populer di Ramayani. Bumbu cabe merah, terasi, dan kacang tanah memberikan cita rasa yang dalam dan berasap.",
-      "headnote_en": "Freshwater Nila fish rubbed with a fragrant spice paste and fire-grilled — one of Ramayani's most beloved dishes. The paste of red chilli, shrimp paste, and peanuts creates a deep, smoky flavour.",
-      "notes_id": "Beberapa bahan tidak ada takarannya — sesuaikan dengan selera. Harap konfirmasi takaran dengan Ibu.",
-      "notes_en": "Several ingredients without specific quantities — adjust to taste. Confirm proportions with Hertha.",
+      "name_id": "Ikan Bumbu Cobek",
+      "name_en": "Sundanese Steamed Fish",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "",
+      "notes_en": "",
       "serves": "",
       "date": "",
       "featured_order": 2,
       "content_state": "full",
       "flags": [
+        "no_headnote",
         "no_serves"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
@@ -2019,23 +2020,27 @@
       "method": [
         {
           "step_id": "Marinasi ikan dengan cuka dan garam sebelum dipanggang.",
-          "step_en": "Marinate the fish with vinegar and salt before grilling."
+          "step_en": "Marinate the fish with vinegar and salt before grilling.",
+          "section_id": "",
+          "section_en": "Fish Preparation"
+        },
+        {
+          "step_id": "",
+          "step_en": "Pan-fry until half crispy"
+        },
+        {
+          "step_id": "",
+          "step_en": "Finish by grilling / charring over heat"
         },
         {
           "step_id": "Haluskan semua bumbu: cabe merah, bawang merah, bawang putih, jahe, terasi, kacang tanah, kencur, garam, gula, kecap ikan.",
-          "step_en": "Grind all spices together: red chilli, shallots, garlic, ginger, shrimp paste, peanuts, lesser galangal, salt, sugar, fish sauce."
+          "step_en": "Grind all spices together: red chilli, shallots, garlic, ginger, shrimp paste, peanuts, lesser galangal, salt, sugar, fish sauce.",
+          "section_id": "",
+          "section_en": "Spice Preparation"
         },
         {
           "step_id": "Tumis bumbu halus hingga hangat lalu masukkan ikan.",
           "step_en": "Stir fry the spice paste until just warm then add the fish."
-        },
-        {
-          "step_id": "Satukan dengan bahan-bahan dan kukus hingga matang ± 15–20 menit.",
-          "step_en": "Combine with the other ingredients and steam until the fish is cooked, approximately 15–20 minutes."
-        },
-        {
-          "step_id": "Bisa juga dimasak dengan microwave selama 3 menit.",
-          "step_en": "Can also be microwaved for 3 minutes."
         }
       ]
     },
