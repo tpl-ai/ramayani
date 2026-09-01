@@ -17570,19 +17570,19 @@
       "resep_num": 188,
       "category": "desserts_drinks",
       "photo": "",
-      "name_id": "Kue Ku",
-      "name_en": "Kue Ku / Ang Ku Kueh (Red Turtle Cake)",
+      "name_id": "Kue Ku / Ang Ku Kueh",
+      "name_en": "Red Turtle Cake",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Bahan isi (selain kentang) tidak ada takarannya dalam catatan asli. Cara membuat tidak ditulis untuk kedua resep (aslinya satu halaman bersama Bapaw, resep-49). FLAG: Berkas 2, Hal. 11. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Filling ingredients beyond potato have no stated amounts in the original notes. No method written for either recipe (originally one shared page with Bapaw, resep-49). FLAG: File 2, Page 11. Please confirm with Hertha.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_headnote",
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "amount": "½",
@@ -17621,20 +17621,18 @@
           "name_en": "white sugar"
         },
         {
-          "amount": "½",
-          "unit": "kg",
-          "name_id": "Kentang",
-          "name_en": "potato",
-          "section_id": "Isinya",
-          "section_en": "Filling"
-        },
-        {
           "amount": "",
           "unit": "",
           "name_id": "Gula, santen kental, vanilla, pandan",
           "name_en": "sugar, thick coconut milk, vanilla, pandan",
           "section_id": "Isinya",
           "section_en": "Filling"
+        },
+        {
+          "amount": "½",
+          "unit": "kg",
+          "name_id": "Kentang",
+          "name_en": "potato"
         }
       ],
       "method": []
