@@ -1939,7 +1939,7 @@
       "id": "resep-18",
       "resep_num": 18,
       "category": "seafood",
-      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ikan-bakar-kJY0Dlne24DLVev8D9OUjkOZkqtcHU.jpg",
+      "photo": "",
       "name_id": "Ikan Bumbu Cobek",
       "name_en": "Sundanese Steamed Fish",
       "headnote_id": "",
@@ -1952,7 +1952,8 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves"
+        "no_serves",
+        "no_photo"
       ],
       "reviewed": true,
       "ingredients": [
