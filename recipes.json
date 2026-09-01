@@ -9891,17 +9891,16 @@
       "id": "cs-sambal-terasi",
       "resep_num": 111,
       "category": "sambal_saus",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/SambalTerasi_IMG_2676-hJZtjjMGIxTX6IbQdsSY0MbkyUXUAU.jpg",
       "name_id": "Sambal Terasi",
-      "name_en": "Sambal Terasi",
+      "name_en": "Shrimp Paste Chili Sauce",
       "headnote_id": "Sambal terasi buatan sendiri khas Ramayani — aroma yang kuat dan rasa yang tak terlupakan.",
       "headnote_en": "Ramayani's homemade shrimp-paste chili sauce — bold, pungent, and utterly addictive.",
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
       "flags": [
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": true,
       "ingredients": [
