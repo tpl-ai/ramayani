@@ -9252,13 +9252,87 @@
       "headnote_en": "Crispy peanut fritter chips spiced with garlic and coriander",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
+      "content_state": "full",
       "flags": [
         "no_serves"
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Kencur bubuk",
+          "name_en": "kencur (zedoary root) powder"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Ketumbar",
+          "name_en": "coriander"
+        },
+        {
+          "amount": "⅝",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "4¼",
+          "unit": "Tbsp",
+          "name_id": "Tepung beras",
+          "name_en": "rice flour"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Santan kental",
+          "name_en": "coconut cream"
+        },
+        {
+          "amount": "7½",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Kacang tanah mentah, belah dua",
+          "name_en": "raw peanuts, halved"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Minyak sayur, untuk menggoreng",
+          "name_en": "vegetable oil, for frying"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix the kencur, coriander, salt, rice flour, coconut cream, water, and peanuts."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put about 1 inch of oil in a nonstick pan and heat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Scoop the batter into the oil in thin rounds; fry until they solidify but aren't fully cooked."
+        },
+        {
+          "step_id": "",
+          "step_en": "Let the fritters drip dry."
+        },
+        {
+          "step_id": "",
+          "step_en": "Deep fry the fritters until the peanuts turn golden brown."
+        }
+      ],
+      "yield_amount": 8,
+      "yield_unit": "oz",
+      "linked_recipe_id": "resep-180",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, exact division (1/15) -- both source sheets share a \"15 orders, 8oz each\" header, so this is precise, not an estimate. Rempeyek Flour (resep-179) decomposed directly into its 4 ingredients rather than recipe_ref'd (matching resep-163/Sop Kambing's treatment of Bumbu Betawi -- single-use component, decompose into the home recipe). Peanuts (1/4 cup, halved) is an estimate -- the sheet never states an amount, see resep-180's own review_notes. See derivations/six_more_dishes.py."
     },
     {
       "id": "cs-sambal-goreng-tempe",
@@ -9715,14 +9789,104 @@
       "headnote_en": "Ramayani's signature red hot pepper chili sauce — so popular it was sold by the bottle to take home.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
+      "content_state": "full",
       "flags": [
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "3½",
+          "unit": "tsp",
+          "name_id": "Cabe kering, rendam air dan blender",
+          "name_en": "dry chili, soaked in water and blended"
+        },
+        {
+          "amount": "2¾",
+          "unit": "Tbsp",
+          "name_id": "Bawang bombay besar, cincang",
+          "name_en": "large white onion, minced"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, minced"
+        },
+        {
+          "amount": "3½",
+          "unit": "tsp",
+          "name_id": "Gula merah",
+          "name_en": "brown sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Asam sitrat, sejumput",
+          "name_en": "citric acid, a pinch"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Terasi",
+          "name_en": "terasi (shrimp paste)"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Heat the oil in a small pan."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the terasi."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the onion."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the garlic."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the blended dry chili."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining ingredients and simmer briefly until combined."
+        }
+      ],
+      "yield_amount": 4,
+      "yield_unit": "oz",
+      "linked_recipe_id": "resep-177",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to the standing 4oz/1/2-cup floor -- resep-177's batch has no order count to divide against (a wholesale condiment, sold by the bottle). Fraction ~1/129 of the full batch, rounded to clean kitchen fractions. Terasi floor-bumped to 1/8 tsp (true value ~0.006 tsp, unmeasurably small, but terasi is flavor-critical here). See derivations/six_more_dishes.py."
     },
     {
       "id": "cs-sambal-terasi",
@@ -9735,14 +9899,88 @@
       "headnote_en": "Ramayani's homemade shrimp-paste chili sauce — bold, pungent, and utterly addictive.",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "no_content",
+      "content_state": "full",
       "flags": [
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
-      "ingredients": [],
-      "method": []
+      "reviewed": true,
+      "ingredients": [
+        {
+          "amount": "1⅜",
+          "unit": "Tbsp",
+          "name_id": "Terasi, iris dan panggang",
+          "name_en": "terasi, sliced and baked"
+        },
+        {
+          "amount": "5-6",
+          "unit": "",
+          "name_id": "Cabe serrano, buang tangkai",
+          "name_en": "serrano chilies, stemmed"
+        },
+        {
+          "amount": "1⅛",
+          "unit": "Tbsp",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "⅞",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "1⅓",
+          "unit": "Tbsp",
+          "name_id": "Air jeruk lemon",
+          "name_en": "lemon juice"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Asam sitrat, sejumput",
+          "name_en": "citric acid, a pinch"
+        },
+        {
+          "amount": "⅓",
+          "unit": "tsp",
+          "name_id": "Cabe kering, blender",
+          "name_en": "dry chili, blended"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix the lemon juice, vinegar, sugar, and salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Slice the terasi and bake at 375°F for 30 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Blend the terasi with the lemon juice mixture."
+        },
+        {
+          "step_id": "",
+          "step_en": "Blend the serrano and dry chili separately, then stir in."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the citric acid."
+        }
+      ],
+      "yield_amount": 4,
+      "yield_unit": "oz",
+      "linked_recipe_id": "resep-178",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to the standing 4oz/1/2-cup floor -- resep-178's batch has no order count to divide against. Fraction ~1/142 of the full batch. Serrano chili converted from weight (1.69oz) to a piece count (5-6 chilies) using an assumed ~8g/pepper -- an estimate, not a sheet fact. Lemon juice depends on resep-178's assumed 32oz/bottle figure. See derivations/six_more_dishes.py."
     },
     {
       "id": "cs-ayam-satay",
@@ -15941,6 +16179,838 @@
       ],
       "reviewed": true,
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `.Gado Gado`. Already order-sized on the sheet, used directly -- no scale-down math needed, same pattern as Nasi Goreng/Bihun Goreng."
+    },
+    {
+      "id": "resep-175",
+      "resep_num": 175,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Babat Goreng",
+      "name_en": "Babat Goreng (Stir-Fried Beef Tripe)",
+      "headnote_id": "",
+      "headnote_en": "Beef tripe stir-fried with onion, garlic, and chili, finished with Sambal Bajak.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1½",
+          "unit": "cups",
+          "name_id": "Babat rebus, potong",
+          "name_en": "boiled beef tripe, cut"
+        },
+        {
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Mentega",
+          "name_en": "butter"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Bawang bombay, iris",
+          "name_en": "onion, sliced"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, minced"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cabe merah dan hijau, potong, secukupnya",
+          "name_en": "red and green chili, cut, to taste"
+        },
+        {
+          "amount": "1",
+          "unit": "oz",
+          "name_id": "Babat Gr. Sauce (merek Ramayani)",
+          "name_en": "Babat Gr. Sauce (Ramayani brand)"
+        },
+        {
+          "amount": "¾",
+          "unit": "oz",
+          "name_id": "Kecap ikan",
+          "name_en": "fish sauce"
+        },
+        {
+          "amount": "½",
+          "unit": "oz",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Merica putih, secukupnya",
+          "name_en": "white pepper, to taste"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Sambal Bajak",
+          "name_en": "Sambal Bajak",
+          "recipe_ref": "cs-sambal-bajak"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Fry the beef tripe briefly in vegetable oil to remove excess water, about 1 minute."
+        },
+        {
+          "step_id": "",
+          "step_en": "Heat the butter in a wok."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry the onion."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the garlic and chili."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the beef tripe."
+        },
+        {
+          "step_id": "",
+          "step_en": "Season with the Babat Gr. Sauce, fish sauce, sweet soy sauce, MSG, white pepper, and Sambal Bajak (if you want it hot)."
+        }
+      ],
+      "serves": "1",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `.Babat Goreng`. Already order-sized on the sheet, used directly -- no scale-down math needed. References cs-sambal-bajak (Sambal Bajak, home) via recipe_ref for its 1 tsp addition -- a single hop, consistent with the at-most-one-link rule (unlike Gado Gado Dressing, this ingredient is a small seasoning garnish, not most of the recipe's own composition, so a link here reads better than decomposing a condiment down into sub-quarter-teaspoon fragments of a totally different dish). \"Babat Gr. Sauce\" (Ramayani brand, 1oz) has no recipe anywhere in the spreadsheet -- left as a named branded ingredient, same treatment as Tahu Telur Flour Mix; added to Open Questions in derivations/AUDIT.md. `Factory Mix - Babat Goreng` is a near-duplicate of this same dish sheet (not a separate sauce recipe), differing only in a slightly higher Babat Gr. Sauce amount (1.25oz vs 1oz) -- used this sheet's own 1oz figure since it's the primary dish sheet."
+    },
+    {
+      "id": "resep-176",
+      "resep_num": 176,
+      "category": "sayuran_salad",
+      "photo": "",
+      "name_id": "Cah Kangkung & Toge",
+      "name_en": "Stir-Fried Water Spinach & Bean Sprouts",
+      "headnote_id": "",
+      "headnote_en": "Water spinach and bean sprouts stir-fried with chicken or pork and garlic.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1½",
+          "unit": "oz",
+          "name_id": "Lemak ayam",
+          "name_en": "chicken fat"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, minced"
+        },
+        {
+          "amount": "¾",
+          "unit": "cup",
+          "name_id": "Ayam atau babi masak",
+          "name_en": "cooked chicken or pork"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Kecap ikan",
+          "name_en": "fish sauce"
+        },
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Tauge",
+          "name_en": "bean sprouts"
+        },
+        {
+          "amount": "1",
+          "unit": "bunch",
+          "name_id": "Kangkung, batang dan daun dipisah",
+          "name_en": "water spinach (kangkung), stems and leaves separated"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cabai, secukupnya (opsional)",
+          "name_en": "chili, to taste (optional)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Fry the chicken or pork in the chicken fat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the garlic."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add chili if you want it spicy."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the kangkung stems and stir-fry for about 30 seconds."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the kangkung leaves."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the bean sprouts."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the MSG and fish sauce."
+        }
+      ],
+      "serves": "1",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `.Cah Kangkung & Toge`. Already order-sized on the sheet, used directly -- no scale-down math needed. Kangkung (water spinach) has no stated amount anywhere on the sheet (bean sprouts are quantified at 2 cups, kangkung is not) -- left as \"1 bunch\" rather than inventing a precise measure. Method's own step order (bean sprouts before kangkung leaves, per the sheet's numbered steps) was kept even though the ingredient list lists kangkung leaves before bean sprouts, since the method is the more reliable source for sequence."
+    },
+    {
+      "id": "resep-177",
+      "resep_num": 177,
+      "category": "sambal_saus",
+      "photo": "",
+      "name_id": "Sambal Bajak - Restaurant Batch",
+      "name_en": "Sambal Bajak - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's red hot pepper chili sauce, sold by the bottle to take home.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "5",
+          "unit": "lbs",
+          "name_id": "Cabe kering, rendam air dan blender",
+          "name_en": "dry chili, soaked in water and blended"
+        },
+        {
+          "amount": "12",
+          "unit": "lbs",
+          "name_id": "Bawang bombay besar, cincang",
+          "name_en": "large white onion, minced"
+        },
+        {
+          "amount": "2",
+          "unit": "lbs",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, minced"
+        },
+        {
+          "amount": "5",
+          "unit": "boxes",
+          "name_id": "Gula merah",
+          "name_en": "brown sugar"
+        },
+        {
+          "amount": "1.5",
+          "unit": "lbs",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Asam sitrat",
+          "name_en": "citric acid"
+        },
+        {
+          "amount": "1.5",
+          "unit": "lbs",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "pkg",
+          "name_id": "Terasi",
+          "name_en": "terasi (shrimp paste)"
+        },
+        {
+          "amount": "0.5",
+          "unit": "gal",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Heat the oil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add sliced terasi."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the onions."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the garlic."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the blended dry chili."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining ingredients."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 516,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Factory Cook - Sambal Bajak`. No order count or serving anchor stated anywhere -- this is a wholesale condiment batch (matches cs-sambal-bajak's own headnote: \"sold by the bottle to take home\"). yield_amount (516oz) sums all ingredients on a common oz basis (weight for solids, volume for liquids, ~1g/mL assumption) -- approximate, not precise. See derivations/six_more_dishes.py. Home twin (cs-sambal-bajak) sized to the standing 4oz/1/2-cup floor, same as every other no-order-anchor condiment this session.",
+      "linked_recipe_id": "cs-sambal-bajak"
+    },
+    {
+      "id": "resep-178",
+      "resep_num": 178,
+      "category": "sambal_saus",
+      "photo": "",
+      "name_id": "Sambal Terasi - Restaurant Batch",
+      "name_en": "Sambal Terasi - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's homemade shrimp-paste chili sauce.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "100",
+          "unit": "oz",
+          "name_id": "Terasi, iris dan panggang (5 bungkus)",
+          "name_en": "terasi, sliced and baked (5 packages)"
+        },
+        {
+          "amount": "15",
+          "unit": "lbs",
+          "name_id": "Cabe serrano, buang tangkai",
+          "name_en": "serrano chilies, stemmed"
+        },
+        {
+          "amount": "5",
+          "unit": "lbs",
+          "name_id": "Gula pasir kasar",
+          "name_en": "cane sugar"
+        },
+        {
+          "amount": "1.25",
+          "unit": "lbs",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "3",
+          "unit": "bottles",
+          "name_id": "Air jeruk lemon",
+          "name_en": "lemon juice"
+        },
+        {
+          "amount": "3",
+          "unit": "cups",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Asam sitrat",
+          "name_en": "citric acid"
+        },
+        {
+          "amount": "0.5",
+          "unit": "lbs",
+          "name_id": "Cabe kering",
+          "name_en": "dry chili"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "De-stem the serrano chilies."
+        },
+        {
+          "step_id": "",
+          "step_en": "Mix the lemon juice, vinegar, sugar, and salt."
+        },
+        {
+          "step_id": "",
+          "step_en": "Slice the terasi (10 slices per package)."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bake the terasi at 375°F for 30 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Blend the terasi with the lemon juice and vinegar mixture."
+        },
+        {
+          "step_id": "",
+          "step_en": "Blend the dry chili separately."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the dry chili and citric acid to the blended terasi."
+        },
+        {
+          "step_id": "",
+          "step_en": "If bottling, let the mixture sit overnight."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 568,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Factory Cook - Sambal Terasi`. No order count stated -- a wholesale condiment batch, same pattern as Sambal Bajak. Terasi amount (100oz = 5 x 20oz packages) is a much bigger package size than the ~4g sachet figure in [[raspberry-package-sizes]] -- that's for a different, smaller retail product; this is clearly a bulk commercial block, not a contradiction. Lemon juice bottle size assumed at 32oz/bottle (a common foodservice size) -- flagged, not a confirmed fact, propagates into the home version. yield_amount (568oz) sums all ingredients on a common oz basis, approximate. See derivations/six_more_dishes.py.",
+      "linked_recipe_id": "cs-sambal-terasi"
+    },
+    {
+      "id": "resep-179",
+      "resep_num": 179,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Tepung Rempeyek - Restaurant Batch",
+      "name_en": "Rempeyek Flour - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's seasoned rice-flour mix for Rempeyek.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "0.125",
+          "unit": "cup",
+          "name_id": "Kencur bubuk",
+          "name_en": "kencur (zedoary root) powder"
+        },
+        {
+          "amount": "0.25",
+          "unit": "cup",
+          "name_id": "Ketumbar",
+          "name_en": "coriander"
+        },
+        {
+          "amount": "3",
+          "unit": "Tbsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "32",
+          "unit": "oz",
+          "name_id": "Tepung beras (2 bungkus)",
+          "name_en": "rice flour (2 bags)"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine all ingredients."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 38,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Xtra - Rempeyek Flour`. No method beyond the ingredient list -- \"combine all ingredients\" is the only reasonable reading for a dry mix. This sheet and `Xtra - Rempeyek` share the identical \"15 orders, $5.95, 8oz each\" header, confirming this whole batch = the 38oz \"Rempeyek Flour\" line on the main dish sheet -- used to compute resep-180's per-order fraction (÷15) directly, no separate \"how big is this batch\" assumption needed."
+    },
+    {
+      "id": "resep-180",
+      "resep_num": 180,
+      "category": "appetizer",
+      "photo": "",
+      "name_id": "Rempeyek - Restaurant Batch",
+      "name_en": "Rempeyek - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's crispy peanut fritters, made with a coconut-cream batter.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "38",
+          "unit": "oz",
+          "name_id": "Tepung Rempeyek",
+          "name_en": "Rempeyek Flour",
+          "recipe_ref": "resep-179"
+        },
+        {
+          "amount": "14",
+          "unit": "oz",
+          "name_id": "Santan kental",
+          "name_en": "coconut cream"
+        },
+        {
+          "amount": "7",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kacang tanah, secukupnya",
+          "name_en": "raw peanuts, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Minyak sayur, untuk menggoreng",
+          "name_en": "vegetable oil, for frying"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix all ingredients except the oil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put 1 inch of oil in a Teflon pan."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry fritters in the oil until they solidify, but are not fully cooked."
+        },
+        {
+          "step_id": "",
+          "step_en": "Let the fritters drip dry in another pan."
+        },
+        {
+          "step_id": "",
+          "step_en": "Deep fry the fritters until the peanuts turn golden brown."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 15,
+      "yield_unit": "orders (8oz each)",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Xtra - Rempeyek`. Peanuts are never given an amount anywhere on the sheet, even though the dish is named \"Rempeyek KACANG\" (peanut fritters) and the method explicitly says to fry \"until the peanuts turn golden brown\" -- left as a no-amount ingredient, a real gap, not invented. See resep-179 for the flour mix; see resep-180's own yield note -- both sheets share the same \"15 orders, 8oz each\" header, used directly to compute resep-180's per-order fraction.",
+      "linked_recipe_id": "cs-rempeyek-kacang"
+    },
+    {
+      "id": "resep-181",
+      "resep_num": 181,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Sop Buntut - Restaurant Batch",
+      "name_en": "Sop Buntut - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Indonesian oxtail soup.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "4",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "21.845",
+          "unit": "lbs",
+          "name_id": "Buntut sapi",
+          "name_en": "beef oxtail"
+        },
+        {
+          "amount": "1",
+          "unit": "kg",
+          "name_id": "Seledri (1 batang), potong 1\"",
+          "name_en": "celery (1 bunch), cut in 1\" strips"
+        },
+        {
+          "amount": "300",
+          "unit": "gm",
+          "name_id": "Daun bawang (2 ikat), potong 0.5\"",
+          "name_en": "green onion (2 bunches), cut in 0.5\" strips"
+        },
+        {
+          "amount": "2",
+          "unit": "kg",
+          "name_id": "Tomat besar (10 pc), potong dadu 0.5\"",
+          "name_en": "large tomatoes (10 pc), cut into 0.5\" cubes"
+        },
+        {
+          "amount": "220",
+          "unit": "gm",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "75",
+          "unit": "gm",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "5",
+          "unit": "gm",
+          "name_id": "Merica putih",
+          "name_en": "white pepper"
+        },
+        {
+          "amount": "20",
+          "unit": "gm",
+          "name_id": "Pala",
+          "name_en": "nutmeg"
+        },
+        {
+          "amount": "125",
+          "unit": "gm",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Wortel, secukupnya",
+          "name_en": "carrots, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kaldu ayam, secukupnya",
+          "name_en": "chicken broth, to fill the bowl"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil the water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the oxtail and boil for about 1.25 hours, until tender."
+        },
+        {
+          "step_id": "",
+          "step_en": "Take out the oxtail and portion 0.5oz of meat into each 24oz container."
+        },
+        {
+          "step_id": "",
+          "step_en": "Divide the raw celery and green onion into each container."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the spices and tomatoes to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Let boil for about 5 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the broth to the containers."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve: microwave for 4 minutes if frozen, then reboil on the stove."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add carrots and top up with chicken broth to fill the serving bowl."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 31,
+      "yield_unit": "containers (24oz each)",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Xtra - Sop Buntut`. Carrots and \"chicken broth to fill the bowl\" both appear in the Serve method but are never given amounts or listed as ingredients -- real gaps, left as no-amount lines. The method's own \"0.5oz of meat per 24oz container\" figure is oddly small relative to 21.845lbs of raw oxtail across 31 containers (~11.3oz raw per container) -- kept as literally stated (a restaurant portioning detail, not corrected or second-guessed), but not used directly in resep-182's home ingredient amount, which uses the raw pre-boil oxtail weight instead (what a home cook actually buys and boils, same convention as every other soup/broth conversion this session).",
+      "linked_recipe_id": "resep-182"
+    },
+    {
+      "id": "resep-182",
+      "resep_num": 182,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Sop Buntut",
+      "name_en": "Sop Buntut (Indonesian Oxtail Soup)",
+      "headnote_id": "",
+      "headnote_en": "Indonesian oxtail soup with celery, tomato, and nutmeg.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "¾",
+          "unit": "lb",
+          "name_id": "Buntut sapi",
+          "name_en": "beef oxtail"
+        },
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "2",
+          "unit": "",
+          "name_id": "Seledri, potong 1\"",
+          "name_en": "celery ribs, cut in 1\" strips"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Daun bawang, potong 0.5\"",
+          "name_en": "stalk green onion, cut in 0.5\" strips"
+        },
+        {
+          "amount": "⅓",
+          "unit": "",
+          "name_id": "Tomat besar, potong dadu 0.5\"",
+          "name_en": "large tomato, cut into 0.5\" cubes"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Merica putih, sejumput",
+          "name_en": "white pepper, a pinch"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Pala",
+          "name_en": "nutmeg"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Wortel, iris, secukupnya",
+          "name_en": "carrots, sliced, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kaldu ayam, secukupnya",
+          "name_en": "chicken broth, to fill the bowl"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil the water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the oxtail and boil for about 1.25 hours, until tender."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the raw celery and green onion in a serving bowl."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the salt, MSG, white pepper, nutmeg, sugar, and tomato to the broth; boil for about 5 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Ladle the oxtail and broth over the celery and green onion in the bowl."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add carrots and top up with chicken broth to fill the bowl."
+        }
+      ],
+      "serves": "1",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-181",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/31 of resep-181's batch -- the sheet states 31 orders directly, so this is exact division, not an estimate. Celery/green onion/tomato converted from weight to practical piece counts (2 ribs celery, 1 stalk green onion, 1/3 large tomato) -- reasonable produce-piece estimates, not sheet facts. Carrots and chicken broth topping left as no-amount lines, matching resep-181's own gaps. See derivations/six_more_dishes.py."
     }
   ]
 }
