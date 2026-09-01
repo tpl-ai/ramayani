@@ -3728,14 +3728,13 @@
       "category": "nasi_mie",
       "photo": "",
       "name_id": "Bubur Ayam Kampung",
-      "name_en": "",
+      "name_en": "Village Chicken Porridge",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Topping: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Metode ditulis dalam bahasa Inggris pada aslinya.",
-      "notes_en": "Topped with: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. Method written in English in the original.",
+      "notes_id": "",
+      "notes_en": "Topped with: crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, fried shallot. ",
       "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo"
