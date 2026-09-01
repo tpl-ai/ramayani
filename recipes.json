@@ -748,51 +748,55 @@
       "notes_en": "Serve with sambal terasi.",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_serves"
+        "no_headnote"
       ],
       "reviewed": true,
       "ingredients": [
         {
-          "unit": "",
-          "name_id": "Ayam ",
-          "name_en": "chicken",
-          "amount": "½"
+          "amount": "2",
+          "unit": "pc",
+          "name_id": "Paha ayam atas-bawah (daging gelap saja)",
+          "name_en": "leg quarters (dark meat only)"
         },
         {
-          "unit": "tbsp",
+          "amount": "3¾",
+          "unit": "Tbsp",
           "name_id": "Kecap ikan",
-          "name_en": "fish sauce",
-          "amount": "3"
+          "name_en": "fish sauce"
         },
         {
-          "unit": "tbsp",
+          "amount": "3¼",
+          "unit": "Tbsp",
           "name_id": "Cuka",
-          "name_en": "vinegar",
-          "amount": "2"
+          "name_en": "vinegar"
         },
         {
+          "amount": "1",
           "unit": "tsp",
           "name_id": "Vetsin",
-          "name_en": "MSG",
-          "amount": "1"
+          "name_en": "MSG"
         }
       ],
       "method": [
         {
-          "step_id": "Ayam di-potong potong jadi 12–13 potong",
-          "step_en": "Cut the chicken into 12-13 pieces."
+          "step_id": "",
+          "step_en": "Cut the leg quarters into 12 pieces."
         },
         {
           "step_id": "",
-          "step_en": "Marinade the chicken with fish sauce, vinegar, and MSG and fry for 10 minutes."
+          "step_en": "Marinate the chicken with the fish sauce, vinegar, and MSG."
+        },
+        {
+          "step_id": "",
+          "step_en": "Deep fry for 8 minutes."
         },
         {
           "step_id": "",
           "step_en": "Serve with sambal terasi."
         }
       ],
-      "review_notes": "English version completed 2026-08-26: name_en was blank ('Crispy Fried Chicken' -- 'kering' means dry/crispy, distinguishing this from a wetter/saucier ayam goreng style); all 4 ingredient rows and the one remaining untranslated method step (chicken piece count) were Indonesian-only, filled in as direct translations. The other two method steps already had English only, untouched. This recipe is referenced elsewhere in the data (resep-116, resep-118's headnote) as the source of the '½ chicken, 12-13 pieces' convention -- that fact was already here in the Indonesian step_id, just not previously visible in English."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Rebuilt 2026-09-01 from `.Ayam Goreng Kering` + `Factory Mix - Ayam Gr. Kering`, replacing the earlier scan-based numbers per Arman's instruction to use the spreadsheet and finalize. Chicken changed from the scan's vague \"½ chicken, 12-13 pieces\" to the spreadsheet's explicit \"2 leg quarters (dark meat only)\", cut into 12. Fish sauce/vinegar combine two spreadsheet lines: the branded \"Ayam Gr. Kering Sauce\" (2oz, itself a 9:6.75-cup fish-sauce:vinegar mix per `Factory Mix - Ayam Gr. Kering`, decomposed at that fraction) plus a separate direct addition of 0.75oz each fish sauce/vinegar on the dish sheet itself -- combined into one total of each rather than shown as two redundant-looking lines, since they're added at the same marinating step. Deep-fry time (8 min) taken from the dish sheet's own Serve step, not the Factory Mix sheet's more generic 10 min. Serves (3-4) matches the established 3-4-pieces-per-serving convention already documented on resep-116/118, which this recipe is itself the source of.",
+      "serves": "3-4"
     },
     {
       "id": "resep-8",
@@ -1095,67 +1099,77 @@
       "serves": "",
       "date": "",
       "featured_order": 9,
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
-        "no_name_en",
         "no_serves",
         "scale"
       ],
       "reviewed": true,
       "ingredients": [
         {
+          "amount": "32",
           "unit": "oz",
-          "name_id": "margarin (mentega)",
-          "name_en": "butter / margarine",
-          "amount": "8"
+          "name_id": "Margarin",
+          "name_en": "margarine"
         },
         {
-          "unit": "oz",
-          "name_id": "kecil minyak",
-          "name_en": "oil",
-          "amount": "24"
-        },
-        {
-          "unit": "oz",
-          "name_id": "besar minyak sayur",
-          "name_en": "vegetable oil",
-          "amount": "16"
-        },
-        {
+          "amount": "3",
           "unit": "cup",
-          "name_id": "Maggi sauce",
-          "name_en": "Maggi sauce",
-          "amount": "1"
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
         },
         {
+          "amount": "4",
           "unit": "cup",
-          "name_id": "Lea & Perrins Worcestershire sauce",
-          "name_en": "Lea & Perrins Worcestershire sauce",
-          "amount": "¼"
+          "name_id": "Saus Maggi",
+          "name_en": "Maggi seasoning sauce"
         },
         {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Saus Worcestershire (Lea & Perrins)",
+          "name_en": "Worcestershire sauce (Lea & Perrins)"
+        },
+        {
+          "amount": "210",
+          "unit": "fl oz",
+          "name_id": "Saus tomat (2 kaleng #10, Hunts)",
+          "name_en": "tomato sauce / ketchup (2 #10 cans, Hunts)"
+        },
+        {
+          "amount": "4",
           "unit": "kg",
-          "name_id": "gula",
-          "name_en": "sugar",
-          "amount": "1"
+          "name_id": "Gula",
+          "name_en": "sugar"
         },
         {
-          "unit": "tsp",
-          "name_id": "vetsin",
-          "name_en": "MSG",
-          "amount": "2"
-        },
-        {
-          "unit": "oz",
-          "name_id": "saus tomat",
-          "name_en": "tomato sauce / ketchup",
-          "amount": "128"
+          "amount": "¼",
+          "unit": "cup",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
         }
       ],
-      "method": [],
-      "yield_amount": 6.7,
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Melt the margarine."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the vegetable oil, blending it into the margarine."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining ingredients."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil over low heat until the sauce thickens, about 1 hour."
+        }
+      ],
+      "yield_amount": 13.28,
       "yield_unit": "L",
-      "review_notes": "Yield corrected 2026-08-23: was 50, denominated in \"batches\" (1 unit = sauce for one 1/2-chicken/12-13-piece portion) rather than true individual servings. resep-7 states outright that 1/2 chicken cuts into 12-13 pieces; at the established 3-4-pieces-per-serving ratio (from Ayam Kare's own method), that's ~4 servings per batch, matching resep-116's own serves count -- so corrected to 200 (50 batches x 4 servings/batch). This also makes the site's recipe_ref auto-link (always requests 4 servings of the target) hand resep-116 exactly one full batch's worth of sauce.\n\nNOT renamed with a '- Restaurant Batch' suffix, despite resep-116 now existing as the cookbook-scale dish -- unlike resep-2/4/8 (whole dishes fully superseded by a cookbook twin), resep-10 is a component recipe (the sauce itself, like resep-1's paste) that resep-116 links to via recipe_ref for its exact sauce quantities. Hiding it would silently break that link.\n\nMargarine and canting-based oil amounts converted to oz (2 sticks margarine = 8 oz, at the universal 4oz/stick equivalence; 6 small + 2 large canting oil = 24 + 16 oz, using resep-52's own confirmed '1 canting =~ 4 oz' and an assumed 2x for 'large canting', unconfirmed) -- 'sticks'/'canting' aren't in the site's unit conversion table, so at fine scale (e.g. the 1/50-scale 'View recipe' link from resep-116) they were displaying as literal '0 sticks'/'0 large canting' instead of auto-picking a smaller unit the way oz/tsp do. Total-volume math and the underlying batch estimate (~6.7L, generous coating per the site's own photo) are unchanged -- for the historical record.\n\nSauce-per-order weight established 2026-08-26, separately from the ingredient-volume math above: Arman + Gemini cross-check using BBQ-wings serving norms (6-8 wings ~30-45g sauce), scaled to this dish's 12-13-piece order -> 60-90g; settled on 90g since this sauce is also eaten with rice, not just clinging to the chicken. Same conversation corrected the real-world serving count for one order from 4 down to 2-3 people (see resep-116's review_notes) -- pieces/order didn't change, just how many people split it. This 90g figure describes what's served/eaten per order; it's ~1.5x lower than the ~140g/order this recipe's own ingredient list produces (~7.01kg total / 50 orders), which is expected -- kitchens typically make more glaze than ends up on the plate (tossing-bowl residue, buffer). Both numbers can be true at once: ~140g/order produced, ~90g/order served. yield_amount is intentionally left at 200 (= 50 orders x REF_LINK_SERVINGS's 4, not true servings-per-order) so the site's recipe_ref auto-link still hands resep-116 exactly one order's worth of sauce -- if REF_LINK_SERVINGS ever stops being hardcoded at 4, this number needs revisiting alongside it. [Superseded by the 2026-08-26 round-2 conversion below -- the site no longer pre-scales a physical-unit target via that link, so this rigging is no longer needed.]\n\nYield converted 2026-08-26 (round 2): yield_amount/yield_unit now hold the real batch volume directly (6.7L), replacing the servings-based 200. Reconciling the two totals this recipe's notes had computed -- ~7.01kg (summed from the ingredient list's weights) and ~6.7L (the same ingredient list summed by volume) -- these were never actually conflicting: they're the same ingredient sum expressed in two different units, and imply an average density of ~1.05 g/mL, which is entirely plausible for a sugar/ketchup-heavy sauce (water is 1.0, sugar syrup and ketchup both run somewhat higher). Picked volume (L) as the recorded unit since this is a pourable glaze/sauce -- cookbooks state a sauce's yield in cups/liters, not kg, when it's a liquid. The 200-servings figure and the REF_LINK_SERVINGS-alignment rationale above are kept for the historical record but no longer apply: resep-116's 'View recipe' link on this sauce now lands on resep-10 showing its own full recorded yield (6.7L) rather than pre-scaled to one order, matching how a cookbook links from a dish to its sauce's own page.\n\nPer-order amount standardized 2026-08-26 (round 3): resep-116's ingredient line changed from '1 batch' (meaningless now that this recipe's yield isn't denominated in batches) to '1 cup'. Arman's call: use a simple, consistent 'about 1 cup of sauce per order' across both Ramayani sauce dishes (this one and Ayam Bumbu Rujak / resep-118), rather than this recipe's own more precise-looking ~90g (~1/3 cup)/order figure from the BBQ-wings analogy above. Since 'cups' is itself a borrowed Test Kitchen-style convention, not a Ramayani-sourced unit, matching precision between the two sauces isn't meaningful -- one easy number for both. The ~90g/order and ~140g/order figures above are kept for the historical record, not superseded as facts, just no longer the number used in the ingredient line.\n\nLinked 2026-08-27: resep-120 (Ayam Sauce Ramayani Sauce, home-scale, ~4 cups) now exists. Set recipe_type: 'batch' and linked_recipe_id: 'resep-120' -- per the agreed process, this recipe is now permanently hidden from the public site and should not be edited again; it stays as the unedited restaurant-scale historical record. resep-116's ingredient line (previously recipe_ref: 'resep-10') was repointed to 'resep-120' so its 'View recipe' link lands on the now-visible home page instead of this now-hidden one.",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Rebuilt 2026-09-01 from `Factory Cook - Ramayani Sauce`, replacing the earlier scan/canting-based numbers -- Arman's explicit instruction, which supersedes the 2026-08-27 \"should not be edited again\" note below (kept for the historical record, not current guidance). Nearly every ingredient had been undercounted relative to the spreadsheet, most strikingly margarine/Maggi/Worcestershire/sugar all by exactly 4x. Tomato sauce set to 210 fl oz (2 x 105oz) rather than the sheet's own literal 228oz (2 x 114oz/\"7lb 2oz\") -- Arman's real-world correction: Hunts #10 cans are actually 105oz each, more authoritative than the sheet's own stated case weight. Method was previously entirely absent (\"cooking method to be confirmed with Hertha\") -- now filled in from the sheet's own 4 steps. yield_amount/unit recomputed fresh from the corrected ingredient list: 13.28 L (was 6.7L, based on the undercounted numbers). See derivations/ramayani_sauce_chicken.py for the full calculation. Also cleared a stale `no_name_en` flag that had survived despite name_en being filled -- unrelated to this rebuild, just noticed while recomputing flags fresh.\n\n--- Prior review_notes (2026-08-23 through 2026-08-27), kept for historical record, no longer current guidance ---\n\nYield corrected 2026-08-23: was 50, denominated in \"batches\" (1 unit = sauce for one 1/2-chicken/12-13-piece portion) rather than true individual servings. resep-7 states outright that 1/2 chicken cuts into 12-13 pieces; at the established 3-4-pieces-per-serving ratio (from Ayam Kare's own method), that's ~4 servings per batch, matching resep-116's own serves count -- so corrected to 200 (50 batches x 4 servings/batch). This also makes the site's recipe_ref auto-link (always requests 4 servings of the target) hand resep-116 exactly one full batch's worth of sauce.\n\nNOT renamed with a '- Restaurant Batch' suffix, despite resep-116 now existing as the cookbook-scale dish -- unlike resep-2/4/8 (whole dishes fully superseded by a cookbook twin), resep-10 is a component recipe (the sauce itself, like resep-1's paste) that resep-116 links to via recipe_ref for its exact sauce quantities. Hiding it would silently break that link.\n\nMargarine and canting-based oil amounts converted to oz (2 sticks margarine = 8 oz, at the universal 4oz/stick equivalence; 6 small + 2 large canting oil = 24 + 16 oz, using resep-52's own confirmed '1 canting =~ 4 oz' and an assumed 2x for 'large canting', unconfirmed) -- 'sticks'/'canting' aren't in the site's unit conversion table, so at fine scale (e.g. the 1/50-scale 'View recipe' link from resep-116) they were displaying as literal '0 sticks'/'0 large canting' instead of auto-picking a smaller unit the way oz/tsp do. Total-volume math and the underlying batch estimate (~6.7L, generous coating per the site's own photo) are unchanged -- for the historical record.\n\nSauce-per-order weight established 2026-08-26, separately from the ingredient-volume math above: Arman + Gemini cross-check using BBQ-wings serving norms (6-8 wings ~30-45g sauce), scaled to this dish's 12-13-piece order -> 60-90g; settled on 90g since this sauce is also eaten with rice, not just clinging to the chicken. Same conversation corrected the real-world serving count for one order from 4 down to 2-3 people (see resep-116's review_notes) -- pieces/order didn't change, just how many people split it. This 90g figure describes what's served/eaten per order; it's ~1.5x lower than the ~140g/order this recipe's own ingredient list produces (~7.01kg total / 50 orders), which is expected -- kitchens typically make more glaze than ends up on the plate (tossing-bowl residue, buffer). Both numbers can be true at once: ~140g/order produced, ~90g/order served. yield_amount is intentionally left at 200 (= 50 orders x REF_LINK_SERVINGS's 4, not true servings-per-order) so the site's recipe_ref auto-link still hands resep-116 exactly one order's worth of sauce -- if REF_LINK_SERVINGS ever stops being hardcoded at 4, this number needs revisiting alongside it. [Superseded by the 2026-08-26 round-2 conversion below -- the site no longer pre-scales a physical-unit target via that link, so this rigging is no longer needed.]\n\nYield converted 2026-08-26 (round 2): yield_amount/yield_unit now hold the real batch volume directly (6.7L), replacing the servings-based 200. Reconciling the two totals this recipe's notes had computed -- ~7.01kg (summed from the ingredient list's weights) and ~6.7L (the same ingredient list summed by volume) -- these were never actually conflicting: they're the same ingredient sum expressed in two different units, and imply an average density of ~1.05 g/mL, which is entirely plausible for a sugar/ketchup-heavy sauce (water is 1.0, sugar syrup and ketchup both run somewhat higher). Picked volume (L) as the recorded unit since this is a pourable glaze/sauce -- cookbooks state a sauce's yield in cups/liters, not kg, when it's a liquid. The 200-servings figure and the REF_LINK_SERVINGS-alignment rationale above are kept for the historical record but no longer apply: resep-116's 'View recipe' link on this sauce now lands on resep-10 showing its own full recorded yield (6.7L) rather than pre-scaled to one order, matching how a cookbook links from a dish to its sauce's own page.\n\nPer-order amount standardized 2026-08-26 (round 3): resep-116's ingredient line changed from '1 batch' (meaningless now that this recipe's yield isn't denominated in batches) to '1 cup'. Arman's call: use a simple, consistent 'about 1 cup of sauce per order' across both Ramayani sauce dishes (this one and Ayam Bumbu Rujak / resep-118), rather than this recipe's own more precise-looking ~90g (~1/3 cup)/order figure from the BBQ-wings analogy above. Since 'cups' is itself a borrowed Test Kitchen-style convention, not a Ramayani-sourced unit, matching precision between the two sauces isn't meaningful -- one easy number for both. The ~90g/order and ~140g/order figures above are kept for the historical record, not superseded as facts, just no longer the number used in the ingredient line.\n\nLinked 2026-08-27: resep-120 (Ayam Sauce Ramayani Sauce, home-scale, ~4 cups) now exists. Set recipe_type: 'batch' and linked_recipe_id: 'resep-120' -- per the agreed process, this recipe is now permanently hidden from the public site and should not be edited again; it stays as the unedited restaurant-scale historical record. resep-116's ingredient line (previously recipe_ref: 'resep-10') was repointed to 'resep-120' so its 'View recipe' link lands on the now-visible home page instead of this now-hidden one.",
       "recipe_type": "batch",
       "linked_recipe_id": "resep-120"
     },
@@ -6605,64 +6619,85 @@
       "headnote_en": "",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
         "no_headnote"
       ],
-      "review_notes": "Recipe name corrected from 'Trakadel Jagung' to 'Frikadel Jagung' per the original scan title. Ingredient list fully rewritten from the scan (Frikadel Jagung (Corn Fritters).png) on 2026-08-22 — the previous data had a fabricated 'Vanilla milk' and 'Backer powder' ingredient not present in the source, and had scrambled amount/unit/name values across adjacent rows (e.g. '3 Shaker' was actually '3 Telur' [eggs]; two separate flours — 1 tbsp self-rising and 125g all-purpose — had been merged into one garbled row). Confirmed via the scan that this recipe card genuinely has no written method, matching what the previous notes already suspected. Serves ('16') taken from the '(16)' yield annotation in the scan title.",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Fully rebuilt 2026-09-01 from `.Corn Fritters` + `Factory Mix - Corn Fritter Mix`, replacing the earlier scan-based numbers per Arman's instruction to use the spreadsheet as master. Corn kept at \"1 can\" (matching both the prior recipe and practical home shopping) and every other ingredient scaled to the spreadsheet's own per-can ratio (dish totals / 5 cans, since the dish sheet's own batch uses 5 cans and the Corn Fritter Mix's stated \"1 pk for 5 cans\" ratio lines up with it exactly, no further batch-scaling math needed). Two real gaps found and filled from the spreadsheet: baking soda (missing from the prior version entirely) and amounts for white pepper and green onion (both present but blank before). Eggs: spreadsheet ratio is 2.4/can, rounded to 2½ (beat one egg, use about half). \"Reserve a little of the cooking liquid\" step comes directly from the sheet's own method (\"add left over juice from one can\"), which the prior version didn't capture. Serves (16) carried over from the prior scan-based figure -- neither source states a precise per-scoop yield, so this wasn't independently re-derived.",
       "reviewed": true,
       "serves": "16",
       "ingredients": [
         {
+          "amount": "1",
           "unit": "can",
-          "name_id": "Sweet kernel corn",
-          "name_en": "sweet kernel corn",
-          "amount": "1"
+          "name_id": "Jagung manis kalengan, tiriskan (sisakan sedikit airnya)",
+          "name_en": "whole kernel corn, drained (reserve a little of the liquid)"
         },
         {
+          "amount": "2½",
           "unit": "",
           "name_id": "Telur",
-          "name_en": "eggs",
-          "amount": "3"
+          "name_en": "eggs"
         },
         {
-          "unit": "s/makan",
-          "name_id": "Self rising flour",
-          "name_en": "self-rising flour",
-          "amount": "1"
+          "amount": "104",
+          "unit": "gm",
+          "name_id": "Tepung terigu serbaguna",
+          "name_en": "all-purpose flour"
         },
         {
-          "unit": "gram",
-          "name_id": "All purpose flour",
-          "name_en": "all-purpose flour",
-          "amount": "125"
-        },
-        {
-          "unit": "s/makan",
+          "amount": "1¼",
+          "unit": "Tbsp",
           "name_id": "Gula",
-          "name_en": "sugar",
-          "amount": "1½"
+          "name_en": "sugar"
         },
         {
-          "unit": "s/teh",
+          "amount": "⅔",
+          "unit": "tsp",
           "name_id": "Garam",
-          "name_en": "salt",
-          "amount": "½"
+          "name_en": "salt"
         },
         {
+          "amount": "",
           "unit": "",
-          "name_id": "Pepper",
-          "name_en": "pepper",
-          "amount": ""
+          "name_id": "Merica putih, sejumput",
+          "name_en": "white pepper, a pinch"
         },
         {
-          "unit": "",
-          "name_id": "Daun bawang",
-          "name_en": "spring onion",
-          "amount": ""
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Baking soda",
+          "name_en": "baking soda"
+        },
+        {
+          "amount": "1½",
+          "unit": "Tbsp",
+          "name_id": "Daun bawang, cincang",
+          "name_en": "green onion, chopped"
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Mix all ingredients by hand."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in a little of the reserved corn liquid."
+        },
+        {
+          "step_id": "",
+          "step_en": "Scoop into a pan with about 1\" of hot oil, one large scoop per fritter."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry both sides until golden brown."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve with sweet chili sauce or spicy peanut sauce."
+        }
+      ]
     },
     {
       "id": "resep-70",
@@ -10335,20 +10370,26 @@
       "name_id": "Ayam Sauce Ramayani",
       "name_en": "Ayam Sauce Ramayani",
       "headnote_id": "",
-      "headnote_en": "Ramayani's fried chicken tossed in the restaurant's own sweet, tangy barbecue-style glaze -- one of the restaurant's most ordered dishes. Chicken cut the same way as resep-7 (Ayam Goreng Kering); sauce is resep-10's own recipe, about 1 cup per order.",
+      "headnote_en": "Ramayani's fried chicken tossed in the restaurant's own sweet, tangy barbecue-style glaze -- one of the restaurant's most ordered dishes. Chicken is 2 leg quarters (dark meat only), same cut as resep-7 (Ayam Goreng Kering); sauce is resep-120's own recipe, 6oz per order.",
       "notes_id": "",
       "notes_en": "",
       "serves": "2-3",
       "ingredients": [
         {
-          "amount": "½",
-          "unit": "whole",
+          "amount": "2",
+          "unit": "pc",
           "name_id": "",
-          "name_en": "chicken, cut into 12-13 pieces"
+          "name_en": "leg quarters (dark meat only)"
         },
         {
-          "amount": "1",
-          "unit": "cup",
+          "amount": "½",
+          "unit": "Tbsp",
+          "name_id": "",
+          "name_en": "butter"
+        },
+        {
+          "amount": "6",
+          "unit": "oz",
           "name_id": "",
           "name_en": "Ayam Sauce Ramayani sauce",
           "recipe_ref": "resep-120"
@@ -10357,15 +10398,19 @@
       "method": [
         {
           "step_id": "",
-          "step_en": "Deep fry the chicken pieces until cooked through."
+          "step_en": "Cut the leg quarters into 12 pieces and deep fry for 10 minutes."
         },
         {
           "step_id": "",
-          "step_en": "Toss the fried chicken in the sauce to coat generously."
+          "step_en": "Melt the butter in a wok and add the sauce."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the fried chicken and toss to coat evenly."
         }
       ],
-      "reviewed": false,
-      "review_notes": "New recipe added 2026-08-23: the actual Ayam Sauce Ramayani dish -- resep-10 is only the sauce component. Chicken portion (1/2 chicken, 12-13 pieces) and serves (4) per resep-7's own stated piece count at the established 3-4-pieces-per-serving ratio. Method is Arman's own description of the technique (cut like resep-7, deep fry, then toss in the sauce), not a scan transcription -- resep-10's own notes already flag that no method was written in the original cookbook and still needs confirming with Hertha; this is a reasonable reconstruction, not a confirmed source. Sauce amount references resep-10 via recipe_ref rather than restating a quantity here.\n\nServes corrected 2026-08-26: was 4. Arman's real-world read on how a 12-13-piece/half-chicken order actually gets eaten (cross-checked against Gemini, using BBQ-wings serving norms) is that it's shared between 2-3 people, not 4 -- changed accordingly. Piece count/chicken portion unchanged. Note: this creates a known mismatch with the site's REF_LINK_SERVINGS constant (hardcoded to 4 in recipeConstants.ts) -- the 'View recipe' link on the sauce ingredient above still requests 4 servings' worth of resep-10, which no longer equals exactly 'one order' now that an order is 2-3 real servings rather than 4. resep-10's yield_amount (200) was deliberately left unchanged to preserve that exact-one-order alignment with the current hardcoded constant -- see resep-10's own review_notes. Flagging for whoever eventually revisits the auto-link math. [Both points superseded below -- resep-10 has since been converted to a real unit (6.7L) and REF_LINK_SERVINGS no longer applies to it.]\n\nSauce amount standardized 2026-08-26 (round 2): changed the ingredient line above from '1 batch' (recipe_ref: resep-10) to '1 cup' -- 'batch' stopped meaning anything once resep-10 converted from a servings-based yield to a real volume (6.7L); there's no batch size left on resep-10's own page to point at. Standardized on 'about 1 cup of sauce per order' as a simple, consistent estimate across both Ramayani sauce dishes (this one and Ayam Bumbu Rujak / resep-118) -- Arman's call, in place of the earlier more precise-looking but equally uncertain ~90g (~1/3 cup)/order figure from the BBQ-wings analogy. Since 'cups' is itself a borrowed Test Kitchen-style convention and not a Ramayani-sourced unit, one easy round number for both dishes is more honest than false precision in either direction.\n\nRecipe_ref repointed 2026-08-27: was 'resep-10', now 'resep-120'. resep-10 got its home-scale twin (resep-120, ~4 cups) and was archived (recipe_type: batch, now hidden from the public site) -- the ingredient line above pointed at resep-10 directly, so it needed repointing at the new home recipe or the 'View recipe' link would land on a hidden page. Amount ('1 cup') unchanged, already using the standardized per-order convention.",
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Rebuilt 2026-09-01 from `.Ramayani Sauce Chicken`'s own individual order size (0.5 Tbsp butter + 6oz Ramayani Sauce + 12 pcs chicken), used directly -- no batch-scaling math needed, this sheet is already order-sized. Chicken cut clarified as 2 leg quarters (dark meat only) per Arman, matching resep-7's own spreadsheet-sourced description (the sheet itself just says \"12 pcs Cut Chicken Pieces\" without specifying the cut). Deep-fry time (10 min) and method sequence taken directly from the sheet's own 3 steps. This replaces the earlier \"Arman's own description... a reasonable reconstruction, not a confirmed source\" version -- now genuinely spreadsheet-sourced, so marked reviewed.",
       "flags": [
         "no_headnote"
       ],
@@ -10660,37 +10705,43 @@
       "name_id": "Ayam Sauce Ramayani Sauce",
       "name_en": "Ayam Sauce Ramayani Sauce",
       "headnote_id": "",
-      "headnote_en": "A home-kitchen version of Ramayani's sweet, tangy barbecue-style glaze, scaled down from the restaurant's own recipe. Makes about 1 cup -- enough for one order of Ayam Sauce Ramayani (about 2-3 servings). Scale up using the stepper above for a bigger batch.",
+      "headnote_en": "A home-kitchen version of Ramayani's sweet, tangy barbecue-style glaze, sized to the spreadsheet's own stated order amount. Makes 6oz -- enough for one order of Ayam Sauce Ramayani (about 2-3 servings). Scale up using the stepper above for a bigger batch.",
       "notes_id": "",
       "notes_en": "",
       "ingredients": [
         {
-          "amount": "1½",
+          "amount": "2½",
           "unit": "tsp",
           "name_id": "",
-          "name_en": "butter or margarine"
+          "name_en": "margarine"
         },
         {
-          "amount": "3",
-          "unit": "tbsp",
+          "amount": "2",
+          "unit": "tsp",
           "name_id": "",
           "name_en": "vegetable oil"
         },
         {
-          "amount": "1½",
+          "amount": "2½",
           "unit": "tsp",
           "name_id": "",
           "name_en": "Maggi seasoning sauce"
         },
         {
-          "amount": "¼",
+          "amount": "⅔",
           "unit": "tsp",
           "name_id": "",
-          "name_en": "Lea & Perrins Worcestershire sauce"
+          "name_en": "Worcestershire sauce (Lea & Perrins)"
         },
         {
-          "amount": "3",
-          "unit": "tbsp",
+          "amount": "5⅔",
+          "unit": "Tbsp",
+          "name_id": "",
+          "name_en": "ketchup"
+        },
+        {
+          "amount": "3¾",
+          "unit": "Tbsp",
           "name_id": "",
           "name_en": "sugar"
         },
@@ -10699,32 +10750,32 @@
           "unit": "tsp",
           "name_id": "",
           "name_en": "MSG (optional)"
-        },
-        {
-          "amount": "9",
-          "unit": "tbsp",
-          "name_id": "",
-          "name_en": "ketchup"
         }
       ],
       "method": [
         {
           "step_id": "",
-          "step_en": "Melt butter and oil in pan and mix in the tomato ketchup. Add other ingredients and adjust to taste"
+          "step_en": "Melt the margarine, then whisk in the vegetable oil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining ingredients and cook over low heat until the sauce thickens."
         }
       ],
       "reviewed": true,
-      "review_notes": "New recipe added 2026-08-27: home-scale version of resep-10 (Ayam Sauce Ramayani Sauce), calculated from that recipe's own real batch total (6.7L / ~7.01kg, see resep-10's review_notes) rather than transcribed from a scan. Target yield: about 4 cups (~946ml), matching resep-118's convention -- a ~1/7.08 scale-down factor (946.35ml / 6698.4ml) applied uniformly to every ingredient, then rounded to practical home measures (2 tbsp butter instead of ~2.26 tbsp, 2¼ cups ketchup instead of an odd fraction, etc.) rather than left as exact fractions. The two separate canting-based oil rows on resep-10 ('kecil minyak' 24oz, 'besar minyak sayur' 16oz) were combined into a single 'vegetable oil' row here -- the small/large-canting distinction only mattered for matching the original restaurant measuring tool, not two different ingredients.\n\nNo method: resep-10 itself has no method at all ('Cooking method to be confirmed with Hertha') -- rather than invent a technique for the home version, this recipe inherits that same gap; notes_en/notes_id mirror resep-10's own disclosure of it. content_state left as 'partial' for the same reason.\n\nReused resep-10's own photo -- same sauce, nothing scale-specific about the image.\n\n'Makes about 4 cups (about 4 orders, 1 cup per order)' framing matches resep-118's Test Kitchen-style convention and the already-standardized 'about 1 cup per order' figure (see resep-116's review_notes) -- not re-derived for this sauce specifically.\n\nyield_per_serving added 2026-08-27: initially set to 1 (cup), matching this recipe's own headnote -- WRONG, caught by Arman the same day: 1 cup is 1 *order*, not 1 *serving* (an order is shared between 2-3 people, per the standing convention -- see resep-116's review_notes for that correction). Corrected to 0.4 (1 cup / 2.5 people-per-order midpoint) -> computed servings = 4 / 0.4 = 10, a single number rather than a range, per Arman's standing call. See resep-118's review_notes for the fuller reasoning and a sanity-check cross-reference (this matches the same fix applied there for the identical mistake).\n\nPhoto cleared 2026-08-27: was reusing ayam-sauce-ramayani.jpg (the finished plated dish, resep-116/10's photo) -- misleading on the sauce's own page, since it shows glazed chicken, not the sauce by itself. No dedicated sauce-only photo exists yet; falls back to the site's no-photo list until one does.\n\nResized 2026-08-27 (eighth pass, cross-referencing resep-121's work): the '4 cups = 4 orders' framing was never actually verified against the true per-order ratio from resep-10's original ingredients -- checked directly (each resep-10 ingredient's original amount / 50 orders, same method used to fix resep-121) and found the true per-order total is ~134ml (~140g, matching resep-10's own already-documented '~140g/order produced' figure) -- meaning a 4-cup (946ml) batch actually represents ~7 true orders' worth, not 4. This wasn't the same bug as resep-121's (resep-120's own ingredients DO sum correctly to ~4 cups -- verified, ~955ml vs 946ml stated, fine); the error was in the 'X cups = Y orders' headline claim, not the ingredient math itself.\n\nRather than fix that mismatch by recomputing 'how many true orders is 4 cups,' Arman's simpler fix (matching resep-121's newly-adopted standing minimum-batch rule): size the sauce to exactly what one order needs -- 1 cup, matching resep-116's own stated ingredient amount, and comfortably above the ½-cup floor -- so there's no batch-vs-order mismatch to get wrong in the first place, and no future division-based rounding risk either (the recipe's own default view already IS 1 order; scaling only ever goes up from here, not down, so the ¼-tsp floor problem that hit resep-121 structurally can't recur on this recipe). Rescaled every ingredient by ÷4 from the previous 4-cup version (already-verified-consistent numbers, so dividing was safe here unlike resep-121's onion/salt/sugar, which had never been checked against the true ratio in the first place). Only MSG needed a floor-adjustment: true ÷4 value is 0.0625 tsp (would round to 0 tsp using the site's ¼-tsp bucketing) -- set to ⅛ tsp instead, a real measurable minimum, kept 'optional' as before. Re-summed the full ingredient list after this change: ~48.4 tsp vs the 48 tsp (1 cup) target -- consistent (the small excess is just MSG's floor-bump, same pattern documented in resep-121's item-8 lesson).\n\nyield_amount: 4 -> 1 (cup). yield_unit unchanged ('cup', already matching resep-116's own ingredient unit). yield_per_serving unchanged (0.4) -- this doesn't depend on the total batch size, only on the dish's own per-order/per-person facts, which haven't changed. Computed servings: 1 / 0.4 = 2.5 -> rounds to 3 (matches the site's already-verified live rendering: 'Makes: 1 cup (≈3 servings)'). This also means the recipe_ref auto-link cap (HANDOFF_TO_RAMAYANI.md follow-up spec 3, qty = max(needed, target.yield_amount)) now resolves to max(1,1)=1 with no forcing -- resep-116's link lands correctly on exactly 1 cup, matching what it actually needs, without requiring any special-casing in the link logic itself.\n\nresep-118 (Ayam Bumbu Rujak Sauce) likely has the same '4 cups vs true order count' framing issue, not yet checked/fixed -- flagged for a follow-up pass, lower urgency since no dish currently links to it (resep-119 was deleted for lack of a source).",
+      "review_notes": "Rebuilt 2026-09-01: resep-10 (the restaurant batch this is scaled from) was corrected against the master spreadsheet -- see its own review_notes and derivations/ramayani_sauce_chicken.py. Rather than keep the earlier ~1-cup/4-cup derivation chain (built on resep-10's now-superseded numbers), sized directly to 6oz -- the individual order amount the spreadsheet's `.Ramayani Sauce Chicken` dish sheet itself states (\"6 oz Ramayani Sauce\" per order), comfortably above the standing 4oz floor, so no further padding needed. Every ingredient recomputed from resep-10's corrected batch at this exact fraction (~1/74.8), rounded to clean kitchen fractions; MSG's true value (~0.16 tsp) floor-bumped to 1/8 tsp. yield_per_serving = 2.4oz (6oz order / 2.5-person midpoint of the established \"2-3 people per order\" convention -- see resep-116's review_notes) -> computed servings 6/2.4 = 2.5, rounds to 3. Photo left cleared (no dedicated sauce-only photo exists). Also added a missing `no_photo` flag that the prior flags list had dropped despite the photo field being empty -- unrelated to this rebuild, just noticed while recomputing flags fresh.",
       "flags": [
         "no_headnote",
-        "no_serves"
+        "no_serves",
+        "no_photo"
       ],
       "content_state": "full",
-      "yield_amount": 1,
-      "yield_unit": "cup",
-      "yield_per_serving": 0.4,
+      "yield_amount": 6,
+      "yield_unit": "oz",
+      "yield_per_serving": 2.4,
       "recipe_type": "home",
-      "linked_recipe_id": "resep-10"
+      "linked_recipe_id": "resep-10",
+      "serves": ""
     },
     {
       "id": "resep-121",
