@@ -208,6 +208,13 @@ img { max-width: 100%; height: auto; display: block; }
     gap: 56px;
     align-items: start;
   }
+  /* Portrait photos get shown at their own aspect ratio (below) rather
+     than stretched to fill the 55fr column, so let the column shrink to
+     match the image's actual rendered width instead of leaving empty
+     space beside it. */
+  .recipe-hero-row:has(.recipe-hero-photo.is-portrait) {
+    grid-template-columns: auto 1fr;
+  }
 }
 .recipe-hero-photo {
   width: 100%;
@@ -219,8 +226,10 @@ img { max-width: 100%; height: auto; display: block; }
   .recipe-hero-photo { height: 620px; }
 }
 .recipe-hero-photo.is-portrait {
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
-  background: #e8e2da;
+  margin: 0 auto;
 }
 
 /* Description — relocated notes, full width */
