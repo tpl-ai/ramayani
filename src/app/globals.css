@@ -192,6 +192,10 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
   border-radius: 10px;
 }
+.recipe-photo-fixed.is-portrait {
+  object-fit: contain;
+  background: #e8e2da;
+}
 
 /* Hero row — big photo + title/facts/intro, Ottolenghi-style */
 .recipe-hero-row {
@@ -213,6 +217,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 @media (min-width: 768px) {
   .recipe-hero-photo { height: 620px; }
+}
+.recipe-hero-photo.is-portrait {
+  object-fit: contain;
+  background: #e8e2da;
 }
 
 /* Description — relocated notes, full width */

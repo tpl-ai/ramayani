@@ -12,6 +12,13 @@ import Header from '@/components/Header';
 import CategoryTabs from '@/components/CategoryTabs';
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
+
+// Portrait-cropped photos get squashed into the middle when forced to fill
+// a wide landscape box with object-fit: cover, so switch those to contain.
+function markPhotoState(img: HTMLImageElement) {
+  img.classList.add('loaded');
+  if (img.naturalHeight > img.naturalWidth) img.classList.add('is-portrait');
+}
 const FACT_ICON = { width: 17, height: 17, viewBox: '0 0 24 24', fill: 'none', stroke: '#cc0000', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
 
 // A recipe_ref ingredient links to another recipe -- kept name-free (just
@@ -249,12 +256,12 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
           <div style={{ maxWidth: 560 }}>
             {showPhoto && (
               <img
-                ref={img => { if (img && img.complete) img.classList.add('loaded'); }}
+                ref={img => { if (img && img.complete) markPhotoState(img); }}
                 src={recipePhotoSrc(recipe.photo)}
                 alt={name}
                 className="recipe-photo-fixed img-fade"
                 loading="eager"
-                onLoad={e => e.currentTarget.classList.add('loaded')}
+                onLoad={e => markPhotoState(e.currentTarget)}
                 onError={() => setPhotoFailed(true)}
               />
             )}
@@ -278,12 +285,12 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
               {showPhoto && (
                 <div>
                   <img
-                    ref={img => { if (img && img.complete) img.classList.add('loaded'); }}
+                    ref={img => { if (img && img.complete) markPhotoState(img); }}
                     src={recipePhotoSrc(recipe.photo)}
                     alt={name}
                     className="recipe-hero-photo img-fade"
                     loading="eager"
-                    onLoad={e => e.currentTarget.classList.add('loaded')}
+                    onLoad={e => markPhotoState(e.currentTarget)}
                     onError={() => setPhotoFailed(true)}
                   />
                 </div>
