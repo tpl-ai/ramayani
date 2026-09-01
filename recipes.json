@@ -3641,8 +3641,8 @@
       "resep_num": 37,
       "category": "desserts_drinks",
       "photo": "",
-      "name_id": "Bubur Kacang Hijau",
-      "name_en": "Sweet Mung Bean Porridge",
+      "name_id": "Bubur Kacang Hijau - Restaurant Batch",
+      "name_en": "Sweet Mung Bean Porridge - Restaurant Batch",
       "headnote_id": "",
       "headnote_en": "",
       "notes_id": "",
@@ -3718,7 +3718,9 @@
           "step_en": "To serve: 1 bowl of green beans with coconut milk."
         }
       ],
-      "serves": "20"
+      "serves": "20",
+      "linked_recipe_id": "resep-189",
+      "review_notes": "Home-scale version added 2026-09-02 (resep-189), per Arman's explicit instruction: divide everything by 5 (20 servings -> 4). Renamed with the \"- Restaurant Batch\" suffix now that a home twin exists. See resep-189's own review_notes for two things noticed while dividing, not fixed here: the \"50mg\" cornstarch amount is almost certainly a transcription typo for \"50g\" (50mg is far too small to thicken this much liquid, and every other dry ingredient on this page is in grams) -- worth fixing on this original entry too, if confirmed. Also, the ingredient list's total water (4,250 ml) doesn't fully reconcile with the method's own explicit \"2500 ml\" figure for the initial bean-boiling step -- the remaining ~1750ml is never explicitly assigned anywhere in the method text."
     },
     {
       "id": "resep-38",
@@ -17636,6 +17638,106 @@
         }
       ],
       "method": []
+    },
+    {
+      "id": "resep-189",
+      "resep_num": 189,
+      "category": "desserts_drinks",
+      "photo": "",
+      "name_id": "Bubur Kacang Hijau",
+      "name_en": "Sweet Mung Bean Porridge",
+      "headnote_id": "",
+      "headnote_en": "",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Kacang hijau kering",
+          "name_en": "dried green mung beans"
+        },
+        {
+          "amount": "⅓",
+          "unit": "cup",
+          "name_id": "Gula jawa",
+          "name_en": "brown sugar / palm sugar"
+        },
+        {
+          "amount": "1½",
+          "unit": "Tbsp",
+          "name_id": "Gula pasir",
+          "name_en": "white sugar"
+        },
+        {
+          "amount": "1-2",
+          "unit": "",
+          "name_id": "Daun pandan",
+          "name_en": "pandan leaves"
+        },
+        {
+          "amount": "4",
+          "unit": "tsp",
+          "name_id": "Jahe, parut",
+          "name_en": "ginger, grated"
+        },
+        {
+          "amount": "3½",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1¼",
+          "unit": "Tbsp",
+          "name_id": "Tepung maizena",
+          "name_en": "cornstarch, to thicken"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Garam, secukupnya",
+          "name_en": "salt, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Santan, untuk sajian",
+          "name_en": "coconut milk, to serve"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash the mung beans and soak in cold water for at least 2 hours; drain thoroughly."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil in 2 cups of the water with the ginger and pandan leaves until the beans are soft."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the remaining water, brown sugar, white sugar, and salt; cook for another 10 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Just before it's done, stir in the cornstarch (mixed with a little water) to thicken."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve in a bowl with coconut milk."
+        }
+      ],
+      "serves": "4",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-37",
+      "review_notes": "Home-scale version of resep-37 (Bubur Kacang Hijau - Restaurant Batch), per Arman's explicit instruction: divide every ingredient by 5 (20 servings -> 4). Converted from grams/ml to kitchen-plain units (cups/Tbsp/tsp) per the standing convention for home recipes. Two things noticed while dividing:\n1. The original's \"50mg\" cornstarch is almost certainly a typo for \"50g\" -- 50mg (a tenth of a teaspoon at most) is far too small to thicken ~4.25L of liquid, and every other dry ingredient on the same page is measured in grams, not milligrams. Used the 50g reading (divided to 10g = ~1 1/4 Tbsp) since the literal 50mg/5 figure would be unusably tiny and clearly wrong -- flagged on resep-37 too, for Arman to correct there if he agrees.\n2. Salt is called for in the method (\"add the salt...\") but was never listed as an ingredient at all on the original -- added here as a no-amount \"to taste\" line, a real gap, not invented.\n3. The original's total water (4,250ml) doesn't fully reconcile with its own method, which only explicitly assigns 2500ml to the initial bean-boiling step -- the remaining ~1750ml (350ml at this 1/5 scale) isn't assigned to a specific step in the source, so the home method folds it in during step 3 (\"add the remaining water\") rather than inventing a precise use for it."
     }
   ]
 }
