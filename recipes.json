@@ -2877,19 +2877,18 @@
       "id": "resep-28",
       "resep_num": 28,
       "category": "appetizer",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Batagor%20DSC01085-ObwkdmgQEm8sOGkNlw1W6nuAKTXJ97.JPG",
       "name_id": "Batagor",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "FLAG: Berkas 2, Hal. 6. Catatan sangat singkat — kemungkinan mengacu pada Siomai yang dibuat terpisah. Bumbu sate lihat Resep 24 (Bumbu Rujak). Harap konfirmasi dengan Ibu.",
-      "notes_en": "FLAG: File 2, Page 6. Very brief note — likely refers to separately made siomai. Peanut sauce see Recipe 24 (Bumbu Rujak). Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "full",
       "flags": [
         "no_name_en",
         "no_headnote",
-        "no_serves",
-        "no_photo"
+        "no_serves"
       ],
       "reviewed": false,
       "ingredients": [
