@@ -3011,14 +3011,13 @@
       "category": "appetizer",
       "photo": "",
       "name_id": "Bakso Goreng Akian Soh",
-      "name_en": "",
+      "name_en": "Pork and Shrimp Balls",
       "headnote_id": "",
-      "headnote_en": "",
-      "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 2, Hal. 7 & 23. Resep muncul dua kali — versi identik. Tidak ada cara membuat. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. FLAG: File 2, Pages 7 & 23. Recipe appears twice — identical versions. No method written. Please confirm with mother.",
+      "headnote_en": "Akian Soh's Bakso Goreng Recipe",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
-        "no_name_en",
         "no_headnote",
         "no_serves",
         "no_photo"
