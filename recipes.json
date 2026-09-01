@@ -3736,124 +3736,167 @@
       "content_state": "full",
       "flags": [
         "no_headnote",
-        "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "",
-          "name_id": "Rice (beras)",
-          "name_en": "Rice",
-          "amount": ""
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Beras",
+          "name_en": "rice",
+          "section_id": "Bubur",
+          "section_en": "Porridge"
         },
         {
+          "amount": "10",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water",
+          "section_id": "Bubur",
+          "section_en": "Porridge"
+        },
+        {
+          "amount": "",
           "unit": "",
-          "name_id": "M.S.G.",
+          "name_id": "Garam, secukupnya",
+          "name_en": "salt, to taste",
+          "section_id": "Bubur",
+          "section_en": "Porridge"
+        },
+        {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "Ayam, potong 8",
+          "name_en": "chicken, cut into 8 pieces",
+          "section_id": "Ayam Goreng Suwir",
+          "section_en": "Shredded Fried Chicken"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kecap ikan, secukupnya",
+          "name_en": "fish sauce, to taste",
+          "section_id": "Ayam Goreng Suwir",
+          "section_en": "Shredded Fried Chicken"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Cuka, secukupnya",
+          "name_en": "vinegar, to taste",
+          "section_id": "Ayam Goreng Suwir",
+          "section_en": "Shredded Fried Chicken"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Vetsin, secukupnya",
+          "name_en": "MSG, to taste",
+          "section_id": "Ayam Goreng Suwir",
+          "section_en": "Shredded Fried Chicken"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Vetsin",
           "name_en": "MSG",
-          "amount": ""
+          "section_id": "Per Mangkuk (Bumbu Saji)",
+          "section_en": "Per Bowl (Seasoning)"
         },
         {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Merica putih",
+          "name_en": "white pepper",
+          "section_id": "Per Mangkuk (Bumbu Saji)",
+          "section_en": "Per Bowl (Seasoning)"
+        },
+        {
+          "amount": "¼",
+          "unit": "Tbsp",
+          "name_id": "Kecap asin",
+          "name_en": "soy sauce",
+          "section_id": "Per Mangkuk (Bumbu Saji)",
+          "section_en": "Per Bowl (Seasoning)"
+        },
+        {
+          "amount": "",
           "unit": "",
-          "name_id": "White pepper (lada putih)",
-          "name_en": "White pepper",
-          "amount": ""
+          "name_id": "Tapioca chips (gadoz chips), remukkan",
+          "name_en": "tapioca chips, crushed",
+          "section_id": "Pelengkap",
+          "section_en": "Toppings"
         },
         {
+          "amount": "",
           "unit": "",
-          "name_id": "Soy Sauce (kecap asin)",
-          "name_en": "Soy sauce",
-          "amount": ""
+          "name_id": "Emping, remukkan",
+          "name_en": "emping crackers, crushed",
+          "section_id": "Pelengkap",
+          "section_en": "Toppings"
         },
         {
-          "unit": "",
-          "name_id": "Tapioca chips (gadoz chips)",
-          "name_en": "Tapioca crackers / chips",
-          "amount": ""
-        },
-        {
+          "amount": "",
           "unit": "",
           "name_id": "Tong chai",
-          "name_en": "Tong chai (preserved vegetable)",
-          "amount": ""
+          "name_en": "tong chai (preserved vegetable)",
+          "section_id": "Pelengkap",
+          "section_en": "Toppings"
         },
         {
+          "amount": "",
           "unit": "",
-          "name_id": "Fried Soy Bean",
-          "name_en": "Fried soy bean",
-          "amount": ""
+          "name_id": "Kacang kedelai kering, rendam semalam dan goreng",
+          "name_en": "dried soy beans, soaked overnight and fried crispy",
+          "section_id": "Pelengkap",
+          "section_en": "Toppings"
         },
         {
+          "amount": "",
           "unit": "",
-          "name_id": "Selery (seledri)",
-          "name_en": "Celery",
-          "amount": ""
+          "name_id": "Seledri, cincang",
+          "name_en": "celery, chopped",
+          "section_id": "Pelengkap",
+          "section_en": "Toppings"
         },
         {
+          "amount": "",
           "unit": "",
-          "name_id": "Fried Shallot",
-          "name_en": "Fried shallot (bawang goreng)",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Emping",
-          "name_en": "Emping crackers",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Salt (garem)",
-          "name_en": "Salt (garam)",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Shredded Fried Chicken",
-          "name_en": "Shredded fried chicken",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Fish Sauce",
-          "name_en": "Fish sauce (kecap ikan)",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "Vinegar",
-          "name_en": "Vinegar (cuka)",
-          "amount": ""
-        },
-        {
-          "unit": "",
-          "name_id": "M.S.G.",
-          "name_en": "MSG",
-          "amount": ""
+          "name_id": "Bawang goreng",
+          "name_en": "fried shallot",
+          "section_id": "Pelengkap",
+          "section_en": "Toppings"
         }
       ],
       "method": [
         {
-          "step_id": "Marinate the chicken with fish sauce, vinegar and M.S.G. Cut the whole chicken into 8 pieces and fry for ±10 minutes, put aside. After the chicken cool off, shred it into small pieces.",
-          "step_en": "Marinate the chicken with fish sauce, vinegar and M.S.G. Cut the whole chicken into 8 pieces and fry for ±10 minutes, put aside. After the chicken cool off, shred it into small pieces."
+          "step_id": "",
+          "step_en": "Marinate the chicken with fish sauce, vinegar, and MSG. Cut the whole chicken into 8 pieces and fry for about 10 minutes; set aside. After the chicken cools off, shred it into small pieces."
         },
         {
-          "step_id": "Boil the rice; 1 part rice to 10 parts of water. e.g.: 1 cup of rice cook with 10 cups of rice and salt.",
-          "step_en": "Boil the rice; 1 part rice to 10 parts of water. e.g.: 1 cup of rice cook with 10 cups of rice and salt."
+          "step_id": "",
+          "step_en": "Boil the rice: 1 part rice to 10 parts water (e.g., 1 cup rice with 10 cups water), with salt."
         },
         {
-          "step_id": "Soak the dry Soy bean for 1 night and fry until crispy.",
-          "step_en": "Soak the dry soy bean for 1 night and fry until crispy."
+          "step_id": "",
+          "step_en": "Soak the dried soy beans overnight and fry until crispy."
         },
         {
-          "step_id": "Crush the shrimp chips and the emping.",
-          "step_en": "Crush the shrimp chips and the emping."
+          "step_id": "",
+          "step_en": "Crush the tapioca chips and the emping."
         },
         {
-          "step_id": "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ teaspoon M.S.G., ¼ teaspoon White Pepper, ¼ tablespoon Soy Sauce.",
-          "step_en": "To serve: In a bowl, put 1 ladle of bubur and season with: ¼ tsp M.S.G., ¼ tsp white pepper, ¼ tbsp soy sauce."
+          "step_id": "",
+          "step_en": "To serve: put 1 ladle of porridge in a bowl and season with the MSG, white pepper, and soy sauce."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with the crushed chips, crushed emping, tong chai, shredded fried chicken, fried soy bean, celery, and fried shallot."
         }
-      ]
+      ],
+      "serves": "6-8",
+      "review_notes": "Reworked 2026-09-02 at Arman's request -- the method text actually contains several real ingredient amounts that had never been pulled into the ingredient list itself (every amount was blank). Extracted from the (now two-page) scan (\"38 Bubur Ayam Kampung.png\"):\n- Chicken: \"cut the WHOLE chicken into 8 pieces\" -> 1 whole chicken.\n- Rice: the method gives a concrete example, \"1 cup of rice cook with 10 cups of ___ and salt\" -- added \"Water\" as a new ingredient (10 cups) since it wasn't listed as an ingredient at all despite being clearly required and quantified in the method.\n- Per-bowl seasoning: \"season with: 1/4 tsp MSG, 1/4 tsp white pepper, 1/4 Tbsp soy sauce\" -- these are explicitly PER BOWL/LADLE amounts, not for the whole batch, so given their own section (\"Per Bowl (Seasoning)\") rather than folded in with the porridge-base ingredients.\nCORRECTED a likely source-level typo: the scan's own \"e.g.\" line literally says \"10 cups of RICE and salt\", immediately after stating the ratio as \"1 part rice to 10 parts of WATER\" one clause earlier -- clearly meant to restate the same ratio with \"water\", not repeat \"rice\" a second time. Used \"water\" for the new Water ingredient and in the method text.\nServes (6-8) is an estimate from the 10-cup yield at a ~1-1.5 cup ladle portion -- not a stated fact, ladle size isn't given.\nToppings (tapioca chips, emping, tong chai, dried soy bean, celery, fried shallot) and the chicken marinade (fish sauce, vinegar, MSG) remain genuinely unquantified -- no amount is given anywhere in either page of the source for these, left as \"to taste\", not invented."
     },
     {
       "id": "resep-39",
