@@ -15676,7 +15676,7 @@
       "id": "resep-172",
       "resep_num": 172,
       "category": "seafood",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/ikan-bakar-kJY0Dlne24DLVev8D9OUjkOZkqtcHU.jpg",
       "name_id": "Ikan Bakar",
       "name_en": "Ikan Bakar (Grilled Marinated Fish)",
       "headnote_id": "",
@@ -15752,8 +15752,7 @@
       "serves": "1-2",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
