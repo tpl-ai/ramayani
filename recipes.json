@@ -17642,7 +17642,7 @@
       "id": "resep-189",
       "resep_num": 189,
       "category": "desserts_drinks",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/bubur%20ketan%20hijau-4EoHonDPQdttbjJ1lqLDqulmNs2iLy.jpg",
       "name_id": "Bubur Kacang Hijau",
       "name_en": "Sweet Mung Bean Porridge",
       "headnote_id": "",
@@ -17730,8 +17730,7 @@
       "serves": "4",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
