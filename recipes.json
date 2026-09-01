@@ -15814,7 +15814,7 @@
       "id": "resep-174",
       "resep_num": 174,
       "category": "sayuran_salad",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/DSC04193%20small%20gado%20gado%20blurred-qsPw3icumka9d2LjvQ7KQMSryhkN3Z.jpg",
       "name_id": "Gado Gado",
       "name_en": "Gado Gado (Indonesian Vegetable Salad with Peanut Sauce)",
       "headnote_id": "",
@@ -15895,8 +15895,7 @@
       "serves": "1",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `.Gado Gado`. Already order-sized on the sheet, used directly -- no scale-down math needed, same pattern as Nasi Goreng/Bihun Goreng."
