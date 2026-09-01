@@ -14380,7 +14380,7 @@
         "scale"
       ],
       "reviewed": true,
-      "review_notes": "From the master spreadsheet's \"Factory Mix - Bumbu Betawi\" sheet, referenced as a Ramayani-branded ingredient in Sop Kambing (\"1040 gm Bumbu Betawi\"). Not currently confirmed reused by any other dish (a few old scan recipes fuzzy-matched the name loosely -- Daging Bumbu Bali, Bumbu Rujak Buah -- but those weren't verified and are almost certainly unrelated, \"Betawi\" vs \"Bali\"), so treated as single-use for now: stored here for traceability, decomposed directly into resep-163's own ingredients rather than recipe_ref'd from there, since 1040g doesn't divide cleanly into this recipe's 890g/2-bag batch."
+      "review_notes": "From the master spreadsheet's \"Factory Mix - Bumbu Betawi\" sheet, referenced as a Ramayani-branded ingredient in Sop Kambing (\"1040 gm Bumbu Betawi\") and, as of 2026-09-01, also Soto Betawi (\"1 bag\" = 445gm, half this 890g/2-bag batch, resep-166). Decomposed directly into resep-163's own ingredients rather than recipe_ref'd from there (that recipe predates confirming this mix's reuse), but recipe_ref'd normally from resep-166/167 -- a minor stylistic inconsistency between the two Bumbu Betawi dishes, not a correctness issue."
     },
     {
       "id": "resep-162",
@@ -14946,6 +14946,961 @@
       "reviewed": true,
       "linked_recipe_id": "resep-155",
       "review_notes": "Home-scale twin of resep-155 (Vanilla-Pandan Syrup - Restaurant Batch), created 2026-08-31 at Arman's request so Ice Teller links to a real, makeable syrup recipe instead of having it decomposed invisibly into raw ingredients. Sized to the standing 4oz/1/2-cup floor rather than the bare amount one Ice Teller needs (~0.58oz) -- see derivations/ice_teller_syrup.py for the full calculation. Makes enough for several Ice Tellers; keeps in the fridge like any simple syrup."
+    },
+    {
+      "id": "resep-166",
+      "resep_num": 166,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Soto Betawi - Restaurant Batch",
+      "name_en": "Soto Betawi - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Jakarta-style beef and offal soup in a rich milk-and-spice broth.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "11",
+          "unit": "lbs",
+          "name_id": "Daging sandung lamur, iris",
+          "name_en": "beef knuckle, sliced"
+        },
+        {
+          "amount": "3.5",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "¾",
+          "unit": "cup",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "250",
+          "unit": "gm",
+          "name_id": "Bawang bombay, iris tipis",
+          "name_en": "white onion, thinly sliced"
+        },
+        {
+          "amount": "2",
+          "unit": "stalks",
+          "name_id": "Sereh",
+          "name_en": "lemongrass"
+        },
+        {
+          "amount": "0.5",
+          "unit": "oz",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaves"
+        },
+        {
+          "amount": "200",
+          "unit": "gm",
+          "name_id": "Jahe, iris 1/8\"",
+          "name_en": "ginger, sliced 1/8\" thick"
+        },
+        {
+          "amount": "445",
+          "unit": "gm",
+          "name_id": "Bumbu Betawi (1 bag)",
+          "name_en": "Bumbu Betawi (1 bag)",
+          "recipe_ref": "resep-161"
+        },
+        {
+          "amount": "150",
+          "unit": "gm",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "0.5",
+          "unit": "gal",
+          "name_id": "Susu",
+          "name_en": "milk"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Susu (per kontainer)",
+          "name_en": "milk (per container, added when serving)"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Vetsin (per kontainer)",
+          "name_en": "MSG (per container)"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam (per kontainer)",
+          "name_en": "salt (per container)"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Gula (per kontainer)",
+          "name_en": "sugar (per container)"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Babat rebus, potong (per kontainer)",
+          "name_en": "boiled beef tripe, cut (per container)"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Mentega (per kontainer)",
+          "name_en": "butter (per container)"
+        },
+        {
+          "amount": "½",
+          "unit": "pc",
+          "name_id": "Tomat, potong (per kontainer)",
+          "name_en": "tomato, chopped (per container)"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Seledri, cincang",
+          "name_en": "chopped celery, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Emping",
+          "name_en": "emping crackers, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil the beef knuckle until tender, about 3.5 hours."
+        },
+        {
+          "step_id": "",
+          "step_en": "Take out the beef knuckle and fill the broth back up to 3.5 gal with water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry the onions in the oil until light brown."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the ginger to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Tie the lemongrass into a bundle and add to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the Bumbu Betawi and bay leaves."
+        },
+        {
+          "step_id": "",
+          "step_en": "Take the onions out of the oil (reserving the oil) and add the onions to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry the garlic in the reserved oil until browned."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the garlic and remaining oil to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the milk."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cut the beef into ¾\" cubes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Place 4.5oz of beef per container and fill with broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Freeze the containers."
+        },
+        {
+          "step_id": "",
+          "step_en": "To serve: add 1 cup milk and 1 container of broth to a pot; bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the MSG, salt, and sugar."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the boiled beef tripe."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put into a serving bowl with the butter and chopped tomato."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with emping."
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle with chopped celery, fried onion, and sweet soy sauce."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 20,
+      "yield_unit": "containers",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. Bumbu Betawi (resep-161, previously single-use for Sop Kambing) is now confirmed reused by a second dish -- referenced here via recipe_ref at 445gm (1 bag = half of resep-161's 890g/2-bag batch, matching that recipe's own \"separate into 2 bags\" step). \"Fried onion\" appears in the final serve step (\"sprinkle with... fried onion\") separately from the onion fried and added to the broth earlier -- this is a real gap in the sheet (the garnish amount is never stated), same pattern as Sop Kambing's identical gap; left as a no-amount \"to taste\" line rather than guessed.",
+      "linked_recipe_id": "resep-167"
+    },
+    {
+      "id": "resep-167",
+      "resep_num": 167,
+      "category": "daging",
+      "photo": "",
+      "name_id": "Soto Betawi",
+      "name_en": "Soto Betawi (Jakarta Beef & Tripe Soup)",
+      "headnote_id": "",
+      "headnote_en": "Jakarta-style beef and offal soup in a rich milk-and-spice broth.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "9",
+          "unit": "oz",
+          "name_id": "Daging sandung lamur",
+          "name_en": "beef knuckle"
+        },
+        {
+          "amount": "3",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "⅔",
+          "unit": "Tbsp",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "13",
+          "unit": "gm",
+          "name_id": "Bawang bombay, iris tipis",
+          "name_en": "white onion, thinly sliced"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Sereh, memarkan",
+          "name_en": "small piece lemongrass, bruised"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "bay leaf"
+        },
+        {
+          "amount": "10",
+          "unit": "gm",
+          "name_id": "Jahe, iris 1/8\"",
+          "name_en": "ginger, sliced 1/8\" thick"
+        },
+        {
+          "amount": "22",
+          "unit": "gm",
+          "name_id": "Bumbu Betawi",
+          "name_en": "Bumbu Betawi",
+          "recipe_ref": "resep-161"
+        },
+        {
+          "amount": "8",
+          "unit": "gm",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "6½",
+          "unit": "Tbsp",
+          "name_id": "Susu",
+          "name_en": "milk"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Susu (tambahan)",
+          "name_en": "milk (additional, added when serving)"
+        },
+        {
+          "amount": "¾",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Babat rebus, potong",
+          "name_en": "boiled beef tripe, cut"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Mentega",
+          "name_en": "butter"
+        },
+        {
+          "amount": "½",
+          "unit": "",
+          "name_id": "Tomat, potong",
+          "name_en": "tomato, chopped"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Seledri, cincang",
+          "name_en": "chopped celery, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Bawang goreng",
+          "name_en": "fried onion, to taste"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Emping",
+          "name_en": "emping crackers, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Boil the beef knuckle in the water until tender, about 3.5 hours; skim as needed."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry the onion in the oil until light brown; remove and set aside, reserving the oil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the ginger to the broth; tie the lemongrass into a bundle and add it too."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the Bumbu Betawi and bay leaf."
+        },
+        {
+          "step_id": "",
+          "step_en": "Return the fried onion to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fry the garlic in the reserved oil until browned; add the garlic and remaining oil to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the milk."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cut the beef into ¾\" cubes and return to the broth."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the additional milk, MSG, salt, and sugar; bring back to a simmer."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the boiled beef tripe."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve topped with the butter, chopped tomato, and emping."
+        },
+        {
+          "step_id": "",
+          "step_en": "Sprinkle with chopped celery, fried onion, and sweet soy sauce."
+        }
+      ],
+      "serves": "1-2",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-166",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01, sized to 1/20 of resep-166's batch -- the sheet states 20 orders directly, so this is exact division, not an estimate (unlike Sop Kambing, which had no stated order count and needed an evaporation/yield guess). Water is the pre-reduction amount (the home cook boils it down too, same convention as Sop Kambing). Bumbu Betawi referenced via recipe_ref rather than decomposed into its 6 spice components (unlike resep-163/Sop Kambing's own approach) -- now that this spice mix is confirmed reused by 2 dishes, linking to it directly is simpler and avoids compounding rounding error; resep-163 was left as-is rather than reworked to match, a minor stylistic inconsistency between the two, not a correctness issue. Serves (1-2) is an estimate based on the container size, not a stated fact."
+    },
+    {
+      "id": "resep-168",
+      "resep_num": 168,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Ayam Bakar Sauce - Restaurant Batch",
+      "name_en": "Ayam Bakar Sauce - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's sweet soy marinade base for Ayam Bakar Kalasan.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "6",
+          "unit": "cups",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "6",
+          "unit": "boxes",
+          "name_id": "Gula merah (1 lb per kotak)",
+          "name_en": "brown sugar (1 lb per box)"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Merica putih",
+          "name_en": "white pepper"
+        },
+        {
+          "amount": "6",
+          "unit": "cups",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine all ingredients."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 208,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. No method given on the sheet beyond the ingredient list -- \"combine all ingredients\" is the only reasonable reading for a sauce with no cooking step described. yield_amount (208oz) approximates cups/weight/box units on a common oz basis (48+96+8+48+8), same convention used for resep-10's batch total -- not a precise figure. This sheet's own header (\"80 orders\") exactly matches `.Ayam Bakar Kalasan`'s header, confirming this whole batch = the \"1 bag\" that dish sheet references for all 80 orders -- used directly to compute resep-170's per-order fraction (÷80), no separate \"how big is 1 bag\" assumption needed here (unlike Rendang Paste)."
+    },
+    {
+      "id": "resep-169",
+      "resep_num": 169,
+      "category": "ayam",
+      "photo": "",
+      "name_id": "Ayam Bakar Kalasan - Restaurant Batch",
+      "name_en": "Ayam Bakar Kalasan - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's grilled marinated chicken, Yogyakarta-Kalasan style.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "70",
+          "unit": "lbs",
+          "name_id": "Ayam utuh (fryer)",
+          "name_en": "whole fryer chicken"
+        },
+        {
+          "amount": "3000",
+          "unit": "ml",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "40",
+          "unit": "pc",
+          "name_id": "Daun jeruk purut",
+          "name_en": "kaffir lime leaves"
+        },
+        {
+          "amount": "12",
+          "unit": "can",
+          "name_id": "Santan kental (merek Chaokoh)",
+          "name_en": "coconut cream (Chaokoh brand)"
+        },
+        {
+          "amount": "208",
+          "unit": "oz",
+          "name_id": "Ayam Bakar Sauce (1 bag)",
+          "name_en": "Ayam Bakar Sauce (1 bag)",
+          "recipe_ref": "resep-168"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Cut the whole fryers into pieces."
+        },
+        {
+          "step_id": "",
+          "step_en": "Mix the water, kaffir lime leaves, coconut cream, and Ayam Bakar Sauce."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil, about 25-30 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the chicken and boil until cooked."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put 3 pieces (breast or thigh) in a bag."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fill the bag with marinade, tie, and freeze."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 80,
+      "yield_unit": "bags",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. Coconut cream can size assumed at 300ml/can (the same figure already confirmed for coconut milk, see [[raspberry-package-sizes]]) -- \"coconut cream\" is a different product than \"coconut milk\", so this is a real assumption, not a confirmed fact; flagged, propagates into resep-170. \"Garnish with Kaffir Limes\" in the Serve steps is kept out of the batch ingredient list (already counted above in the prepare-stage 40 leaves) but mentioned again in resep-170's method as a serving garnish, matching the sheet's own repeated mention.",
+      "linked_recipe_id": "resep-170"
+    },
+    {
+      "id": "resep-170",
+      "resep_num": 170,
+      "category": "ayam",
+      "photo": "",
+      "name_id": "Ayam Bakar Kalasan",
+      "name_en": "Ayam Bakar Kalasan (Grilled Coconut-Marinated Chicken)",
+      "headnote_id": "",
+      "headnote_en": "Grilled marinated chicken, Yogyakarta-Kalasan style, in a coconut and sweet soy sauce.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "14",
+          "unit": "oz",
+          "name_id": "Ayam (3 potong, dada atau paha)",
+          "name_en": "chicken (3 pieces, breast or thigh)"
+        },
+        {
+          "amount": "2½",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Daun jeruk purut",
+          "name_en": "kaffir lime leaf, plus more to garnish"
+        },
+        {
+          "amount": "3",
+          "unit": "Tbsp",
+          "name_id": "Santan kental",
+          "name_en": "coconut cream"
+        },
+        {
+          "amount": "1¼",
+          "unit": "Tbsp",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce, plus more to serve"
+        },
+        {
+          "amount": "2¾",
+          "unit": "Tbsp",
+          "name_id": "Gula merah",
+          "name_en": "brown sugar"
+        },
+        {
+          "amount": "⅝",
+          "unit": "tsp",
+          "name_id": "Merica putih",
+          "name_en": "white pepper"
+        },
+        {
+          "amount": "1¼",
+          "unit": "Tbsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "⅝",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine the water, kaffir lime leaf, coconut cream, sweet soy sauce, brown sugar, white pepper, sugar, and salt in a pot; bring to a boil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the chicken and simmer until cooked through, about 20-25 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Remove the chicken and grill or pan-sear until lightly charred on both sides."
+        },
+        {
+          "step_id": "",
+          "step_en": "Serve topped with the cooking broth, a drizzle of sweet soy sauce, and a kaffir lime leaf garnish."
+        }
+      ],
+      "serves": "1-2",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-169",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01, sized to 1/80 of resep-169's batch -- both `.Ayam Bakar Kalasan` and `Factory Mix - Ayam Bakar Sauce` state \"80 orders\" in their own headers, so this is exact division against a stated order count, not an estimate. Method replaces the restaurant's freeze/microwave-reheat/deep-fry sequence (written for a pre-marinated frozen bag) with a from-raw simmer-then-grill method, matching the established convention for adapting restaurant reheat steps to a real home technique. Coconut cream amount depends on an assumed 300ml can size -- see resep-169's review_notes."
+    },
+    {
+      "id": "resep-171",
+      "resep_num": 171,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Bumbu Rendam Ikan Bakar - Restaurant Batch",
+      "name_en": "Ikan Bakar Marinade - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's salt-and-vinegar marinade for grilled fish.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "gal",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "3",
+          "unit": "cup",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine the water, salt, and vinegar."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 156,
+      "yield_unit": "fl oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. `.Ikan Bakar` states no fish quantity or order count at all (both blank on the sheet), so this marinade can't be divided against a known per-order fraction the way the other 3 new dishes could -- resep-172's home amount was scaled down by preserving this ratio directly to a practical home volume instead, not a fraction of this batch. See resep-172's review_notes.",
+      "linked_recipe_id": "resep-172"
+    },
+    {
+      "id": "resep-172",
+      "resep_num": 172,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Ikan Bakar",
+      "name_en": "Ikan Bakar (Grilled Marinated Fish)",
+      "headnote_id": "",
+      "headnote_en": "Whole grilled fish, marinated in salt and vinegar, basted with a sweet oyster-soy glaze.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Ikan nila utuh (sekitar 1-1½ lb), bersihkan",
+          "name_en": "whole tilapia (about 1-1½ lb), cleaned"
+        },
+        {
+          "amount": "2",
+          "unit": "cups",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "6",
+          "unit": "Tbsp",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Saus tiram",
+          "name_en": "oyster sauce"
+        },
+        {
+          "amount": "4",
+          "unit": "Tbsp",
+          "name_id": "Kecap manis",
+          "name_en": "sweet soy sauce"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Merica putih, secukupnya",
+          "name_en": "white pepper, to taste"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Combine the water, salt, and vinegar; marinate the fish for 2.5 hours, then pat dry."
+        },
+        {
+          "step_id": "",
+          "step_en": "Combine the oyster sauce and sweet soy sauce to make the basting sauce."
+        },
+        {
+          "step_id": "",
+          "step_en": "Deep fry the fish for 4 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Preheat a wok or pan and lightly oil it; transfer the fish to the pan."
+        },
+        {
+          "step_id": "",
+          "step_en": "Baste both sides of the fish with the basting sauce and sprinkle with white pepper."
+        }
+      ],
+      "serves": "1-2",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-171",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. Fish size/quantity (\"1 whole tilapia, about 1-1.5 lb\") is an estimate, not a sheet fact -- `.Ikan Bakar` never states how many fish the batch marinade covers. Marinade scaled down by preserving the sheet's own ratio (water:salt:vinegar = 32:1:6) to a practical home volume for 1-2 whole fish, rather than dividing against a known per-order fraction (not possible here, see resep-171's review_notes). Basting sauce (\"Oyster Soy Sauce, Ramayani\") resolved via `Factory Mix - Oyster Soy Sauce`: 1 Tbsp oyster sauce + 4 Tbsp sweet soy sauce -- that sheet's own total (5 Tbsp) exactly matches the 5 Tbsp this dish calls for, so used directly with no scaling needed. White pepper (mentioned in the method, \"add white pepper\", but never given an ingredient row or amount) left as a no-amount \"to taste\" line."
+    },
+    {
+      "id": "resep-173",
+      "resep_num": 173,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Gado Gado Dressing",
+      "name_en": "Gado Gado Dressing",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's Satay Sauce, finished with kencur and garlic for Gado Gado.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Saus Satay",
+          "name_en": "Satay Sauce",
+          "recipe_ref": "resep-140"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Kencur",
+          "name_en": "lesser galangal (kencur)"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Stir the kencur and garlic into the Satay Sauce."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 0.5,
+      "yield_unit": "cup",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `!Satay & GadoGado Sauce` + `Factory Mix - Gado Gado Spices`. This sheet's \"Gado Gado Sauce\" section is literally \"Satay Sauce + 14 Tbsp Gado Gado Spices (10 Tbsp kencur + 4 Tbsp garlic), then freeze\" -- the same finished Satay Sauce batch as `.Satay`'s own sauce section on this sheet, which resep-139/140 were already built from. Rather than build a whole separate restaurant-batch tier for this (it would just be resep-139's batch again, plus a small spice addition), linked directly to resep-140 (Satay Sauce, home, ½ cup) via recipe_ref and added the Gado Gado spices at the equivalent fraction (14 Tbsp / resep-139's ~864oz finished-sauce batch, applied to resep-140's ½-cup/4floz share = ~0.065 Tbsp each of kencur/garlic -- floor-bumped to 1/8 tsp each, the standard practical minimum used throughout this session). Satay Sauce is now confirmed reused by 2 dishes.\n\nFOUND, NOT RESOLVED: resep-35 (\"Bumbu Gado-Gado Ramayani\", scan-sourced) is a completely different-looking Gado-Gado peanut sauce -- no chili paste at all (unlike this spreadsheet version, which is Satay Sauce-based and includes California Chili Paste), different ratios throughout. Left untouched, not reconciled -- may be an older/different-generation recipe, same pattern as Gule Kambing's scan-vs-spreadsheet divergence, or may be a genuinely different, milder sauce. Flagged in derivations/SPREADSHEET_MAPPING.md."
+    },
+    {
+      "id": "resep-174",
+      "resep_num": 174,
+      "category": "sayuran_salad",
+      "photo": "",
+      "name_id": "Gado Gado",
+      "name_en": "Gado Gado (Indonesian Vegetable Salad with Peanut Sauce)",
+      "headnote_id": "",
+      "headnote_en": "Blanched vegetables, tofu, and egg with Ramayani's peanut-sauce dressing.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1½",
+          "unit": "cups",
+          "name_id": "Kol rebus, cincang",
+          "name_en": "shredded boiled cabbage"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Tauge",
+          "name_en": "bean sprouts"
+        },
+        {
+          "amount": "1",
+          "unit": "pc",
+          "name_id": "Telur rebus",
+          "name_en": "boiled egg"
+        },
+        {
+          "amount": "½",
+          "unit": "pc",
+          "name_id": "Tahu, potong",
+          "name_en": "tofu, cut"
+        },
+        {
+          "amount": "1",
+          "unit": "cup",
+          "name_id": "Selada romaine, iris",
+          "name_en": "shredded romaine lettuce"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kerupuk warna-warni",
+          "name_en": "colored shrimp chips, to taste"
+        },
+        {
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Gado Gado Dressing",
+          "name_en": "Gado Gado Dressing",
+          "recipe_ref": "resep-173"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Bring water to a boil; add the cabbage and boil for 30 seconds. Drain."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring water to a boil again; add the bean sprouts and immediately remove. Drain."
+        },
+        {
+          "step_id": "",
+          "step_en": "Boil the egg."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate the prepared ingredients."
+        },
+        {
+          "step_id": "",
+          "step_en": "In a salad bowl, arrange the cabbage, then top with the bean sprouts, tofu, egg, and romaine lettuce."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with the Gado Gado Dressing and shrimp chips."
+        }
+      ],
+      "serves": "1",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `.Gado Gado`. Already order-sized on the sheet, used directly -- no scale-down math needed, same pattern as Nasi Goreng/Bihun Goreng."
     }
   ]
 }
