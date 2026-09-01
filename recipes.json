@@ -4570,8 +4570,8 @@
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Catatan Ibu: terlalu banyak coklat, bolu tidak bisa naik. FLAG: Berkas 2, Hal. 12 & 13. Waktu steam '± ½ menit' kelihatannya terlalu singkat — kemungkinan ½ jam. Resep muncul dua kali (Hal. 12 & 13); Hal. 13 lebih rapi dan disimpan di sini. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Mother's note: 'Too much chocolate and the cake won't rise.' FLAG: File 2, Pages 12 & 13. Steam time of '± ½ minute' seems too short — likely ½ hour. Recipe appears twice — Pages 12 & 13 are identical; Page 13 has cleaner handwriting and is kept here. Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "Too much chocolate and the cake won't rise.",
       "content_state": "full",
       "flags": [
         "no_name_en",
@@ -4579,7 +4579,7 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
@@ -4622,8 +4622,8 @@
           "step_en": "The remaining beaten egg mixture above is mixed with flour and then orange crush."
         },
         {
-          "step_id": "Cetak dan steam ± ½ menit.",
-          "step_en": "Pour into moulds and steam ± ½ minute."
+          "step_id": "Cetak dan steam ± 12 menit.",
+          "step_en": "Pour into moulds and steam ± 12 minute."
         }
       ]
     },
