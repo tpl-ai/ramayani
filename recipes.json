@@ -3071,14 +3071,14 @@
     {
       "id": "resep-31",
       "resep_num": 31,
-      "category": "appetizer",
+      "category": "other",
       "photo": "",
       "name_id": "Bakut Teh",
       "name_en": "",
       "headnote_id": "",
       "headnote_en": "",
-      "notes_id": "Cara membuat tidak ditulis dalam catatan asli. FLAG: Berkas 2, Hal. 7. Hanya daftar bahan tanpa takaran dan tanpa cara membuat. Harap konfirmasi dengan Ibu.",
-      "notes_en": "Method not written in the original notes. FLAG: File 2, Page 7. Ingredient names only — no quantities, no method. Please confirm with mother.",
+      "notes_id": "",
+      "notes_en": "",
       "content_state": "partial",
       "flags": [
         "no_name_en",
@@ -3086,7 +3086,7 @@
         "no_serves",
         "no_photo"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
           "unit": "",
