@@ -16891,9 +16891,9 @@
       "id": "resep-182",
       "resep_num": 182,
       "category": "daging",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20%20Sop%20Buntut1515-hbgmVDONeXUc8k0u1g0ADkqzXmQCCS.JPG",
       "name_id": "Sop Buntut",
-      "name_en": "Sop Buntut (Indonesian Oxtail Soup)",
+      "name_en": "Oxtail Soup",
       "headnote_id": "",
       "headnote_en": "Indonesian oxtail soup with celery, tomato, and nutmeg.",
       "notes_id": "",
@@ -17001,8 +17001,7 @@
       "serves": "1",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
