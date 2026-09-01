@@ -16296,7 +16296,7 @@
       "id": "resep-176",
       "resep_num": 176,
       "category": "sayuran_salad",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Cah%20Kangkong%200388-lGJ8pQk0RF3IDMySGFJ6rNqtfuyayJ.jpg",
       "name_id": "Cah Kangkung & Toge",
       "name_en": "Stir-Fried Water Spinach & Bean Sprouts",
       "headnote_id": "",
@@ -16386,8 +16386,7 @@
       "serves": "1",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `.Cah Kangkung & Toge`. Already order-sized on the sheet, used directly -- no scale-down math needed. Kangkung (water spinach) has no stated amount anywhere on the sheet (bean sprouts are quantified at 2 cups, kangkung is not) -- left as \"1 bunch\" rather than inventing a precise measure. Method's own step order (bean sprouts before kangkung leaves, per the sheet's numbered steps) was kept even though the ingredient list lists kangkung leaves before bean sprouts, since the method is the more reliable source for sequence."
