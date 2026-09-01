@@ -15530,7 +15530,7 @@
       "id": "resep-170",
       "resep_num": 170,
       "category": "ayam",
-      "photo": "",
+      "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Ayam%20Bakar%20DSC04997X-dhSKFHBD1HSdqd4ZTCI1FUOWpqeHIf.JPG",
       "name_id": "Ayam Bakar Kalasan",
       "name_en": "Ayam Bakar Kalasan (Grilled Coconut-Marinated Chicken)",
       "headnote_id": "",
@@ -15614,8 +15614,7 @@
       "serves": "1-2",
       "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_photo"
+        "no_headnote"
       ],
       "reviewed": true,
       "recipe_type": "home",
