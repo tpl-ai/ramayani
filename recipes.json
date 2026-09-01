@@ -7161,114 +7161,122 @@
       "name_id": "Lumpia",
       "name_en": "Indonesian Egg Roll",
       "headnote_id": "",
-      "headnote_en": "",
+      "headnote_en": "A hearty chicken and vegetable filling for Lumpia (Indonesian egg rolls).",
       "notes_id": "",
       "notes_en": "",
-      "content_state": "partial",
+      "content_state": "full",
       "flags": [
-        "no_headnote",
-        "no_serves"
+        "no_headnote"
       ],
-      "reviewed": false,
+      "reviewed": true,
       "ingredients": [
         {
-          "unit": "lbs",
-          "name_id": "Daging egg roll",
-          "name_en": "meat for egg roll",
-          "amount": "2"
+          "amount": "1",
+          "unit": "lb",
+          "name_id": "Ayam giling",
+          "name_en": "ground chicken"
         },
         {
-          "unit": "",
-          "name_id": "Kol diiris agak halus",
-          "name_en": "cabbage, thinly sliced",
-          "amount": "1½"
+          "amount": "½",
+          "unit": "cup",
+          "name_id": "Minyak",
+          "name_en": "oil"
         },
         {
-          "unit": "",
-          "name_id": "Telur",
-          "name_en": "eggs",
-          "amount": "12"
+          "amount": "2",
+          "unit": "oz",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, chopped"
         },
         {
-          "unit": "",
-          "name_id": "Garlic",
-          "name_en": "Garlic (bawang putih)",
-          "amount": ""
-        },
-        {
-          "unit": "tsp",
-          "name_id": "meres Garam",
-          "name_en": "(level) salt",
-          "amount": "2"
-        },
-        {
-          "unit": "tsp",
-          "name_id": "meres Vetsin",
-          "name_en": "(level) MSG",
-          "amount": "3"
-        },
-        {
-          "unit": "tsp",
-          "name_id": "penuh Gula",
-          "name_en": "(full) sugar",
-          "amount": "7"
-        },
-        {
-          "unit": "",
-          "name_id": "Peder",
-          "name_en": "Pepper (merica)",
-          "amount": ""
-        },
-        {
-          "unit": "lbs",
-          "name_id": "Ground chicken",
-          "name_en": "ground chicken",
-          "amount": "2"
-        },
-        {
-          "unit": "",
-          "name_id": "Kool diiris agak halus",
-          "name_en": "cabbage (kol), thinly sliced",
-          "amount": "1½"
-        },
-        {
+          "amount": "6",
           "unit": "",
           "name_id": "Telur",
-          "name_en": "eggs",
-          "amount": "12"
+          "name_en": "eggs"
         },
         {
-          "unit": "",
-          "name_id": "Garlic",
-          "name_en": "Garlic (bawang putih)",
-          "amount": ""
+          "amount": "18",
+          "unit": "oz",
+          "name_id": "Rebung, iris (2 kaleng kecil)",
+          "name_en": "bamboo shoots, strips (2 small cans)"
         },
         {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "Kol, iris halus",
+          "name_en": "cabbage, shredded"
+        },
+        {
+          "amount": "1",
           "unit": "tsp",
-          "name_id": "meres Garam",
-          "name_en": "(level) salt",
-          "amount": "2"
+          "name_id": "Vetsin",
+          "name_en": "MSG"
         },
         {
+          "amount": "2",
           "unit": "tsp",
-          "name_id": "meres Vetsin",
-          "name_en": "(level) MSG",
-          "amount": "3"
+          "name_id": "Garam",
+          "name_en": "salt"
         },
         {
-          "unit": "tsp",
-          "name_id": "penuh Gula",
-          "name_en": "(full) sugar",
-          "amount": "7"
-        },
-        {
-          "unit": "",
-          "name_id": "Pedes",
-          "name_en": "Hot chilli",
-          "amount": ""
+          "amount": "4",
+          "unit": "Tbsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
         }
       ],
-      "method": []
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Stir-fry the garlic in the oil."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the eggs, ground chicken, and bamboo shoots."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the shredded cabbage and turn off the heat."
+        },
+        {
+          "step_id": "",
+          "step_en": "Add the MSG, salt, and sugar, and mix."
+        },
+        {
+          "step_id": "",
+          "step_en": "Refrigerate the filling."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put about 3/4 cup of the filling in the center of an egg roll skin."
+        },
+        {
+          "step_id": "",
+          "step_en": "Wet all edges of the egg roll skin with water."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fold the bottom of the skin up until flush with the filling."
+        },
+        {
+          "step_id": "",
+          "step_en": "Press down the edges, making sure no filling is between the skin layers."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fold down the top of the skin, again making sure the edges are clear of filling."
+        },
+        {
+          "step_id": "",
+          "step_en": "Fold in the sides to close the roll."
+        },
+        {
+          "step_id": "",
+          "step_en": "Deep fry for 2 minutes."
+        }
+      ],
+      "serves": "10-12",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Fixed 2026-09-02 from `Xtra - Lumpia`, per Arman. The prior data had a real duplication bug: the same shared ingredients (cabbage, eggs, salt, MSG, sugar) were listed twice, differing only in the protein line (\"meat for egg roll\" 2lbs vs. \"ground chicken\" 2lbs) -- and had no method at all. Rebuilt clean from the sheet: ground chicken only (no beef alternative on the sheet), 1lb (not 2lbs). MSG/salt/sugar moved into the cooking method (added right after the cabbage, per the sheet's own step order) rather than left unclear. Serves (10-12) is an estimate from the filling's total volume at the sheet's own \"3/4 cup per roll\" portioning -- not a sheet fact, the source never states a roll count."
     },
     {
       "id": "resep-75",
@@ -11519,8 +11527,8 @@
       "resep_num": 125,
       "category": "seafood",
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/%20Ikan%20Pepes%203-AavDorEQN0sI7Hf8EukxL5rPoGQvBB.JPG",
-      "name_id": "Pepes Ikan",
-      "name_en": "Banana-Leaf Wrapped Steamed Fish",
+      "name_id": "Ikan Pepes (Original)",
+      "name_en": "Banana-Leaf Wrapped Steamed Fish (Original)",
       "headnote_id": "",
       "headnote_en": "Ramayani's Pepes Ikan, scaled down to a single whole fish from the restaurant's own recipe.",
       "notes_id": "",
@@ -11647,7 +11655,7 @@
         }
       ],
       "reviewed": true,
-      "review_notes": "New recipe added 2026-08-27: one of two home-scale dishes split from resep-14 (Ikan Acar & Pepes), for a single whole fish. Spice-paste amounts (chili, candlenut, shallot, garlic, ginger, salt, MSG, sugar) are resep-14's own batch quantities divided by 28 -- see resep-14 review_notes for how that fish count was back-solved from total spice-paste weight against an external reference ratio, and why Ramayani's own proportions (not the reference's) were kept. Piece counts (chilies, candlenuts, shallots) are estimates converting the batch's gram weights using typical piece sizes, flagged as approximate. Tomato (2000g/28 = ~71g) is treated as a separate layering ingredient, not part of the blended paste, matching the source method's wording and the reference's own categorization. The aromatic-layering/wrapping ingredients (kemangi, lemongrass, salam, kaffir lime leaves, banana leaf) are NOT in resep-14 at all -- the source scan never quantified them, even though its own method mentions wrapping in banana leaf. Added here using Arman-supplied reference quantities for a standard ~400-500g whole fish, since Pepes structurally requires them and there is nothing Ramayani-specific to scale down instead -- flagged as sourced from external reference, not from the scan. Vinegar amount was never quantified in the source scan either, left as \"to taste.\" Method steps combine resep-14's own Pepes text with the aromatic additions described above.",
+      "review_notes": "New recipe added 2026-08-27: one of two home-scale dishes split from resep-14 (Ikan Acar & Pepes), for a single whole fish. Spice-paste amounts (chili, candlenut, shallot, garlic, ginger, salt, MSG, sugar) are resep-14's own batch quantities divided by 28 -- see resep-14 review_notes for how that fish count was back-solved from total spice-paste weight against an external reference ratio, and why Ramayani's own proportions (not the reference's) were kept. Piece counts (chilies, candlenuts, shallots) are estimates converting the batch's gram weights using typical piece sizes, flagged as approximate. Tomato (2000g/28 = ~71g) is treated as a separate layering ingredient, not part of the blended paste, matching the source method's wording and the reference's own categorization. The aromatic-layering/wrapping ingredients (kemangi, lemongrass, salam, kaffir lime leaves, banana leaf) are NOT in resep-14 at all -- the source scan never quantified them, even though its own method mentions wrapping in banana leaf. Added here using Arman-supplied reference quantities for a standard ~400-500g whole fish, since Pepes structurally requires them and there is nothing Ramayani-specific to scale down instead -- flagged as sourced from external reference, not from the scan. Vinegar amount was never quantified in the source scan either, left as \"to taste.\" Method steps combine resep-14's own Pepes text with the aromatic additions described above.\n\nRenamed \"(Original)\" 2026-09-02: a second, genuinely different Ikan Pepes now exists (resep-187), built from `Xtra - Bumbu Ikan Pepes` + `Xtra - Ikan Pepes` -- a different spreadsheet source with a much richer spice-paste-per-fish ratio (~4.7x more paste per fish) and a structurally different technique (tomato blended into the paste, not layered separately). Kept both rather than merging or picking one, same pattern as Gule Kambing's scan-vs-spreadsheet divergence -- see resep-187's own review_notes and derivations/ikan_pepes_new.py.",
       "flags": [
         "no_headnote"
       ],
@@ -17241,6 +17249,390 @@
       "recipe_type": "home",
       "linked_recipe_id": "resep-33",
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/5 of resep-33's batch (a clean divisor landing at 2 cups rice, a practical home quantity) -- the batch has a real stated scale (10 cups rice) to divide against, not an estimate. Coconut milk lands on exactly 1 whole small can at this fraction, a nice round number. Nasi Uduk Mix (resep-183) decomposed directly into its 3 ingredients rather than recipe_ref'd, matching how other single-use factory mixes (Bumbu Betawi, Rempeyek Flour) were handled for their home twins. Lemongrass floor-bumped from 0.4pc to 1 small piece. Photo moved here from resep-33 (now hidden as a restaurant-batch page)."
+    },
+    {
+      "id": "resep-185",
+      "resep_num": 185,
+      "category": "bumbu_dasar",
+      "photo": "",
+      "name_id": "Bumbu Ikan Pepes - Restaurant Batch",
+      "name_en": "Ikan Pepes Spice Paste - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's rich spice paste for Ikan Pepes.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1200",
+          "unit": "gm",
+          "name_id": "Bawang merah",
+          "name_en": "shallots"
+        },
+        {
+          "amount": "1000",
+          "unit": "gm",
+          "name_id": "Cabe merah",
+          "name_en": "red chili"
+        },
+        {
+          "amount": "1000",
+          "unit": "gm",
+          "name_id": "Kemiri",
+          "name_en": "candlenuts"
+        },
+        {
+          "amount": "2000",
+          "unit": "gm",
+          "name_id": "Tomat",
+          "name_en": "tomato"
+        },
+        {
+          "amount": "200",
+          "unit": "gm",
+          "name_id": "Jahe",
+          "name_en": "ginger"
+        },
+        {
+          "amount": "100",
+          "unit": "gm",
+          "name_id": "Bawang putih",
+          "name_en": "garlic"
+        },
+        {
+          "amount": "166.667",
+          "unit": "gm",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "150",
+          "unit": "gm",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "4",
+          "unit": "Tbsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "0.5",
+          "unit": "lbs",
+          "name_id": "Kunyit segar (atau 3 Tbsp bubuk kering)",
+          "name_en": "fresh turmeric (or 3 Tbsp dried, ground)"
+        },
+        {
+          "amount": "3",
+          "unit": "cups",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Blend all ingredients into a pulp and mix."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 238,
+      "yield_unit": "oz",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Xtra - Bumbu Ikan Pepes`. Unlike resep-14's own paste (used raw, chopped or blended, then wrapped with the fish), this paste includes both the tomato and 3 cups of vegetable oil blended directly in -- a structurally richer, more emulsified paste than resep-14's leaner version. yield_amount approximates all ingredients on a common oz basis. See derivations/ikan_pepes_new.py for the full per-fish breakdown and how this compares to resep-14/125's own numbers."
+    },
+    {
+      "id": "resep-186",
+      "resep_num": 186,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Ikan Pepes - Restaurant Batch",
+      "name_en": "Ikan Pepes - Restaurant Batch",
+      "headnote_id": "",
+      "headnote_en": "Ramayani's banana-leaf wrapped steamed fish.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "10",
+          "unit": "pc",
+          "name_id": "Ikan trout",
+          "name_en": "trout"
+        },
+        {
+          "amount": "2",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "2",
+          "unit": "oz",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "20",
+          "unit": "pc",
+          "name_id": "Sereh",
+          "name_en": "lemongrass"
+        },
+        {
+          "amount": "20",
+          "unit": "pc",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaves"
+        },
+        {
+          "amount": "238",
+          "unit": "oz",
+          "name_id": "Bumbu Ikan Pepes",
+          "name_en": "Ikan Pepes Spice Paste",
+          "recipe_ref": "resep-185"
+        },
+        {
+          "amount": "2",
+          "unit": "bags",
+          "name_id": "Daun pisang",
+          "name_en": "banana leaves"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Aluminum foil",
+          "name_en": "aluminum foil"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Kertas roti",
+          "name_en": "parchment paper"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash and marinate the trout with the salt and vinegar."
+        },
+        {
+          "step_id": "",
+          "step_en": "Cut the trout into portions."
+        },
+        {
+          "step_id": "",
+          "step_en": "Lay a banana leaf on top of a sheet of parchment paper."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put the spice paste on the banana leaf and place the fish on top."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put more spice paste in the fish cavity and on top of the fish."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put 2 pieces of lemongrass and bay leaves on top of the fish."
+        },
+        {
+          "step_id": "",
+          "step_en": "Wrap the fish with the banana leaves and parchment paper; secure with a rubber band."
+        },
+        {
+          "step_id": "",
+          "step_en": "Pressure-cook (\"presto\") the fish for 2 hours."
+        }
+      ],
+      "serves": "",
+      "yield_amount": 10,
+      "yield_unit": "fish",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_serves",
+        "no_photo",
+        "scale"
+      ],
+      "reviewed": true,
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `Xtra - Ikan Pepes`. Lemongrass and bay leaves are stated at exactly 2 pieces each per fish (20pc / 10 fish) -- a clean, Ramayani-specific ratio, used to compute resep-187's per-fish fraction directly. The Serve steps (microwave from frozen, then \"pour chicken curry sauce\") describe reheating a pre-made frozen batch and appear to reference an unrelated dish (chicken curry sauce on a fish dish doesn't match anything else in this recipe or resep-14's own description) -- not carried into resep-187's home method, which instead borrows resep-14's own charring finish (steam, then briefly char over flame/hot pan) since that's consistent with how this restaurant's Pepes is actually described elsewhere.",
+      "linked_recipe_id": "resep-187"
+    },
+    {
+      "id": "resep-187",
+      "resep_num": 187,
+      "category": "seafood",
+      "photo": "",
+      "name_id": "Ikan Pepes",
+      "name_en": "Ikan Pepes (Banana-Leaf Wrapped Steamed Fish)",
+      "headnote_id": "",
+      "headnote_en": "A single whole fish, generously wrapped with a rich spice paste in banana leaf and steamed.",
+      "notes_id": "",
+      "notes_en": "",
+      "ingredients": [
+        {
+          "amount": "1",
+          "unit": "whole",
+          "name_id": "Ikan trout, bersihkan",
+          "name_en": "trout (or similar whole fish), cleaned"
+        },
+        {
+          "amount": "⅛",
+          "unit": "tsp",
+          "name_id": "Garam (untuk marinasi)",
+          "name_en": "salt (for marinating)"
+        },
+        {
+          "amount": "1¼",
+          "unit": "tsp",
+          "name_id": "Cuka",
+          "name_en": "vinegar"
+        },
+        {
+          "amount": "8",
+          "unit": "",
+          "name_id": "Bawang merah",
+          "name_en": "shallots"
+        },
+        {
+          "amount": "8",
+          "unit": "",
+          "name_id": "Cabe merah besar",
+          "name_en": "large red chilies"
+        },
+        {
+          "amount": "22",
+          "unit": "",
+          "name_id": "Kemiri, sangrai",
+          "name_en": "candlenuts, roasted"
+        },
+        {
+          "amount": "1",
+          "unit": "",
+          "name_id": "Tomat sedang, potong",
+          "name_en": "medium tomato, chopped"
+        },
+        {
+          "amount": "4",
+          "unit": "tsp",
+          "name_id": "Jahe, parut",
+          "name_en": "ginger, grated"
+        },
+        {
+          "amount": "3",
+          "unit": "clove",
+          "name_id": "Bawang putih, cincang",
+          "name_en": "garlic, minced"
+        },
+        {
+          "amount": "3⅜",
+          "unit": "tsp",
+          "name_id": "Garam (untuk bumbu)",
+          "name_en": "salt (for the spice paste)"
+        },
+        {
+          "amount": "3",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "⅞",
+          "unit": "tsp",
+          "name_id": "Vetsin",
+          "name_en": "MSG"
+        },
+        {
+          "amount": "1",
+          "unit": "tsp",
+          "name_id": "Bubuk kunyit",
+          "name_en": "ground turmeric"
+        },
+        {
+          "amount": "4⅓",
+          "unit": "Tbsp",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "2",
+          "unit": "",
+          "name_id": "Sereh, memarkan dan potong",
+          "name_en": "pieces lemongrass, bruised and cut into sections"
+        },
+        {
+          "amount": "2",
+          "unit": "",
+          "name_id": "Daun salam",
+          "name_en": "Indonesian bay leaves"
+        },
+        {
+          "amount": "1",
+          "unit": "large sheet",
+          "name_id": "Daun pisang, lunakkan di atas api",
+          "name_en": "banana leaf, softened over a flame"
+        },
+        {
+          "amount": "",
+          "unit": "",
+          "name_id": "Aluminum foil dan kertas roti, secukupnya",
+          "name_en": "aluminum foil and parchment paper, as needed"
+        }
+      ],
+      "method": [
+        {
+          "step_id": "",
+          "step_en": "Wash and marinate the fish with the salt and vinegar."
+        },
+        {
+          "step_id": "",
+          "step_en": "Blend the shallots, chilies, candlenuts, tomato, ginger, garlic, salt, sugar, MSG, turmeric, and oil into a pulp."
+        },
+        {
+          "step_id": "",
+          "step_en": "Lay the banana leaf on top of a sheet of parchment paper."
+        },
+        {
+          "step_id": "",
+          "step_en": "Spread some of the spice paste on the banana leaf and place the fish on top."
+        },
+        {
+          "step_id": "",
+          "step_en": "Put more spice paste inside the fish cavity and on top."
+        },
+        {
+          "step_id": "",
+          "step_en": "Top with the lemongrass and bay leaves."
+        },
+        {
+          "step_id": "",
+          "step_en": "Wrap the fish tightly in the banana leaf, foil, and parchment paper; secure with string or a rubber band."
+        },
+        {
+          "step_id": "",
+          "step_en": "Steam for about 45 minutes to 1 hour, until the fish is cooked through."
+        },
+        {
+          "step_id": "",
+          "step_en": "Briefly char the wrapped parcel over an open flame or in a hot pan before serving."
+        }
+      ],
+      "serves": "1-2",
+      "content_state": "full",
+      "flags": [
+        "no_headnote",
+        "no_photo"
+      ],
+      "reviewed": true,
+      "recipe_type": "home",
+      "linked_recipe_id": "resep-186",
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/10 of resep-186's batch -- exact division (the sheet states 10 fish directly, and lemongrass/bay leaves are stated at a clean 2pc/fish ratio, confirming 10 as the right anchor for the whole recipe, not just the fish itself). This spice paste is genuinely much richer than resep-14/125's own version (~674g/fish here vs. ~144g/fish there, roughly 4.7x) and structurally different (tomato and oil blended directly into the paste, vs. layered separately) -- kept as a second, separate Ikan Pepes rather than reconciled with resep-125 (now renamed \"(Original)\"), same treatment as Gule Kambing's two source generations. Dry ground turmeric used instead of the sheet's fresh-turmeric option, for home practicality. Steam time (45min-1hr) is an adaptation, not a sheet fact -- the sheet's own 2-hour pressure-cook time is for the full 10-fish batch cooked together, too long for a single wrapped fish. Charring finish borrowed from resep-14's own Pepes description, not stated on this specific sheet (which instead has an unrelated \"pour chicken curry sauce\" serve step, not used here -- see resep-186's review_notes). Candlenuts/chilies/shallots converted from weight to piece counts using the same reference weights established for resep-125's own conversion -- estimates, not exact. See derivations/ikan_pepes_new.py."
     }
   ]
 }
