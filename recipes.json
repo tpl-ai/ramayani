@@ -3751,17 +3751,13 @@
           "amount": "10",
           "unit": "cups",
           "name_id": "Air",
-          "name_en": "water",
-          "section_id": "Bubur",
-          "section_en": "Porridge"
+          "name_en": "water"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Garam, secukupnya",
-          "name_en": "salt, to taste",
-          "section_id": "Bubur",
-          "section_en": "Porridge"
+          "name_en": "salt, to taste"
         },
         {
           "amount": "1",
@@ -3775,25 +3771,19 @@
           "amount": "",
           "unit": "",
           "name_id": "Kecap ikan, secukupnya",
-          "name_en": "fish sauce, to taste",
-          "section_id": "Ayam Goreng Suwir",
-          "section_en": "Shredded Fried Chicken"
+          "name_en": "fish sauce, to taste"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Cuka, secukupnya",
-          "name_en": "vinegar, to taste",
-          "section_id": "Ayam Goreng Suwir",
-          "section_en": "Shredded Fried Chicken"
+          "name_en": "vinegar, to taste"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Vetsin, secukupnya",
-          "name_en": "MSG, to taste",
-          "section_id": "Ayam Goreng Suwir",
-          "section_en": "Shredded Fried Chicken"
+          "name_en": "MSG, to taste"
         },
         {
           "amount": "¼",
@@ -3815,9 +3805,7 @@
           "amount": "¼",
           "unit": "Tbsp",
           "name_id": "Kecap asin",
-          "name_en": "soy sauce",
-          "section_id": "Per Mangkuk (Bumbu Saji)",
-          "section_en": "Per Bowl (Seasoning)"
+          "name_en": "soy sauce"
         },
         {
           "amount": "",
@@ -3831,41 +3819,31 @@
           "amount": "",
           "unit": "",
           "name_id": "Emping, remukkan",
-          "name_en": "emping crackers, crushed",
-          "section_id": "Pelengkap",
-          "section_en": "Toppings"
+          "name_en": "emping crackers, crushed"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Tong chai",
-          "name_en": "tong chai (preserved vegetable)",
-          "section_id": "Pelengkap",
-          "section_en": "Toppings"
+          "name_en": "tong chai (preserved vegetable)"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Kacang kedelai kering, rendam semalam dan goreng",
-          "name_en": "dried soy beans, soaked overnight and fried crispy",
-          "section_id": "Pelengkap",
-          "section_en": "Toppings"
+          "name_en": "dried soy beans, soaked overnight and fried crispy"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Seledri, cincang",
-          "name_en": "celery, chopped",
-          "section_id": "Pelengkap",
-          "section_en": "Toppings"
+          "name_en": "celery, chopped"
         },
         {
           "amount": "",
           "unit": "",
           "name_id": "Bawang goreng",
-          "name_en": "fried shallot",
-          "section_id": "Pelengkap",
-          "section_en": "Toppings"
+          "name_en": "fried shallot"
         }
       ],
       "method": [
