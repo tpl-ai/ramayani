@@ -15773,10 +15773,45 @@
       "ingredients": [
         {
           "amount": "½",
-          "unit": "cup",
-          "name_id": "Saus Satay",
-          "name_en": "Satay Sauce",
-          "recipe_ref": "resep-140"
+          "unit": "tsp",
+          "name_id": "Minyak sayur",
+          "name_en": "vegetable oil"
+        },
+        {
+          "amount": "1",
+          "unit": "Tbsp",
+          "name_id": "Bawang bombay, diparut atau diblender",
+          "name_en": "onion, grated or blended"
+        },
+        {
+          "amount": "½",
+          "unit": "tsp",
+          "name_id": "California Chili Paste (atau sambal apa saja)",
+          "name_en": "California Chili Paste (or any chili paste/sambal)"
+        },
+        {
+          "amount": "1½",
+          "unit": "tsp",
+          "name_id": "Gula",
+          "name_en": "sugar"
+        },
+        {
+          "amount": "¼",
+          "unit": "tsp",
+          "name_id": "Garam",
+          "name_en": "salt"
+        },
+        {
+          "amount": "5",
+          "unit": "Tbsp",
+          "name_id": "Air",
+          "name_en": "water"
+        },
+        {
+          "amount": "2",
+          "unit": "Tbsp",
+          "name_id": "Selai kacang (crunchy)",
+          "name_en": "crunchy peanut butter"
         },
         {
           "amount": "⅛",
@@ -15794,7 +15829,15 @@
       "method": [
         {
           "step_id": "",
-          "step_en": "Stir the kencur and garlic into the Satay Sauce."
+          "step_en": "Combine all the ingredients except the kencur and garlic in a small pot."
+        },
+        {
+          "step_id": "",
+          "step_en": "Bring to a boil, then reduce heat and simmer, stirring, until thickened to a sauce consistency, about 5-10 minutes."
+        },
+        {
+          "step_id": "",
+          "step_en": "Stir in the kencur and garlic."
         }
       ],
       "serves": "",
@@ -15807,7 +15850,7 @@
         "no_photo"
       ],
       "reviewed": true,
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `!Satay & GadoGado Sauce` + `Factory Mix - Gado Gado Spices`. This sheet's \"Gado Gado Sauce\" section is literally \"Satay Sauce + 14 Tbsp Gado Gado Spices (10 Tbsp kencur + 4 Tbsp garlic), then freeze\" -- the same finished Satay Sauce batch as `.Satay`'s own sauce section on this sheet, which resep-139/140 were already built from. Rather than build a whole separate restaurant-batch tier for this (it would just be resep-139's batch again, plus a small spice addition), linked directly to resep-140 (Satay Sauce, home, ½ cup) via recipe_ref and added the Gado Gado spices at the equivalent fraction (14 Tbsp / resep-139's ~864oz finished-sauce batch, applied to resep-140's ½-cup/4floz share = ~0.065 Tbsp each of kencur/garlic -- floor-bumped to 1/8 tsp each, the standard practical minimum used throughout this session). Satay Sauce is now confirmed reused by 2 dishes.\n\nFOUND, NOT RESOLVED: resep-35 (\"Bumbu Gado-Gado Ramayani\", scan-sourced) is a completely different-looking Gado-Gado peanut sauce -- no chili paste at all (unlike this spreadsheet version, which is Satay Sauce-based and includes California Chili Paste), different ratios throughout. Left untouched, not reconciled -- may be an older/different-generation recipe, same pattern as Gule Kambing's scan-vs-spreadsheet divergence, or may be a genuinely different, milder sauce. Flagged in derivations/SPREADSHEET_MAPPING.md."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `!Satay & GadoGado Sauce` + `Factory Mix - Gado Gado Spices`. This sheet's \"Gado Gado Sauce\" section is literally \"Satay Sauce + 14 Tbsp Gado Gado Spices (10 Tbsp kencur + 4 Tbsp garlic), then freeze\" -- the same finished Satay Sauce batch as `.Satay`'s own sauce section on this sheet, which resep-139/140 were already built from. Gado Gado spices added at the fraction implied by 14 Tbsp / resep-139's ~864oz finished-sauce batch, applied to a ½-cup/4floz share = ~0.065 Tbsp each of kencur/garlic -- floor-bumped to 1/8 tsp each, the standard practical minimum used throughout this session).\n\nMADE SELF-CONTAINED 2026-09-02, per Arman: originally referenced resep-140 (Satay Sauce, home) via recipe_ref for the base -- Arman asked for this to be decomposed into its own raw ingredients instead, and for links to generally go at most one level deep (a recipe shouldn't link to something that is itself already a linked/derived recipe -- resep-140 is the home side of a batch/home pair, so referencing it here would have made this a 2-hop chain). Now fully self-contained, matching resep-140's own 7 ingredients exactly (same amounts, same source) plus the 2 Gado Gado-specific additions. See [[raspberry-yield-scaling]] for this rule going forward.\n\nFOUND, NOT RESOLVED: resep-35 (\"Bumbu Gado-Gado Ramayani\", scan-sourced) is a completely different-looking Gado-Gado peanut sauce -- no chili paste at all (unlike this version, which is Satay Sauce-based and includes California Chili Paste), different ratios throughout. Left untouched, not reconciled -- may be an older/different-generation recipe, same pattern as Gule Kambing's scan-vs-spreadsheet divergence, or may be a genuinely different, milder sauce. Flagged in derivations/SPREADSHEET_MAPPING.md."
     },
     {
       "id": "resep-174",
