@@ -814,7 +814,8 @@
         }
       ],
       "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Rebuilt 2026-09-01 from `.Ayam Goreng Kering` + `Factory Mix - Ayam Gr. Kering`, replacing the earlier scan-based numbers per Arman's instruction to use the spreadsheet and finalize. Chicken changed from the scan's vague \"½ chicken, 12-13 pieces\" to the spreadsheet's explicit \"2 leg quarters (dark meat only)\", cut into 12. Fish sauce/vinegar combine two spreadsheet lines: the branded \"Ayam Gr. Kering Sauce\" (2oz, itself a 9:6.75-cup fish-sauce:vinegar mix per `Factory Mix - Ayam Gr. Kering`, decomposed at that fraction) plus a separate direct addition of 0.75oz each fish sauce/vinegar on the dish sheet itself -- combined into one total of each rather than shown as two redundant-looking lines, since they're added at the same marinating step. Deep-fry time (8 min) taken from the dish sheet's own Serve step, not the Factory Mix sheet's more generic 10 min. Serves (3-4) matches the established 3-4-pieces-per-serving convention already documented on resep-116/118, which this recipe is itself the source of.",
-      "serves": "3-4"
+      "serves": "3-4",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-8",
@@ -1420,7 +1421,8 @@
       "tips_en": [
         "For Vegetarian: Do not use shrimp paste and fish sauce. Use vegetables, potatoes, and egg blend"
       ],
-      "story_en": "Pre-cooking free-range chicken is a traditional Javanese technique that tenderizes and locks in the coconut flavors before grilling"
+      "story_en": "Pre-cooking free-range chicken is a traditional Javanese technique that tenderizes and locks in the coconut flavors before grilling",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-13",
@@ -1519,7 +1521,8 @@
           "step_id": "Masukkan ikan yang sudah digoreng ke dalam saus dan masak perlahan.",
           "step_en": "Add the fried fish to the sauce and cook slowly."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-14",
@@ -1826,7 +1829,8 @@
           "step_id": "Setelah selesai tambahkan bahan-bahan sisanya: kecap manis, oyster sauce, gula, garam.",
           "step_en": "When finished add the remaining ingredients: kecap manis, oyster sauce, sugar, salt."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-17",
@@ -1951,7 +1955,8 @@
           "step_id": "Tambahkan campuran saus. Didihkan lalu kecilkan api dan tambahkan 2 telur kocok.",
           "step_en": "Add mixture of sauce. Bring to a boil and lower the heat and add 2 scrambled eggs."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-18",
@@ -2234,7 +2239,8 @@
         }
       ],
       "serves": "",
-      "yield_amount": 16
+      "yield_amount": 16,
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-21",
@@ -2318,7 +2324,8 @@
           "step_id": "B.B.Q. ROAST RED PORK: Marinasi dan masak sampai semua air terserap dan sisakan saus kental serta BBQ.",
           "step_en": "B.B.Q. ROAST RED PORK: Marinate and cook until all the water is absorbed and leave the thick sauce and BBQ."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-22",
@@ -2931,7 +2938,8 @@
           "step_id": "Dikasik bumbu sate.",
           "step_en": "Serve with sate peanut sauce."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-29",
@@ -3083,7 +3091,8 @@
           "amount": ""
         }
       ],
-      "method": []
+      "method": [],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-31",
@@ -3178,7 +3187,8 @@
           "amount": "1"
         }
       ],
-      "method": []
+      "method": [],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-32",
@@ -3265,7 +3275,8 @@
           "step_id": "Goreng sampai kering dan dikasih bumbu-bumbu: garam, vetsin, kecap hitam, kecap ikan, aduk-aduk lalu kasih toge dan daun bawang.",
           "step_en": "Fry until dry then season with: salt, MSG, dark soy sauce, fish sauce — stir, then add bean sprouts and spring onion."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-33",
@@ -3891,7 +3902,8 @@
         }
       ],
       "serves": "6-8",
-      "review_notes": "Reworked 2026-09-02 at Arman's request -- the method text actually contains several real ingredient amounts that had never been pulled into the ingredient list itself (every amount was blank). Extracted from the (now two-page) scan (\"38 Bubur Ayam Kampung.png\"):\n- Chicken: \"cut the WHOLE chicken into 8 pieces\" -> 1 whole chicken.\n- Rice: the method gives a concrete example, \"1 cup of rice cook with 10 cups of ___ and salt\" -- added \"Water\" as a new ingredient (10 cups) since it wasn't listed as an ingredient at all despite being clearly required and quantified in the method.\n- Per-bowl seasoning: \"season with: 1/4 tsp MSG, 1/4 tsp white pepper, 1/4 Tbsp soy sauce\" -- these are explicitly PER BOWL/LADLE amounts, not for the whole batch, so given their own section (\"Per Bowl (Seasoning)\") rather than folded in with the porridge-base ingredients.\nCORRECTED a likely source-level typo: the scan's own \"e.g.\" line literally says \"10 cups of RICE and salt\", immediately after stating the ratio as \"1 part rice to 10 parts of WATER\" one clause earlier -- clearly meant to restate the same ratio with \"water\", not repeat \"rice\" a second time. Used \"water\" for the new Water ingredient and in the method text.\nServes (6-8) is an estimate from the 10-cup yield at a ~1-1.5 cup ladle portion -- not a stated fact, ladle size isn't given.\nToppings (tapioca chips, emping, tong chai, dried soy bean, celery, fried shallot) and the chicken marinade (fish sauce, vinegar, MSG) remain genuinely unquantified -- no amount is given anywhere in either page of the source for these, left as \"to taste\", not invented."
+      "review_notes": "Reworked 2026-09-02 at Arman's request -- the method text actually contains several real ingredient amounts that had never been pulled into the ingredient list itself (every amount was blank). Extracted from the (now two-page) scan (\"38 Bubur Ayam Kampung.png\"):\n- Chicken: \"cut the WHOLE chicken into 8 pieces\" -> 1 whole chicken.\n- Rice: the method gives a concrete example, \"1 cup of rice cook with 10 cups of ___ and salt\" -- added \"Water\" as a new ingredient (10 cups) since it wasn't listed as an ingredient at all despite being clearly required and quantified in the method.\n- Per-bowl seasoning: \"season with: 1/4 tsp MSG, 1/4 tsp white pepper, 1/4 Tbsp soy sauce\" -- these are explicitly PER BOWL/LADLE amounts, not for the whole batch, so given their own section (\"Per Bowl (Seasoning)\") rather than folded in with the porridge-base ingredients.\nCORRECTED a likely source-level typo: the scan's own \"e.g.\" line literally says \"10 cups of RICE and salt\", immediately after stating the ratio as \"1 part rice to 10 parts of WATER\" one clause earlier -- clearly meant to restate the same ratio with \"water\", not repeat \"rice\" a second time. Used \"water\" for the new Water ingredient and in the method text.\nServes (6-8) is an estimate from the 10-cup yield at a ~1-1.5 cup ladle portion -- not a stated fact, ladle size isn't given.\nToppings (tapioca chips, emping, tong chai, dried soy bean, celery, fried shallot) and the chicken marinade (fish sauce, vinegar, MSG) remain genuinely unquantified -- no amount is given anywhere in either page of the source for these, left as \"to taste\", not invented.",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-39",
@@ -4123,7 +4135,8 @@
           "step_id": "Tuang saus di atas sayuran kukus atau rebus dengan kuah santan.",
           "step_en": "Pour sauce over steamed or boiled vegetables in coconut milk broth."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-42",
@@ -4598,7 +4611,8 @@
           "step_en": "Oven: first bake at 400°F, then broil at 400°F."
         }
       ],
-      "serves": "3 (20×20cm) trays ≈ 60 slices"
+      "serves": "3 (20×20cm) trays ≈ 60 slices",
+      "browse_type": "sweets"
     },
     {
       "id": "resep-47",
@@ -4664,7 +4678,8 @@
           "step_id": "Cetak dan steam ± 12 menit.",
           "step_en": "Pour into moulds and steam ± 12 minute."
         }
-      ]
+      ],
+      "browse_type": "sweets"
     },
     {
       "id": "resep-48",
@@ -5001,7 +5016,8 @@
           "step_id": "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla, like a parcel and lower the heat, and cook each side for ± 3 minutes.",
           "step_en": "III In a shallow pan, grease with samin oil and put 1 piece of tortilla skin on the pan and fill with II, fold the tortilla like a parcel and lower the heat, and cook each side for ± 3 minutes."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-52",
@@ -5099,7 +5115,8 @@
           "step_id": "2. Toppingnya: Butter, condensed milk, coklat sprinkle, kacang, keju.",
           "step_en": "2. Toppings: butter, condensed milk, chocolate sprinkles, peanuts, cheese."
         }
-      ]
+      ],
+      "browse_type": "sweets"
     },
     {
       "id": "resep-53",
@@ -5228,7 +5245,8 @@
           "step_id": "To serve: Topped the noodle with: Shredded fried chicken, celery (chopped), fried shallot.",
           "step_en": "To serve: Top the noodle with: shredded fried chicken, celery (chopped), fried shallot."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-54",
@@ -5485,7 +5503,8 @@
           "step_id": "Garnish with fried shallot.",
           "step_en": "Garnish with fried shallot."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-57",
@@ -5737,7 +5756,8 @@
           "step_id": "Note: tidak palue sayuran lebih enak.",
           "step_en": "Note: 'Without the vegetables it tastes better.' (mother's note)"
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-60",
@@ -5863,7 +5883,8 @@
           "step_en": "Serve with rice vermicelli, blanched bean sprouts, chicken, egg, and fried shallots."
         }
       ],
-      "review_notes": "Read directly from the original handwritten scan (Laksa Indonesia.png). A previous review pass concluded this recipe had no method -- rereading carefully (2026-08-31, prompted by Arman), the scan actually does describe a full method in continuous prose (not step-by-step), which was missed. No quantities are given anywhere in the source, only ingredients, method, and accompaniments, so ingredient amounts remain blank -- that part of the earlier assessment was correct. Corrections made from this reread: added \"Vetsin\" (MSG) as a separate ingredient (previously missing entirely), added \"bawang goreng\" (fried shallots) to the accompaniments (the scan doesn't mention \"kerupuk\", which was already listed -- left in place since its source isn't clear, just flagging the discrepancy), noted the red chili is canned (\"cabe merah kaleng\"), and specified the bean sprouts are blanched (\"toge rebus\"). The toasted coconut's exact addition point isn't restated in the \"once cooked, add to the boiling water\" line -- inferred to be added alongside the fried spice paste, since it's listed as its own prep step between the water-boiling and spice-grinding lines."
+      "review_notes": "Read directly from the original handwritten scan (Laksa Indonesia.png). A previous review pass concluded this recipe had no method -- rereading carefully (2026-08-31, prompted by Arman), the scan actually does describe a full method in continuous prose (not step-by-step), which was missed. No quantities are given anywhere in the source, only ingredients, method, and accompaniments, so ingredient amounts remain blank -- that part of the earlier assessment was correct. Corrections made from this reread: added \"Vetsin\" (MSG) as a separate ingredient (previously missing entirely), added \"bawang goreng\" (fried shallots) to the accompaniments (the scan doesn't mention \"kerupuk\", which was already listed -- left in place since its source isn't clear, just flagging the discrepancy), noted the red chili is canned (\"cabe merah kaleng\"), and specified the bean sprouts are blanched (\"toge rebus\"). The toasted coconut's exact addition point isn't restated in the \"once cooked, add to the boiling water\" line -- inferred to be added alongside the fried spice paste, since it's listed as its own prep step between the water-boiling and spice-grinding lines.",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-61",
@@ -5966,7 +5987,8 @@
           "step_id": "To serve: Bihun, toge, slice tahu goreng, udang, otek-otek, cucumber, mint leaves, sambol oelek.",
           "step_en": "To serve: rice vermicelli, bean sprouts, sliced fried tofu, shrimp, otak-otak, cucumber, mint leaves, sambal oelek."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-62",
@@ -6235,7 +6257,8 @@
           "step_id": "Makes about 4 servings.",
           "step_en": "Makes about 4 servings."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-65",
@@ -6324,7 +6347,8 @@
           "amount": "1"
         }
       ],
-      "method": []
+      "method": [],
+      "browse_type": "sweets"
     },
     {
       "id": "resep-66",
@@ -6436,7 +6460,8 @@
           "step_id": "Terachir aduk daging diatas dengan bumbu.",
           "step_en": "Finally fold the dried meat into the spice paste."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-67",
@@ -6566,7 +6591,8 @@
           "step_id": "CUKA: Masak semuanya sampai mendidih, lalu masukkan: 225 gram garlic diblender dg. air dari yang 60 cup.",
           "step_en": "VINEGAR SAUCE: Cook everything until boiling, then add: 225 g garlic blended with water from the 60 cups."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-68",
@@ -6637,7 +6663,8 @@
           "amount": ""
         }
       ],
-      "method": []
+      "method": [],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-69",
@@ -6728,7 +6755,8 @@
           "step_id": "",
           "step_en": "Serve with sweet chili sauce or spicy peanut sauce."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-70",
@@ -7246,7 +7274,8 @@
         }
       ],
       "serves": "10-12",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Fixed 2026-09-02 from `Xtra - Lumpia`, per Arman. The prior data had a real duplication bug: the same shared ingredients (cabbage, eggs, salt, MSG, sugar) were listed twice, differing only in the protein line (\"meat for egg roll\" 2lbs vs. \"ground chicken\" 2lbs) -- and had no method at all. Rebuilt clean from the sheet: ground chicken only (no beef alternative on the sheet), 1lb (not 2lbs). MSG/salt/sugar moved into the cooking method (added right after the cabbage, per the sheet's own step order) rather than left unclear. Serves (10-12) is an estimate from the filling's total volume at the sheet's own \"3/4 cup per roll\" portioning -- not a sheet fact, the source never states a roll count."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Fixed 2026-09-02 from `Xtra - Lumpia`, per Arman. The prior data had a real duplication bug: the same shared ingredients (cabbage, eggs, salt, MSG, sugar) were listed twice, differing only in the protein line (\"meat for egg roll\" 2lbs vs. \"ground chicken\" 2lbs) -- and had no method at all. Rebuilt clean from the sheet: ground chicken only (no beef alternative on the sheet), 1lb (not 2lbs). MSG/salt/sugar moved into the cooking method (added right after the cabbage, per the sheet's own step order) rather than left unclear. Serves (10-12) is an estimate from the filling's total volume at the sheet's own \"3/4 cup per roll\" portioning -- not a sheet fact, the source never states a roll count.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-75",
@@ -7370,7 +7399,8 @@
           "step_en": "Taste and adjust, then add all ingredients."
         }
       ],
-      "serves": "35"
+      "serves": "35",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-76",
@@ -7846,7 +7876,8 @@
           "step_id": "Bubur: 1 bagian beras dengan 10 bagian air.",
           "step_en": "Rice Porridge: 1 part rice to 10 parts water."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-81",
@@ -7964,7 +7995,8 @@
           "step_id": "Campur semua bahan, bungkus dengan lembaran kulit tahu; kukus lalu goreng.",
           "step_en": "Mix all the ingredients, wrapped with bean curd sheet; steamed and fried."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-82",
@@ -8117,7 +8149,8 @@
           "step_id": "Jika karena suatu sebab adonan menjadi terlalu kental, tambahkan lebih banyak air.",
           "step_en": "If for some reason the mixture becomes too thick, just add more water."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-83",
@@ -8203,7 +8236,8 @@
           "step_id": "Bisa juga diapakei untuk goreng ikan (Fish & chips).",
           "step_en": "Can also be used for frying fish (Fish & Chips)."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-84",
@@ -8301,7 +8335,8 @@
           "step_id": "Makannya dengan kecap.",
           "step_en": "Serve with sweet soy sauce (kecap)."
         }
-      ]
+      ],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-85",
@@ -8401,7 +8436,8 @@
           "step_id": "Lapisan dari bawah ke atas: MERAH — PUTIH — PUTIH — IJO — PUTIH — PUTIH — IJO — PUTIH — PUTIH — MERAH.",
           "step_en": "Layering order from bottom to top: RED — WHITE — WHITE — GREEN — WHITE — WHITE — GREEN — WHITE — WHITE — RED."
         }
-      ]
+      ],
+      "browse_type": "sweets"
     },
     {
       "id": "resep-86",
@@ -8604,7 +8640,8 @@
           "step_id": "Bisa djuga dimacrowave 3 menit.",
           "step_en": "Can also be microwaved 3 minutes."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-89",
@@ -8692,7 +8729,8 @@
           "step_id": "Turn the fish 1× and cover and cooked slowly.",
           "step_en": "Turn the fish once, cover and cook slowly."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "cs-rendang",
@@ -8771,7 +8809,8 @@
       "serves": "4-5",
       "recipe_type": "home",
       "linked_recipe_id": "resep-134",
-      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly, split across two sheets: \"Rendang\" (the dish, resep-134) and \"Factory Cook - Rendang Paste\" (resep-132/resep-133). resep-134's beef batch is 67 1/7 lbs -- chose K=30 (close to the exact 30.46 implied by 2.2 lbs / 67.14 lbs) as a clean divisor landing near 1 kg beef, matching the recent 1kg-protein convention (Daging Bumbu Bali, Babi Hong). Water (0.5 gal/30 = ~2.13 fl oz, rounded to 1/4 cup) divided by the same K -- this is a genuinely small amount, but that matches rendang's own style (a long reduction down to a nearly dry, thickly spiced coating, using proportionally less liquid than a wetter curry), not an error. Rendang paste (resep-132's \"1 bag\") is assumed to be sized to exactly this beef batch (see resep-132 review_notes for that assumption -- an open question, not a confirmed fact, see derivations/AUDIT.md) -- resep-133 is that paste at the same K=30, referenced here via recipe_ref. Serves estimated at 4-5 for 1kg raw beef (roughly 24oz cooked after shrinkage, portioned at the source sheet's own ~5oz/serving) -- a guess, not a scan fact. Method combines resep-134's \"Create Pre-prepared\" and \"Serve\" steps into one sequence appropriate for a single home batch (skipping the restaurant's container-portioning-for-later-reheating step, since a home cook would serve directly) -- an adaptation, not literal sheet text.\n\nCORRECTED 2026-09-01: coconut milk was 2/5 cup (98 fl oz / 30), derived from resep-134's undercounted coconut milk figure -- see resep-134's review_notes for the fix (98 -> 196 fl oz, a BOX x QTY/BOX undercounting bug matching the one already found on resep-2/SGTB). Since the batch total exactly doubled, this recipe's coconut milk exactly doubles too: 4/5 cup (196/30 = 6.53 fl oz, rounds cleanly to 4/5 cup = 6.4 fl oz)."
+      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly, split across two sheets: \"Rendang\" (the dish, resep-134) and \"Factory Cook - Rendang Paste\" (resep-132/resep-133). resep-134's beef batch is 67 1/7 lbs -- chose K=30 (close to the exact 30.46 implied by 2.2 lbs / 67.14 lbs) as a clean divisor landing near 1 kg beef, matching the recent 1kg-protein convention (Daging Bumbu Bali, Babi Hong). Water (0.5 gal/30 = ~2.13 fl oz, rounded to 1/4 cup) divided by the same K -- this is a genuinely small amount, but that matches rendang's own style (a long reduction down to a nearly dry, thickly spiced coating, using proportionally less liquid than a wetter curry), not an error. Rendang paste (resep-132's \"1 bag\") is assumed to be sized to exactly this beef batch (see resep-132 review_notes for that assumption -- an open question, not a confirmed fact, see derivations/AUDIT.md) -- resep-133 is that paste at the same K=30, referenced here via recipe_ref. Serves estimated at 4-5 for 1kg raw beef (roughly 24oz cooked after shrinkage, portioned at the source sheet's own ~5oz/serving) -- a guess, not a scan fact. Method combines resep-134's \"Create Pre-prepared\" and \"Serve\" steps into one sequence appropriate for a single home batch (skipping the restaurant's container-portioning-for-later-reheating step, since a home cook would serve directly) -- an adaptation, not literal sheet text.\n\nCORRECTED 2026-09-01: coconut milk was 2/5 cup (98 fl oz / 30), derived from resep-134's undercounted coconut milk figure -- see resep-134's review_notes for the fix (98 -> 196 fl oz, a BOX x QTY/BOX undercounting bug matching the one already found on resep-2/SGTB). Since the batch total exactly doubled, this recipe's coconut milk exactly doubles too: 4/5 cup (196/30 = 6.53 fl oz, rounds cleanly to 4/5 cup = 6.4 fl oz).",
+      "browse_type": "curries-soups"
     },
     {
       "id": "cs-tahu-telor",
@@ -8891,7 +8930,8 @@
       ],
       "serves": "1",
       "linked_recipe_id": "resep-150",
-      "review_notes": "Filled in 2026-08-29 from the master spreadsheet (\".Tahu Telur\" + \"Factory Mix - Tahu Telur Sauce\" sheets, read directly, not pasted text -- see [[raspberry-master-spreadsheet]]). Main dish quantities (tofu, flour mix, egg, salt, water) are already order-sized on the sheet, used directly, no scaling needed. \"Tahu Telur Flour Mix\" is a Ramayani-branded product with no recipe of its own anywhere in the spreadsheet -- left as a named branded ingredient per Arman, not substituted or invented. Sauce sized to exactly 1/2 cup per Arman's stated one-order amount, which sits exactly at the standing minimum batch size (4oz/8Tbsp/1/2 cup), so no bigger batch was built -- see resep-150 for the full restaurant-batch sauce this was scaled from (fraction ~1/24.1). Re-summed the rounded amounts (~118.3ml) against the 118.3ml (1/2 cup) target: essentially exact. The sheet's method never explicitly says to top with the sauce (it just lists Tahu Telur Sauce as an ingredient with no serve step) -- added a serve step as the natural, obviously-intended use, not left unexplained. Serves estimated at 1 (a single tofu-egg cake using 1.5pc tofu and 1 egg reads as one portion) -- not a stated fact."
+      "review_notes": "Filled in 2026-08-29 from the master spreadsheet (\".Tahu Telur\" + \"Factory Mix - Tahu Telur Sauce\" sheets, read directly, not pasted text -- see [[raspberry-master-spreadsheet]]). Main dish quantities (tofu, flour mix, egg, salt, water) are already order-sized on the sheet, used directly, no scaling needed. \"Tahu Telur Flour Mix\" is a Ramayani-branded product with no recipe of its own anywhere in the spreadsheet -- left as a named branded ingredient per Arman, not substituted or invented. Sauce sized to exactly 1/2 cup per Arman's stated one-order amount, which sits exactly at the standing minimum batch size (4oz/8Tbsp/1/2 cup), so no bigger batch was built -- see resep-150 for the full restaurant-batch sauce this was scaled from (fraction ~1/24.1). Re-summed the rounded amounts (~118.3ml) against the 118.3ml (1/2 cup) target: essentially exact. The sheet's method never explicitly says to top with the sauce (it just lists Tahu Telur Sauce as an ingredient with no serve step) -- added a serve step as the natural, obviously-intended use, not left unexplained. Serves estimated at 1 (a single tofu-egg cake using 1.5pc tofu and 1 egg reads as one portion) -- not a stated fact.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "cs-soto-ayam",
@@ -8976,7 +9016,8 @@
           "step_en": "Top with green onions and fried onions."
         }
       ],
-      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly (the \"To Serve\" section, i.e. one bowl) -- see resep-130/resep-131 for the soup-base component this recipe references. Also fixed category from sayuran_salad (Vegetables & Salads) to ayam (Chicken) -- a chicken noodle soup was miscategorized under salads before any real content existed here. Green onion and fried onion amounts were not given in the source (listed with no quantity, garnish-style) -- left unspecified rather than guessed."
+      "review_notes": "Filled in 2026-08-28 from an Excel prep sheet Arman found and pasted directly (the \"To Serve\" section, i.e. one bowl) -- see resep-130/resep-131 for the soup-base component this recipe references. Also fixed category from sayuran_salad (Vegetables & Salads) to ayam (Chicken) -- a chicken noodle soup was miscategorized under salads before any real content existed here. Green onion and fried onion amounts were not given in the source (listed with no quantity, garnish-style) -- left unspecified rather than guessed.",
+      "browse_type": "curries-soups"
     },
     {
       "id": "cs-sambal-goreng-tahu-buncis",
@@ -9119,7 +9160,8 @@
       "serves": "2-3",
       "review_notes": "CORRECTED 2026-08-29: coconut milk was originally read as 98 fl oz total; confirmed via resep-2's identical source pattern (verified against its original scan by Arman) that this actually means 2 x 98 fl oz = 196 fl oz (a #10 can = 98 fl oz). That roughly doubled the coconut milk's real contribution to the batch, which shifted the whole scaling fraction -- every ingredient below is freshly recomputed from the corrected total (see derivations/sgtb.py), not just the coconut milk line. Full batch now ~20.8kg (was ~18.0kg), target 3.5 cups (~894g, Arman's stated one-bowl amount, serves 2-3) gives a fraction of ~1/23.2 (was ~1/20) -- independently implies ~23 orders from the whole batch (3 containers), still a plausible number for stock meant to last about a week. Re-summed the rounded ingredients (~870g) against the 894g target: about 3% under, well within normal rounding. Also fixed an unrelated small error found during this recompute: galangal was previously listed as 1 Tbsp, about 3x the ~1 tsp the batch math actually supports -- an independent conversion mistake, not connected to the coconut milk issue. Now linked to resep-144 (Sambal Goreng Tahu Buncis - Restaurant Batch), a previously-missing recipe that stores this tier's real restaurant-scale ingredients so this kind of error is checkable going forward instead of buried in prose math. Read directly from the master spreadsheet this time, not pasted text -- see [[raspberry-master-spreadsheet]].",
       "linked_recipe_id": "resep-144",
-      "recipe_type": "home"
+      "recipe_type": "home",
+      "browse_type": "curries-soups"
     },
     {
       "id": "cs-nasi-goreng",
@@ -9253,7 +9295,8 @@
         }
       ],
       "serves": "1-2",
-      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row. CORRECTED 2026-08-29 after reading the master spreadsheet's \".Nasi & Bihun Goreng\" sheet directly (not just the pasted excerpt): the sheet has a second seasoning addition after MSG/white pepper -- 1/4 tsp salt (a real ingredient I'd missed entirely) and 1 1/2 tsp ketchap manis (previously listed here as a no-amount 'to taste' topping, per Arman's own recollection at the time -- the sheet gives a real amount and lists it in the same cooking step as MSG/pepper, so it's mixed in, not a post-plate garnish). The sheet's fish sauce line at this same point is explicitly annotated \"(NG Babat Only)\" -- specific to a Nasi Goreng Babat (tripe) variant not built here -- so fish sauce is dropped from this recipe entirely, not included at any amount."
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row. CORRECTED 2026-08-29 after reading the master spreadsheet's \".Nasi & Bihun Goreng\" sheet directly (not just the pasted excerpt): the sheet has a second seasoning addition after MSG/white pepper -- 1/4 tsp salt (a real ingredient I'd missed entirely) and 1 1/2 tsp ketchap manis (previously listed here as a no-amount 'to taste' topping, per Arman's own recollection at the time -- the sheet gives a real amount and lists it in the same cooking step as MSG/pepper, so it's mixed in, not a post-plate garnish). The sheet's fish sauce line at this same point is explicitly annotated \"(NG Babat Only)\" -- specific to a Nasi Goreng Babat (tripe) variant not built here -- so fish sauce is dropped from this recipe entirely, not included at any amount.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "cs-lettuce-wrap",
@@ -9365,7 +9408,8 @@
       "yield_amount": 8,
       "yield_unit": "oz",
       "linked_recipe_id": "resep-180",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, exact division (1/15) -- both source sheets share a \"15 orders, 8oz each\" header, so this is precise, not an estimate. Rempeyek Flour (resep-179) decomposed directly into its 4 ingredients rather than recipe_ref'd (matching resep-163/Sop Kambing's treatment of Bumbu Betawi -- single-use component, decompose into the home recipe). Peanuts (1/4 cup, halved) is an estimate -- the sheet never states an amount, see resep-180's own review_notes. See derivations/six_more_dishes.py."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, exact division (1/15) -- both source sheets share a \"15 orders, 8oz each\" header, so this is precise, not an estimate. Rempeyek Flour (resep-179) decomposed directly into its 4 ingredients rather than recipe_ref'd (matching resep-163/Sop Kambing's treatment of Bumbu Betawi -- single-use component, decompose into the home recipe). Peanuts (1/4 cup, halved) is an estimate -- the sheet never states an amount, see resep-180's own review_notes. See derivations/six_more_dishes.py.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "cs-sambal-goreng-tempe",
@@ -9384,7 +9428,8 @@
       ],
       "reviewed": false,
       "ingredients": [],
-      "method": []
+      "method": [],
+      "browse_type": "fried-grilled"
     },
     {
       "id": "cs-ice-cendol",
@@ -9469,7 +9514,8 @@
         }
       ],
       "serves": "1",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Mung bean jelly (resep-156) decomposed directly into this recipe's own first two steps rather than kept as a separate factory-only reference, since it's only ever used here; Gula Cendol (resep-152) and Santen (resep-153) are both genuinely reused elsewhere (Ice Durian, Bubur Ketan Hitam) so stay as recipe_ref links. Santen amount is \"to fill the glass\" on the sheet -- no oz given, left as-is rather than guessed."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Mung bean jelly (resep-156) decomposed directly into this recipe's own first two steps rather than kept as a separate factory-only reference, since it's only ever used here; Gula Cendol (resep-152) and Santen (resep-153) are both genuinely reused elsewhere (Ice Durian, Bubur Ketan Hitam) so stay as recipe_ref links. Santen amount is \"to fill the glass\" on the sheet -- no oz given, left as-is rather than guessed.",
+      "browse_type": "sweets"
     },
     {
       "id": "cs-ice-kelapa",
@@ -9488,7 +9534,8 @@
       ],
       "reviewed": false,
       "ingredients": [],
-      "method": []
+      "method": [],
+      "browse_type": "sweets"
     },
     {
       "id": "cs-ice-cincao",
@@ -9507,7 +9554,8 @@
       ],
       "reviewed": false,
       "ingredients": [],
-      "method": []
+      "method": [],
+      "browse_type": "sweets"
     },
     {
       "id": "cs-ice-shanghai",
@@ -9612,7 +9660,8 @@
         }
       ],
       "serves": "1",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Teller Mix's full batch (6 avocados + 1 cup Gula Putih + 1 can condensed milk + salt, yielding many 2 Tbsp servings) was scaled down to a 1/2-cup home batch (K~15.6, the standing floor). Vanilla-Pandan Syrup (formerly \"Gula Putih\") is now linked via recipe_ref to resep-165 rather than decomposed into raw water/sugar/vanilla-sugar in place -- reworked 2026-08-31 at Arman's request. The 1 Tbsp amount is the same quantity previously folded in directly (1.25 tsp water + 2.25 tsp cane sugar + a pinch of vanilla sugar, ~0.58oz, rounded up to a measurable 1 Tbsp); see resep-165 and derivations/ice_teller_syrup.py. Serve-step quantities (jackfruit, young coconut, crushed ice, condensed milk topping) are already order-sized on the sheet, used directly."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Teller Mix's full batch (6 avocados + 1 cup Gula Putih + 1 can condensed milk + salt, yielding many 2 Tbsp servings) was scaled down to a 1/2-cup home batch (K~15.6, the standing floor). Vanilla-Pandan Syrup (formerly \"Gula Putih\") is now linked via recipe_ref to resep-165 rather than decomposed into raw water/sugar/vanilla-sugar in place -- reworked 2026-08-31 at Arman's request. The 1 Tbsp amount is the same quantity previously folded in directly (1.25 tsp water + 2.25 tsp cane sugar + a pinch of vanilla sugar, ~0.58oz, rounded up to a measurable 1 Tbsp); see resep-165 and derivations/ice_teller_syrup.py. Serve-step quantities (jackfruit, young coconut, crushed ice, condensed milk topping) are already order-sized on the sheet, used directly.",
+      "browse_type": "sweets"
     },
     {
       "id": "cs-iced-bandrek",
@@ -9736,7 +9785,8 @@
         }
       ],
       "serves": "1",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. The sheet gives no weight for \"1 case Frozen Whole Yucca\" or an amount for the yeast, only the finished serve quantity (3/4 cup fermented cassava/yucca) -- used that directly rather than back-deriving a raw starting weight from an unstated case size. Gula Merah (resep-154) is used only here, so its raw ingredients (water/sugar/vanilla/coloring) are decomposed directly into this recipe's own list at the 1oz/serving fraction (~1/376) rather than kept as a separate reference."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. The sheet gives no weight for \"1 case Frozen Whole Yucca\" or an amount for the yeast, only the finished serve quantity (3/4 cup fermented cassava/yucca) -- used that directly rather than back-deriving a raw starting weight from an unstated case size. Gula Merah (resep-154) is used only here, so its raw ingredients (water/sugar/vanilla/coloring) are decomposed directly into this recipe's own list at the 1oz/serving fraction (~1/376) rather than kept as a separate reference.",
+      "browse_type": "sweets"
     },
     {
       "id": "cs-fresh-lime-soda",
@@ -10152,7 +10202,8 @@
         }
       ],
       "serves": "1-2",
-      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Satay\" plus its \"Factory Cook - Satay Sauce Base\" and \"!Satay & GadoGado Sauce\" sub-sheets -- Gado Gado Sauce itself deliberately left out of this pass, per Arman, for when Gado Gado is actually built). Combined chicken and pork into one recipe with a single protein-choice ingredient line (Arman's call over separate variant recipes) -- renamed from \"Chicken Satay\"/\"Sate Ayam\" to plain \"Satay\"/\"Sate\" and recategorized from Chicken to Appetizers to match. The meat rub (1 Tbsp salt, 2 Tbsp coriander, 1/2 cup sweet soy sauce, 1/4 cup oil per the sheet's stated \"10 lbs of cut meat\") is scaled to 1/2 lb here -- an estimate of how much raw meat makes one order's 6 skewers, based on standard 1\"x1/2\"x1/2\" cube sizing, not a stated fact; the 1/2 cup Satay Sauce and \"6 skewers\" figures themselves ARE Arman's own stated facts. The sheet's \"Serve\" steps (microwave 1 min, dip in boiling oil 10 sec, grill 3 min) are a restaurant reheat sequence for pre-skewered refrigerated meat -- replaced with a straightforward grill-from-raw method per Arman's explicit confirmation, same pattern as Rendang's restaurant-portioning step being dropped for its home version. No marinating time was given in the source, so none was invented."
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Satay\" plus its \"Factory Cook - Satay Sauce Base\" and \"!Satay & GadoGado Sauce\" sub-sheets -- Gado Gado Sauce itself deliberately left out of this pass, per Arman, for when Gado Gado is actually built). Combined chicken and pork into one recipe with a single protein-choice ingredient line (Arman's call over separate variant recipes) -- renamed from \"Chicken Satay\"/\"Sate Ayam\" to plain \"Satay\"/\"Sate\" and recategorized from Chicken to Appetizers to match. The meat rub (1 Tbsp salt, 2 Tbsp coriander, 1/2 cup sweet soy sauce, 1/4 cup oil per the sheet's stated \"10 lbs of cut meat\") is scaled to 1/2 lb here -- an estimate of how much raw meat makes one order's 6 skewers, based on standard 1\"x1/2\"x1/2\" cube sizing, not a stated fact; the 1/2 cup Satay Sauce and \"6 skewers\" figures themselves ARE Arman's own stated facts. The sheet's \"Serve\" steps (microwave 1 min, dip in boiling oil 10 sec, grill 3 min) are a restaurant reheat sequence for pre-skewered refrigerated meat -- replaced with a straightforward grill-from-raw method per Arman's explicit confirmation, same pattern as Rendang's restaurant-portioning step being dropped for its home version. No marinating time was given in the source, so none was invented.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-90",
@@ -10280,7 +10331,8 @@
           "step_id": "Lalu dimasak dengan santan encer dulu. Lebih baik nangkanya, telor, dan tempe dimasukkan dulu, kurang lebih 1 jam, lalu masukkan ayamnya dan tahunya.",
           "step_en": "Then cook everything with thin coconut milk first. It's best to add the jackfruit, eggs, and tempeh first, and simmer for about 1 hour, then add the chicken and tofu."
         }
-      ]
+      ],
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-113",
@@ -10390,7 +10442,8 @@
       "flags": [],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-2"
+      "linked_recipe_id": "resep-2",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-114",
@@ -10486,7 +10539,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-4"
+      "linked_recipe_id": "resep-4",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-115",
@@ -10682,7 +10736,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-8"
+      "linked_recipe_id": "resep-8",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-116",
@@ -10736,7 +10791,8 @@
       "flags": [
         "no_headnote"
       ],
-      "content_state": "full"
+      "content_state": "full",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-117",
@@ -10906,7 +10962,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-45"
+      "linked_recipe_id": "resep-45",
+      "browse_type": "sweets"
     },
     {
       "id": "resep-118",
@@ -11297,7 +11354,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-6"
+      "linked_recipe_id": "resep-6",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-123",
@@ -11382,7 +11440,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-11"
+      "linked_recipe_id": "resep-11",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-124",
@@ -11494,7 +11553,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-14"
+      "linked_recipe_id": "resep-14",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-125",
@@ -11635,7 +11695,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-14"
+      "linked_recipe_id": "resep-14",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-126",
@@ -11716,7 +11777,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-19"
+      "linked_recipe_id": "resep-19",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-127",
@@ -11915,7 +11977,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-22"
+      "linked_recipe_id": "resep-22",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-129",
@@ -12015,7 +12078,8 @@
       ],
       "content_state": "full",
       "recipe_type": "home",
-      "linked_recipe_id": "resep-62"
+      "linked_recipe_id": "resep-62",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-130",
@@ -12613,7 +12677,8 @@
         "no_photo"
       ],
       "reviewed": true,
-      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row. CORRECTED 2026-08-29 after reading the master spreadsheet's \".Nasi & Bihun Goreng\" sheet directly (not just the pasted excerpt): the sheet has a second seasoning addition after MSG/white pepper -- 1/4 tsp salt (a real ingredient I'd missed entirely) and 1 1/2 tsp ketchap manis (previously listed here as a no-amount 'to taste' topping, per Arman's own recollection at the time -- the sheet gives a real amount and lists it in the same cooking step as MSG/pepper, so it's mixed in, not a post-plate garnish). The sheet's fish sauce line at this same point is explicitly annotated \"(NG Babat Only)\" -- specific to a Nasi Goreng Babat (tripe) variant not built here -- so fish sauce is dropped from this recipe entirely, not included at any amount."
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Nasi & Bihun Goreng\" plus its \"Factory Mix - Nasi Goreng Sauce\" sub-sheet). Dish quantities (rice, noodles, veg, protein) are used directly as given -- no batch multiplier was stated on the sheet (BOX column blank throughout), unlike Rendang's explicit total-batch figure, so these are treated as already order-sized. Serves estimated at 1-2 per dish (not a scan fact). The sheet's method never states when Nasi Goreng Sauce actually goes into the wok -- placed at the rice/noodle step as the most natural point, flagged as inferred. Ketchap manis and fish sauce were listed in the same wok-mixing step as MSG/white pepper on the sheet, but Arman confirmed kecap manis is typically added as a topping once plated, not mixed in during cooking, and fish sauce was moved the same way on his instruction -- both appear as no-amount \"to taste\" topping ingredients rather than in the cooking steps. Protein is one ingredient line covering the chicken/pork/shrimp choice plus a vegetarian broccoli swap (Arman's choice over separate variant recipes), matching how the sheet itself lists it as a single row. CORRECTED 2026-08-29 after reading the master spreadsheet's \".Nasi & Bihun Goreng\" sheet directly (not just the pasted excerpt): the sheet has a second seasoning addition after MSG/white pepper -- 1/4 tsp salt (a real ingredient I'd missed entirely) and 1 1/2 tsp ketchap manis (previously listed here as a no-amount 'to taste' topping, per Arman's own recollection at the time -- the sheet gives a real amount and lists it in the same cooking step as MSG/pepper, so it's mixed in, not a post-plate garnish). The sheet's fish sauce line at this same point is explicitly annotated \"(NG Babat Only)\" -- specific to a Nasi Goreng Babat (tripe) variant not built here -- so fish sauce is dropped from this recipe entirely, not included at any amount.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-136",
@@ -13220,7 +13285,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-142",
-      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Otak Otak\" plus its \"Factory Mix - Otak Otak Paste\" sub-sheet). Per Arman's explicit instruction: built as ONE recipe covering paste + wrapping + grilling + serving (no separate paste-tier recipe, unlike the Satay/SGTB chains), the Singaporean Otak Otak variant (red curry) intentionally excluded, and sized around \"~0.75oz (1.5 Tbsp) of fish paste per stick.\" Interpreted that figure as the amount of raw Fresh Fish Paste (the first ingredient) per stick, not the total finished/mixed paste weight per stick -- this reconciles cleanly: 84 oz fish paste (6 boxes) / 0.75 oz = exactly 112 sticks for the full batch, a clean whole number, vs. treating 0.75oz as total-mixture weight (which would include the added coconut milk/starch/sugar/etc. and imply a messier ~149 sticks). At Arman's stated 1-box (14oz) starting point for the scaled recipe, that same ratio gives ~18.7, rounded to 19 sticks -- close to but not exactly his own \"about 20\" ballpark, noted here rather than forced to match. Coconut milk conversions (fl oz -> Tbsp) are exact, no rounding (1 fl oz = 2 Tbsp); salt and white pepper were rounded up slightly (0.083 tsp -> 1/8 tsp, 0.167 tsp -> 1/4 tsp) to the nearest measurable spoon increment. The banana-leaf wrapping technique isn't detailed beyond \"cut into squares\" / \"grill until brown\" in the source, so the method describes it generically (portion paste onto the leaf, wrap into a stick) rather than inventing a specific fold or fastening method. Separately worth flagging: resep-24 (\"Bumbu Rujak & Bumbu Siomai / Bumbu Otak-Otak\", a peanut-vinegar-chili dressing) has a section literally named \"Bumbu Otak-Otak\" that may be the same thing as this sheet's \"Sambal Kacang\" serving accompaniment -- not linked or resolved here (resep-24 itself is still only partially reviewed, per its own notes), \"sambal kacang\" is left as a plain to-taste serving ingredient; worth Arman's look if/when resep-24 gets revisited. serves (3-4) is my own estimate for ~19 sticks as a shared appetizer portion -- not a stated fact."
+      "review_notes": "Filled in 2026-08-29 from an Excel prep sheet Arman pasted directly (\"Otak Otak\" plus its \"Factory Mix - Otak Otak Paste\" sub-sheet). Per Arman's explicit instruction: built as ONE recipe covering paste + wrapping + grilling + serving (no separate paste-tier recipe, unlike the Satay/SGTB chains), the Singaporean Otak Otak variant (red curry) intentionally excluded, and sized around \"~0.75oz (1.5 Tbsp) of fish paste per stick.\" Interpreted that figure as the amount of raw Fresh Fish Paste (the first ingredient) per stick, not the total finished/mixed paste weight per stick -- this reconciles cleanly: 84 oz fish paste (6 boxes) / 0.75 oz = exactly 112 sticks for the full batch, a clean whole number, vs. treating 0.75oz as total-mixture weight (which would include the added coconut milk/starch/sugar/etc. and imply a messier ~149 sticks). At Arman's stated 1-box (14oz) starting point for the scaled recipe, that same ratio gives ~18.7, rounded to 19 sticks -- close to but not exactly his own \"about 20\" ballpark, noted here rather than forced to match. Coconut milk conversions (fl oz -> Tbsp) are exact, no rounding (1 fl oz = 2 Tbsp); salt and white pepper were rounded up slightly (0.083 tsp -> 1/8 tsp, 0.167 tsp -> 1/4 tsp) to the nearest measurable spoon increment. The banana-leaf wrapping technique isn't detailed beyond \"cut into squares\" / \"grill until brown\" in the source, so the method describes it generically (portion paste onto the leaf, wrap into a stick) rather than inventing a specific fold or fastening method. Separately worth flagging: resep-24 (\"Bumbu Rujak & Bumbu Siomai / Bumbu Otak-Otak\", a peanut-vinegar-chili dressing) has a section literally named \"Bumbu Otak-Otak\" that may be the same thing as this sheet's \"Sambal Kacang\" serving accompaniment -- not linked or resolved here (resep-24 itself is still only partially reviewed, per its own notes), \"sambal kacang\" is left as a plain to-taste serving ingredient; worth Arman's look if/when resep-24 gets revisited. serves (3-4) is my own estimate for ~19 sticks as a shared appetizer portion -- not a stated fact.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-144",
@@ -13531,7 +13597,8 @@
       "content_state": "full",
       "flags": [],
       "reviewed": true,
-      "review_notes": "New dish added 2026-08-29, discovered while comparing recipes.json against the master spreadsheet per Arman's request -- a third noodle variant alongside Nasi Goreng/Bihun Goreng, using fresh flat rice noodles + broccoli + garlic + its own Kuey Teow Sauce (resep-145) instead of Nasi Goreng Sauce. Shares the same Main Stir Fry base (chicken fat, protein choice, egg, bean sprouts, green onion, MSG) as its siblings, used directly per the same no-batch-multiplier convention. Kuey Teow Sauce is used only by this one dish, so per the multi-tier playbook (see [[raspberry-yield-scaling]]) it's decomposed directly into this recipe's own ingredients rather than kept as a separate home sauce: 1.25 oz used per order (the sheet's own \"To Serve\" figure, not estimated) out of resep-145's 48 oz batch, a ~1/38.4 fraction applied to each of the sauce's raw ingredients and rounded to kitchen units. Re-summed the rounded amounts (~7.25 tsp) against the 7.5 tsp (1.25 fl oz) target: ~3% under, normal rounding. Package size for fresh kuey teow noodles isn't known -- left as \"1/3 package\" rather than guessing a weight. Method's sauce placement (final step, with MSG/pepper) is directly stated on the sheet, unlike Nasi/Bihun Goreng's sauce timing, which had to be inferred."
+      "review_notes": "New dish added 2026-08-29, discovered while comparing recipes.json against the master spreadsheet per Arman's request -- a third noodle variant alongside Nasi Goreng/Bihun Goreng, using fresh flat rice noodles + broccoli + garlic + its own Kuey Teow Sauce (resep-145) instead of Nasi Goreng Sauce. Shares the same Main Stir Fry base (chicken fat, protein choice, egg, bean sprouts, green onion, MSG) as its siblings, used directly per the same no-batch-multiplier convention. Kuey Teow Sauce is used only by this one dish, so per the multi-tier playbook (see [[raspberry-yield-scaling]]) it's decomposed directly into this recipe's own ingredients rather than kept as a separate home sauce: 1.25 oz used per order (the sheet's own \"To Serve\" figure, not estimated) out of resep-145's 48 oz batch, a ~1/38.4 fraction applied to each of the sauce's raw ingredients and rounded to kitchen units. Re-summed the rounded amounts (~7.25 tsp) against the 7.5 tsp (1.25 fl oz) target: ~3% under, normal rounding. Package size for fresh kuey teow noodles isn't known -- left as \"1/3 package\" rather than guessing a weight. Method's sauce placement (final step, with MSG/pepper) is directly stated on the sheet, unlike Nasi/Bihun Goreng's sauce timing, which had to be inferred.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-148",
@@ -13789,7 +13856,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "review_notes": "Built 2026-08-29 from Arman's original handwritten scan (\"Gule Kambing\", Cookbook Recipe Scan/Individual Recipe Scan), NOT the master spreadsheet -- Arman's explicit call: the spreadsheet's Gule Kambing chain is a further-scaled-up version of the same lineage for the second restaurant (multiple cases of goat/lamb vs. this scan's one whole goat), and mixing the two sources' different absolute quantities into one recipe would produce something neither source actually says. The spreadsheet was used only to help read a few unclear handwritten words, never to substitute a number. One thing this resolved: the spreadsheet's mysterious \"Cucumber\" spice line (15oz) is confirmed to be a mistyped \"Cinnamon\" (also 15oz in this scan) -- not an omitted or different ingredient, so the two sources' spice blend is actually identical where they overlap; the real reason to prefer the handwritten scan is that it's the original, complete, human-scale recipe, not a cinnamon discrepancy. Several handwriting readings are uncertain, flagged rather than guessed past: \"Tahe\" read as \"Jahe\" (ginger) from context; \"La machine\" (a food processor/blender) left untranslated, brand/model unclear; the garlic amount in the ginger-frying step (\"satu tempat lebih Bawang putih\", lit. \"one portion more garlic\") has no clear number, estimated at a small amount; galangal is given as \"1 bungkus\" (1 packet) with no weight; \"32 cup santen [beras?]\" -- the word after \"santen\" is hard to read, possibly \"biasa\" (regular); read as plain coconut milk, the qualifier not translated with confidence. No raw whole-goat weight is stated anywhere in the scan (only the finished yield, \"±75 containers @ 16oz\"), so the home meat quantity below is a practical estimate sized to the finished-yield fraction, not a precise fraction of a stated raw weight -- flagged, not presented as scan-exact. Sizing: the scan states \"1 whole goat -> ~75 containers @ 16oz\" as its only batch fact -- no raw meat weight. Rather than invent a raw-weight estimate, anchored to that stated finished yield instead: sized this recipe to 2 containers (32oz / ~0.9kg finished dish), close to the ~1kg protein-scale convention used for Rendang, giving a divisor of 75/2 = 37.5 applied to every precisely-stated quantity (oil, onions, ginger, red pepper, dried chili, salt, spice blend, sugar, coconut milk). This is a total-dish-weight anchor, not a pure-meat-weight one like Rendang's -- flagged as a real difference from that precedent, not silently presented as equivalent. The meat quantity itself (2 lbs bone-in goat/lamb) is a separate practical estimate for what a home 2-3-serving portion needs, not derived from the 37.5 divisor (nothing in the scan states meat weight to divide). Bone stock (\"tulang direbus, ± 3/4 panci besar\") has no stated volume, so substituted with lamb/goat stock at a practical \"enough to cover\" amount rather than a false-precision figure. Per the multi-tier playbook (see [[raspberry-yield-scaling]]), this is ONE combined home recipe -- resep-40 (Broth Mix) and resep-148 (Gule Paste) are stored separately only for traceability, their math is fully decomposed into this recipe's own ingredients above, not recipe_ref'd as sub-batches.",
-      "linked_recipe_id": "resep-148"
+      "linked_recipe_id": "resep-148",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-150",
@@ -14293,7 +14361,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-87",
-      "review_notes": "Home-scale version of resep-87. Sizing to exactly one order (4oz) would make the durian portion itself impractically tiny (~18g, well under a real durian segment) -- sized instead so the durian amount is a practical ~50g (about one small piece), same reasoning as resep-121's candlenut floor-bump: accept a bigger batch when the literal floor makes a key ingredient unusable. This gives K~27.2 and makes about 2-3 servings (~11oz total), not exactly 1 order. Gula Cendol (resep-151) is decomposed directly into this recipe's own water/sugar/palm-sugar lines at the combined fraction (~1/96.7 of its full batch) rather than kept as a recipe_ref, since the amount needed here doesn't relate cleanly to resep-152's own 5oz Ice-Cendol-topping sizing -- two different use-contexts of the same syrup, decomposed separately rather than forced through one shared home recipe."
+      "review_notes": "Home-scale version of resep-87. Sizing to exactly one order (4oz) would make the durian portion itself impractically tiny (~18g, well under a real durian segment) -- sized instead so the durian amount is a practical ~50g (about one small piece), same reasoning as resep-121's candlenut floor-bump: accept a bigger batch when the literal floor makes a key ingredient unusable. This gives K~27.2 and makes about 2-3 servings (~11oz total), not exactly 1 order. Gula Cendol (resep-151) is decomposed directly into this recipe's own water/sugar/palm-sugar lines at the combined fraction (~1/96.7 of its full batch) rather than kept as a recipe_ref, since the amount needed here doesn't relate cleanly to resep-152's own 5oz Ice-Cendol-topping sizing -- two different use-contexts of the same syrup, decomposed separately rather than forced through one shared home recipe.",
+      "browse_type": "sweets"
     },
     {
       "id": "resep-158",
@@ -14403,7 +14472,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-48",
-      "review_notes": "Home-scale version of resep-48, sized to exactly 1 container (8oz finished porridge -- the dish's own natural serving unit, already comfortably above the standing floor). Raw ingredients scaled by ~1/66.3 (see derivations/desserts.py); finished yield estimated at ~90% of raw weight (rice porridge mostly absorbs its liquid rather than losing it to evaporation) for the container-count cross-check (~60 containers from the full batch, plausible for a bulk freezer-prep recipe). Both salt additions floor-bumped from sub-1/8-tsp true values to a practical pinch each rather than a precise fraction."
+      "review_notes": "Home-scale version of resep-48, sized to exactly 1 container (8oz finished porridge -- the dish's own natural serving unit, already comfortably above the standing floor). Raw ingredients scaled by ~1/66.3 (see derivations/desserts.py); finished yield estimated at ~90% of raw weight (rice porridge mostly absorbs its liquid rather than losing it to evaporation) for the container-count cross-check (~60 containers from the full batch, plausible for a bulk freezer-prep recipe). Both salt additions floor-bumped from sub-1/8-tsp true values to a practical pinch each rather than a precise fraction.",
+      "browse_type": "sweets"
     },
     {
       "id": "resep-159",
@@ -14625,7 +14695,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-159",
-      "review_notes": "CORRECTED 2026-08-30: previously sized to 5 squid (half the restaurant's own 10-squid/bag unit), aiming for ~1kg per the Rendang-style protein convention -- Arman corrected this: the spreadsheet states 1 bag = 1 order = 10 squid directly, and that stated order size should be used as-is rather than adjusted toward an external convention. Now sized to exactly 1 bag (10 squid): the serve-stage quantities (butter, garlic, fish sauce) are resep-159's own per-bag figures used directly, unscaled. Only the boiling-stage salt/citric acid are scaled, from the full 100-squid batch at 1/10 (3 Tbsp salt -> 1 tsp, 1 Tbsp citric acid -> 1/3 tsp) -- both exact, no floor-bumping needed. Dropped the restaurant's freeze/bag/microwave-reheat step (2, 7-8 in resep-159's method) in favor of cooking the squid directly once cleaned, same reasoning as Satay's dropped reheat sequence -- a home cook isn't working from a pre-frozen prep bag. Serves re-estimated at 3-4 for 10 squid (~2kg using the 50-squid/10kg-case figure), not a stated fact."
+      "review_notes": "CORRECTED 2026-08-30: previously sized to 5 squid (half the restaurant's own 10-squid/bag unit), aiming for ~1kg per the Rendang-style protein convention -- Arman corrected this: the spreadsheet states 1 bag = 1 order = 10 squid directly, and that stated order size should be used as-is rather than adjusted toward an external convention. Now sized to exactly 1 bag (10 squid): the serve-stage quantities (butter, garlic, fish sauce) are resep-159's own per-bag figures used directly, unscaled. Only the boiling-stage salt/citric acid are scaled, from the full 100-squid batch at 1/10 (3 Tbsp salt -> 1 tsp, 1 Tbsp citric acid -> 1/3 tsp) -- both exact, no floor-bumping needed. Dropped the restaurant's freeze/bag/microwave-reheat step (2, 7-8 in resep-159's method) in favor of cooking the squid directly once cleaned, same reasoning as Satay's dropped reheat sequence -- a home cook isn't working from a pre-frozen prep bag. Serves re-estimated at 3-4 for 10 squid (~2kg using the 50-squid/10kg-case figure), not a stated fact.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-161",
@@ -15062,7 +15133,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-162",
-      "review_notes": "Read directly from the master spreadsheet (\"Xtra - Sop Kambing\") -- see [[raspberry-master-spreadsheet]]. Sized to 6 x 16oz containers (96oz) per Arman's explicit instruction, giving 6-8 servings. Fraction (~1/11.9) computed from resep-162's estimated ~71-container total batch (see derivations/sop_kambing.py for the full calculation and its flagged assumptions -- 25% water evaporation, 50% lamb meat yield after deboning). Bumbu Betawi (resep-161) is decomposed directly into its own 6 spice lines (coriander/cumin/MSG/salt/white pepper/sugar) rather than kept as a recipe_ref, since it's single-use and the fractional amount needed doesn't correspond to a clean sub-multiple of its own batch. Note the two separate MSG/salt/sugar additions (in the spice blend vs. added again when serving) are both real, from two different points in the source method, not a duplication error."
+      "review_notes": "Read directly from the master spreadsheet (\"Xtra - Sop Kambing\") -- see [[raspberry-master-spreadsheet]]. Sized to 6 x 16oz containers (96oz) per Arman's explicit instruction, giving 6-8 servings. Fraction (~1/11.9) computed from resep-162's estimated ~71-container total batch (see derivations/sop_kambing.py for the full calculation and its flagged assumptions -- 25% water evaporation, 50% lamb meat yield after deboning). Bumbu Betawi (resep-161) is decomposed directly into its own 6 spice lines (coriander/cumin/MSG/salt/white pepper/sugar) rather than kept as a recipe_ref, since it's single-use and the fractional amount needed doesn't correspond to a clean sub-multiple of its own batch. Note the two separate MSG/salt/sugar additions (in the spice blend vs. added again when serving) are both real, from two different points in the source method, not a duplication error.",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-164",
@@ -15194,7 +15266,8 @@
       "content_state": "full",
       "flags": [],
       "reviewed": true,
-      "review_notes": "From the master spreadsheet's \".Bakmi Goreng & KueyTeow\" sheet -- same family as Bihun Goreng/Nasi Goreng (resep-135/cs-nasi-goreng), same Main Stir Fry base, just egg noodles instead of rice noodles/rice. Sauce amount (1.5oz) and structural position exactly matches Bihun Goreng's own Nasi Goreng Sauce usage, so recipe_ref'd to the same resep-137, even though this sheet's own row labels it \"Kuey Teow Sauce\" rather than \"Nasi Goreng Sauce\". Note for whoever looks at this family next: the spreadsheet is internally inconsistent about this sauce's name -- this sheet's own top-of-page section header (and the '.Nasi & Bihun Goreng' sheet's identical header) both list a 4-ingredient recipe (sweet soy + fish sauce + black soy + sugar) under the label \"Kuey Teow Sauce\", matching resep-145 exactly -- yet individual dishes in both sheets reference amounts that line up with resep-137's simpler 2-ingredient recipe (sweet soy + fish sauce only, from the separate 'Factory Mix - Nasi Goreng Sauce' sheet). Not resolved here since it doesn't change Bakmi Goreng's own build (the 1.5oz amount and dish role match Bihun Goreng's precedent either way) -- flagged in derivations/SPREADSHEET_MAPPING.md for a future pass if the two sauces ever need to be reconciled. Also: this sheet's Kuey Teow section has an explicit \"2oz Kuey Teow Sauce\" ingredient row and an \"Add Kuey Teow Sauce\" method step that the '.Nasi & Bihun Goreng' sheet (used to originally build resep-146) does not have -- resep-146 was NOT revisited here, just flagged as worth re-checking against this more complete sheet."
+      "review_notes": "From the master spreadsheet's \".Bakmi Goreng & KueyTeow\" sheet -- same family as Bihun Goreng/Nasi Goreng (resep-135/cs-nasi-goreng), same Main Stir Fry base, just egg noodles instead of rice noodles/rice. Sauce amount (1.5oz) and structural position exactly matches Bihun Goreng's own Nasi Goreng Sauce usage, so recipe_ref'd to the same resep-137, even though this sheet's own row labels it \"Kuey Teow Sauce\" rather than \"Nasi Goreng Sauce\". Note for whoever looks at this family next: the spreadsheet is internally inconsistent about this sauce's name -- this sheet's own top-of-page section header (and the '.Nasi & Bihun Goreng' sheet's identical header) both list a 4-ingredient recipe (sweet soy + fish sauce + black soy + sugar) under the label \"Kuey Teow Sauce\", matching resep-145 exactly -- yet individual dishes in both sheets reference amounts that line up with resep-137's simpler 2-ingredient recipe (sweet soy + fish sauce only, from the separate 'Factory Mix - Nasi Goreng Sauce' sheet). Not resolved here since it doesn't change Bakmi Goreng's own build (the 1.5oz amount and dish role match Bihun Goreng's precedent either way) -- flagged in derivations/SPREADSHEET_MAPPING.md for a future pass if the two sauces ever need to be reconciled. Also: this sheet's Kuey Teow section has an explicit \"2oz Kuey Teow Sauce\" ingredient row and an \"Add Kuey Teow Sauce\" method step that the '.Nasi & Bihun Goreng' sheet (used to originally build resep-146) does not have -- resep-146 was NOT revisited here, just flagged as worth re-checking against this more complete sheet.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-165",
@@ -15694,7 +15767,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-166",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01, sized to 1/20 of resep-166's batch -- the sheet states 20 orders directly, so this is exact division, not an estimate (unlike Sop Kambing, which had no stated order count and needed an evaporation/yield guess). Water is the pre-reduction amount (the home cook boils it down too, same convention as Sop Kambing). Bumbu Betawi referenced via recipe_ref rather than decomposed into its 6 spice components (unlike resep-163/Sop Kambing's own approach) -- now that this spice mix is confirmed reused by 2 dishes, linking to it directly is simpler and avoids compounding rounding error; resep-163 was left as-is rather than reworked to match, a minor stylistic inconsistency between the two, not a correctness issue. Serves (1-2) is an estimate based on the container size, not a stated fact."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01, sized to 1/20 of resep-166's batch -- the sheet states 20 orders directly, so this is exact division, not an estimate (unlike Sop Kambing, which had no stated order count and needed an evaporation/yield guess). Water is the pre-reduction amount (the home cook boils it down too, same convention as Sop Kambing). Bumbu Betawi referenced via recipe_ref rather than decomposed into its 6 spice components (unlike resep-163/Sop Kambing's own approach) -- now that this spice mix is confirmed reused by 2 dishes, linking to it directly is simpler and avoids compounding rounding error; resep-163 was left as-is rather than reworked to match, a minor stylistic inconsistency between the two, not a correctness issue. Serves (1-2) is an estimate based on the container size, not a stated fact.",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-168",
@@ -15935,7 +16009,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-169",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01, sized to 1/80 of resep-169's batch -- both `.Ayam Bakar Kalasan` and `Factory Mix - Ayam Bakar Sauce` state \"80 orders\" in their own headers, so this is exact division against a stated order count, not an estimate. Method replaces the restaurant's freeze/microwave-reheat/deep-fry sequence (written for a pre-marinated frozen bag) with a from-raw simmer-then-grill method, matching the established convention for adapting restaurant reheat steps to a real home technique. Coconut cream amount depends on an assumed 300ml can size -- see resep-169's review_notes."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01, sized to 1/80 of resep-169's batch -- both `.Ayam Bakar Kalasan` and `Factory Mix - Ayam Bakar Sauce` state \"80 orders\" in their own headers, so this is exact division against a stated order count, not an estimate. Method replaces the restaurant's freeze/microwave-reheat/deep-fry sequence (written for a pre-marinated frozen bag) with a from-raw simmer-then-grill method, matching the established convention for adapting restaurant reheat steps to a real home technique. Coconut cream amount depends on an assumed 300ml can size -- see resep-169's review_notes.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-171",
@@ -16073,7 +16148,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-171",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. Fish size/quantity (\"1 whole tilapia, about 1-1.5 lb\") is an estimate, not a sheet fact -- `.Ikan Bakar` never states how many fish the batch marinade covers. Marinade scaled down by preserving the sheet's own ratio (water:salt:vinegar = 32:1:6) to a practical home volume for 1-2 whole fish, rather than dividing against a known per-order fraction (not possible here, see resep-171's review_notes). Basting sauce (\"Oyster Soy Sauce, Ramayani\") resolved via `Factory Mix - Oyster Soy Sauce`: 1 Tbsp oyster sauce + 4 Tbsp sweet soy sauce -- that sheet's own total (5 Tbsp) exactly matches the 5 Tbsp this dish calls for, so used directly with no scaling needed. White pepper (mentioned in the method, \"add white pepper\", but never given an ingredient row or amount) left as a no-amount \"to taste\" line."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01. Fish size/quantity (\"1 whole tilapia, about 1-1.5 lb\") is an estimate, not a sheet fact -- `.Ikan Bakar` never states how many fish the batch marinade covers. Marinade scaled down by preserving the sheet's own ratio (water:salt:vinegar = 32:1:6) to a practical home volume for 1-2 whole fish, rather than dividing against a known per-order fraction (not possible here, see resep-171's review_notes). Basting sauce (\"Oyster Soy Sauce, Ramayani\") resolved via `Factory Mix - Oyster Soy Sauce`: 1 Tbsp oyster sauce + 4 Tbsp sweet soy sauce -- that sheet's own total (5 Tbsp) exactly matches the 5 Tbsp this dish calls for, so used directly with no scaling needed. White pepper (mentioned in the method, \"add white pepper\", but never given an ingredient row or amount) left as a no-amount \"to taste\" line.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-173",
@@ -16256,7 +16332,8 @@
         "no_headnote"
       ],
       "reviewed": true,
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `.Gado Gado`. Already order-sized on the sheet, used directly -- no scale-down math needed, same pattern as Nasi Goreng/Bihun Goreng."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-01 from `.Gado Gado`. Already order-sized on the sheet, used directly -- no scale-down math needed, same pattern as Nasi Goreng/Bihun Goreng.",
+      "browse_type": "vegetarian"
     },
     {
       "id": "resep-175",
@@ -16370,7 +16447,8 @@
         "no_headnote"
       ],
       "reviewed": true,
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `.Babat Goreng`. Already order-sized on the sheet, used directly -- no scale-down math needed. References cs-sambal-bajak (Sambal Bajak, home) via recipe_ref for its 1 tsp addition -- a single hop, consistent with the at-most-one-link rule (unlike Gado Gado Dressing, this ingredient is a small seasoning garnish, not most of the recipe's own composition, so a link here reads better than decomposing a condiment down into sub-quarter-teaspoon fragments of a totally different dish). \"Babat Gr. Sauce\" (Ramayani brand, 1oz) has no recipe anywhere in the spreadsheet -- left as a named branded ingredient, same treatment as Tahu Telur Flour Mix; added to Open Questions in derivations/AUDIT.md. `Factory Mix - Babat Goreng` is a near-duplicate of this same dish sheet (not a separate sauce recipe), differing only in a slightly higher Babat Gr. Sauce amount (1.25oz vs 1oz) -- used this sheet's own 1oz figure since it's the primary dish sheet."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02 from `.Babat Goreng`. Already order-sized on the sheet, used directly -- no scale-down math needed. References cs-sambal-bajak (Sambal Bajak, home) via recipe_ref for its 1 tsp addition -- a single hop, consistent with the at-most-one-link rule (unlike Gado Gado Dressing, this ingredient is a small seasoning garnish, not most of the recipe's own composition, so a link here reads better than decomposing a condiment down into sub-quarter-teaspoon fragments of a totally different dish). \"Babat Gr. Sauce\" (Ramayani brand, 1oz) has no recipe anywhere in the spreadsheet -- left as a named branded ingredient, same treatment as Tahu Telur Flour Mix; added to Open Questions in derivations/AUDIT.md. `Factory Mix - Babat Goreng` is a near-duplicate of this same dish sheet (not a separate sauce recipe), differing only in a slightly higher Babat Gr. Sauce amount (1.25oz vs 1oz) -- used this sheet's own 1oz figure since it's the primary dish sheet.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-176",
@@ -17085,7 +17163,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-181",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/31 of resep-181's batch -- the sheet states 31 orders directly, so this is exact division, not an estimate. Celery/green onion/tomato converted from weight to practical piece counts (2 ribs celery, 1 stalk green onion, 1/3 large tomato) -- reasonable produce-piece estimates, not sheet facts. Carrots and chicken broth topping left as no-amount lines, matching resep-181's own gaps. See derivations/six_more_dishes.py."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/31 of resep-181's batch -- the sheet states 31 orders directly, so this is exact division, not an estimate. Celery/green onion/tomato converted from weight to practical piece counts (2 ribs celery, 1 stalk green onion, 1/3 large tomato) -- reasonable produce-piece estimates, not sheet facts. Carrots and chicken broth topping left as no-amount lines, matching resep-181's own gaps. See derivations/six_more_dishes.py.",
+      "browse_type": "curries-soups"
     },
     {
       "id": "resep-183",
@@ -17606,7 +17685,8 @@
       "reviewed": true,
       "recipe_type": "home",
       "linked_recipe_id": "resep-186",
-      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/10 of resep-186's batch -- exact division (the sheet states 10 fish directly, and lemongrass/bay leaves are stated at a clean 2pc/fish ratio, confirming 10 as the right anchor for the whole recipe, not just the fish itself). This spice paste is genuinely much richer than resep-14/125's own version (~674g/fish here vs. ~144g/fish there, roughly 4.7x) and structurally different (tomato and oil blended directly into the paste, vs. layered separately) -- kept as a second, separate Ikan Pepes rather than reconciled with resep-125 (now renamed \"(Original)\"), same treatment as Gule Kambing's two source generations. Dry ground turmeric used instead of the sheet's fresh-turmeric option, for home practicality. Steam time (45min-1hr) is an adaptation, not a sheet fact -- the sheet's own 2-hour pressure-cook time is for the full 10-fish batch cooked together, too long for a single wrapped fish. Charring finish borrowed from resep-14's own Pepes description, not stated on this specific sheet (which instead has an unrelated \"pour chicken curry sauce\" serve step, not used here -- see resep-186's review_notes). Candlenuts/chilies/shallots converted from weight to piece counts using the same reference weights established for resep-125's own conversion -- estimates, not exact. See derivations/ikan_pepes_new.py."
+      "review_notes": "Read directly from the master spreadsheet -- see [[raspberry-master-spreadsheet]]. Built 2026-09-02, sized to 1/10 of resep-186's batch -- exact division (the sheet states 10 fish directly, and lemongrass/bay leaves are stated at a clean 2pc/fish ratio, confirming 10 as the right anchor for the whole recipe, not just the fish itself). This spice paste is genuinely much richer than resep-14/125's own version (~674g/fish here vs. ~144g/fish there, roughly 4.7x) and structurally different (tomato and oil blended directly into the paste, vs. layered separately) -- kept as a second, separate Ikan Pepes rather than reconciled with resep-125 (now renamed \"(Original)\"), same treatment as Gule Kambing's two source generations. Dry ground turmeric used instead of the sheet's fresh-turmeric option, for home practicality. Steam time (45min-1hr) is an adaptation, not a sheet fact -- the sheet's own 2-hour pressure-cook time is for the full 10-fish batch cooked together, too long for a single wrapped fish. Charring finish borrowed from resep-14's own Pepes description, not stated on this specific sheet (which instead has an unrelated \"pour chicken curry sauce\" serve step, not used here -- see resep-186's review_notes). Candlenuts/chilies/shallots converted from weight to piece counts using the same reference weights established for resep-125's own conversion -- estimates, not exact. See derivations/ikan_pepes_new.py.",
+      "browse_type": "fried-grilled"
     },
     {
       "id": "resep-188",
@@ -17678,7 +17758,8 @@
           "name_en": "potato"
         }
       ],
-      "method": []
+      "method": [],
+      "browse_type": "sweets"
     },
     {
       "id": "resep-189",
