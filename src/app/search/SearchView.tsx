@@ -3,11 +3,11 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
-import type { RecipeSummary } from '@/types/recipe';
+import type { RecipeSummary, FilterCat } from '@/types/recipe';
 import Header from '@/components/Header';
 import { TextRow, LoadMoreButton } from '@/components/RecipeResults';
 
-export default function SearchView({ recipes, initialQuery }: { recipes: RecipeSummary[]; initialQuery: string }) {
+export default function SearchView({ recipes, initialQuery, categories }: { recipes: RecipeSummary[]; initialQuery: string; categories: FilterCat[] }) {
   const router = useRouter();
   const { lang: ctxLang } = useLang();
   const [query, setQuery] = useState(initialQuery);
@@ -42,7 +42,7 @@ export default function SearchView({ recipes, initialQuery }: { recipes: RecipeS
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
-      <Header />
+      <Header categories={categories} />
 
       {/* Search */}
       <div style={{ padding: '20px 32px 0' }}>

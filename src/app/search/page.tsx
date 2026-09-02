@@ -1,4 +1,4 @@
-import { getAllRecipeSummaries } from '@/lib/recipes';
+import { getAllRecipeSummaries, getFilterCategories } from '@/lib/recipes';
 import SearchView from './SearchView';
 
 // Server Component: filters/searches happen client-side against this
@@ -8,5 +8,6 @@ import SearchView from './SearchView';
 // client bundle.
 export default function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
   const recipes = getAllRecipeSummaries();
-  return <SearchView recipes={recipes} initialQuery={searchParams.q || ''} />;
+  const categories = getFilterCategories();
+  return <SearchView recipes={recipes} initialQuery={searchParams.q || ''} categories={categories} />;
 }

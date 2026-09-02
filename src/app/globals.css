@@ -66,29 +66,39 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ════════════════════════════════════════════════
-   HOMEPAGE — splash + section headings, mobile
+   HOMEPAGE — hero + section headings, mobile
    ════════════════════════════════════════════════ */
-.splash-hero { height: 950px; }
-.splash-text-block { max-width: 55%; }
-.splash-title { font-size: 94px; }
-.splash-subtitle { font-size: 38px; }
-.section-heading { font-size: 38px; }
-.category-tile { width: 220px; height: 220px; }
-.category-label { font-size: 34px; }
-.recipe-card { width: 320px; }
-.recipe-photo { width: 320px; height: 500px; }
+/* Shared by every major homepage heading (Favourites/Welcome/Cookbook) --
+   see HEADING_SIZE in HomeView.tsx. The tagline is the one deliberate
+   exception: it's noticeably longer than the others (an English sentence,
+   not a two-word title), so it runs a size smaller specifically so it
+   still fits on one line instead of wrapping. */
+.home-heading { font-size: 30px; }
+.hero-tagline { font-size: 24px; }
+.recipe-card { width: 240px; }
+.recipe-photo { width: 240px; height: 240px; }
+/* Horizontal padding for the hero/search bands only -- shared so both
+   shrink together on mobile, where the full 48px desktop gutter would
+   leave too little room for the 4 type tiles to wrap 2-per-row (see the
+   media query below). */
+.home-section-pad { padding-left: 48px; padding-right: 48px; }
 @media (max-width: 640px) {
-  .splash-hero { height: 600px; }
-  .splash-text-block { max-width: 90%; }
-  .splash-title { font-size: 56px; }
-  .splash-subtitle { font-size: 22px; }
-  .section-heading { font-size: 26px; }
-  .category-icon { width: 64px; height: 64px; }
-  .category-tile { width: 140px; height: 140px; }
-  .category-label { font-size: 22px; }
-  .recipe-card { width: 180px; }
-  .recipe-photo { width: 180px; height: 220px; }
+  .home-heading { font-size: 22px; }
+  .hero-tagline { font-size: 18px; }
+  .home-section-pad { padding-left: 20px; padding-right: 20px; }
+  /* 2 columns like justonecookbook.com, not 1: at a ~390px phone width
+     with the 20px gutter above, 140px was originally sized against the
+     unreduced 48px gutter and left only ~294px to fit two tiles in --
+     just short, so they stacked to a single column instead. 155px + a
+     16px gap fits twice into the ~350px now available, with room to
+     spare. */
+  .hero-type-tiles { gap: 16px !important; }
+  .hero-tile { width: 155px !important; }
+  .hero-tile-photo { width: 155px !important; height: 155px !important; }
+  .recipe-card { width: 140px; }
+  .recipe-photo { width: 140px; height: 140px; }
   .scroll-arrow { display: none !important; }
+  .welcome-row img { width: 100% !important; height: 260px !important; }
 }
 
 /* ════════════════════════════════════════════════

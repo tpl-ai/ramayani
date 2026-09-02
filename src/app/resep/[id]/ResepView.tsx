@@ -173,7 +173,7 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
   if (!recipe) {
     return (
       <div style={{ background: '#fff', minHeight: '100vh', fontFamily: HELVETICA }}>
-        <Header />
+        <Header categories={categories} />
         <div style={{ padding: '16px 48px 0' }}>
           <a href="/recipes" style={{ fontSize: 13, color: '#999', textDecoration: 'none', fontFamily: HELVETICA }}>← All recipes</a>
         </div>
@@ -242,7 +242,7 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
       `}</style>
 
       <div className="print-hide">
-        <Header />
+        <Header categories={categories} />
         <div className="recipes-filter-row" style={{ padding: '16px 32px' }}>
           <CategoryTabs
             categories={categories}

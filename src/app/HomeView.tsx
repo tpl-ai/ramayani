@@ -1,128 +1,134 @@
 'use client'
-import React, { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Header from '@/components/Header'
 import { useLang } from '@/components/LanguageContext'
 import { recipePhotoSrc } from '@/lib/photo'
-import type { RecipeSummary } from '@/types/recipe'
+import type { RecipeSummary, FilterCat } from '@/types/recipe'
 
-const CATEGORIES = [
-  { id: 'ayam',            label: 'Chicken'            },
-  { id: 'daging',          label: 'Meats'              },
-  { id: 'seafood',         label: 'Seafood'            },
-  { id: 'nasi_mie',        label: 'Rice & Noodles'     },
-  { id: 'sayuran_salad',   label: 'Vegetables & Salads' },
-  { id: 'appetizer',       label: 'Appetizers'         },
-  { id: 'desserts_drinks', label: 'Drinks & Desserts'  },
-  { id: 'sambal_saus',     label: 'Sambals & Sauces'   },
-  { id: 'bumbu_dasar',     label: 'Marinades'          },
-  { id: 'other',           label: 'Extras'             },
-]
+const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif'
+const SERIF = 'var(--font-logo), Libre Baskerville, Georgia, serif'
+const CREAM = '#f7f5f2'
 
-function ChickenIcon() {
-  return <img src="/images/icon-chicken.svg" alt="" width={125} height={125} className="category-icon" />
-}
+// One shared type scale for every homepage text element below (not just
+// section headings) -- point of a scale is that nothing on the page picks
+// its own one-off size. Only intentional exception: TAGLINE_SIZE, a notch
+// below HEADING_SIZE so the (longer, English) tagline still fits on one
+// line -- see the comment on .hero-tagline in globals.css.
+const EYEBROW_SIZE = 12   // small uppercase labels: MOST ASKED FOR, ALSO AVAILABLE
+const BODY_SIZE = 15      // paragraphs, search input, tags, newsletter inputs, byline
+const BUTTON_SIZE = 13    // every button/CTA
+const CAPTION_SIZE = 15   // photo captions: type-tile labels and Favourites titles alike
+const HEADING_SIZE = 30   // Favourites / Welcome / Cookbook headings (.home-heading)
 
-function BeefIcon() {
-  return <img src="/images/icon-beef.svg" alt="" width={125} height={125} className="category-icon" />
-}
+type TypeTile = { id: string; label_en: string; label_id: string; photo: string }
 
-function SeafoodIcon() {
-  return <img src="/images/icon-fish.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function RiceIcon() {
-  return <img src="/images/icon-noodles.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function VegetableIcon() {
-  return <img src="/images/icon-vegetables.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function SambalIcon() {
-  return <img src="/images/icon-sambal.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function AppetizerIcon() {
-  return <img src="/images/icon_appetizers.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function DrinksIcon() {
-  return <img src="/images/icon_drinks.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function MarinadesIcon() {
-  return <img src="/images/icon_marinades.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-function ExtrasIcon() {
-  return <img src="/images/icon_extras.svg" alt="" width={125} height={125} className="category-icon" />
-}
-
-const ICONS: Record<string, () => React.ReactElement> = {
-  ayam: ChickenIcon,
-  daging: BeefIcon,
-  seafood: SeafoodIcon,
-  nasi_mie: RiceIcon,
-  sayuran_salad: VegetableIcon,
-  appetizer: AppetizerIcon,
-  desserts_drinks: DrinksIcon,
-  sambal_saus: SambalIcon,
-  bumbu_dasar: MarinadesIcon,
-  other: ExtrasIcon,
-}
-
-export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeSummary[] }) {
+export default function HomeView({ favoriteRecipes, typeTiles, categories }: {
+  favoriteRecipes: RecipeSummary[]
+  typeTiles: TypeTile[]
+  categories: FilterCat[]
+}) {
   const router = useRouter()
   const { lang } = useLang()
   const recipesScrollRef = useRef<HTMLDivElement>(null)
-  const categoriesScrollRef = useRef<HTMLDivElement>(null)
+  const [query, setQuery] = useState('')
+
+  const runSearch = () => {
+    if (query.trim()) router.push(`/search?q=${encodeURIComponent(query.trim())}`)
+  }
 
   return (
-    <div style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', background: '#fff', color: '#1a1a1a' }}>
+    <div style={{ fontFamily: HELVETICA, background: '#fff', color: '#1a1a1a' }}>
 
       {/* NAV */}
-      <Header />
+      <Header categories={categories} />
 
-      {/* SPLASH */}
-      <div className="splash-hero" style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
-        <img
-          src="/images/rijsttafel.jpg"
-          alt="Ramayani rijsttafel"
-          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }}
-        />
-        <div style={{
-          position: 'absolute', inset: 0,
-          background: 'linear-gradient(to right, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.40) 50%, rgba(0,0,0,0.05) 100%)',
-        }} />
-        {/* Title — top-left */}
-        <div className="splash-text-block" style={{ position: 'absolute', top: 0, left: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', padding: '78px 0 0 46px' }}>
-          <h1 className="splash-title" style={{ fontWeight: 400, color: '#fff', lineHeight: 1, marginBottom: 14 }}>
-            Hertha's<br />Indonesian Cookbook
-          </h1>
-          <p className="splash-subtitle" style={{ fontWeight: 500, color: 'rgba(255,255,255,0.88)', lineHeight: 1.5 }}>
-            Beloved recipes from Ramayani Westwood
+      {/* HERO — tagline + browse-by-type tiles */}
+      <section className="home-section-pad" style={{ background: CREAM, paddingTop: 40, paddingBottom: 32 }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+          <p className="hero-tagline" style={{
+            fontFamily: SERIF, fontWeight: 400, textAlign: 'center',
+            color: '#1a1a1a', margin: '0 0 32px',
+          }}>
+            {lang === 'id'
+              ? 'Resep Indonesia dari restoran di Los Angeles dan dapur keluarga kami'
+              : 'Indonesian recipes from the Los Angeles restaurant and our family kitchen'}
           </p>
+          <div className="hero-type-tiles" style={{
+            display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 28,
+          }}>
+            {typeTiles.map(tile => (
+              <div
+                key={tile.id}
+                className="hero-tile"
+                onClick={() => router.push(`/recipes?type=${tile.id}`)}
+                style={{ cursor: 'pointer', textAlign: 'center', width: 240 }}
+              >
+                <div className="hero-tile-photo" style={{
+                  width: 240, height: 240, overflow: 'hidden',
+                  background: '#e8e2da', marginBottom: 10,
+                }}>
+                  {tile.photo && (
+                    <img src={recipePhotoSrc(tile.photo)} alt={lang === 'id' ? tile.label_id : tile.label_en}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  )}
+                </div>
+                <span style={{ fontSize: CAPTION_SIZE, fontWeight: 600, color: '#1a1a1a' }}>
+                  {lang === 'id' ? tile.label_id : tile.label_en}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
-        {/* Buy the book — bottom-right */}
-        <a href="#" style={{
-          position: 'absolute', bottom: 0, right: 182,
-          display: 'inline-flex', alignItems: 'center', gap: 6,
-          fontSize: 18, fontWeight: 500, color: '#fff',
-          background: '#cc0000', padding: '20px 15px',
-          textDecoration: 'none', letterSpacing: '0.04em',
-        }}>
-          Buy the book
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M7 17L17 7M17 7H9M17 7V15" />
-          </svg>
-        </a>
-      </div>
+      </section>
 
-      {/* FAVORITE RECIPES */}
+      {/* SEARCH — big search bar + most-asked-for tags, drawn from Favourites */}
+      <section className="home-section-pad" style={{ background: CREAM, paddingTop: 8, paddingBottom: 44 }}>
+        <div style={{ maxWidth: 720, margin: '0 auto' }}>
+          <div style={{ display: 'flex', gap: 10 }}>
+            <input
+              type="text"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') runSearch() }}
+              placeholder={lang === 'id' ? 'Cari resep — rendang, sambal, gado-gado...' : 'Search recipes — rendang, sambal, gado-gado...'}
+              style={{
+                flex: 1, border: '1px solid #e0d9cd', borderRadius: 50,
+                padding: '14px 22px', fontSize: BODY_SIZE, fontFamily: HELVETICA,
+                color: '#1a1a1a', outline: 'none', background: '#fff',
+              }}
+            />
+            <button onClick={runSearch} style={{
+              background: '#cc0000', color: '#fff', border: 'none', borderRadius: 50,
+              padding: '0 32px', fontSize: BUTTON_SIZE, fontWeight: 700, letterSpacing: '0.08em',
+              cursor: 'pointer', fontFamily: HELVETICA,
+            }}>
+              {lang === 'id' ? 'CARI' : 'SEARCH'}
+            </button>
+          </div>
+          <div style={{
+            display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '10px 18px',
+            marginTop: 18,
+          }}>
+            <span style={{ fontSize: EYEBROW_SIZE, fontWeight: 700, letterSpacing: '0.1em', color: '#aaa' }}>
+              {lang === 'id' ? 'PALING DICARI' : 'MOST ASKED FOR'}
+            </span>
+            {favoriteRecipes.slice(0, 5).map(r => (
+              <a key={r.id} onClick={() => router.push(`/resep/${r.id}`)} style={{
+                fontSize: BODY_SIZE, color: '#1a1a1a', cursor: 'pointer',
+                borderBottom: '1px solid #ccc', paddingBottom: 2,
+              }}>
+                {r.name_id || r.name_en}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAVOURITES */}
       <section id="recipes" style={{ paddingTop: 48, position: 'relative' }}>
-        <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
-          {lang === 'en' ? 'Favorite recipes' : 'Resep favorit'}
+        <h2 className="home-heading" style={{ fontFamily: SERIF, fontWeight: 400, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
+          {lang === 'id' ? 'Favorit' : 'Favourites'}
         </h2>
         <div ref={recipesScrollRef} style={{
           display: 'flex', gap: 35, overflowX: 'auto',
@@ -148,7 +154,7 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
                     }}>Coming soon</div>
                   )}
                 </div>
-                <div style={{ fontSize: 20, fontWeight: 500, color: ready ? '#1a1a1a' : '#999', lineHeight: 1.3 }}>{name}</div>
+                <div style={{ fontSize: CAPTION_SIZE, fontWeight: 600, color: ready ? '#1a1a1a' : '#999', lineHeight: 1.3 }}>{name}</div>
               </div>
             )
           })}
@@ -187,64 +193,112 @@ export default function HomeView({ favoriteRecipes }: { favoriteRecipes: RecipeS
         </div>
       </section>
 
-      {/* RECIPES BY CATEGORY */}
-      <section style={{ padding: '18px 0 72px', position: 'relative' }}>
-        <h2 className="section-heading" style={{ fontWeight: 300, color: '#cc0000', padding: '0 48px', marginBottom: 20 }}>
-          {lang === 'en' ? 'Recipes by category' : 'Resep menurut jenis'}
-        </h2>
-        <div ref={categoriesScrollRef} style={{
-          display: 'flex', gap: 30, overflowX: 'auto',
-          paddingLeft: 48, paddingRight: 48, paddingBottom: 24,
-          scrollbarWidth: 'none', msOverflowStyle: 'none',
+      {/* WELCOME — bio teaser, links to /about */}
+      <section style={{ background: CREAM, marginTop: 56 }}>
+        <div className="welcome-row" style={{
+          display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 40,
+          maxWidth: 1100, margin: '0 auto', padding: '48px',
         }}>
-          {CATEGORIES.map(cat => {
-            const Icon = ICONS[cat.id]
-            return (
-              <div key={cat.id} className="category-tile" onClick={() => router.push(`/recipes?category=${cat.id}`)}
-                style={{
-                  flexShrink: 0, background: '#cc0000',
-                  cursor: 'pointer', display: 'flex', flexDirection: 'column',
-                  justifyContent: 'space-between', padding: '14px 14px 18px',
-                }}>
-                <span className="category-label" style={{ fontWeight: 400, color: '#fff', lineHeight: 1.2 }}>{cat.label}</span>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end', paddingBottom: '40px'  }}>
-                  {Icon && <Icon />}
-                </div>
-              </div>
-            )
-          })}
+          <img
+            src="/images/hertha-kitchen.jpg"
+            alt="Hertha Tan in the Ramayani kitchen"
+            style={{ width: 320, height: 320, objectFit: 'cover', borderRadius: 10, flexShrink: 0 }}
+          />
+          <div style={{ flex: 1, minWidth: 260 }}>
+            <h2 className="home-heading" style={{ fontFamily: SERIF, fontWeight: 400, color: '#1a1a1a', margin: '0 0 16px' }}>
+              {lang === 'id' ? 'Selamat Datang!' : 'Selamat Datang! Welcome!'}
+            </h2>
+            <p style={{ fontSize: BODY_SIZE, lineHeight: 1.75, color: '#444', marginBottom: 20 }}>
+              {lang === 'id'
+                ? 'Nama saya Hertha, dan saya menjalankan Ramayani selama ~35 tahun (hingga 2019) karena saya suka memasak dan menikmati masakan Indonesia. Banyak pelanggan lama Ramayani meminta resep kami, jadi kami berharap koleksi ini membawa kebahagiaan bagi meja makan Anda seperti yang telah dibawa bagi kami.'
+                : "My name is Hertha, and I ran Ramayani for ~35 years (until 2019) because I love cooking and eating Indonesian food. Many of Ramayani's former customers have asked us for our recipes, and so we hope that this collection brings as much joy to your dinner table as it has to ours."}
+            </p>
+            <p style={{ fontSize: BODY_SIZE, lineHeight: 1.75, color: '#444', marginBottom: 28 }}>
+              {lang === 'id' ? 'Selamat Makan! Semoga makanan Anda enak!' : 'Selamat Makan! Have a Great Meal!'}<br />
+              Hertha Tan
+            </p>
+            <button onClick={() => router.push('/about')} style={{
+              background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: 4,
+              padding: '11px 22px', fontSize: BUTTON_SIZE, fontWeight: 600, letterSpacing: '0.04em',
+              cursor: 'pointer', fontFamily: HELVETICA,
+            }}>
+              {lang === 'id' ? 'Lanjut >' : 'More >'}
+            </button>
+          </div>
         </div>
-        <div
-          className="scroll-arrow"
-          onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
-          onMouseLeave={e => { e.currentTarget.style.opacity = '0' }}
-          onClick={() => categoriesScrollRef.current?.scrollBy({ left: 400, behavior: 'smooth' })}
+      </section>
+
+      {/* NEWSLETTER — placeholder, no backend wired up yet */}
+      <section style={{ background: '#1a1a1a', padding: '22px 48px' }}>
+        <form
+          onSubmit={e => e.preventDefault()}
           style={{
-            position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)',
-            width: 56, height: 56, borderRadius: '50%', background: 'rgba(0,0,0,0.55)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'pointer', opacity: 0, transition: 'opacity 0.2s ease', zIndex: 10,
+            display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 14,
+            maxWidth: 1100, margin: '0 auto',
           }}
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M9 6l6 6-6 6" />
-          </svg>
-        </div>
-        <div
-          className="scroll-arrow"
-          onMouseEnter={e => { e.currentTarget.style.opacity = '1' }}
-          onMouseLeave={e => { e.currentTarget.style.opacity = '0' }}
-          onClick={() => categoriesScrollRef.current?.scrollBy({ left: -400, behavior: 'smooth' })}
-          style={{
-            position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)',
-            width: 56, height: 56, borderRadius: '50%', background: 'rgba(0,0,0,0.55)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            cursor: 'pointer', opacity: 0, transition: 'opacity 0.2s ease', zIndex: 10,
-          }}
-        >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M15 6l-6 6 6 6" />
-          </svg>
+          <span style={{ color: '#fff', fontSize: BODY_SIZE, fontWeight: 500, marginRight: 'auto' }}>
+            {lang === 'id' ? 'Berlangganan untuk resep lewat email:' : 'Subscribe to get recipes via email:'}
+          </span>
+          <input placeholder={lang === 'id' ? 'Nama depan' : 'First name'} style={{
+            border: 'none', borderRadius: 4, padding: '10px 14px', fontSize: BODY_SIZE,
+            fontFamily: HELVETICA, minWidth: 140,
+          }} />
+          <input type="email" placeholder="Email" style={{
+            border: 'none', borderRadius: 4, padding: '10px 14px', fontSize: BODY_SIZE,
+            fontFamily: HELVETICA, minWidth: 180,
+          }} />
+          <button type="submit" style={{
+            background: '#cc0000', color: '#fff', border: 'none', borderRadius: 4,
+            padding: '11px 20px', fontSize: BUTTON_SIZE, fontWeight: 700, letterSpacing: '0.04em',
+            cursor: 'pointer', fontFamily: HELVETICA, whiteSpace: 'nowrap',
+          }}>
+            {lang === 'id' ? 'YA, SAYA MAU!' : 'YES, I WANT THIS!'}
+          </button>
+        </form>
+      </section>
+
+      {/* COOKBOOK PROMO — placeholder purchase links */}
+      <section style={{ background: CREAM, padding: '56px 48px 72px' }}>
+        <div style={{
+          display: 'flex', flexWrap: 'wrap', gap: 48,
+          maxWidth: 1100, margin: '0 auto', alignItems: 'center',
+        }}>
+          <img
+            src="/images/rijsttafel.jpg"
+            alt="The Ramayani Cookbook"
+            style={{ width: 260, height: 347, objectFit: 'cover', borderRadius: 6, boxShadow: '0 12px 32px rgba(0,0,0,0.18)', flexShrink: 0 }}
+          />
+          <div style={{ flex: 1, minWidth: 260 }}>
+            <span style={{ fontSize: EYEBROW_SIZE, fontWeight: 700, letterSpacing: '0.12em', color: '#aaa' }}>
+              {lang === 'id' ? 'JUGA TERSEDIA' : 'ALSO AVAILABLE'}
+            </span>
+            <h2 className="home-heading" style={{ fontFamily: SERIF, fontWeight: 700, color: '#1a1a1a', margin: '8px 0 4px' }}>
+              {lang === 'id' ? 'Buku Masak Ramayani' : 'The Ramayani Cookbook'}
+            </h2>
+            <p style={{ fontSize: BODY_SIZE, color: '#888', marginBottom: 18 }}>by Hertha Tan</p>
+            <p style={{ fontSize: BODY_SIZE, lineHeight: 1.75, color: '#444', marginBottom: 28, maxWidth: 480 }}>
+              {lang === 'id'
+                ? "Hidangan restoran, diedit dan difoto, dalam satu jilid. Edisi cetak memuat masakan yang membuat Ramayani terkenal; edisi digital memuat seluruh koleksi, termasuk resep keluarga."
+                : "The restaurant's dishes, edited and photographed, in one volume. The paperback carries the food Ramayani was known for; the digital edition carries the whole collection, family recipes included."}
+            </p>
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <a href="#" style={{
+                background: '#1a1a1a', color: '#fff', textDecoration: 'none', borderRadius: 4,
+                padding: '13px 24px', fontSize: BUTTON_SIZE, fontWeight: 700, letterSpacing: '0.06em',
+                fontFamily: HELVETICA,
+              }}>
+                {lang === 'id' ? 'EDISI DIGITAL' : 'DIGITAL EDITION'}
+              </a>
+              <a href="#" style={{
+                background: '#fff', color: '#1a1a1a', textDecoration: 'none', borderRadius: 4,
+                border: '1px solid #1a1a1a', padding: '13px 24px', fontSize: BUTTON_SIZE, fontWeight: 700,
+                letterSpacing: '0.06em', fontFamily: HELVETICA,
+              }}>
+                {lang === 'id' ? 'CETAK' : 'PAPERBACK'}
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
