@@ -77,6 +77,24 @@
       "en": "Hard"
     }
   },
+  "browse_types": {
+    "curries-soups": {
+      "id": "Kari & Sop",
+      "en": "Curries & Soups"
+    },
+    "fried-grilled": {
+      "id": "Goreng & Bakar",
+      "en": "Fried & Grilled"
+    },
+    "vegetarian": {
+      "id": "Vegetarian",
+      "en": "Vegetarian"
+    },
+    "sweets": {
+      "id": "Manis",
+      "en": "Sweets"
+    }
+  },
   "recipes": [
     {
       "id": "resep-1",
