@@ -9622,12 +9622,14 @@
       "photo": "https://rbdigdjxxvetur4m.public.blob.vercel-storage.com/Doger%20DSC00964-g7ahHzwkkOBFF1O92XIp6GEbDX54Jq.jpg",
       "name_id": "Ice Doger / Tapé",
       "name_en": "Ice Fermented Yucca Root",
-      "headnote_id": "Tapé singkong yang difermentasi dengan kelapa muda dalam sirup vanila — unik dan tak terlupakan.",
-      "headnote_en": "Sweet fermented yucca root topped with young coconut in vanilla syrup — uniquely Indonesian and utterly unforgettable.",
+      "headnote_id": "",
+      "headnote_en": "Yucca root, young jack fruit and coconut with shaved ice",
       "notes_id": "",
       "notes_en": "",
       "content_state": "full",
-      "flags": [],
+      "flags": [
+        "no_headnote"
+      ],
       "reviewed": true,
       "ingredients": [
         {
