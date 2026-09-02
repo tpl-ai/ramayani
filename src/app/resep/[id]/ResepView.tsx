@@ -13,11 +13,13 @@ import CategoryTabs from '@/components/CategoryTabs';
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
 
-// Portrait-cropped photos get squashed into the middle when forced to fill
-// a wide landscape box with object-fit: cover, so switch those to contain.
+// Photos that aren't clearly landscape (square or portrait) get squashed
+// into the middle when forced to fill a wide hero box with object-fit:
+// cover, so switch those to contain. 1.3 sits just under a 4:3 (1.33)
+// landscape photo, which still crops fine as cover.
 function markPhotoState(img: HTMLImageElement) {
   img.classList.add('loaded');
-  if (img.naturalHeight > img.naturalWidth) img.classList.add('is-portrait');
+  if (img.naturalWidth / img.naturalHeight < 1.3) img.classList.add('is-portrait');
 }
 const FACT_ICON = { width: 17, height: 17, viewBox: '0 0 24 24', fill: 'none', stroke: '#cc0000', strokeWidth: 1.6, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const };
 
