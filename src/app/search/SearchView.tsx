@@ -1,17 +1,32 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import type { RecipeSummary } from '@/types/recipe';
 import Header from '@/components/Header';
 import { TextRow, LoadMoreButton } from '@/components/RecipeResults';
 
-export default function SearchView({ recipes }: { recipes: RecipeSummary[] }) {
+export default function SearchView({ recipes, initialQuery }: { recipes: RecipeSummary[]; initialQuery: string }) {
   const router = useRouter();
   const { lang: ctxLang } = useLang();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(initialQuery);
   const [visible, setVisible] = useState(24);
+
+  // initialQuery only changes when the URL itself changes (e.g. the
+  // browser back button restoring `/search?q=X` after visiting a recipe)
+  // -- useState's initial value is ignored on re-render, so sync it
+  // explicitly or the box would come back empty.
+  useEffect(() => { setQuery(initialQuery); }, [initialQuery]);
+
+  // Debounced so the URL (and back-button history) tracks the query
+  // without pushing a navigation on every keystroke.
+  useEffect(() => {
+    const t = setTimeout(() => {
+      router.replace(query.trim() ? `/search?q=${encodeURIComponent(query)}` : '/search', { scroll: false });
+    }, 400);
+    return () => clearTimeout(t);
+  }, [query, router]);
 
   const results = useMemo(() => {
     if (!query.trim()) return [];

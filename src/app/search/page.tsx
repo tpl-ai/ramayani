@@ -6,7 +6,7 @@ import SearchView from './SearchView';
 // the RecipeSummary shape (id, category, content_state, photo, names) --
 // no ingredients/method/notes/yield or admin-only fields ever reach the
 // client bundle.
-export default function SearchPage() {
+export default function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
   const recipes = getAllRecipeSummaries();
-  return <SearchView recipes={recipes} />;
+  return <SearchView recipes={recipes} initialQuery={searchParams.q || ''} />;
 }

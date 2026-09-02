@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLang } from '@/components/LanguageContext';
 import type { RecipeSummary, FilterCat } from '@/types/recipe';
@@ -17,6 +17,19 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
   const { lang: ctxLang } = useLang();
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [visible, setVisible] = useState(24);
+
+  // initialCategory only changes when the URL itself changes (e.g. the
+  // browser back button restoring `/recipes?category=X` after visiting a
+  // recipe) -- useState's initial value is ignored on re-render, so sync
+  // it explicitly or the filter would stay stuck on whatever it was when
+  // this component first mounted.
+  useEffect(() => { setActiveCategory(initialCategory); }, [initialCategory]);
+
+  const selectCategory = (id: string) => {
+    setActiveCategory(id);
+    setVisible(24);
+    router.replace(id === 'all' ? '/recipes' : `/recipes?category=${id}`, { scroll: false });
+  };
 
   const sorted = useMemo(() => {
     const order: Record<string, number> = { full: 0, partial: 1, no_content: 2 };
@@ -43,7 +56,7 @@ export default function RecipesView({ recipes, categories, initialCategory }: {
           categories={categories}
           activeCategory={activeCategory}
           lang={ctxLang}
-          onSelect={(id) => { setActiveCategory(id); setVisible(24); }}
+          onSelect={selectCategory}
         />
 
         <span style={{
