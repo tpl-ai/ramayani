@@ -87,7 +87,7 @@ function PressCard({ item, lang }: { item: PressItem; lang: 'id' | 'en' }) {
   );
 }
 
-export default function AboutView({ categories }: { categories: FilterCat[] }) {
+export default function AboutView({ categories, groupItems }: { categories: FilterCat[]; groupItems: FilterCat[] }) {
   const { lang: ctxLang } = useLang();
 
   const mainSections = storySections.filter(s => s.type !== 'closing');
@@ -96,7 +96,7 @@ export default function AboutView({ categories }: { categories: FilterCat[] }) {
   return (
     <div style={{ background: '#ffffff', minHeight: '100vh' }}>
 
-      <Header categories={categories} />
+      <Header categories={categories} groupItems={groupItems} />
 
       {/* Portrait */}
       <div className="about-hero-wrap" style={{ padding: '24px 32px 0' }}>

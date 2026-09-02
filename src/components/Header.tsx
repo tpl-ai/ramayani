@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLang } from './LanguageContext';
-import { BROWSE_TYPES } from '@/lib/browseTypes';
 import type { FilterCat } from '@/types/recipe';
 
 const OTHER_NAV_ITEMS = [
@@ -12,11 +11,6 @@ const OTHER_NAV_ITEMS = [
 ];
 
 const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
-
-// The RECIPES menu's second column ("Group") -- a static import, not a
-// prop, since BROWSE_TYPES (lib/browseTypes.ts) is plain id/label data
-// with no recipes.json/file-read behind it, unlike `categories` below.
-const GROUP_ITEMS = Object.entries(BROWSE_TYPES).map(([id, t]) => ({ id, label_en: t.label_en, label_id: t.label_id }));
 
 function EyebrowLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -37,14 +31,15 @@ function EyebrowLabel({ children }: { children: React.ReactNode }) {
 // highlighted here but never touched the page content -- this is the fix,
 // in the one place responsible for the toggle, rather than in every page.
 //
-// `categories` (the real Chicken/Meats/Seafood/... list) has to come in
-// as a prop rather than an import: lib/recipes.ts pulls in the full
-// recipes.json module graph, and importing it here -- a 'use client'
-// component rendered on every page -- would ship every recipe's full
-// content (ingredients, method, admin notes) into the client bundle just
-// to read 10 category names. Each page's server component already fetches
-// this for its own category tabs; this just reuses that same value.
-export default function Header({ categories }: { categories: FilterCat[] }) {
+// `categories` and `groupItems` (the RECIPES menu's Course/Group columns)
+// have to come in as props rather than an import: lib/recipes.ts pulls in
+// the full recipes.json module graph, and importing it here -- a
+// 'use client' component rendered on every page -- would ship every
+// recipe's full content (ingredients, method, admin notes) into the
+// client bundle just to read a dozen category/group names. Each page's
+// server component already fetches both for its own use; this just
+// reuses those same values.
+export default function Header({ categories, groupItems }: { categories: FilterCat[]; groupItems: FilterCat[] }) {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [recipesMenuOpen, setRecipesMenuOpen] = useState(false);
@@ -122,7 +117,7 @@ export default function Header({ categories }: { categories: FilterCat[] }) {
                 </div>
                 <div>
                   <EyebrowLabel>{lang === 'id' ? 'KELOMPOK' : 'GROUP'}</EyebrowLabel>
-                  {GROUP_ITEMS.map(g => (
+                  {groupItems.map(g => (
                     <a key={g.id} onClick={() => goTo(`/recipes?type=${g.id}`)} style={{
                       display: 'block', fontFamily: HELVETICA, fontSize: 14, fontWeight: 400,
                       color: '#1a1a1a', cursor: 'pointer', textDecoration: 'none', padding: '4px 0',
@@ -258,7 +253,7 @@ export default function Header({ categories }: { categories: FilterCat[] }) {
             </div>
             <div style={{ marginTop: 14 }}>
               <EyebrowLabel>{lang === 'id' ? 'KELOMPOK' : 'GROUP'}</EyebrowLabel>
-              {GROUP_ITEMS.map(g => (
+              {groupItems.map(g => (
                 <a key={g.id} onClick={() => goTo(`/recipes?type=${g.id}`)} style={{
                   display: 'block', fontFamily: HELVETICA, fontSize: 14, color: '#1a1a1a',
                   cursor: 'pointer', padding: '6px 0',

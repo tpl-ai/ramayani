@@ -38,6 +38,12 @@ export interface Recipe {
   id: string;
   resep_num: number | null;
   category: string;
+  // A second, optional grouping that cuts across `category` (e.g.
+  // "fried-grilled" spans the ayam/daging/seafood categories) -- only
+  // servable finished dishes get tagged, not sauces/pastes/marinades, so
+  // most recipes have none. Keys into `browse_types` in recipes.json,
+  // same relationship `category` has to `categories`.
+  browse_type?: string;
   content_state: ContentState;
   photo: string;
   name_id: string;

@@ -13,12 +13,14 @@ import recipesJson from '../../recipes.json';
 const data = recipesJson as {
   meta: RecipeMeta;
   categories: Record<string, CategoryInfo>;
+  browse_types: Record<string, CategoryInfo>;
   difficulty_levels: Record<string, DifficultyInfo>;
   recipes: Recipe[];
 };
 
 export const meta: RecipeMeta = data.meta;
 export const categories: Record<string, CategoryInfo> = data.categories;
+export const browseTypes: Record<string, CategoryInfo> = data.browse_types;
 export const difficultyLevels: Record<string, DifficultyInfo> = data.difficulty_levels;
 
 // A batch/restaurant-scale recipe (recipe_type: 'batch') is an internal
@@ -114,6 +116,18 @@ export function getRecipeSummariesByIds(ids: string[]): RecipeSummary[] {
     .map(id => allRecipes.find(r => r.id === id))
     .filter((r): r is Recipe => !!r)
     .map(toSummary);
+}
+
+// The header's RECIPES menu "Group" column, and each browse-by-type
+// tile's label -- browse_types' insertion order in recipes.json is the
+// display order (curries-soups, fried-grilled, vegetarian, sweets), same
+// as CATEGORY_ORDER governs `categories` below.
+export function getBrowseTypeList(): FilterCat[] {
+  return Object.entries(browseTypes).map(([key, t]) => ({ id: key, label_en: t.en, label_id: t.id }));
+}
+
+export function getRecipeSummariesByBrowseType(type: string): RecipeSummary[] {
+  return allRecipes.filter(r => r.browse_type === type).map(toSummary);
 }
 
 

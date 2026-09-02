@@ -12,9 +12,10 @@ const HELVETICA = 'Helvetica Neue, Helvetica, Arial, sans-serif';
 
 type TypeLabels = { label_en: string; label_id: string } | null;
 
-export default function RecipesView({ recipes, categories, initialCategory, initialType, typeRecipes, typeLabels }: {
+export default function RecipesView({ recipes, categories, groupItems, initialCategory, initialType, typeRecipes, typeLabels }: {
   recipes: RecipeSummary[];
   categories: FilterCat[];
+  groupItems: FilterCat[];
   initialCategory: string;
   initialType: string | null;
   typeRecipes: RecipeSummary[];
@@ -59,7 +60,7 @@ export default function RecipesView({ recipes, categories, initialCategory, init
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
-      <Header categories={categories} />
+      <Header categories={categories} groupItems={groupItems} />
 
       {/* Filtering now happens entirely through the header's RECIPES menu
           (Course/Group), so this is just the result: whichever one is

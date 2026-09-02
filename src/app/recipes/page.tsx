@@ -1,5 +1,4 @@
-import { getAllRecipeSummaries, getFilterCategories, getRecipeSummariesByIds } from '@/lib/recipes';
-import { BROWSE_TYPES } from '@/lib/browseTypes';
+import { getAllRecipeSummaries, getFilterCategories, getBrowseTypeList, getRecipeSummariesByBrowseType } from '@/lib/recipes';
 import RecipesView from './RecipesView';
 
 // Server Component: reads the full dataset once, server-side, and hands
@@ -10,21 +9,23 @@ import RecipesView from './RecipesView';
 // that only renders a grid of cards.
 //
 // `type` (from the homepage's browse-by-type tiles, e.g. ?type=sweets) is
-// a separate, curated filter -- see lib/browseTypes.ts -- resolved here
-// server-side so the client never needs the full id-list config.
+// recipe.browse_type -- a second, admin-editable field, resolved here
+// server-side same as `category` is.
 export default function RecipesPage({ searchParams }: { searchParams: { category?: string; type?: string } }) {
   const recipes = getAllRecipeSummaries();
   const categories = getFilterCategories();
+  const groupItems = getBrowseTypeList();
   const initialCategory = searchParams.category || 'all';
 
-  const browseType = searchParams.type && BROWSE_TYPES[searchParams.type] ? searchParams.type : null;
-  const typeRecipes = browseType ? getRecipeSummariesByIds(BROWSE_TYPES[browseType].recipeIds) : [];
-  const typeLabels = browseType ? BROWSE_TYPES[browseType] : null;
+  const browseType = searchParams.type && groupItems.some(g => g.id === searchParams.type) ? searchParams.type : null;
+  const typeRecipes = browseType ? getRecipeSummariesByBrowseType(browseType) : [];
+  const typeLabels = browseType ? groupItems.find(g => g.id === browseType) ?? null : null;
 
   return (
     <RecipesView
       recipes={recipes}
       categories={categories}
+      groupItems={groupItems}
       initialCategory={initialCategory}
       initialType={browseType}
       typeRecipes={typeRecipes}

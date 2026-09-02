@@ -1,5 +1,4 @@
-import { getRecipeSummariesByIds, getFilterCategories } from '@/lib/recipes'
-import { BROWSE_TYPES } from '@/lib/browseTypes'
+import { getRecipeSummariesByIds, getFilterCategories, getBrowseTypeList, getRecipeSummariesByBrowseType } from '@/lib/recipes'
 import HomeView from './HomeView'
 
 // Which recipes to feature is an editorial choice that doesn't live in
@@ -25,17 +24,18 @@ const FAVORITE_RECIPE_IDS = [
 // archived/no_content recipes) is ever included in the page's JS bundle.
 export default function HomePage() {
   const favoriteRecipes = getRecipeSummariesByIds(FAVORITE_RECIPE_IDS)
-
-  // Each browse-by-type tile's photo/label comes from BROWSE_TYPES (shared
-  // with /recipes?type=... so the tile and its filtered grid never drift
-  // apart) -- the tile just uses that type's first curated recipe as its
-  // representative photo.
-  const typeTiles = Object.entries(BROWSE_TYPES).map(([id, t]) => {
-    const first = getRecipeSummariesByIds([t.recipeIds[0]])[0]
-    return { id, label_en: t.label_en, label_id: t.label_id, photo: first?.photo ?? '' }
-  })
-
   const categories = getFilterCategories()
+
+  // Each browse-by-type tile's photo/label comes from recipe.browse_type
+  // (the admin-editable field raspberry added) via getBrowseTypeList/
+  // getRecipeSummariesByBrowseType, shared with /recipes?type=... so the
+  // tile and its filtered grid never drift apart. Not every tagged recipe
+  // has a photo yet, so this picks the first one that does rather than
+  // just the first tagged recipe.
+  const typeTiles = getBrowseTypeList().map(t => {
+    const withPhoto = getRecipeSummariesByBrowseType(t.id).find(r => r.photo)
+    return { id: t.id, label_en: t.label_en, label_id: t.label_id, photo: withPhoto?.photo ?? '' }
+  })
 
   return <HomeView favoriteRecipes={favoriteRecipes} typeTiles={typeTiles} categories={categories} />
 }

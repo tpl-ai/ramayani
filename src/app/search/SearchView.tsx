@@ -7,7 +7,7 @@ import type { RecipeSummary, FilterCat } from '@/types/recipe';
 import Header from '@/components/Header';
 import { TextRow, LoadMoreButton } from '@/components/RecipeResults';
 
-export default function SearchView({ recipes, initialQuery, categories }: { recipes: RecipeSummary[]; initialQuery: string; categories: FilterCat[] }) {
+export default function SearchView({ recipes, initialQuery, categories, groupItems }: { recipes: RecipeSummary[]; initialQuery: string; categories: FilterCat[]; groupItems: FilterCat[] }) {
   const router = useRouter();
   const { lang: ctxLang } = useLang();
   const [query, setQuery] = useState(initialQuery);
@@ -42,7 +42,7 @@ export default function SearchView({ recipes, initialQuery, categories }: { reci
 
   return (
     <div style={{ background: '#fff', minHeight: '100vh', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
-      <Header categories={categories} />
+      <Header categories={categories} groupItems={groupItems} />
 
       {/* Search */}
       <div style={{ padding: '20px 32px 0' }}>

@@ -41,7 +41,7 @@ export default function HomeView({ favoriteRecipes, typeTiles, categories }: {
     <div style={{ fontFamily: HELVETICA, background: '#fff', color: '#1a1a1a' }}>
 
       {/* NAV */}
-      <Header categories={categories} />
+      <Header categories={categories} groupItems={typeTiles.map(({ id, label_en, label_id }) => ({ id, label_en, label_id }))} />
 
       {/* HERO — tagline + browse-by-type tiles */}
       <section className="home-section-pad" style={{ background: CREAM, paddingTop: 40, paddingBottom: 32 }}>

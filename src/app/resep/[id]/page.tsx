@@ -1,4 +1,4 @@
-import { getRecipeById, toClientRecipe, difficultyLevels, getFilterCategories } from '@/lib/recipes';
+import { getRecipeById, toClientRecipe, difficultyLevels, getFilterCategories, getBrowseTypeList } from '@/lib/recipes';
 import { REF_LINK_SERVINGS } from '@/lib/recipeConstants';
 import { parseAmount } from '@/lib/units';
 import type { Recipe } from '@/types/recipe';
@@ -88,6 +88,7 @@ export default function ResepPage({ params, searchParams }: {
 
   const difficultyInfo = recipe?.difficulty ? difficultyLevels[recipe.difficulty] : undefined;
   const categories = getFilterCategories();
+  const groupItems = getBrowseTypeList();
 
   return (
     <ResepView
@@ -96,6 +97,7 @@ export default function ResepPage({ params, searchParams }: {
       refLinkQty={refLinkQty}
       difficultyInfo={difficultyInfo}
       categories={categories}
+      groupItems={groupItems}
     />
   );
 }

@@ -131,12 +131,13 @@ function singularizeUnit(unit: string): string {
 
 // ── page ──────────────────────────────────────────────────────────
 
-export default function ResepView({ recipe, initialQty, refLinkQty, difficultyInfo, categories }: {
+export default function ResepView({ recipe, initialQty, refLinkQty, difficultyInfo, categories, groupItems }: {
   recipe: Recipe | null;
   initialQty: number;
   refLinkQty: Record<string, number | null>;
   difficultyInfo?: { id: string; en: string };
   categories: FilterCat[];
+  groupItems: FilterCat[];
 }) {
   const router = useRouter();
   const { lang: ctxLang } = useLang();
@@ -173,7 +174,7 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
   if (!recipe) {
     return (
       <div style={{ background: '#fff', minHeight: '100vh', fontFamily: HELVETICA }}>
-        <Header categories={categories} />
+        <Header categories={categories} groupItems={groupItems} />
         <div style={{ padding: '16px 48px 0' }}>
           <a href="/recipes" style={{ fontSize: 13, color: '#999', textDecoration: 'none', fontFamily: HELVETICA }}>← All recipes</a>
         </div>
@@ -242,7 +243,7 @@ export default function ResepView({ recipe, initialQty, refLinkQty, difficultyIn
       `}</style>
 
       <div className="print-hide">
-        <Header categories={categories} />
+        <Header categories={categories} groupItems={groupItems} />
         <div className="recipes-filter-row" style={{ padding: '16px 32px' }}>
           <CategoryTabs
             categories={categories}

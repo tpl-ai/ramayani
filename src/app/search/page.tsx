@@ -1,4 +1,4 @@
-import { getAllRecipeSummaries, getFilterCategories } from '@/lib/recipes';
+import { getAllRecipeSummaries, getFilterCategories, getBrowseTypeList } from '@/lib/recipes';
 import SearchView from './SearchView';
 
 // Server Component: filters/searches happen client-side against this
@@ -9,5 +9,6 @@ import SearchView from './SearchView';
 export default function SearchPage({ searchParams }: { searchParams: { q?: string } }) {
   const recipes = getAllRecipeSummaries();
   const categories = getFilterCategories();
-  return <SearchView recipes={recipes} initialQuery={searchParams.q || ''} categories={categories} />;
+  const groupItems = getBrowseTypeList();
+  return <SearchView recipes={recipes} initialQuery={searchParams.q || ''} categories={categories} groupItems={groupItems} />;
 }
